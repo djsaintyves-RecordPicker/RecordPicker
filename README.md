@@ -1,4 +1,4 @@
-# RecordPicker
+# RecordPicker v 1.1.1
 
 RecordPicker helps you rediscover your physical music collection and choose the next album to play.
 
