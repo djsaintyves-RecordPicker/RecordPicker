@@ -1,35 +1,39 @@
-# RecordPicker
+# Record Picker
 
-RecordPicker helps you rediscover your physical music collection and choose the next album to play.
+Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Built for vinyl records, CDs, and album collections, RecordPicker lets you import your library, add albums manually, scan barcodes, and draw an album at random or by mood.
-
-This repository hosts the public marketing, support, privacy, and documentation pages for RecordPicker on GitHub Pages.
+This repository hosts the public marketing, support, privacy, and documentation pages for Record Picker on GitHub Pages.
 
 ## Public pages
 
 - Marketing site: ./index.html
 - Support: ./support/
 - Privacy policy: ./privacy/
+- README page: ./readme/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
 - Contact: djsaintyves@mac.com
 
-## Features
+## App Store version history
 
-- Import your collection from CSV
-- Add albums manually
-- Scan barcodes
-- Search album metadata with MusicBrainz
-- Fetch cover artwork from Cover Art Archive or add your own
-- Draw a random album from your available collection
-- Choose an album by mood
-- Filter by release year or added year
-- Mark favorites and temporarily exclude albums, artists, or genres
-- Keep a listening history
-- View collection statistics
-- Back up and restore your collection
-- Use Siri Shortcuts
-- Sync essential information with the Apple Watch companion app
+### v1.2 - June 18, 2026
+
+- Full music collection catalog for imports, manual album entry, and barcode scanning.
+- Animated random draw, year filters, favorites, temporary exclusions, listening history, and collection statistics.
+- Mood-based picking with local Apple models when available, otherwise on-device matching from collection metadata.
+- MusicBrainz metadata lookup, Cover Art Archive artwork or manual artwork import, backup/restore, Siri Shortcuts, and Apple Watch companion.
+- The collection stays stored locally; metadata and artwork lookups happen only when the user starts them.
+
+### v1.1.1 - June 17, 2026
+
+- Interface and internal foundations refined for a smoother experience.
+- Improved iPad support.
+- Mood-based picking with better use of critical reviews.
+- Data quality: record detail sheets, manual row deletion, Discogs/MusicBrainz searches.
+- Missing tracks: MusicBrainz search followed by Discogs search.
+
+### v1.0 - June 17, 2026
+
+- No public note is displayed in the App Store history.
 
 ## Privacy
 
