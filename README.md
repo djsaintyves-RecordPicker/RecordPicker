@@ -1,8 +1,18 @@
-# RecordPicker v 1.1.1
+# RecordPicker
 
 RecordPicker helps you rediscover your physical music collection and choose the next album to play.
 
 Built for vinyl records, CDs, and album collections, RecordPicker lets you import your library, add albums manually, scan barcodes, and draw an album at random or by mood.
+
+This repository hosts the public marketing, support, privacy, and documentation pages for RecordPicker on GitHub Pages.
+
+## Public pages
+
+- Marketing site: ./index.html
+- Support: ./support/
+- Privacy policy: ./privacy/
+- App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
+- Contact: djsaintyves@mac.com
 
 ## Features
 
@@ -24,5 +34,3 @@ Built for vinyl records, CDs, and album collections, RecordPicker lets you impor
 ## Privacy
 
 Your collection stays stored locally on your device. Metadata and cover searches contact external services only when you start a lookup.
-
-Privacy Policy: [link to your GitHub Pages privacy URL]
