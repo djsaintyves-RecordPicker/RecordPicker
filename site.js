@@ -12,6 +12,9 @@
     document.documentElement.lang = lang;
     try { localStorage.setItem("recordpicker-language", lang); } catch (error) {}
   }
+  document.querySelectorAll(".hero-note").forEach(function (note) {
+    note.remove();
+  });
   var heroCopy = document.querySelector(".hero-copy");
   if (heroCopy && !heroCopy.querySelector(".tagline")) {
     var title = heroCopy.querySelector("h1");
