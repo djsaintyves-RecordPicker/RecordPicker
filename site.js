@@ -12,6 +12,12 @@
     document.documentElement.lang = lang;
     try { localStorage.setItem("recordpicker-language", lang); } catch (error) {}
   }
+  if (!document.getElementById("recordpicker-mobile-layout-fix")) {
+    var mobileLayoutFix = document.createElement("style");
+    mobileLayoutFix.id = "recordpicker-mobile-layout-fix";
+    mobileLayoutFix.textContent = "@media (max-width:1040px){.hero-showcase{display:grid;gap:14px;min-height:0}.phone-shot{position:relative;right:auto;bottom:auto;width:min(340px,58%);margin-left:auto}}@media (max-width:720px){.phone-shot{width:min(320px,86%);margin:0 auto}}";
+    document.head.appendChild(mobileLayoutFix);
+  }
   var heroCopy = document.querySelector(".hero-copy");
   if (heroCopy && !heroCopy.querySelector(".tagline")) {
     var title = heroCopy.querySelector("h1");
