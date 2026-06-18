@@ -18,7 +18,7 @@
     var tagline = document.createElement("p");
     tagline.className = "tagline";
     tagline.style.cssText = "margin:18px 0 0;max-width:620px;color:var(--ink);font-size:clamp(1.35rem,3vw,2.15rem);font-weight:850;line-height:1.16;";
-    tagline.innerHTML = '<span class="lang-fr">Il y a toujours quelque chose dans votre collection qui vous rappelle.</span><span class="lang-en">There\'s always something in your collection calling you back.</span>';
+    tagline.innerHTML = '<span class="lang-fr">Il y a toujours quelque chose dans votre collection qui vous appelle.</span><span class="lang-en">There\'s always something in your collection calling you back.</span>';
     if (title) {
       title.insertAdjacentElement("afterend", tagline);
     }
