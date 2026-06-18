@@ -2,12 +2,13 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-This repository hosts the public discovery, support, privacy, and guide pages for Record Picker on GitHub Pages.
+This repository hosts the public discovery, support, screenshots, privacy, and guide pages for Record Picker on GitHub Pages.
 
 ## Public pages
 
 - Discover page: ./index.html
 - Support: ./support/
+- Screenshots: ./screenshots/
 - Privacy policy: ./privacy/
 - Guide page: ./readme/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
