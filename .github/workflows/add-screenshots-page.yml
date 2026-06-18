@@ -1,0 +1,150 @@
+name: Add screenshots page
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  publish-screenshots:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Write screenshots page
+        run: |
+          node <<'JS'
+          const fs = require('fs');
+
+          const appName = 'Record Picker';
+          const appStoreUrl = 'https://apps.apple.com/fr/app/recordpicker/id6780422305';
+          const contactEmail = 'djsaintyves@mac.com';
+          const iconUrl = 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/51/0c/d2510c10-da10-20cf-6471-cfd0f6eb4965/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg';
+
+          const copy = {
+            fr: {
+              eyebrow: 'Captures et vidéos',
+              title: 'Screenshots',
+              tagline: 'Voir Record Picker en situation, sur iPhone, iPad et Apple Watch.',
+              deck: "Une galerie plus aérée avec les captures qui ne sont pas déjà utilisées sur la page d'accueil, et les aperçus vidéo publics de l'App Store.",
+              appPreviews: 'Aperçus vidéo',
+              appPreviewsLead: "Deux aperçus vidéo App Store montrent le tirage, le bac à disques et les gestes principaux de l'app.",
+              iphoneLead: 'Les vues mobiles principales, du premier import au tirage animé.',
+              ipadLead: 'Des vues plus larges pour le bac, les filtres, les détails et les outils.',
+              watchLead: "Les écrans compagnons pour garder l'essentiel au poignet.",
+              openVideo: "Ouvrir l'aperçu vidéo",
+            },
+            en: {
+              eyebrow: 'Screenshots and videos',
+              title: 'Screenshots',
+              tagline: 'See Record Picker in context on iPhone, iPad, and Apple Watch.',
+              deck: 'A more spacious gallery with the screenshots not already used on the homepage, plus public App Store video previews.',
+              appPreviews: 'App previews',
+              appPreviewsLead: "Two App Store video previews show the draw, the record bin, and the app's main gestures.",
+              iphoneLead: 'The main mobile views, from first import to the animated draw.',
+              ipadLead: 'Wider views for the bin, filters, details, and tools.',
+              watchLead: 'Companion screens for keeping essentials on the wrist.',
+              openVideo: 'Open video preview',
+            },
+          };
+
+          const shots = {
+            iphone: [
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/{w}x{h}{c}.{f}', 'Import de collection', 'Collection import'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/{w}x{h}{c}.{f}', 'Tirage animé', 'Animated draw'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/{w}x{h}{c}.{f}', 'Bac à disques', 'Record bin'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/{w}x{h}{c}.{f}', 'Filtres et tri', 'Filters and sorting'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/{w}x{h}{c}.{f}', 'Liste et recherche', 'List and search'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/{w}x{h}{c}.{f}', "Détails d'album", 'Album details'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/{w}x{h}{c}.{f}', 'Outils de collection', 'Collection tools'],
+            ],
+            ipad: [
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/be/ff/aa/beffaaec-27ea-ea64-57f5-da3e180eabfa/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.41.png/{w}x{h}{c}.{f}', 'Tirage en grand format', 'Large-format draw'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/1f/5c/e61f5c24-7156-896c-785f-aa370530fcad/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_14.08.27.png/{w}x{h}{c}.{f}', 'Bac et filtres iPad', 'iPad bin and filters'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/39/56/48/3956484a-4b40-515b-74f4-c89ad62fee9b/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_14.12.38.png/{w}x{h}{c}.{f}', 'Détails et exclusions', 'Details and exclusions'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c2/e9/f6/c2e9f60d-ea95-ff37-7fb6-3c41cd84b5b3/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_14.03.26.png/{w}x{h}{c}.{f}', 'Collection en grille', 'Collection grid'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/39/e0/9e39e003-a721-aced-32ab-f2733db37cd5/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_14.04.50.png/{w}x{h}{c}.{f}', 'Statistiques', 'Statistics'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/6b/62/0f6b622f-4815-59f8-d1e0-883c27b01c0f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_14.40.25.png/{w}x{h}{c}.{f}', 'Illustrations et outils', 'Artwork and tools'],
+            ],
+            watch: [
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/be/10/6dbe1077-271c-808c-822d-a39703ed42f2/Screenshot_-_Apple_Watch_Series_11__U002842mm_U0029_-_2026-06-15_at_15.18.49.png/{w}x{h}{c}.{f}', 'Compagnon Apple Watch', 'Apple Watch companion'],
+              ['https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/03/e0/7203e0e3-6d56-4c4c-29b8-f0559e975334/Screenshot_-_Apple_Watch_Series_11__U002842mm_U0029_-_2026-06-15_at_15.20.53.png/{w}x{h}{c}.{f}', 'Informations essentielles', 'Essential information'],
+            ],
+          };
+
+          const videos = [
+            ['https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/79/b7/a2/79b7a21a-12f8-c450-b8b8-dfe3c4db1f49/P1412267326_default.m3u8', 'https://is1-ssl.mzstatic.com/image/thumb/PurpleVideo211/v4/aa/bb/67/aabb675b-c365-b729-a3aa-046e5ebb7a8c/393e1bfe870744b031eaa611e67ec88e_Preview_Image_Intermediate_nonvideo_453709991_2765390365.png/{w}x{h}{c}.{f}', 'Aperçu iPhone', 'iPhone preview'],
+            ['https://apptrailers.itunes.apple.com/itunes-assets/PurpleVideo211/v4/b3/4d/df/b34ddf82-47c4-140e-b140-7f5b4e8e4201/P1412267948_default.m3u8', 'https://is1-ssl.mzstatic.com/image/thumb/PurpleVideo211/v4/96/51/37/96513725-bcea-f0e4-17af-9b33822eff72/OBJECT_PROXYccd55d8d-4d36-4b07-a419-2091553342d1_KEY_FRAME_OUTPUT_5033_OBJECT_PROXYccd55d8d-4d36-4b07-a419-2091553342d1.png/{w}x{h}{c}.{f}', 'Aperçu du bac', 'Bin preview'],
+          ];
+
+          const cssAdd = `.screens-shell{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:48px 0 82px}.screens-hero{padding:42px 0 34px;max-width:840px}.screens-hero h1{color:var(--ink);font-size:clamp(3rem,8vw,6.4rem);line-height:0.96}.media-section{padding:74px 0;border-top:1px solid var(--line)}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(240px,380px));gap:clamp(18px,4vw,36px);align-items:start;margin-top:38px}.video-card,.shot-card{margin:0;border:1px solid var(--line);border-radius:8px;background:var(--soft);box-shadow:0 16px 40px rgba(17,17,20,0.05);overflow:hidden}.video-card{padding:14px}.video-card video{display:block;width:100%;aspect-ratio:9 / 19.5;border-radius:6px;background:var(--soft-2);object-fit:cover}.video-card figcaption,.shot-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 4px 2px;color:var(--muted);font-size:0.92rem;font-weight:850}.video-card figcaption a{color:var(--red);white-space:nowrap}.shot-grid{display:grid;gap:clamp(18px,3vw,28px);margin-top:38px}.phone-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.ipad-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.watch-grid{grid-template-columns:repeat(2,minmax(180px,280px))}.shot-card{padding:12px}.shot-card img{width:100%;border-radius:6px;background:white;object-fit:cover}.shot-card.iphone img{aspect-ratio:9 / 19.5}.shot-card.ipad img{aspect-ratio:4 / 3}.shot-card.watch img{aspect-ratio:1 / 1}.watch-section{padding-bottom:0}@media (max-width:1040px){.phone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ipad-grid{grid-template-columns:1fr}}@media (max-width:720px){.screens-shell{width:min(100% - 24px,1180px)}.video-grid,.phone-grid,.watch-grid{grid-template-columns:1fr}.video-card,.shot-card{padding:10px}.video-card figcaption,.shot-card figcaption{align-items:flex-start;flex-direction:column}}`;
+
+          function pair(fr, en) { return `<span class="lang-fr">${fr}</span><span class="lang-en">${en}</span>`; }
+          function img(template, size) { return template.replace('{w}x{h}{c}.{f}', size); }
+          function nav(prefix) {
+            return `<header class="site-header"><a class="brand" href="${prefix}index.html"><img alt="" src="${iconUrl}" width="40" height="40"><span>${appName}</span></a><nav class="nav-links" aria-label="Main navigation"><a href="${prefix}index.html#app">${pair('App','App')}</a><a href="${prefix}index.html#versions">${pair('Versions','Versions')}</a><a href="${prefix}screenshots/">${pair('Captures','Screenshots')}</a><a href="${prefix}support/">${pair('Assistance','Support')}</a><a href="${prefix}privacy/">${pair('Confidentialité','Privacy')}</a><a href="${prefix}readme/">${pair('Guide','Guide')}</a></nav><div class="header-actions"><a class="store-link" href="${appStoreUrl}">App Store</a><div class="lang-switch" aria-label="Language"><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="en">EN</button></div></div></header>`;
+          }
+          function footer(prefix) {
+            return `<footer class="footer"><span>${pair('Record Picker v1.2 - découverte/assistance','Record Picker v1.2 - discovery/support')}</span><nav aria-label="Footer"><a href="${prefix}support/">${pair('Assistance','Support')}</a><a href="${prefix}screenshots/">${pair('Captures','Screenshots')}</a><a href="${prefix}privacy/">${pair('Confidentialité','Privacy')}</a><a href="${prefix}readme/">${pair('Guide','Guide')}</a><a href="${appStoreUrl}">App Store</a></nav></footer>`;
+          }
+          function shotCard(item, kind) {
+            const size = kind === 'ipad' ? '1200x900bb.webp' : kind === 'watch' ? '420x420bb.webp' : '600x1300bb.webp';
+            return `<figure class="shot-card ${kind}"><img loading="lazy" alt="${item[2]} - ${appName}" src="${img(item[0], size)}"><figcaption>${pair(item[1], item[2])}</figcaption></figure>`;
+          }
+          function videoCard(video) {
+            return `<figure class="video-card"><video controls playsinline preload="metadata" poster="${img(video[1], '600x1300bb.webp')}"><source src="${video[0]}" type="application/vnd.apple.mpegurl"></video><figcaption><span>${pair(video[2], video[3])}</span><a href="${video[0]}">${pair(copy.fr.openVideo, copy.en.openVideo)}</a></figcaption></figure>`;
+          }
+          function screenshotsPage() {
+            return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Screenshots - ${appName}</title><meta name="description" content="${appName} screenshots and App Store video previews."><meta property="og:title" content="Screenshots - ${appName}"><meta property="og:description" content="${appName} screenshots and App Store video previews."><meta property="og:image" content="${iconUrl}"><link rel="canonical" href="${appStoreUrl}"><link rel="icon" href="${iconUrl}"><link rel="stylesheet" href="../styles.css"><script defer src="../site.js"></script></head><body class="screens-page" data-lang="fr">${nav('../')}<main class="screens-shell"><section class="screens-hero"><p class="glass-pill eyebrow">${pair(copy.fr.eyebrow, copy.en.eyebrow)}</p><h1>${pair(copy.fr.title, copy.en.title)}</h1><p class="doc-tagline">${pair(copy.fr.tagline, copy.en.tagline)}</p><p class="lead">${pair(copy.fr.deck, copy.en.deck)}</p><div class="doc-actions"><a class="button primary" href="${appStoreUrl}">App Store</a><a class="button glass" href="../index.html">${pair('Accueil','Home')}</a></div></section><section class="media-section"><div class="section-head"><p class="kicker">${pair('Vidéos','Videos')}</p><h2>${pair(copy.fr.appPreviews, copy.en.appPreviews)}</h2><p class="lead">${pair(copy.fr.appPreviewsLead, copy.en.appPreviewsLead)}</p></div><div class="video-grid">${videos.map(videoCard).join('')}</div></section><section class="media-section"><div class="section-head"><p class="kicker">iPhone</p><h2>iPhone</h2><p class="lead">${pair(copy.fr.iphoneLead, copy.en.iphoneLead)}</p></div><div class="shot-grid phone-grid">${shots.iphone.map((item) => shotCard(item, 'iphone')).join('')}</div></section><section class="media-section"><div class="section-head"><p class="kicker">iPad</p><h2>iPad</h2><p class="lead">${pair(copy.fr.ipadLead, copy.en.ipadLead)}</p></div><div class="shot-grid ipad-grid">${shots.ipad.map((item) => shotCard(item, 'ipad')).join('')}</div></section><section class="media-section watch-section"><div class="section-head"><p class="kicker">watchOS</p><h2>Apple Watch</h2><p class="lead">${pair(copy.fr.watchLead, copy.en.watchLead)}</p></div><div class="shot-grid watch-grid">${shots.watch.map((item) => shotCard(item, 'watch')).join('')}</div></section></main>${footer('../')}</body></html>`;
+          }
+
+          let index = fs.readFileSync('index.html', 'utf8');
+          const navLink = `<a href="screenshots/">${pair('Captures','Screenshots')}</a>`;
+          const navStart = index.indexOf('<nav class="nav-links"');
+          const navEnd = index.indexOf('</nav><div class="header-actions">', navStart);
+          if (navStart !== -1 && navEnd !== -1 && !index.slice(navStart, navEnd).includes('href="screenshots/"')) {
+            const supportLink = `<a href="support/">${pair('Assistance','Support')}</a>`;
+            const insertAt = index.indexOf(supportLink, navStart);
+            if (insertAt !== -1) index = index.slice(0, insertAt) + navLink + index.slice(insertAt);
+          }
+          const footerLink = `<a href="screenshots/">${pair('Captures','Screenshots')}</a>`;
+          const footerStart = index.lastIndexOf('<nav aria-label="Footer">');
+          const footerEnd = index.indexOf('</nav></footer>', footerStart);
+          if (footerStart !== -1 && footerEnd !== -1 && !index.slice(footerStart, footerEnd).includes('href="screenshots/"')) {
+            const firstFooterEnd = index.indexOf('</a>', footerStart) + 4;
+            index = index.slice(0, firstFooterEnd) + footerLink + index.slice(firstFooterEnd);
+          }
+          if (!index.includes('View all screenshots')) {
+            const cta = `<div class="cta-row compact"><a class="button glass" href="screenshots/">${pair('Voir toutes les captures','View all screenshots')}</a></div>`;
+            index = index.replace('</p></div><div class="screen-grid single-screen">', `</p>${cta}</div><div class="screen-grid single-screen">`);
+          }
+          fs.writeFileSync('index.html', index);
+
+          let css = fs.readFileSync('styles.css', 'utf8');
+          if (!css.includes('.screens-shell')) css += cssAdd;
+          fs.writeFileSync('styles.css', css);
+
+          fs.mkdirSync('screenshots', { recursive: true });
+          fs.writeFileSync('screenshots/index.html', screenshotsPage());
+          fs.writeFileSync('screenshots.html', `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=screenshots/"><title>Screenshots - ${appName}</title><link rel="canonical" href="screenshots/"></head><body><a href="screenshots/">Screenshots - ${appName}</a></body></html>`);
+
+          let readme = fs.readFileSync('README.md', 'utf8');
+          readme = readme.replace('public discovery, support, privacy, and guide pages', 'public discovery, support, screenshots, privacy, and guide pages');
+          if (!readme.includes('- Screenshots: ./screenshots/')) readme = readme.replace('- Support: ./support/\n', '- Support: ./support/\n- Screenshots: ./screenshots/\n');
+          fs.writeFileSync('README.md', readme);
+
+          fs.rmSync('.github/workflows/add-screenshots-page.yml', { force: true });
+          JS
+      - name: Commit screenshots page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html styles.css README.md screenshots/index.html screenshots.html .github/workflows/add-screenshots-page.yml
+          if git diff --cached --quiet; then
+            echo "No screenshots page changes to commit."
+            exit 0
+          fi
+          git commit -m "Add screenshots page with video previews"
+          git push
