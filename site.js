@@ -1,5 +1,7 @@
 (function () {
   var body = document.body;
+  var languageStorageKey = "recordpicker-language";
+  var manualLanguageKey = "recordpicker-language-manual";
   var locales = [
     { id: "ar", label: "العربية", dir: "rtl" },
     { id: "de", label: "Deutsch", dir: "ltr" },
@@ -24,30 +26,45 @@
   }, {});
   function normalizeLanguage(value) {
     var lang = (value || "").toLowerCase().replace("_", "-");
-    if (!lang) return "fr";
+    if (!lang) return "";
     if (localeMap[lang]) return lang;
-    if (lang === "en") return "en-us";
+    if (lang === "en") return "en-gb";
     if (lang === "pt" || lang.indexOf("pt-") === 0) return "pt-pt";
     if (lang.indexOf("zh") === 0) {
       return lang.indexOf("hant") !== -1 || lang.indexOf("tw") !== -1 || lang.indexOf("hk") !== -1 ? "zh-hant" : "zh-hans";
     }
+    if (lang.indexOf("en-us") === 0) return "en-us";
+    if (lang.indexOf("en-gb") === 0 || lang.indexOf("en-uk") === 0 || lang.indexOf("en-ie") === 0 || lang.indexOf("en-au") === 0 || lang.indexOf("en-nz") === 0) return "en-gb";
+    if (lang.indexOf("en") === 0) return "en-gb";
     var prefix = lang.split("-")[0];
     var prefixMap = { ar: "ar", de: "de", ko: "ko", es: "es-es", fr: "fr", el: "el", he: "he", it: "it", ja: "ja", nl: "nl", pl: "pl" };
-    return prefixMap[prefix] || "en-us";
+    return prefixMap[prefix] || "";
+  }
+  function pageSupportsLanguage(locale) {
+    if (!locale) return false;
+    if (locale === "fr" || locale === "en-us" || locale === "en-gb") return true;
+    if (document.querySelector(".lang-" + locale)) return true;
+    return Boolean(liveLocaleText && liveLocaleText[locale]);
+  }
+  function normalizeSupportedLanguage(value) {
+    var locale = normalizeLanguage(value);
+    return pageSupportsLanguage(locale) ? locale : "en-gb";
   }
   function browserLanguage() {
     var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
     for (var i = 0; i < languages.length; i += 1) {
       var normalized = normalizeLanguage(languages[i]);
-      if (normalized) return normalized;
+      if (pageSupportsLanguage(normalized)) return normalized;
     }
-    return "fr";
+    return "en-gb";
   }
   function preferredLanguage() {
     try {
-      return normalizeLanguage(localStorage.getItem("recordpicker-language") || browserLanguage());
+      var stored = localStorage.getItem(languageStorageKey);
+      var manualStored = localStorage.getItem(manualLanguageKey) === "1";
+      return (manualStored && normalizeSupportedLanguage(stored)) || browserLanguage();
     } catch (error) {
-      return "fr";
+      return "en-gb";
     }
   }
   function addLanguageStyle() {
@@ -77,7 +94,7 @@
     });
     select.value = selected;
     select.addEventListener("change", function () {
-      setLang(select.value);
+      setLang(select.value, true);
     });
     label.appendChild(hidden);
     label.appendChild(select);
@@ -102,9 +119,9 @@
       node.textContent = dictionary && dictionary[source] ? dictionary[source] : source;
     });
   }
-  function setLang(lang) {
-    var locale = localeMap[lang] ? lang : normalizeLanguage(lang);
-    var displayLang = locale === "fr" ? "fr" : "en";
+  function setLang(lang, persist) {
+    var locale = normalizeSupportedLanguage(lang);
+    var displayLang = document.querySelector(".lang-" + locale) ? locale : (locale === "fr" ? "fr" : "en");
     body.dataset.lang = displayLang;
     body.dataset.locale = locale;
     document.documentElement.lang = locale;
@@ -113,7 +130,12 @@
       select.value = locale;
     });
     applyLocaleText(locale);
-    try { localStorage.setItem("recordpicker-language", locale); } catch (error) {}
+    if (persist) {
+      try {
+        localStorage.setItem(languageStorageKey, locale);
+        localStorage.setItem(manualLanguageKey, "1");
+      } catch (error) {}
+    }
   }
   document.querySelectorAll(".hero-note").forEach(function (note) {
     note.remove();
@@ -134,7 +156,7 @@
   }
   document.querySelectorAll("[data-set-lang]").forEach(function (button) {
     button.addEventListener("click", function () {
-      setLang(button.getAttribute("data-set-lang") === "fr" ? "fr" : "en-us");
+      setLang(button.getAttribute("data-set-lang") === "fr" ? "fr" : "en-gb", true);
     });
   });
   var preferred = preferredLanguage();
@@ -185,5 +207,5 @@
       }
     });
   }
-  setLang(preferred);
+  setLang(preferred, false);
 })();
