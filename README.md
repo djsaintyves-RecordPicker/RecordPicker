@@ -32,10 +32,6 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Data quality: record detail sheets, manual row deletion, Discogs/MusicBrainz searches.
 - Missing tracks: MusicBrainz search followed by Discogs search.
 
-### v1.0 - June 17, 2026
-
-- No public note is displayed in the App Store history.
-
 ## Privacy
 
 Your collection stays stored locally on your device. Metadata and cover searches contact external services only when you start a lookup.
