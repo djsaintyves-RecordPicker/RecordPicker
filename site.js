@@ -31,5 +31,51 @@
       setLang(button.getAttribute("data-set-lang") || "fr");
     });
   });
+  var lightbox = document.querySelector("[data-video-lightbox]");
+  if (lightbox) {
+    var video = lightbox.querySelector("video");
+    var videoTitle = lightbox.querySelector("[data-video-title]");
+    function closeVideo() {
+      lightbox.setAttribute("hidden", "");
+      lightbox.setAttribute("aria-hidden", "true");
+      body.classList.remove("video-lightbox-open");
+      if (video) {
+        video.pause();
+        video.removeAttribute("src");
+        video.removeAttribute("poster");
+        video.load();
+      }
+    }
+    document.querySelectorAll("[data-video-src]").forEach(function (trigger) {
+      trigger.addEventListener("click", function () {
+        var lang = body.dataset.lang === "en" ? "en" : "fr";
+        if (videoTitle) {
+          videoTitle.textContent = trigger.getAttribute(lang === "en" ? "data-title-en" : "data-title-fr") || "";
+        }
+        if (video) {
+          video.setAttribute("poster", trigger.getAttribute("data-video-poster") || "");
+          video.setAttribute("src", trigger.getAttribute("data-video-src") || "");
+          video.load();
+        }
+        lightbox.removeAttribute("hidden");
+        lightbox.setAttribute("aria-hidden", "false");
+        body.classList.add("video-lightbox-open");
+        if (video) {
+          var playback = video.play();
+          if (playback && playback.catch) {
+            playback.catch(function () {});
+          }
+        }
+      });
+    });
+    lightbox.querySelectorAll("[data-video-close]").forEach(function (button) {
+      button.addEventListener("click", closeVideo);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !lightbox.hasAttribute("hidden")) {
+        closeVideo();
+      }
+    });
+  }
   setLang(preferred === "en" ? "en" : "fr");
 })();
