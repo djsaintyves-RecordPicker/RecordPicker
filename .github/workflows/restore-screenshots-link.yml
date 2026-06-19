@@ -1,0 +1,22 @@
+name: Restore screenshots link
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/restore-screenshots-link.yml
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node .github/scripts/restore-screenshots-link.js
