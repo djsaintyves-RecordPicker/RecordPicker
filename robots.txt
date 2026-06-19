@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap.xml
