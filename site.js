@@ -1,7 +1,7 @@
 (function () {
   var body = document.body;
   var locales = [{"id":"ar","code":"ar","name":"العربية","rtl":true},{"id":"de","code":"de","name":"Deutsch","rtl":false},{"id":"en-au","code":"en-AU","name":"English (Australia)","rtl":false},{"id":"en-ca","code":"en-CA","name":"English (Canada)","rtl":false},{"id":"en-us","code":"en-US","name":"English (US)","rtl":false},{"id":"en-gb","code":"en-GB","name":"English (UK)","rtl":false},{"id":"ca","code":"ca","name":"Català","rtl":false},{"id":"ko","code":"ko","name":"한국어","rtl":false},{"id":"zh-hans","code":"zh-Hans","name":"简体中文","rtl":false},{"id":"zh-hant","code":"zh-Hant","name":"繁體中文","rtl":false},{"id":"da","code":"da","name":"Dansk","rtl":false},{"id":"es-es","code":"es-ES","name":"Español","rtl":false},{"id":"fi","code":"fi","name":"Suomi","rtl":false},{"id":"fr-ca","code":"fr-CA","name":"Français (Canada)","rtl":false},{"id":"fr","code":"fr-FR","name":"Français (France)","rtl":false},{"id":"el","code":"el","name":"Ελληνικά","rtl":false},{"id":"he","code":"he","name":"עברית","rtl":true},{"id":"hi","code":"hi","name":"हिन्दी","rtl":false},{"id":"id","code":"id","name":"Bahasa Indonesia","rtl":false},{"id":"it","code":"it","name":"Italiano","rtl":false},{"id":"ja","code":"ja","name":"日本語","rtl":false},{"id":"nl","code":"nl","name":"Nederlands","rtl":false},{"id":"nb","code":"nb","name":"Norsk","rtl":false},{"id":"pl","code":"pl","name":"Polski","rtl":false},{"id":"pt-br","code":"pt-BR","name":"Português (Brasil)","rtl":false},{"id":"pt-pt","code":"pt-PT","name":"Português (Portugal)","rtl":false},{"id":"ru","code":"ru","name":"Русский","rtl":false},{"id":"sv","code":"sv","name":"Svenska","rtl":false},{"id":"tr","code":"tr","name":"Türkçe","rtl":false}];
-  var storefronts = {"ar":{"price":"‏١٢٫٩٩ ر.س.‏","market":"App Store المملكة العربية السعودية","url":"https://apps.apple.com/sa/app/recordpicker/id6780422305"},"de":{"price":"2,99 €","market":"App Store Deutschland","url":"https://apps.apple.com/de/app/recordpicker/id6780422305"},"en-au":{"price":"$4.99","market":"App Store Australia","url":"https://apps.apple.com/au/app/recordpicker/id6780422305"},"en-ca":{"price":"$3.99","market":"App Store Canada","url":"https://apps.apple.com/ca/app/recordpicker/id6780422305"},"en-us":{"price":"$2.99","market":"App Store United States","url":"https://apps.apple.com/us/app/recordpicker/id6780422305"},"en-gb":{"price":"£2.99","market":"App Store United Kingdom","url":"https://apps.apple.com/gb/app/recordpicker/id6780422305"},"ca":{"price":"2,99 €","market":"App Store Espanya","url":"https://apps.apple.com/es/app/recordpicker/id6780422305"},"ko":{"price":"₩4,400","market":"App Store 대한민국","url":"https://apps.apple.com/kr/app/recordpicker/id6780422305"},"zh-hans":{"price":"¥22.00","market":"App Store 中国","url":"https://apps.apple.com/cn/app/recordpicker/id6780422305"},"zh-hant":{"price":"$90.00","market":"App Store 台灣","url":"https://apps.apple.com/tw/app/recordpicker/id6780422305"},"da":{"price":"29,00 kr.","market":"App Store Danmark","url":"https://apps.apple.com/dk/app/recordpicker/id6780422305"},"es-es":{"price":"2,99 €","market":"App Store España","url":"https://apps.apple.com/es/app/recordpicker/id6780422305"},"fi":{"price":"2,99 €","market":"App Store Suomi","url":"https://apps.apple.com/fi/app/recordpicker/id6780422305"},"fr-ca":{"price":"3,99 $","market":"App Store Canada","url":"https://apps.apple.com/ca/app/recordpicker/id6780422305"},"fr":{"price":"2,99 €","market":"App Store France","url":"https://apps.apple.com/fr/app/recordpicker/id6780422305"},"el":{"price":"2,99 €","market":"App Store Ελλάδα","url":"https://apps.apple.com/gr/app/recordpicker/id6780422305"},"he":{"price":"‏9.90 ‏₪","market":"App Store ישראל","url":"https://apps.apple.com/il/app/recordpicker/id6780422305"},"hi":{"price":"₹299.00","market":"App Store भारत","url":"https://apps.apple.com/in/app/recordpicker/id6780422305"},"id":{"price":"Rp 49.000","market":"App Store Indonesia","url":"https://apps.apple.com/id/app/recordpicker/id6780422305"},"it":{"price":"2,99 €","market":"App Store Italia","url":"https://apps.apple.com/it/app/recordpicker/id6780422305"},"ja":{"price":"￥500","market":"App Store 日本","url":"https://apps.apple.com/jp/app/recordpicker/id6780422305"},"nl":{"price":"€ 2,99","market":"App Store Nederland","url":"https://apps.apple.com/nl/app/recordpicker/id6780422305"},"nb":{"price":"39,00 kr","market":"App Store Norge","url":"https://apps.apple.com/no/app/recordpicker/id6780422305"},"pl":{"price":"14,99 zł","market":"App Store Polska","url":"https://apps.apple.com/pl/app/recordpicker/id6780422305"},"pt-br":{"price":"R$ 19,90","market":"App Store Brasil","url":"https://apps.apple.com/br/app/recordpicker/id6780422305"},"pt-pt":{"price":"2,99 €","market":"App Store Portugal","url":"https://apps.apple.com/pt/app/recordpicker/id6780422305"},"ru":{"price":"249,00 ₽","market":"App Store Россия","url":"https://apps.apple.com/ru/app/recordpicker/id6780422305"},"sv":{"price":"39,00 kr","market":"App Store Sverige","url":"https://apps.apple.com/se/app/recordpicker/id6780422305"},"tr":{"price":"₺149,99","market":"App Store Türkiye","url":"https://apps.apple.com/tr/app/recordpicker/id6780422305"}};
+  var storefronts = {"ar":{"price":"‏١٢٫٩٩ ر.س.‏","market":"App Store المملكة العربية السعودية","url":"https://apps.apple.com/sa/app/recordpicker/id6780422305"},"de":{"price":"2,99 €","market":"App Store Deutschland","url":"https://apps.apple.com/de/app/recordpicker/id6780422305"},"en-au":{"price":"$4.99","market":"App Store Australia","url":"https://apps.apple.com/au/app/recordpicker/id6780422305"},"en-ca":{"price":"$3.99","market":"App Store Canada","url":"https://apps.apple.com/ca/app/recordpicker/id6780422305"},"en-us":{"price":"$2.99","market":"App Store United States","url":"https://apps.apple.com/us/app/recordpicker/id6780422305"},"en-gb":{"price":"£2.99","market":"App Store United Kingdom","url":"https://apps.apple.com/gb/app/recordpicker/id6780422305"},"ca":{"price":"2,99 €","market":"App Store Espanya","url":"https://apps.apple.com/es/app/recordpicker/id6780422305"},"ko":{"price":"₩4,400","market":"App Store 대한민국","url":"https://apps.apple.com/kr/app/recordpicker/id6780422305"},"zh-hans":{"price":"¥22.00","market":"App Store 中国","url":"https://apps.apple.com/cn/app/recordpicker/id6780422305"},"zh-hant":{"price":"$90.00","market":"App Store 台灣","url":"https://apps.apple.com/tw/app/recordpicker/id6780422305"},"da":{"price":"29,00 kr.","market":"App Store Danmark","url":"https://apps.apple.com/dk/app/recordpicker/id6780422305"},"es-es":{"price":"2,99 €","market":"App Store España","url":"https://apps.apple.com/es/app/recordpicker/id6780422305"},"fi":{"price":"2,99 €","market":"App Store Suomi","url":"https://apps.apple.com/fi/app/recordpicker/id6780422305"},"fr-ca":{"price":"3,99 $","market":"App Store Canada","url":"https://apps.apple.com/ca/app/recordpicker/id6780422305"},"fr":{"price":"2,99 €","market":"App Store France","url":"https://apps.apple.com/fr/app/recordpicker/id6780422305"},"el":{"price":"2,99 €","market":"App Store Ελλάδα","url":"https://apps.apple.com/gr/app/recordpicker/id6780422305"},"he":{"price":"‏9.90 ‏₪","market":"App Store ישראל","url":"https://apps.apple.com/il/app/recordpicker/id6780422305"},"hi":{"price":"₹299.00","market":"App Store भारत","url":"https://apps.apple.com/in/app/recordpicker/id6780422305"},"id":{"price":"Rp 49.000","market":"App Store Indonesia","url":"https://apps.apple.com/id/app/recordpicker/id6780422305"},"it":{"price":"2,99 €","market":"App Store Italia","url":"https://apps.apple.com/it/app/recordpicker/id6780422305"},"ja":{"price":"￥500","market":"App Store 日本","url":"https://apps.apple.com/jp/app/recordpicker/id6780422305"},"nl":{"price":"€ 2,99","market":"App Store Nederland","url":"https://apps.apple.com/nl/app/recordpicker/id6780422305"},"nb":{"price":"39,00 kr","market":"App Store Norge","url":"https://apps.apple.com/no/app/recordpicker/id6780422305"},"pl":{"price":"14,99 zł","market":"App Store Polska","url":"https://apps.apple.com/pl/app/recordpicker/id6780422305"},"pt-br":{"price":"R$ 19,90","market":"App Store Brasil","url":"https://apps.apple.com/br/app/recordpicker/id6780422305"},"pt-pt":{"price":"2,99 €","market":"App Store Portugal","url":"https://apps.apple.com/pt/app/recordpicker/id6780422305"},"ru":{"price":"249,00 ₽","market":"App Store Россия","url":"https://apps.apple.com/ru/app/recordpicker/id6780422305"},"sv":{"price":"39,00 kr","market":"App Store Sverige","url":"https://apps.apple.com/se/app/recordpicker/id6780422305"},"tr":{"price":"₺149,99","market":"App Store Türkiye","url":"https://apps.apple.com/tr/app/recordpicker/id6780422305"},"fr-ch":{"price":"2.99 CHF","market":"App Store Suisse","url":"https://apps.apple.com/ch/app/recordpicker/id6780422305"},"de-ch":{"price":"CHF 2.99","market":"App Store Schweiz","url":"https://apps.apple.com/ch/app/recordpicker/id6780422305"},"it-ch":{"price":"CHF 2.99","market":"App Store Svizzera","url":"https://apps.apple.com/ch/app/recordpicker/id6780422305"},"en-ch":{"price":"CHF 2.99","market":"App Store Switzerland","url":"https://apps.apple.com/ch/app/recordpicker/id6780422305"}};
   var translations = [];
   var localeFallbacks = {"en-au":"en-gb","en-ca":"en-gb","fr-ca":"fr","pt-br":"pt-pt"};
   var siteBasePath = "/RecordPicker/";
@@ -50,6 +50,14 @@
     if (lang.indexOf("tr") === 0) return "tr";
     return "";
   }
+  function normalizeStorefront(value) {
+    var lang = String(value || "").toLowerCase().replace(/_/g, "-");
+    if (lang === "fr-ch" || lang.indexOf("fr-ch-") === 0) return "fr-ch";
+    if (lang === "de-ch" || lang.indexOf("de-ch-") === 0) return "de-ch";
+    if (lang === "it-ch" || lang.indexOf("it-ch-") === 0) return "it-ch";
+    if (lang === "en-ch" || lang.indexOf("en-ch-") === 0) return "en-ch";
+    return "";
+  }
   function localizedValue(row, lang) {
     var pairs = row[1] || [];
     var index = localeIndexes[lang];
@@ -96,6 +104,14 @@
       if (storefront.url) element.setAttribute("href", storefront.url);
     });
   }
+  function detectStorefront() {
+    var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < languages.length; i += 1) {
+      var storefront = normalizeStorefront(languages[i]);
+      if (storefront) return storefront;
+    }
+    return "";
+  }
   function detectLanguage() {
     var languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
     for (var i = 0; i < languages.length; i += 1) {
@@ -109,6 +125,15 @@
       var queryLang = new URLSearchParams(window.location.search).get("lang");
       var hashMatch = String(window.location.hash || "").match(/^#lang=([a-z0-9-]+)/i);
       return normalizeLanguage(queryLang || (hashMatch && hashMatch[1]) || "");
+    } catch (error) {
+      return "";
+    }
+  }
+  function requestedStorefront() {
+    try {
+      var queryLang = new URLSearchParams(window.location.search).get("lang");
+      var hashMatch = String(window.location.hash || "").match(/^#lang=([a-z0-9-]+)/i);
+      return normalizeStorefront(queryLang || (hashMatch && hashMatch[1]) || "");
     } catch (error) {
       return "";
     }
@@ -154,7 +179,7 @@
     document.documentElement.lang = locale.code || lang;
     document.documentElement.dir = locale.rtl ? "rtl" : "ltr";
     applyTranslations(lang);
-    applyStorefront(lang);
+    applyStorefront(requestedStorefront() || detectStorefront() || lang);
     document.querySelectorAll("[data-language-current]").forEach(function (label) {
       label.textContent = locale.name || lang;
     });
