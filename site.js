@@ -54,7 +54,7 @@
     if (document.querySelector("[data-language-patch-style]")) return;
     var style = document.createElement("style");
     style.setAttribute("data-language-patch-style", "");
-    style.textContent = ".language-menu{display:inline-flex;align-items:center;border:1px solid rgba(17,17,20,.08);border-radius:999px;background:rgba(255,255,255,.66);box-shadow:0 12px 32px rgba(17,17,20,.07);backdrop-filter:blur(22px) saturate(1.28);padding:4px 8px}.language-menu select{max-width:168px;border:0;border-radius:999px;background:transparent;color:var(--red);cursor:pointer;font-weight:850;padding:7px 2px;outline:none}html[dir='rtl'] .language-menu select{direction:rtl}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}";
+    style.textContent = ".language-menu{display:inline-flex;align-items:center;border:1px solid rgba(17,17,20,.08);border-radius:999px;background:rgba(255,255,255,.66);box-shadow:0 12px 32px rgba(17,17,20,.07);backdrop-filter:blur(22px) saturate(1.28);padding:4px 8px}.language-menu select{max-width:168px;border:0;border-radius:999px;background:transparent;color:var(--red);cursor:pointer;font-weight:650;padding:7px 2px;outline:none}html[dir='rtl'] .language-menu select{direction:rtl}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}";
     document.head.appendChild(style);
   }
   function installLanguageMenu(selected) {
