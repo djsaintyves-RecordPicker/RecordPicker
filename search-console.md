@@ -23,6 +23,9 @@ Google Search Console verification must be completed from the owner's Google acc
 Recommended options:
 
 - URL-prefix verification from Google Search Console.
-- HTML tag verification, if Google provides a `google-site-verification` token.
+- HTML file verification with `googlec6e93ec4f524be4f.html`.
+- HTML tag verification, if Google provides a `google-site-verification` token instead.
 
-Do not publish a placeholder verification token. Add the real token only after it has been copied from Google Search Console.
+The HTML verification file is published at:
+
+https://djsaintyves-recordpicker.github.io/RecordPicker/googlec6e93ec4f524be4f.html
