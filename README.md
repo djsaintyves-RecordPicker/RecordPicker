@@ -11,6 +11,9 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Screenshots: ./screenshots/
 - Privacy policy: ./privacy/
 - Features page: ./readme/
+- How to choose what vinyl record to play next: ./choose-vinyl-record/
+- Random vinyl record picker app: ./random-vinyl-record-picker/
+- Manage and rediscover a vinyl collection: ./manage-vinyl-collection/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
 - Contact: djsaintyves@mac.com
 

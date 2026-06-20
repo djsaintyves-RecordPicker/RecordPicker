@@ -5,7 +5,7 @@
   var translations = [];
   var localeFallbacks = {"en-au":"en-gb","en-ca":"en-gb","fr-ca":"fr","pt-br":"pt-pt"};
   var siteBasePath = "/RecordPicker/";
-  var publicPagePaths = ["","support/","privacy/","screenshots/","readme/"];
+  var publicPagePaths = ["","support/","privacy/","screenshots/","readme/","choose-vinyl-record/","random-vinyl-record-picker/","manage-vinyl-collection/"];
   var languageStorageKey = "recordpicker-language";
   var manualLanguageKey = "recordpicker-language-manual";
   var localeMap = {};
