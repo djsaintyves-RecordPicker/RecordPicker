@@ -12,10 +12,6 @@ https://recordpicker.app/
 
 https://recordpicker.app/sitemap.xml
 
-Optional media sitemap:
-
-https://recordpicker.app/sitemap-media.xml
-
 ## Robots file
 
 https://recordpicker.app/robots.txt
