@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap.xml
-Sitemap: https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap-media.xml
+Sitemap: https://recordpicker.app/sitemap.xml
+Sitemap: https://recordpicker.app/sitemap-media.xml

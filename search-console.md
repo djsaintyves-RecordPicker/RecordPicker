@@ -6,19 +6,19 @@ This file documents the public indexing setup for the Record Picker GitHub Pages
 
 Use a URL-prefix property:
 
-https://djsaintyves-recordpicker.github.io/RecordPicker/
+https://recordpicker.app/
 
 ## Sitemap to submit
 
-https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap.xml
+https://recordpicker.app/sitemap.xml
 
 Optional media sitemap:
 
-https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap-media.xml
+https://recordpicker.app/sitemap-media.xml
 
 ## Robots file
 
-https://djsaintyves-recordpicker.github.io/RecordPicker/robots.txt
+https://recordpicker.app/robots.txt
 
 ## Verification
 
@@ -32,4 +32,4 @@ Recommended options:
 
 The HTML verification file is published at:
 
-https://djsaintyves-recordpicker.github.io/RecordPicker/googlec6e93ec4f524be4f.html
+https://recordpicker.app/googlec6e93ec4f524be4f.html
