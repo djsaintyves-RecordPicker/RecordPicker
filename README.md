@@ -20,6 +20,14 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v1.3 - June 21, 2026
+
+- Apple Watch reimagined: the cover sits as a blurred backdrop, with three thumb-friendly buttons for favorite, undo the last draw, and next draw, each with dedicated haptic feedback.
+- Apple Watch layout adapted from 41 mm to Ultra.
+- Barcode scan now falls back to Discogs when MusicBrainz does not know the reference; if Discogs finds the edition, the form is pre-filled automatically.
+- Record Picker is available in 29 languages, with new variants and localizations: Arabic, Catalan, Korean, Danish, English for Australia/Canada/United Kingdom, Finnish, Canadian French, Hebrew, Hindi, Indonesian, Norwegian, Polish, Portuguese for Brazil/Portugal, Russian, Swedish, and Turkish.
+- Small polish: better balanced cover picker sheet on iPad, faster iPhone-Watch sync, and a discreet App Store review request after regular use.
+
 ### v1.2 - June 18, 2026
 
 - Full music collection catalog for imports, manual album entry, and barcode scanning.
