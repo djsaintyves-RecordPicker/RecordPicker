@@ -12,6 +12,10 @@ https://djsaintyves-recordpicker.github.io/RecordPicker/
 
 https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap.xml
 
+Optional media sitemap:
+
+https://djsaintyves-recordpicker.github.io/RecordPicker/sitemap-media.xml
+
 ## Robots file
 
 https://djsaintyves-recordpicker.github.io/RecordPicker/robots.txt
