@@ -20,7 +20,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v1.3 - June 21, 2026
+### v1.3 - June 22, 2026
 
 - Apple Watch reimagined: the cover sits as a blurred backdrop, with three thumb-friendly buttons for favorite, undo the last draw, and next draw, each with dedicated haptic feedback.
 - Apple Watch layout adapted from 41 mm to Ultra.
