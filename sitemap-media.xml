@@ -156,26 +156,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -409,26 +401,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -662,26 +646,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -915,26 +891,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -1168,26 +1136,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -1421,26 +1381,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -1674,26 +1626,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -1927,26 +1871,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -2180,26 +2116,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -2433,26 +2361,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -2686,26 +2606,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -2939,26 +2851,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -3192,26 +3096,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -3445,26 +3341,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -3698,26 +3586,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -3951,26 +3831,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -4204,26 +4076,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -4457,26 +4321,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -4710,26 +4566,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -4963,26 +4811,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -5216,26 +5056,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -5469,26 +5301,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -5722,26 +5546,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -5975,26 +5791,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -6228,26 +6036,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -6481,26 +6281,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -6734,26 +6526,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -6987,26 +6771,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -7240,26 +7016,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
@@ -7493,26 +7261,18 @@
       <image:caption>Favorite on the wrist in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</video:thumbnail_loc>
-      <video:title>iPhone preview - Record Picker</video:title>
-      <video:description>iPhone preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-1.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:title>Mood selection - Record Picker</video:title>
+      <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</video:thumbnail_loc>
-      <video:title>Bin preview - Record Picker</video:title>
-      <video:description>Bin preview preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-2.mp4</video:content_loc>
-      <video:publication_date>2026-06-18</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</video:thumbnail_loc>
-      <video:title>Animated draw - Record Picker</video:title>
-      <video:description>Animated draw preview showing Record Picker on iPhone.</video:description>
-      <video:content_loc>https://recordpicker.app/assets/video/app-preview-3.mp4</video:content_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</video:thumbnail_loc>
+      <video:title>iPad import - Record Picker</video:title>
+      <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
       <video:publication_date>2026-06-18</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
