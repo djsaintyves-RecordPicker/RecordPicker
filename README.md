@@ -15,7 +15,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Random vinyl record picker app: ./random-vinyl-record-picker/
 - Manage and rediscover a vinyl collection: ./manage-vinyl-collection/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
-- Contact: djsaintyves@mac.com
+- Contact: support@recordpicker.app
 
 ## App Store version history
 
