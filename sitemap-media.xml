@@ -6,12 +6,12 @@
     <loc>https://recordpicker.app/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -61,39 +61,44 @@
     <loc>https://recordpicker.app/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -204,9 +209,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -254,12 +259,12 @@
     <loc>https://recordpicker.app/ar/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -309,39 +314,44 @@
     <loc>https://recordpicker.app/ar/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -452,9 +462,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -502,12 +512,12 @@
     <loc>https://recordpicker.app/de/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -557,39 +567,44 @@
     <loc>https://recordpicker.app/de/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -700,9 +715,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -750,12 +765,12 @@
     <loc>https://recordpicker.app/en-au/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -805,39 +820,44 @@
     <loc>https://recordpicker.app/en-au/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -948,9 +968,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -998,12 +1018,12 @@
     <loc>https://recordpicker.app/en-ca/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1053,39 +1073,44 @@
     <loc>https://recordpicker.app/en-ca/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -1196,9 +1221,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -1246,12 +1271,12 @@
     <loc>https://recordpicker.app/en-us/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1301,39 +1326,44 @@
     <loc>https://recordpicker.app/en-us/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -1444,9 +1474,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -1494,12 +1524,12 @@
     <loc>https://recordpicker.app/en-gb/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1549,39 +1579,44 @@
     <loc>https://recordpicker.app/en-gb/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -1692,9 +1727,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -1742,12 +1777,12 @@
     <loc>https://recordpicker.app/ca/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1797,39 +1832,44 @@
     <loc>https://recordpicker.app/ca/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -1940,9 +1980,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -1990,12 +2030,12 @@
     <loc>https://recordpicker.app/ko/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2045,39 +2085,44 @@
     <loc>https://recordpicker.app/ko/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -2188,9 +2233,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -2238,12 +2283,12 @@
     <loc>https://recordpicker.app/zh-hans/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2293,39 +2338,44 @@
     <loc>https://recordpicker.app/zh-hans/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -2436,9 +2486,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -2486,12 +2536,12 @@
     <loc>https://recordpicker.app/zh-hant/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2541,39 +2591,44 @@
     <loc>https://recordpicker.app/zh-hant/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -2684,9 +2739,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -2734,12 +2789,12 @@
     <loc>https://recordpicker.app/da/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2789,39 +2844,44 @@
     <loc>https://recordpicker.app/da/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -2932,9 +2992,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -2982,12 +3042,12 @@
     <loc>https://recordpicker.app/es-es/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3037,39 +3097,44 @@
     <loc>https://recordpicker.app/es-es/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -3180,9 +3245,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -3230,12 +3295,12 @@
     <loc>https://recordpicker.app/fi/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3285,39 +3350,44 @@
     <loc>https://recordpicker.app/fi/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -3428,9 +3498,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -3478,12 +3548,12 @@
     <loc>https://recordpicker.app/fr-ca/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3533,39 +3603,44 @@
     <loc>https://recordpicker.app/fr-ca/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -3676,9 +3751,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -3726,12 +3801,12 @@
     <loc>https://recordpicker.app/fr/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3781,39 +3856,44 @@
     <loc>https://recordpicker.app/fr/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -3924,9 +4004,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -3974,12 +4054,12 @@
     <loc>https://recordpicker.app/el/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4029,39 +4109,44 @@
     <loc>https://recordpicker.app/el/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -4172,9 +4257,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -4222,12 +4307,12 @@
     <loc>https://recordpicker.app/he/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4277,39 +4362,44 @@
     <loc>https://recordpicker.app/he/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -4420,9 +4510,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -4470,12 +4560,12 @@
     <loc>https://recordpicker.app/hi/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4525,39 +4615,44 @@
     <loc>https://recordpicker.app/hi/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -4668,9 +4763,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -4718,12 +4813,12 @@
     <loc>https://recordpicker.app/id/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4773,39 +4868,44 @@
     <loc>https://recordpicker.app/id/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -4916,9 +5016,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -4966,12 +5066,12 @@
     <loc>https://recordpicker.app/it/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5021,39 +5121,44 @@
     <loc>https://recordpicker.app/it/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -5164,9 +5269,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -5214,12 +5319,12 @@
     <loc>https://recordpicker.app/ja/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5269,39 +5374,44 @@
     <loc>https://recordpicker.app/ja/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -5412,9 +5522,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -5462,12 +5572,12 @@
     <loc>https://recordpicker.app/nl/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5517,39 +5627,44 @@
     <loc>https://recordpicker.app/nl/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -5660,9 +5775,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -5710,12 +5825,12 @@
     <loc>https://recordpicker.app/nb/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5765,39 +5880,44 @@
     <loc>https://recordpicker.app/nb/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -5908,9 +6028,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -5958,12 +6078,12 @@
     <loc>https://recordpicker.app/pl/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6013,39 +6133,44 @@
     <loc>https://recordpicker.app/pl/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -6156,9 +6281,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -6206,12 +6331,12 @@
     <loc>https://recordpicker.app/pt-br/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6261,39 +6386,44 @@
     <loc>https://recordpicker.app/pt-br/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -6404,9 +6534,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -6454,12 +6584,12 @@
     <loc>https://recordpicker.app/pt-pt/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6509,39 +6639,44 @@
     <loc>https://recordpicker.app/pt-pt/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -6652,9 +6787,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -6702,12 +6837,12 @@
     <loc>https://recordpicker.app/ru/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6757,39 +6892,44 @@
     <loc>https://recordpicker.app/ru/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -6900,9 +7040,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -6950,12 +7090,12 @@
     <loc>https://recordpicker.app/sv/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -7005,39 +7145,44 @@
     <loc>https://recordpicker.app/sv/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -7148,9 +7293,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
@@ -7198,12 +7343,12 @@
     <loc>https://recordpicker.app/tr/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/96/8f/0c968f3e-1d9a-4da8-0aa0-ffa565a7025f/Simulator_Screenshot_-_iPad_Air_13-inch__U0028M4_U0029_-_2026-06-18_at_13.53.09.png/1600x1200bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/10/79/f110797e-b951-e8d9-b8fa-e59ee50779bd/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.57.58.jpeg/800x1730bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/final-draw.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -7253,39 +7398,44 @@
     <loc>https://recordpicker.app/tr/screenshots/</loc>
     <lastmod>2026-06-19</lastmod>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/d7/74/70d77461-5cd8-9110-9fba-414c97656a6f/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.45.12.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Collection import in Record Picker</image:title>
       <image:caption>Collection import in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/f8/9f/fcf89f21-ac8d-0882-eb0c-55d91b2b3cda/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.10.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Animated draw in Record Picker</image:title>
       <image:caption>Animated draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/54/5d/58545da6-f4b0-ae6f-33bb-72c7892c127c/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.58.37.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/24/40/d42440d3-05ca-f0c7-ca43-f1a706a103f8/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.07.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Filters and sorting in Record Picker</image:title>
-      <image:caption>Filters and sorting in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/history.jpeg</image:loc>
+      <image:title>Recent history in Record Picker</image:title>
+      <image:caption>Recent history in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/a3/30/92a3302f-ad00-8707-b935-cc412852ee81/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_14.59.23.jpeg/600x1300bb.webp</image:loc>
-      <image:title>List and search in Record Picker</image:title>
-      <image:caption>List and search in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/19/78/a2197854-9883-9783-a29b-ca122bf88f37/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.01.jpeg/600x1300bb.webp</image:loc>
-      <image:title>Album details in Record Picker</image:title>
-      <image:caption>Album details in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/31/28/c63128af-97f0-ba08-089b-25fbf33f1373/Simulator_Screenshot_-_iPhone_17_-_2026-06-18_at_15.00.21.jpeg/600x1300bb.webp</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/tools-menu.jpeg</image:loc>
       <image:title>Collection tools in Record Picker</image:title>
       <image:caption>Collection tools in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/stats.jpeg</image:loc>
+      <image:title>Statistics in Record Picker</image:title>
+      <image:caption>Statistics in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/manual-entry.jpeg</image:loc>
+      <image:title>Manual entry in Record Picker</image:title>
+      <image:caption>Manual entry in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
@@ -7396,9 +7546,9 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
-      <image:title>Animated draw in Record Picker</image:title>
-      <image:caption>Animated draw in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:title>Mood draw in Record Picker</image:title>
+      <image:caption>Mood draw in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
