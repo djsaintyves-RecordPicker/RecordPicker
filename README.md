@@ -6,14 +6,15 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## Public pages
 
-- Discover page: ./index.html
-- Support: ./support/
-- Screenshots: ./screenshots/
-- Privacy policy: ./privacy/
-- Features page: ./readme/
-- How to choose what vinyl record to play next: ./choose-vinyl-record/
-- Random vinyl record picker app: ./random-vinyl-record-picker/
-- Manage and rediscover a vinyl collection: ./manage-vinyl-collection/
+- Official website: https://recordpicker.app/
+- Discover page: https://recordpicker.app/
+- Support: https://recordpicker.app/support/
+- Screenshots: https://recordpicker.app/screenshots/
+- Privacy policy: https://recordpicker.app/privacy/
+- Features page: https://recordpicker.app/readme/
+- How to choose what vinyl record to play next: https://recordpicker.app/choose-vinyl-record/
+- Random vinyl record picker app: https://recordpicker.app/random-vinyl-record-picker/
+- Manage and rediscover a vinyl collection: https://recordpicker.app/manage-vinyl-collection/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
 - YouTube: https://www.youtube.com/@recordpicker
 - Contact: support@recordpicker.app
