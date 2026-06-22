@@ -17,6 +17,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Manage and rediscover a vinyl collection: https://recordpicker.app/manage-vinyl-collection/
 - App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
 - YouTube: https://www.youtube.com/@recordpicker
+- Facebook: https://www.facebook.com/profile.php?id=61591096987226
 - Contact: support@recordpicker.app
 
 ## App Store version history
