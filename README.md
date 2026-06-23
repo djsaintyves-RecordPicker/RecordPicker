@@ -24,6 +24,15 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v1.4 - June 23, 2026
+
+- iPhone landscape selector: turn the phone sideways to see the cover on the left and full record details on the right, including title, artist, genre tags, format, label, and added-in year.
+- The Pick button stays centered next to the metadata, while the bottom toolbar floats equidistantly between the cover and the screen edge.
+- Swipe the album cover from right to left to draw a new record, or left to right to undo the last draw. Tap still opens details, long-press still excludes, and it works on iPad too.
+- In the record crate, the Favorite chip is replaced by a small red star on every iPhone row and every iPad grid tile: one tap to mark, one tap to unmark.
+- Statistics get denser in landscape: on iPhone, tiles reflow into three columns, matching the iPad density.
+- Cleaner swipes everywhere: swipe-to-delete is back on the wishlist and added to AI Mood history; old cross-screen swipes that fought row-level deletions have been retired.
+
 ### v1.3 - June 22, 2026
 
 - Apple Watch reimagined: the cover sits as a blurred backdrop, with three thumb-friendly buttons for favorite, undo the last draw, and next draw, each with dedicated haptic feedback.
