@@ -8552,4 +8552,24 @@
     </image:image>
 
   </url>
+  <url>
+    <loc>https://recordpicker.app/en-us/mac-app/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
+      <image:title>Record Picker Mac app icon</image:title>
+      <image:caption>Record Picker Mac app icon</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
+      <image:title>Record crate workspace in Record Picker</image:title>
+      <image:caption>Record crate workspace in Record Picker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/ipad/data-quality.png</image:loc>
+      <image:title>Data quality tools in Record Picker</image:title>
+      <image:caption>Data quality tools in Record Picker</image:caption>
+    </image:image>
+
+  </url>
 </urlset>
