@@ -8561,14 +8561,19 @@
       <image:caption>Record Picker Mac app icon</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
-      <image:title>Record crate workspace in Record Picker</image:title>
-      <image:caption>Record crate workspace in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-search.png</image:loc>
+      <image:title>Record crate with enhanced search in Record Picker for Mac</image:title>
+      <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/data-quality.png</image:loc>
-      <image:title>Data quality tools in Record Picker</image:title>
-      <image:caption>Data quality tools in Record Picker</image:caption>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:title>Random Pick in Record Picker for Mac</image:title>
+      <image:caption>Random Pick in Record Picker for Mac</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:title>Mood Pick in Record Picker for Mac</image:title>
+      <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
 
   </url>
