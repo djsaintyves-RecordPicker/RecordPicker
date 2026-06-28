@@ -90,6 +90,10 @@
       if (element.__recordPickerFrTitle === undefined) element.__recordPickerFrTitle = element.getAttribute("title") || "";
       element.setAttribute("title", getTranslation(element.getAttribute("data-i18n-title"), lang, element.__recordPickerFrTitle));
     });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) {
+      if (element.__recordPickerFrAriaLabel === undefined) element.__recordPickerFrAriaLabel = element.getAttribute("aria-label") || "";
+      element.setAttribute("aria-label", getTranslation(element.getAttribute("data-i18n-aria-label"), lang, element.__recordPickerFrAriaLabel));
+    });
   }
   function applyStorefront(lang) {
     var storefront = storefronts[lang] || storefronts["en-gb"];
