@@ -24,6 +24,12 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v1.5 - July 28, 2026
+
+- Critical reviews and keyword indexing make Mood Pick more accurate while personal notes remain protected.
+- Record Picker comes to Mac with a native catalogue and private iCloud synchronization across Mac, iPhone, iPad, and Apple Watch.
+- The public site now carries the “Play the right record” signature and complete version 1.5 notes in all 29 supported localizations.
+
 ### v1.4 - June 23, 2026
 
 - iPhone landscape selector: turn the phone sideways to see the cover on the left and full record details on the right, including title, artist, genre tags, format, label, and added-in year.
