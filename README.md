@@ -24,11 +24,20 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v1.6 - Coming soon
+
+- Record Picker is now free for collections of up to 100 records; a one-time Pro purchase unlocks an unlimited collection on iPhone, iPad and Mac, with no subscription.
+- The new native Mac app turns the big screen into a command center for browsing, enriching, cleaning up and rediscovering the collection.
+- iCloud synchronization is more responsive, with its status now visible in a dedicated Sync Center.
+- CSV imports now protect existing favorites; you can also restore favorites only from an earlier backup without replacing the current collection.
+- Duplicate detection is much faster, review selection is better, and review-keyword reindexing now shows clear progress.
+- Clear storage diagnostics report problems instead of making an error look like data loss.
+
 ### v1.5 - July 28, 2026
 
-- Critical reviews and keyword indexing make Mood Pick more accurate while personal notes remain protected.
-- Record Picker comes to Mac with a native catalogue and private iCloud synchronization across Mac, iPhone, iPad, and Apple Watch.
-- The public site now carries the “Play the right record” signature and complete version 1.5 notes in all 29 supported localizations.
+- More reliable iCloud synchronization across iPhone, iPad and Apple Watch.
+- Artwork is now added automatically after manual or barcode entry, with more robust fallbacks.
+- Improved data-quality tools, duplicate management and critical-review fetching.
 
 ### v1.4 - June 23, 2026
 
