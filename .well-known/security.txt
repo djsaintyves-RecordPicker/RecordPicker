@@ -1,0 +1,5 @@
+Contact: mailto:support@recordpicker.app
+Canonical: https://recordpicker.app/.well-known/security.txt
+Policy: https://recordpicker.app/SECURITY.md
+Preferred-Languages: fr, en
+Expires: 2028-07-31T00:00:00Z
