@@ -74,4 +74,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## Privacy
 
-Your collection stays stored locally on your device. Metadata and cover searches contact external services only when you start a lookup.
+Your collection stays stored locally on your device and, when you enable
+iCloud for Record Picker, may synchronize through your private iCloud
+database. Record Picker does not operate a collection server. Metadata and
+cover searches contact external services only when you start a lookup.
