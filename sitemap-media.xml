@@ -11,7 +11,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -66,7 +66,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -81,7 +81,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -106,7 +106,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -181,7 +181,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -231,7 +231,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -251,7 +251,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -271,12 +271,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -291,12 +291,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -341,7 +341,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -396,7 +396,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -411,7 +411,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -436,7 +436,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -511,7 +511,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -561,7 +561,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -581,7 +581,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -601,12 +601,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -621,12 +621,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -671,7 +671,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -726,7 +726,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -741,7 +741,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -766,7 +766,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -841,7 +841,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -891,7 +891,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -911,7 +911,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -931,12 +931,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -951,12 +951,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -1001,7 +1001,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1056,7 +1056,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -1071,7 +1071,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -1096,7 +1096,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1171,7 +1171,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -1221,7 +1221,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1241,7 +1241,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -1261,12 +1261,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -1281,12 +1281,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -1331,7 +1331,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1386,7 +1386,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -1401,7 +1401,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -1426,7 +1426,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1501,7 +1501,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -1551,7 +1551,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1571,7 +1571,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -1591,12 +1591,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -1611,12 +1611,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -1661,7 +1661,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -1716,7 +1716,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -1731,7 +1731,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -1756,7 +1756,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1831,7 +1831,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -1881,7 +1881,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -1901,7 +1901,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -1921,12 +1921,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -1941,12 +1941,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -1991,7 +1991,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2046,7 +2046,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -2061,7 +2061,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -2086,7 +2086,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2161,7 +2161,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -2211,7 +2211,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2231,7 +2231,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -2251,12 +2251,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -2271,12 +2271,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -2321,7 +2321,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2376,7 +2376,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -2391,7 +2391,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -2416,7 +2416,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2491,7 +2491,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -2541,7 +2541,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2561,7 +2561,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -2581,12 +2581,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -2601,12 +2601,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -2651,7 +2651,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -2706,7 +2706,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -2721,7 +2721,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -2746,7 +2746,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2821,7 +2821,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -2871,7 +2871,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -2891,7 +2891,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -2911,12 +2911,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -2931,12 +2931,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -2981,7 +2981,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3036,7 +3036,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -3051,7 +3051,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -3076,7 +3076,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3151,7 +3151,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -3201,7 +3201,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3221,7 +3221,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -3241,12 +3241,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -3261,12 +3261,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -3311,7 +3311,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3366,7 +3366,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -3381,7 +3381,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -3406,7 +3406,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3481,7 +3481,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -3531,7 +3531,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3551,7 +3551,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -3571,12 +3571,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -3591,12 +3591,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -3641,7 +3641,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -3696,7 +3696,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -3711,7 +3711,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -3736,7 +3736,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3811,7 +3811,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -3861,7 +3861,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -3881,7 +3881,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -3901,12 +3901,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -3921,12 +3921,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -3971,7 +3971,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4026,7 +4026,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -4041,7 +4041,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -4066,7 +4066,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4141,7 +4141,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -4191,7 +4191,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4211,7 +4211,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -4231,12 +4231,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -4251,12 +4251,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -4301,7 +4301,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4356,7 +4356,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -4371,7 +4371,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -4396,7 +4396,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4471,7 +4471,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -4521,7 +4521,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4541,7 +4541,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -4561,12 +4561,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -4581,12 +4581,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -4631,7 +4631,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -4686,7 +4686,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -4701,7 +4701,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-fr.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -4726,7 +4726,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4801,7 +4801,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -4851,7 +4851,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -4871,7 +4871,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -4891,12 +4891,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -4911,12 +4911,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-fr.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -4961,7 +4961,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5016,7 +5016,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -5031,7 +5031,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-fr.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -5056,7 +5056,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5131,7 +5131,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -5181,7 +5181,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5201,7 +5201,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-fr.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -5221,12 +5221,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -5241,12 +5241,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-fr.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -5291,7 +5291,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5346,7 +5346,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -5361,7 +5361,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -5386,7 +5386,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5461,7 +5461,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -5511,7 +5511,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5531,7 +5531,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -5551,12 +5551,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -5571,12 +5571,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -5621,7 +5621,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -5676,7 +5676,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -5691,7 +5691,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -5716,7 +5716,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5791,7 +5791,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -5841,7 +5841,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -5861,7 +5861,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -5881,12 +5881,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -5901,12 +5901,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -5951,7 +5951,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6006,7 +6006,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -6021,7 +6021,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -6046,7 +6046,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6121,7 +6121,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -6171,7 +6171,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6191,7 +6191,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -6211,12 +6211,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -6231,12 +6231,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -6281,7 +6281,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6336,7 +6336,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -6351,7 +6351,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -6376,7 +6376,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6451,7 +6451,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -6501,7 +6501,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6521,7 +6521,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -6541,12 +6541,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -6561,12 +6561,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -6611,7 +6611,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6666,7 +6666,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -6681,7 +6681,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -6706,7 +6706,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6781,7 +6781,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -6831,7 +6831,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -6851,7 +6851,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -6871,12 +6871,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -6891,12 +6891,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -6941,7 +6941,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -6996,7 +6996,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -7011,7 +7011,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -7036,7 +7036,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7111,7 +7111,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -7161,7 +7161,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7181,7 +7181,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -7201,12 +7201,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -7221,12 +7221,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -7271,7 +7271,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -7326,7 +7326,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -7341,7 +7341,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -7366,7 +7366,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7441,7 +7441,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -7491,7 +7491,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7511,7 +7511,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -7531,12 +7531,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -7551,12 +7551,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -7601,7 +7601,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -7656,7 +7656,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -7671,7 +7671,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -7696,7 +7696,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7771,7 +7771,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -7821,7 +7821,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -7841,7 +7841,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -7861,12 +7861,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -7881,12 +7881,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -7931,7 +7931,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -7986,7 +7986,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -8001,7 +8001,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -8026,7 +8026,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8101,7 +8101,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -8151,7 +8151,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8171,7 +8171,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -8191,12 +8191,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -8211,12 +8211,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -8261,7 +8261,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -8316,7 +8316,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -8331,7 +8331,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -8356,7 +8356,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8431,7 +8431,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -8481,7 +8481,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8501,7 +8501,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -8521,12 +8521,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -8541,12 +8541,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -8591,7 +8591,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -8646,7 +8646,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -8661,7 +8661,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -8686,7 +8686,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8761,7 +8761,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -8811,7 +8811,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -8831,7 +8831,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -8851,12 +8851,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -8871,12 +8871,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -8921,7 +8921,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -8976,7 +8976,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -8991,7 +8991,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -9016,7 +9016,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9091,7 +9091,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -9141,7 +9141,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9161,7 +9161,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -9181,12 +9181,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -9201,12 +9201,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -9251,7 +9251,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -9306,7 +9306,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -9321,7 +9321,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -9346,7 +9346,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9421,7 +9421,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -9471,7 +9471,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9491,7 +9491,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -9511,12 +9511,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -9531,12 +9531,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
@@ -9581,7 +9581,7 @@
       <image:caption>iPad draw view and controls in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone draw view in Record Picker</image:title>
       <image:caption>iPhone draw view in Record Picker</image:caption>
     </image:image>
@@ -9636,7 +9636,7 @@
       <image:caption>iPhone landscape draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-portrait.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
     </image:image>
@@ -9651,7 +9651,7 @@
       <image:caption>Vinyl effect draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-bin.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/record-crate-1.6-en-us.jpeg</image:loc>
       <image:title>Record bin in Record Picker</image:title>
       <image:caption>Record bin in Record Picker</image:caption>
     </image:image>
@@ -9676,7 +9676,7 @@
       <image:caption>Data quality in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9751,7 +9751,7 @@
       <image:caption>Record Picker in the app list in Record Picker</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>Mood selection - Record Picker</video:title>
       <video:description>Mood selection preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/mood-selection.mp4</video:content_loc>
@@ -9801,7 +9801,7 @@
       <image:caption>Large-format draw in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Mood selection in Record Picker</image:title>
       <image:caption>Mood selection in Record Picker</image:caption>
     </image:image>
@@ -9821,7 +9821,7 @@
       <image:caption>Backups, imports, and exports in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-draw.jpeg</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</image:loc>
       <image:title>Localized Record Picker in Record Picker</image:title>
       <image:caption>Localized Record Picker in Record Picker</image:caption>
     </image:image>
@@ -9841,12 +9841,12 @@
       <image:caption>Record crate with enhanced search in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-smallest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-small-1.0-en-us.jpeg</image:loc>
       <image:title>Small zoomed-out cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Small zoomed-out cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-largest-covers.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/record-crate-large-1.0-en-us.jpeg</image:loc>
       <image:title>Large zoomed-in cover mosaic in Record Picker for Mac</image:title>
       <image:caption>Large zoomed-in cover mosaic in Record Picker for Mac</image:caption>
     </image:image>
@@ -9861,12 +9861,12 @@
       <image:caption>Review keyword index in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/random-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Random Pick in Record Picker for Mac</image:title>
       <image:caption>Random Pick in Record Picker for Mac</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick.png</image:loc>
+      <image:loc>https://recordpicker.app/assets/screenshots/mac/mood-pick-1.0-en-us.jpeg</image:loc>
       <image:title>Mood Pick in Record Picker for Mac</image:title>
       <image:caption>Mood Pick in Record Picker for Mac</image:caption>
     </image:image>
