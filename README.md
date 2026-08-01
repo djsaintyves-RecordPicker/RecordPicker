@@ -24,6 +24,16 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v1.7 - Coming soon on iPhone, iPad, Apple Watch and Mac
+
+- One shared version number across every Apple platform.
+- More physical formats, including CD, SACD, MiniDisc, cassette, DVD-Audio,
+  Blu-ray Audio and 78 rpm records.
+- Dedicated classical-music fields for works, catalogue numbers, conductors,
+  orchestras, ensembles, soloists, recording dates and recording places.
+- Clearer CSV portability and stronger safeguards for backups, favourites,
+  artwork, imports and metadata repairs.
+
 ### v1.6 / macOS 1.0 - Available since August 1, 2026
 
 - Record Picker is now free for collections of up to 100 records; a one-time Pro purchase unlocks an unlimited collection on iPhone, iPad and Mac, with no subscription.
