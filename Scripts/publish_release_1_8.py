@@ -90,8 +90,8 @@ def publish_home(text: str, path: Path, status: str) -> str:
     )
     text = text[:showcase.start()] + section + text[showcase.end():]
     text = re.sub(
-        r'(<footer class="footer"><span>).*?(</span>)',
-        r'\1Record Picker v1.8\2',
+        r'(<footer class="footer"><span>)(?:<span[^>]*>)?.*?</span>(?:</span>)?',
+        r'\1Record Picker v1.8</span>',
         text,
         count=1,
     )
