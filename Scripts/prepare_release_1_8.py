@@ -62,30 +62,30 @@ PREVIEW_LABELS = {
 
 VISUAL_CAPTIONS = {
     "fr-FR": [
-        "Repérez d’un coup d’œil les informations manquantes et les doublons possibles.",
-        "Examinez et corrigez précisément chaque fiche sur iPad.",
-        "Retrouvez instantanément un disque dans une grande collection.",
-        "Modifiez les métadonnées exactes sans perdre les informations existantes.",
+        "Un nouveau guide présente l’import, les formats et la gestion complète de la collection.",
+        "Qualité des données distingue les corrections fiables des choix qui exigent votre décision.",
+        "L’année de sortie originale reste prioritaire, sans perdre l’année de l’édition possédée.",
+        "La présentation Free et Pro explique clairement ce qui reste gratuit et ce qui soutient le développement.",
     ],
     "fr-CA": [
-        "Repérez d’un coup d’œil les renseignements manquants et les doublons possibles.",
-        "Examinez et corrigez précisément chaque fiche sur iPad.",
-        "Retrouvez instantanément un disque dans une grande collection.",
-        "Modifiez les métadonnées exactes sans perdre les renseignements existants.",
+        "Un nouveau guide présente l’import, les formats et la gestion complète de la collection.",
+        "Qualité des données distingue les corrections fiables des choix qui exigent votre décision.",
+        "L’année de sortie originale reste prioritaire, sans perdre l’année de l’édition possédée.",
+        "La présentation Free et Pro explique clairement ce qui reste gratuit et ce qui soutient le développement.",
     ],
     "es-ES": [
-        "Detecta de un vistazo los datos que faltan y los posibles duplicados.",
-        "Revisa y corrige con precisión cada ficha en el iPad.",
-        "Encuentra al instante un disco en una colección grande.",
-        "Edita los metadatos exactos sin perder la información existente.",
+        "Una nueva guía presenta la importación, los formatos y la gestión completa de la colección.",
+        "Calidad de los datos separa las correcciones fiables de las decisiones que requieren tu intervención.",
+        "El año de lanzamiento original tiene prioridad sin perder el año de la edición que posees.",
+        "La presentación Free y Pro explica claramente qué sigue siendo gratuito y qué ayuda a mantener el desarrollo.",
     ],
 }
 
 DEFAULT_VISUAL_CAPTIONS = [
-    "Spot missing details and possible duplicates at a glance.",
-    "Review and correct precise record metadata on iPad.",
-    "Find a record instantly, even in a large collection.",
-    "Edit exact metadata without losing information already saved.",
+    "A new guide introduces imports, formats and complete collection management.",
+    "Collection Health separates reliable fixes from decisions that need your input.",
+    "The original release year stays prominent without losing the year of your exact edition.",
+    "The Free and Pro introduction makes it clear what stays free and what supports ongoing development.",
 ]
 
 FALLBACK_INTRO = (
@@ -144,11 +144,18 @@ def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -
         ("Coming in 1.8", "Collection Health becomes truly actionable"),
     )
     captions = VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
+    capture_locale = {
+        "fr-FR": "fr-fr",
+        "fr-CA": "fr-fr",
+        "es-ES": "es-es",
+    }.get(language, "en-us")
+    localized_root = f"assets/screenshots/v18/{capture_locale}"
+    english_root = "assets/screenshots/v18/en-us"
     assets = [
-        ("assets/screenshots/mac/data-quality-fetching-missing-reviews.png", "wide"),
-        ("assets/screenshots/ipad/data-quality.png", "portrait"),
-        ("assets/screenshots/mac/record-crate-search.png", "wide"),
-        ("assets/screenshots/ipad/manual-edit.png", "portrait"),
+        (f"{localized_root}/onboarding-collection.png", "portrait"),
+        (f"{localized_root}/onboarding-collection-health.png", "portrait"),
+        (f"{english_root}/original-and-edition-year.png", "portrait"),
+        (f"{localized_root}/onboarding-freemium.png", "portrait"),
     ]
     figures = []
     for index, (asset, shape) in enumerate(assets):

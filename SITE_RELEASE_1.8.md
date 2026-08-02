@@ -6,7 +6,11 @@ Le site est préparé pour annoncer la version 1.8 sans la présenter prématur�
 
 - Conserver `softwareVersion` à `1.6` dans les données structurées.
 - Conserver les libellés « disponible » et le pied de page sur la version publiée.
-- Vérifier que les quatre visuels 1.8 correspondent encore à la build candidate.
+- Les quatre visuels proviennent de la build 1.8 (12) : parcours d’accueil,
+  qualité de collection, double année originale/édition et présentation Free/Pro.
+- Les parcours d’accueil sont localisés en français et en espagnol ; les autres
+  langues utilisent les captures en-US pour éviter tout visuel partiellement traduit.
+- Vérifier avant publication que ces captures correspondent toujours à la build candidate.
 - Exécuter `python3 Scripts/prepare_release_1_8.py` puis l’audit du site.
 
 ## Dès que la version 1.8 est disponible
@@ -22,4 +26,3 @@ Commande d’audit depuis le dépôt de l’app :
 ```sh
 python3 /Users/yvesdurand/Developper/RecordPicker/Scripts/audit_site.py /Users/yvesdurand/Developper/RecordPicker-site
 ```
-
