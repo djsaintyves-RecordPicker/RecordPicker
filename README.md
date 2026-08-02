@@ -42,7 +42,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Clearer CSV portability and stronger safeguards for backups, favourites,
   artwork, imports and metadata repairs.
 
-### v1.6 / macOS 1.0 - Available since August 1, 2026
+### v1.6 / macOS 1.0 - Available now
 
 - Record Picker is now free for collections of up to 100 records; a one-time Pro purchase unlocks an unlimited collection on iPhone, iPad and Mac, with no subscription.
 - The new native Mac app turns the big screen into a command center for browsing, enriching, cleaning up and rediscovering the collection.
@@ -51,13 +51,13 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Duplicate detection is much faster, review selection is better, and review-keyword reindexing now shows clear progress.
 - Clear storage diagnostics report problems instead of making an error look like data loss.
 
-### v1.5 - July 28, 2026
+### v1.5 - Available now
 
 - More reliable iCloud synchronization across iPhone, iPad and Apple Watch.
 - Artwork is now added automatically after manual or barcode entry, with more robust fallbacks.
 - Improved data-quality tools, duplicate management and critical-review fetching.
 
-### v1.4 - June 23, 2026
+### v1.4 - Available now
 
 - iPhone landscape selector: turn the phone sideways to see the cover on the left and full record details on the right, including title, artist, genre tags, format, label, and added-in year.
 - The Pick button stays centered next to the metadata, while the bottom toolbar floats equidistantly between the cover and the screen edge.
@@ -66,7 +66,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Statistics get denser in landscape: on iPhone, tiles reflow into three columns, matching the iPad density.
 - Cleaner swipes everywhere: swipe-to-delete is back on the wishlist and added to AI Mood history; old cross-screen swipes that fought row-level deletions have been retired.
 
-### v1.3 - June 22, 2026
+### v1.3 - Available now
 
 - Apple Watch reimagined: the cover sits as a blurred backdrop, with three thumb-friendly buttons for favorite, undo the last draw, and next draw, each with dedicated haptic feedback.
 - Apple Watch layout adapted from 41 mm to Ultra.
@@ -74,7 +74,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Record Picker is available in 29 languages, with new variants and localizations: Arabic, Catalan, Korean, Danish, English for Australia/Canada/United Kingdom, Finnish, Canadian French, Hebrew, Hindi, Indonesian, Norwegian, Polish, Portuguese for Brazil/Portugal, Russian, Swedish, and Turkish.
 - Small polish: better balanced cover picker sheet on iPad, faster iPhone-Watch sync, and a discreet App Store review request after regular use.
 
-### v1.2 - June 18, 2026
+### v1.2 - Available now
 
 - Full music collection catalog for imports, manual album entry, and barcode scanning.
 - Animated random draw, year filters, favorites, temporary exclusions, listening history, and collection statistics.
@@ -82,7 +82,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - MusicBrainz metadata lookup, Cover Art Archive artwork or manual artwork import, backup/restore, Siri Shortcuts, and Apple Watch companion.
 - The collection stays stored locally; metadata and artwork lookups happen only when the user starts them.
 
-### v1.1.1 - June 17, 2026
+### v1.1.1 - Available now
 
 - Interface and internal foundations refined for a smoother experience.
 - Improved iPad support.
