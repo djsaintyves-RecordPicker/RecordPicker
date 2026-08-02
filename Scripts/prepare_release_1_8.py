@@ -177,6 +177,46 @@ def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -
     )
 
 
+def screenshot_gallery(language: str, intro: str, bullets: list[str], prefix: str) -> str:
+    kicker, _ = PREVIEW_LABELS.get(language, ("Coming in 1.8", "Record Picker 1.8"))
+    capture_locale = {
+        "fr-FR": "fr-fr",
+        "fr-CA": "fr-fr",
+        "es-ES": "es-es",
+    }.get(language, "en-us")
+    localized_root = f"assets/screenshots/v18/{capture_locale}"
+    english_root = "assets/screenshots/v18/en-us"
+    fallback = DEFAULT_VISUAL_CAPTIONS
+    captions = [
+        bullets[2] if len(bullets) > 2 else fallback[0],
+        bullets[0] if bullets else fallback[1],
+        bullets[3] if len(bullets) > 3 else fallback[2],
+    ]
+    assets = [
+        f"{localized_root}/onboarding-collection.png",
+        f"{localized_root}/onboarding-collection-health.png",
+        f"{english_root}/original-and-edition-year.png",
+    ]
+    figures = []
+    for asset, caption in zip(assets, captions):
+        figures.append(
+            '<figure class="shot-card ipad">'
+            f'<img loading="lazy" alt="{escape(caption, quote=True)}" '
+            f'src="{prefix}{asset}">'
+            f'<figcaption>{escape(caption)}</figcaption></figure>'
+        )
+    return (
+        '<section class="media-section v18-screenshot-gallery" '
+        'data-release-version="1.8"><div class="section-head">'
+        f'<p class="kicker">{escape(kicker)}</p>'
+        '<h2>Record Picker 1.8</h2>'
+        f'<p class="lead">{escape(intro)}</p>'
+        '</div><div class="shot-grid ipad-grid">'
+        + ''.join(figures)
+        + '</div></section>'
+    )
+
+
 def update_home_page(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
     language_match = re.search(r'<html lang="([^"]+)"', text)
@@ -216,6 +256,28 @@ def update_readme_page(path: Path) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def update_screenshot_page(path: Path) -> None:
+    text = path.read_text(encoding="utf-8")
+    language_match = re.search(r'<html lang="([^"]+)"', text)
+    language = language_match.group(1) if language_match else "en-US"
+    intro, bullets = release_copy(language)
+    prefix = "../" if path.parent.parent == ROOT else "../../"
+    insertion = screenshot_gallery(language, intro, bullets, prefix)
+    existing_gallery = re.search(
+        r'<section class="media-section v18-screenshot-gallery".*?</section>',
+        text,
+        flags=re.DOTALL,
+    )
+    if existing_gallery:
+        text = text[:existing_gallery.start()] + insertion + text[existing_gallery.end():]
+    else:
+        hero = re.search(r'<section class="screens-hero">.*?</section>', text, flags=re.DOTALL)
+        if not hero:
+            raise RuntimeError(f"No screenshot hero found in {path}")
+        text = text[:hero.end()] + insertion + text[hero.end():]
+    path.write_text(text, encoding="utf-8")
+
+
 def main() -> None:
     home_pages = [ROOT / "index.html"]
     home_pages.extend(
@@ -233,9 +295,18 @@ def main() -> None:
     )
     for page in readme_pages:
         update_readme_page(page)
+    screenshot_pages = [ROOT / "screenshots" / "index.html"]
+    screenshot_pages.extend(
+        path / "screenshots" / "index.html"
+        for path in sorted(ROOT.iterdir())
+        if path.is_dir() and path.name in LOCALE_DIRECTORIES
+    )
+    for page in screenshot_pages:
+        update_screenshot_page(page)
     print(
         f"Prepared {len(home_pages)} localized home pages and "
-        f"{len(readme_pages)} feature pages for Record Picker 1.8"
+        f"{len(readme_pages)} feature pages and {len(screenshot_pages)} "
+        "screenshot galleries for Record Picker 1.8"
     )
 
 
