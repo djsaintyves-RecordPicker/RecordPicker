@@ -24,13 +24,21 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v1.7 - Coming soon on iPhone, iPad, Apple Watch and Mac
+### v1.8 - In preparation for iPhone, iPad, Apple Watch and Mac
 
 - One shared version number across every Apple platform.
 - More physical formats, including CD, SACD, MiniDisc, cassette, DVD-Audio,
   Blu-ray Audio and 78 rpm records.
 - Dedicated classical-music fields for works, catalogue numbers, conductors,
   orchestras, ensembles, soloists, recording dates and recording places.
+- Proactive Collection Health separates reliable automatic fixes from choices
+  that need the collector's decision.
+- MusicBrainz and Discogs conflicts are shown side by side with source and
+  confidence; the resumable repair queue supports CSV reports and undo.
+- A new four-step guide introduces imports, data quality, Random Pick,
+  Mood Pick and Free/Pro.
+- Record pages lead with the original release year while preserving the exact
+  edition year.
 - Clearer CSV portability and stronger safeguards for backups, favourites,
   artwork, imports and metadata repairs.
 

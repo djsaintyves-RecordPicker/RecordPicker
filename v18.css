@@ -1,0 +1,63 @@
+/* Record Picker 1.8 preview: real app screens, legible in light and dark mode. */
+.v18-showcase {
+  padding-top: 34px;
+}
+
+.v18-showcase .section-head {
+  max-width: 820px;
+}
+
+.v18-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.v18-visual {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-strong);
+  box-shadow: var(--card-shadow);
+}
+
+.v18-visual img {
+  width: 100%;
+  height: clamp(240px, 34vw, 430px);
+  object-fit: contain;
+  object-position: top center;
+  background: #fff;
+}
+
+.v18-visual figcaption {
+  flex: 1;
+  padding: 15px 17px 17px;
+  color: var(--muted);
+  font-size: .94rem;
+  font-weight: 760;
+  line-height: 1.5;
+}
+
+.release-card .v18-highlight {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.release-card .v18-highlight::marker {
+  color: var(--red);
+}
+
+@media (max-width: 720px) {
+  .v18-visual-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v18-visual img {
+    height: auto;
+    max-height: 620px;
+  }
+}
