@@ -1,0 +1,54 @@
+name: Refresh Today Pick feed
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: today-pick-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout public site and feed engine
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          path: site
+
+      - name: Collect and validate public events
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: |
+          python3 site/.github/today-pick/collect_today_pick_feed.py \
+            --output site/data/today-pick-v1.json \
+            --ttl-hours 36
+          python3 - <<'PY'
+          import json
+          import sys
+          sys.path.insert(0, "site/.github/today-pick")
+          import build_today_pick_feed as builder
+          with open("site/data/today-pick-v1.json", encoding="utf-8") as handle:
+              feed = json.load(handle)
+          builder.validate_published_feed(feed)
+          print(f"Validated {len(feed['events'])} public events")
+          PY
+
+      - name: Publish only a changed, validated feed
+        working-directory: site
+        run: |
+          if git diff --quiet -- data/today-pick-v1.json; then
+            echo "The public feed is unchanged."
+            exit 0
+          fi
+          git config user.name "Record Picker Feed Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/today-pick-v1.json
+          git commit -m "Refresh Today Pick public feed"
+          git push
