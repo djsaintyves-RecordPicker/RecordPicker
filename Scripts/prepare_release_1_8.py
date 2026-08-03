@@ -8,9 +8,11 @@ visual preview. It is safe to run more than once.
 
 from __future__ import annotations
 
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 import re
+
+from site_translation_data import RELEASE_18_OVERRIDES
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,6 +104,8 @@ FALLBACK_BULLETS = [
 
 
 def release_copy(language: str) -> tuple[str, list[str]]:
+    if language in RELEASE_18_OVERRIDES:
+        return RELEASE_18_OVERRIDES[language]
     note_locale = NOTE_LOCALE_BY_HTML_LANGUAGE.get(language, "en-US")
     note_path = NOTES_ROOT / f"{note_locale}.txt"
     if not note_path.exists():
@@ -116,10 +120,16 @@ def release_copy(language: str) -> tuple[str, list[str]]:
 
 def update_preview_card(text: str, path: Path, bullets: list[str]) -> str:
     card_match = re.search(
-        r'<article class="release-card release-preview"(?: data-release-version="1\.8")?>.*?</article>',
+        r'<article class="release-card[^"]*"[^>]*data-release-version="1\.8".*?</article>',
         text,
         flags=re.DOTALL,
     )
+    if not card_match:
+        card_match = re.search(
+            r'<article class="release-card release-preview">.*?</article>',
+            text,
+            flags=re.DOTALL,
+        )
     if not card_match:
         raise RuntimeError(f"No release preview found in {path}")
     card = card_match.group(0)
@@ -130,20 +140,28 @@ def update_preview_card(text: str, path: Path, bullets: list[str]) -> str:
             '<article class="release-card release-preview" data-release-version="1.8">',
             1,
         )
-    if 'class="v18-highlight"' not in card:
-        additions = "".join(
-            f'<li class="v18-highlight">{escape(bullet)}</li>' for bullet in bullets
-        )
-        card = card.replace("</ul>", additions + "</ul>", 1)
+    card = re.sub(
+        r'<li class="v18-highlight">.*?</li>', "", card, flags=re.DOTALL
+    )
+    additions = "".join(
+        f'<li class="v18-highlight">{escape(bullet)}</li>' for bullet in bullets
+    )
+    card = card.replace("</ul>", additions + "</ul>", 1)
     return text[:card_match.start()] + card + text[card_match.end():]
 
 
-def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -> str:
+def visual_preview(
+    language: str,
+    intro: str,
+    bullets: list[str],
+    prefix: str,
+    localized_captions: list[str] | None = None,
+) -> str:
     kicker, title = PREVIEW_LABELS.get(
         language,
         ("Coming in 1.8", "Collection Health becomes truly actionable"),
     )
-    captions = VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
+    captions = localized_captions or VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
     assets = [
         ("assets/screenshots/ipad/data-quality.png", "wide"),
         ("assets/screenshots/ipad/bin-filters.png", "wide"),
@@ -170,14 +188,16 @@ def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -
     )
 
 
-def screenshot_gallery(language: str, intro: str, bullets: list[str], prefix: str) -> str:
+def screenshot_gallery(
+    language: str,
+    intro: str,
+    bullets: list[str],
+    prefix: str,
+    localized_captions: list[str] | None = None,
+) -> str:
     kicker, _ = PREVIEW_LABELS.get(language, ("Coming in 1.8", "Record Picker 1.8"))
-    fallback = DEFAULT_VISUAL_CAPTIONS
-    captions = [
-        bullets[2] if len(bullets) > 2 else fallback[0],
-        bullets[0] if bullets else fallback[1],
-        bullets[3] if len(bullets) > 3 else fallback[2],
-    ]
+    fallback = localized_captions or DEFAULT_VISUAL_CAPTIONS
+    captions = [fallback[0], fallback[1], fallback[2]]
     assets = [
         "assets/screenshots/ipad/data-quality.png",
         "assets/screenshots/ipad/bin-filters.png",
@@ -203,6 +223,36 @@ def screenshot_gallery(language: str, intro: str, bullets: list[str], prefix: st
     )
 
 
+def localized_visual_captions(locale_root: Path, bullets: list[str]) -> list[str]:
+    def caption_from(page: Path, asset: str, fallback: str) -> str:
+        if not page.exists():
+            return fallback
+        text = page.read_text(encoding="utf-8")
+        matches = re.findall(
+            rf'<figure[^>]*>(?:(?!</figure>).)*<img[^>]+{re.escape(asset)}[^>]*>'
+            rf'(?:(?!</figure>).)*<figcaption>(.*?)</figcaption>.*?</figure>',
+            text,
+            flags=re.DOTALL,
+        )
+        usable = [
+            unescape(re.sub(r'<[^>]+>', '', value)).strip()
+            for value in matches
+            if unescape(re.sub(r'<[^>]+>', '', value)).strip()
+            not in DEFAULT_VISUAL_CAPTIONS
+        ]
+        return usable[-1] if usable else fallback
+
+    screenshot_page = locale_root / "screenshots" / "index.html"
+    mac_page = locale_root / "mac-app" / "index.html"
+    original_year = bullets[3] if len(bullets) > 3 else DEFAULT_VISUAL_CAPTIONS[2]
+    return [
+        caption_from(screenshot_page, "assets/screenshots/ipad/data-quality.png", DEFAULT_VISUAL_CAPTIONS[0]),
+        caption_from(screenshot_page, "assets/screenshots/ipad/bin-filters.png", DEFAULT_VISUAL_CAPTIONS[1]),
+        original_year,
+        caption_from(mac_page, "assets/screenshots/v18/mac/collection.png", DEFAULT_VISUAL_CAPTIONS[3]),
+    ]
+
+
 def update_home_page(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
     language_match = re.search(r'<html lang="([^"]+)"', text)
@@ -216,7 +266,9 @@ def update_home_page(path: Path) -> None:
     if stylesheet not in text:
         text = text.replace("</head>", stylesheet + "</head>", 1)
 
-    insertion = visual_preview(language, intro, new_bullets, prefix)
+    insertion = visual_preview(
+        language, intro, new_bullets, prefix, localized_visual_captions(path.parent, new_bullets)
+    )
     existing_showcase = re.search(
         r'<section class="section v18-showcase".*?</section>',
         text,
@@ -248,7 +300,10 @@ def update_screenshot_page(path: Path) -> None:
     language = language_match.group(1) if language_match else "en-US"
     intro, bullets = release_copy(language)
     prefix = "../" if path.parent.parent == ROOT else "../../"
-    insertion = screenshot_gallery(language, intro, bullets, prefix)
+    locale_root = path.parent.parent
+    insertion = screenshot_gallery(
+        language, intro, bullets, prefix, localized_visual_captions(locale_root, bullets)
+    )
     existing_gallery = re.search(
         r'<section class="media-section v18-screenshot-gallery".*?</section>',
         text,

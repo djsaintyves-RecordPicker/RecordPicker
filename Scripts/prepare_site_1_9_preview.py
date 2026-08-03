@@ -9,17 +9,23 @@ real light-mode captures, and removes the obsolete dark Watch gallery.
 
 from __future__ import annotations
 
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 import re
 
 from prepare_release_1_8 import (
-    DEFAULT_VISUAL_CAPTIONS,
     LOCALE_DIRECTORIES,
     PREVIEW_LABELS,
-    VISUAL_CAPTIONS,
     release_copy,
+    localized_visual_captions,
     visual_preview,
+)
+from site_translation_data import (
+    ACCENT_CORRECTIONS,
+    CLOSE_LABELS,
+    FREE_PRO_LABELS,
+    HINDI_REPLACEMENTS,
+    TODAY_PICK_TRANSLATIONS,
 )
 
 
@@ -73,6 +79,8 @@ def html_language(text: str) -> str:
 
 
 def app_strings(language: str) -> dict[str, str]:
+    if language in TODAY_PICK_TRANSLATIONS:
+        return dict(zip(TODAY_PICK_KEYS, TODAY_PICK_TRANSLATIONS[language]))
     locale = LOCALE_BY_HTML_LANGUAGE.get(language, "en")
     path = APP_LOCALIZATIONS / f"{locale}.lproj" / "Localizable.strings"
     fallback = APP_LOCALIZATIONS / "en.lproj" / "Localizable.strings"
@@ -172,12 +180,31 @@ def update_release_cards(text: str, path: Path) -> str:
             flags=re.DOTALL,
         )
 
-    return re.sub(
+    text = re.sub(
         r'<article class="release-card[^>]*>.*?</article>',
         historical_card,
         text,
         flags=re.DOTALL,
     )
+    _, bullets = release_copy(language)
+    v18 = re.search(
+        r'<article class="release-card[^>]*data-release-version="1\.8".*?</article>',
+        text,
+        flags=re.DOTALL,
+    )
+    if v18:
+        card = re.sub(
+            r'<li class="v18-highlight">.*?</li>',
+            "",
+            v18.group(0),
+            flags=re.DOTALL,
+        )
+        highlights = "".join(
+            f'<li class="v18-highlight">{escape(bullet)}</li>' for bullet in bullets
+        )
+        card = card.replace("</ul>", highlights + "</ul>", 1)
+        text = text[:v18.start()] + card + text[v18.end():]
+    return text
 
 
 def shot(asset: str, caption: str, shape: str, prefix: str) -> str:
@@ -188,9 +215,8 @@ def shot(asset: str, caption: str, shape: str, prefix: str) -> str:
     )
 
 
-def expanded_gallery(language: str, prefix: str) -> str:
+def expanded_gallery(language: str, prefix: str, captions: list[str]) -> str:
     intro, _ = release_copy(language)
-    captions = VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
     def cap(index: int) -> str:
         return captions[index % len(captions)]
 
@@ -228,10 +254,11 @@ def expanded_gallery(language: str, prefix: str) -> str:
     )
 
 
-def update_feature_intro(text: str, language: str, prefix: str) -> str:
+def update_feature_intro(text: str, language: str, prefix: str, caption: str) -> str:
     figure = re.search(
         r'<figure class="context-visual (?:watch|wide) ">(?:(?!</figure>).)*'
-        r'(?:onboarding-|iphone-(?:collection|collection-health|rediscover|freemium))'
+        r'(?:onboarding-|iphone-(?:collection|collection-health|rediscover|freemium)|'
+        r'assets/screenshots/ipad/data-quality\.png)'
         r'.*?</figure>',
         text,
         flags=re.DOTALL,
@@ -247,9 +274,9 @@ def update_feature_intro(text: str, language: str, prefix: str) -> str:
     else:
         replacement = (
             '<figure class="context-visual wide "><img loading="lazy" '
-            'alt="Record Picker 1.8" '
+            f'alt="{escape(caption, quote=True)}" '
             f'src="{prefix}assets/screenshots/ipad/data-quality.png">'
-            '<figcaption>Record Picker 1.8 · Collection Health</figcaption></figure>'
+            f'<figcaption>{escape(caption)}</figcaption></figure>'
         )
         updated = text[:figure.start()] + replacement + text[figure.end():]
 
@@ -275,17 +302,136 @@ def replace_dark_mac_references(text: str) -> str:
     return text
 
 
-def ensure_preview_stylesheet(text: str, prefix: str) -> str:
-    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260802-19-preview">'
-    text, replacements = re.subn(
-        r'<link rel="stylesheet" href="[^\"]*v18\.css\?v=[^\"]+">',
-        stylesheet,
+def replace_words(text: str, replacements: dict[str, str]) -> str:
+    for old in sorted(replacements, key=len, reverse=True):
+        new = replacements[old]
+        text = re.sub(
+            rf'(?<![\w-]){re.escape(old)}(?![\w-])',
+            lambda match, value=new: (
+                value[0].upper() + value[1:]
+                if match.group(0)[:1].isupper() and value[:1].islower()
+                else value
+            ),
+            text,
+            flags=re.IGNORECASE,
+        )
+    return text
+
+
+def localize_accessibility(text: str, language: str) -> str:
+    text = re.sub(
+        r'<span(?: id="site-brand-name")?>Record Picker</span></a>'
+        r'<nav class="nav-links"(?: aria-(?:label|labelledby)="[^"]+")?>',
+        '<span id="site-brand-name">Record Picker</span></a>'
+        '<nav class="nav-links" aria-labelledby="site-brand-name">',
+        text,
+    )
+    text = re.sub(
+        r'<footer class="footer"><span(?: id="site-footer-version")?>'
+        r'(Record Picker v1\.8)</span><nav(?: aria-(?:label|labelledby)="[^"]+")?>',
+        r'<footer class="footer"><span id="site-footer-version">\1</span>'
+        r'<nav aria-labelledby="site-footer-version">',
+        text,
+    )
+    text = re.sub(
+        r'<span class="visually-hidden"(?: id="language-label")?>(.*?)</span>',
+        r'<span class="visually-hidden" id="language-label">\1</span>',
         text,
         count=1,
     )
-    if replacements == 0:
-        text = text.replace("</head>", stylesheet + "</head>", 1)
+    text = re.sub(
+        r'role="listbox" aria-(?:label|labelledby)="[^"]+"',
+        'role="listbox" aria-labelledby="language-label"',
+        text,
+        count=1,
+    )
+    for label in ("App Store details", "Record Picker screenshots", "Record Picker for Mac"):
+        text = text.replace(f' aria-label="{label}"', "")
+
+    def figure_alt(match: re.Match[str]) -> str:
+        figure = match.group(0)
+        caption_match = re.search(r'<figcaption>(.*?)</figcaption>', figure, flags=re.DOTALL)
+        if not caption_match:
+            return figure
+        caption = unescape(re.sub(r'<[^>]+>', '', caption_match.group(1))).strip()
+        if not caption:
+            return figure
+        return re.sub(
+            r'(<img\b[^>]*\balt=")[^"]*(")',
+            lambda image: image.group(1) + escape(caption, quote=True) + image.group(2),
+            figure,
+            count=1,
+        )
+
+    text = re.sub(r'<figure\b.*?</figure>', figure_alt, text, flags=re.DOTALL)
+
+    def video_label(match: re.Match[str]) -> str:
+        button = match.group(0)
+        title = re.search(r'\btitle="([^"]+)"', button)
+        if not title:
+            return button
+        return re.sub(
+            r'\baria-label="[^"]*"',
+            f'aria-label="{escape(unescape(title.group(1)), quote=True)}"',
+            button,
+            count=1,
+        )
+
+    text = re.sub(r'<button class="video-(?:thumb|preview)"[^>]*>', video_label, text)
+    close = CLOSE_LABELS.get(language, "Close")
+    text = re.sub(
+        r'(data-video-close[^>]*aria-label=")[^"]*(")',
+        rf'\1{escape(close, quote=True)}\2',
+        text,
+    )
     return text
+
+
+def restore_support_privacy_link(text: str) -> str:
+    section = re.search(r'<section class="doc-content">.*?</section>', text, flags=re.DOTALL)
+    if not section or 'href="../privacy/"' in section.group(0):
+        return text
+    label = re.search(r'<a href="../privacy/">([^<]+)</a>', text)
+    if not label:
+        return text
+    block = section.group(0)
+    paragraphs = list(re.finditer(r'<p>.*?</p>', block, flags=re.DOTALL))
+    if not paragraphs:
+        return text
+    last = paragraphs[-1]
+    paragraph = last.group(0).replace(
+        '</p>', f' <a href="../privacy/">{label.group(1)}</a>.</p>', 1
+    )
+    block = block[:last.start()] + paragraph + block[last.end():]
+    return text[:section.start()] + block + text[section.end():]
+
+
+def repair_translations(text: str, language: str, relative_path: Path) -> str:
+    if language in FREE_PRO_LABELS:
+        text = text.replace("Free · Lifetime Pro", FREE_PRO_LABELS[language])
+    if language == "hi":
+        text = replace_words(text, HINDI_REPLACEMENTS)
+    if language in ACCENT_CORRECTIONS:
+        text = replace_words(text, ACCENT_CORRECTIONS[language])
+    if language in {"en-AU", "en-CA", "en-GB"}:
+        text = replace_words(
+            text,
+            {"Favorite": "Favourite", "favorite": "favourite", "Catalog": "Catalogue", "catalog": "catalogue"},
+        )
+    text = localize_accessibility(text, language)
+    if relative_path.as_posix() == "support/index.html":
+        text = restore_support_privacy_link(text)
+    return text
+
+
+def ensure_preview_stylesheet(text: str, prefix: str) -> str:
+    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260802-19-preview">'
+    text = re.sub(
+        r'<link rel="stylesheet" href="[^\"]*v18\.css\?v=[^\"]+">',
+        "",
+        text,
+    )
+    return text.replace("</head>", stylesheet + "</head>", 1)
 
 
 def update_current_release_facts(text: str) -> str:
@@ -391,12 +537,16 @@ def main() -> None:
         home_prefix = "" if root == ROOT else "../"
         home_text = update_release_cards(home.read_text(encoding="utf-8"), home)
         language = html_language(home_text)
+        release_intro, release_bullets = release_copy(language)
+        visual_captions = localized_visual_captions(root, release_bullets)
         current_v18 = re.search(
             r'<section class="section v18-showcase".*?</section>',
             home_text,
             flags=re.DOTALL,
         )
-        functional_v18 = visual_preview(language, *release_copy(language), home_prefix)
+        functional_v18 = visual_preview(
+            language, release_intro, release_bullets, home_prefix, visual_captions
+        )
         if not current_v18:
             raise RuntimeError(f"No 1.8 visual showcase found in {home}")
         home_text = (
@@ -426,7 +576,7 @@ def main() -> None:
         language = html_language(text)
         text = update_release_cards(text, readme)
         prefix = "../" if root == ROOT else "../../"
-        text = update_feature_intro(text, language, prefix)
+        text = update_feature_intro(text, language, prefix, visual_captions[0])
         intro = re.search(
             r'<section class="doc-content">.*?<h2>', text, flags=re.DOTALL
         )
@@ -448,7 +598,7 @@ def main() -> None:
         language = html_language(text)
         prefix = "../" if root == ROOT else "../../"
         text = ensure_preview_stylesheet(text, prefix)
-        gallery = expanded_gallery(language, prefix)
+        gallery = expanded_gallery(language, prefix, visual_captions)
         current = re.search(
             r'<section class="media-section v18-screenshot-gallery".*?</section>',
             text,
@@ -470,6 +620,21 @@ def main() -> None:
         updated = update_current_release_facts(replace_dark_mac_references(text))
         if updated != text:
             page.write_text(updated, encoding="utf-8")
+
+    sections = (
+        "support", "screenshots", "privacy", "manage-vinyl-collection",
+        "readme", "mac-app", "choose-vinyl-record", "random-vinyl-record-picker",
+    )
+    for root in roots:
+        pages = [root / "index.html"] + [root / section / "index.html" for section in sections]
+        for page in pages:
+            text = page.read_text(encoding="utf-8")
+            language = html_language(text)
+            relative_path = page.relative_to(root)
+            page.write_text(
+                repair_translations(text, language, relative_path),
+                encoding="utf-8",
+            )
 
     update_media_sitemap(roots)
 
