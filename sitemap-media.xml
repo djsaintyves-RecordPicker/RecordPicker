@@ -4,7 +4,7 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://recordpicker.app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -49,7 +49,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -59,7 +59,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -245,7 +245,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -295,7 +295,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -340,7 +340,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -350,7 +350,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -360,7 +360,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -370,7 +370,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -400,7 +400,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -415,7 +415,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -425,7 +425,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -611,7 +611,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -661,7 +661,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -706,7 +706,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -716,7 +716,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -726,7 +726,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ar/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -736,7 +736,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -766,7 +766,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -781,7 +781,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -791,7 +791,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -977,7 +977,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1027,7 +1027,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -1072,7 +1072,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1082,7 +1082,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -1092,7 +1092,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/de/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -1102,7 +1102,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -1132,7 +1132,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -1147,7 +1147,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -1157,7 +1157,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -1343,7 +1343,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1393,7 +1393,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -1438,7 +1438,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1448,7 +1448,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -1458,7 +1458,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -1468,7 +1468,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -1498,7 +1498,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -1513,7 +1513,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -1523,7 +1523,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -1709,7 +1709,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1759,7 +1759,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -1804,7 +1804,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -1814,7 +1814,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -1824,7 +1824,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -1834,7 +1834,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -1864,7 +1864,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -1879,7 +1879,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -1889,7 +1889,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -2075,7 +2075,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2125,7 +2125,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -2170,7 +2170,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2180,7 +2180,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -2190,7 +2190,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -2200,7 +2200,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -2230,7 +2230,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -2245,7 +2245,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -2255,7 +2255,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -2441,7 +2441,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2491,7 +2491,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -2536,7 +2536,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2546,7 +2546,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -2556,7 +2556,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -2566,7 +2566,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -2596,7 +2596,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -2611,7 +2611,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -2621,7 +2621,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -2807,7 +2807,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2857,7 +2857,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -2902,7 +2902,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -2912,7 +2912,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -2922,7 +2922,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ca/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -2932,7 +2932,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -2962,7 +2962,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -2977,7 +2977,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -2987,7 +2987,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -3173,7 +3173,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -3223,7 +3223,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -3268,7 +3268,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -3278,7 +3278,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -3288,7 +3288,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ko/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -3298,7 +3298,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -3328,7 +3328,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -3343,7 +3343,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -3353,7 +3353,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -3539,7 +3539,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -3589,7 +3589,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -3634,7 +3634,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -3644,7 +3644,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -3654,7 +3654,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -3664,7 +3664,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -3694,7 +3694,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -3709,7 +3709,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -3719,7 +3719,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -3905,7 +3905,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -3955,7 +3955,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -4000,7 +4000,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -4010,7 +4010,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -4020,7 +4020,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -4030,7 +4030,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -4060,7 +4060,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -4075,7 +4075,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -4085,7 +4085,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -4271,7 +4271,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -4321,7 +4321,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -4366,7 +4366,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -4376,7 +4376,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -4386,7 +4386,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/da/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -4396,7 +4396,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -4426,7 +4426,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -4441,7 +4441,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -4451,7 +4451,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -4637,7 +4637,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -4687,7 +4687,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -4732,7 +4732,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -4742,7 +4742,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -4752,7 +4752,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -4762,7 +4762,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -4792,7 +4792,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -4807,7 +4807,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -4817,7 +4817,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -5003,7 +5003,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5053,7 +5053,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -5098,7 +5098,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5108,7 +5108,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -5118,7 +5118,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fi/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -5128,7 +5128,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -5158,7 +5158,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -5173,7 +5173,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -5183,7 +5183,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -5369,7 +5369,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5419,7 +5419,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -5464,7 +5464,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5474,7 +5474,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -5484,7 +5484,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -5494,7 +5494,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -5524,7 +5524,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -5539,7 +5539,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -5549,7 +5549,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -5735,7 +5735,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5785,7 +5785,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -5830,7 +5830,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -5840,7 +5840,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -5850,7 +5850,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/fr/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -5860,7 +5860,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -5890,7 +5890,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -5905,7 +5905,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -5915,7 +5915,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -6101,7 +6101,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6151,7 +6151,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -6196,7 +6196,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6206,7 +6206,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -6216,7 +6216,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/el/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -6226,7 +6226,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -6256,7 +6256,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -6271,7 +6271,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -6281,7 +6281,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -6467,7 +6467,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6517,7 +6517,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -6562,7 +6562,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6572,7 +6572,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -6582,7 +6582,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/he/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -6592,7 +6592,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -6622,7 +6622,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -6637,7 +6637,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -6647,7 +6647,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -6833,7 +6833,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6883,7 +6883,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -6928,7 +6928,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -6938,7 +6938,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -6948,7 +6948,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/hi/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -6958,7 +6958,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -6988,7 +6988,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -7003,7 +7003,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -7013,7 +7013,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -7199,7 +7199,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -7249,7 +7249,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -7294,7 +7294,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -7304,7 +7304,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -7314,7 +7314,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/id/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -7324,7 +7324,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -7354,7 +7354,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -7369,7 +7369,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -7379,7 +7379,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -7565,7 +7565,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -7615,7 +7615,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -7660,7 +7660,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -7670,7 +7670,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -7680,7 +7680,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/it/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -7690,7 +7690,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -7720,7 +7720,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -7735,7 +7735,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -7745,7 +7745,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -7931,7 +7931,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -7981,7 +7981,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -8026,7 +8026,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -8036,7 +8036,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -8046,7 +8046,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ja/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -8056,7 +8056,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -8086,7 +8086,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -8101,7 +8101,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -8111,7 +8111,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -8297,7 +8297,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -8347,7 +8347,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -8392,7 +8392,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -8402,7 +8402,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -8412,7 +8412,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nl/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -8422,7 +8422,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -8452,7 +8452,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -8467,7 +8467,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -8477,7 +8477,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -8663,7 +8663,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -8713,7 +8713,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -8758,7 +8758,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -8768,7 +8768,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -8778,7 +8778,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/nb/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -8788,7 +8788,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -8818,7 +8818,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -8833,7 +8833,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -8843,7 +8843,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -9029,7 +9029,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9079,7 +9079,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -9124,7 +9124,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9134,7 +9134,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -9144,7 +9144,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pl/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -9154,7 +9154,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -9184,7 +9184,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -9199,7 +9199,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -9209,7 +9209,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -9395,7 +9395,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9445,7 +9445,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -9490,7 +9490,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9500,7 +9500,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -9510,7 +9510,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -9520,7 +9520,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -9550,7 +9550,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -9565,7 +9565,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -9575,7 +9575,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -9761,7 +9761,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9811,7 +9811,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -9856,7 +9856,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -9866,7 +9866,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -9876,7 +9876,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -9886,7 +9886,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -9916,7 +9916,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -9931,7 +9931,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -9941,7 +9941,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -10127,7 +10127,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10177,7 +10177,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -10222,7 +10222,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10232,7 +10232,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -10242,7 +10242,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/ru/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -10252,7 +10252,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -10282,7 +10282,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -10297,7 +10297,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -10307,7 +10307,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -10493,7 +10493,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10543,7 +10543,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -10588,7 +10588,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10598,7 +10598,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -10608,7 +10608,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/sv/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
@@ -10618,7 +10618,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>iPad draw view and controls in Record Picker</image:title>
@@ -10648,7 +10648,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/support/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
       <image:title>Import options in Record Picker</image:title>
@@ -10663,7 +10663,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/privacy/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
       <image:title>Local manual import in Record Picker</image:title>
@@ -10673,7 +10673,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/screenshots/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/data-quality.jpeg</image:loc>
       <image:title>Record Picker 1.8 light screenshot 1</image:title>
@@ -10859,7 +10859,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/readme/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10909,7 +10909,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/mac-app/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/brand/icon-512.png</image:loc>
       <image:title>Record Picker Mac app icon</image:title>
@@ -10954,7 +10954,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/choose-vinyl-record/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
@@ -10964,7 +10964,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/random-vinyl-record-picker/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
       <image:title>Vinyl effect draw in Record Picker</image:title>
@@ -10974,7 +10974,7 @@
   </url>
   <url>
     <loc>https://recordpicker.app/tr/manage-vinyl-collection/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>

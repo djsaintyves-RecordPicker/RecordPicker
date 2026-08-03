@@ -31,7 +31,8 @@ from site_translation_data import (
 
 ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
-PUBLICATION_DATE = "2026-08-02"
+PUBLICATION_DATE = "2026-08-03"
+SITE_STYLES_VERSION = "20260803-polish"
 
 LOCALE_BY_HTML_LANGUAGE = {
     "ar": "ar", "ca": "ca", "da": "da", "de": "de", "el": "el",
@@ -41,6 +42,17 @@ LOCALE_BY_HTML_LANGUAGE = {
     "ko": "ko", "nb": "nb", "nl": "nl", "pl": "pl", "pt-BR": "pt-BR",
     "pt-PT": "pt-PT", "ru": "ru", "sv": "sv", "tr": "tr",
     "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant",
+}
+
+OPEN_GRAPH_LOCALES = {
+    "ar": "ar_SA", "ca": "ca_ES", "da": "da_DK", "de": "de_DE",
+    "el": "el_GR", "en-AU": "en_AU", "en-CA": "en_CA", "en-GB": "en_GB",
+    "en-US": "en_US", "es-ES": "es_ES", "fi": "fi_FI", "fr-CA": "fr_CA",
+    "fr-FR": "fr_FR", "he": "he_IL", "hi": "hi_IN", "id": "id_ID",
+    "it": "it_IT", "ja": "ja_JP", "ko": "ko_KR", "nb": "nb_NO",
+    "nl": "nl_NL", "pl": "pl_PL", "pt-BR": "pt_BR", "pt-PT": "pt_PT",
+    "ru": "ru_RU", "sv": "sv_SE", "tr": "tr_TR", "zh-Hans": "zh_CN",
+    "zh-Hant": "zh_TW",
 }
 
 TODAY_PICK_KEYS = (
@@ -406,7 +418,138 @@ def restore_support_privacy_link(text: str) -> str:
     return text[:section.start()] + block + text[section.end():]
 
 
-def repair_translations(text: str, language: str, relative_path: Path) -> str:
+IMAGE_DIMENSION_CACHE: dict[Path, tuple[int, int]] = {}
+
+
+def image_dimensions(path: Path) -> tuple[int, int] | None:
+    if path in IMAGE_DIMENSION_CACHE:
+        return IMAGE_DIMENSION_CACHE[path]
+    if not path.exists():
+        return None
+    data = path.read_bytes()
+    dimensions = None
+    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
+        dimensions = (
+            int.from_bytes(data[16:20], "big"),
+            int.from_bytes(data[20:24], "big"),
+        )
+    elif data.startswith(b"\xff\xd8"):
+        offset = 2
+        start_of_frame = {
+            0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+            0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF,
+        }
+        while offset + 8 < len(data):
+            if data[offset] != 0xFF:
+                offset += 1
+                continue
+            marker = data[offset + 1]
+            offset += 2
+            if marker in {0x01, *range(0xD0, 0xDA)}:
+                continue
+            if offset + 2 > len(data):
+                break
+            length = int.from_bytes(data[offset:offset + 2], "big")
+            if marker in start_of_frame and offset + 7 <= len(data):
+                dimensions = (
+                    int.from_bytes(data[offset + 5:offset + 7], "big"),
+                    int.from_bytes(data[offset + 3:offset + 5], "big"),
+                )
+                break
+            if length < 2:
+                break
+            offset += length
+    if dimensions:
+        IMAGE_DIMENSION_CACHE[path] = dimensions
+    return dimensions
+
+
+def add_intrinsic_image_dimensions(text: str, page: Path) -> str:
+    def update(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        source = re.search(r'\bsrc="([^"]+)"', tag)
+        if not source or source.group(1).startswith(("data:", "http://", "https://")):
+            return tag
+        raw_source = unescape(source.group(1)).split("?", 1)[0]
+        asset = (
+            ROOT / raw_source.lstrip("/")
+            if raw_source.startswith("/")
+            else (page.parent / raw_source).resolve()
+        )
+        dimensions = image_dimensions(asset)
+        if not dimensions:
+            return tag
+        additions = ""
+        if not re.search(r'\bwidth="', tag):
+            additions += f' width="{dimensions[0]}"'
+        if not re.search(r'\bheight="', tag):
+            additions += f' height="{dimensions[1]}"'
+        return tag[:-1] + additions + ">" if additions else tag
+    return re.sub(r'<img\b[^>]*>', update, text)
+
+
+def optimize_image_loading(text: str) -> str:
+    def defaults(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        if not re.search(r'\bdecoding="', tag):
+            tag = tag[:-1] + ' decoding="async">'
+        if 'src="/assets/brand/favicon-96.png"' not in tag and not re.search(r'\bloading="', tag):
+            tag = tag[:-1] + ' loading="lazy">'
+        return tag
+
+    text = re.sub(r'<img\b[^>]*>', defaults, text)
+    hero = re.search(r'<div class="hero-showcase".*?</div>', text, flags=re.DOTALL)
+    if hero:
+        block = re.sub(
+            r'<img\b[^>]*>',
+            lambda match: re.sub(r'\sloading="lazy"', '', match.group(0))[:-1]
+            + (' fetchpriority="high">' if 'fetchpriority=' not in match.group(0) else '>'),
+            hero.group(0),
+            count=1,
+        )
+        text = text[:hero.start()] + block + text[hero.end():]
+    return text
+
+
+def ensure_social_metadata(text: str, language: str) -> str:
+    title_match = re.search(r'<title>(.*?)</title>', text, flags=re.DOTALL)
+    description_match = re.search(
+        r'<meta name="description" content="([^"]*)">', text
+    )
+    image_match = re.search(
+        r'<meta property="og:image" content="([^"]*)">', text
+    )
+    if not title_match or not description_match or not image_match:
+        return text
+    title = unescape(re.sub(r'<[^>]+>', '', title_match.group(1))).strip()
+    description = unescape(description_match.group(1)).strip()
+    image = unescape(image_match.group(1)).strip()
+    for key in ("robots", "twitter:card", "twitter:title", "twitter:description", "twitter:image"):
+        text = re.sub(rf'<meta name="{re.escape(key)}" content="[^"]*">', "", text)
+    for key in ("og:type", "og:site_name", "og:locale"):
+        text = re.sub(rf'<meta property="{re.escape(key)}" content="[^"]*">', "", text)
+    metadata = (
+        '<meta name="robots" content="index,follow,max-image-preview:large">'
+        '<meta property="og:type" content="website">'
+        '<meta property="og:site_name" content="Record Picker">'
+        f'<meta property="og:locale" content="{OPEN_GRAPH_LOCALES.get(language, "en_US")}">'
+        '<meta name="twitter:card" content="summary">'
+        f'<meta name="twitter:title" content="{escape(title, quote=True)}">'
+        f'<meta name="twitter:description" content="{escape(description, quote=True)}">'
+        f'<meta name="twitter:image" content="{escape(image, quote=True)}">'
+    )
+    canonical = re.search(r'<link rel="canonical"', text)
+    if not canonical:
+        return text
+    return text[:canonical.start()] + metadata + text[canonical.start():]
+
+
+def repair_translations(text: str, language: str, relative_path: Path, page: Path) -> str:
+    text = re.sub(
+        r'(styles\.css\?v=)[^"]+',
+        rf'\g<1>{SITE_STYLES_VERSION}',
+        text,
+    )
     if language in FREE_PRO_LABELS:
         text = text.replace("Free · Lifetime Pro", FREE_PRO_LABELS[language])
     if language == "hi":
@@ -421,6 +564,19 @@ def repair_translations(text: str, language: str, relative_path: Path) -> str:
     text = localize_accessibility(text, language)
     if relative_path.as_posix() == "support/index.html":
         text = restore_support_privacy_link(text)
+    if relative_path.as_posix() == "privacy/index.html":
+        text = re.sub(
+            r'(<p class="doc-meta">Record Picker )v1\.6',
+            r'\1v1.8',
+            text,
+            count=1,
+        )
+        text = text.replace("<h3>", "<h2>").replace("</h3>", "</h2>")
+    if relative_path.as_posix() == "mac-app/index.html":
+        text = text.replace("macOS 1.0", "macOS 1.8")
+    text = add_intrinsic_image_dimensions(text, page)
+    text = optimize_image_loading(text)
+    text = ensure_social_metadata(text, language)
     return text
 
 
@@ -435,7 +591,11 @@ def ensure_preview_stylesheet(text: str, prefix: str) -> str:
 
 
 def update_current_release_facts(text: str) -> str:
-    text = text.replace('"softwareVersion":"1.6"', '"softwareVersion":"1.8"')
+    text = re.sub(
+        r'"softwareVersion":"(?:1\.0|1\.6)"',
+        '"softwareVersion":"1.8"',
+        text,
+    )
     text = re.sub(
         r'(<footer class="footer"><span>)(?:<span[^>]*>)?.*?</span>(?:</span>)?',
         r'\1Record Picker v1.8</span>',
@@ -527,6 +687,22 @@ def update_media_sitemap(roots: list[Path]) -> None:
                     1,
                 )
             text = text[:block_match.start()] + block + text[block_match.end():]
+    text = re.sub(
+        r'<lastmod>[^<]+</lastmod>',
+        f'<lastmod>{PUBLICATION_DATE}</lastmod>',
+        text,
+    )
+    path.write_text(text, encoding="utf-8")
+
+
+def update_standard_sitemap() -> None:
+    path = ROOT / "sitemap.xml"
+    text = path.read_text(encoding="utf-8")
+    text = re.sub(
+        r'<lastmod>[^<]+</lastmod>',
+        f'<lastmod>{PUBLICATION_DATE}</lastmod>',
+        text,
+    )
     path.write_text(text, encoding="utf-8")
 
 
@@ -539,13 +715,24 @@ def main() -> None:
         language = html_language(home_text)
         release_intro, release_bullets = release_copy(language)
         visual_captions = localized_visual_captions(root, release_bullets)
+        release_card = re.search(
+            r'<article class="release-card[^>]*data-release-version="1\.8".*?</article>',
+            home_text,
+            flags=re.DOTALL,
+        )
+        release_status = None
+        if release_card:
+            status = re.search(r'<div><h3>.*?</h3><p>(.*?)</p>', release_card.group(0), re.DOTALL)
+            if status:
+                release_status = unescape(re.sub(r'<[^>]+>', '', status.group(1))).strip()
         current_v18 = re.search(
             r'<section class="section v18-showcase".*?</section>',
             home_text,
             flags=re.DOTALL,
         )
         functional_v18 = visual_preview(
-            language, release_intro, release_bullets, home_prefix, visual_captions
+            language, release_intro, release_bullets, home_prefix, visual_captions,
+            release_status,
         )
         if not current_v18:
             raise RuntimeError(f"No 1.8 visual showcase found in {home}")
@@ -632,11 +819,12 @@ def main() -> None:
             language = html_language(text)
             relative_path = page.relative_to(root)
             page.write_text(
-                repair_translations(text, language, relative_path),
+                repair_translations(text, language, relative_path, page),
                 encoding="utf-8",
             )
 
     update_media_sitemap(roots)
+    update_standard_sitemap()
 
     print(
         f"Prepared {len(roots)} locales: 1.9 preview, historical status cleanup, "

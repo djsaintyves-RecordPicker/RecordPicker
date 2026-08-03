@@ -156,11 +156,14 @@ def visual_preview(
     bullets: list[str],
     prefix: str,
     localized_captions: list[str] | None = None,
+    kicker_override: str | None = None,
 ) -> str:
     kicker, title = PREVIEW_LABELS.get(
         language,
         ("Coming in 1.8", "Collection Health becomes truly actionable"),
     )
+    if kicker_override:
+        kicker = kicker_override
     captions = localized_captions or VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
     assets = [
         ("assets/screenshots/ipad/data-quality.png", "wide"),
