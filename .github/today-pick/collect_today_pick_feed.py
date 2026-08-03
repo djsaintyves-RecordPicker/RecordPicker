@@ -36,6 +36,26 @@ MAX_ARTICLES_PER_SOURCE = 12
 MAX_MUSICBRAINZ_RESULTS = 8
 MUSICBRAINZ_MINIMUM_SCORE = 90
 MUSICBRAINZ_DELAY_SECONDS = 1.05
+WIKIMEDIA_API_ROOT = "https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday"
+WIKIMEDIA_MUSICAL_OCCUPATION = re.compile(
+    r"\b(?:singer|vocalist|musician|composer|songwriter|rapper|record producer|"
+    r"conductor|pianist|keyboardist|organist|guitarist|bassist|drummer|"
+    r"percussionist|violinist|violist|cellist|harpist|flautist|flutist|"
+    r"saxophonist|clarinetist|trumpeter|trombonist|oboist|bandleader|dj)\b",
+    re.IGNORECASE,
+)
+WIKIMEDIA_COMPOSER_OCCUPATION = re.compile(r"\bcomposer\b", re.IGNORECASE)
+ENGLISH_MONTH_NAMES = (
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+)
+HEADLINE_SUBJECT_PATTERN = re.compile(
+    r"^(.{2,80}?)\s+(?:announces?|shares?|releases?|reveals?|returns?|dies?|died|"
+    r"wins?|launches?|unveils?|confirms?|adds?|speaks?|says?|signs?|sets?|"
+    r"teams?|performs?|celebrates?|marks?|details?|previews?|drops?|debuts?|"
+    r"publishes?|issues?)\b",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -113,6 +133,24 @@ def clean_text(raw: str | None) -> str:
 
 def normalized(value: str) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.casefold()))
+
+
+def headline_without_quoted_titles(headline: str) -> str:
+    value = headline
+    for pattern in (r'"[^"\n]*"', r"“[^”\n]*”", r"‘[^’\n]*’", r"'[^'\n]*'"):
+        value = re.sub(pattern, " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def headline_subject_candidates(headline: str) -> list[str]:
+    visible = headline_without_quoted_titles(clean_text(headline))
+    match = HEADLINE_SUBJECT_PATTERN.search(visible)
+    if not match:
+        return []
+    candidate = clean_text(match.group(1)).strip(" :-–—")
+    if not candidate or len(candidate) > builder.MAX_NAME_LENGTH:
+        return []
+    return [candidate]
 
 
 def parse_publication_date(raw: str | None) -> datetime | None:
@@ -206,13 +244,13 @@ def event_kind_for_headline(headline: str) -> str:
 
 
 def contains_identity(headline: str, identity: str) -> bool:
-    headline_key = f" {normalized(headline)} "
+    headline_key = f" {normalized(headline_without_quoted_titles(headline))} "
     identity_key = normalized(identity)
     return len(identity_key) >= 3 and f" {identity_key} " in headline_key
 
 
 class MusicBrainzArtistResolver:
-    """Resolve only artist names MusicBrainz also finds verbatim in a title."""
+    """Resolve only explicit headline subjects confirmed by MusicBrainz."""
 
     def __init__(
         self,
@@ -228,34 +266,56 @@ class MusicBrainzArtistResolver:
         key = normalized(headline)
         if key in self.cache:
             return self.cache[key]
+        resolved: list[str] = []
+        seen: set[str] = set()
+        for subject in headline_subject_candidates(headline):
+            exact = self.resolve_exact(subject)
+            if not exact:
+                continue
+            name_key = normalized(exact)
+            if name_key not in seen:
+                seen.add(name_key)
+                resolved.append(exact)
+        self.cache[key] = resolved[:4]
+        return self.cache[key]
+
+    def resolve_exact(self, identity: str) -> str | None:
+        """Return an artist only when MusicBrainz confirms the exact name."""
+
+        value = clean_text(identity)
+        key = f"exact:{normalized(value)}"
+        if not value or len(value) > builder.MAX_NAME_LENGTH:
+            return None
+        if key in self.cache:
+            return self.cache[key][0] if self.cache[key] else None
         if self._last_request_at is not None and self.delay_seconds:
             remaining = self.delay_seconds - (time.monotonic() - self._last_request_at)
             if remaining > 0:
                 time.sleep(remaining)
+        escaped = value.replace("\\", "\\\\").replace('"', '\\"')
         url = "https://musicbrainz.org/ws/2/artist/?" + urlencode(
-            {"query": headline, "limit": MAX_MUSICBRAINZ_RESULTS, "fmt": "json"}
+            {"query": f'artist:"{escaped}"', "limit": MAX_MUSICBRAINZ_RESULTS, "fmt": "json"}
         )
         try:
             document = self.json_fetcher(url)
         finally:
             self._last_request_at = time.monotonic()
+        expected = normalized(value)
         candidates: list[tuple[int, str]] = []
         for item in document.get("artists", []):
             if not isinstance(item, dict):
                 continue
             name = clean_text(item.get("name"))
             score = item.get("score", 0)
-            if isinstance(score, int) and score >= MUSICBRAINZ_MINIMUM_SCORE and contains_identity(headline, name):
+            if (
+                isinstance(score, int)
+                and score >= MUSICBRAINZ_MINIMUM_SCORE
+                and normalized(name) == expected
+            ):
                 candidates.append((score, name))
-        resolved = []
-        seen: set[str] = set()
-        for _, name in sorted(candidates, key=lambda value: (-value[0], -len(value[1]), value[1])):
-            name_key = normalized(name)
-            if name_key not in seen:
-                seen.add(name_key)
-                resolved.append(name)
-        self.cache[key] = resolved[:4]
-        return self.cache[key]
+        resolved = sorted(candidates, key=lambda result: (-result[0], result[1]))
+        self.cache[key] = [resolved[0][1]] if resolved else []
+        return self.cache[key][0] if self.cache[key] else None
 
 
 def stable_event_id(prefix: str, *values: str) -> str:
@@ -443,6 +503,82 @@ def musicbrainz_release_events(
     return events, warnings
 
 
+def wikimedia_identity(event_text: Any) -> str | None:
+    """Extract the named person, never the potentially misleading page title."""
+
+    text = clean_text(event_text if isinstance(event_text, str) else None)
+    if not text or "," not in text or not WIKIMEDIA_MUSICAL_OCCUPATION.search(text):
+        return None
+    identity = clean_text(text.split(",", 1)[0])
+    if not identity or len(identity) > builder.MAX_NAME_LENGTH:
+        return None
+    if not re.search(r"[A-Za-zÀ-ÖØ-öø-ÿ]", identity):
+        return None
+    return identity
+
+
+def wikimedia_on_this_day_events(
+    now: datetime,
+    resolver: MusicBrainzArtistResolver | None = None,
+    json_fetcher: Callable[[str], dict[str, Any]] = fetch_json,
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """Collect today's musician birthdays from Wikimedia's structured feed."""
+
+    resolver = resolver or MusicBrainzArtistResolver()
+    month_day = f"{now.month:02d}/{now.day:02d}"
+    url = f"{WIKIMEDIA_API_ROOT}/births/{month_day}"
+    try:
+        document = json_fetcher(url)
+    except Exception as error:
+        return [], [f"Wikimedia On this day: {error}"]
+
+    births = document.get("births", [])
+    if not isinstance(births, list):
+        return [], ["Wikimedia On this day: births is not an array"]
+
+    source_url = (
+        f"https://en.wikipedia.org/wiki/{ENGLISH_MONTH_NAMES[now.month - 1]}_{now.day}"
+    )
+    event_date = datetime.combine(now.date(), datetime_time(12), tzinfo=timezone.utc)
+    events: list[dict[str, Any]] = []
+    warnings: list[str] = []
+    seen: set[str] = set()
+    for entry in births:
+        if not isinstance(entry, dict):
+            continue
+        text = clean_text(entry.get("text"))
+        identity = wikimedia_identity(text)
+        birth_year = entry.get("year")
+        if identity is None or not isinstance(birth_year, int) or birth_year > now.year:
+            continue
+        try:
+            resolved = resolver.resolve_exact(identity)
+        except Exception as error:
+            warnings.append(f"MusicBrainz exact resolver ({identity}): {error}")
+            continue
+        if not resolved or normalized(resolved) in seen:
+            continue
+        seen.add(normalized(resolved))
+        composers = [resolved] if WIKIMEDIA_COMPOSER_OCCUPATION.search(text) else []
+        events.append(
+            {
+                "id": stable_event_id("birthday", resolved, now.date().isoformat()),
+                "kind": "birthday",
+                "headline": f"{resolved} was born on this day in {birth_year}",
+                "sourceName": "Wikipedia On this day",
+                "sourceURL": source_url,
+                "publishedAt": builder.isoformat(now),
+                "sourceKind": "structuredDatabase",
+                "eventDate": builder.isoformat(event_date),
+                "importance": 0.56,
+                "artists": [resolved],
+                "albumTitles": [],
+                "composers": composers,
+            }
+        )
+    return events, warnings
+
+
 def ticketmaster_events(
     now: datetime,
     api_key: str,
@@ -526,6 +662,7 @@ def ticketmaster_events(
 def unique_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     by_id: dict[str, dict[str, Any]] = {}
     release_signatures: set[tuple[tuple[str, ...], tuple[str, ...], str]] = set()
+    dated_identity_owners: dict[tuple[str, tuple[str, ...], str], str] = {}
     for event in events:
         if event.get("sourceName") == "MusicBrainz":
             signature = (
@@ -536,8 +673,48 @@ def unique_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
             if signature in release_signatures:
                 continue
             release_signatures.add(signature)
+        if event.get("kind") in {"birthday", "anniversary"}:
+            identities = tuple(
+                sorted(normalized(value) for value in event.get("artists", []) if normalized(value))
+            )
+            if not identities:
+                by_id.setdefault(event["id"], event)
+                continue
+            signature = (
+                event["kind"],
+                identities,
+                "" if event["kind"] == "birthday"
+                else (event.get("eventDate") or event.get("publishedAt") or "")[:10],
+            )
+            owner_id = dated_identity_owners.get(signature)
+            if owner_id is not None:
+                existing = by_id[owner_id]
+                source_priority = {"official": 3, "editorial": 2, "structuredDatabase": 1}
+                existing_rank = (
+                    float(existing.get("importance", 0)),
+                    source_priority.get(existing.get("sourceKind"), 0),
+                    existing["id"],
+                )
+                new_rank = (
+                    float(event.get("importance", 0)),
+                    source_priority.get(event.get("sourceKind"), 0),
+                    event["id"],
+                )
+                if new_rank <= existing_rank:
+                    continue
+                del by_id[owner_id]
+            dated_identity_owners[signature] = event["id"]
         by_id.setdefault(event["id"], event)
-    priority = {"obituary": 0, "reissue": 1, "award": 2, "concert": 3, "newRelease": 4, "news": 5}
+    priority = {
+        "obituary": 0,
+        "reissue": 1,
+        "award": 2,
+        "concert": 3,
+        "newRelease": 4,
+        "birthday": 5,
+        "anniversary": 6,
+        "news": 7,
+    }
     return sorted(
         by_id.values(),
         key=lambda event: (
@@ -552,6 +729,7 @@ def collect(
     now: datetime,
     include_editorial: bool = True,
     include_musicbrainz: bool = True,
+    include_wikimedia: bool = True,
     ticketmaster_api_key: str | None = None,
     ticketmaster_countries: Iterable[str] = (),
 ) -> tuple[dict[str, Any], list[str]]:
@@ -563,6 +741,10 @@ def collect(
         warnings.extend(messages)
     if include_musicbrainz:
         collected, messages = musicbrainz_release_events(now)
+        events.extend(collected)
+        warnings.extend(messages)
+    if include_wikimedia:
+        collected, messages = wikimedia_on_this_day_events(now)
         events.extend(collected)
         warnings.extend(messages)
     if ticketmaster_api_key:
@@ -584,6 +766,7 @@ def main() -> int:
     parser.add_argument("--ttl-hours", type=int, default=36)
     parser.add_argument("--without-editorial", action="store_true")
     parser.add_argument("--without-musicbrainz", action="store_true")
+    parser.add_argument("--without-wikimedia", action="store_true")
     parser.add_argument(
         "--ticketmaster-countries",
         default="FR,GB,US,CA,DE,ES,IT,NL,BE,CH,AT,AU,MX,JP,PL,NO,SE,FI",
@@ -598,6 +781,7 @@ def main() -> int:
         now,
         include_editorial=not arguments.without_editorial,
         include_musicbrainz=not arguments.without_musicbrainz,
+        include_wikimedia=not arguments.without_wikimedia,
         ticketmaster_api_key=os.environ.get("TICKETMASTER_API_KEY"),
         ticketmaster_countries=arguments.ticketmaster_countries.split(","),
     )
