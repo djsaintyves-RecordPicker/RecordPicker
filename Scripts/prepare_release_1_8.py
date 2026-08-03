@@ -141,10 +141,13 @@ def update_preview_card(text: str, path: Path, bullets: list[str]) -> str:
             1,
         )
     card = re.sub(
-        r'<li class="v18-highlight">.*?</li>', "", card, flags=re.DOTALL
+        r'<li(?: class="v18-highlight"| data-v18-added)>.*?</li>',
+        "",
+        card,
+        flags=re.DOTALL,
     )
     additions = "".join(
-        f'<li class="v18-highlight">{escape(bullet)}</li>' for bullet in bullets
+        f'<li data-v18-added>{escape(bullet)}</li>' for bullet in bullets
     )
     card = card.replace("</ul>", additions + "</ul>", 1)
     return text[:card_match.start()] + card + text[card_match.end():]
@@ -265,9 +268,13 @@ def update_home_page(path: Path) -> None:
     text = update_preview_card(text, path, new_bullets)
 
     prefix = "" if path.parent == ROOT else "../"
-    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260802">'
-    if stylesheet not in text:
-        text = text.replace("</head>", stylesheet + "</head>", 1)
+    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260803-layout">'
+    text = re.sub(
+        r'<link rel="stylesheet" href="[^\"]*v18\.css\?v=[^\"]+">',
+        "",
+        text,
+    )
+    text = text.replace("</head>", stylesheet + "</head>", 1)
 
     insertion = visual_preview(
         language, intro, new_bullets, prefix, localized_visual_captions(path.parent, new_bullets)

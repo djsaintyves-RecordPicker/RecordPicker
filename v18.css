@@ -42,15 +42,6 @@
   line-height: 1.5;
 }
 
-.release-card .v18-highlight {
-  color: var(--ink);
-  font-weight: 650;
-}
-
-.release-card .v18-highlight::marker {
-  color: var(--red);
-}
-
 .release-upcoming {
   border-color: color-mix(in srgb, var(--red) 38%, var(--line));
   background: color-mix(in srgb, var(--surface-raised) 92%, var(--red));

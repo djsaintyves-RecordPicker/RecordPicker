@@ -32,7 +32,8 @@ from site_translation_data import (
 ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
 PUBLICATION_DATE = "2026-08-03"
-SITE_STYLES_VERSION = "20260803-polish"
+SITE_STYLES_VERSION = "20260803-layout"
+V18_STYLES_VERSION = "20260803-layout"
 
 LOCALE_BY_HTML_LANGUAGE = {
     "ar": "ar", "ca": "ca", "da": "da", "de": "de", "el": "el",
@@ -206,13 +207,13 @@ def update_release_cards(text: str, path: Path) -> str:
     )
     if v18:
         card = re.sub(
-            r'<li class="v18-highlight">.*?</li>',
+            r'<li(?: class="v18-highlight"| data-v18-added)>.*?</li>',
             "",
             v18.group(0),
             flags=re.DOTALL,
         )
         highlights = "".join(
-            f'<li class="v18-highlight">{escape(bullet)}</li>' for bullet in bullets
+            f'<li data-v18-added>{escape(bullet)}</li>' for bullet in bullets
         )
         card = card.replace("</ul>", highlights + "</ul>", 1)
         text = text[:v18.start()] + card + text[v18.end():]
@@ -511,6 +512,45 @@ def optimize_image_loading(text: str) -> str:
     return text
 
 
+def ensure_mac_feature_previews(text: str) -> str:
+    row = re.search(r'<section class="mac-feature-row">.*?</section>', text, flags=re.DOTALL)
+    if not row:
+        return text
+    prefix_match = re.search(
+        r'src="([^\"]*)assets/screenshots/mac/record-crate-light\.png"',
+        row.group(0),
+    )
+    prefix = prefix_match.group(1) if prefix_match else "../"
+    assets = (
+        "assets/screenshots/mac/record-crate-light.png",
+        "assets/screenshots/v18/mac/list.png",
+        "assets/screenshots/mac/mood-pick-light.jpeg",
+    )
+    cards = re.findall(r'<article class="card">.*?</article>', row.group(0), flags=re.DOTALL)
+    if len(cards) != len(assets):
+        return text
+    updated_cards = []
+    for card, asset in zip(cards, assets):
+        card = re.sub(
+            r'<div class="mac-card-preview[^\"]*">.*?</div>',
+            "",
+            card,
+            flags=re.DOTALL,
+        )
+        heading = re.search(r'<h2>(.*?)</h2>', card, flags=re.DOTALL)
+        alt = escape(unescape(re.sub(r'<[^>]+>', '', heading.group(1))).strip(), quote=True)
+        preview = (
+            '<div class="mac-card-preview"><figure>'
+            f'<img alt="{alt}" src="{prefix}{asset}">'
+            '</figure></div>'
+        )
+        updated_cards.append(card.replace("</article>", preview + "</article>", 1))
+    block = row.group(0)
+    for original, updated in zip(cards, updated_cards):
+        block = block.replace(original, updated, 1)
+    return text[:row.start()] + block + text[row.end():]
+
+
 def ensure_social_metadata(text: str, language: str) -> str:
     title_match = re.search(r'<title>(.*?)</title>', text, flags=re.DOTALL)
     description_match = re.search(
@@ -574,6 +614,7 @@ def repair_translations(text: str, language: str, relative_path: Path, page: Pat
         text = text.replace("<h3>", "<h2>").replace("</h3>", "</h2>")
     if relative_path.as_posix() == "mac-app/index.html":
         text = text.replace("macOS 1.0", "macOS 1.8")
+        text = ensure_mac_feature_previews(text)
     text = add_intrinsic_image_dimensions(text, page)
     text = optimize_image_loading(text)
     text = ensure_social_metadata(text, language)
@@ -581,7 +622,7 @@ def repair_translations(text: str, language: str, relative_path: Path, page: Pat
 
 
 def ensure_preview_stylesheet(text: str, prefix: str) -> str:
-    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260802-19-preview">'
+    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v={V18_STYLES_VERSION}">'
     text = re.sub(
         r'<link rel="stylesheet" href="[^\"]*v18\.css\?v=[^\"]+">',
         "",
