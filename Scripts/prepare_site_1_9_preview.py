@@ -17,7 +17,9 @@ from prepare_release_1_8 import (
     DEFAULT_VISUAL_CAPTIONS,
     LOCALE_DIRECTORIES,
     PREVIEW_LABELS,
+    VISUAL_CAPTIONS,
     release_copy,
+    visual_preview,
 )
 
 
@@ -178,12 +180,6 @@ def update_release_cards(text: str, path: Path) -> str:
     )
 
 
-def capture_locale(language: str) -> str:
-    return {"fr-FR": "fr-fr", "fr-CA": "fr-fr", "es-ES": "es-es"}.get(
-        language, "en-us"
-    )
-
-
 def shot(asset: str, caption: str, shape: str, prefix: str) -> str:
     return (
         f'<figure class="shot-card {shape}"><img loading="lazy" '
@@ -193,36 +189,31 @@ def shot(asset: str, caption: str, shape: str, prefix: str) -> str:
 
 
 def expanded_gallery(language: str, prefix: str) -> str:
-    intro, bullets = release_copy(language)
-    captions = bullets or DEFAULT_VISUAL_CAPTIONS
-    locale = capture_locale(language)
-    phone_locale = "fr-fr" if locale == "fr-fr" else "en-us"
+    intro, _ = release_copy(language)
+    captions = VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
     def cap(index: int) -> str:
         return captions[index % len(captions)]
 
     phone_assets = [
-        "collection", "collection-health", "rediscover", "freemium"
+        "data-quality.jpeg", "final-draw.jpeg", "history.jpeg", "manual-entry.jpeg"
     ]
     ipad_assets = [
-        "onboarding-collection.png", "onboarding-collection-health.png",
-        "onboarding-freemium.png", "original-and-edition-year.png",
+        "ipad/data-quality.png", "ipad/bin-filters.png", "ipad/manual-edit.png",
+        "v18/en-us/original-and-edition-year.png",
     ]
     mac_assets = ["collection.png", "data-quality.png", "list.png", "original-edition.png"]
 
     phone_figures = "".join(
-        shot(f"assets/screenshots/v18/{phone_locale}/iphone-{asset}.png", cap(i), "iphone", prefix)
-        for i, asset in enumerate(phone_assets)
+        shot(f"assets/screenshots/iphone/{asset}", cap(caption_index), "iphone", prefix)
+        for asset, caption_index in zip(phone_assets, (0, 1, 2, 2))
     )
     ipad_figures = "".join(
-        shot(
-            f"assets/screenshots/v18/{'en-us' if asset == 'original-and-edition-year.png' else locale}/{asset}",
-            cap(i), "ipad", prefix,
-        )
-        for i, asset in enumerate(ipad_assets)
+        shot(f"assets/screenshots/{asset}", cap(caption_index), "ipad", prefix)
+        for asset, caption_index in zip(ipad_assets, (0, 1, 0, 2))
     )
     mac_figures = "".join(
-        shot(f"assets/screenshots/v18/mac/{asset}", cap(i), "ipad", prefix)
-        for i, asset in enumerate(mac_assets)
+        shot(f"assets/screenshots/v18/mac/{asset}", cap(caption_index), "ipad", prefix)
+        for asset, caption_index in zip(mac_assets, (3, 0, 1, 2))
     )
     return (
         '<section class="media-section v18-screenshot-gallery" data-release-version="1.8">'
@@ -239,16 +230,25 @@ def expanded_gallery(language: str, prefix: str) -> str:
 
 def update_feature_intro(text: str, language: str, prefix: str) -> str:
     figure = re.search(
-        r'<figure class="context-visual watch ">.*?</figure>', text, flags=re.DOTALL
+        r'<figure class="context-visual (?:watch|wide) ">(?:(?!</figure>).)*'
+        r'(?:onboarding-|iphone-(?:collection|collection-health|rediscover|freemium))'
+        r'.*?</figure>',
+        text,
+        flags=re.DOTALL,
     )
+    if not figure:
+        figure = re.search(
+            r'<figure class="context-visual watch ">.*?</figure>',
+            text,
+            flags=re.DOTALL,
+        )
     if not figure:
         updated = text
     else:
-        locale = capture_locale(language)
         replacement = (
             '<figure class="context-visual wide "><img loading="lazy" '
             'alt="Record Picker 1.8" '
-            f'src="{prefix}assets/screenshots/v18/{locale}/onboarding-collection-health.png">'
+            f'src="{prefix}assets/screenshots/ipad/data-quality.png">'
             '<figcaption>Record Picker 1.8 · Collection Health</figcaption></figure>'
         )
         updated = text[:figure.start()] + replacement + text[figure.end():]
@@ -261,6 +261,11 @@ def update_feature_intro(text: str, language: str, prefix: str) -> str:
     )
     if "assets/watch/" in updated:
         raise RuntimeError("Unexpected Watch visual remains in feature page")
+    if re.search(
+        r'onboarding-|iphone-(?:collection|collection-health|rediscover|freemium)',
+        updated,
+    ):
+        raise RuntimeError("Unexpected tutorial visual remains in feature page")
     return updated
 
 
@@ -327,7 +332,7 @@ def update_media_sitemap(roots: list[Path]) -> None:
     )
     text = re.sub(
         r'[ \t]*<image:image>\s*'
-        r'<image:loc>https://recordpicker\.app/assets/screenshots/v18/[^<]+</image:loc>\s*'
+        r'<image:loc>https://recordpicker\.app/assets/screenshots/[^<]+</image:loc>\s*'
         r'<image:title>Record Picker 1\.8 light screenshot [^<]+</image:title>\s*'
         r'<image:caption>.*?</image:caption>\s*</image:image>\s*',
         "",
@@ -338,15 +343,12 @@ def update_media_sitemap(roots: list[Path]) -> None:
     for root in roots:
         web_prefix = "" if root == ROOT else f"{root.name}/"
         language = html_language((root / "index.html").read_text(encoding="utf-8"))
-        locale = capture_locale(language)
-        phone_locale = "fr-fr" if locale == "fr-fr" else "en-us"
         assets = [
-            *(f"assets/screenshots/v18/{phone_locale}/iphone-{name}.png" for name in (
-                "collection", "collection-health", "rediscover", "freemium"
+            *(f"assets/screenshots/iphone/{name}" for name in (
+                "data-quality.jpeg", "final-draw.jpeg", "history.jpeg", "manual-entry.jpeg"
             )),
-            *(f"assets/screenshots/v18/{locale}/{name}" for name in (
-                "onboarding-collection.png", "onboarding-collection-health.png",
-                "onboarding-freemium.png",
+            *(f"assets/screenshots/ipad/{name}" for name in (
+                "data-quality.png", "bin-filters.png", "manual-edit.png",
             )),
             "assets/screenshots/v18/en-us/original-and-edition-year.png",
             *(f"assets/screenshots/v18/mac/{name}" for name in (
@@ -389,6 +391,18 @@ def main() -> None:
         home_prefix = "" if root == ROOT else "../"
         home_text = update_release_cards(home.read_text(encoding="utf-8"), home)
         language = html_language(home_text)
+        current_v18 = re.search(
+            r'<section class="section v18-showcase".*?</section>',
+            home_text,
+            flags=re.DOTALL,
+        )
+        functional_v18 = visual_preview(language, *release_copy(language), home_prefix)
+        if not current_v18:
+            raise RuntimeError(f"No 1.8 visual showcase found in {home}")
+        home_text = (
+            home_text[:current_v18.start()] + functional_v18
+            + home_text[current_v18.end():]
+        )
         showcase = upcoming_showcase(language)
         current_showcase = re.search(
             r'<section class="section upcoming-showcase".*?</section>',

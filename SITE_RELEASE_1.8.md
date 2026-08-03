@@ -6,10 +6,11 @@ Le site est préparé pour annoncer la version 1.8 sans la présenter prématur�
 
 - Conserver `softwareVersion` à `1.6` dans les données structurées.
 - Conserver les libellés « disponible » et le pied de page sur la version publiée.
-- Les quatre visuels proviennent de la build 1.8 (12) : parcours d’accueil,
-  qualité de collection, double année originale/édition et présentation Free/Pro.
-- Les parcours d’accueil sont localisés en français et en espagnol ; les autres
-  langues utilisent les captures en-US pour éviter tout visuel partiellement traduit.
+- Ne jamais utiliser les écrans du parcours d’accueil ou des tutoriels comme
+  illustrations du site. Employer uniquement des vues fonctionnelles réelles :
+  tirage, bac, qualité des données, fiche d’édition et vues Mac.
+- Les visuels clairs montrent la qualité de collection, la navigation dans le
+  bac, la double année originale/édition et la gestion de collection sur Mac.
 - Les 30 galeries de captures comportent désormais une section 1.8 placée avant
   les aperçus historiques, avec les notes de version localisées disponibles.
 - Vérifier avant publication que ces captures correspondent toujours à la build candidate.

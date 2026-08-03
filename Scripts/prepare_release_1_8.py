@@ -62,30 +62,30 @@ PREVIEW_LABELS = {
 
 VISUAL_CAPTIONS = {
     "fr-FR": [
-        "Un nouveau guide présente l’import, les formats et la gestion complète de la collection.",
-        "Qualité des données distingue les corrections fiables des choix qui exigent votre décision.",
+        "Qualité des données rassemble les corrections et les décisions qui demandent votre attention.",
+        "Le bac permet de parcourir, filtrer et retrouver rapidement chaque disque de la collection.",
         "L’année de sortie originale reste prioritaire, sans perdre l’année de l’édition possédée.",
-        "La présentation Free et Pro explique clairement ce qui reste gratuit et ce qui soutient le développement.",
+        "Sur Mac, la collection profite d’un grand écran clair pour la parcourir et la gérer.",
     ],
     "fr-CA": [
-        "Un nouveau guide présente l’import, les formats et la gestion complète de la collection.",
-        "Qualité des données distingue les corrections fiables des choix qui exigent votre décision.",
+        "Qualité des données rassemble les corrections et les décisions qui demandent votre attention.",
+        "Le bac permet de parcourir, filtrer et retrouver rapidement chaque disque de la collection.",
         "L’année de sortie originale reste prioritaire, sans perdre l’année de l’édition possédée.",
-        "La présentation Free et Pro explique clairement ce qui reste gratuit et ce qui soutient le développement.",
+        "Sur Mac, la collection profite d’un grand écran clair pour la parcourir et la gérer.",
     ],
     "es-ES": [
-        "Una nueva guía presenta la importación, los formatos y la gestión completa de la colección.",
-        "Calidad de los datos separa las correcciones fiables de las decisiones que requieren tu intervención.",
+        "Calidad de los datos reúne las correcciones y las decisiones que requieren tu atención.",
+        "La caja permite explorar, filtrar y encontrar rápidamente cada disco de la colección.",
         "El año de lanzamiento original tiene prioridad sin perder el año de la edición que posees.",
-        "La presentación Free y Pro explica claramente qué sigue siendo gratuito y qué ayuda a mantener el desarrollo.",
+        "En Mac, una vista amplia y clara facilita explorar y gestionar la colección.",
     ],
 }
 
 DEFAULT_VISUAL_CAPTIONS = [
-    "A new guide introduces imports, formats and complete collection management.",
-    "Collection Health separates reliable fixes from decisions that need your input.",
+    "Collection Health brings together fixes and decisions that need your attention.",
+    "The record crate makes it easy to browse, filter and find every record.",
     "The original release year stays prominent without losing the year of your exact edition.",
-    "The Free and Pro introduction makes it clear what stays free and what supports ongoing development.",
+    "On Mac, a clear large-screen view makes the collection easier to browse and manage.",
 ]
 
 FALLBACK_INTRO = (
@@ -144,18 +144,11 @@ def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -
         ("Coming in 1.8", "Collection Health becomes truly actionable"),
     )
     captions = VISUAL_CAPTIONS.get(language, DEFAULT_VISUAL_CAPTIONS)
-    capture_locale = {
-        "fr-FR": "fr-fr",
-        "fr-CA": "fr-fr",
-        "es-ES": "es-es",
-    }.get(language, "en-us")
-    localized_root = f"assets/screenshots/v18/{capture_locale}"
-    english_root = "assets/screenshots/v18/en-us"
     assets = [
-        (f"{localized_root}/onboarding-collection.png", "portrait"),
-        (f"{localized_root}/onboarding-collection-health.png", "portrait"),
-        (f"{english_root}/original-and-edition-year.png", "portrait"),
-        (f"{localized_root}/onboarding-freemium.png", "portrait"),
+        ("assets/screenshots/ipad/data-quality.png", "wide"),
+        ("assets/screenshots/ipad/bin-filters.png", "wide"),
+        ("assets/screenshots/v18/en-us/original-and-edition-year.png", "portrait"),
+        ("assets/screenshots/v18/mac/collection.png", "wide"),
     ]
     figures = []
     for index, (asset, shape) in enumerate(assets):
@@ -179,13 +172,6 @@ def visual_preview(language: str, intro: str, bullets: list[str], prefix: str) -
 
 def screenshot_gallery(language: str, intro: str, bullets: list[str], prefix: str) -> str:
     kicker, _ = PREVIEW_LABELS.get(language, ("Coming in 1.8", "Record Picker 1.8"))
-    capture_locale = {
-        "fr-FR": "fr-fr",
-        "fr-CA": "fr-fr",
-        "es-ES": "es-es",
-    }.get(language, "en-us")
-    localized_root = f"assets/screenshots/v18/{capture_locale}"
-    english_root = "assets/screenshots/v18/en-us"
     fallback = DEFAULT_VISUAL_CAPTIONS
     captions = [
         bullets[2] if len(bullets) > 2 else fallback[0],
@@ -193,9 +179,9 @@ def screenshot_gallery(language: str, intro: str, bullets: list[str], prefix: st
         bullets[3] if len(bullets) > 3 else fallback[2],
     ]
     assets = [
-        f"{localized_root}/onboarding-collection.png",
-        f"{localized_root}/onboarding-collection-health.png",
-        f"{english_root}/original-and-edition-year.png",
+        "assets/screenshots/ipad/data-quality.png",
+        "assets/screenshots/ipad/bin-filters.png",
+        "assets/screenshots/v18/en-us/original-and-edition-year.png",
     ]
     figures = []
     for asset, caption in zip(assets, captions):
