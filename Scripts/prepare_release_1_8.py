@@ -268,7 +268,7 @@ def update_home_page(path: Path) -> None:
     text = update_preview_card(text, path, new_bullets)
 
     prefix = "" if path.parent == ROOT else "../"
-    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260803-layout">'
+    stylesheet = f'<link rel="stylesheet" href="{prefix}v18.css?v=20260803-19-announcement">'
     text = re.sub(
         r'<link rel="stylesheet" href="[^\"]*v18\.css\?v=[^\"]+">',
         "",

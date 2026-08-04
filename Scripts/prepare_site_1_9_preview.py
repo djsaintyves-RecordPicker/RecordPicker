@@ -31,9 +31,10 @@ from site_translation_data import (
 
 ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
+APP_RELEASE_NOTES_19 = ROOT.parent / "RecordPicker" / "AppStoreReleaseNotes" / "1.9"
 PUBLICATION_DATE = "2026-08-03"
 SITE_STYLES_VERSION = "20260803-layout"
-V18_STYLES_VERSION = "20260803-layout"
+V18_STYLES_VERSION = "20260803-19-announcement"
 
 LOCALE_BY_HTML_LANGUAGE = {
     "ar": "ar", "ca": "ca", "da": "da", "de": "de", "el": "el",
@@ -54,6 +55,91 @@ OPEN_GRAPH_LOCALES = {
     "nl": "nl_NL", "pl": "pl_PL", "pt-BR": "pt_BR", "pt-PT": "pt_PT",
     "ru": "ru_RU", "sv": "sv_SE", "tr": "tr_TR", "zh-Hans": "zh_CN",
     "zh-Hant": "zh_TW",
+}
+
+RELEASE_NOTE_FILE_BY_LANGUAGE = {
+    "ar": "ar-SA.txt", "de": "de-DE.txt", "en-AU": "en-AU.txt",
+    "en-CA": "en-CA.txt", "en-GB": "en-GB.txt", "en-US": "en-US.txt",
+    "es-ES": "es-ES.txt", "fi": "fi.txt", "fr-FR": "fr-FR.txt",
+    "it": "it.txt", "ja": "ja.txt", "ko": "ko.txt", "nb": "no.txt",
+    "nl": "nl-NL.txt", "pl": "pl.txt", "pt-BR": "pt-BR.txt",
+    "sv": "sv.txt", "tr": "tr.txt", "zh-Hans": "zh-Hans.txt",
+    "zh-Hant": "zh-Hant.txt",
+}
+
+RELEASE_19_SITE_TRANSLATIONS = {
+    "ca": (
+        "Record Picker 1.9 presenta el Disc del dia: un motiu actual i privat per redescobrir un disc que ja tens.",
+        (
+            "Les notícies musicals verificades, els aniversaris destacats i, opcionalment, els concerts propers es relacionen amb la teva col·lecció íntegrament al dispositiu.",
+            "Cada suggeriment explica per què s’ha triat i cita la font amb data. Les notícies de la llista de desitjos es mantenen separades dels discos que pots escoltar.",
+            "Els recordatoris privats opcionals, el retorn de rellevància i el Disc del dia a l’Apple Watch ajuden a mantenir útils els suggeriments. La col·lecció no s’envia mai al servei de notícies.",
+        ),
+    ),
+    "da": (
+        "Record Picker 1.9 introducerer Dagens plade: en aktuel og privat anledning til at genopdage en plade, du allerede ejer.",
+        (
+            "Bekræftede musiknyheder, mærkedage og valgfrie koncerter i nærheden matches med din samling udelukkende på din enhed.",
+            "Hvert forslag forklarer, hvorfor det blev valgt, og henviser til en dateret kilde. Nyheder fra ønskelisten holdes adskilt fra plader, du kan afspille.",
+            "Valgfrie private påmindelser, relevansfeedback og Dagens plade på Apple Watch hjælper med at holde forslagene nyttige. Din samling sendes aldrig til nyhedstjenesten.",
+        ),
+    ),
+    "el": (
+        "Το Record Picker 1.9 παρουσιάζει τον Δίσκο της ημέρας: μια επίκαιρη και ιδιωτική αφορμή για να ξανανακαλύψεις έναν δίσκο που ήδη έχεις.",
+        (
+            "Επαληθευμένες μουσικές ειδήσεις, σημαντικές επέτειοι και προαιρετικές κοντινές συναυλίες αντιστοιχίζονται με τη συλλογή σου αποκλειστικά στη συσκευή.",
+            "Κάθε πρόταση εξηγεί γιατί επιλέχθηκε και παραπέμπει σε χρονολογημένη πηγή. Τα νέα της λίστας επιθυμιών παραμένουν χωριστά από τους δίσκους που μπορείς να ακούσεις.",
+            "Προαιρετικές ιδιωτικές υπενθυμίσεις, σχόλια συνάφειας και ο Δίσκος της ημέρας στο Apple Watch βοηθούν τις προτάσεις να παραμένουν χρήσιμες. Η συλλογή σου δεν αποστέλλεται ποτέ στην υπηρεσία ειδήσεων.",
+        ),
+    ),
+    "fr-CA": (
+        "Record Picker 1.9 présente le Disque du jour : une raison actuelle et confidentielle de redécouvrir un disque que tu possèdes déjà.",
+        (
+            "Les nouvelles musicales vérifiées, les anniversaires marquants et, en option, les concerts à proximité sont rapprochés de ta collection uniquement sur ton appareil.",
+            "Chaque suggestion explique son choix et cite sa source datée. Les nouvelles de la liste de souhaits restent séparées des disques disponibles à l’écoute.",
+            "Des rappels privés facultatifs, le retour de pertinence et le Disque du jour sur Apple Watch entretiennent la qualité des suggestions. Ta collection n’est jamais transmise au service d’actualité.",
+        ),
+    ),
+    "he": (
+        "Record Picker 1.9 מציגה את תקליט היום: סיבה עדכנית ופרטית לגלות מחדש תקליט שכבר נמצא אצלך.",
+        (
+            "חדשות מוזיקה מאומתות, ימי שנה חשובים והופעות קרובות לפי בחירה מותאמים לאוסף שלך אך ורק במכשיר.",
+            "כל הצעה מסבירה מדוע נבחרה ומצטטת מקור מתוארך. חדשות מרשימת המשאלות נשארות נפרדות מתקליטים שאפשר להאזין להם.",
+            "תזכורות פרטיות לפי בחירה, משוב על רלוונטיות ותקליט היום ב-Apple Watch עוזרים לשמור על הצעות מועילות. האוסף שלך לעולם אינו נשלח לשירות החדשות.",
+        ),
+    ),
+    "hi": (
+        "Record Picker 1.9 में आज का रिकॉर्ड पेश है: आपके पास पहले से मौजूद रिकॉर्ड को निजी तौर पर फिर खोजने की एक सामयिक वजह।",
+        (
+            "सत्यापित संगीत समाचार, महत्वपूर्ण वर्षगाँठ और वैकल्पिक आस-पास के कॉन्सर्ट का मिलान आपके संग्रह से पूरी तरह इसी डिवाइस पर होता है।",
+            "हर सुझाव बताता है कि उसे क्यों चुना गया और तारीख सहित स्रोत देता है। इच्छा-सूची की खबरें उन रिकॉर्ड से अलग रहती हैं जिन्हें आप सुन सकते हैं।",
+            "वैकल्पिक निजी रिमाइंडर, प्रासंगिकता फ़ीडबैक और Apple Watch पर आज का रिकॉर्ड सुझावों को उपयोगी बनाए रखते हैं। आपका संग्रह समाचार सेवा को कभी नहीं भेजा जाता।",
+        ),
+    ),
+    "id": (
+        "Record Picker 1.9 memperkenalkan Piringan hari ini: alasan terkini dan privat untuk menemukan kembali piringan yang sudah Anda miliki.",
+        (
+            "Berita musik terverifikasi, hari jadi penting, dan konser terdekat opsional dicocokkan dengan koleksi Anda sepenuhnya di perangkat.",
+            "Setiap saran menjelaskan alasan pemilihannya dan mencantumkan sumber bertanggal. Berita daftar keinginan tetap terpisah dari piringan yang dapat Anda putar.",
+            "Pengingat privat opsional, umpan balik relevansi, dan Piringan hari ini di Apple Watch membantu menjaga kegunaan saran. Koleksi Anda tidak pernah dikirim ke layanan berita.",
+        ),
+    ),
+    "pt-PT": (
+        "O Record Picker 1.9 apresenta o Disco do dia: um motivo atual e privado para redescobrir um disco que já possui.",
+        (
+            "Notícias de música verificadas, aniversários marcantes e concertos próximos opcionais são associados à sua coleção inteiramente no dispositivo.",
+            "Cada sugestão explica por que foi escolhida e cita a respetiva fonte datada. As notícias da lista de desejos permanecem separadas dos discos que pode ouvir.",
+            "Lembretes privados opcionais, feedback de relevância e o Disco do dia no Apple Watch ajudam a manter as sugestões úteis. A sua coleção nunca é enviada para o serviço de notícias.",
+        ),
+    ),
+    "ru": (
+        "В Record Picker 1.9 появится «Пластинка дня» — актуальный и конфиденциальный повод заново открыть пластинку, которая уже есть в вашей коллекции.",
+        (
+            "Проверенные музыкальные новости, важные годовщины и, по желанию, ближайшие концерты сопоставляются с вашей коллекцией только на устройстве.",
+            "Каждая рекомендация объясняет выбор и ссылается на датированный источник. Новости из списка желаний не смешиваются с пластинками, которые можно послушать.",
+            "Необязательные приватные напоминания, оценка релевантности и «Пластинка дня» на Apple Watch помогают сохранять рекомендации полезными. Ваша коллекция никогда не отправляется новостному сервису.",
+        ),
+    ),
 }
 
 TODAY_PICK_KEYS = (
@@ -109,6 +195,19 @@ def app_strings(language: str) -> dict[str, str]:
     return values
 
 
+def release_19_copy(language: str) -> tuple[str, tuple[str, str, str]]:
+    if language in RELEASE_19_SITE_TRANSLATIONS:
+        return RELEASE_19_SITE_TRANSLATIONS[language]
+    filename = RELEASE_NOTE_FILE_BY_LANGUAGE.get(language)
+    if not filename:
+        raise RuntimeError(f"No localized Record Picker 1.9 announcement for {language}")
+    path = APP_RELEASE_NOTES_19 / filename
+    lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if len(lines) != 4 or not all(line.startswith("•") for line in lines[1:]):
+        raise RuntimeError(f"Unexpected Record Picker 1.9 release-note format in {path}")
+    return lines[0], tuple(line.removeprefix("•").strip() for line in lines[1:])
+
+
 def upcoming_label(language: str) -> str:
     if language.startswith("en"):
         return "Coming soon · 1.9"
@@ -117,24 +216,15 @@ def upcoming_label(language: str) -> str:
 
 
 def upcoming_card(language: str) -> str:
-    strings = app_strings(language)
-    title = strings["Today Pick"]
-    promise = strings["A timely reason to rediscover a record you already own."]
-    why = strings["Why this record today?"]
-    privacy = strings[
-        "Matching happens on this device. Your collection and wishlist are never sent to the music-news service."
-    ]
-    wishlist = strings[
-        "News and reissues related to records you want. These are never presented as records you own."
-    ]
+    headline, bullets = release_19_copy(language)
     return (
         '<article class="release-card release-preview release-upcoming" '
         'data-release-version="1.9"><div class="release-head">'
         '<span class="version-pill">v1.9</span><div>'
-        f'<h3>{escape(title)} — {escape(promise)}</h3>'
+        f'<h3>{escape(headline)}</h3>'
         f'<p>{escape(upcoming_label(language))}</p></div></div><ul>'
-        f'<li>{escape(why)}</li><li>{escape(privacy)}</li>'
-        f'<li>{escape(wishlist)}</li></ul></article>'
+        + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
+        + '</ul></article>'
     )
 
 
@@ -143,12 +233,7 @@ def upcoming_showcase(language: str) -> str:
     title = strings["Today Pick"]
     promise = strings["A timely reason to rediscover a record you already own."]
     why = strings["Why this record today?"]
-    privacy = strings[
-        "Matching happens on this device. Your collection and wishlist are never sent to the music-news service."
-    ]
-    wishlist = strings[
-        "News and reissues related to records you want. These are never presented as records you own."
-    ]
+    headline, bullets = release_19_copy(language)
     return (
         '<section class="section upcoming-showcase" data-release-version="1.9">'
         '<div class="section-head">'
@@ -157,8 +242,28 @@ def upcoming_showcase(language: str) -> str:
         f'<p class="lead">{escape(promise)}</p></div>'
         '<div class="upcoming-preview-panel">'
         f'<p class="upcoming-label">{escape(title)}</p><h3>{escape(why)}</h3>'
-        f'<p>{escape(promise)}</p><ul><li>{escape(privacy)}</li>'
-        f'<li>{escape(wishlist)}</li></ul></div></section>'
+        f'<p>{escape(headline)}</p><ul>'
+        + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
+        + '</ul><div class="upcoming-platforms">'
+        '<span>iPhone</span><span>iPad</span><span>Mac</span><span>Apple Watch</span>'
+        '</div></div></section>'
+    )
+
+
+def upcoming_gallery_intro(language: str) -> str:
+    strings = app_strings(language)
+    title = strings["Today Pick"]
+    promise = strings["A timely reason to rediscover a record you already own."]
+    headline, bullets = release_19_copy(language)
+    return (
+        '<section class="media-section upcoming-gallery-intro" data-release-version="1.9">'
+        '<div class="section-head">'
+        f'<p class="kicker">{escape(upcoming_label(language))}</p>'
+        f'<h2>Record Picker 1.9 · {escape(title)}</h2>'
+        f'<p class="lead">{escape(headline)}</p></div>'
+        '<div class="upcoming-gallery-summary"><p>' + escape(promise) + '</p><ul>'
+        + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
+        + '</ul></div></section>'
     )
 
 
@@ -826,6 +931,22 @@ def main() -> None:
         language = html_language(text)
         prefix = "../" if root == ROOT else "../../"
         text = ensure_preview_stylesheet(text, prefix)
+        announcement = upcoming_gallery_intro(language)
+        current_announcement = re.search(
+            r'<section class="media-section upcoming-gallery-intro".*?</section>',
+            text,
+            flags=re.DOTALL,
+        )
+        if current_announcement:
+            text = (
+                text[:current_announcement.start()] + announcement
+                + text[current_announcement.end():]
+            )
+        else:
+            marker = '<section class="media-section v18-screenshot-gallery"'
+            if marker not in text:
+                raise RuntimeError(f"No 1.8 gallery in {screenshots}")
+            text = text.replace(marker, announcement + marker, 1)
         gallery = expanded_gallery(language, prefix, visual_captions)
         current = re.search(
             r'<section class="media-section v18-screenshot-gallery".*?</section>',
