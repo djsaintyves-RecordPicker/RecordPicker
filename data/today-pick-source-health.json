@@ -1,12 +1,12 @@
 {
   "configuredSources": 46,
-  "contributingSources": 8,
-  "generatedAt": "2026-08-07T15:29:02Z",
+  "contributingSources": 28,
+  "generatedAt": "2026-08-07T16:25:43Z",
   "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
@@ -18,45 +18,45 @@
     },
     "Bandcamp Daily": {
       "downloadedArticles": 27,
-      "resolvedEvents": 0,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
-      "downloadedArticles": 15,
-      "resolvedEvents": 4,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "HTTP Error 415: Unsupported Media Type",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://djmag.com/rss.xml"
     },
     "Electronic Groove": {
-      "downloadedArticles": 0,
-      "error": "The read operation timed out",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 3,
+      "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
@@ -67,7 +67,7 @@
     },
     "Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://groove.de/feed/"
     },
@@ -110,13 +110,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 0,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -128,7 +128,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -140,7 +140,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -152,7 +152,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 13,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -170,19 +170,19 @@
     },
     "RFI Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rfi.fr/fr/musique/rss"
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 23,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -212,19 +212,19 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 16,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
       "downloadedArticles": 5,
-      "resolvedEvents": 0,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
@@ -235,14 +235,14 @@
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "downloadedArticles": 9,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 1,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
@@ -260,7 +260,7 @@
     },
     "Télérama Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
@@ -272,13 +272,13 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
     "WBGO Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.wbgo.org/music.rss"
     }
