@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Refresh site visuals and announce Record Picker 1.9 without publishing it.
+"""Refresh site visuals and announce Record Picker 1.9 platform availability.
 
-The script is idempotent. It keeps 1.8 as the distributed software version,
-removes misleading availability labels from historical releases, adds a
-localized 1.9 Today Pick preview, expands the 1.8 screenshot galleries with
-real light-mode captures, and removes the obsolete dark Watch gallery.
+The script is idempotent. It presents 1.9 as available on macOS while keeping
+iPhone, iPad and Apple Watch marked as coming soon, removes misleading
+availability labels from historical releases, expands the 1.8 screenshot
+galleries with real light-mode captures, and removes the obsolete dark Watch
+gallery.
 """
 
 from __future__ import annotations
@@ -32,9 +33,11 @@ from site_translation_data import (
 ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
 APP_RELEASE_NOTES_19 = ROOT.parent / "RecordPicker" / "AppStoreReleaseNotes" / "1.9"
-PUBLICATION_DATE = "2026-08-03"
+PUBLICATION_DATE = "2026-08-07"
 SITE_STYLES_VERSION = "20260803-layout"
-V18_STYLES_VERSION = "20260803-19-announcement"
+V18_STYLES_VERSION = "20260807-19-macos"
+MIXED_SOFTWARE_VERSION = "1.8 (iOS/iPadOS/watchOS) · 1.9 (macOS)"
+MIXED_FOOTER_VERSION = "Record Picker 1.8 · macOS 1.9"
 
 LOCALE_BY_HTML_LANGUAGE = {
     "ar": "ar", "ca": "ca", "da": "da", "de": "de", "el": "el",
@@ -215,20 +218,52 @@ def upcoming_label(language: str) -> str:
     return label.replace("1.8", "1.9")
 
 
-def upcoming_card(language: str) -> str:
+def available_label(text: str, path: Path) -> str:
+    card = re.search(
+        r'<article class="release-card[^>]*data-release-version="1\.8".*?</article>',
+        text,
+        flags=re.DOTALL,
+    )
+    if not card:
+        raise RuntimeError(f"No localized 1.8 release card in {path}")
+    status = re.search(r'<div><h3>.*?</h3><p>(.*?)</p>', card.group(0), re.DOTALL)
+    if not status:
+        raise RuntimeError(f"No localized 1.8 availability label in {path}")
+    return unescape(re.sub(r'<[^>]+>', '', status.group(1))).strip()
+
+
+def platform_summary(language: str, available: str) -> str:
+    return (
+        '<p class="release-platform-summary">'
+        f'<strong>Mac · 1.9 · {escape(available)}</strong>'
+        f'<span>iPhone · iPad · Apple Watch · {escape(upcoming_label(language))}</span>'
+        '</p>'
+    )
+
+
+def platform_badges(language: str, available: str) -> str:
+    return (
+        '<div class="upcoming-platforms">'
+        f'<span class="is-available">Mac · 1.9 · {escape(available)}</span>'
+        f'<span>iPhone · iPad · Apple Watch · {escape(upcoming_label(language))}</span>'
+        '</div>'
+    )
+
+
+def upcoming_card(language: str, available: str) -> str:
     headline, bullets = release_19_copy(language)
     return (
         '<article class="release-card release-preview release-upcoming" '
         'data-release-version="1.9"><div class="release-head">'
         '<span class="version-pill">v1.9</span><div>'
         f'<h3>{escape(headline)}</h3>'
-        f'<p>{escape(upcoming_label(language))}</p></div></div><ul>'
+        f'{platform_summary(language, available)}</div></div><ul>'
         + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
         + '</ul></article>'
     )
 
 
-def upcoming_showcase(language: str) -> str:
+def upcoming_showcase(language: str, available: str) -> str:
     strings = app_strings(language)
     title = strings["Today Pick"]
     promise = strings["A timely reason to rediscover a record you already own."]
@@ -237,20 +272,18 @@ def upcoming_showcase(language: str) -> str:
     return (
         '<section class="section upcoming-showcase" data-release-version="1.9">'
         '<div class="section-head">'
-        f'<p class="kicker">{escape(upcoming_label(language))}</p>'
+        f'<p class="kicker">Mac · 1.9 · {escape(available)}</p>'
         f'<h2>Record Picker 1.9 · {escape(title)}</h2>'
         f'<p class="lead">{escape(promise)}</p></div>'
         '<div class="upcoming-preview-panel">'
         f'<p class="upcoming-label">{escape(title)}</p><h3>{escape(why)}</h3>'
         f'<p>{escape(headline)}</p><ul>'
         + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
-        + '</ul><div class="upcoming-platforms">'
-        '<span>iPhone</span><span>iPad</span><span>Mac</span><span>Apple Watch</span>'
-        '</div></div></section>'
+        + '</ul>' + platform_badges(language, available) + '</div></section>'
     )
 
 
-def upcoming_gallery_intro(language: str) -> str:
+def upcoming_gallery_intro(language: str, available: str) -> str:
     strings = app_strings(language)
     title = strings["Today Pick"]
     promise = strings["A timely reason to rediscover a record you already own."]
@@ -258,18 +291,18 @@ def upcoming_gallery_intro(language: str) -> str:
     return (
         '<section class="media-section upcoming-gallery-intro" data-release-version="1.9">'
         '<div class="section-head">'
-        f'<p class="kicker">{escape(upcoming_label(language))}</p>'
+        f'<p class="kicker">Mac · 1.9 · {escape(available)}</p>'
         f'<h2>Record Picker 1.9 · {escape(title)}</h2>'
         f'<p class="lead">{escape(headline)}</p></div>'
         '<div class="upcoming-gallery-summary"><p>' + escape(promise) + '</p><ul>'
         + ''.join(f'<li>{escape(bullet)}</li>' for bullet in bullets)
-        + '</ul></div></section>'
+        + '</ul>' + platform_badges(language, available) + '</div></section>'
     )
 
 
-def update_release_cards(text: str, path: Path) -> str:
+def update_release_cards(text: str, path: Path, available: str) -> str:
     language = html_language(text)
-    insertion = upcoming_card(language)
+    insertion = upcoming_card(language, available)
     current = re.search(
         r'<article class="release-card[^>]*data-release-version="1\.9".*?</article>',
         text,
@@ -738,13 +771,17 @@ def ensure_preview_stylesheet(text: str, prefix: str) -> str:
 
 def update_current_release_facts(text: str) -> str:
     text = re.sub(
-        r'"softwareVersion":"(?:1\.0|1\.6)"',
-        '"softwareVersion":"1.8"',
+        r'"softwareVersion":"(?:1\.0|1\.6|1\.8|1\.8 \(iOS/iPadOS/watchOS\) · 1\.9 \(macOS\))"',
+        f'"softwareVersion":"{MIXED_SOFTWARE_VERSION}"',
         text,
     )
+    text = text.replace(
+        '<strong>v1.8</strong>',
+        '<strong>iOS 1.8 · macOS 1.9</strong>',
+    )
     text = re.sub(
-        r'(<footer class="footer"><span>)(?:<span[^>]*>)?.*?</span>(?:</span>)?',
-        r'\1Record Picker v1.8</span>',
+        r'(<footer class="footer"><span(?: id="site-footer-version")?>).*?</span>',
+        rf'\1{MIXED_FOOTER_VERSION}</span>',
         text,
         count=1,
         flags=re.DOTALL,
@@ -857,7 +894,9 @@ def main() -> None:
     for root in roots:
         home = root / "index.html"
         home_prefix = "" if root == ROOT else "../"
-        home_text = update_release_cards(home.read_text(encoding="utf-8"), home)
+        source_home_text = home.read_text(encoding="utf-8")
+        current_availability = available_label(source_home_text, home)
+        home_text = update_release_cards(source_home_text, home, current_availability)
         language = html_language(home_text)
         release_intro, release_bullets = release_copy(language)
         visual_captions = localized_visual_captions(root, release_bullets)
@@ -886,7 +925,7 @@ def main() -> None:
             home_text[:current_v18.start()] + functional_v18
             + home_text[current_v18.end():]
         )
-        showcase = upcoming_showcase(language)
+        showcase = upcoming_showcase(language, current_availability)
         current_showcase = re.search(
             r'<section class="section upcoming-showcase".*?</section>',
             home_text,
@@ -907,7 +946,7 @@ def main() -> None:
         readme = root / "readme" / "index.html"
         text = readme.read_text(encoding="utf-8")
         language = html_language(text)
-        text = update_release_cards(text, readme)
+        text = update_release_cards(text, readme, current_availability)
         prefix = "../" if root == ROOT else "../../"
         text = update_feature_intro(text, language, prefix, visual_captions[0])
         intro = re.search(
@@ -931,7 +970,7 @@ def main() -> None:
         language = html_language(text)
         prefix = "../" if root == ROOT else "../../"
         text = ensure_preview_stylesheet(text, prefix)
-        announcement = upcoming_gallery_intro(language)
+        announcement = upcoming_gallery_intro(language, current_availability)
         current_announcement = re.search(
             r'<section class="media-section upcoming-gallery-intro".*?</section>',
             text,
@@ -989,8 +1028,8 @@ def main() -> None:
     update_standard_sitemap()
 
     print(
-        f"Prepared {len(roots)} locales: 1.9 preview, historical status cleanup, "
-        "light visuals and expanded 1.8 galleries"
+        f"Prepared {len(roots)} locales: macOS 1.9 available, other platforms "
+        "coming soon, light visuals and expanded 1.8 galleries"
     )
 
 

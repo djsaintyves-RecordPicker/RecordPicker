@@ -1,16 +1,24 @@
 # Publication du site Record Picker 1.9
 
-Le site peut annoncer Record Picker 1.9 avant sa sortie, mais la version 1.8
-reste la seule version présentée comme disponible jusqu’à confirmation de la
-publication App Store sur iPhone, iPad, Apple Watch et Mac.
+Depuis le 7 août 2026, Record Picker 1.9 est distribué sur macOS. La version 1.8
+reste la version distribuée sur iPhone, iPad et Apple Watch jusqu’à confirmation
+de leur publication App Store en 1.9.
 
-## Annonce avant publication
+## Disponibilité mixte actuelle
+
+- Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
+- Présenter `Mac · 1.9` avec le statut localisé « disponible maintenant ».
+- Conserver iPhone, iPad et Apple Watch avec le statut localisé « coming soon ».
+- Utiliser `1.8 (iOS/iPadOS/watchOS) · 1.9 (macOS)` dans les métadonnées
+  structurées et `Record Picker 1.8 · macOS 1.9` dans le pied de page.
+- Ne pas retirer le statut disponible de la carte 1.8 : elle reste actuelle sur
+  les plateformes mobiles.
+
+## Contenu et vérifications permanentes
 
 - Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
 - Vérifier les 30 variantes linguistiques des pages Accueil, Fonctionnalités et
-  Captures. La 1.9 doit toujours porter le statut localisé « coming soon ».
-- Conserver `softwareVersion` à `1.8`, le pied de page sur `Record Picker v1.8`
-  et les liens App Store actuels.
+  Captures. La disponibilité par plateforme doit toujours rester explicite.
 - Présenter Today Pick avec les quatre promesses publiques validées : actualité
   musicale vérifiée et anniversaires, rapprochement local, source datée et
   séparation de la liste de souhaits, puis rappels/pertinence/Apple Watch.
@@ -32,8 +40,9 @@ publication App Store sur iPhone, iPad, Apple Watch et Mac.
 
 ## Basculement quand la 1.9 est réellement disponible
 
-1. Confirmer la disponibilité publique de la 1.9 sur toutes les plateformes
-   annoncées dans App Store Connect et sur les fiches App Store publiques.
+1. Confirmer la disponibilité publique de la 1.9 sur iPhone, iPad et Apple Watch
+   dans App Store Connect et sur les fiches App Store publiques. macOS est déjà
+   confirmé depuis le 7 août 2026.
 2. Ajouter et vérifier les captures fonctionnelles finales sous
    `assets/screenshots/v19/`.
 3. Lancer la simulation :
