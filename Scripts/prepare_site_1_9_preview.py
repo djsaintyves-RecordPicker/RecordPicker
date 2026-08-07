@@ -28,13 +28,14 @@ from site_translation_data import (
     HINDI_REPLACEMENTS,
     TODAY_PICK_TRANSLATIONS,
 )
+from enhance_site_accessibility import main as enhance_accessibility
 
 
 ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
 APP_RELEASE_NOTES_19 = ROOT.parent / "RecordPicker" / "AppStoreReleaseNotes" / "1.9"
 PUBLICATION_DATE = "2026-08-07"
-SITE_STYLES_VERSION = "20260803-layout"
+SITE_STYLES_VERSION = "20260807-quality"
 V18_STYLES_VERSION = "20260807-19-macos"
 MIXED_SOFTWARE_VERSION = "1.8 (iOS/iPadOS/watchOS) · 1.9 (macOS)"
 MIXED_FOOTER_VERSION = "Record Picker 1.8 · macOS 1.9"
@@ -219,17 +220,35 @@ def upcoming_label(language: str) -> str:
 
 
 def available_label(text: str, path: Path) -> str:
-    card = re.search(
+    """Return the localized "available now" label.
+
+    Once 1.9 has been prepared, the label lives on its Mac platform summary.
+    The 1.8 fallback keeps the first migration compatible with older pages.
+    Historical cards must not remain the source of truth after publication.
+    """
+    current = re.search(
+        r'<article class="release-card[^>]*data-release-version="1\.9".*?'
+        r'<strong>Mac · 1\.9 · (.*?)</strong>.*?</article>',
+        text,
+        flags=re.DOTALL,
+    )
+    if current:
+        return unescape(re.sub(r'<[^>]+>', '', current.group(1))).strip()
+
+    historical = re.search(
         r'<article class="release-card[^>]*data-release-version="1\.8".*?</article>',
         text,
         flags=re.DOTALL,
     )
-    if not card:
-        raise RuntimeError(f"No localized 1.8 release card in {path}")
-    status = re.search(r'<div><h3>.*?</h3><p>(.*?)</p>', card.group(0), re.DOTALL)
-    if not status:
-        raise RuntimeError(f"No localized 1.8 availability label in {path}")
-    return unescape(re.sub(r'<[^>]+>', '', status.group(1))).strip()
+    if historical:
+        status = re.search(
+            r'<div><h3>.*?</h3><p>(.*?)</p>',
+            historical.group(0),
+            re.DOTALL,
+        )
+        if status:
+            return unescape(re.sub(r'<[^>]+>', '', status.group(1))).strip()
+    raise RuntimeError(f"No localized availability label in {path}")
 
 
 def platform_summary(language: str, available: str) -> str:
@@ -321,7 +340,7 @@ def update_release_cards(text: str, path: Path, available: str) -> str:
     def historical_card(match: re.Match[str]) -> str:
         card = match.group(0)
         version = re.search(r'<span class="version-pill">v([^<]+)</span>', card)
-        if not version or version.group(1) in {"1.8", "1.9"}:
+        if not version or version.group(1) == "1.9":
             return card
         return re.sub(
             r'(<div><h3>.*?</h3>)<p>.*?</p>',
@@ -751,7 +770,8 @@ def repair_translations(text: str, language: str, relative_path: Path, page: Pat
         )
         text = text.replace("<h3>", "<h2>").replace("</h3>", "</h2>")
     if relative_path.as_posix() == "mac-app/index.html":
-        text = text.replace("macOS 1.0", "macOS 1.8")
+        text = text.replace("macOS 1.0", "macOS 1.9")
+        text = text.replace("macOS 1.8", "macOS 1.9")
         text = ensure_mac_feature_previews(text)
     text = add_intrinsic_image_dimensions(text, page)
     text = optimize_image_loading(text)
@@ -777,7 +797,11 @@ def update_current_release_facts(text: str) -> str:
     )
     text = text.replace(
         '<strong>v1.8</strong>',
+        '<strong>Mac · 1.9</strong>',
+    )
+    text = text.replace(
         '<strong>iOS 1.8 · macOS 1.9</strong>',
+        '<strong>Mac · 1.9</strong>',
     )
     text = re.sub(
         r'(<footer class="footer"><span(?: id="site-footer-version")?>).*?</span>',
@@ -1026,6 +1050,7 @@ def main() -> None:
 
     update_media_sitemap(roots)
     update_standard_sitemap()
+    enhance_accessibility()
 
     print(
         f"Prepared {len(roots)} locales: macOS 1.9 available, other platforms "

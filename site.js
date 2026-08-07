@@ -205,7 +205,47 @@
       trigger.setAttribute("aria-expanded", "false");
     });
   }
+  var siteNav = document.querySelector(".nav-links");
+  var siteHeader = document.querySelector(".site-header");
+  var navToggle = null;
+  if (siteNav && siteHeader) {
+    navToggle = document.createElement("button");
+    navToggle.className = "nav-toggle";
+    navToggle.type = "button";
+    navToggle.setAttribute("aria-label", "Menu");
+    navToggle.setAttribute("aria-controls", "site-navigation");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.innerHTML = '<span class="nav-toggle-icon" aria-hidden="true"></span>';
+    siteNav.id = "site-navigation";
+    var headerActions = siteHeader.querySelector(".header-actions");
+    siteHeader.insertBefore(navToggle, headerActions || siteNav);
+    var desktopStoreLink = siteHeader.querySelector(".store-link");
+    if (desktopStoreLink && !siteNav.querySelector(".mobile-store-link")) {
+      var mobileStoreLink = desktopStoreLink.cloneNode(true);
+      mobileStoreLink.classList.remove("store-link");
+      mobileStoreLink.classList.add("mobile-store-link");
+      siteNav.appendChild(mobileStoreLink);
+    }
+  }
+  function closeSiteNav(restoreFocus) {
+    if (!siteNav || !navToggle) return;
+    siteNav.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    if (restoreFocus) navToggle.focus();
+  }
   document.addEventListener("click", function (event) {
+    var clickedNavToggle = closestFromEvent(event, ".nav-toggle");
+    if (clickedNavToggle && siteNav) {
+      event.preventDefault();
+      var openNav = !siteNav.classList.contains("is-open");
+      closeSiteNav(false);
+      if (openNav) {
+        siteNav.classList.add("is-open");
+        clickedNavToggle.setAttribute("aria-expanded", "true");
+      }
+      return;
+    }
+    if (closestFromEvent(event, ".nav-links a")) closeSiteNav(false);
     var option = closestFromEvent(event, "[data-language-option]");
     if (option) {
       try {
@@ -231,12 +271,16 @@
     if (!closestFromEvent(event, "[data-language-menu]")) closeLanguageMenus();
   });
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") closeLanguageMenus();
+    if (event.key === "Escape") {
+      closeLanguageMenus();
+      closeSiteNav(true);
+    }
   });
   var lightbox = document.querySelector("[data-video-lightbox]");
   if (lightbox) {
     var video = lightbox.querySelector("video");
     var videoTitle = lightbox.querySelector("[data-video-title]");
+    var videoOpener = null;
     function closeVideo() {
       lightbox.setAttribute("hidden", "");
       lightbox.setAttribute("aria-hidden", "true");
@@ -247,9 +291,11 @@
         video.removeAttribute("poster");
         video.load();
       }
+      if (videoOpener) videoOpener.focus();
     }
     document.querySelectorAll("[data-video-src]").forEach(function (trigger) {
       trigger.addEventListener("click", function () {
+        videoOpener = trigger;
         var lang = normalizeLanguage(body.dataset.lang) || "fr";
         if (videoTitle) {
           if (trigger.__recordPickerFrTitle === undefined) trigger.__recordPickerFrTitle = trigger.getAttribute("title") || "";
@@ -267,6 +313,8 @@
         lightbox.removeAttribute("hidden");
         lightbox.setAttribute("aria-hidden", "false");
         body.classList.add("video-lightbox-open");
+        var closeButton = lightbox.querySelector(".video-lightbox-close");
+        if (closeButton) closeButton.focus();
         if (video) {
           var playback = video.play();
           if (playback && playback.catch) {

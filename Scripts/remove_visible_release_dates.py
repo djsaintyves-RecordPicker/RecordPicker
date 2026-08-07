@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Replace visible release dates with timeless localized availability labels.
+"""Enforce the public release-status rule across every localized history.
 
-The current preview keeps its existing "coming soon" wording. Every published
-release reuses the localized status already present on the 1.6 card. The script
-is idempotent and intentionally ignores privacy-policy and technical dates.
+Only the newest release card may display availability. In the current mixed
+rollout, 1.9 says that macOS is available and that iPhone, iPad and Apple Watch
+are coming soon. Historical releases display no availability or release date.
+The script is idempotent and intentionally ignores policy and technical dates.
 """
 
 from __future__ import annotations
@@ -29,9 +30,10 @@ VERSION_PATTERN = re.compile(
     r'<span class="version-pill">(?P<version>v[^<]+)</span>'
 )
 STATUS_PATTERN = re.compile(
-    r'(?P<prefix><div><h3>.*?</h3>)<p>.*?</p>',
+    r'(?P<prefix><div><h3>.*?</h3>)<p(?: class="[^"]*")?>.*?</p>',
     flags=re.DOTALL,
 )
+CURRENT_VERSION = "v1.9"
 
 
 def localized_roots() -> list[Path]:
@@ -47,43 +49,20 @@ def release_cards(text: str) -> list[re.Match[str]]:
     return list(RELEASE_CARD_PATTERN.finditer(text))
 
 
-def version_and_status(card: str, path: Path) -> tuple[str, str]:
+def card_version(card: str, path: Path) -> str:
     version_match = VERSION_PATTERN.search(card)
-    status_match = STATUS_PATTERN.search(card)
-    if not version_match or not status_match:
+    if not version_match:
         raise RuntimeError(f"Malformed release card in {path}")
-    current_status = re.search(
-        r'<p>(.*?)</p>', status_match.group(0), flags=re.DOTALL
-    )
-    if not current_status:
-        raise RuntimeError(f"Missing release status in {path}")
-    return version_match.group("version"), current_status.group(1)
-
-
-def published_status(text: str, path: Path) -> str:
-    for card_match in release_cards(text):
-        version, status = version_and_status(card_match.group(0), path)
-        if version == "v1.6":
-            return status
-    raise RuntimeError(f"No localized published status found in {path}")
+    return version_match.group("version")
 
 
 def remove_dates(text: str, path: Path) -> str:
-    available_now = published_status(text, path)
-
     def replace_card(match: re.Match[str]) -> str:
         card = match.group(0)
-        version, _ = version_and_status(card, path)
-        if version == "v1.8":
+        version = card_version(card, path)
+        if version == CURRENT_VERSION:
             return card
-        updated, replacements = STATUS_PATTERN.subn(
-            rf'\g<prefix><p>{available_now}</p>',
-            card,
-            count=1,
-        )
-        if replacements != 1:
-            raise RuntimeError(f"Could not update {version} in {path}")
-        return updated
+        return STATUS_PATTERN.sub(r'\g<prefix>', card, count=1)
 
     return RELEASE_CARD_PATTERN.sub(replace_card, text)
 
@@ -96,15 +75,21 @@ def visible_release_pages() -> list[Path]:
 
 
 def validate_page(text: str, path: Path) -> None:
-    available_now = published_status(text, path)
+    found_current = False
     for card_match in release_cards(text):
-        version, status = version_and_status(card_match.group(0), path)
-        if version == "v1.8":
-            continue
-        if status != available_now:
+        card = card_match.group(0)
+        version = card_version(card, path)
+        status = STATUS_PATTERN.search(card)
+        if version == CURRENT_VERSION:
+            found_current = True
+            if not status or 'release-platform-summary' not in status.group(0):
+                raise RuntimeError(f"Missing 1.9 platform status in {path}")
+        elif status:
             raise RuntimeError(
-                f"Unexpected status for {version} in {path}: {status!r}"
+                f"Historical release {version} still has a status in {path}"
             )
+    if not found_current:
+        raise RuntimeError(f"No {CURRENT_VERSION} release card in {path}")
 
 
 def main() -> None:
@@ -119,8 +104,8 @@ def main() -> None:
             changed += 1
 
     print(
-        f"Removed visible dates from {changed} page(s); "
-        f"validated {len(pages)} localized release histories."
+        f"Normalized release status on {changed} page(s); "
+        f"validated {len(pages)} localized histories."
     )
 
 

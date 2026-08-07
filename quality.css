@@ -1,0 +1,125 @@
+/* Navigation and keyboard-accessibility refinements. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 200;
+  inset-block-start: 10px;
+  inset-inline-start: 10px;
+  transform: translateY(-160%);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--page);
+  padding: 11px 16px;
+  font-weight: 850;
+  box-shadow: var(--shadow);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.nav-toggle {
+  display: none;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass-surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.nav-toggle-icon {
+  position: relative;
+}
+
+.nav-toggle-icon::before {
+  position: absolute;
+  inset-block-start: -6px;
+}
+
+.nav-toggle-icon::after {
+  position: absolute;
+  inset-block-start: 6px;
+}
+
+.mobile-store-link {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .site-header {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: grid;
+    order: 2;
+  }
+
+  .header-actions {
+    margin-inline-start: auto;
+  }
+
+  .nav-links {
+    display: none;
+    order: 4;
+    width: 100%;
+    overflow: visible;
+    padding: 8px 0 4px;
+    border-top: 1px solid var(--line);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .nav-links.is-open {
+    display: grid;
+  }
+
+  .nav-links a {
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .nav-links .mobile-store-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    color: #fff;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    align-items: center;
+  }
+
+  .language-trigger {
+    min-width: 0;
+    max-width: 46vw;
+  }
+
+  .nav-links {
+    grid-template-columns: 1fr;
+  }
+}
