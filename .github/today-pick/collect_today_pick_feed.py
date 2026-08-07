@@ -1429,7 +1429,7 @@ def main() -> int:
         if arguments.generated_at
         else datetime.now(timezone.utc)
     )
-    ticketmaster_api_key = os.environ.get("TICKETMASTER_API_KEY")
+    ticketmaster_api_key = (os.environ.get("TICKETMASTER_API_KEY") or "").strip()
     if arguments.require_ticketmaster and not ticketmaster_api_key:
         parser.error("TICKETMASTER_API_KEY is required for this production collection")
     if arguments.require_ticketmaster and ticketmaster_api_key:
