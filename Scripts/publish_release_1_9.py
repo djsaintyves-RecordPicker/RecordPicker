@@ -21,6 +21,12 @@ LOCALE_DIRECTORIES = {
     "zh-hant",
 }
 
+PUBLICATION_SCREENSHOTS = (
+    Path("en-us/iphone-today-pick.png"),
+    Path("en-us/ipad-collection-grid.png"),
+    Path("en-us/mac-today-pick.png"),
+)
+
 
 def localized_roots() -> list[Path]:
     roots = [ROOT]
@@ -37,12 +43,23 @@ def available_status(text: str, path: Path) -> str:
         text,
         flags=re.DOTALL,
     )
-    if not card:
-        raise RuntimeError(f"No localized 1.8 release card in {path}")
-    status = re.search(r'<div><h3>.*?</h3><p>(.*?)</p>', card.group(0), re.DOTALL)
-    if not status:
-        raise RuntimeError(f"No localized 1.8 availability label in {path}")
-    return status.group(1)
+    if card:
+        status = re.search(r'<div><h3>.*?</h3><p>(.*?)</p>', card.group(0), re.DOTALL)
+        if status:
+            return status.group(1)
+
+    current_mac_status = re.search(
+        r'<section class="[^"]*upcoming-showcase[^"]*"[^>]*'
+        r'data-release-version="1\.9".*?'
+        r'<span class="is-available">(.*?)</span>',
+        text,
+        flags=re.DOTALL,
+    )
+    if current_mac_status:
+        parts = re.split(r'\s*(?:&middot;|·)\s*', current_mac_status.group(1))
+        if len(parts) >= 3 and parts[-1].strip():
+            return parts[-1].strip()
+    raise RuntimeError(f"No localized current availability label in {path}")
 
 
 def remove_historical_status(text: str, version: str) -> str:
@@ -83,7 +100,12 @@ def publish_release_card(text: str, path: Path, status: str) -> str:
     )
     card, replacements = re.subn(
         r'(<div><h3>.*?</h3>)<p(?: class="[^"]*")?>.*?</p>',
-        rf'\1<p>{status}</p>',
+        lambda match: (
+            match.group(1)
+            + '<p class="release-platform-summary"><strong>'
+            + f'iPhone · iPad · Mac · Apple Watch · {status}'
+            + '</strong></p>'
+        ),
         card,
         count=1,
         flags=re.DOTALL,
@@ -98,8 +120,8 @@ def publish_announcement_section(
     text: str, path: Path, class_name: str, status: str
 ) -> str:
     section = re.search(
-        rf'<section class="[^"]*{re.escape(class_name)}[^"]*" '
-        r'data-release-version="1\.9">.*?</section>',
+        rf'<section class="[^"]*{re.escape(class_name)}[^"]*"[^>]*'
+        r'data-release-version="1\.9"[^>]*>.*?</section>',
         text,
         flags=re.DOTALL,
     )
@@ -141,7 +163,50 @@ def update_current_release_facts(text: str) -> str:
         r'\1Record Picker v1.9\2',
         text,
     )
+    text = re.sub(
+        r'"screenshot":"https://recordpicker\.app/assets/screenshots/[^"]+"',
+        '"screenshot":"https://recordpicker.app/assets/screenshots/v19/en-us/mac-today-pick.png"',
+        text,
+    )
     return text
+
+
+def release_gallery(asset_prefix: str) -> str:
+    base = f"{asset_prefix}assets/screenshots/v19/en-us"
+    return (
+        '<section class="media-section v19-screenshot-gallery" '
+        'data-release-gallery="1.9">'
+        '<div class="section-head"><p class="kicker">iPhone · iPad · Mac</p>'
+        '<h2>Record Picker 1.9</h2></div>'
+        '<div class="shot-grid v19-grid">'
+        '<figure class="shot-card iphone v19-iphone">'
+        f'<img loading="lazy" alt="" src="{base}/iphone-today-pick.png" '
+        'width="1206" height="2622" decoding="async">'
+        '<figcaption>iPhone · Record Picker 1.9</figcaption></figure>'
+        '<figure class="shot-card mac v19-mac">'
+        f'<img loading="lazy" alt="" src="{base}/mac-today-pick.png" '
+        'width="1280" height="900" decoding="async">'
+        '<figcaption>Mac · Record Picker 1.9</figcaption></figure>'
+        '<figure class="shot-card ipad v19-ipad">'
+        f'<img loading="lazy" alt="" src="{base}/ipad-collection-grid.png" '
+        'width="1200" height="1600" decoding="async">'
+        '<figcaption>iPad · Record Picker 1.9</figcaption></figure>'
+        '</div></section>'
+    )
+
+
+def insert_release_gallery(text: str, path: Path, asset_prefix: str) -> str:
+    if 'data-release-gallery="1.9"' in text:
+        return text
+    intro = re.search(
+        r'<section class="[^"]*upcoming-gallery-intro[^"]*"[^>]*'
+        r'data-release-version="1\.9"[^>]*>.*?</section>',
+        text,
+        flags=re.DOTALL,
+    )
+    if not intro:
+        raise RuntimeError(f"No prepared 1.9 gallery introduction in {path}")
+    return text[:intro.end()] + release_gallery(asset_prefix) + text[intro.end():]
 
 
 def real_screenshots() -> list[Path]:
@@ -153,6 +218,11 @@ def real_screenshots() -> list[Path]:
         if path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}
         and not re.search(r'tutorial|onboarding|walkthrough', path.name, re.IGNORECASE)
     ]
+
+
+def missing_publication_screenshots() -> list[Path]:
+    root = ROOT / "assets" / "screenshots" / "v19"
+    return [relative for relative in PUBLICATION_SCREENSHOTS if not (root / relative).is_file()]
 
 
 def update_sitemap_dates() -> None:
@@ -179,10 +249,11 @@ def main() -> None:
     if args.apply and not args.confirm_app_store:
         parser.error("--apply requires --confirm-app-store")
     screenshots = real_screenshots()
-    if args.apply and not screenshots:
+    missing_screenshots = missing_publication_screenshots()
+    if args.apply and missing_screenshots:
         parser.error(
-            "add at least one real non-tutorial 1.9 screenshot under "
-            "assets/screenshots/v19 before publication"
+            "missing required 1.9 publication screenshot(s): "
+            + ", ".join(str(path) for path in missing_screenshots)
         )
 
     outputs: dict[Path, str] = {}
@@ -190,7 +261,6 @@ def main() -> None:
         home = root / "index.html"
         home_text = home.read_text(encoding="utf-8")
         status = available_status(home_text, home)
-        home_text = publish_release_card(home_text, home, status)
         outputs[home] = publish_announcement_section(
             home_text, home, "upcoming-showcase", status
         )
@@ -201,11 +271,17 @@ def main() -> None:
         )
 
         screenshots_page = root / "screenshots" / "index.html"
-        outputs[screenshots_page] = publish_announcement_section(
+        screenshots_text = publish_announcement_section(
             screenshots_page.read_text(encoding="utf-8"),
             screenshots_page,
             "upcoming-gallery-intro",
             status,
+        )
+        asset_prefix = "../" if root == ROOT else "../../"
+        outputs[screenshots_page] = insert_release_gallery(
+            screenshots_text,
+            screenshots_page,
+            asset_prefix,
         )
 
     for page in ROOT.rglob("*.html"):
@@ -221,10 +297,12 @@ def main() -> None:
             f"with {len(screenshots)} real 1.9 screenshots"
         )
     else:
-        screenshot_status = (
-            f"{len(screenshots)} real 1.9 screenshot(s) found"
-            if screenshots else "real 1.9 screenshots still required before publication"
-        )
+        screenshot_status = f"{len(screenshots)} real 1.9 screenshot(s) found"
+        if missing_screenshots:
+            screenshot_status += (
+                "; required publication files still missing: "
+                + ", ".join(str(path) for path in missing_screenshots)
+            )
         print(
             "Prepared: 90 localized announcement pages and all current-version "
             f"metadata can switch to 1.9; {screenshot_status}"

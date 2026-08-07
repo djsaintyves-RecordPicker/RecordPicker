@@ -162,3 +162,45 @@
     grid-template-columns: 1fr;
   }
 }
+.v19-grid {
+  grid-template-columns: minmax(220px, 320px) minmax(360px, 600px);
+  align-items: start;
+  max-width: 960px;
+}
+
+.v19-grid .v19-iphone {
+  grid-row: span 2;
+}
+
+.v19-grid .v19-mac,
+.v19-grid .v19-ipad {
+  grid-column: 2;
+}
+
+.v19-grid .v19-mac img {
+  aspect-ratio: 64 / 45;
+  object-fit: contain;
+}
+
+.v19-grid .v19-ipad img {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .v19-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 600px;
+  }
+
+  .v19-grid .v19-iphone,
+  .v19-grid .v19-mac,
+  .v19-grid .v19-ipad {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .v19-grid .v19-iphone {
+    max-width: 337px;
+  }
+}
