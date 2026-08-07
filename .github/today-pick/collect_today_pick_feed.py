@@ -33,7 +33,10 @@ import build_today_pick_feed as builder
 
 USER_AGENT = "RecordPickerTodayPick/1.10 (https://recordpicker.app/support/)"
 MAX_DOWNLOAD_BYTES = 4 * 1024 * 1024
-MAX_ARTICLES_PER_SOURCE = 40
+# Breadth is more valuable than repeatedly resolving one prolific publisher.
+# Twenty recent items across 46 sources keeps the scheduled run comfortably
+# bounded while preserving a broad international news window.
+MAX_ARTICLES_PER_SOURCE = 20
 MAX_MUSICBRAINZ_RESULTS = 8
 MUSICBRAINZ_MINIMUM_SCORE = 90
 MUSICBRAINZ_DELAY_SECONDS = 1.05
