@@ -11,12 +11,16 @@ de leur publication App Store en 1.9.
 - Conserver iPhone, iPad et Apple Watch avec le statut localisé « coming soon ».
 - Utiliser `1.8 (iOS/iPadOS/watchOS) · 1.9 (macOS)` dans les métadonnées
   structurées et `Record Picker 1.8 · macOS 1.9` dans le pied de page.
-- Ne pas retirer le statut disponible de la carte 1.8 : elle reste actuelle sur
-  les plateformes mobiles.
+- La carte 1.9 est la seule à porter des statuts : macOS « disponible
+  maintenant », iPhone/iPad/Apple Watch « coming soon ».
+- La carte 1.8 et toutes les versions antérieures conservent leur contenu
+  historique, sans libellé de disponibilité ni date de publication visible.
 
 ## Contenu et vérifications permanentes
 
 - Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
+- Exécuter `python3 Scripts/remove_visible_release_dates.py` et vérifier que les
+  60 historiques localisés respectent la règle « version courante + suivante ».
 - Vérifier les 30 variantes linguistiques des pages Accueil, Fonctionnalités et
   Captures. La disponibilité par plateforme doit toujours rester explicite.
 - Présenter Today Pick avec les quatre promesses publiques validées : actualité
@@ -62,6 +66,17 @@ de leur publication App Store en 1.9.
    « disponible maintenant » dans l’historique.
 6. Relancer l’audit intégral, les tests responsive et la vérification des deux
    sitemaps avant commit, push et déploiement.
+
+## Règle permanente pour les versions suivantes
+
+- Une seule version peut être signalée comme « disponible maintenant » : la
+  dernière version effectivement distribuée sur la plateforme indiquée.
+- La version suivante doit être annoncée avec le statut localisé « coming
+  soon » uniquement lorsqu’elle est officiellement annoncée.
+- Toutes les versions antérieures restent documentées sans date de publication
+  et sans statut « disponible maintenant ».
+- Toute évolution du manifeste de versions doit être suivie du générateur, du
+  contrôle des 30 langues et de l’audit automatisé avant publication.
 
 Commande d’audit :
 
