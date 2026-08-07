@@ -28,6 +28,10 @@ jobs:
         run: |
           python3 site/.github/today-pick/collect_today_pick_feed.py \
             --output site/data/today-pick-v1.json \
+            --health-output site/data/today-pick-source-health.json \
+            --regional-output-dir site/data/regions \
+            --require-ticketmaster \
+            --minimum-editorial-sources 6 \
             --ttl-hours 36
           python3 - <<'PY'
           import json
@@ -37,18 +41,27 @@ jobs:
           with open("site/data/today-pick-v1.json", encoding="utf-8") as handle:
               feed = json.load(handle)
           builder.validate_published_feed(feed)
+          french_concerts = sum(
+              event.get("kind") == "concert"
+              and isinstance(event.get("place"), dict)
+              and event["place"].get("countryCode") == "FR"
+              for event in feed["events"]
+          )
+          if french_concerts < 1:
+              raise SystemExit("The public feed contains no placed concert in France")
           print(f"Validated {len(feed['events'])} public events")
+          print(f"Validated {french_concerts} placed concerts in France")
           PY
 
       - name: Publish only a changed, validated feed
         working-directory: site
         run: |
-          if git diff --quiet -- data/today-pick-v1.json; then
+          if git diff --quiet -- data/today-pick-v1.json data/today-pick-source-health.json data/regions; then
             echo "The public feed is unchanged."
             exit 0
           fi
           git config user.name "Record Picker Feed Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/today-pick-v1.json
+          git add data/today-pick-v1.json data/today-pick-source-health.json data/regions
           git commit -m "Refresh Today Pick public feed"
           git push
