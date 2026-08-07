@@ -30,7 +30,8 @@ jobs:
             --output site/data/today-pick-v1.json \
             --health-output site/data/today-pick-source-health.json \
             --regional-output-dir site/data/regions \
-            --minimum-editorial-sources 10 \
+            --require-ticketmaster \
+            --minimum-editorial-sources 6 \
             --ttl-hours 36
           python3 - <<'PY'
           import json
@@ -40,7 +41,16 @@ jobs:
           with open("site/data/today-pick-v1.json", encoding="utf-8") as handle:
               feed = json.load(handle)
           builder.validate_published_feed(feed)
+          french_concerts = sum(
+              event.get("kind") == "concert"
+              and isinstance(event.get("place"), dict)
+              and event["place"].get("countryCode") == "FR"
+              for event in feed["events"]
+          )
+          if french_concerts < 1:
+              raise SystemExit("The public feed contains no placed concert in France")
           print(f"Validated {len(feed['events'])} public events")
+          print(f"Validated {french_concerts} placed concerts in France")
           PY
 
       - name: Publish only a changed, validated feed
