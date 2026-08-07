@@ -1248,6 +1248,42 @@ def ticketmaster_events(
     return events, warnings
 
 
+def validate_ticketmaster_api_key(
+    api_key: str,
+    json_fetcher: Callable[[str], dict[str, Any]] = fetch_json,
+) -> None:
+    """Fail fast when the configured Ticketmaster consumer key is unusable.
+
+    The full editorial collection can take several minutes.  Checking the
+    provider first prevents an invalid or inactive key from wasting an entire
+    workflow run before the missing-concert validation fails.
+    """
+
+    url = "https://app.ticketmaster.com/discovery/v2/events.json?" + urlencode(
+        {
+            "apikey": api_key,
+            "countryCode": "FR",
+            "classificationName": "music",
+            "size": 1,
+            "page": 0,
+            "locale": "*",
+        }
+    )
+    try:
+        document = json_fetcher(url)
+    except HTTPError as error:
+        if error.code in {401, 403}:
+            raise CollectionError(
+                "Ticketmaster rejected TICKETMASTER_API_KEY; configure the active "
+                "Consumer Key, not the Consumer Secret"
+            ) from error
+        raise CollectionError(f"Ticketmaster preflight failed with HTTP {error.code}") from error
+    except Exception as error:
+        raise CollectionError(f"Ticketmaster preflight failed: {error}") from error
+    if not isinstance(document.get("page"), dict):
+        raise CollectionError("Ticketmaster preflight returned an unexpected response")
+
+
 def unique_events(events: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     by_id: dict[str, dict[str, Any]] = {}
     release_signatures: set[tuple[tuple[str, ...], tuple[str, ...], str]] = set()
@@ -1396,6 +1432,11 @@ def main() -> int:
     ticketmaster_api_key = os.environ.get("TICKETMASTER_API_KEY")
     if arguments.require_ticketmaster and not ticketmaster_api_key:
         parser.error("TICKETMASTER_API_KEY is required for this production collection")
+    if arguments.require_ticketmaster and ticketmaster_api_key:
+        try:
+            validate_ticketmaster_api_key(ticketmaster_api_key)
+        except CollectionError as error:
+            parser.error(str(error))
     editorial_health: dict[str, dict[str, Any]] = {}
     document, warnings = collect(
         now,
