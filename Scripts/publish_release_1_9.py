@@ -82,7 +82,7 @@ def publish_release_card(text: str, path: Path, status: str) -> str:
         1,
     )
     card, replacements = re.subn(
-        r'(<div><h3>.*?</h3>)<p>.*?</p>',
+        r'(<div><h3>.*?</h3>)<p(?: class="[^"]*")?>.*?</p>',
         rf'\1<p>{status}</p>',
         card,
         count=1,
@@ -114,14 +114,30 @@ def publish_announcement_section(
     )
     if replacements != 1:
         raise RuntimeError(f"No 1.9 status in {path}")
+    updated = re.sub(
+        r'<div class="upcoming-platforms">.*?</div>',
+        '<div class="upcoming-platforms"><span class="is-available">'
+        f'iPhone · iPad · Mac · Apple Watch · {status}</span></div>',
+        updated,
+        count=1,
+        flags=re.DOTALL,
+    )
     return text[:section.start()] + updated + text[section.end():]
 
 
 def update_current_release_facts(text: str) -> str:
-    text = text.replace('"softwareVersion":"1.8"', '"softwareVersion":"1.9"')
-    text = text.replace('<strong>v1.8</strong>', '<strong>v1.9</strong>')
     text = re.sub(
-        r'(<footer class="footer"><span id="site-footer-version">)Record Picker v1\.8(</span>)',
+        r'"softwareVersion":"(?:1\.8|1\.8 \(iOS/iPadOS/watchOS\) · 1\.9 \(macOS\))"',
+        '"softwareVersion":"1.9"',
+        text,
+    )
+    text = text.replace('<strong>v1.8</strong>', '<strong>v1.9</strong>')
+    text = text.replace(
+        '<strong>iOS 1.8 · macOS 1.9</strong>',
+        '<strong>v1.9</strong>',
+    )
+    text = re.sub(
+        r'(<footer class="footer"><span id="site-footer-version">)Record Picker (?:v1\.8|1\.8 · macOS 1\.9)(</span>)',
         r'\1Record Picker v1.9\2',
         text,
     )
