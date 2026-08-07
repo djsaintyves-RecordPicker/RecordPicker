@@ -18,6 +18,9 @@ de leur publication App Store en 1.9.
 
 ## Contenu et vérifications permanentes
 
+- Considérer `data/release-state.json` comme l’unique source de vérité pour la
+  version courante, la version suivante, les plateformes et la phase de
+  publication. Ne jamais modifier les statuts directement dans les 270 pages.
 - Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
 - Exécuter `python3 Scripts/remove_visible_release_dates.py` et vérifier que les
   30 historiques localisés respectent la règle « version courante + suivante ».
@@ -27,32 +30,46 @@ de leur publication App Store en 1.9.
   musicale vérifiée et anniversaires, rapprochement local, source datée et
   séparation de la liste de souhaits, puis rappels/pertinence/Apple Watch.
 - Ne jamais employer de capture de tutoriel, d’onboarding ou de walkthrough.
-  Tant qu’aucune vraie capture fonctionnelle Today Pick n’est validée, conserver
-  l’illustration éditoriale en HTML/CSS.
-- Lancer `python3 Scripts/publish_release_1_9.py` en lecture seule. Le script
-  doit annoncer que 90 pages localisées sont prêtes et signaler séparément si
-  les captures 1.9 réelles manquent encore.
+  Utiliser exclusivement les captures fonctionnelles validées de la build 1.9.
+- Générer les formats web et l’image sociale avec
+  `python3 Scripts/build_release_1_9_media.py`.
+- Lancer `python3 Scripts/publish_release_1_9.py` en lecture seule, puis
+  `python3 Scripts/test_release_publication.py`. Le second script effectue deux
+  publications successives dans une copie temporaire, audite les deux états et
+  garantit que le basculement est complet et idempotent.
 
 ## Captures requises avant publication
 
 - Placer uniquement des captures fonctionnelles claires dans
   `assets/screenshots/v19/`.
-- Montrer au minimum Today Pick sur iPhone ou iPad, avec la raison du choix et
-  la source datée. Ajouter Mac et Apple Watch si les builds finales le permettent.
+- Le jeu de publication est constitué de
+  `en-us/iphone-today-pick.png`, `en-us/ipad-collection-grid.png` et
+  `en-us/mac-today-pick.png`, avec leurs variantes AVIF et WebP. Les PNG restent
+  les images de repli et de référence.
+- Montrer Today Pick avec la raison du choix et la source datée. Les autres
+  captures fonctionnelles 1.9 peuvent compléter la galerie, mais aucune image
+  de tutoriel, d’onboarding ou de walkthrough ne doit être utilisée.
 - Vérifier qu’aucun nom, emplacement ou élément personnel ne doit être masqué.
-- Ajouter les captures validées à la galerie 1.9 des 30 pages Captures.
+- Le script ajoute les captures validées à la galerie 1.9 des 30 pages Captures,
+  remplace les visuels courants des 30 accueils et replie l’ancienne galerie
+  dans une archive accessible.
 
 ## Basculement quand la 1.9 est réellement disponible
 
 1. Confirmer la disponibilité publique de la 1.9 sur iPhone, iPad et Apple Watch
    dans App Store Connect et sur les fiches App Store publiques. macOS est déjà
    confirmé depuis le 7 août 2026.
-2. Ajouter et vérifier les captures fonctionnelles finales sous
-   `assets/screenshots/v19/`.
-3. Lancer la simulation :
+2. Régénérer et vérifier les médias :
+
+   ```sh
+   python3 Scripts/build_release_1_9_media.py
+   ```
+
+3. Lancer la simulation complète :
 
    ```sh
    python3 Scripts/publish_release_1_9.py
+   python3 Scripts/test_release_publication.py
    ```
 
 4. Effectuer le basculement protégé :
@@ -62,7 +79,8 @@ de leur publication App Store en 1.9.
    ```
 
 5. Vérifier que la 1.9 devient la version structurée et le pied de page courants,
-   que son statut est « disponible », et que la 1.8 ne porte plus de libellé
+   que son statut est « disponible », que la 1.10 est annoncée « coming soon »
+   sans date ni fonctionnalité inventée, et que la 1.8 ne porte plus de libellé
    « disponible maintenant » dans l’historique.
 6. Relancer l’audit intégral, les tests responsive et la vérification des deux
    sitemaps avant commit, push et déploiement.
@@ -71,8 +89,9 @@ de leur publication App Store en 1.9.
 
 - Une seule version peut être signalée comme « disponible maintenant » : la
   dernière version effectivement distribuée sur la plateforme indiquée.
-- La version suivante doit être annoncée avec le statut localisé « coming
-  soon » uniquement lorsqu’elle est officiellement annoncée.
+- La version suivante définie dans le manifeste doit être annoncée avec le
+  statut localisé « coming soon » dès que la version courante est intégralement
+  distribuée. Elle ne reçoit ni date ni promesse fonctionnelle non confirmée.
 - Toutes les versions antérieures restent documentées sans date de publication
   et sans statut « disponible maintenant ».
 - Toute évolution du manifeste de versions doit être suivie du générateur, du
@@ -81,5 +100,6 @@ de leur publication App Store en 1.9.
 Commande d’audit :
 
 ```sh
-python3 /Users/yvesdurand/Developper/RecordPicker/Scripts/audit_site.py /Users/yvesdurand/Developper/RecordPicker-site
+python3 Scripts/audit_site_quality.py
+python3 Scripts/test_release_publication.py
 ```

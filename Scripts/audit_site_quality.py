@@ -11,6 +11,16 @@ from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
+RELEASE_STATE = json.loads(
+    (ROOT / "data" / "release-state.json").read_text(encoding="utf-8")
+)
+PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
+CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
+NEXT_VERSION = RELEASE_STATE["next_release"]["version"]
+HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
+SOCIAL_IMAGE_URL = (
+    "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
+)
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
     "es-es", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
@@ -47,9 +57,25 @@ def main() -> None:
     content_pages = 0
     release_pages = 0
     homes = 0
+    next_release_pages = 0
+    current_gallery_pages = 0
+    current_metadata_pages = 0
+    current_social_pages = 0
+    optimized_picture_pages = 0
+    archived_gallery_pages = 0
+    if PUBLICATION_PHASE not in {"partial", "full"}:
+        errors.append(f"unknown publication phase {PUBLICATION_PHASE}")
+    platform_states = RELEASE_STATE["current_release"]["platforms"]
+    required_platforms = set(
+        RELEASE_STATE["current_release"]["required_platforms_for_full_release"]
+    )
+    if set(platform_states) != required_platforms:
+        errors.append("release-state platform list does not match the publication gate")
+    if PUBLICATION_PHASE == "full" and set(platform_states.values()) != {"available"}:
+        errors.append("full publication still has a platform that is not available")
     for page in pages:
         text = page.read_text(encoding="utf-8")
-        for value in re.findall(r'(?:href|src)="([^"]+)"', text):
+        for value in re.findall(r'(?:href|src|srcset)="([^"]+)"', text):
             target = local_target(page, value)
             if target and not target.exists():
                 errors.append(f"{page.relative_to(ROOT)}: missing {target.relative_to(ROOT)}")
@@ -69,6 +95,11 @@ def main() -> None:
                 errors.append(f"{relative}: missing {requirement}")
         if re.search(r'<img[^>]+src="[^"]*(?:tutorial|onboarding|walkthrough)', text, flags=re.IGNORECASE):
             errors.append(f"{relative}: forbidden tutorial image")
+        for image_tag in re.findall(r'<img\b[^>]*>', text):
+            for attribute in ("alt", "width", "height"):
+                if not re.search(rf'\b{attribute}="[^"]*"', image_tag):
+                    errors.append(f"{relative}: image missing {attribute}")
+                    break
         if 'content="https://recordpicker.app/assets/brand/icon-512.png"' in text:
             errors.append(f"{relative}: generic icon still used as social image")
         if '<meta name="twitter:card" content="summary_large_image">' not in text:
@@ -83,11 +114,28 @@ def main() -> None:
             card = card_match.group(0)
             release_pages += 1
             status = STATUS.search(card)
-            if version == "1.9":
+            if version == CURRENT_VERSION:
                 if not status or "release-platform-summary" not in status.group(0):
-                    errors.append(f"{relative}: current 1.9 status missing")
-            elif status:
+                    errors.append(f"{relative}: current {CURRENT_VERSION} status missing")
+            elif version == NEXT_VERSION:
+                if PUBLICATION_PHASE != "full":
+                    errors.append(f"{relative}: next release announced before full publication")
+                if not status or "release-platform-summary" not in status.group(0):
+                    errors.append(f"{relative}: next {NEXT_VERSION} status missing")
+            elif version in HISTORICAL_VERSIONS and status:
                 errors.append(f"{relative}: historical {version} still has a status")
+        if f'data-release-version="{NEXT_VERSION}"' in text:
+            next_release_pages += 1
+        if f'data-release-gallery="{CURRENT_VERSION}"' in text:
+            current_gallery_pages += 1
+        if f'"softwareVersion":"{CURRENT_VERSION}"' in text:
+            current_metadata_pages += 1
+        if SOCIAL_IMAGE_URL in text:
+            current_social_pages += 1
+        if "<picture>" in text and ".avif" in text and ".webp" in text:
+            optimized_picture_pages += 1
+        if "data-previous-versions" in text:
+            archived_gallery_pages += 1
         if kind == "index.html":
             homes += 1
             for forbidden in ("v18-showcase", "release-history", "support-band"):
@@ -96,6 +144,10 @@ def main() -> None:
             for required in ("privacy-compact", "current-screens", 'id="versions"'):
                 if required not in text:
                     errors.append(f"{relative}: compact home element {required} missing")
+            if PUBLICATION_PHASE == "full":
+                for required in ("v19-hero", "v19-home-screens"):
+                    if required not in text:
+                        errors.append(f"{relative}: published home missing {required}")
         if kind == "mac-app/index.html" and "macOS 1.8" in text:
             errors.append(f"{relative}: stale macOS 1.8 label")
 
@@ -112,19 +164,66 @@ def main() -> None:
         errors.append(f"expected 270 content pages, found {content_pages}")
     if homes != 30:
         errors.append(f"expected 30 home pages, found {homes}")
-    if release_pages != 60:
-        errors.append(f"expected 60 versioned release cards, found {release_pages}")
+    expected_release_cards = 90 if PUBLICATION_PHASE == "full" else 60
+    if release_pages != expected_release_cards:
+        errors.append(
+            f"expected {expected_release_cards} versioned release cards, "
+            f"found {release_pages}"
+        )
+    expected_next_pages = 90 if PUBLICATION_PHASE == "full" else 0
+    if next_release_pages != expected_next_pages:
+        errors.append(
+            f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
+        )
+    expected_gallery_pages = 30 if PUBLICATION_PHASE == "full" else 0
+    if current_gallery_pages != expected_gallery_pages:
+        errors.append(
+            f"expected {expected_gallery_pages} current galleries, "
+            f"found {current_gallery_pages}"
+        )
+    if PUBLICATION_PHASE == "full":
+        if current_metadata_pages != content_pages:
+            errors.append(
+                f"only {current_metadata_pages}/{content_pages} pages expose "
+                f"softwareVersion {CURRENT_VERSION}"
+            )
+        if current_social_pages != content_pages:
+            errors.append(
+                f"only {current_social_pages}/{content_pages} pages use the current social image"
+            )
+        if optimized_picture_pages != 60:
+            errors.append(
+                f"expected responsive AVIF/WebP pictures on 60 pages, "
+                f"found {optimized_picture_pages}"
+            )
+        if archived_gallery_pages != 30:
+            errors.append(
+                f"expected 30 archived historical galleries, found {archived_gallery_pages}"
+            )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")
     for image in (ROOT / "assets/social").glob("*.png"):
         if image.stat().st_size > 600_000:
             errors.append(f"{image.relative_to(ROOT)} exceeds 600 KB")
+    for relative in RELEASE_STATE["publication_assets"]["screenshots"]:
+        source = ROOT / "assets" / "screenshots" / "v19" / relative
+        for suffix, maximum in ((".webp", 300_000), (".avif", 250_000)):
+            derivative = source.with_suffix(suffix)
+            if not derivative.is_file():
+                errors.append(f"missing optimized asset {derivative.relative_to(ROOT)}")
+            elif derivative.stat().st_size > maximum:
+                errors.append(f"{derivative.relative_to(ROOT)} exceeds {maximum} bytes")
+    for language in ("ar", "he"):
+        for page in (ROOT / language).rglob("*.html"):
+            if '<html lang=' in page.read_text(encoding="utf-8") and 'dir="rtl"' not in page.read_text(encoding="utf-8"):
+                errors.append(f"{page.relative_to(ROOT)}: RTL direction missing")
     if errors:
         print("\n".join(errors[:100]))
         raise SystemExit(f"Quality audit failed with {len(errors)} error(s).")
     print(
         f"OK: {len(pages)} HTML pages, {content_pages} content pages, "
-        f"{homes} compact localized homes, {release_pages} versioned cards."
+        f"{homes} compact localized homes, {release_pages} versioned cards, "
+        f"release phase {PUBLICATION_PHASE}."
     )
 
 

@@ -162,6 +162,93 @@
     grid-template-columns: 1fr;
   }
 }
+
+picture {
+  display: block;
+  width: 100%;
+}
+
+.v19-hero-showcase {
+  min-height: 0;
+}
+
+.v19-hero img {
+  aspect-ratio: 64 / 45;
+}
+
+.v19-home-screens {
+  grid-template-columns: minmax(220px, 320px) minmax(360px, 600px);
+  align-items: start;
+  max-width: 960px;
+}
+
+.v19-home-screens .v19-home-phone {
+  grid-row: span 2;
+}
+
+.v19-home-screens .v19-home-mac,
+.v19-home-screens .v19-home-ipad {
+  grid-column: 2;
+}
+
+.v19-home-screens .v19-home-phone img {
+  aspect-ratio: 9 / 19.5;
+}
+
+.v19-home-screens .v19-home-mac img {
+  aspect-ratio: 64 / 45;
+}
+
+.v19-home-screens .v19-home-ipad img {
+  aspect-ratio: 3 / 4;
+}
+
+.next-release {
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.next-release .section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: none;
+}
+
+.next-release h2 {
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+}
+
+.screenshot-archive {
+  margin-block: 44px 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.screenshot-archive summary {
+  cursor: pointer;
+  padding: 20px 22px;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.screenshot-archive summary::marker {
+  color: var(--red);
+}
+
+.screenshot-archive[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.screenshot-archive-content {
+  padding-inline: clamp(14px, 3vw, 28px);
+}
+
 .v19-grid {
   grid-template-columns: minmax(220px, 320px) minmax(360px, 600px);
   align-items: start;
@@ -188,11 +275,23 @@
 }
 
 @media (max-width: 760px) {
+  .next-release .section-head {
+    display: block;
+  }
+
+  .next-release h2 {
+    margin-top: 8px;
+  }
+
+  .v19-home-screens,
   .v19-grid {
     grid-template-columns: minmax(0, 1fr);
     max-width: 600px;
   }
 
+  .v19-home-screens .v19-home-phone,
+  .v19-home-screens .v19-home-mac,
+  .v19-home-screens .v19-home-ipad,
   .v19-grid .v19-iphone,
   .v19-grid .v19-mac,
   .v19-grid .v19-ipad {
@@ -201,6 +300,10 @@
   }
 
   .v19-grid .v19-iphone {
+    max-width: 337px;
+  }
+
+  .v19-home-screens .v19-home-phone {
     max-width: 337px;
   }
 }

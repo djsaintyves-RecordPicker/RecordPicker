@@ -20,3 +20,5 @@ jobs:
         run: python3 -m compileall -q Scripts
       - name: Validate generated pages
         run: python3 Scripts/audit_site_quality.py
+      - name: Simulate the complete 1.9 publication twice
+        run: python3 Scripts/test_release_publication.py
