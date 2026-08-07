@@ -123,3 +123,42 @@
     grid-template-columns: 1fr;
   }
 }
+
+.privacy-compact {
+  display: grid;
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.privacy-compact .lead {
+  margin-inline: auto;
+}
+
+.privacy-compact .cta-row {
+  justify-content: center;
+}
+
+.current-screens {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.current-screen {
+  min-width: 0;
+}
+
+.current-screen img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #fff;
+}
+
+@media (max-width: 820px) {
+  .current-screens {
+    grid-template-columns: 1fr;
+  }
+}
