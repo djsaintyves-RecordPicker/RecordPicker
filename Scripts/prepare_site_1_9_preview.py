@@ -29,6 +29,7 @@ from site_translation_data import (
     TODAY_PICK_TRANSLATIONS,
 )
 from enhance_site_accessibility import main as enhance_accessibility
+from improve_site_quality import main as improve_site_quality
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -234,6 +235,15 @@ def available_label(text: str, path: Path) -> str:
     )
     if current:
         return unescape(re.sub(r'<[^>]+>', '', current.group(1))).strip()
+
+    showcase = re.search(
+        r'<section class="[^"]*upcoming-showcase[^"]*"[^>]*>.*?'
+        r'<p class="kicker">Mac · 1\.9 · (.*?)</p>',
+        text,
+        flags=re.DOTALL,
+    )
+    if showcase:
+        return unescape(re.sub(r'<[^>]+>', '', showcase.group(1))).strip()
 
     historical = re.search(
         r'<article class="release-card[^>]*data-release-version="1\.8".*?</article>',
@@ -837,6 +847,13 @@ def update_media_sitemap(roots: list[Path]) -> None:
     text = path.read_text(encoding="utf-8")
     text = replace_dark_mac_references(text)
     text = re.sub(
+        r'[ \t]*<image:image>\s*<image:loc>[^<]*/assets/screenshots/mac/'
+        r'record-crate-search\.png</image:loc>.*?</image:image>\s*',
+        "",
+        text,
+        flags=re.DOTALL,
+    )
+    text = re.sub(
         r'[ \t]*<image:image>\s*<image:loc>[^<]*/assets/watch/[^<]+</image:loc>.*?'
         r'</image:image>\s*',
         "",
@@ -920,7 +937,13 @@ def main() -> None:
         home_prefix = "" if root == ROOT else "../"
         source_home_text = home.read_text(encoding="utf-8")
         current_availability = available_label(source_home_text, home)
-        home_text = update_release_cards(source_home_text, home, current_availability)
+        if re.search(
+            r'<article class="release-card[^>]*data-release-version="1\.8"',
+            source_home_text,
+        ):
+            home_text = update_release_cards(source_home_text, home, current_availability)
+        else:
+            home_text = source_home_text
         language = html_language(home_text)
         release_intro, release_bullets = release_copy(language)
         visual_captions = localized_visual_captions(root, release_bullets)
@@ -943,12 +966,16 @@ def main() -> None:
             language, release_intro, release_bullets, home_prefix, visual_captions,
             release_status,
         )
-        if not current_v18:
-            raise RuntimeError(f"No 1.8 visual showcase found in {home}")
-        home_text = (
-            home_text[:current_v18.start()] + functional_v18
-            + home_text[current_v18.end():]
-        )
+        if current_v18:
+            home_text = (
+                home_text[:current_v18.start()] + functional_v18
+                + home_text[current_v18.end():]
+            )
+        else:
+            marker = '<section class="section mac-teaser"'
+            if marker not in home_text:
+                raise RuntimeError(f"No insertion point for the 1.8 visual showcase in {home}")
+            home_text = home_text.replace(marker, functional_v18 + marker, 1)
         showcase = upcoming_showcase(language, current_availability)
         current_showcase = re.search(
             r'<section class="section upcoming-showcase".*?</section>',
@@ -1051,6 +1078,7 @@ def main() -> None:
     update_media_sitemap(roots)
     update_standard_sitemap()
     enhance_accessibility()
+    improve_site_quality()
 
     print(
         f"Prepared {len(roots)} locales: macOS 1.9 available, other platforms "

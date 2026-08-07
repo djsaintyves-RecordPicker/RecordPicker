@@ -68,10 +68,7 @@ def remove_dates(text: str, path: Path) -> str:
 
 
 def visible_release_pages() -> list[Path]:
-    pages: list[Path] = []
-    for root in localized_roots():
-        pages.extend([root / "index.html", root / "readme" / "index.html"])
-    return pages
+    return [root / "readme" / "index.html" for root in localized_roots()]
 
 
 def validate_page(text: str, path: Path) -> None:

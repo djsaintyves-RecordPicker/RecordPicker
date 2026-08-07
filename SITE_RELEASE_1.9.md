@@ -20,7 +20,7 @@ de leur publication App Store en 1.9.
 
 - Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
 - Exécuter `python3 Scripts/remove_visible_release_dates.py` et vérifier que les
-  60 historiques localisés respectent la règle « version courante + suivante ».
+  30 historiques localisés respectent la règle « version courante + suivante ».
 - Vérifier les 30 variantes linguistiques des pages Accueil, Fonctionnalités et
   Captures. La disponibilité par plateforme doit toujours rester explicite.
 - Présenter Today Pick avec les quatre promesses publiques validées : actualité
