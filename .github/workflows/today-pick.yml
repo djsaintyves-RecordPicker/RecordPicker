@@ -30,7 +30,7 @@ jobs:
             --output site/data/today-pick-v1.json \
             --health-output site/data/today-pick-source-health.json \
             --regional-output-dir site/data/regions \
-            --minimum-editorial-sources 20 \
+            --minimum-editorial-sources 10 \
             --ttl-hours 36
           python3 - <<'PY'
           import json
