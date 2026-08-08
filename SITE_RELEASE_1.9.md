@@ -79,7 +79,7 @@ de leur publication App Store en 1.9.
    ```
 
 5. Vérifier que la 1.9 devient la version structurée et le pied de page courants,
-   que son statut est « disponible », que la 1.10 est annoncée « coming soon »
+   que son statut est « disponible », que la 2.0 est annoncée « coming soon »
    sans date ni fonctionnalité inventée, et que la 1.8 ne porte plus de libellé
    « disponible maintenant » dans l’historique.
 6. Relancer l’audit intégral, les tests responsive et la vérification des deux
