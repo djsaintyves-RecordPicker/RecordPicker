@@ -85,6 +85,7 @@ RULES_LABELS = {
 LOCALES = tuple(COPY)
 INSTAGRAM = "https://www.instagram.com/recordpicker/"
 CSS_VERSION = "20260808-challenge"
+REEL_VERSION = "20260808-cutouts"
 
 
 def locale_for(path: Path) -> str:
@@ -142,7 +143,7 @@ def section(copy: tuple[str, ...], rules_label: str) -> str:
         f'<p class="challenge-legal">{escape(legal)}</p>'
         '</div><figure class="challenge-media">'
         '<video controls playsinline preload="metadata" poster="/assets/challenge/recordpicker-challenge-poster.png" aria-label="Record Picker 3 Picks Challenge">'
-        '<source src="/assets/challenge/recordpicker-challenge-reel.mp4" type="video/mp4">'
+        f'<source src="/assets/challenge/recordpicker-challenge-reel.mp4?v={REEL_VERSION}" type="video/mp4">'
         '</video><figcaption>#RecordPickerChallenge · Instagram Reel · 22.5 s</figcaption>'
         '</figure></section>'
     )
