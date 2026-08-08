@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "publication_phase": "partial",
+  "publication_phase": "full",
   "current_release": {
     "version": "1.9",
     "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
+      "iphone": "available",
+      "ipad": "available",
       "mac": "available",
-      "watch": "coming_soon"
+      "watch": "available"
     },
     "required_platforms_for_full_release": [
       "iphone",

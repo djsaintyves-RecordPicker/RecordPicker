@@ -20,11 +20,11 @@ de leur publication App Store en 1.9.
 
 - Considérer `data/release-state.json` comme l’unique source de vérité pour la
   version courante, la version suivante, les plateformes et la phase de
-  publication. Ne jamais modifier les statuts directement dans les 270 pages.
+  publication. Ne jamais modifier les statuts directement dans les 297 pages.
 - Exécuter `python3 Scripts/prepare_site_1_9_preview.py`.
 - Exécuter `python3 Scripts/remove_visible_release_dates.py` et vérifier que les
   30 historiques localisés respectent la règle « version courante + suivante ».
-- Vérifier les 30 variantes linguistiques des pages Accueil, Fonctionnalités et
+- Vérifier les 33 variantes régionales des pages Accueil, Fonctionnalités et
   Captures. La disponibilité par plateforme doit toujours rester explicite.
 - Présenter Today Pick avec les quatre promesses publiques validées : actualité
   musicale vérifiée et anniversaires, rapprochement local, source datée et
@@ -51,7 +51,7 @@ de leur publication App Store en 1.9.
   de tutoriel, d’onboarding ou de walkthrough ne doit être utilisée.
 - Vérifier qu’aucun nom, emplacement ou élément personnel ne doit être masqué.
 - Le script ajoute les captures validées à la galerie 1.9 des 30 pages Captures,
-  remplace les visuels courants des 30 accueils et replie l’ancienne galerie
+  remplace les visuels courants des 33 accueils et replie l’ancienne galerie
   dans une archive accessible.
 
 ## Basculement quand la 1.9 est réellement disponible
@@ -95,7 +95,8 @@ de leur publication App Store en 1.9.
 - Toutes les versions antérieures restent documentées sans date de publication
   et sans statut « disponible maintenant ».
 - Toute évolution du manifeste de versions doit être suivie du générateur, du
-  contrôle des 30 langues et de l’audit automatisé avant publication.
+  contrôle de toutes les langues et variantes régionales de l’app — notamment
+  es-MX, thaï et vietnamien — et de l’audit automatisé avant publication.
 
 Commande d’audit :
 

@@ -17,8 +17,8 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 LOCALE_DIRECTORIES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
-    "es-es", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
-    "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "tr", "zh-hans",
+    "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
+    "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "th", "tr", "vi", "zh-hans",
     "zh-hant",
 }
 

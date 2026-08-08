@@ -23,8 +23,8 @@ SOCIAL_IMAGE_URL = (
 )
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
-    "es-es", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
-    "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "tr", "zh-hans", "zh-hant",
+    "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
+    "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "th", "tr", "vi", "zh-hans", "zh-hant",
 }
 RELEASE_CARD = re.compile(
     r'<article class="release-card[^>]*data-release-version="([^"]+)".*?</article>',
@@ -88,11 +88,29 @@ def main() -> None:
             continue
         content_pages += 1
         relative = page.relative_to(ROOT)
+        if relative.parts and relative.parts[0] in LOCALES:
+            expected_page_locale = relative.parts[0]
+            if f'data-page-lang="{expected_page_locale}"' not in text:
+                errors.append(
+                    f"{relative}: data-page-lang does not match its locale directory"
+                )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
-        for requirement in ('class="skip-link"', 'id="main-content"', "quality.css?v=20260807-quality"):
+        for requirement in (
+            'class="skip-link"',
+            'id="main-content"',
+            "quality.css?v=20260807-quality",
+            "site.js?v=20260808-v19-locales",
+        ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
+        selected_languages = re.findall(
+            r'<a class="language-option"[^>]*aria-selected="true"', text
+        )
+        if len(selected_languages) != 1:
+            errors.append(
+                f"{relative}: expected one selected language, found {len(selected_languages)}"
+            )
         if re.search(r'<img[^>]+src="[^"]*(?:tutorial|onboarding|walkthrough)', text, flags=re.IGNORECASE):
             errors.append(f"{relative}: forbidden tutorial image")
         for image_tag in re.findall(r'<img\b[^>]*>', text):
@@ -158,24 +176,49 @@ def main() -> None:
         if not target.exists():
             errors.append(f"sitemap-media.xml: missing {target.relative_to(ROOT)}")
 
+    sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+    canonical_urls = {
+        unescape(value)
+        for page in pages
+        if "<main" in page.read_text(encoding="utf-8")
+        for value in re.findall(
+            r'<link rel="canonical" href="([^"]+)">',
+            page.read_text(encoding="utf-8"),
+        )
+    }
+    sitemap_urls = set(re.findall(r"<loc>(https://recordpicker\.app/[^<]*)</loc>", sitemap))
+    media_page_urls = set(re.findall(r"<loc>(https://recordpicker\.app/[^<]*)</loc>", media_sitemap))
+    missing_sitemap = canonical_urls - sitemap_urls
+    missing_media_sitemap = canonical_urls - media_page_urls
+    if missing_sitemap:
+        errors.append(f"sitemap.xml misses {len(missing_sitemap)} canonical page(s)")
+    if missing_media_sitemap:
+        errors.append(
+            f"sitemap-media.xml misses {len(missing_media_sitemap)} canonical page(s)"
+        )
+
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
-    if content_pages != 270:
-        errors.append(f"expected 270 content pages, found {content_pages}")
-    if homes != 30:
-        errors.append(f"expected 30 home pages, found {homes}")
-    expected_release_cards = 90 if PUBLICATION_PHASE == "full" else 60
+    expected_locales = len(LOCALES) + 1
+    expected_content_pages = expected_locales * 9
+    if content_pages != expected_content_pages:
+        errors.append(
+            f"expected {expected_content_pages} content pages, found {content_pages}"
+        )
+    if homes != expected_locales:
+        errors.append(f"expected {expected_locales} home pages, found {homes}")
+    expected_release_cards = expected_locales * (3 if PUBLICATION_PHASE == "full" else 2)
     if release_pages != expected_release_cards:
         errors.append(
             f"expected {expected_release_cards} versioned release cards, "
             f"found {release_pages}"
         )
-    expected_next_pages = 90 if PUBLICATION_PHASE == "full" else 0
+    expected_next_pages = expected_locales * 3 if PUBLICATION_PHASE == "full" else 0
     if next_release_pages != expected_next_pages:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
         )
-    expected_gallery_pages = 30 if PUBLICATION_PHASE == "full" else 0
+    expected_gallery_pages = expected_locales if PUBLICATION_PHASE == "full" else 0
     if current_gallery_pages != expected_gallery_pages:
         errors.append(
             f"expected {expected_gallery_pages} current galleries, "
@@ -191,14 +234,15 @@ def main() -> None:
             errors.append(
                 f"only {current_social_pages}/{content_pages} pages use the current social image"
             )
-        if optimized_picture_pages != 60:
+        if optimized_picture_pages < expected_locales * 2:
             errors.append(
-                f"expected responsive AVIF/WebP pictures on 60 pages, "
+                f"expected responsive AVIF/WebP pictures on at least {expected_locales * 2} pages, "
                 f"found {optimized_picture_pages}"
             )
-        if archived_gallery_pages != 30:
+        if archived_gallery_pages != expected_locales:
             errors.append(
-                f"expected 30 archived historical galleries, found {archived_gallery_pages}"
+                f"expected {expected_locales} archived historical galleries, "
+                f"found {archived_gallery_pages}"
             )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")
