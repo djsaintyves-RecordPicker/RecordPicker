@@ -132,11 +132,18 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "quality.css?v=20260808-finish2",
             "site.js?v=20260808-v19-locales",
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
+        if not any(
+            version in text
+            for version in (
+                "quality.css?v=20260808-finish2",
+                "quality.css?v=20260808-contest1",
+            )
+        ):
+            errors.append(f"{relative}: missing versioned quality.css")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
         )
@@ -239,7 +246,7 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9
+    expected_content_pages = expected_locales * 9 + 1
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"

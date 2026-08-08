@@ -262,6 +262,59 @@ picture {
   border-bottom: 1px solid var(--line);
 }
 
+.contest-callout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 34px;
+  padding: 34px clamp(24px, 4vw, 48px);
+  border: 1px solid color-mix(in srgb, var(--red) 38%, var(--line));
+  border-radius: 12px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--red) 13%, var(--surface)), var(--surface));
+  box-shadow: var(--card-shadow);
+}
+
+.contest-callout h2 {
+  margin-top: 10px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.contest-callout .lead {
+  margin-top: 12px;
+}
+
+.contest-hero h1 {
+  max-width: 820px;
+}
+
+.contest-rules {
+  display: grid;
+  gap: 16px;
+}
+
+.contest-rules > h2 {
+  margin: 4px 0 8px;
+}
+
+.contest-rules .policy-card h3 {
+  font-size: 1.18rem;
+}
+
+.contest-rules .policy-card p {
+  margin-top: 12px;
+}
+
+@media (max-width: 760px) {
+  .contest-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .contest-callout .button {
+    justify-self: start;
+  }
+}
+
 .next-release .section-head {
   display: flex;
   align-items: baseline;
