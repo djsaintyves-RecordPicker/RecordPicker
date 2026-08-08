@@ -141,6 +141,7 @@ def main() -> None:
             for version in (
                 "quality.css?v=20260808-finish2",
                 "quality.css?v=20260808-contest1",
+                "quality.css?v=20260808-challenge",
             )
         ):
             errors.append(f"{relative}: missing versioned quality.css")
