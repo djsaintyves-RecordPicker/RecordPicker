@@ -19,9 +19,26 @@ PUBLICATION_IMAGES = (
 
 
 def save_derivatives(source: Path) -> None:
-    image = Image.open(source).convert("RGB")
+    image = Image.open(source)
+    # Keep the rounded-window transparency from the source PNG. Flattening to
+    # RGB turned transparent Mac corners black in the AVIF/WebP selected by
+    # modern browsers, even though the PNG fallback was correct.
+    image = image.convert("RGBA" if "A" in image.getbands() else "RGB")
     image.save(source.with_suffix(".webp"), "WEBP", quality=84, method=6)
     image.save(source.with_suffix(".avif"), "AVIF", quality=62, speed=6)
+    source_has_transparency = (
+        "A" in image.getbands() and image.getchannel("A").getextrema()[0] < 255
+    )
+    if source_has_transparency:
+        for suffix in (".webp", ".avif"):
+            derivative = Image.open(source.with_suffix(suffix))
+            if (
+                "A" not in derivative.getbands()
+                or derivative.getchannel("A").getextrema()[0] == 255
+            ):
+                raise RuntimeError(
+                    f"{source.with_suffix(suffix).name} lost source transparency"
+                )
 
 
 def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
