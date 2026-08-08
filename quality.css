@@ -327,6 +327,65 @@ picture {
   font-size: clamp(1.45rem, 3vw, 2.15rem);
 }
 
+/* Record Picker 2.0 preview: meaningful copy without implying availability. */
+.v20-preview {
+  display: grid;
+  grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: clamp(24px, 5vw, 64px);
+  padding-block: clamp(34px, 6vw, 68px);
+}
+
+.v20-preview .section-head {
+  display: block;
+}
+
+.v20-preview .section-head h2 {
+  margin-top: 8px;
+}
+
+.v20-preview .section-head .lead {
+  margin-top: 16px;
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.62;
+}
+
+.v20-preview-panel {
+  padding: clamp(22px, 3.6vw, 36px);
+  border: 1px solid color-mix(in srgb, var(--red) 28%, var(--line));
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface-raised) 96%, var(--red));
+  box-shadow: var(--card-shadow);
+}
+
+.v20-preview-panel ul,
+.v20-release-card > ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.v20-preview-panel li,
+.v20-release-card > ul li {
+  line-height: 1.58;
+}
+
+.v20-privacy-note {
+  margin: 22px 0 0;
+  padding: 15px 17px;
+  border-inline-start: 3px solid var(--red);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface-raised) 88%, var(--red));
+  color: var(--ink);
+  font-weight: 760;
+  line-height: 1.55;
+}
+
+.v20-release-card .v20-privacy-note {
+  margin-inline: 0;
+}
+
 .screenshot-archive {
   margin-block: 44px 0;
   border: 1px solid var(--line);
@@ -391,6 +450,11 @@ picture {
 
   .next-release h2 {
     margin-top: 8px;
+  }
+
+  .v20-preview {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .v19-home-screens,
