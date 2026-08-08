@@ -4,6 +4,18 @@
   outline-offset: 3px;
 }
 
+:root {
+  --red: #d81f45;
+  --red-dark: #b91639;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --red: #ff3b5f;
+    --red-dark: #ff6b84;
+  }
+}
+
 .skip-link {
   position: fixed;
   z-index: 200;
@@ -168,6 +180,47 @@ picture {
   width: 100%;
 }
 
+.doc-hero h1 {
+  max-width: 17ch;
+  font-size: clamp(2.65rem, 5.5vw, 4.55rem);
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.doc-tagline {
+  max-width: 28ch;
+  text-wrap: balance;
+}
+
+.release-history-archive {
+  margin-top: 28px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.release-history-archive summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.release-history-archive summary::marker {
+  color: var(--red);
+}
+
+.release-history-archive[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.release-history-archive .timeline {
+  padding: 0 18px 18px;
+}
+
 .v19-hero-showcase {
   min-height: 0;
 }
@@ -275,6 +328,10 @@ picture {
 }
 
 @media (max-width: 760px) {
+  .doc-hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3.45rem);
+  }
+
   .next-release .section-head {
     display: block;
   }

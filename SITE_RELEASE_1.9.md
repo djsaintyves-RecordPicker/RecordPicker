@@ -101,6 +101,8 @@ de leur publication App Store en 1.9.
 Commande d’audit :
 
 ```sh
+python3 Scripts/build_legacy_web_media.py
+python3 Scripts/refine_site_finish.py
 python3 Scripts/audit_site_quality.py
 python3 Scripts/test_release_publication.py
 ```

@@ -40,7 +40,7 @@ def main() -> None:
         text = re.sub(r'(styles\.css\?v=)[^"]+', r'\g<1>20260807-quality', text)
         text = re.sub(r'(site\.js\?v=)[^"]+', r'\g<1>20260807-quality', text)
         quality_href = "quality.css" if path.parent == ROOT else "../" * len(path.relative_to(ROOT).parent.parts) + "quality.css"
-        quality_link = f'<link rel="stylesheet" href="{quality_href}?v=20260807-quality">'
+        quality_link = f'<link rel="stylesheet" href="{quality_href}?v=20260808-finish2">'
         text = re.sub(r'<link rel="stylesheet" href="[^"]*quality\.css[^>]*>', "", text, count=1)
         text = text.replace("</head>", quality_link + "</head>", 1)
         if text != original:

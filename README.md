@@ -24,7 +24,23 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v1.8 - In preparation for iPhone, iPad, Apple Watch and Mac
+### v2.0 - Coming soon
+
+The next version is announced without a release date or unconfirmed feature
+promises. Screenshots will be replaced only with real captures from a
+distributed build.
+
+### v1.9 - Available now on iPhone, iPad, Apple Watch and Mac
+
+- Today's Pick gives collectors a timely, private reason to rediscover a
+  record they already own.
+- Verified music news, anniversaries and optional nearby concerts are matched
+  to the collection on device.
+- Every suggestion explains its reason and cites a dated source; the
+  collection is never sent to the news service.
+- Record Picker is localized in 32 languages and regional variants.
+
+### v1.8
 
 - One shared version number across every Apple platform.
 - More physical formats, including CD, SACD, MiniDisc, cassette, DVD-Audio,
@@ -42,7 +58,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Clearer CSV portability and stronger safeguards for backups, favourites,
   artwork, imports and metadata repairs.
 
-### v1.6 / macOS 1.0 - Available now
+### v1.6 / macOS 1.0
 
 - Record Picker is now free for collections of up to 100 records; a one-time Pro purchase unlocks an unlimited collection on iPhone, iPad and Mac, with no subscription.
 - The new native Mac app turns the big screen into a command center for browsing, enriching, cleaning up and rediscovering the collection.
@@ -51,13 +67,13 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Duplicate detection is much faster, review selection is better, and review-keyword reindexing now shows clear progress.
 - Clear storage diagnostics report problems instead of making an error look like data loss.
 
-### v1.5 - Available now
+### v1.5
 
 - More reliable iCloud synchronization across iPhone, iPad and Apple Watch.
 - Artwork is now added automatically after manual or barcode entry, with more robust fallbacks.
 - Improved data-quality tools, duplicate management and critical-review fetching.
 
-### v1.4 - Available now
+### v1.4
 
 - iPhone landscape selector: turn the phone sideways to see the cover on the left and full record details on the right, including title, artist, genre tags, format, label, and added-in year.
 - The Pick button stays centered next to the metadata, while the bottom toolbar floats equidistantly between the cover and the screen edge.
@@ -66,15 +82,15 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Statistics get denser in landscape: on iPhone, tiles reflow into three columns, matching the iPad density.
 - Cleaner swipes everywhere: swipe-to-delete is back on the wishlist and added to AI Mood history; old cross-screen swipes that fought row-level deletions have been retired.
 
-### v1.3 - Available now
+### v1.3
 
 - Apple Watch reimagined: the cover sits as a blurred backdrop, with three thumb-friendly buttons for favorite, undo the last draw, and next draw, each with dedicated haptic feedback.
 - Apple Watch layout adapted from 41 mm to Ultra.
 - Barcode scan now falls back to Discogs when MusicBrainz does not know the reference; if Discogs finds the edition, the form is pre-filled automatically.
-- Record Picker is available in 29 languages, with new variants and localizations: Arabic, Catalan, Korean, Danish, English for Australia/Canada/United Kingdom, Finnish, Canadian French, Hebrew, Hindi, Indonesian, Norwegian, Polish, Portuguese for Brazil/Portugal, Russian, Swedish, and Turkish.
+- Record Picker is available in 32 languages and regional variants, including Arabic, Catalan, Korean, Danish, English for Australia/Canada/United Kingdom, Finnish, Canadian French, Hebrew, Hindi, Indonesian, Norwegian, Polish, Portuguese for Brazil/Portugal, Russian, Spanish for Mexico, Swedish, Thai, Turkish and Vietnamese.
 - Small polish: better balanced cover picker sheet on iPad, faster iPhone-Watch sync, and a discreet App Store review request after regular use.
 
-### v1.2 - Available now
+### v1.2
 
 - Full music collection catalog for imports, manual album entry, and barcode scanning.
 - Animated random draw, year filters, favorites, temporary exclusions, listening history, and collection statistics.
@@ -82,7 +98,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - MusicBrainz metadata lookup, Cover Art Archive artwork or manual artwork import, backup/restore, Siri Shortcuts, and Apple Watch companion.
 - The collection stays stored locally; metadata and artwork lookups happen only when the user starts them.
 
-### v1.1.1 - Available now
+### v1.1.1
 
 - Interface and internal foundations refined for a smoother experience.
 - Improved iPad support.
@@ -96,3 +112,16 @@ Your collection stays stored locally on your device and, when you enable
 iCloud for Record Picker, may synchronize through your private iCloud
 database. Record Picker does not operate a collection server. Metadata and
 cover searches contact external services only when you start a lookup.
+
+## Release checks
+
+Run the media builder before the final site refinement so legacy screenshots
+are served as high-quality WebP files while their source captures remain
+available in the repository:
+
+```sh
+python3 Scripts/build_legacy_web_media.py
+python3 Scripts/refine_site_finish.py
+python3 Scripts/audit_site_quality.py
+python3 Scripts/test_release_publication.py
+```

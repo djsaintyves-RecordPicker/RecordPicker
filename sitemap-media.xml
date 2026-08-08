@@ -21,11 +21,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -35,26 +30,11 @@
   <url>
     <loc>https://recordpicker.app/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -91,11 +71,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -130,11 +105,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -207,11 +177,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -235,7 +200,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -250,11 +215,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -382,11 +342,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -396,26 +351,11 @@
   <url>
     <loc>https://recordpicker.app/ar/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/ar/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -452,11 +392,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -491,11 +426,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -568,11 +498,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -596,7 +521,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -611,11 +536,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -743,11 +663,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -757,26 +672,11 @@
   <url>
     <loc>https://recordpicker.app/de/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/de/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -813,11 +713,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -852,11 +747,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -929,11 +819,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -957,7 +842,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -972,11 +857,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -1104,11 +984,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -1118,26 +993,11 @@
   <url>
     <loc>https://recordpicker.app/en-au/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/en-au/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -1174,11 +1034,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -1213,11 +1068,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -1290,11 +1140,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -1318,7 +1163,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -1333,11 +1178,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -1465,11 +1305,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -1479,26 +1314,11 @@
   <url>
     <loc>https://recordpicker.app/en-ca/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/en-ca/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -1535,11 +1355,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -1574,11 +1389,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -1651,11 +1461,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -1679,7 +1484,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -1694,11 +1499,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -1826,11 +1626,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -1840,26 +1635,11 @@
   <url>
     <loc>https://recordpicker.app/en-us/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/en-us/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -1896,11 +1676,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -1935,11 +1710,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -2012,11 +1782,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -2040,7 +1805,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -2055,11 +1820,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -2187,11 +1947,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -2201,26 +1956,11 @@
   <url>
     <loc>https://recordpicker.app/en-gb/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/en-gb/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -2257,11 +1997,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -2296,11 +2031,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -2373,11 +2103,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -2401,7 +2126,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -2416,11 +2141,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -2548,11 +2268,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -2562,26 +2277,11 @@
   <url>
     <loc>https://recordpicker.app/ca/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/ca/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -2618,11 +2318,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -2657,11 +2352,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -2734,11 +2424,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -2762,7 +2447,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -2777,11 +2462,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -2909,11 +2589,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -2923,26 +2598,11 @@
   <url>
     <loc>https://recordpicker.app/ko/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/ko/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -2979,11 +2639,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -3018,11 +2673,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -3095,11 +2745,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -3123,7 +2768,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -3138,11 +2783,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -3270,11 +2910,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -3284,26 +2919,11 @@
   <url>
     <loc>https://recordpicker.app/zh-hans/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hans/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -3340,11 +2960,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -3379,11 +2994,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -3456,11 +3066,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -3484,7 +3089,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -3499,11 +3104,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -3631,11 +3231,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -3645,26 +3240,11 @@
   <url>
     <loc>https://recordpicker.app/zh-hant/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/zh-hant/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -3701,11 +3281,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -3740,11 +3315,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -3817,11 +3387,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -3845,7 +3410,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -3860,11 +3425,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -3992,11 +3552,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -4006,26 +3561,11 @@
   <url>
     <loc>https://recordpicker.app/da/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/da/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -4062,11 +3602,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -4101,11 +3636,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -4178,11 +3708,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -4206,7 +3731,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -4221,11 +3746,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -4353,11 +3873,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -4367,26 +3882,11 @@
   <url>
     <loc>https://recordpicker.app/es-es/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/es-es/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -4423,11 +3923,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -4462,11 +3957,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -4539,11 +4029,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -4567,7 +4052,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -4582,11 +4067,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -4714,11 +4194,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -4728,26 +4203,11 @@
   <url>
     <loc>https://recordpicker.app/fi/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/fi/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -4784,11 +4244,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -4823,11 +4278,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -4900,11 +4350,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -4928,7 +4373,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -4943,11 +4388,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -5075,11 +4515,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -5089,26 +4524,11 @@
   <url>
     <loc>https://recordpicker.app/fr-ca/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/fr-ca/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -5145,11 +4565,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -5184,11 +4599,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -5261,11 +4671,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -5289,7 +4694,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -5304,11 +4709,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -5436,11 +4836,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -5450,26 +4845,11 @@
   <url>
     <loc>https://recordpicker.app/fr/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/fr/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -5506,11 +4886,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -5545,11 +4920,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-fr.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -5622,11 +4992,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -5650,7 +5015,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -5665,11 +5030,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -5797,11 +5157,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -5811,26 +5166,11 @@
   <url>
     <loc>https://recordpicker.app/el/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/el/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -5867,11 +5207,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -5906,11 +5241,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -5983,11 +5313,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -6011,7 +5336,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -6026,11 +5351,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -6158,11 +5478,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -6172,26 +5487,11 @@
   <url>
     <loc>https://recordpicker.app/he/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/he/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -6228,11 +5528,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -6267,11 +5562,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -6344,11 +5634,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -6372,7 +5657,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -6387,11 +5672,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -6519,11 +5799,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -6533,26 +5808,11 @@
   <url>
     <loc>https://recordpicker.app/hi/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/hi/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -6589,11 +5849,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -6628,11 +5883,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -6705,11 +5955,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -6733,7 +5978,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -6748,11 +5993,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -6880,11 +6120,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -6894,26 +6129,11 @@
   <url>
     <loc>https://recordpicker.app/id/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/id/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -6950,11 +6170,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -6989,11 +6204,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -7066,11 +6276,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -7094,7 +6299,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -7109,11 +6314,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -7241,11 +6441,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -7255,26 +6450,11 @@
   <url>
     <loc>https://recordpicker.app/it/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/it/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -7311,11 +6491,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -7350,11 +6525,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -7427,11 +6597,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -7455,7 +6620,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -7470,11 +6635,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -7602,11 +6762,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -7616,26 +6771,11 @@
   <url>
     <loc>https://recordpicker.app/ja/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/ja/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -7672,11 +6812,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -7711,11 +6846,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -7788,11 +6918,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -7816,7 +6941,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -7831,11 +6956,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -7963,11 +7083,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -7977,26 +7092,11 @@
   <url>
     <loc>https://recordpicker.app/nl/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/nl/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -8033,11 +7133,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -8072,11 +7167,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -8149,11 +7239,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -8177,7 +7262,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -8192,11 +7277,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -8324,11 +7404,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -8338,26 +7413,11 @@
   <url>
     <loc>https://recordpicker.app/nb/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/nb/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -8394,11 +7454,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -8433,11 +7488,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -8510,11 +7560,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -8538,7 +7583,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -8553,11 +7598,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -8685,11 +7725,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -8699,26 +7734,11 @@
   <url>
     <loc>https://recordpicker.app/pl/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/pl/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -8755,11 +7775,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -8794,11 +7809,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -8871,11 +7881,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -8899,7 +7904,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -8914,11 +7919,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -9046,11 +8046,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -9060,26 +8055,11 @@
   <url>
     <loc>https://recordpicker.app/pt-br/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/pt-br/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -9116,11 +8096,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -9155,11 +8130,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -9232,11 +8202,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -9260,7 +8225,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -9275,11 +8240,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -9407,11 +8367,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -9421,26 +8376,11 @@
   <url>
     <loc>https://recordpicker.app/pt-pt/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/pt-pt/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -9477,11 +8417,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -9516,11 +8451,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -9593,11 +8523,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -9621,7 +8546,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -9636,11 +8561,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -9768,11 +8688,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -9782,26 +8697,11 @@
   <url>
     <loc>https://recordpicker.app/ru/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/ru/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -9838,11 +8738,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -9877,11 +8772,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -9954,11 +8844,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -9982,7 +8867,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -9997,11 +8882,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -10129,11 +9009,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -10143,26 +9018,11 @@
   <url>
     <loc>https://recordpicker.app/sv/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/sv/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -10199,11 +9059,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -10238,11 +9093,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -10315,11 +9165,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -10343,7 +9188,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -10358,11 +9203,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -10490,11 +9330,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -10504,26 +9339,11 @@
   <url>
     <loc>https://recordpicker.app/tr/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
     <loc>https://recordpicker.app/tr/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -10560,11 +9380,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -10599,11 +9414,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -10676,11 +9486,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -10704,7 +9509,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -10719,11 +9524,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -10851,11 +9651,6 @@
       <image:caption>iPad record crate in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
       <image:title>AI mood draw in Record Picker</image:title>
       <image:caption>AI mood draw in Record Picker</image:caption>
@@ -10925,11 +9720,6 @@
   <url>
     <loc>https://recordpicker.app/es-mx/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -10949,11 +9739,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -11026,11 +9811,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -11065,11 +9845,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -11142,11 +9917,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -11170,7 +9940,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -11181,16 +9951,6 @@
   <url>
     <loc>https://recordpicker.app/es-mx/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -11210,11 +9970,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
       <image:caption>iPad record crate in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
@@ -11286,11 +10041,6 @@
   <url>
     <loc>https://recordpicker.app/th/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -11310,11 +10060,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -11387,11 +10132,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -11426,11 +10166,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -11503,11 +10238,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -11531,7 +10261,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -11542,16 +10272,6 @@
   <url>
     <loc>https://recordpicker.app/th/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -11571,11 +10291,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/bin-filters.png</image:loc>
       <image:title>iPad record crate in Record Picker</image:title>
       <image:caption>iPad record crate in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/mood-draw.png</image:loc>
@@ -11647,11 +10362,6 @@
   <url>
     <loc>https://recordpicker.app/vi/privacy/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Local manual import in Record Picker</image:title>
-      <image:caption>Local manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
   <url>
@@ -11671,11 +10381,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/large-draw.png</image:loc>
       <image:title>Large-format draw in Record Picker</image:title>
       <image:caption>Large-format draw in Record Picker</image:caption>
-    </image:image>
-<image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/artwork-tools.png</image:loc>
@@ -11748,11 +10453,6 @@
       <image:caption>Record Picker 1.8 light screenshot 6</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>Record Picker 1.8 light screenshot 7</image:title>
-      <image:caption>Record Picker 1.8 light screenshot 7</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/v18/en-us/original-and-edition-year.png</image:loc>
       <image:title>Record Picker 1.8 light screenshot 8</image:title>
       <image:caption>Record Picker 1.8 light screenshot 8</image:caption>
@@ -11787,11 +10487,6 @@
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/draw-1.6-en-us.jpeg</image:loc>
       <image:title>iPhone portrait draw in Record Picker</image:title>
       <image:caption>iPhone portrait draw in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/iphone/animated-draw.jpeg</image:loc>
@@ -11864,11 +10559,6 @@
       <image:caption>Artwork editing in Record Picker</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://recordpicker.app/assets/screenshots/ipad/listening-options.png</image:loc>
       <image:title>Listening options in Record Picker</image:title>
       <image:caption>Listening options in Record Picker</image:caption>
@@ -11892,7 +10582,7 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
     <video:video>
-      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://recordpicker.app/assets/screenshots/iphone/mood-pick-1.6-en-us.jpeg</video:thumbnail_loc>
       <video:title>iPad import - Record Picker</video:title>
       <video:description>iPad import preview showing Record Picker on iPhone.</video:description>
       <video:content_loc>https://recordpicker.app/assets/video/ipad-import-database.mp4</video:content_loc>
@@ -11903,16 +10593,6 @@
   <url>
     <loc>https://recordpicker.app/vi/support/</loc>
     <lastmod>2026-08-08</lastmod>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/iphone/import.jpeg</image:loc>
-      <image:title>Import options in Record Picker</image:title>
-      <image:caption>Import options in Record Picker</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://recordpicker.app/assets/screenshots/ipad/manual-edit.png</image:loc>
-      <image:title>iPad manual import in Record Picker</image:title>
-      <image:caption>iPad manual import in Record Picker</image:caption>
-    </image:image>
 
   </url>
 </urlset>

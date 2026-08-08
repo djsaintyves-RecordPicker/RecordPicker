@@ -81,7 +81,18 @@ def main() -> None:
                 errors.append(f"{page.relative_to(ROOT)}: missing {target.relative_to(ROOT)}")
         for payload in re.findall(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', text, flags=re.DOTALL):
             try:
-                json.loads(unescape(payload))
+                schema = json.loads(unescape(payload))
+                if schema.get("@type") == "SoftwareApplication":
+                    languages = set(schema.get("inLanguage", []))
+                    if not {"es-MX", "th", "vi"}.issubset(languages):
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: structured locale coverage incomplete"
+                        )
+                    regions = set(schema.get("areaServed", []))
+                    if not {"MX", "TH", "VN"}.issubset(regions):
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: structured market coverage incomplete"
+                        )
             except json.JSONDecodeError as error:
                 errors.append(f"{page.relative_to(ROOT)}: invalid JSON-LD: {error}")
         if "<main" not in text:
@@ -95,6 +106,18 @@ def main() -> None:
             r'assets/screenshots/v19/en-us/[^\"]+\.(?:avif|webp)\"', text
         ):
             errors.append(f"{relative}: unversioned optimized 1.9 screenshot")
+        for forbidden_visual in (
+            "assets/screenshots/iphone/import.jpeg",
+            "assets/screenshots/ipad/manual-edit.png",
+        ):
+            if forbidden_visual in text:
+                errors.append(f"{relative}: tutorial visual remains")
+        if re.search(
+            r'assets/screenshots/(?!v19/)[^"\'?#]+\.(?:png|jpe?g)(?:\?[^"\']*)?["\']',
+            text,
+            flags=re.IGNORECASE,
+        ):
+            errors.append(f"{relative}: unoptimized legacy screenshot reference")
         if relative.parts and relative.parts[0] in LOCALES:
             expected_page_locale = relative.parts[0]
             if f'data-page-lang="{expected_page_locale}"' not in text:
@@ -109,7 +132,7 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "quality.css?v=20260807-quality",
+            "quality.css?v=20260808-finish2",
             "site.js?v=20260808-v19-locales",
         ):
             if requirement not in text:
@@ -180,6 +203,12 @@ def main() -> None:
             errors.append(f"{relative}: stale macOS 1.8 label")
 
     media_sitemap = (ROOT / "sitemap-media.xml").read_text(encoding="utf-8")
+    for forbidden_visual in (
+        "assets/screenshots/iphone/import.jpeg",
+        "assets/screenshots/ipad/manual-edit.png",
+    ):
+        if forbidden_visual in media_sitemap:
+            errors.append(f"sitemap-media.xml: tutorial visual remains: {forbidden_visual}")
     for value in re.findall(r"<image:loc>(.*?)</image:loc>", media_sitemap):
         parsed = urlsplit(unescape(value))
         target = ROOT / parsed.path.lstrip("/")

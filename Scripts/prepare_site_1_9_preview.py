@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parents[1]
 APP_LOCALIZATIONS = ROOT.parent / "RecordPicker" / "RecordPicker"
 APP_RELEASE_NOTES_19 = ROOT.parent / "RecordPicker" / "AppStoreReleaseNotes" / "1.9"
 PUBLICATION_DATE = "2026-08-07"
-SITE_STYLES_VERSION = "20260807-quality"
+SITE_STYLES_VERSION = "20260808-finish2"
 V18_STYLES_VERSION = "20260807-19-macos"
 MIXED_SOFTWARE_VERSION = "1.8 (iOS/iPadOS/watchOS) · 1.9 (macOS)"
 MIXED_FOOTER_VERSION = "Record Picker 1.8 · macOS 1.9"
@@ -404,7 +404,7 @@ def expanded_gallery(language: str, prefix: str, captions: list[str]) -> str:
         "data-quality.jpeg", "final-draw.jpeg", "history.jpeg", "manual-entry.jpeg"
     ]
     ipad_assets = [
-        "ipad/data-quality.png", "ipad/bin-filters.png", "ipad/manual-edit.png",
+        "ipad/data-quality.png", "ipad/bin-filters.png", "ipad/history.png",
         "v18/en-us/original-and-edition-year.png",
     ]
     mac_assets = ["collection.png", "data-quality.png", "list.png", "original-edition.png"]
@@ -878,7 +878,7 @@ def update_media_sitemap(roots: list[Path]) -> None:
                 "data-quality.jpeg", "final-draw.jpeg", "history.jpeg", "manual-entry.jpeg"
             )),
             *(f"assets/screenshots/ipad/{name}" for name in (
-                "data-quality.png", "bin-filters.png", "manual-edit.png",
+                "data-quality.png", "bin-filters.png", "history.png",
             )),
             "assets/screenshots/v18/en-us/original-and-edition-year.png",
             *(f"assets/screenshots/v18/mac/{name}" for name in (
