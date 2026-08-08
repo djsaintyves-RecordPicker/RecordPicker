@@ -88,6 +88,13 @@ def main() -> None:
             continue
         content_pages += 1
         relative = page.relative_to(ROOT)
+        if relative.parts[0] in {"en-au", "en-ca", "en-gb", "en-us"}:
+            if "Today Pick" in text:
+                errors.append(f"{relative}: stale Today Pick product name")
+        if re.search(
+            r'assets/screenshots/v19/en-us/[^\"]+\.(?:avif|webp)\"', text
+        ):
+            errors.append(f"{relative}: unversioned optimized 1.9 screenshot")
         if relative.parts and relative.parts[0] in LOCALES:
             expected_page_locale = relative.parts[0]
             if f'data-page-lang="{expected_page_locale}"' not in text:
@@ -96,6 +103,9 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        if kind in {"privacy/index.html", "readme/index.html", "support/index.html"}:
+            if "support@recordpicker.app" not in text:
+                errors.append(f"{relative}: public support contact missing")
         for requirement in (
             'class="skip-link"',
             'id="main-content"',

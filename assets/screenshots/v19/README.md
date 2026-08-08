@@ -24,9 +24,9 @@ data, or other personal information. Status bars use a stable light-mode state.
 - Never publish an image with mixed interface languages.
 - Keep the original aspect ratio and use `object-fit: contain` for iPad and Mac.
 - Do not stretch phone captures into desktop-width columns.
-- The French Today Pick view from build 13 is intentionally excluded because
+- The French Today's Pick view from build 13 is intentionally excluded because
   one action remained untranslated (`Mark as played`).
-- The iPad Today Pick sheet is intentionally excluded because its layout leaves
+- The iPad Today's Pick sheet is intentionally excluded because its layout leaves
   too much unused space for an effective website illustration.
 - Do not change public 1.9 availability until App Store distribution is
   confirmed for iPhone, iPad, Apple Watch, and Mac.

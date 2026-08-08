@@ -70,8 +70,8 @@ DATA = {
 def picture(prefix: str, name: str, width: int, height: int, css: str) -> str:
     base = f"{prefix}assets/screenshots/v19/en-us/{name}"
     stem = base.rsplit(".", 1)[0]
-    return (f'<figure class="{css}"><picture><source srcset="{stem}.avif" type="image/avif">'
-            f'<source srcset="{stem}.webp" type="image/webp"><img loading="lazy" alt="" '
+    return (f'<figure class="{css}"><picture><source srcset="{stem}.avif?v=20260808-alpha" type="image/avif">'
+            f'<source srcset="{stem}.webp?v=20260808-alpha" type="image/webp"><img loading="lazy" alt="" '
             f'src="{base}" width="{width}" height="{height}" decoding="async"></picture>'
             f'<figcaption>Record Picker 1.9</figcaption></figure>')
 
@@ -99,7 +99,7 @@ def main_markup(kind: str, d: dict[str, object]) -> str:
     if kind == "readme/index.html":
         features = "".join(f"<li>{x}</li>" for x in d["features"])
         points = "".join(f"<li>{x}</li>" for x in d["today_points"])
-        return (f'<main id="main-content" class="doc-shell"><section class="doc-hero"><h1>{all_features}</h1><p>{d["intro"]}</p></section><section class="doc-content"><h2>{d["collection"]}</h2><ul>{features}</ul><h2>{d["today"]}</h2><div class="release-list"><article class="release-card release-preview release-upcoming" data-release-version="2.0"><div><h3>Record Picker 2.0</h3><p class="release-platform-summary"><strong>{soon}</strong></p></div></article><article class="release-card" data-release-version="1.9"><div><h3>Record Picker 1.9</h3><p class="release-platform-summary"><strong>iPhone · iPad · Mac · Apple Watch · {available}</strong></p></div><ul>{points}</ul></article><article class="release-card" data-release-version="1.8"><div><h3>Record Picker 1.8</h3></div><ul><li>{d["collection_desc"]}</li><li>{d["privacy_desc"]}</li></ul></article></div></section></main>')
+        return (f'<main id="main-content" class="doc-shell"><section class="doc-hero"><h1>{all_features}</h1><p>{d["intro"]}</p></section><section class="doc-content"><h2>{d["collection"]}</h2><ul>{features}</ul><h2>{d["today"]}</h2><div class="release-list"><article class="release-card release-preview release-upcoming" data-release-version="2.0"><div><h3>Record Picker 2.0</h3><p class="release-platform-summary"><strong>{soon}</strong></p></div></article><article class="release-card" data-release-version="1.9"><div><h3>Record Picker 1.9</h3><p class="release-platform-summary"><strong>iPhone · iPad · Mac · Apple Watch · {available}</strong></p></div><ul>{points}</ul></article><article class="release-card" data-release-version="1.8"><div><h3>Record Picker 1.8</h3></div><ul><li>{d["collection_desc"]}</li><li>{d["privacy_desc"]}</li></ul></article></div></section><section class="contact-band"><div><h2>{contact}</h2></div><a class="button primary" href="mailto:support@recordpicker.app">support@recordpicker.app</a></section></main>')
     if kind == "privacy/index.html":
         sections = "".join(f"<section><h2>{h}</h2><p>{p}</p></section>" for h, p in d["privacy_sections"])
         return f'<main id="main-content" class="doc-shell"><section class="doc-hero"><h1>{privacy}</h1><p>{d["privacy_desc"]}</p></section><section class="doc-content">{sections}<section><h2>{contact}</h2><p><a href="mailto:support@recordpicker.app">support@recordpicker.app</a></p></section></section></main>'

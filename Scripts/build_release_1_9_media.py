@@ -111,7 +111,7 @@ def build_social_card() -> None:
     draw.text((176, 76), "Record Picker", fill="#111114", font=font(42, bold=True))
     draw.rounded_rectangle((72, 196, 198, 242), radius=23, fill="#ff2d55")
     draw.text((97, 203), "v1.9", fill="white", font=font(25, bold=True))
-    draw.text((72, 276), "Today Pick", fill="#111114", font=font(74, bold=True))
+    draw.text((72, 276), "Today's Pick", fill="#111114", font=font(74, bold=True))
     draw.text((72, 374), "A timely reason to listen.", fill="#6f6f76", font=font(31))
     draw.text((72, 434), "Private by design. Native on Apple platforms.", fill="#6f6f76", font=font(25))
 

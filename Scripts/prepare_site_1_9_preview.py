@@ -148,7 +148,7 @@ RELEASE_19_SITE_TRANSLATIONS = {
 }
 
 TODAY_PICK_KEYS = (
-    "Today Pick",
+    "Today's Pick",
     "A timely reason to rediscover a record you already own.",
     "Why this record today?",
     "Matching happens on this device. Your collection and wishlist are never sent to the music-news service.",
@@ -294,7 +294,7 @@ def upcoming_card(language: str, available: str) -> str:
 
 def upcoming_showcase(language: str, available: str) -> str:
     strings = app_strings(language)
-    title = strings["Today Pick"]
+    title = strings["Today's Pick"]
     promise = strings["A timely reason to rediscover a record you already own."]
     why = strings["Why this record today?"]
     headline, bullets = release_19_copy(language)
@@ -314,7 +314,7 @@ def upcoming_showcase(language: str, available: str) -> str:
 
 def upcoming_gallery_intro(language: str, available: str) -> str:
     strings = app_strings(language)
-    title = strings["Today Pick"]
+    title = strings["Today's Pick"]
     promise = strings["A timely reason to rediscover a record you already own."]
     headline, bullets = release_19_copy(language)
     return (

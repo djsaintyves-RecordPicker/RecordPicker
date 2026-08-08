@@ -209,7 +209,9 @@ def update_current_release_facts(text: str) -> str:
         f'"screenshot":"https://recordpicker.app/assets/screenshots/v19/{RELEASE_STATE["publication_assets"]["hero"]}"',
         text,
     )
-    social_url = f"https://recordpicker.app/{SOCIAL_IMAGE}"
+    social_url = (
+        f"https://recordpicker.app/{SOCIAL_IMAGE}?v=20260808-todays-pick"
+    )
     text = re.sub(
         r'(<meta property="og:image" content=")[^"]+("\s*/?>)',
         rf'\1{social_url}\2',
@@ -235,8 +237,8 @@ def responsive_picture(
     loading = ' loading="lazy"' if lazy else ' fetchpriority="high"'
     return (
         '<picture>'
-        f'<source srcset="{base}/{stem}.avif" type="image/avif">'
-        f'<source srcset="{base}/{stem}.webp" type="image/webp">'
+        f'<source srcset="{base}/{stem}.avif?v=20260808-alpha" type="image/avif">'
+        f'<source srcset="{base}/{stem}.webp?v=20260808-alpha" type="image/webp">'
         f'<img{loading} alt="" src="{base}/{filename}" width="{width}" '
         f'height="{height}" decoding="async">'
         '</picture>'

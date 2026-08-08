@@ -26,7 +26,7 @@ de leur publication App Store en 1.9.
   30 historiques localisés respectent la règle « version courante + suivante ».
 - Vérifier les 33 variantes régionales des pages Accueil, Fonctionnalités et
   Captures. La disponibilité par plateforme doit toujours rester explicite.
-- Présenter Today Pick avec les quatre promesses publiques validées : actualité
+- Présenter Today's Pick avec les quatre promesses publiques validées : actualité
   musicale vérifiée et anniversaires, rapprochement local, source datée et
   séparation de la liste de souhaits, puis rappels/pertinence/Apple Watch.
 - Ne jamais employer de capture de tutoriel, d’onboarding ou de walkthrough.
@@ -46,7 +46,7 @@ de leur publication App Store en 1.9.
   `en-us/iphone-today-pick.png`, `en-us/ipad-collection-grid.png` et
   `en-us/mac-today-pick.png`, avec leurs variantes AVIF et WebP. Les PNG restent
   les images de repli et de référence.
-- Montrer Today Pick avec la raison du choix et la source datée. Les autres
+- Montrer Today's Pick avec la raison du choix et la source datée. Les autres
   captures fonctionnelles 1.9 peuvent compléter la galerie, mais aucune image
   de tutoriel, d’onboarding ou de walkthrough ne doit être utilisée.
 - Vérifier qu’aucun nom, emplacement ou élément personnel ne doit être masqué.
