@@ -1,12 +1,12 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
-  "generatedAt": "2026-08-08T02:22:24Z",
-  "reachableSources": 45,
+  "contributingSources": 8,
+  "generatedAt": "2026-08-08T07:16:41Z",
+  "reachableSources": 46,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
@@ -18,13 +18,13 @@
     },
     "Bandcamp Daily": {
       "downloadedArticles": 27,
-      "resolvedEvents": 4,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -36,25 +36,25 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
-      "resolvedEvents": 5,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://djmag.com/rss.xml"
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -66,7 +66,7 @@
     },
     "Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://groove.de/feed/"
     },
@@ -83,10 +83,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -109,13 +108,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 6,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -127,7 +126,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -139,7 +138,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -151,13 +150,13 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -169,19 +168,19 @@
     },
     "RFI Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rfi.fr/fr/musique/rss"
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 23,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -211,19 +210,19 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 17,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 15,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
       "downloadedArticles": 4,
-      "resolvedEvents": 4,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
@@ -235,7 +234,7 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
@@ -259,7 +258,7 @@
     },
     "Télérama Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
@@ -271,13 +270,13 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
     "WBGO Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.wbgo.org/music.rss"
     }
