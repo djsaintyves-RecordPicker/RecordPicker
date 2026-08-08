@@ -1,7 +1,7 @@
 {
   "configuredSources": 46,
-  "contributingSources": 27,
-  "generatedAt": "2026-08-07T19:16:32Z",
+  "contributingSources": 28,
+  "generatedAt": "2026-08-08T02:22:24Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
@@ -24,7 +24,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -42,7 +42,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -115,7 +115,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 7,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -139,7 +139,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -187,7 +187,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
