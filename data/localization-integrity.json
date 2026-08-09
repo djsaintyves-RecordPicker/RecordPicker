@@ -12,8 +12,8 @@
     "es-es": "3a276190c06dd31190c20245698c0d505a0862dd247185bf7987b4d700ed4399",
     "es-mx": "da190d522a630802c2dda9fab422edf2a7c89ea1b1fec449df81d797e46fccf4",
     "fi": "bcf1ab3b82834db5f0ee0174ed43101109b4eeab9849bcece059db14a67fa034",
-    "fr": "427ac92e8a27035853e7ca954e34b58b95c1211a755ea4461d1ac99dccd63f25",
-    "fr-ca": "58278787bc9d07c5bfd96194347d2d8aae642f5cd93144efa7a7d2f8512e28d8",
+    "fr": "74f32f26cb4b82849a14090c824442779b4e91f63fa345d2c7cc98faa675d448",
+    "fr-ca": "f0990742fe648dab17879114cf70c1bfd55ba63ef282f6b35937dbbc7b5a1c81",
     "he": "52852539ed082a02cd9e2ae8fa4f305f026f86184ae405591da3f4f60e1db072",
     "hi": "c2ad8ca985e80a6866bd1bf0fbaeb7e688e40f8da827e557e55e9e8caadec33f",
     "id": "dd07b1a69a9586c42eab1fbdd8ed83cb44e9f3006e4e9eb5e14ec6e69576ae54",
@@ -35,6 +35,6 @@
   },
   "locale_group_count": 32,
   "page_count": 299,
-  "review_reason": "Balance all localized Features intro visuals and remove redundant generic screenshot captions",
+  "review_reason": "Use parallel infinitive headings for the French Mac feature cards",
   "schema": 1
 }

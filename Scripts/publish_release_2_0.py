@@ -299,6 +299,10 @@ def update_page(path: Path) -> bool:
     )
     if relative == Path("index.html") or (relative.parts and relative.parts[0] in {"fr", "fr-ca"}):
         text = text.replace("iPhone paysage", "iPhone en mode paysage")
+        text = text.replace(
+            '<h2>Catalogue, en beauté</h2>',
+            '<h2>Cataloguer en beauté</h2>',
+        )
     text = re.sub(
         r'https://recordpicker\.app/assets/social/social-v19\.jpg\?v=[^"\']+',
         'https://recordpicker.app/assets/social/social-home.png?v=20260809-v20',

@@ -179,6 +179,8 @@ def main() -> None:
                 errors.append(f"{relative}: balanced two-visual feature intro missing")
             if '<figcaption>Record Picker 2.0</figcaption>' in text:
                 errors.append(f"{relative}: redundant generic screenshot caption")
+        if '<h2>Catalogue, en beauté</h2>' in text:
+            errors.append(f"{relative}: Mac feature title is not phrased as an infinitive")
         if kind == "index.html":
             if 'class="v20-home-preview"' not in text:
                 errors.append(f"{relative}: localized 2.0 home preview missing")
