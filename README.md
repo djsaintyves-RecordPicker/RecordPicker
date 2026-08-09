@@ -128,5 +128,17 @@ python3 Scripts/refine_homepage_descriptions.py
 python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_site_quality.py
+python3 Scripts/site_localization_integrity.py
 python3 Scripts/test_release_publication.py
 ```
+
+Public copy has a semantic integrity baseline. After reviewing an intentional
+change across the generated localized pages, accept it explicitly:
+
+```sh
+python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.0 site copy"
+```
+
+The lock covers titles, descriptions, visible main content and accessible
+image/control labels. It detects accidental localization drift while ignoring
+unrelated HTML formatting.

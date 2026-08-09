@@ -123,6 +123,8 @@ def main() -> None:
             continue
         content_pages += 1
         relative = page.relative_to(ROOT)
+        if re.search(r"Record Picker[^<\n]{0,120}\b(?:25\+?|29)\b", text):
+            errors.append(f"{relative}: obsolete localization count remains")
         if relative.parts[0] in {"en-au", "en-ca", "en-gb", "en-us"}:
             if "Today Pick" in text:
                 errors.append(f"{relative}: stale Today Pick product name")

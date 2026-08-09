@@ -20,5 +20,9 @@ jobs:
         run: python3 -m compileall -q Scripts
       - name: Validate generated pages
         run: python3 Scripts/audit_site_quality.py
+      - name: Verify accepted localized copy
+        run: python3 Scripts/site_localization_integrity.py
+      - name: Test localization integrity tooling
+        run: PYTHONPATH=Scripts python3 -m unittest Scripts/test_site_localization_integrity.py
       - name: Simulate the complete 1.9 publication twice
         run: python3 Scripts/test_release_publication.py
