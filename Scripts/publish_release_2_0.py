@@ -26,12 +26,11 @@ RANDOM_PICK_DEMO = (
     '<figure class="random-pick-demo" data-random-pick-demo>'
     '<button class="random-pick-button" type="button" aria-label="Random Pick">'
     '<span class="random-pick-stage" aria-hidden="true">'
-    '<span class="random-record random-record-a"><i></i></span>'
-    '<span class="random-record random-record-b"><i></i></span>'
-    '<span class="random-record random-record-c"><i></i></span>'
-    '<span class="random-pick-marker">?</span>'
+    '<span class="random-vinyl"></span>'
+    '<span class="random-picked-cover"><img src="/assets/demo/random-pick-cover.webp" alt="" '
+    'width="1012" height="1012" decoding="async"></span>'
     '</span>'
-    '<span class="random-pick-control"><strong>Random Pick</strong><span>♪&nbsp; ↻</span></span>'
+    '<span class="random-pick-control"><strong>Random Pick</strong><span aria-hidden="true">♪&nbsp; ↻</span></span>'
     '</button><figcaption class="visually-hidden">Random Pick</figcaption>'
     '</figure>'
 )
@@ -67,6 +66,13 @@ def promote_home(text: str, prefix: str, locale: str) -> str:
             text = text[:old.start()] + text[old.end():]
     text = text.replace("<strong>Record Picker 1.9</strong>", "<strong>Record Picker 2.0</strong>")
     text = text.replace('id="version-2-0-preview"', 'id="versions"')
+    text = re.sub(
+        r'<figure class="random-pick-demo"[^>]*>.*?</figure>',
+        RANDOM_PICK_DEMO,
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
     if 'data-random-pick-demo' not in text:
         text = re.sub(
             r'<figure class="context-visual wide inline-context">.*?</figure>',

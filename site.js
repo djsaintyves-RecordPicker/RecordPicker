@@ -341,18 +341,74 @@
   document.querySelectorAll("[data-random-pick-demo]").forEach(function (demo) {
     var button = demo.querySelector(".random-pick-button");
     var revealTimer = 0;
+    var repeatTimer = 0;
+    var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var visible = false;
     if (!button) return;
-    button.addEventListener("click", function () {
+
+    function playPickSound() {
+      var AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      var context = new AudioContextClass();
+      var now = context.currentTime;
+      [0, .12, .24, .37].forEach(function (offset, index) {
+        var oscillator = context.createOscillator();
+        var gain = context.createGain();
+        oscillator.type = "triangle";
+        oscillator.frequency.setValueAtTime(430 + index * 105, now + offset);
+        gain.gain.setValueAtTime(.0001, now + offset);
+        gain.gain.exponentialRampToValueAtTime(.045, now + offset + .01);
+        gain.gain.exponentialRampToValueAtTime(.0001, now + offset + .07);
+        oscillator.connect(gain).connect(context.destination);
+        oscillator.start(now + offset);
+        oscillator.stop(now + offset + .08);
+      });
+      window.setTimeout(function () { context.close(); }, 900);
+    }
+
+    function runPick(withSound) {
       window.clearTimeout(revealTimer);
       demo.classList.remove("is-picking");
       demo.classList.remove("is-revealed");
       void demo.offsetWidth;
       demo.classList.add("is-picking");
+      if (withSound) playPickSound();
       revealTimer = window.setTimeout(function () {
         demo.classList.remove("is-picking");
         demo.classList.add("is-revealed");
-      }, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 80 : 1350);
+      }, reducedMotion ? 80 : 1350);
+    }
+
+    function scheduleRepeat() {
+      window.clearTimeout(repeatTimer);
+      if (!visible || reducedMotion) return;
+      repeatTimer = window.setTimeout(function () {
+        runPick(false);
+        scheduleRepeat();
+      }, 6500);
+    }
+
+    button.addEventListener("click", function () {
+      runPick(true);
+      scheduleRepeat();
     });
+
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        visible = entries[0] && entries[0].isIntersecting;
+        if (visible) {
+          runPick(false);
+          scheduleRepeat();
+        } else {
+          window.clearTimeout(repeatTimer);
+        }
+      }, { threshold: .35 });
+      observer.observe(demo);
+    } else {
+      visible = true;
+      runPick(false);
+      scheduleRepeat();
+    }
   });
   if (!redirectToStaticLocale(preferred)) {
     setLang(preferred, false);

@@ -62,6 +62,10 @@ def main() -> None:
             assert 'data-preview-gallery="2.0"' not in screenshots
             assert "watch-random-pick" in screenshots
             assert "data-random-pick-demo" in home
+            assert 'class="random-vinyl"' in home
+            assert 'class="random-picked-cover"' in home
+            assert "/assets/demo/random-pick-cover.webp" in home
+            assert "random-record-a" not in home
             assert "data-previous-versions" not in screenshots
 
         css = (target / "quality.css").read_text(encoding="utf-8")

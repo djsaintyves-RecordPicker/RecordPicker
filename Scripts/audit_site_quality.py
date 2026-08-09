@@ -202,8 +202,18 @@ def main() -> None:
         repeated_images = {source for source in functional_images if functional_images.count(source) > 1}
         if repeated_images:
             errors.append(f"{relative}: repeated functional screenshot(s): {sorted(repeated_images)}")
-        if kind == "index.html" and 'data-random-pick-demo' not in text:
-            errors.append(f"{relative}: interactive Random Pick illustration missing")
+        if kind == "index.html":
+            for requirement in (
+                'data-random-pick-demo',
+                'class="random-vinyl"',
+                'class="random-picked-cover"',
+                '/assets/demo/random-pick-cover.webp',
+                '<strong>Random Pick</strong>',
+            ):
+                if requirement not in text:
+                    errors.append(f"{relative}: incomplete Random Pick reveal ({requirement})")
+            if "random-record-a" in text or "random-pick-marker" in text:
+                errors.append(f"{relative}: obsolete abstract Random Pick illustration remains")
         if kind == "screenshots/index.html" and "watch-random-pick" not in text:
             errors.append(f"{relative}: watchOS 2.0 preview missing")
         if kind in {"privacy/index.html", "mac-app/index.html"} and re.search(r'Record Picker v?1\.9|macOS 1\.9', text):
