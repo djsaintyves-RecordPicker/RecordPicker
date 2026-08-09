@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published 1.9 / preview 2.0 site without changing the working tree."""
+"""Exercise the fully published 2.0 site without changing the working tree."""
 
 from __future__ import annotations
 
@@ -45,7 +45,8 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        following = state["next_release"]["version"]
+        assert current == "2.0"
+        assert state["next_release"] is None
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
         for root in roots:
@@ -54,11 +55,13 @@ def main() -> None:
             screenshots = (root / "screenshots" / "index.html").read_text(encoding="utf-8")
             assert "v20-hero" in home and "v20-home-screens" in home
             assert ".avif" in home and ".webp" in home
-            assert f'data-release-version="{following}"' in home
-            assert f'data-release-version="{following}"' in readme
-            assert f'data-release-version="{following}"' in screenshots
-            assert f'data-release-gallery="{current}"' not in screenshots
-            assert 'data-preview-gallery="2.0"' in screenshots
+            assert f'data-release-version="{current}"' in home
+            assert f'data-release-version="{current}"' in readme
+            assert f'data-release-version="{current}"' in screenshots
+            assert f'data-release-gallery="{current}"' in screenshots
+            assert 'data-preview-gallery="2.0"' not in screenshots
+            assert "watch-random-pick" in screenshots
+            assert "data-random-pick-demo" in home
             assert "data-previous-versions" not in screenshots
 
         css = (target / "quality.css").read_text(encoding="utf-8")
@@ -69,7 +72,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: published 1.9 state and 2.0 visual preview are idempotent and responsive-ready.")
+    print("OK: published 2.0 state, unique visuals, Random Pick demo and watchOS gallery are responsive-ready.")
 
 
 if __name__ == "__main__":

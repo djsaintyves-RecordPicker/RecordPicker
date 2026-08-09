@@ -2,7 +2,7 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "1.9",
+    "version": "2.0",
     "platforms": {
       "iphone": "available",
       "ipad": "available",
@@ -16,12 +16,9 @@
       "watch"
     ]
   },
-  "next_release": {
-    "announce_after_full_release": true,
-    "status": "coming_soon",
-    "version": "2.0"
-  },
+  "next_release": null,
   "historical_releases": [
+    "1.9",
     "1.8",
     "1.6",
     "1.5",
@@ -31,12 +28,12 @@
     "1.1"
   ],
   "publication_assets": {
-    "hero": "en-us/mac-today-pick.png",
+    "hero": "en-us/mac-home.jpeg",
     "screenshots": [
-      "en-us/iphone-today-pick.png",
-      "en-us/ipad-collection-grid.png",
-      "en-us/mac-today-pick.png"
+      "en-us/iphone-random-pick.png",
+      "en-us/ipad-random-pick.png",
+      "en-us/mac-home.jpeg"
     ],
-    "social": "assets/social/social-v19.jpg"
+    "social": "assets/social/social-home.png"
   }
 }

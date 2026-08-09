@@ -626,3 +626,217 @@ html[dir="rtl"] .challenge-steps strong { grid-column: 1; grid-row: 1; }
   .challenge-section h2 { font-size: clamp(2.5rem, 13vw, 4.2rem); }
   .challenge-media { width: min(100%, 320px); }
 }
+
+/* One typographic system: SF/system sans, six intentional size roles. */
+:root {
+  --type-caption: .8125rem;
+  --type-small: .9rem;
+  --type-body: 1rem;
+  --type-lead: 1.125rem;
+  --type-title: clamp(1.75rem, 3vw, 2.5rem);
+  --type-display: clamp(2.8rem, 7vw, 5.25rem);
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--system-font);
+}
+
+body,
+p,
+li {
+  font-size: var(--type-body);
+}
+
+h1,
+.doc-hero h1,
+.screens-hero h1 {
+  font-size: var(--type-display);
+}
+
+h2,
+.doc-content h2,
+.next-release h2,
+.challenge-section h2 {
+  font-size: var(--type-title);
+  line-height: 1.08;
+}
+
+h3,
+.mac-feature-row h2,
+.platform-shot-group h3,
+.facts-band strong {
+  font-size: var(--type-lead);
+}
+
+.tagline,
+.deck,
+.lead,
+.doc-tagline,
+.mac-intro .lead,
+.challenge-lead,
+.v20-preview .section-head .lead {
+  font-size: var(--type-lead);
+}
+
+:where(.nav-links, .store-link, .footer, .kicker, .eyebrow, figcaption, .facts-band span) {
+  font-size: var(--type-small);
+}
+
+:where(.challenge-legal, .challenge-media figcaption, .seo-link-card .kicker) {
+  font-size: var(--type-caption);
+}
+
+main figcaption,
+.device-frame figcaption,
+.context-visual figcaption,
+.feature-visual figcaption,
+.screen-grid figcaption,
+.video-card figcaption,
+.shot-card figcaption,
+.mac-card-preview figcaption,
+.mac-screenshot figcaption,
+.challenge-media figcaption,
+.eyebrow,
+main .kicker,
+.challenge-kicker,
+.challenge-legal,
+.seo-link-card .kicker {
+  font-size: var(--type-small);
+}
+
+.feature-summary {
+  margin: 30px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.feature-summary + h2 {
+  margin-top: 44px;
+}
+
+/* Lightweight, user-triggered Random Pick illustration: no video or audio file. */
+.random-pick-demo {
+  margin: 28px 0 0;
+}
+
+.random-pick-button {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-raised);
+  color: var(--ink);
+  box-shadow: var(--card-shadow);
+  cursor: pointer;
+  text-align: start;
+}
+
+.random-pick-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 250px;
+  overflow: hidden;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 92%, #fff), var(--surface-strong));
+}
+
+.random-record {
+  position: absolute;
+  width: 138px;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: #efe8de;
+  box-shadow: 0 18px 42px rgba(17,17,20,.16);
+  transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .35s ease;
+}
+
+.random-record i {
+  position: absolute;
+  inset: 18%;
+  border: 20px solid #17171a;
+  border-radius: 999px;
+  background: #ff2d55;
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.35);
+}
+
+.random-record-a { transform: translateX(-94px) rotate(-8deg); background: #f2d0c8; }
+.random-record-b { z-index: 2; transform: translateY(-6px); background: #f2eee6; }
+.random-record-c { transform: translateX(94px) rotate(8deg); background: #d7dce6; }
+.random-record-b i { background: #f3b8c5; }
+.random-record-c i { background: #c74057; }
+
+.random-pick-marker {
+  position: absolute;
+  z-index: 4;
+  inset-inline-end: 18px;
+  inset-block-start: 18px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--page);
+  font-size: var(--type-lead);
+  font-weight: 850;
+}
+
+.random-pick-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 18px;
+  border-top: 1px solid var(--line);
+}
+
+.random-pick-control > span {
+  color: var(--red);
+  font-weight: 850;
+}
+
+.random-pick-demo.is-picking .random-record-a { animation: random-card-a .95s cubic-bezier(.2,.8,.2,1); }
+.random-pick-demo.is-picking .random-record-b { animation: random-card-b .95s cubic-bezier(.2,.8,.2,1); }
+.random-pick-demo.is-picking .random-record-c { animation: random-card-c .95s cubic-bezier(.2,.8,.2,1); }
+.random-pick-demo.is-picking .random-pick-marker { animation: random-marker .95s ease; }
+
+@keyframes random-card-a {
+  0%, 100% { transform: translateX(-94px) rotate(-8deg); }
+  35% { transform: translateX(70px) rotate(10deg) scale(.92); }
+  70% { transform: translateX(-20px) rotate(-2deg) scale(1.06); }
+}
+@keyframes random-card-b {
+  0%, 100% { transform: translateY(-6px); }
+  35% { transform: translateX(-96px) rotate(-10deg) scale(.94); }
+  70% { transform: translateX(76px) rotate(7deg); }
+}
+@keyframes random-card-c {
+  0%, 100% { transform: translateX(94px) rotate(8deg); }
+  35% { transform: translateX(-18px) rotate(1deg) scale(1.07); }
+  70% { transform: translateX(-82px) rotate(-7deg) scale(.94); }
+}
+@keyframes random-marker {
+  0%, 100% { transform: rotate(0deg); }
+  60% { transform: rotate(320deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .random-pick-demo.is-picking .random-record,
+  .random-pick-demo.is-picking .random-pick-marker {
+    animation: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .random-pick-stage { min-height: 210px; }
+  .random-record { width: 112px; }
+  .random-record-a { transform: translateX(-72px) rotate(-8deg); }
+  .random-record-c { transform: translateX(72px) rotate(8deg); }
+}

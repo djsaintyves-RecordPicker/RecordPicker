@@ -19,7 +19,8 @@ RELEASE_STATE = json.loads(
 )
 PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
-NEXT_VERSION = RELEASE_STATE["next_release"]["version"]
+NEXT_RELEASE = RELEASE_STATE.get("next_release")
+NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -157,7 +158,7 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "site.js?v=20260808-v19-locales",
+            "site.js?v=20260809-v20-random",
             'href="/press/"',
             'href="https://www.instagram.com/recordpicker/" rel="me"',
             'href="https://www.youtube.com/@recordpicker" rel="me"',
@@ -166,7 +167,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-home" not in text:
+        if "quality.css?v=20260809-v20-polish4" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "index.html":
             if 'class="v20-home-preview"' not in text:
@@ -192,6 +193,21 @@ def main() -> None:
                 if not re.search(rf'\b{attribute}="[^"]*"', image_tag):
                     errors.append(f"{relative}: image missing {attribute}")
                     break
+        functional_images = [
+            re.sub(r'\.(?:avif|webp|png|jpe?g)(?:\?[^"\']*)?$', '', source, flags=re.IGNORECASE)
+            for source in re.findall(
+                r'<img\b[^>]*src="([^"]*assets/screenshots/v20/[^"]+)"', text, flags=re.IGNORECASE
+            )
+        ]
+        repeated_images = {source for source in functional_images if functional_images.count(source) > 1}
+        if repeated_images:
+            errors.append(f"{relative}: repeated functional screenshot(s): {sorted(repeated_images)}")
+        if kind == "index.html" and 'data-random-pick-demo' not in text:
+            errors.append(f"{relative}: interactive Random Pick illustration missing")
+        if kind == "screenshots/index.html" and "watch-random-pick" not in text:
+            errors.append(f"{relative}: watchOS 2.0 preview missing")
+        if kind in {"privacy/index.html", "mac-app/index.html"} and re.search(r'Record Picker v?1\.9|macOS 1\.9', text):
+            errors.append(f"{relative}: stale current-version label")
         if 'content="https://recordpicker.app/assets/brand/icon-512.png"' in text:
             errors.append(f"{relative}: generic icon still used as social image")
         if '<meta name="twitter:card" content="summary_large_image">' not in text:
@@ -209,14 +225,14 @@ def main() -> None:
             if version == CURRENT_VERSION:
                 if not status or "release-platform-summary" not in status.group(0):
                     errors.append(f"{relative}: current {CURRENT_VERSION} status missing")
-            elif version == NEXT_VERSION:
+            elif NEXT_VERSION and version == NEXT_VERSION:
                 if PUBLICATION_PHASE != "full":
                     errors.append(f"{relative}: next release announced before full publication")
                 if not status or "release-platform-summary" not in status.group(0):
                     errors.append(f"{relative}: next {NEXT_VERSION} status missing")
             elif version in HISTORICAL_VERSIONS and status:
                 errors.append(f"{relative}: historical {version} still has a status")
-        if f'data-release-version="{NEXT_VERSION}"' in text:
+        if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
             next_release_pages += 1
         if f'data-release-gallery="{CURRENT_VERSION}"' in text:
             current_gallery_pages += 1
@@ -295,12 +311,12 @@ def main() -> None:
             f"expected {expected_release_cards} versioned release cards, "
             f"found {release_pages}"
         )
-    expected_next_pages = expected_locales * 3 if PUBLICATION_PHASE == "full" else 0
+    expected_next_pages = expected_locales * 3 if PUBLICATION_PHASE == "full" and NEXT_VERSION else 0
     if next_release_pages != expected_next_pages:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
         )
-    expected_gallery_pages = 0
+    expected_gallery_pages = expected_locales
     if current_gallery_pages != expected_gallery_pages:
         errors.append(
             f"expected {expected_gallery_pages} current galleries, "
@@ -330,9 +346,9 @@ def main() -> None:
             'data-preview-gallery="2.0"' in page.read_text(encoding="utf-8")
             for page in pages
         )
-        if preview_galleries != expected_locales:
+        if preview_galleries != 0:
             errors.append(
-                f"expected {expected_locales} 2.0 preview galleries, found {preview_galleries}"
+                f"expected no 2.0 preview galleries after publication, found {preview_galleries}"
             )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")
@@ -347,7 +363,7 @@ def main() -> None:
         if image.stat().st_size > 600_000:
             errors.append(f"{image.relative_to(ROOT)} exceeds 600 KB")
     for relative in RELEASE_STATE["publication_assets"]["screenshots"]:
-        source = ROOT / "assets" / "screenshots" / "v19" / relative
+        source = ROOT / "assets" / "screenshots" / "v20" / relative
         for suffix, maximum in ((".webp", 300_000), (".avif", 250_000)):
             derivative = source.with_suffix(suffix)
             if not derivative.is_file():

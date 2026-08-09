@@ -10,6 +10,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 APP_ASSETS = ROOT.parent / "RecordPicker" / "AppStoreAssets" / "2.0"
+WATCH_ASSETS = ROOT.parent / "RecordPicker" / "build" / "AppStoreSubmission" / "2.0-20260809-v2" / "watch" / "screenshots"
 DESTINATION = ROOT / "assets" / "screenshots" / "v20"
 
 SOURCES = {
@@ -28,6 +29,7 @@ SOURCES = {
         "mac-mood-pick.jpeg": (APP_ASSETS / "macOS/en-US/04-mood-pick-1440x900.jpeg", (1440, 900)),
         "mac-random-pick.jpeg": (APP_ASSETS / "macOS/en-US/05-random-pick-1440x900.jpeg", (1440, 900)),
         "mac-data-quality.jpeg": (APP_ASSETS / "macOS/en-US/06-data-quality-1440x900.jpeg", (1440, 900)),
+        "watch-random-pick.png": (WATCH_ASSETS / "en-US/01-record-picker-watch.png", (368, 448)),
     },
     "fr": {
         "iphone-random-pick.png": (APP_ASSETS / "iOS/fr-FR/01-tirage.png", (1320, 2868)),

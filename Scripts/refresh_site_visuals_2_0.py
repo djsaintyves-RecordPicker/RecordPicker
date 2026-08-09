@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSET_ROOT = ROOT / "assets/screenshots/v20"
-CSS_VERSION = "20260809-v20-home"
+CSS_VERSION = "20260809-v20-polish4"
 
 LOCALE_ALIASES = {
     "fr-ca": "fr",
@@ -21,6 +21,7 @@ DIMENSIONS = {
     "iphone": (1320, 2868),
     "ipad": (2064, 2752),
     "mac": (1440, 900),
+    "watch": (368, 448),
 }
 
 GALLERY_ASSETS = {
@@ -44,6 +45,7 @@ GALLERY_ASSETS = {
         "mac-random-pick.jpeg",
         "mac-data-quality.jpeg",
     ),
+    "watch": ("watch-random-pick.png",),
 }
 
 
@@ -133,14 +135,15 @@ def home_preview(prefix: str, locale: str) -> str:
 
 def gallery(prefix: str, locale: str) -> str:
     groups = []
-    for platform in ("mac", "iphone", "ipad"):
+    platform_names = {"mac": "Mac", "iphone": "iPhone", "ipad": "iPad", "watch": "Apple Watch"}
+    for platform in ("mac", "iphone", "ipad", "watch"):
         cards = "".join(picture(prefix, locale, platform, name) for name in GALLERY_ASSETS[platform])
         groups.append(
-            f'<div class="platform-shot-group"><h3>{platform.title()} · Record Picker 2.0</h3>'
+            f'<div class="platform-shot-group"><h3>{platform_names[platform]} · Record Picker 2.0</h3>'
             f'<div class="shot-grid v20-shot-grid {platform}-grid">{cards}</div></div>'
         )
     return (
-        '<section class="media-section v20-screenshot-gallery" data-preview-gallery="2.0">'
+        '<section class="media-section v20-screenshot-gallery" data-release-gallery="2.0">'
         '<div class="section-head"><h2>Record Picker 2.0</h2></div>'
         + "".join(groups)
         + '</section>'
@@ -191,7 +194,7 @@ def update_page(page: Path) -> bool:
 
     if relative.name == "index.html" and relative.parent.name == "screenshots":
         text = re.sub(
-            r'<section class="media-section v19-screenshot-gallery".*?</section>',
+            r'<section class="media-section v(?:19|20)-screenshot-gallery".*?</section>',
             gallery(prefix, locale),
             text,
             count=1,
