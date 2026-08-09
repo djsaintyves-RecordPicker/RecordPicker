@@ -719,7 +719,7 @@ main .kicker,
   margin-top: 44px;
 }
 
-/* Lightweight, user-triggered Random Pick illustration: no video or audio file. */
+/* The product gesture in miniature: click, spin the record, reveal the cover. */
 .random-pick-demo {
   margin: 28px 0 0;
 }
@@ -742,50 +742,53 @@ main .kicker,
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 250px;
+  min-height: 280px;
   overflow: hidden;
   background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 92%, #fff), var(--surface-strong));
 }
 
-.random-record {
+.random-vinyl,
+.random-picked-cover {
   position: absolute;
-  width: 138px;
+  width: 184px;
   aspect-ratio: 1;
-  border-radius: 8px;
-  background: #efe8de;
-  box-shadow: 0 18px 42px rgba(17,17,20,.16);
-  transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .35s ease;
+  transition: opacity .42s ease, transform .55s cubic-bezier(.2,.8,.2,1);
 }
 
-.random-record i {
-  position: absolute;
-  inset: 18%;
-  border: 20px solid #17171a;
-  border-radius: 999px;
-  background: #ff2d55;
-  box-shadow: inset 0 0 0 3px rgba(255,255,255,.35);
-}
-
-.random-record-a { transform: translateX(-94px) rotate(-8deg); background: #f2d0c8; }
-.random-record-b { z-index: 2; transform: translateY(-6px); background: #f2eee6; }
-.random-record-c { transform: translateX(94px) rotate(8deg); background: #d7dce6; }
-.random-record-b i { background: #f3b8c5; }
-.random-record-c i { background: #c74057; }
-
-.random-pick-marker {
-  position: absolute;
-  z-index: 4;
-  inset-inline-end: 18px;
-  inset-block-start: 18px;
+.random-vinyl {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: var(--page);
-  font-size: var(--type-lead);
-  font-weight: 850;
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(circle, rgba(255,255,255,.07) 0 1px, transparent 1px 7px),
+    radial-gradient(circle, #d41122 0 8%, #f22f3e 8% 21%, #171719 21% 23%, #09090b 23% 100%);
+  box-shadow: 0 22px 48px rgba(17,17,20,.28);
+}
+
+.random-vinyl::after {
+  content: "";
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f8f5ee;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.22);
+}
+
+.random-picked-cover {
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 22px 48px rgba(17,17,20,.24);
+  opacity: 0;
+  transform: scale(.82) rotate(2deg);
+}
+
+.random-picked-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .random-pick-control {
@@ -802,41 +805,34 @@ main .kicker,
   font-weight: 850;
 }
 
-.random-pick-demo.is-picking .random-record-a { animation: random-card-a .95s cubic-bezier(.2,.8,.2,1); }
-.random-pick-demo.is-picking .random-record-b { animation: random-card-b .95s cubic-bezier(.2,.8,.2,1); }
-.random-pick-demo.is-picking .random-record-c { animation: random-card-c .95s cubic-bezier(.2,.8,.2,1); }
-.random-pick-demo.is-picking .random-pick-marker { animation: random-marker .95s ease; }
+.random-pick-demo.is-picking .random-vinyl {
+  animation: random-vinyl-spin 1.3s cubic-bezier(.25,.72,.35,1);
+}
 
-@keyframes random-card-a {
-  0%, 100% { transform: translateX(-94px) rotate(-8deg); }
-  35% { transform: translateX(70px) rotate(10deg) scale(.92); }
-  70% { transform: translateX(-20px) rotate(-2deg) scale(1.06); }
+.random-pick-demo.is-revealed .random-vinyl {
+  opacity: 0;
+  transform: scale(.78);
 }
-@keyframes random-card-b {
-  0%, 100% { transform: translateY(-6px); }
-  35% { transform: translateX(-96px) rotate(-10deg) scale(.94); }
-  70% { transform: translateX(76px) rotate(7deg); }
+
+.random-pick-demo.is-revealed .random-picked-cover {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
 }
-@keyframes random-card-c {
-  0%, 100% { transform: translateX(94px) rotate(8deg); }
-  35% { transform: translateX(-18px) rotate(1deg) scale(1.07); }
-  70% { transform: translateX(-82px) rotate(-7deg) scale(.94); }
-}
-@keyframes random-marker {
-  0%, 100% { transform: rotate(0deg); }
-  60% { transform: rotate(320deg); }
+
+@keyframes random-vinyl-spin {
+  0% { transform: rotate(0deg) scale(1); }
+  72% { transform: rotate(1440deg) scale(1.04); }
+  100% { transform: rotate(1800deg) scale(.94); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .random-pick-demo.is-picking .random-record,
-  .random-pick-demo.is-picking .random-pick-marker {
+  .random-pick-demo.is-picking .random-vinyl {
     animation: none;
   }
 }
 
 @media (max-width: 560px) {
-  .random-pick-stage { min-height: 210px; }
-  .random-record { width: 112px; }
-  .random-record-a { transform: translateX(-72px) rotate(-8deg); }
-  .random-record-c { transform: translateX(72px) rotate(8deg); }
+  .random-pick-stage { min-height: 230px; }
+  .random-vinyl,
+  .random-picked-cover { width: 154px; }
 }

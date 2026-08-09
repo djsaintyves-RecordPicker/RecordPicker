@@ -12,8 +12,8 @@ from refresh_site_visuals_2_0 import asset_url, page_locale
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "data/release-state.json"
-CSS_VERSION = "20260809-v20-polish4"
-JS_VERSION = "20260809-v20-random"
+CSS_VERSION = "20260809-v20-pick-reveal"
+JS_VERSION = "20260809-v20-pick-reveal"
 LOCALE_DIRS = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
     "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja",

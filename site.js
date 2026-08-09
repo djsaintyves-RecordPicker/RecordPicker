@@ -340,45 +340,18 @@
   }
   document.querySelectorAll("[data-random-pick-demo]").forEach(function (demo) {
     var button = demo.querySelector(".random-pick-button");
-    var timer = 0;
-    function playPickSound() {
-      var AudioContextClass = window.AudioContext || window.webkitAudioContext;
-      if (!AudioContextClass) return;
-      var context = new AudioContextClass();
-      var now = context.currentTime;
-      [0, .11, .22, .34].forEach(function (offset, index) {
-        var oscillator = context.createOscillator();
-        var gain = context.createGain();
-        oscillator.type = "triangle";
-        oscillator.frequency.setValueAtTime(520 + index * 90, now + offset);
-        gain.gain.setValueAtTime(.0001, now + offset);
-        gain.gain.exponentialRampToValueAtTime(.055, now + offset + .008);
-        gain.gain.exponentialRampToValueAtTime(.0001, now + offset + .055);
-        oscillator.connect(gain).connect(context.destination);
-        oscillator.start(now + offset);
-        oscillator.stop(now + offset + .06);
-      });
-      var finish = context.createOscillator();
-      var finishGain = context.createGain();
-      finish.type = "sine";
-      finish.frequency.setValueAtTime(660, now + .52);
-      finish.frequency.exponentialRampToValueAtTime(990, now + .72);
-      finishGain.gain.setValueAtTime(.0001, now + .52);
-      finishGain.gain.exponentialRampToValueAtTime(.075, now + .55);
-      finishGain.gain.exponentialRampToValueAtTime(.0001, now + .84);
-      finish.connect(finishGain).connect(context.destination);
-      finish.start(now + .52);
-      finish.stop(now + .86);
-      window.setTimeout(function () { context.close(); }, 1000);
-    }
+    var revealTimer = 0;
     if (!button) return;
     button.addEventListener("click", function () {
-      window.clearTimeout(timer);
+      window.clearTimeout(revealTimer);
       demo.classList.remove("is-picking");
+      demo.classList.remove("is-revealed");
       void demo.offsetWidth;
       demo.classList.add("is-picking");
-      playPickSound();
-      timer = window.setTimeout(function () { demo.classList.remove("is-picking"); }, 1000);
+      revealTimer = window.setTimeout(function () {
+        demo.classList.remove("is-picking");
+        demo.classList.add("is-revealed");
+      }, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 80 : 1350);
     });
   });
   if (!redirectToStaticLocale(preferred)) {

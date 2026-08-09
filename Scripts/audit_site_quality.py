@@ -158,7 +158,7 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "site.js?v=20260809-v20-random",
+            "site.js?v=20260809-v20-pick-reveal",
             'href="/press/"',
             'href="https://www.instagram.com/recordpicker/" rel="me"',
             'href="https://www.youtube.com/@recordpicker" rel="me"',
@@ -167,7 +167,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-polish4" not in text:
+        if "quality.css?v=20260809-v20-pick-reveal" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "index.html":
             if 'class="v20-home-preview"' not in text:
