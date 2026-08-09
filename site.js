@@ -340,11 +340,30 @@
   }
   document.querySelectorAll("[data-random-pick-demo]").forEach(function (demo) {
     var button = demo.querySelector(".random-pick-button");
+    var recordsNode = demo.querySelector("[data-random-pick-records]");
+    var cover = demo.querySelector(".random-pick-cover img");
+    var title = demo.querySelector(".random-pick-title");
+    var artist = demo.querySelector(".random-pick-artist");
+    var tags = demo.querySelector(".random-pick-tags");
+    var records = [];
+    var recordIndex = 0;
+    var pressTimer = 0;
     var revealTimer = 0;
     var repeatTimer = 0;
     var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var visible = false;
-    if (!button) return;
+    if (!button || !recordsNode || !cover || !title || !artist || !tags) return;
+
+    try {
+      records = JSON.parse(recordsNode.textContent || "[]");
+    } catch (error) {
+      records = [];
+    }
+    if (!records.length) return;
+    records.forEach(function (record) {
+      var preload = new Image();
+      preload.src = record.cover;
+    });
 
     function playPickSound() {
       var AudioContextClass = window.AudioContext || window.webkitAudioContext;
@@ -366,48 +385,73 @@
       window.setTimeout(function () { context.close(); }, 900);
     }
 
-    function runPick(withSound) {
-      window.clearTimeout(revealTimer);
-      demo.classList.remove("is-picking");
-      demo.classList.remove("is-revealed");
-      void demo.offsetWidth;
-      demo.classList.add("is-picking");
-      if (withSound) playPickSound();
-      revealTimer = window.setTimeout(function () {
-        demo.classList.remove("is-picking");
-        demo.classList.add("is-revealed");
-      }, reducedMotion ? 80 : 1350);
+    function renderRecord(record) {
+      cover.src = record.cover;
+      cover.width = 600;
+      cover.height = 600;
+      title.textContent = record.title + " (" + record.year + ")";
+      artist.textContent = record.artist;
+      tags.replaceChildren();
+      record.tags.forEach(function (tag) {
+        var chip = document.createElement("span");
+        chip.textContent = tag;
+        tags.appendChild(chip);
+      });
     }
 
-    function scheduleRepeat() {
+    function clearAnimationTimers() {
+      window.clearTimeout(pressTimer);
+      window.clearTimeout(revealTimer);
+      window.clearTimeout(repeatTimer);
+    }
+
+    function scheduleRepeat(delay) {
       window.clearTimeout(repeatTimer);
       if (!visible || reducedMotion) return;
       repeatTimer = window.setTimeout(function () {
         runPick(false);
-        scheduleRepeat();
-      }, 6500);
+      }, delay || 4300);
+    }
+
+    function runPick(withSound) {
+      clearAnimationTimers();
+      demo.classList.remove("is-pressing");
+      demo.classList.remove("is-picking");
+      demo.classList.remove("is-revealed");
+      void demo.offsetWidth;
+      demo.classList.add("is-pressing");
+      if (withSound) playPickSound();
+      pressTimer = window.setTimeout(function () {
+        demo.classList.remove("is-pressing");
+        demo.classList.add("is-picking");
+        revealTimer = window.setTimeout(function () {
+          recordIndex = (recordIndex + 1) % records.length;
+          renderRecord(records[recordIndex]);
+          demo.classList.remove("is-picking");
+          demo.classList.add("is-revealed");
+          scheduleRepeat(3900);
+        }, reducedMotion ? 40 : 1250);
+      }, reducedMotion ? 40 : 360);
     }
 
     button.addEventListener("click", function () {
       runPick(true);
-      scheduleRepeat();
     });
 
     if ("IntersectionObserver" in window) {
       var observer = new IntersectionObserver(function (entries) {
         visible = entries[0] && entries[0].isIntersecting;
         if (visible) {
-          runPick(false);
-          scheduleRepeat();
+          scheduleRepeat(700);
         } else {
-          window.clearTimeout(repeatTimer);
+          clearAnimationTimers();
+          demo.classList.remove("is-pressing", "is-picking");
         }
       }, { threshold: .35 });
       observer.observe(demo);
     } else {
       visible = true;
-      runPick(false);
-      scheduleRepeat();
+      scheduleRepeat(700);
     }
   });
   if (!redirectToStaticLocale(preferred)) {

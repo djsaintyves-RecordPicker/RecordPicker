@@ -63,9 +63,13 @@ def main() -> None:
             assert "watch-random-pick" in screenshots
             assert "data-random-pick-demo" in home
             assert 'class="random-vinyl"' in home
-            assert 'class="random-picked-cover"' in home
-            assert "/assets/demo/random-pick-cover.webp" in home
+            assert 'class="random-pick-button"' in home
+            assert 'class="random-pick-title"' in home
+            assert 'class="random-pick-tags"' in home
+            for cover in ("sees-the-light", "in-waves", "hunky-dory", "moon-safari"):
+                assert f"/assets/demo/{cover}.jpg" in home
             assert "random-record-a" not in home
+            assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
 
         css = (target / "quality.css").read_text(encoding="utf-8")

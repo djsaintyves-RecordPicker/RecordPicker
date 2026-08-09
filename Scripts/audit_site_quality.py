@@ -158,7 +158,7 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "site.js?v=20260809-v20-pick-reveal",
+            "site.js?v=20260809-v20-pick-carousel",
             'href="/press/"',
             'href="https://www.instagram.com/recordpicker/" rel="me"',
             'href="https://www.youtube.com/@recordpicker" rel="me"',
@@ -167,7 +167,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-pick-reveal" not in text:
+        if "quality.css?v=20260809-v20-pick-carousel" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "index.html":
             if 'class="v20-home-preview"' not in text:
@@ -206,13 +206,17 @@ def main() -> None:
             for requirement in (
                 'data-random-pick-demo',
                 'class="random-vinyl"',
-                'class="random-picked-cover"',
-                '/assets/demo/random-pick-cover.webp',
-                '<strong>Random Pick</strong>',
+                'class="random-pick-button"',
+                'class="random-pick-title"',
+                'class="random-pick-tags"',
+                '/assets/demo/sees-the-light.jpg',
+                '/assets/demo/in-waves.jpg',
+                '/assets/demo/hunky-dory.jpg',
+                '/assets/demo/moon-safari.jpg',
             ):
                 if requirement not in text:
                     errors.append(f"{relative}: incomplete Random Pick reveal ({requirement})")
-            if "random-record-a" in text or "random-pick-marker" in text:
+            if "random-record-a" in text or "random-pick-marker" in text or "random-picked-cover" in text:
                 errors.append(f"{relative}: obsolete abstract Random Pick illustration remains")
         if kind == "screenshots/index.html" and "watch-random-pick" not in text:
             errors.append(f"{relative}: watchOS 2.0 preview missing")

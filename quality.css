@@ -719,120 +719,237 @@ main .kicker,
   margin-top: 44px;
 }
 
-/* The product gesture in miniature: click, spin the record, reveal the cover. */
+/* A miniature Random Pick flow: button press, draw, then a complete record card. */
 .random-pick-demo {
   margin: 28px 0 0;
 }
 
-.random-pick-button {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: var(--surface-raised);
-  color: var(--ink);
-  box-shadow: var(--card-shadow);
-  cursor: pointer;
-  text-align: start;
-}
-
 .random-pick-stage {
   position: relative;
-  display: grid;
-  place-items: center;
-  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  width: 100%;
   overflow: hidden;
-  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 92%, #fff), var(--surface-strong));
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 94%, #fff), var(--surface-strong));
+  color: var(--ink);
+  box-shadow: var(--card-shadow);
 }
 
-.random-vinyl,
-.random-picked-cover {
-  position: absolute;
-  width: 184px;
-  aspect-ratio: 1;
-  transition: opacity .42s ease, transform .55s cubic-bezier(.2,.8,.2,1);
-}
-
-.random-vinyl {
+.random-pick-result {
+  position: relative;
+  z-index: 2;
   display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background:
-    repeating-radial-gradient(circle, rgba(255,255,255,.07) 0 1px, transparent 1px 7px),
-    radial-gradient(circle, #d41122 0 8%, #f22f3e 8% 21%, #171719 21% 23%, #09090b 23% 100%);
-  box-shadow: 0 22px 48px rgba(17,17,20,.28);
+  grid-template-columns: 144px minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  width: min(100%, 440px);
+  min-height: 160px;
+  transition: opacity .38s ease, transform .5s cubic-bezier(.2,.8,.2,1), filter .3s ease;
 }
 
-.random-vinyl::after {
-  content: "";
-  width: 8px;
+.random-pick-cover {
+  display: block;
+  width: 144px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  background: #f8f5ee;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.22);
-}
-
-.random-picked-cover {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 9px;
   background: #fff;
-  box-shadow: 0 22px 48px rgba(17,17,20,.24);
-  opacity: 0;
-  transform: scale(.82) rotate(2deg);
+  box-shadow: 0 16px 36px rgba(17,17,20,.2);
 }
 
-.random-picked-cover img {
-  position: absolute;
-  inset: 0;
+.random-pick-cover img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.random-pick-control {
+.random-pick-details {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 15px 18px;
-  border-top: 1px solid var(--line);
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
 }
 
-.random-pick-control > span {
+.random-pick-title {
+  font-size: var(--type-lead);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.random-pick-artist {
+  color: var(--muted);
+  font-size: var(--type-body);
+  font-weight: 700;
+}
+
+.random-pick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 3px;
+}
+
+.random-pick-tags span {
+  padding: 4px 8px;
+  border: 1px solid color-mix(in srgb, var(--red) 38%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--red) 8%, var(--surface));
   color: var(--red);
-  font-weight: 850;
+  font-size: var(--type-small);
+  font-weight: 750;
+  line-height: 1;
+}
+
+.random-vinyl {
+  position: absolute;
+  z-index: 3;
+  inset-block-start: 38px;
+  width: 158px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(circle, rgba(255,255,255,.075) 0 1px, transparent 1px 7px),
+    radial-gradient(circle, #d41122 0 8%, #f22f3e 8% 21%, #171719 21% 23%, #09090b 23% 100%);
+  box-shadow: 0 20px 42px rgba(17,17,20,.28);
+  opacity: 0;
+  transform: scale(.76);
+}
+
+.random-vinyl::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f8f5ee;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.22);
+  transform: translate(-50%, -50%);
+}
+
+.random-pick-button {
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: min(280px, 100%);
+  margin-top: 24px;
+  padding: 13px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--red) 24%, transparent);
+  cursor: pointer;
+  font: inherit;
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+
+.random-pick-button:hover {
+  filter: brightness(1.04);
+}
+
+.random-pick-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--red) 35%, transparent);
+  outline-offset: 4px;
+}
+
+.random-pick-disc-icon {
+  width: 18px;
+  aspect-ratio: 1;
+  border: 5px solid currentColor;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px var(--red);
+}
+
+.random-pick-tap {
+  position: absolute;
+  z-index: 6;
+  inset-inline-start: 50%;
+  inset-block-end: 38px;
+  width: 42px;
+  aspect-ratio: 1;
+  border: 2px solid rgba(255,255,255,.95);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) scale(.35);
+}
+
+.random-pick-demo.is-pressing .random-pick-button {
+  box-shadow: 0 5px 13px color-mix(in srgb, var(--red) 20%, transparent);
+  transform: scale(.95);
+}
+
+.random-pick-demo.is-pressing .random-pick-tap {
+  animation: random-tap .42s ease-out;
+}
+
+.random-pick-demo.is-picking .random-pick-result {
+  opacity: 0;
+  filter: blur(5px);
+  transform: scale(.94);
 }
 
 .random-pick-demo.is-picking .random-vinyl {
-  animation: random-vinyl-spin 1.3s cubic-bezier(.25,.72,.35,1);
-}
-
-.random-pick-demo.is-revealed .random-vinyl {
-  opacity: 0;
-  transform: scale(.78);
-}
-
-.random-pick-demo.is-revealed .random-picked-cover {
   opacity: 1;
-  transform: scale(1) rotate(0deg);
+  animation: random-vinyl-spin 1.25s cubic-bezier(.25,.72,.35,1);
+}
+
+.random-pick-demo.is-revealed .random-pick-result {
+  animation: random-result-reveal .58s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes random-tap {
+  0% { opacity: 0; transform: translateX(-50%) scale(.35); }
+  35% { opacity: .9; }
+  100% { opacity: 0; transform: translateX(-50%) scale(1.45); }
 }
 
 @keyframes random-vinyl-spin {
-  0% { transform: rotate(0deg) scale(1); }
-  72% { transform: rotate(1440deg) scale(1.04); }
-  100% { transform: rotate(1800deg) scale(.94); }
+  0% { transform: rotate(0deg) scale(.76); }
+  25% { transform: rotate(360deg) scale(1); }
+  78% { transform: rotate(1440deg) scale(1.03); }
+  100% { transform: rotate(1800deg) scale(.78); opacity: 0; }
+}
+
+@keyframes random-result-reveal {
+  0% { opacity: 0; transform: translateY(8px) scale(.94); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .random-pick-demo.is-picking .random-vinyl {
+  .random-pick-demo.is-picking .random-vinyl,
+  .random-pick-demo.is-pressing .random-pick-tap,
+  .random-pick-demo.is-revealed .random-pick-result {
     animation: none;
   }
 }
 
 @media (max-width: 560px) {
-  .random-pick-stage { min-height: 230px; }
-  .random-vinyl,
-  .random-picked-cover { width: 154px; }
+  .random-pick-stage {
+    min-height: 350px;
+    padding: 22px 18px;
+  }
+
+  .random-pick-result {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 16px;
+    min-height: 132px;
+  }
+
+  .random-pick-cover { width: 112px; }
+  .random-vinyl { width: 142px; }
+  .random-pick-title { font-size: var(--type-body); }
+  .random-pick-button { width: 100%; }
 }

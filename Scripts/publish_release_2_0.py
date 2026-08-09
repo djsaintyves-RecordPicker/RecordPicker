@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import html
 from pathlib import Path
 import re
 
@@ -12,8 +13,8 @@ from refresh_site_visuals_2_0 import asset_url, page_locale
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "data/release-state.json"
-CSS_VERSION = "20260809-v20-pick-reveal"
-JS_VERSION = "20260809-v20-pick-reveal"
+CSS_VERSION = "20260809-v20-pick-carousel"
+JS_VERSION = "20260809-v20-pick-carousel"
 LOCALE_DIRS = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
     "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja",
@@ -22,18 +23,53 @@ LOCALE_DIRS = {
 }
 
 
-RANDOM_PICK_DEMO = (
-    '<figure class="random-pick-demo" data-random-pick-demo>'
-    '<button class="random-pick-button" type="button" aria-label="Random Pick">'
-    '<span class="random-pick-stage" aria-hidden="true">'
-    '<span class="random-vinyl"></span>'
-    '<span class="random-picked-cover"><img src="/assets/demo/random-pick-cover.webp" alt="" '
-    'width="1012" height="1012" decoding="async"></span>'
-    '</span>'
-    '<span class="random-pick-control"><strong>Random Pick</strong><span aria-hidden="true">♪&nbsp; ↻</span></span>'
-    '</button><figcaption class="visually-hidden">Random Pick</figcaption>'
-    '</figure>'
-)
+PICK_LABELS = {
+    "ar": "اختر رقما قياسيا", "ca": "Trieu un àlbum de música", "da": "Vælg et musikalbum",
+    "de": "Wählen Sie ein Musikalbum", "el": "Επιλέξτε ένα μουσικό άλμπουμ",
+    "en-au": "Pick a record", "en-ca": "Pick a record", "en-gb": "Pick a record", "en-us": "Pick a record",
+    "es-es": "Elegir un disco", "es-mx": "Elegir un disco", "fi": "Valitse ennätys",
+    "fr": "Tirer un disque", "fr-ca": "Choisissez un album de musique", "he": "בחר אלבום מוזיקה",
+    "hi": "एक संगीत एल्बम चुनें", "id": "Pilih album musik", "it": "Scegli un disco",
+    "ja": "レコードを選ぶ", "ko": "음반 뽑기", "nb": "Velg en plate", "nl": "Kies een plaat",
+    "pl": "Wyciągnij płyta", "pt-br": "Escolher um disco", "pt-pt": "Escolha um álbum de música",
+    "ru": "Выберите музыкальный альбом", "sv": "Välj en skiva", "th": "เลือกแผ่นเสียง",
+    "tr": "Bir kayıt seçin", "vi": "Chọn một đĩa nhạc", "zh-hans": "拉一个 唱片",
+    "zh-hant": "拉一個 唱片",
+}
+
+RANDOM_PICK_RECORDS = [
+    {"cover": "/assets/demo/sees-the-light.jpg", "title": "Sees The Light", "year": "2012", "artist": "La Sera", "tags": ["Garage Rock", "Indie Rock", "Surf"]},
+    {"cover": "/assets/demo/in-waves.jpg", "title": "In Waves", "year": "2024", "artist": "Jamie xx", "tags": ["Electronic", "House"]},
+    {"cover": "/assets/demo/hunky-dory.jpg", "title": "Hunky Dory", "year": "1971", "artist": "David Bowie", "tags": ["Glam", "Pop Rock", "Art Rock"]},
+    {"cover": "/assets/demo/moon-safari.jpg", "title": "Moon Safari", "year": "1998", "artist": "AIR", "tags": ["Chillwave", "Europop", "Downtempo"]},
+]
+
+
+def random_pick_demo(site_language: str) -> str:
+    label = html.escape(PICK_LABELS.get(site_language, "Pick a record"))
+    records = json.dumps(RANDOM_PICK_RECORDS, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    first = RANDOM_PICK_RECORDS[0]
+    tags = "".join(f'<span>{html.escape(tag)}</span>' for tag in first["tags"])
+    return (
+        '<figure class="random-pick-demo" data-random-pick-demo>'
+        '<div class="random-pick-stage">'
+        '<div class="random-pick-result" aria-live="polite" aria-atomic="true">'
+        '<span class="random-pick-cover"><img src="/assets/demo/sees-the-light.jpg" alt="" '
+        'width="500" height="500" decoding="async"></span>'
+        '<span class="random-pick-details">'
+        '<strong class="random-pick-title">Sees The Light (2012)</strong>'
+        '<span class="random-pick-artist">La Sera</span>'
+        f'<span class="random-pick-tags">{tags}</span>'
+        '</span></div>'
+        '<span class="random-vinyl" aria-hidden="true"></span>'
+        '<span class="random-pick-tap" aria-hidden="true"></span>'
+        f'<button class="random-pick-button" type="button" aria-label="{label}">'
+        '<span class="random-pick-disc-icon" aria-hidden="true"></span>'
+        f'<strong>{label}</strong></button>'
+        f'<script type="application/json" data-random-pick-records>{records}</script>'
+        '</div><figcaption class="visually-hidden">Random Pick</figcaption>'
+        '</figure>'
+    )
 
 
 def release_block(text: str, version: str, tag: str = "section") -> re.Match[str] | None:
@@ -51,7 +87,7 @@ def kicker(block: str) -> str:
     return match.group(1)
 
 
-def promote_home(text: str, prefix: str, locale: str) -> str:
+def promote_home(text: str, prefix: str, locale: str, site_language: str) -> str:
     old = release_block(text, "1.9")
     current = release_block(text, "2.0")
     if not current:
@@ -68,7 +104,7 @@ def promote_home(text: str, prefix: str, locale: str) -> str:
     text = text.replace('id="version-2-0-preview"', 'id="versions"')
     text = re.sub(
         r'<figure class="random-pick-demo"[^>]*>.*?</figure>',
-        RANDOM_PICK_DEMO,
+        random_pick_demo(site_language),
         text,
         count=1,
         flags=re.DOTALL,
@@ -76,7 +112,7 @@ def promote_home(text: str, prefix: str, locale: str) -> str:
     if 'data-random-pick-demo' not in text:
         text = re.sub(
             r'<figure class="context-visual wide inline-context">.*?</figure>',
-            RANDOM_PICK_DEMO,
+            random_pick_demo(site_language),
             text,
             count=1,
             flags=re.DOTALL,
@@ -84,7 +120,7 @@ def promote_home(text: str, prefix: str, locale: str) -> str:
     if 'data-random-pick-demo' not in text:
         text = re.sub(
             r'(<section class="section split"[^>]*>.*?)(</section>)',
-            lambda match: match.group(1) + RANDOM_PICK_DEMO + match.group(2),
+            lambda match: match.group(1) + random_pick_demo(site_language) + match.group(2),
             text,
             count=1,
             flags=re.DOTALL,
@@ -209,7 +245,8 @@ def update_page(path: Path) -> bool:
     localized_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALE_DIRS else relative.parts
     kind = "/".join(localized_parts)
     if kind == "index.html" and 'data-release-version="2.0"' in text:
-        text = promote_home(text, prefix, locale)
+        site_language = relative.parts[0] if relative.parts and relative.parts[0] in LOCALE_DIRS else "fr"
+        text = promote_home(text, prefix, locale, site_language)
     elif kind == "readme/index.html":
         text = promote_readme(text, prefix, locale)
     elif kind == "screenshots/index.html":
