@@ -295,6 +295,13 @@ def update_page(page: Path) -> bool:
             count=1,
             flags=re.DOTALL,
         )
+        cards[2] = re.sub(
+            r'<div class="mac-card-preview">.*?</div>',
+            mac_card_preview(prefix, locale, "mac-mood-pick.jpeg"),
+            cards[2],
+            count=1,
+            flags=re.DOTALL,
+        )
         return '<section class="mac-feature-row">' + ''.join(cards) + '</section>'
 
     text = re.sub(

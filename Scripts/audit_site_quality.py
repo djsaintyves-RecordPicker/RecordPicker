@@ -203,6 +203,9 @@ def main() -> None:
                 expected_search = (
                     f"assets/screenshots/v20/{visual_locale}/mac-search-results.webp"
                 )
+                expected_mood = (
+                    f"assets/screenshots/v20/{visual_locale}/mac-mood-pick.webp"
+                )
                 if len(feature_cards) != 3 or expected_search not in feature_cards[1]:
                     errors.append(
                         f"{relative}: localized Mac search-result illustration missing from middle card"
@@ -215,6 +218,20 @@ def main() -> None:
                     errors.append(
                         f"{relative}: collection visual duplicated in Mac search card"
                     )
+                if len(feature_cards) != 3 or expected_mood not in feature_cards[2]:
+                    errors.append(
+                        f"{relative}: localized Mood Pick illustration missing from third card"
+                    )
+                elif "<figcaption" in feature_cards[2]:
+                    errors.append(
+                        f"{relative}: redundant caption remains on Mood Pick illustration"
+                    )
+                if len(feature_cards) == 3:
+                    for index, card in enumerate(feature_cards, start=1):
+                        if '<div class="mac-card-preview"></div>' in card:
+                            errors.append(
+                                f"{relative}: empty Mac feature illustration in card {index}"
+                            )
         if kind in {"privacy/index.html", "readme/index.html", "support/index.html"}:
             if "support@recordpicker.app" not in text:
                 errors.append(f"{relative}: public support contact missing")

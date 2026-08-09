@@ -99,6 +99,34 @@ def stage_search_results() -> int:
     return count
 
 
+def stage_missing_mac_mood_pick() -> int:
+    """Fill missing Mac Mood Pick art with a readable 16:10 app-UI crop."""
+    count = 0
+    for locale, sources in SOURCES.items():
+        if "mac-mood-pick.jpeg" in sources:
+            continue
+        mobile = sources.get("iphone-mood-pick.png")
+        if not mobile:
+            raise RuntimeError(f"Missing Mood Pick source for {locale}")
+        source, expected_size = mobile
+        with Image.open(source) as candidate:
+            if candidate.size != expected_size or expected_size != (1320, 2868):
+                raise RuntimeError(
+                    f"Unexpected Mood Pick size for {source}: {candidate.size} != (1320, 2868)"
+                )
+            # Show the localized mood field and all four preset suggestions at
+            # a legible scale instead of shrinking the full portrait screen.
+            # Keep the localized screen title, prompt and the first suggestion
+            # rows readable in the landscape feature card.
+            image = candidate.convert("RGB").crop((0, 240, 1320, 1065))
+            image = image.resize((1440, 900), Image.Resampling.LANCZOS)
+        destination = DESTINATION / locale / "mac-mood-pick"
+        image.save(destination.with_suffix(".webp"), "WEBP", quality=84, method=6)
+        image.save(destination.with_suffix(".avif"), "AVIF", quality=62, speed=6)
+        count += 1
+    return count
+
+
 def main() -> None:
     count = 0
     for locale, sources in SOURCES.items():
@@ -121,6 +149,7 @@ def main() -> None:
                 image.save(destination.with_suffix(".avif"), "AVIF", quality=62, speed=6)
             count += 1
     count += stage_search_results()
+    count += stage_missing_mac_mood_pick()
     print(f"Staged {count} clean functional 2.0 screenshots with AVIF and WebP derivatives.")
 
 
