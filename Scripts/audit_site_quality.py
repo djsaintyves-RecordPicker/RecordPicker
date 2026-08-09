@@ -166,8 +166,18 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-neutral" not in text:
+        if "quality.css?v=20260809-v20-home" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
+        if kind == "index.html":
+            if 'class="v20-home-preview"' not in text:
+                errors.append(f"{relative}: localized 2.0 home preview missing")
+            if "mac-home.avif" not in text or "mac-home.webp" not in text:
+                errors.append(f"{relative}: optimized 2.0 Mac home sources missing")
+            expected_home_locale = "fr" if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
+            if relative == Path("index.html"):
+                expected_home_locale = "fr"
+            if expected_home_locale and f"assets/screenshots/v20/{expected_home_locale}/mac-home" not in text:
+                errors.append(f"{relative}: French Mac home preview missing")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
         )

@@ -435,6 +435,29 @@ picture {
   line-height: 1.58;
 }
 
+.v20-home-preview {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: clamp(8px, 1.2vw, 14px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-raised);
+  box-shadow: var(--card-shadow);
+}
+
+.v20-home-preview picture,
+.v20-home-preview img {
+  display: block;
+  width: 100%;
+}
+
+.v20-home-preview img {
+  height: auto;
+  border-radius: 11px;
+  background: #fff;
+}
+
 .v20-privacy-note {
   margin: 22px 0 0;
   padding: 15px 17px;

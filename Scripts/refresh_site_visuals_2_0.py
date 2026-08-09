@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSET_ROOT = ROOT / "assets/screenshots/v20"
-CSS_VERSION = "20260809-v20-neutral"
+CSS_VERSION = "20260809-v20-home"
 
 LOCALE_ALIASES = {
     "fr-ca": "fr",
@@ -56,7 +56,9 @@ def page_locale(page: Path) -> str:
 
 
 def available_locale(locale: str, filename: str) -> str:
-    return locale if (ASSET_ROOT / locale / filename).is_file() else "en-us"
+    stem = Path(filename).stem
+    localized = ASSET_ROOT / locale
+    return locale if any((localized / f"{stem}{suffix}").is_file() for suffix in (".avif", ".webp")) else "en-us"
 
 
 def classify(old_path: str) -> tuple[str, str]:
@@ -113,6 +115,22 @@ def picture(prefix: str, locale: str, platform: str, filename: str) -> str:
     )
 
 
+def home_preview(prefix: str, locale: str) -> str:
+    """Return the authentic, locale-aware Mac home with the three pick cartridges."""
+    filename = "mac-home.jpeg"
+    avif = asset_url(prefix, locale, filename, ".avif")
+    webp = asset_url(prefix, locale, filename, ".webp")
+    return (
+        '<figure class="v20-home-preview">'
+        '<picture>'
+        f'<source srcset="{avif}" type="image/avif">'
+        f'<source srcset="{webp}" type="image/webp">'
+        f'<img loading="lazy" alt="" src="{webp}" width="1440" height="900" decoding="async">'
+        '</picture>'
+        '</figure>'
+    )
+
+
 def gallery(prefix: str, locale: str) -> str:
     groups = []
     for platform in ("mac", "iphone", "ipad"):
@@ -150,6 +168,26 @@ def update_page(page: Path) -> bool:
     relative = page.relative_to(ROOT)
     depth = len(relative.parts) - 1
     prefix = "../" * depth
+
+    # The 2.0 preview belongs on localized home pages only. Keep this
+    # idempotent so a later media refresh can safely replace the illustration.
+    if 'class="section next-release v20-preview"' in text:
+        def refresh_home_preview(match: re.Match[str]) -> str:
+            section = re.sub(
+                r'<figure class="v20-home-preview">.*?</figure>',
+                "",
+                match.group(0),
+                flags=re.DOTALL,
+            )
+            return section.replace("</section>", home_preview(prefix, locale) + "</section>")
+
+        text = re.sub(
+            r'<section class="section next-release v20-preview".*?</section>',
+            refresh_home_preview,
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
 
     if relative.name == "index.html" and relative.parent.name == "screenshots":
         text = re.sub(
