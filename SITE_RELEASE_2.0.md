@@ -23,6 +23,7 @@ métadonnées structurées ne remplacent pas celles de la 1.9.
 python3 Scripts/prepare_site_2_0_preview.py
 python3 Scripts/build_release_2_0_media.py
 python3 Scripts/refine_homepage_descriptions.py
+python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_release_2_0_semantics.py
 python3 Scripts/audit_site_quality.py
