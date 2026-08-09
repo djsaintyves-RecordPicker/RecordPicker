@@ -673,6 +673,12 @@ h3,
   font-size: var(--type-lead);
 }
 
+/* Give body copy a clear pause after document section headings. */
+.doc-content h2 + p:not(.lead),
+.doc-content h3 + p:not(.lead) {
+  margin-top: 14px;
+}
+
 .tagline,
 .deck,
 .lead,

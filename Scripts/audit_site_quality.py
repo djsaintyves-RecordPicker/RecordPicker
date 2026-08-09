@@ -230,7 +230,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-mac-product-hero" not in text:
+        if "quality.css?v=20260809-doc-heading-spacing" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
             intro = re.search(
