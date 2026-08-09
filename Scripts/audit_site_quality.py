@@ -9,6 +9,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
+from refine_homepage_descriptions import audit as audit_homepage_descriptions
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_STATE = json.loads(
@@ -57,6 +59,7 @@ def local_target(page: Path, value: str) -> Path | None:
 
 
 def main() -> None:
+    audit_homepage_descriptions()
     pages = sorted(ROOT.rglob("*.html"))
     errors: list[str] = []
     content_pages = 0

@@ -124,6 +124,7 @@ available in the repository:
 ```sh
 python3 Scripts/build_legacy_web_media.py
 python3 Scripts/refine_site_finish.py
+python3 Scripts/refine_homepage_descriptions.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_site_quality.py
 python3 Scripts/test_release_publication.py
