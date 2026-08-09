@@ -22,6 +22,7 @@ métadonnées structurées ne remplacent pas celles de la 1.9.
 ```sh
 python3 Scripts/prepare_site_2_0_preview.py
 python3 Scripts/build_release_2_0_media.py
+python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_release_2_0_semantics.py
 python3 Scripts/audit_site_quality.py
 ```
@@ -45,6 +46,9 @@ Le script enrichit les blocs 2.0 des 33 accueils, 33 pages Fonctionnalités et
 - Ne pas publier le Graphe de collection avec une collection vide ou des
   relations artificielles.
 - Conserver les bandeaux du concours pendant toute sa période officielle.
+- Conserver le lien vers le dossier de presse ainsi que les profils officiels
+  Instagram, YouTube et Facebook dans le pied de page et dans le balisage
+  structuré `sameAs`.
 - Avant le basculement, choisir explicitement la version suivante à annoncer ;
   ne jamais inventer automatiquement `2.1` ou `2.0.1`.
 

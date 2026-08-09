@@ -180,6 +180,70 @@ picture {
   width: 100%;
 }
 
+.press-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 30px 0 42px;
+}
+
+.press-download-grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.press-download-grid .card p {
+  flex: 1;
+}
+
+.official-identity {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin: 36px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.official-identity img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+}
+
+.official-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.official-social-links a {
+  font-weight: 800;
+}
+
+@media (max-width: 820px) {
+  .press-download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .official-identity {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .official-identity img {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+  }
+}
+
 .doc-hero h1 {
   max-width: 17ch;
   font-size: clamp(2.65rem, 5.5vw, 4.55rem);

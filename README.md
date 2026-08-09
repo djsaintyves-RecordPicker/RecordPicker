@@ -12,6 +12,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Support: https://recordpicker.app/support/
 - Screenshots: https://recordpicker.app/screenshots/
 - Privacy policy: https://recordpicker.app/privacy/
+- Press kit: https://recordpicker.app/press/
 - Features page: https://recordpicker.app/readme/
 - How to choose what vinyl record to play next: https://recordpicker.app/choose-vinyl-record/
 - Random vinyl record picker app: https://recordpicker.app/random-vinyl-record-picker/
@@ -123,6 +124,7 @@ available in the repository:
 ```sh
 python3 Scripts/build_legacy_web_media.py
 python3 Scripts/refine_site_finish.py
+python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_site_quality.py
 python3 Scripts/test_release_publication.py
 ```

@@ -21,6 +21,11 @@ HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
 )
+OFFICIAL_SOCIALS = {
+    "https://www.instagram.com/recordpicker/",
+    "https://www.youtube.com/@recordpicker",
+    "https://www.facebook.com/profile.php?id=61591096987226",
+}
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
     "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
@@ -83,6 +88,20 @@ def main() -> None:
             try:
                 schema = json.loads(unescape(payload))
                 if schema.get("@type") == "SoftwareApplication":
+                    if set(schema.get("sameAs", [])) != OFFICIAL_SOCIALS:
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: official sameAs profiles incomplete"
+                        )
+                    publisher = schema.get("publisher", {})
+                    if (
+                        publisher.get("name") != "Record Picker"
+                        or publisher.get("url") != "https://recordpicker.app/"
+                        or publisher.get("logo", {}).get("url")
+                        != "https://recordpicker.app/assets/brand/icon-512.png"
+                    ):
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: official publisher identity incomplete"
+                        )
                     languages = set(schema.get("inLanguage", []))
                     if not {"es-MX", "th", "vi"}.issubset(languages):
                         errors.append(
@@ -133,17 +152,14 @@ def main() -> None:
             'class="skip-link"',
             'id="main-content"',
             "site.js?v=20260808-v19-locales",
+            'href="/press/"',
+            'href="https://www.instagram.com/recordpicker/" rel="me"',
+            'href="https://www.youtube.com/@recordpicker" rel="me"',
+            'href="https://www.facebook.com/profile.php?id=61591096987226" rel="me"',
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if not any(
-            version in text
-            for version in (
-                "quality.css?v=20260808-finish2",
-                "quality.css?v=20260808-contest1",
-                "quality.css?v=20260808-challenge",
-            )
-        ):
+        if "quality.css?v=20260809-identity" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
@@ -247,7 +263,7 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 1
+    expected_content_pages = expected_locales * 9 + 2
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
@@ -293,6 +309,13 @@ def main() -> None:
             )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")
+    for relative in (
+        "assets/press/Record-Picker-Dossier-de-presse-FR.pdf",
+        "assets/press/Record-Picker-Press-Kit-EN.pdf",
+        "assets/press/Record-Picker-Press-Kit.zip",
+    ):
+        if not (ROOT / relative).is_file():
+            errors.append(f"missing press asset {relative}")
     for image in (ROOT / "assets/social").glob("*.png"):
         if image.stat().st_size > 600_000:
             errors.append(f"{image.relative_to(ROOT)} exceeds 600 KB")
