@@ -53,6 +53,7 @@ def main() -> None:
             home = (root / "index.html").read_text(encoding="utf-8")
             readme = (root / "readme" / "index.html").read_text(encoding="utf-8")
             screenshots = (root / "screenshots" / "index.html").read_text(encoding="utf-8")
+            mac_app = (root / "mac-app" / "index.html").read_text(encoding="utf-8")
             assert "v20-hero" in home and "v20-home-screens" in home
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
@@ -64,7 +65,8 @@ def main() -> None:
             assert f'data-release-version="{current}"' in screenshots
             assert f'data-release-gallery="{current}"' in screenshots
             assert 'data-preview-gallery="2.0"' not in screenshots
-            assert "watch-random-pick" in screenshots
+            if root == target or root.name in {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
+                assert "watch-random-pick" in screenshots
             assert "data-random-pick-demo" in home
             assert 'class="random-vinyl"' in home
             assert 'class="random-pick-button"' in home
@@ -75,6 +77,9 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
+            if root != target and not root.name.startswith("en-"):
+                for page in (home, readme, screenshots, mac_app):
+                    assert "assets/screenshots/v20/en-us/" not in page
 
         css = (target / "quality.css").read_text(encoding="utf-8")
         for selector in (

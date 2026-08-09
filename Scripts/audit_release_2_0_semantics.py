@@ -35,7 +35,8 @@ def main() -> None:
         assert 'class="challenge-announcement"' in home
         assert 'id="recordpicker-challenge"' in home
         assert 'data-release-gallery="2.0"' in screenshots
-        assert "watch-random-pick" in screenshots
+        if directory in {"", "fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
+            assert "watch-random-pick" in screenshots
         assert 'data-preview-gallery="2.0"' not in screenshots
 
     for french_root in (ROOT, ROOT / "fr", ROOT / "fr-ca"):
@@ -50,7 +51,7 @@ def main() -> None:
         assert "vrais collectionneurs" not in french_home.casefold()
     print(
         f"OK: {checked} localized 2.0 release surfaces preserve product meaning, "
-        "Random Pick prominence, watchOS previews and the contest campaign."
+        "Random Pick prominence, language-safe watchOS previews and the contest campaign."
     )
 
 

@@ -9,51 +9,69 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-APP_ASSETS = ROOT.parent / "RecordPicker" / "AppStoreAssets" / "2.0"
-WATCH_ASSETS = ROOT.parent / "RecordPicker" / "build" / "AppStoreSubmission" / "2.0-20260809-v2" / "watch" / "screenshots"
+SUBMISSION = (
+    ROOT.parent
+    / "RecordPicker"
+    / "build"
+    / "AppStoreSubmission"
+    / "2.0-20260809-v2"
+)
 DESTINATION = ROOT / "assets" / "screenshots" / "v20"
 
-SOURCES = {
-    "en-us": {
-        "iphone-random-pick.png": (APP_ASSETS / "iOS/en-US/01-random-pick.png", (1320, 2868)),
-        "iphone-todays-pick.png": (APP_ASSETS / "iOS/en-US/02-todays-pick.png", (1320, 2868)),
-        "iphone-mood-pick.png": (APP_ASSETS / "iOS/en-US/03-mood-pick.png", (1320, 2868)),
-        "iphone-collection.png": (APP_ASSETS / "iOS/en-US/04-collection.png", (1320, 2868)),
-        "ipad-random-pick.png": (APP_ASSETS / "iPadOS/en-US/01-random-pick.png", (2064, 2752)),
-        "ipad-todays-pick.png": (APP_ASSETS / "iPadOS/en-US/02-todays-pick.png", (2064, 2752)),
-        "ipad-mood-pick.png": (APP_ASSETS / "iPadOS/en-US/03-mood-pick.png", (2064, 2752)),
-        "ipad-collection.png": (APP_ASSETS / "iPadOS/en-US/04-collection.png", (2064, 2752)),
-        "mac-home.jpeg": (APP_ASSETS / "macOS/en-US/01-record-picker-2.0-1440x900.jpeg", (1440, 900)),
-        "mac-collection.jpeg": (APP_ASSETS / "macOS/en-US/02-collection-1440x900.jpeg", (1440, 900)),
-        "mac-todays-pick.jpeg": (APP_ASSETS / "macOS/en-US/03-todays-pick-1440x900.jpeg", (1440, 900)),
-        "mac-mood-pick.jpeg": (APP_ASSETS / "macOS/en-US/04-mood-pick-1440x900.jpeg", (1440, 900)),
-        "mac-random-pick.jpeg": (APP_ASSETS / "macOS/en-US/05-random-pick-1440x900.jpeg", (1440, 900)),
-        "mac-data-quality.jpeg": (APP_ASSETS / "macOS/en-US/06-data-quality-1440x900.jpeg", (1440, 900)),
-        "watch-random-pick.png": (WATCH_ASSETS / "en-US/01-record-picker-watch.png", (368, 448)),
-    },
-    "fr": {
-        "iphone-random-pick.png": (APP_ASSETS / "iOS/fr-FR/01-tirage.png", (1320, 2868)),
-        "iphone-todays-pick.png": (APP_ASSETS / "iOS/fr-FR/02-disque-du-jour.png", (1320, 2868)),
-        "iphone-mood-pick.png": (APP_ASSETS / "iOS/fr-FR/03-mood-pick.png", (1320, 2868)),
-        "iphone-collection.png": (APP_ASSETS / "iOS/fr-FR/04-collection.png", (1320, 2868)),
-        "ipad-random-pick.png": (APP_ASSETS / "iPadOS/fr-FR/01-tirage.png", (2064, 2752)),
-        "ipad-todays-pick.png": (APP_ASSETS / "iPadOS/fr-FR/02-disque-du-jour.png", (2064, 2752)),
-        "mac-home.jpeg": (APP_ASSETS / "macOS/fr-FR/01-record-picker-2.0-1440x900.jpeg", (1440, 900)),
-        "mac-collection.jpeg": (APP_ASSETS / "macOS/fr-FR/02-collection-1440x900.jpeg", (1440, 900)),
-        "mac-todays-pick.jpeg": (APP_ASSETS / "macOS/fr-FR/03-disque-du-jour-1440x900.jpeg", (1440, 900)),
-    },
+APP_TO_SITE_LOCALE = {
+    "ar-SA": "ar", "ca": "ca", "da": "da", "de-DE": "de", "el": "el",
+    "en-AU": "en-au", "en-CA": "en-ca", "en-GB": "en-gb", "en-US": "en-us",
+    "es-ES": "es-es", "es-MX": "es-mx", "fi": "fi", "fr-CA": "fr-ca",
+    "fr-FR": "fr", "he": "he", "hi": "hi", "id": "id", "it": "it",
+    "ja": "ja", "ko": "ko", "nl-NL": "nl", "no": "nb", "pl": "pl",
+    "pt-BR": "pt-br", "pt-PT": "pt-pt", "ru": "ru", "sv": "sv",
+    "th": "th", "tr": "tr", "vi": "vi", "zh-Hans": "zh-hans",
+    "zh-Hant": "zh-hant",
 }
 
-for site_locale, app_locale, stems in (
-    ("de", "de-DE", ("01-zufall", "02-platte-des-tages")),
-    ("es-es", "es-ES", ("01-sorteo", "02-disco-del-dia")),
-    ("ja", "ja", ("01-random", "02-today")),
-    ("zh-hans", "zh-Hans", ("01-random", "02-today")),
-):
-    SOURCES[site_locale] = {
-        "iphone-random-pick.png": (APP_ASSETS / f"iOS/{app_locale}/{stems[0]}.png", (1320, 2868)),
-        "iphone-todays-pick.png": (APP_ASSETS / f"iOS/{app_locale}/{stems[1]}.png", (1320, 2868)),
-    }
+MAC_OUTPUTS = {
+    1: "mac-home.jpeg", 2: "mac-collection.jpeg",
+    3: "mac-todays-pick.jpeg", 4: "mac-mood-pick.jpeg",
+    5: "mac-random-pick.jpeg", 6: "mac-data-quality.jpeg",
+}
+MOBILE_OUTPUTS = {
+    1: "random-pick.png", 2: "todays-pick.png",
+    3: "mood-pick.png", 4: "collection.png",
+}
+
+
+def one_match(directory: Path, pattern: str) -> Path | None:
+    matches = sorted(directory.glob(pattern))
+    if len(matches) > 1:
+        raise RuntimeError(f"Ambiguous screenshot source: {directory / pattern}")
+    return matches[0] if matches else None
+
+
+def submission_sources() -> dict[str, dict[str, tuple[Path, tuple[int, int]]]]:
+    sources: dict[str, dict[str, tuple[Path, tuple[int, int]]]] = {}
+    for app_locale, site_locale in APP_TO_SITE_LOCALE.items():
+        localized: dict[str, tuple[Path, tuple[int, int]]] = {}
+        mac_dir = SUBMISSION / "macos" / "screenshots" / app_locale
+        for index, output in MAC_OUTPUTS.items():
+            source = one_match(mac_dir, f"{index:02d}-*-1440x900.jpeg")
+            if source:
+                localized[output] = (source, (1440, 900))
+
+        ios_dir = SUBMISSION / "ios" / "screenshots" / app_locale
+        for platform, size in (("iphone", (1320, 2868)), ("ipad", (2064, 2752))):
+            for index, feature in MOBILE_OUTPUTS.items():
+                source = one_match(ios_dir, f"{platform}-{index:02d}-*.png")
+                if source:
+                    localized[f"{platform}-{feature}"] = (source, size)
+
+        watch = SUBMISSION / "watch" / "screenshots" / app_locale / "01-record-picker-watch.png"
+        if watch.is_file():
+            localized["watch-random-pick.png"] = (watch, (368, 448))
+        sources[site_locale] = localized
+    return sources
+
+
+SOURCES = submission_sources()
 
 
 def main() -> None:

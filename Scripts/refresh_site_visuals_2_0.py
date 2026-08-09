@@ -13,8 +13,17 @@ ASSET_ROOT = ROOT / "assets/screenshots/v20"
 CSS_VERSION = "20260809-v20-balanced-visuals"
 
 LOCALE_ALIASES = {
+    "en-au": "en-us",
+    "en-ca": "en-us",
+    "en-gb": "en-us",
     "fr-ca": "fr",
-    "es-mx": "es-es",
+}
+
+SITE_LOCALES = {
+    "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
+    "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja",
+    "ko", "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "th", "tr", "vi",
+    "zh-hans", "zh-hant",
 }
 
 DIMENSIONS = {
@@ -52,15 +61,23 @@ GALLERY_ASSETS = {
 def page_locale(page: Path) -> str:
     relative = page.relative_to(ROOT)
     first = relative.parts[0]
-    if first in {"fr", "fr-ca", "de", "es-es", "es-mx", "ja", "zh-hans"}:
-        return LOCALE_ALIASES.get(first, first)
+    if first in SITE_LOCALES:
+        return first
     return "fr" if first in {"index.html", "screenshots", "readme", "support", "privacy", "mac-app"} else "en-us"
 
 
 def available_locale(locale: str, filename: str) -> str:
     stem = Path(filename).stem
     localized = ASSET_ROOT / locale
-    return locale if any((localized / f"{stem}{suffix}").is_file() for suffix in (".avif", ".webp")) else "en-us"
+    if any((localized / f"{stem}{suffix}").is_file() for suffix in (".avif", ".webp")):
+        return locale
+    fallback = LOCALE_ALIASES.get(locale)
+    if fallback and any(
+        (ASSET_ROOT / fallback / f"{stem}{suffix}").is_file()
+        for suffix in (".avif", ".webp")
+    ):
+        return fallback
+    return ""
 
 
 def classify(old_path: str) -> tuple[str, str]:
@@ -91,6 +108,8 @@ def classify(old_path: str) -> tuple[str, str]:
 
 def asset_url(prefix: str, locale: str, filename: str, suffix: str = ".webp") -> str:
     selected = available_locale(locale, filename)
+    if not selected:
+        return ""
     return f"{prefix}assets/screenshots/v20/{selected}/{Path(filename).stem}{suffix}"
 
 
@@ -108,6 +127,8 @@ def picture(prefix: str, locale: str, platform: str, filename: str) -> str:
     width, height = DIMENSIONS[platform]
     avif = asset_url(prefix, locale, filename, ".avif")
     webp = asset_url(prefix, locale, filename, ".webp")
+    if not avif or not webp:
+        return ""
     return (
         f'<figure class="shot-card {platform}"><picture>'
         f'<source srcset="{avif}" type="image/avif">'
@@ -122,6 +143,8 @@ def home_preview(prefix: str, locale: str) -> str:
     filename = "mac-home.jpeg"
     avif = asset_url(prefix, locale, filename, ".avif")
     webp = asset_url(prefix, locale, filename, ".webp")
+    if not avif or not webp:
+        raise RuntimeError(f"Missing localized Mac home screenshot for {locale}")
     return (
         '<figure class="v20-home-preview">'
         '<picture>'
@@ -138,6 +161,8 @@ def gallery(prefix: str, locale: str) -> str:
     platform_names = {"mac": "Mac", "iphone": "iPhone", "ipad": "iPad", "watch": "Apple Watch"}
     for platform in ("mac", "iphone", "ipad", "watch"):
         cards = "".join(picture(prefix, locale, platform, name) for name in GALLERY_ASSETS[platform])
+        if not cards:
+            continue
         groups.append(
             f'<div class="platform-shot-group"><h3>{platform_names[platform]} · Record Picker 2.0</h3>'
             f'<div class="shot-grid v20-shot-grid {platform}-grid">{cards}</div></div>'
@@ -148,6 +173,53 @@ def gallery(prefix: str, locale: str) -> str:
         + "".join(groups)
         + '</section>'
     )
+
+
+def localize_existing_v20(text: str, locale: str) -> str:
+    """Localize existing v20 figures and remove unsupported foreign fallbacks."""
+    text = re.sub(
+        r'((?:mac-(?:home|collection|todays-pick|mood-pick|random-pick|data-quality|three-ways)|'
+        r'iphone-(?:collection|todays-pick|mood-pick|random-pick)|'
+        r'ipad-(?:collection|todays-pick|mood-pick|random-pick)|watch-random-pick))\.*(avif|webp)',
+        r'\1.\2',
+        text,
+    )
+    if locale.startswith("en-") or locale == "en-us":
+        return text
+
+    def localize_url(match: re.Match[str]) -> str:
+        prefix, source_locale, stem, suffix = match.groups()
+        if source_locale == locale:
+            return match.group(0)
+        selected = available_locale(locale, f"{stem}.{suffix}")
+        if not selected:
+            return match.group(0)
+        return f"{prefix}assets/screenshots/v20/{selected}/{stem}.{suffix}"
+
+    def localize_figure(match: re.Match[str]) -> str:
+        figure = match.group(0)
+        references = re.findall(
+            r'assets/screenshots/v20/([^/]+)/([^/"\']+)\.(avif|webp)',
+            figure,
+        )
+        for source_locale, stem, suffix in references:
+            if source_locale != locale and not available_locale(locale, f"{stem}.{suffix}"):
+                return ""
+        return re.sub(
+            r'((?:\.\./)*)assets/screenshots/v20/([^/]+)/([^/"\']+)\.(avif|webp)',
+            localize_url,
+            figure,
+        )
+
+    text = re.sub(r'<figure\b[^>]*>.*?</figure>', localize_figure, text, flags=re.DOTALL)
+    text = re.sub(
+        r'((?:\.\./)*|https://recordpicker\.app/)assets/screenshots/v20/([^/]+)/([^/"\']+)\.(avif|webp)',
+        localize_url,
+        text,
+    )
+    text = re.sub(r'<div class="mac-screenshot-grid">\s*</div>', '', text)
+    text = re.sub(r'<section class="mac-showcase"[^>]*>\s*</section>', '', text)
+    return text
 
 
 def update_image_tag(match: re.Match[str]) -> str:
@@ -171,6 +243,7 @@ def update_page(page: Path) -> bool:
     relative = page.relative_to(ROOT)
     depth = len(relative.parts) - 1
     prefix = "../" * depth
+    text = localize_existing_v20(text, locale)
 
     # The 2.0 preview belongs on localized home pages only. Keep this
     # idempotent so a later media refresh can safely replace the illustration.
@@ -248,9 +321,7 @@ def sitemap_locale(url: str) -> str:
     parts = [part for part in urlsplit(url).path.split("/") if part]
     if not parts:
         return "fr"
-    return LOCALE_ALIASES.get(parts[0], parts[0]) if parts[0] in {
-        "fr", "fr-ca", "de", "es-es", "es-mx", "ja", "zh-hans"
-    } else "en-us"
+    return parts[0] if parts[0] in SITE_LOCALES else "en-us"
 
 
 def sitemap_images(url: str) -> tuple[str, ...]:
@@ -279,6 +350,8 @@ def update_media_sitemap() -> None:
         entries = []
         for filename in sitemap_images(url):
             selected = available_locale(locale, filename)
+            if not selected:
+                continue
             asset = f"https://recordpicker.app/assets/screenshots/v20/{selected}/{Path(filename).stem}.webp"
             entries.append(
                 "\n    <image:image>\n"

@@ -150,6 +150,12 @@ def main() -> None:
                 errors.append(
                     f"{relative}: data-page-lang does not match its locale directory"
                 )
+            if not expected_page_locale.startswith("en-") and re.search(
+                r'assets/screenshots/v20/en-us/', text, flags=re.IGNORECASE
+            ):
+                errors.append(
+                    f"{relative}: English screenshot fallback on a non-English page"
+                )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
         if kind in {"privacy/index.html", "readme/index.html", "support/index.html"}:
@@ -186,7 +192,7 @@ def main() -> None:
                 errors.append(f"{relative}: localized 2.0 home preview missing")
             if "mac-home.avif" not in text or "mac-home.webp" not in text:
                 errors.append(f"{relative}: optimized 2.0 Mac home sources missing")
-            expected_home_locale = "fr" if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
+            expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "fr"
             if expected_home_locale and f"assets/screenshots/v20/{expected_home_locale}/mac-home" not in text:
@@ -230,8 +236,11 @@ def main() -> None:
                     errors.append(f"{relative}: incomplete Random Pick reveal ({requirement})")
             if "random-record-a" in text or "random-pick-marker" in text or "random-picked-cover" in text:
                 errors.append(f"{relative}: obsolete abstract Random Pick illustration remains")
-        if kind == "screenshots/index.html" and "watch-random-pick" not in text:
-            errors.append(f"{relative}: watchOS 2.0 preview missing")
+        if kind == "screenshots/index.html":
+            directory_locale = relative.parts[0] if relative.parts and relative.parts[0] in LOCALES else "fr"
+            watch_locales = {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}
+            if directory_locale in watch_locales and "watch-random-pick" not in text:
+                errors.append(f"{relative}: localized watchOS 2.0 preview missing")
         if kind in {"privacy/index.html", "mac-app/index.html"} and re.search(r'Record Picker v?1\.9|macOS 1\.9', text):
             errors.append(f"{relative}: stale current-version label")
         if 'content="https://recordpicker.app/assets/brand/icon-512.png"' in text:
