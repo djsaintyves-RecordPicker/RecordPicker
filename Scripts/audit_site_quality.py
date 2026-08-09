@@ -28,6 +28,7 @@ OFFICIAL_SOCIALS = {
     "https://www.instagram.com/recordpicker/",
     "https://www.youtube.com/@recordpicker",
     "https://www.facebook.com/profile.php?id=61591096987226",
+    "https://www.threads.net/@recordpicker",
 }
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
@@ -163,6 +164,7 @@ def main() -> None:
             'href="https://www.instagram.com/recordpicker/" rel="me"',
             'href="https://www.youtube.com/@recordpicker" rel="me"',
             'href="https://www.facebook.com/profile.php?id=61591096987226" rel="me"',
+            'href="https://www.threads.net/@recordpicker" rel="me"',
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")

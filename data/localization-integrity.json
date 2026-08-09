@@ -7,12 +7,12 @@
     "el": "31bbd2ebb799d7072962064f70c2b384a6c7938d5a655e241684454c76171404",
     "en-au": "a3513744eea46a3409403e20aa2f0a907aa148446ea3c76d431397cbdb1c9e87",
     "en-ca": "897a032e4d4b9fdb863f6c9fb1465bafca5a2985453105aff38a784d71113e05",
-    "en-gb": "ae7595fe31b11499d64c2191f132724b044dc3582a360f03225a01926c54aec4",
+    "en-gb": "a14aa2d0698e38311335195a44368a39ff2c40aaadf0b7301d0d420cd9d693df",
     "en-us": "4261f87cf036089c709732dfb413edffd09420b93608977596b715b1e34cfbc4",
     "es-es": "c29d00c3b757c5043439c91764ae51666108b7114b87017be0d491018289bfc8",
     "es-mx": "db23d5043c87f0e0ef6b4eff56bd1f83f91155f8cf59cbf301bc2488307af7e6",
     "fi": "cf187cc77418bb7d8c14bb9bdd3eed1498306a241dcd8ea5e72d8b1296c7df8d",
-    "fr": "4dff3915b3254c60e5fef096db9a4e8f4454cf4bf4acb6477ef867b7c6122a45",
+    "fr": "afbe75fa9cf2adc65376ab085065003250963f44ba2e00ce0438fee2d19bf367",
     "fr-ca": "5223291855d54631d85b4e77f5cd6aee6a9aa90491c53586775c115a08f0d314",
     "he": "331286b2a9bdea1f224fe3e2302264b3ba7f2c6a96f68ea430ea236311b8e39e",
     "hi": "db289464a96e749c92bab526092333aaf8c6c053bde588ce2d15f5c8d5867f9b",
@@ -35,6 +35,6 @@
   },
   "locale_group_count": 32,
   "page_count": 299,
-  "review_reason": "Aligned 2.0 preview feature names with the reviewed app and ASC terminology",
+  "review_reason": "Add official Threads identity and contest campaign attribution",
   "schema": 1
 }
