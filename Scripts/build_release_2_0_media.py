@@ -17,6 +17,7 @@ SUBMISSION = (
     / "2.0-20260809-v2"
 )
 DESTINATION = ROOT / "assets" / "screenshots" / "v20"
+SEARCH_SOURCE = DESTINATION / "source"
 
 APP_TO_SITE_LOCALE = {
     "ar-SA": "ar", "ca": "ca", "da": "da", "de-DE": "de", "el": "el",
@@ -74,6 +75,30 @@ def submission_sources() -> dict[str, dict[str, tuple[Path, tuple[int, int]]]]:
 SOURCES = submission_sources()
 
 
+def stage_search_results() -> int:
+    """Build the real Mac search-result illustration for every site locale."""
+    count = 0
+    for locale in APP_TO_SITE_LOCALE.values():
+        language = "fr" if locale in {"fr", "fr-ca"} else "en"
+        source = SEARCH_SOURCE / f"mac-search-results-{language}.jpeg"
+        if not source.is_file():
+            raise RuntimeError(f"Missing Mac search-result source: {source}")
+        with Image.open(source) as candidate:
+            if candidate.size != (1224, 768):
+                raise RuntimeError(
+                    f"Unexpected search-result size for {source}: {candidate.size} != (1224, 768)"
+                )
+            # The app-window capture is 1.594:1. Remove three neutral edge rows
+            # before scaling so the website derivative is exactly 16:10.
+            image = candidate.convert("RGB").crop((0, 1, 1224, 766))
+            image = image.resize((1440, 900), Image.Resampling.LANCZOS)
+        destination = DESTINATION / locale / "mac-search-results"
+        image.save(destination.with_suffix(".webp"), "WEBP", quality=84, method=6)
+        image.save(destination.with_suffix(".avif"), "AVIF", quality=62, speed=6)
+        count += 1
+    return count
+
+
 def main() -> None:
     count = 0
     for locale, sources in SOURCES.items():
@@ -95,6 +120,7 @@ def main() -> None:
                 image.save(destination.with_suffix(".webp"), "WEBP", quality=84, method=6)
                 image.save(destination.with_suffix(".avif"), "AVIF", quality=62, speed=6)
             count += 1
+    count += stage_search_results()
     print(f"Staged {count} clean functional 2.0 screenshots with AVIF and WebP derivatives.")
 
 

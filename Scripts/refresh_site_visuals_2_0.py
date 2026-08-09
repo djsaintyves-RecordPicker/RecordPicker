@@ -156,6 +156,19 @@ def home_preview(prefix: str, locale: str) -> str:
     )
 
 
+def mac_card_preview(prefix: str, locale: str, filename: str) -> str:
+    avif = asset_url(prefix, locale, filename, ".avif")
+    webp = asset_url(prefix, locale, filename, ".webp")
+    if not avif or not webp:
+        raise RuntimeError(f"Missing localized Mac card screenshot for {locale}: {filename}")
+    return (
+        '<div class="mac-card-preview"><figure><picture>'
+        f'<source type="image/avif" srcset="{avif}">'
+        f'<img alt="" src="{webp}" width="1440" height="900" decoding="async" loading="lazy">'
+        '</picture></figure></div>'
+    )
+
+
 def gallery(prefix: str, locale: str) -> str:
     groups = []
     platform_names = {"mac": "Mac", "iphone": "iPhone", "ipad": "iPad", "watch": "Apple Watch"}
@@ -178,7 +191,7 @@ def gallery(prefix: str, locale: str) -> str:
 def localize_existing_v20(text: str, locale: str) -> str:
     """Localize existing v20 figures and remove unsupported foreign fallbacks."""
     text = re.sub(
-        r'((?:mac-(?:home|collection|todays-pick|mood-pick|random-pick|data-quality|three-ways)|'
+        r'((?:mac-(?:home|collection|todays-pick|mood-pick|random-pick|data-quality|three-ways|search-results)|'
         r'iphone-(?:collection|todays-pick|mood-pick|random-pick)|'
         r'ipad-(?:collection|todays-pick|mood-pick|random-pick)|watch-random-pick))\.*(avif|webp)',
         r'\1.\2',
@@ -244,6 +257,30 @@ def update_page(page: Path) -> bool:
     depth = len(relative.parts) - 1
     prefix = "../" * depth
     text = localize_existing_v20(text, locale)
+
+    # The middle Mac feature card demonstrates full-text search with three
+    # live matches outlined in red. Keep it tied to the real localized app UI.
+    def refresh_mac_feature_row(match: re.Match[str]) -> str:
+        row = match.group(0)
+        cards = re.findall(r'<article class="card">.*?</article>', row, flags=re.DOTALL)
+        if len(cards) != 3:
+            return row
+        cards[1] = re.sub(
+            r'<div class="mac-card-preview">.*?</div>',
+            mac_card_preview(prefix, locale, "mac-search-results.jpeg"),
+            cards[1],
+            count=1,
+            flags=re.DOTALL,
+        )
+        return '<section class="mac-feature-row">' + ''.join(cards) + '</section>'
+
+    text = re.sub(
+        r'<section class="mac-feature-row">.*?</section>',
+        refresh_mac_feature_row,
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
 
     # The 2.0 preview belongs on localized home pages only. Keep this
     # idempotent so a later media refresh can safely replace the illustration.

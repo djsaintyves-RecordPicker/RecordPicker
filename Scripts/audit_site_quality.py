@@ -189,6 +189,32 @@ def main() -> None:
                     errors.append(
                         f"{relative}: Mac hero visual missing or still captioned"
                     )
+            feature_row = re.search(
+                r'<section class="mac-feature-row">(.*?)</section>',
+                text,
+                flags=re.DOTALL,
+            )
+            if feature_row:
+                feature_cards = re.findall(
+                    r'<article class="card">.*?</article>',
+                    feature_row.group(1),
+                    flags=re.DOTALL,
+                )
+                expected_search = (
+                    f"assets/screenshots/v20/{visual_locale}/mac-search-results.webp"
+                )
+                if len(feature_cards) != 3 or expected_search not in feature_cards[1]:
+                    errors.append(
+                        f"{relative}: localized Mac search-result illustration missing from middle card"
+                    )
+                elif "<figcaption" in feature_cards[1]:
+                    errors.append(
+                        f"{relative}: redundant caption remains on Mac search-result illustration"
+                    )
+                if len(feature_cards) == 3 and "mac-collection.webp" in feature_cards[1]:
+                    errors.append(
+                        f"{relative}: collection visual duplicated in Mac search card"
+                    )
         if kind in {"privacy/index.html", "readme/index.html", "support/index.html"}:
             if "support@recordpicker.app" not in text:
                 errors.append(f"{relative}: public support contact missing")
