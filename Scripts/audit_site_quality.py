@@ -164,6 +164,31 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        if kind == "mac-app/index.html":
+            if 'class="mac-icon-card"' in text:
+                errors.append(f"{relative}: redundant Mac app icon card remains")
+            visual_locale = (
+                relative.parts[0]
+                if relative.parts and relative.parts[0] in LOCALES
+                else "fr"
+            )
+            expected_visual = (
+                f"assets/screenshots/v20/{visual_locale}/mac-home.webp"
+            )
+            if expected_visual not in text:
+                errors.append(
+                    f"{relative}: localized Mac 2.0 home visual missing"
+                )
+            if 'class="mac-intro"' in text:
+                hero_visual = re.search(
+                    r'<figure class="mac-hero-visual">(.*?)</figure>',
+                    text,
+                    flags=re.DOTALL,
+                )
+                if not hero_visual or "<figcaption" in hero_visual.group(1):
+                    errors.append(
+                        f"{relative}: Mac hero visual missing or still captioned"
+                    )
         if kind in {"privacy/index.html", "readme/index.html", "support/index.html"}:
             if "support@recordpicker.app" not in text:
                 errors.append(f"{relative}: public support contact missing")
@@ -179,7 +204,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-balanced-visuals" not in text:
+        if "quality.css?v=20260809-v20-mac-product-hero" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
             intro = re.search(

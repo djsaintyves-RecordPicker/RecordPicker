@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSET_ROOT = ROOT / "assets/screenshots/v20"
-CSS_VERSION = "20260809-v20-balanced-visuals"
+CSS_VERSION = "20260809-v20-mac-product-hero"
 
 LOCALE_ALIASES = {
     "en-au": "en-us",

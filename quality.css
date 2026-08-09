@@ -719,6 +719,40 @@ main .kicker,
   margin-top: 44px;
 }
 
+/* The Mac introduction shows the product itself, not a redundant app icon. */
+.mac-intro {
+  grid-template-columns: minmax(340px, .85fr) minmax(520px, 1.15fr);
+  gap: clamp(28px, 4vw, 56px);
+}
+
+.mac-hero-visual {
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.mac-hero-visual picture,
+.mac-hero-visual img {
+  display: block;
+  width: 100%;
+}
+
+.mac-hero-visual img {
+  height: auto;
+  border-radius: 7px;
+  background: #fff;
+}
+
+@media (max-width: 1040px) {
+  .mac-intro {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* A miniature Random Pick flow: button press, draw, then a complete record card. */
 .random-pick-demo {
   margin: 28px 0 0;
