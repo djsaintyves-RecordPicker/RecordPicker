@@ -129,10 +129,8 @@ def main() -> None:
         if relative.parts[0] in {"en-au", "en-ca", "en-gb", "en-us"}:
             if "Today Pick" in text:
                 errors.append(f"{relative}: stale Today Pick product name")
-        if re.search(
-            r'assets/screenshots/v19/en-us/[^\"]+\.(?:avif|webp)\"', text
-        ):
-            errors.append(f"{relative}: unversioned optimized 1.9 screenshot")
+        if re.search(r'assets/screenshots/(?:v1[0-9]/|iphone/|ipad/|mac/)', text):
+            errors.append(f"{relative}: obsolete screenshot remains")
         for forbidden_visual in (
             "assets/screenshots/iphone/import.jpeg",
             "assets/screenshots/ipad/manual-edit.png",
@@ -168,7 +166,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-identity" not in text:
+        if "quality.css?v=20260809-v20-neutral" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
@@ -229,13 +227,15 @@ def main() -> None:
                 if required not in text:
                     errors.append(f"{relative}: compact home element {required} missing")
             if PUBLICATION_PHASE == "full":
-                for required in ("v19-hero", "v19-home-screens"):
+                for required in ("v20-hero", "v20-home-screens"):
                     if required not in text:
                         errors.append(f"{relative}: published home missing {required}")
         if kind == "mac-app/index.html" and "macOS 1.8" in text:
             errors.append(f"{relative}: stale macOS 1.8 label")
 
     media_sitemap = (ROOT / "sitemap-media.xml").read_text(encoding="utf-8")
+    if re.search(r"assets/screenshots/(?:v1[0-9]/|iphone/|ipad/|mac/)", media_sitemap):
+        errors.append("sitemap-media.xml: obsolete screenshot remains")
     for forbidden_visual in (
         "assets/screenshots/iphone/import.jpeg",
         "assets/screenshots/ipad/manual-edit.png",
@@ -290,7 +290,7 @@ def main() -> None:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
         )
-    expected_gallery_pages = expected_locales if PUBLICATION_PHASE == "full" else 0
+    expected_gallery_pages = 0
     if current_gallery_pages != expected_gallery_pages:
         errors.append(
             f"expected {expected_gallery_pages} current galleries, "
@@ -311,10 +311,18 @@ def main() -> None:
                 f"expected responsive AVIF/WebP pictures on at least {expected_locales * 2} pages, "
                 f"found {optimized_picture_pages}"
             )
-        if archived_gallery_pages != expected_locales:
+        if archived_gallery_pages != 0:
             errors.append(
-                f"expected {expected_locales} archived historical galleries, "
+                "obsolete screenshot archives should not be visible; "
                 f"found {archived_gallery_pages}"
+            )
+        preview_galleries = sum(
+            'data-preview-gallery="2.0"' in page.read_text(encoding="utf-8")
+            for page in pages
+        )
+        if preview_galleries != expected_locales:
+            errors.append(
+                f"expected {expected_locales} 2.0 preview galleries, found {preview_galleries}"
             )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")

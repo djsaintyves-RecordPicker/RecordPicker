@@ -285,39 +285,39 @@ picture {
   padding: 0 18px 18px;
 }
 
-.v19-hero-showcase {
+.v20-hero-showcase {
   min-height: 0;
 }
 
-.v19-hero img {
-  aspect-ratio: 64 / 45;
+.v20-hero img {
+  aspect-ratio: 8 / 5;
 }
 
-.v19-home-screens {
+.v20-home-screens {
   grid-template-columns: minmax(220px, 320px) minmax(360px, 600px);
   align-items: start;
   max-width: 960px;
 }
 
-.v19-home-screens .v19-home-phone {
+.v20-home-screens .v20-home-phone {
   grid-row: span 2;
 }
 
-.v19-home-screens .v19-home-mac,
-.v19-home-screens .v19-home-ipad {
+.v20-home-screens .v20-home-mac,
+.v20-home-screens .v20-home-ipad {
   grid-column: 2;
 }
 
-.v19-home-screens .v19-home-phone img {
-  aspect-ratio: 9 / 19.5;
+.v20-home-screens .v20-home-phone img {
+  aspect-ratio: auto;
 }
 
-.v19-home-screens .v19-home-mac img {
-  aspect-ratio: 64 / 45;
+.v20-home-screens .v20-home-mac img {
+  aspect-ratio: auto;
 }
 
-.v19-home-screens .v19-home-ipad img {
-  aspect-ratio: 3 / 4;
+.v20-home-screens .v20-home-ipad img {
+  aspect-ratio: auto;
 }
 
 .next-release {
@@ -333,9 +333,9 @@ picture {
   gap: 28px;
   margin-bottom: 34px;
   padding: 34px clamp(24px, 4vw, 48px);
-  border: 1px solid color-mix(in srgb, var(--red) 38%, var(--line));
+  border: 1px solid var(--line);
   border-radius: 12px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--red) 13%, var(--surface)), var(--surface));
+  background: var(--surface);
   box-shadow: var(--card-shadow);
 }
 
@@ -416,9 +416,9 @@ picture {
 
 .v20-preview-panel {
   padding: clamp(22px, 3.6vw, 36px);
-  border: 1px solid color-mix(in srgb, var(--red) 28%, var(--line));
+  border: 1px solid var(--line);
   border-radius: 16px;
-  background: color-mix(in srgb, var(--surface-raised) 96%, var(--red));
+  background: var(--surface-raised);
   box-shadow: var(--card-shadow);
 }
 
@@ -440,7 +440,7 @@ picture {
   padding: 15px 17px;
   border-inline-start: 3px solid var(--red);
   border-radius: 8px;
-  background: color-mix(in srgb, var(--surface-raised) 88%, var(--red));
+  background: var(--surface);
   color: var(--ink);
   font-weight: 760;
   line-height: 1.55;
@@ -478,30 +478,13 @@ picture {
   padding-inline: clamp(14px, 3vw, 28px);
 }
 
-.v19-grid {
-  grid-template-columns: minmax(220px, 320px) minmax(360px, 600px);
-  align-items: start;
-  max-width: 960px;
-}
-
-.v19-grid .v19-iphone {
-  grid-row: span 2;
-}
-
-.v19-grid .v19-mac,
-.v19-grid .v19-ipad {
-  grid-column: 2;
-}
-
-.v19-grid .v19-mac img {
-  aspect-ratio: 64 / 45;
-  object-fit: contain;
-}
-
-.v19-grid .v19-ipad img {
-  aspect-ratio: 3 / 4;
-  object-fit: contain;
-}
+.platform-shot-group { margin-top: 42px; }
+.platform-shot-group h3 { font-size: 1.12rem; }
+.v20-shot-grid { margin-top: 18px; }
+.v20-shot-grid.mac-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.v20-shot-grid.iphone-grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); }
+.v20-shot-grid.ipad-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.v20-shot-grid .shot-card img { aspect-ratio: auto; object-fit: contain; }
 
 @media (max-width: 760px) {
   .doc-hero h1 {
@@ -521,27 +504,22 @@ picture {
     gap: 24px;
   }
 
-  .v19-home-screens,
-  .v19-grid {
+  .v20-home-screens,
+  .v20-shot-grid.mac-grid,
+  .v20-shot-grid.iphone-grid,
+  .v20-shot-grid.ipad-grid {
     grid-template-columns: minmax(0, 1fr);
     max-width: 600px;
   }
 
-  .v19-home-screens .v19-home-phone,
-  .v19-home-screens .v19-home-mac,
-  .v19-home-screens .v19-home-ipad,
-  .v19-grid .v19-iphone,
-  .v19-grid .v19-mac,
-  .v19-grid .v19-ipad {
+  .v20-home-screens .v20-home-phone,
+  .v20-home-screens .v20-home-mac,
+  .v20-home-screens .v20-home-ipad {
     grid-column: auto;
     grid-row: auto;
   }
 
-  .v19-grid .v19-iphone {
-    max-width: 337px;
-  }
-
-  .v19-home-screens .v19-home-phone {
+  .v20-home-screens .v20-home-phone {
     max-width: 337px;
   }
 }
@@ -550,7 +528,7 @@ picture {
 .challenge-announcement {
   position: relative;
   z-index: 20;
-  background: linear-gradient(110deg, #2a0715 0%, #3d0b20 48%, #21104d 100%);
+  background: #17171a;
   color: #fff;
   border-bottom: 1px solid rgba(255,255,255,.14);
 }
@@ -563,10 +541,10 @@ picture {
   padding: 10px 18px;
   text-align: center;
 }
-.challenge-announcement strong { color: #ff6b84; font-weight: 900; }
+.challenge-announcement strong { color: #fff; font-weight: 900; }
 .challenge-announcement span { font-weight: 760; }
 .challenge-announcement b { color: #fff; font-size: .9rem; font-weight: 900; }
-.challenge-announcement a:hover b { color: #ff8ba0; }
+.challenge-announcement a:hover b { color: #d7d7dc; }
 .challenge-section {
   scroll-margin-top: 94px;
   display: grid;
@@ -579,11 +557,11 @@ picture {
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.12);
   border-radius: 18px;
-  background: radial-gradient(circle at 0 0, rgba(132,18,61,.68), transparent 38%), radial-gradient(circle at 100% 100%, rgba(54,31,124,.7), transparent 35%), #100812;
+  background: #111114;
   color: #fff;
-  box-shadow: 0 34px 90px rgba(28, 4, 17, .24);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, .22);
 }
-.challenge-kicker { margin: 0; color: #ff6b84; font-size: .88rem; font-weight: 900; text-transform: uppercase; }
+.challenge-kicker { margin: 0; color: #d7d7dc; font-size: .88rem; font-weight: 900; text-transform: uppercase; }
 .challenge-section h2 { max-width: 14ch; margin-top: 15px; color: #fff; font-size: clamp(2.55rem, 5.5vw, 5rem); line-height: .96; text-wrap: balance; }
 .challenge-lead { max-width: 650px; margin: 22px 0 0; color: rgba(255,255,255,.78); font-size: clamp(1.05rem, 1.7vw, 1.28rem); line-height: 1.6; }
 .challenge-steps { display: grid; gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }
@@ -600,6 +578,21 @@ picture {
 .challenge-media { width: min(100%, 350px); margin: 0 auto; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: #09050b; box-shadow: 0 30px 70px rgba(0,0,0,.42); }
 .challenge-media video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #09050b; object-fit: cover; }
 .challenge-media figcaption { padding: 12px 14px 14px; color: rgba(255,255,255,.62); font-size: .78rem; font-weight: 780; text-align: center; }
+
+/* App screenshots keep their native aspect ratio; site framing never crops UI. */
+.context-visual img,
+.feature-visual img,
+.screen-grid img,
+.shot-card img,
+.mac-card-preview img,
+.mac-screenshot img,
+.device-frame img {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
 html[dir="rtl"] .challenge-steps li { grid-template-columns: minmax(0,1fr) 38px; }
 html[dir="rtl"] .challenge-steps li > span { grid-column: 2; grid-row: 1; }
 html[dir="rtl"] .challenge-steps strong { grid-column: 1; grid-row: 1; }

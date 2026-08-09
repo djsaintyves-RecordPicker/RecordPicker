@@ -22,6 +22,7 @@ métadonnées structurées ne remplacent pas celles de la 1.9.
 ```sh
 python3 Scripts/prepare_site_2_0_preview.py
 python3 Scripts/build_release_2_0_media.py
+python3 Scripts/refresh_site_visuals_2_0.py
 python3 Scripts/refine_homepage_descriptions.py
 python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
@@ -39,11 +40,14 @@ Le script enrichit les blocs 2.0 des 33 accueils, 33 pages Fonctionnalités et
 - Conserver `data/release-state.json` avec `1.9` comme version courante et
   `2.0` comme prochaine version jusqu’à confirmation App Store.
 - Ne pas utiliser de capture de tutoriel ou d’onboarding.
-- Trois captures fonctionnelles 2.0 anglaises sont prévalidées et préparées
-  dans `assets/screenshots/v20/en-us/` : Disque du jour sur iPhone et iPad,
-  puis l’accueil Mac présentant les trois modes de sélection. Elles ne doivent
-  être rendues publiques sur une page localisée qu’avec une légende traduite et
-  après décision explicite sur l’emploi de captures anglaises hors pages anglaises.
+- Le jeu web 2.0 comprend les vues fonctionnelles Random Pick, Disque du jour,
+  Mood Pick et Collection sur iPhone/iPad, ainsi que l’accueil, la collection,
+  les trois modes de choix et la qualité des données sur Mac. Les captures
+  françaises, allemandes, espagnoles, japonaises et chinoises sont utilisées
+  lorsqu’elles existent ; une capture anglaise validée sert de repli.
+- Les anciennes galeries 1.8/1.9 ne sont plus affichées. Le script
+  `refresh_site_visuals_2_0.py` remplace les références obsolètes, conserve le
+  ratio natif des écrans et refuse de réintroduire un tutoriel ou onboarding.
 - N’ajouter que des captures fonctionnelles réelles de la candidate 2.0,
   détourées et vérifiées aux formats desktop, tablette et mobile.
 - Ne pas publier le Graphe de collection avec une collection vide ou des

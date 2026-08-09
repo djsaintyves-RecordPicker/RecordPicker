@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the complete 1.9 publication without changing the working tree."""
+"""Exercise the published 1.9 / preview 2.0 site without changing the working tree."""
 
 from __future__ import annotations
 
@@ -31,12 +31,12 @@ def main() -> None:
             target,
             ignore=shutil.ignore_patterns(".git", "__pycache__", "*.pyc"),
         )
-        publish = target / "Scripts" / "publish_release_1_9.py"
+        refresh = target / "Scripts" / "refresh_site_visuals_2_0.py"
         audit = target / "Scripts" / "audit_site_quality.py"
-        run("python3", str(publish), "--apply", "--confirm-app-store", cwd=target)
+        run("python3", str(refresh), cwd=target)
         run("python3", str(audit), cwd=target)
-        # A second pass proves that publication remains safely idempotent.
-        run("python3", str(publish), "--apply", "--confirm-app-store", cwd=target)
+        # A second pass proves that the visual refresh remains safely idempotent.
+        run("python3", str(refresh), cwd=target)
         run("python3", str(audit), cwd=target)
 
         state = json.loads(
@@ -52,24 +52,24 @@ def main() -> None:
             home = (root / "index.html").read_text(encoding="utf-8")
             readme = (root / "readme" / "index.html").read_text(encoding="utf-8")
             screenshots = (root / "screenshots" / "index.html").read_text(encoding="utf-8")
-            assert "v19-hero" in home and "v19-home-screens" in home
+            assert "v20-hero" in home and "v20-home-screens" in home
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{following}"' in home
             assert f'data-release-version="{following}"' in readme
             assert f'data-release-version="{following}"' in screenshots
-            assert f'data-release-gallery="{current}"' in screenshots
-            assert "data-previous-versions" in screenshots
+            assert f'data-release-gallery="{current}"' not in screenshots
+            assert 'data-preview-gallery="2.0"' in screenshots
+            assert "data-previous-versions" not in screenshots
 
         css = (target / "quality.css").read_text(encoding="utf-8")
         for selector in (
-            ".v19-hero-showcase",
-            ".v19-home-screens",
-            ".v19-grid",
-            ".screenshot-archive",
+            ".v20-hero-showcase",
+            ".v20-home-screens",
+            ".v20-shot-grid",
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: complete 1.9 publication is idempotent and responsive-ready.")
+    print("OK: published 1.9 state and 2.0 visual preview are idempotent and responsive-ready.")
 
 
 if __name__ == "__main__":
