@@ -953,3 +953,27 @@ main .kicker,
   .random-pick-title { font-size: var(--type-body); }
   .random-pick-button { width: 100%; }
 }
+
+/* The two opening feature screenshots carry equal editorial weight. Their
+   surrounding copy already supplies the context, so no generic captions are
+   needed beneath them. */
+.feature-intro {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.feature-intro .context-visual {
+  display: flex;
+  align-items: center;
+}
+
+.feature-intro picture,
+.feature-intro img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .feature-intro {
+    grid-template-columns: 1fr;
+  }
+}

@@ -13,7 +13,7 @@ from refresh_site_visuals_2_0 import asset_url, page_locale
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "data/release-state.json"
-CSS_VERSION = "20260809-v20-pick-carousel"
+CSS_VERSION = "20260809-v20-balanced-visuals"
 JS_VERSION = "20260809-v20-pick-carousel"
 LOCALE_DIRS = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
@@ -149,7 +149,7 @@ def preview_figure(prefix: str, locale: str, filename: str) -> str:
         f'<picture><source srcset="{avif}" type="image/avif">'
         f'<source srcset="{webp}" type="image/webp">'
         f'<img loading="lazy" alt="" src="{webp}" width="1440" height="900" decoding="async">'
-        '</picture><figcaption>Record Picker 2.0</figcaption></figure>'
+        '</picture></figure>'
     )
 
 
@@ -188,14 +188,33 @@ def promote_readme(text: str, prefix: str, locale: str) -> str:
         count=1,
         flags=re.DOTALL,
     )
-    text = re.sub(
-        r'<div class="context-pair feature-intro">.*?</div>',
+    intro = (
         '<div class="context-pair feature-intro">'
         + preview_figure(prefix, locale, "mac-home.jpeg")
         + preview_figure(prefix, locale, "mac-todays-pick.jpeg")
-        + '</div>',
+        + '</div>'
+    )
+    if '<div class="context-pair feature-intro">' in text:
+        text = re.sub(
+            r'<div class="context-pair feature-intro">.*?</div>',
+            intro,
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+    else:
+        # Thai and Vietnamese use the compact Features template. Place the
+        # same visual introduction after its opening overview list.
+        text = text.replace('</ul><h2>', f'</ul>{intro}<h2>', 1)
+    # Every feature card already has a precise localized heading. A generic
+    # version caption beneath its screenshot only repeats context and adds
+    # visual noise.
+    text = re.sub(
+        r'(<article class="card feature-card">.*?</article>)',
+        lambda match: match.group(1).replace(
+            '<figcaption>Record Picker 2.0</figcaption>', ''
+        ),
         text,
-        count=1,
         flags=re.DOTALL,
     )
     return text

@@ -57,6 +57,10 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
+            assert readme.count('<div class="context-pair feature-intro">') == 1
+            intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
+            assert intro.count('<figure class="context-visual wide">') == 2
+            assert '<figcaption>Record Picker 2.0</figcaption>' not in readme
             assert f'data-release-version="{current}"' in screenshots
             assert f'data-release-gallery="{current}"' in screenshots
             assert 'data-preview-gallery="2.0"' not in screenshots

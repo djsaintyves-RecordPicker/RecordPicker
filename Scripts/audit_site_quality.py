@@ -167,8 +167,18 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-v20-pick-carousel" not in text:
+        if "quality.css?v=20260809-v20-balanced-visuals" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
+        if kind == "readme/index.html":
+            intro = re.search(
+                r'<div class="context-pair feature-intro">(.*?)</div>',
+                text,
+                flags=re.DOTALL,
+            )
+            if not intro or intro.group(1).count('<figure class="context-visual wide">') != 2:
+                errors.append(f"{relative}: balanced two-visual feature intro missing")
+            if '<figcaption>Record Picker 2.0</figcaption>' in text:
+                errors.append(f"{relative}: redundant generic screenshot caption")
         if kind == "index.html":
             if 'class="v20-home-preview"' not in text:
                 errors.append(f"{relative}: localized 2.0 home preview missing")
