@@ -51,6 +51,10 @@ def main() -> None:
             french = (french_root / relative).read_text(encoding="utf-8")
             assert "tirage équitable" not in french.casefold(), french_root / relative
         assert "Tirage personnalisable" in (french_root / "index.html").read_text(encoding="utf-8")
+        french_home = (french_root / "index.html").read_text(encoding="utf-8")
+        assert "Cataloguez vos vinyles et vos CD" in french_home
+        assert "Votre collection reste privée" in french_home
+        assert "vrais collectionneurs" not in french_home.casefold()
     print(
         f"OK: {checked} localized 2.0 previews preserve five approved product facts, "
         "privacy meaning, 1.9 availability and the contest campaign."

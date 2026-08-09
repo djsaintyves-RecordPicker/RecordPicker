@@ -191,17 +191,44 @@ def challenge_fragments(text: str) -> tuple[str, ...]:
 
 
 def improve_french_copy(text: str) -> str:
-    old = (
-        "Passez le bon disque. Redécouvrez votre collection sur iPhone, iPad, Apple Watch "
-        "et Mac, avec un tirage équitable, Mood Pick, iCloud et des outils pensés pour les "
-        "vrais collectionneurs."
+    hero_descriptions = (
+        (
+            "Passez le bon disque. Redécouvrez votre collection sur iPhone, iPad, Apple Watch "
+            "et Mac, avec un tirage équitable, Mood Pick, iCloud et des outils pensés pour les "
+            "vrais collectionneurs."
+        ),
+        (
+            "Passez le bon disque. Redécouvrez votre collection sur iPhone, iPad, Apple Watch "
+            "et Mac grâce au tirage aléatoire personnalisable, à Mood Pick, au Disque du jour, "
+            "à iCloud et aux outils conçus pour les collectionneurs."
+        ),
+        (
+            "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec "
+            "le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection "
+            "reste privée et peut se synchroniser via iCloud entre iPhone, iPad, Apple Watch et Mac."
+        ),
     )
-    new = (
-        "Passez le bon disque. Redécouvrez votre collection sur iPhone, iPad, Apple Watch "
-        "et Mac grâce au tirage aléatoire personnalisable, à Mood Pick, au Disque du jour, "
-        "à iCloud et aux outils conçus pour les collectionneurs."
+    new_hero_description = (
+        "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec "
+        "le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection "
+        "reste privée, peut se synchroniser via iCloud entre iPhone, iPad et Mac, et vous "
+        "accompagne aussi sur Apple Watch."
     )
-    text = text.replace(old, new)
+    for description in hero_descriptions:
+        text = text.replace(description, new_hero_description)
+
+    old_seo_description = (
+        "Record Picker catalogue les vinyles, CD et albums favoris, puis propose le prochain "
+        "disque à écouter selon vos filtres, vos favoris, vos exclusions et l'ambiance du moment."
+    )
+    new_seo_description = (
+        "Cataloguez vos vinyles et CD, puis choisissez quoi écouter avec le tirage aléatoire, "
+        "Mood Pick et le Disque du jour sur iPhone, iPad, Apple Watch et Mac."
+    )
+    text = text.replace(old_seo_description, new_seo_description)
+    text = text.replace(
+        old_seo_description.replace("'", "&#x27;"), new_seo_description
+    )
     text = text.replace("Tirage équitable", "Tirage personnalisable")
     text = text.replace(
         "Favorisez les disques moins écoutés, filtrez par année, genre, format, vitesse "
