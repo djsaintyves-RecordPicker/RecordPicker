@@ -245,10 +245,21 @@ def main() -> None:
         if '<h2>Catalogue, en beauté</h2>' in text:
             errors.append(f"{relative}: Mac feature title is not phrased as an infinitive")
         if kind == "index.html":
-            if 'class="v20-home-preview"' not in text:
-                errors.append(f"{relative}: localized 2.0 home preview missing")
-            if "mac-home.avif" not in text or "mac-home.webp" not in text:
-                errors.append(f"{relative}: optimized 2.0 Mac home sources missing")
+            hero_showcase = re.search(
+                r'<div class="hero-showcase v20-hero-showcase">(.*?)</div>',
+                text,
+                flags=re.DOTALL,
+            )
+            if (
+                not hero_showcase
+                or "mac-home.avif" not in hero_showcase.group(1)
+                or "mac-home.webp" not in hero_showcase.group(1)
+            ):
+                errors.append(f"{relative}: localized three-choice screen missing from hero")
+            elif "<figcaption" in hero_showcase.group(1):
+                errors.append(f"{relative}: redundant homepage hero caption remains")
+            if 'class="v20-home-preview"' in text:
+                errors.append(f"{relative}: three-choice screen is duplicated below the hero")
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "fr"

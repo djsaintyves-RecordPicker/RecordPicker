@@ -139,18 +139,18 @@ def picture(prefix: str, locale: str, platform: str, filename: str) -> str:
 
 
 def home_preview(prefix: str, locale: str) -> str:
-    """Return the authentic, locale-aware Mac home with the three pick cartridges."""
+    """Return the authentic, locale-aware hero with the three pick cartridges."""
     filename = "mac-home.jpeg"
     avif = asset_url(prefix, locale, filename, ".avif")
     webp = asset_url(prefix, locale, filename, ".webp")
     if not avif or not webp:
         raise RuntimeError(f"Missing localized Mac home screenshot for {locale}")
     return (
-        '<figure class="v20-home-preview">'
+        '<figure class="device-frame wide-shot v20-hero">'
         '<picture>'
         f'<source srcset="{avif}" type="image/avif">'
         f'<source srcset="{webp}" type="image/webp">'
-        f'<img loading="lazy" alt="" src="{webp}" width="1440" height="900" decoding="async">'
+        f'<img fetchpriority="high" alt="" src="{webp}" width="1440" height="900" decoding="async">'
         '</picture>'
         '</figure>'
     )
@@ -282,21 +282,26 @@ def update_page(page: Path) -> bool:
         flags=re.DOTALL,
     )
 
-    # The 2.0 preview belongs on localized home pages only. Keep this
-    # idempotent so a later media refresh can safely replace the illustration.
-    if 'class="section next-release v20-preview"' in text:
-        def refresh_home_preview(match: re.Match[str]) -> str:
-            section = re.sub(
-                r'<figure class="v20-home-preview">.*?</figure>',
-                "",
-                match.group(0),
-                flags=re.DOTALL,
-            )
-            return section.replace("</section>", home_preview(prefix, locale) + "</section>")
-
+    is_home = relative == Path("index.html") or (
+        len(relative.parts) == 2
+        and relative.parts[0] in SITE_LOCALES
+        and relative.name == "index.html"
+    )
+    if is_home:
+        # The three-choice screen communicates the product in one glance, so it
+        # belongs in the first viewport. Do not repeat it in the release notes.
         text = re.sub(
-            r'<section class="section next-release v20-preview".*?</section>',
-            refresh_home_preview,
+            r'<div class="hero-showcase v20-hero-showcase">.*?</div>',
+            '<div class="hero-showcase v20-hero-showcase">'
+            + home_preview(prefix, locale)
+            + '</div>',
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        text = re.sub(
+            r'<figure class="v20-home-preview">.*?</figure>',
+            "",
             text,
             count=1,
             flags=re.DOTALL,
