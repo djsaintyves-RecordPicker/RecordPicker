@@ -62,8 +62,9 @@ def main() -> None:
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
             assert '<figcaption>Record Picker 2.0</figcaption>' not in readme
-            assert f'data-release-version="{current}"' in screenshots
             assert f'data-release-gallery="{current}"' in screenshots
+            assert 'class="media-section v20-preview' not in screenshots
+            assert 'class="media-section current-release v20-preview' not in screenshots
             assert 'data-preview-gallery="2.0"' not in screenshots
             if root == target or root.name in {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
                 assert "watch-random-pick" in screenshots

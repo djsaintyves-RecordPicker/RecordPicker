@@ -341,6 +341,13 @@ def main() -> None:
             watch_locales = {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}
             if directory_locale in watch_locales and "watch-random-pick" not in text:
                 errors.append(f"{relative}: localized watchOS 2.0 preview missing")
+            if re.search(
+                r'<section class="media-section[^\"]*v20-preview[^\"]*"',
+                text,
+            ):
+                errors.append(
+                    f"{relative}: redundant 2.0 release summary remains above screenshot gallery"
+                )
         if kind in {"privacy/index.html", "mac-app/index.html"} and re.search(r'Record Picker v?1\.9|macOS 1\.9', text):
             errors.append(f"{relative}: stale current-version label")
         if 'content="https://recordpicker.app/assets/brand/icon-512.png"' in text:

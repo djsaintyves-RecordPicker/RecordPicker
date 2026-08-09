@@ -221,18 +221,13 @@ def promote_readme(text: str, prefix: str, locale: str) -> str:
 
 
 def promote_screenshots(text: str) -> str:
-    old = release_block(text, "1.9")
-    current = release_block(text, "2.0")
-    if not current:
-        raise RuntimeError("Expected localized 1.9 and 2.0 screenshot introductions")
-    if old:
-        available = kicker(old.group(0))
-        promoted = current.group(0).replace("media-section next-release v20-preview", "media-section v20-preview current-release")
-        promoted = re.sub(r'<p class="kicker">.*?</p>', f'<p class="kicker">{available}</p>', promoted, count=1)
-        text = text[:current.start()] + promoted + text[current.end():]
-        old = release_block(text, "1.9")
-        if old:
-            text = text[:old.start()] + text[old.end():]
+    # The gallery heading already states the current version. Release-note
+    # introductions belong on the homepage and Features page, not above the
+    # same screenshots a second time.
+    for version in ("1.9", "2.0"):
+        block = release_block(text, version)
+        if block:
+            text = text[:block.start()] + text[block.end():]
     return text.replace('data-preview-gallery="2.0"', 'data-release-gallery="2.0"')
 
 

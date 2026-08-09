@@ -345,6 +345,15 @@ def update_page(page: Path) -> bool:
         )
 
     if relative.name == "index.html" and relative.parent.name == "screenshots":
+        # A screenshots page should open directly on the gallery. The full
+        # 2.0 editorial summary is already present on the homepage.
+        text = re.sub(
+            r'<section class="media-section[^\"]*v20-preview[^\"]*"[^>]*data-release-version="2\.0"[^>]*>.*?</section>',
+            "",
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
         text = re.sub(
             r'<section class="media-section v(?:19|20)-screenshot-gallery".*?</section>',
             gallery(prefix, locale),

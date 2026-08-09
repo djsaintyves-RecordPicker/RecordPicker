@@ -255,12 +255,18 @@ def update_page(path: Path, copy: ReleaseCopy, *, french: bool = False) -> bool:
     match = RELEASE_BLOCK.search(text)
     if not match:
         raise RuntimeError(f"No 2.0 preview block in {path}")
-    status = preview_status(match.group(0), path)
-    if path.parent.name == "readme":
-        replacement = preview_card(copy, status)
+    if path.parent.name == "screenshots":
+        # The screenshots page is a gallery, not a second release-notes page.
+        # Keep the version context in the gallery heading and do not duplicate
+        # the full editorial preview already shown on the homepage.
+        updated = text[:match.start()] + text[match.end():]
     else:
-        replacement = preview_section(copy, status, path.parent.name == "screenshots")
-    updated = text[:match.start()] + replacement + text[match.end():]
+        status = preview_status(match.group(0), path)
+        if path.parent.name == "readme":
+            replacement = preview_card(copy, status)
+        else:
+            replacement = preview_section(copy, status, False)
+        updated = text[:match.start()] + replacement + text[match.end():]
     if french:
         updated = improve_french_copy(updated)
     if challenge_fragments(updated) != before_challenge:
