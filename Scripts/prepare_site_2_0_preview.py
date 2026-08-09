@@ -72,9 +72,9 @@ FRENCH_COPY = {
     "fr-FR": ReleaseCopy(
         "Record Picker 2.0 est notre évolution la plus importante : l’expérience "
         "s’organise désormais autour de trois façons de choisir le prochain disque — "
-        "Le disque du jour, Mood Pick et Random Pick.",
+        "Disque du jour, Mood Pick et Random Pick.",
         (
-            "Le disque du jour relie l’actualité musicale vérifiée — anniversaires, "
+            "Disque du jour relie l’actualité musicale vérifiée — anniversaires, "
             "rééditions et, si vous l’activez, concerts à proximité — aux disques de "
             "votre collection ou de votre liste de souhaits. Chaque suggestion en "
             "explique la raison et cite sa source.",
@@ -94,9 +94,9 @@ FRENCH_COPY = {
     "fr-CA": ReleaseCopy(
         "Record Picker 2.0 est notre évolution la plus importante : l’expérience "
         "s’organise désormais autour de trois façons de choisir le prochain disque — "
-        "Le disque du jour, Mood Pick et Random Pick.",
+        "Disque du jour, Mood Pick et Random Pick.",
         (
-            "Le disque du jour relie l’actualité musicale vérifiée — anniversaires, "
+            "Disque du jour relie l’actualité musicale vérifiée — anniversaires, "
             "rééditions et, si vous l’activez, concerts à proximité — aux disques de "
             "votre collection ou de votre liste de souhaits. Chaque suggestion en "
             "explique la raison et cite sa source.",
