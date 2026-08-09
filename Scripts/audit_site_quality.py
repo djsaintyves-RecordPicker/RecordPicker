@@ -260,6 +260,17 @@ def main() -> None:
                 errors.append(f"{relative}: redundant homepage hero caption remains")
             if 'class="v20-home-preview"' in text:
                 errors.append(f"{relative}: three-choice screen is duplicated below the hero")
+            home_gallery = re.search(
+                r'<div class="screen-grid current-screens v20-home-screens">(.*?)</div>',
+                text,
+                flags=re.DOTALL,
+            )
+            if (
+                not home_gallery
+                or "iphone-todays-pick.webp" not in home_gallery.group(1)
+                or "mac-collection.webp" not in home_gallery.group(1)
+            ):
+                errors.append(f"{relative}: complete localized homepage gallery missing")
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "fr"
@@ -274,6 +285,10 @@ def main() -> None:
             )
         if re.search(r'<img[^>]+src="[^"]*(?:tutorial|onboarding|walkthrough)', text, flags=re.IGNORECASE):
             errors.append(f"{relative}: forbidden tutorial image")
+        if re.search(r'<(?:img\b[^>]*\bsrc|source\b[^>]*\bsrcset)="(?:"|\?)', text):
+            errors.append(f"{relative}: empty or query-only image source")
+        if re.search(r'<figcaption(?![^>]*class="visually-hidden")', text):
+            errors.append(f"{relative}: visible figure caption remains")
         for image_tag in re.findall(r'<img\b[^>]*>', text):
             for attribute in ("alt", "width", "height"):
                 if not re.search(rf'\b{attribute}="[^"]*"', image_tag):

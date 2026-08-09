@@ -169,6 +169,29 @@ def mac_card_preview(prefix: str, locale: str, filename: str) -> str:
     )
 
 
+def home_gallery(prefix: str, locale: str) -> str:
+    """Return two valid, complementary homepage previews without captions."""
+    items = (
+        ("v20-home-phone", "iphone", "iphone-todays-pick.png"),
+        ("v20-home-mac", "mac", "mac-collection.jpeg"),
+    )
+    figures = []
+    for class_name, platform, filename in items:
+        avif = asset_url(prefix, locale, filename, ".avif")
+        webp = asset_url(prefix, locale, filename, ".webp")
+        if not avif or not webp:
+            raise RuntimeError(f"Missing localized homepage preview for {locale}: {filename}")
+        width, height = DIMENSIONS[platform]
+        figures.append(
+            f'<figure class="current-screen {class_name}"><picture>'
+            f'<source srcset="{avif}" type="image/avif">'
+            f'<source srcset="{webp}" type="image/webp">'
+            f'<img loading="lazy" alt="" src="{webp}" width="{width}" height="{height}" decoding="async">'
+            '</picture></figure>'
+        )
+    return '<div class="screen-grid current-screens v20-home-screens">' + ''.join(figures) + '</div>'
+
+
 def gallery(prefix: str, locale: str) -> str:
     groups = []
     platform_names = {"mac": "Mac", "iphone": "iPhone", "ipad": "iPad", "watch": "Apple Watch"}
@@ -306,6 +329,13 @@ def update_page(page: Path) -> bool:
             count=1,
             flags=re.DOTALL,
         )
+        text = re.sub(
+            r'<div class="screen-grid current-screens v20-home-screens">.*?</div>',
+            home_gallery(prefix, locale),
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
 
     if relative.name == "index.html" and relative.parent.name == "screenshots":
         text = re.sub(
@@ -329,9 +359,11 @@ def update_page(page: Path) -> bool:
     )
     text = url_pattern.sub(lambda match: replace_screenshot_url(match, locale), text)
     text = re.sub(r'<img\b[^>]*>', update_image_tag, text)
+    # Screenshot titles already explain their images. Keep only captions that
+    # are explicitly hidden for accessibility; visible legends are redundant.
     text = re.sub(
-        r'(<figure\b[^>]*>.*?assets/screenshots/v20/.*?<figcaption>).*?(</figcaption>)',
-        r'\1Record Picker 2.0\2',
+        r'<figcaption(?![^>]*class="visually-hidden")[^>]*>.*?</figcaption>',
+        "",
         text,
         flags=re.DOTALL,
     )
