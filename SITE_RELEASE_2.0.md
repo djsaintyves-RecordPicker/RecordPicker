@@ -27,6 +27,7 @@ python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/audit_release_2_0_semantics.py
 python3 Scripts/audit_site_quality.py
+python3 ../RecordPicker/Scripts/audit_site.py .
 ```
 
 Le script enrichit les blocs 2.0 des 33 accueils, 33 pages Fonctionnalités et

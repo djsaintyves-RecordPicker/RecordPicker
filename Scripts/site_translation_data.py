@@ -38,10 +38,10 @@ TODAY_PICK_TRANSLATIONS = {
     ),
     "fr-CA": (
         "Disque du jour",
-        "Une raison liée à l’actualité de redécouvrir un disque que tu possèdes déjà.",
+        "Une suggestion liée à l’actualité pour redécouvrir un disque que vous possédez déjà.",
         "Pourquoi ce disque aujourd’hui?",
-        "Le rapprochement s’effectue sur cet appareil. Ta collection et ta liste de souhaits ne sont jamais envoyées au service d’actualité musicale.",
-        "Actualités et rééditions liées aux disques que tu souhaites. Elles ne sont jamais présentées comme des disques que tu possèdes.",
+        "Le rapprochement s’effectue sur cet appareil. Votre collection et votre liste de souhaits ne sont jamais envoyées au service d’actualité musicale.",
+        "Actualités et rééditions liées aux disques que vous souhaitez. Elles ne sont jamais présentées comme des disques que vous possédez.",
     ),
     "he": (
         "תקליט היום",
@@ -138,7 +138,7 @@ RELEASE_18_OVERRIDES = {
     ),
     "fr-CA": (
         "Record Picker 1.8 transforme la qualité de la collection en actions concrètes.",
-        ["Sépare les corrections fiables des décisions qui demandent ton attention.", "Compare côte à côte les différences entre MusicBrainz et Discogs.", "Explique clairement l’importation, la qualité des données, Random Pick, Mood Pick et Free/Pro.", "Conserve l’année de sortie originale et l’année de l’édition exacte."],
+        ["Sépare les corrections fiables des décisions qui demandent votre intervention.", "Compare côte à côte les différences entre MusicBrainz et Discogs.", "Explique clairement l’importation, la qualité des données, Random Pick, Mood Pick et Free/Pro.", "Conserve l’année de sortie originale et l’année de l’édition exacte."],
     ),
     "he": (
         "Record Picker 1.8 הופכת את איכות האוסף לפעולות ברורות.",
