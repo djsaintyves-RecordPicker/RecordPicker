@@ -8,12 +8,12 @@
     "en-au": "cd9a303a24f550f23233eb08e17a85c75449a236d68b25ca21d4856de6ad54aa",
     "en-ca": "bdd33706febaafd86671a5e5b0df592d58b445b9fb541ba7d4b1f28ed2c23f50",
     "en-gb": "30a54b69f867e4d7d98af9cc0d02913531451c70eb05ac67d4f34388cc4ebac9",
-    "en-us": "32281fcdecd68fc895a9b80cc639bf70d66cdf33d13744f38b072639ce8a17b2",
+    "en-us": "63e8a36cb45fd5f9b6e852930d5e4ad1641261cdc1ef2c67d36ae9fe59d58e6c",
     "es-es": "e8541fd46d77ac696e364b52d84e7d75de83b42733ff834ec17785f43f51a083",
     "es-mx": "5ee0489161051781e1f9b4d55c45eddfcc67068661e3d843fb336a232616f2a0",
     "fi": "1817a6b49130c895f1132d9c79421200fa247b0e2ebc524d8290656471bd340e",
-    "fr": "66e060b18d21608acaef99e48deb396a94cd7a40ebc3f94e5a4a06a32a92780a",
-    "fr-ca": "3902c3055790544380ba40f78699fc513fcbef5cd87a7cfd3441c8eca98ca029",
+    "fr": "c55291096a7b84e6be9f7401dc7c141791a2b7cc984b867c8acfe77ccbfda7cd",
+    "fr-ca": "a2b140a0876821df01b1bff10f5a6ae64d3784da5d10fdf3bb198f07ee2c19c8",
     "he": "a98dd7935e7c0ead4fece0ee1ae9edc448828bf20403e79026aab5bab0bdd13c",
     "hi": "994f82b5b677f6e412f56ab75a2e96288a5403cda93f5219678c7e2d705c805b",
     "id": "07bd2232c285d99bd095a8c43b873184a47aef7a8c46d5c65bb3593633316ac1",
@@ -35,6 +35,6 @@
   },
   "locale_group_count": 32,
   "page_count": 299,
-  "review_reason": "Use App Store submission screenshots for every supported site locale and forbid English visual fallbacks",
+  "review_reason": "Replace vague French Mac tagline with a concrete native-app promise",
   "schema": 1
 }
