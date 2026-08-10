@@ -164,6 +164,29 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        if kind == "readme/index.html":
+            hero_title = re.search(
+                r'<section class="doc-hero".*?<h1[^>]*>(.*?)</h1>',
+                text,
+                flags=re.DOTALL,
+            )
+            content = re.search(
+                r'<section class="doc-content">(.*?)</section>',
+                text,
+                flags=re.DOTALL,
+            )
+            if hero_title and content:
+                first_heading = re.search(
+                    r'<h2[^>]*>(.*?)</h2>',
+                    content.group(1),
+                    flags=re.DOTALL,
+                )
+                if first_heading:
+                    plain = lambda value: re.sub(r'<[^>]+>', '', value).strip().casefold()
+                    if plain(hero_title.group(1)) == plain(first_heading.group(1)):
+                        errors.append(
+                            f"{relative}: page title duplicated as first Features heading"
+                        )
         if kind == "mac-app/index.html":
             if 'class="mac-icon-card"' in text:
                 errors.append(f"{relative}: redundant Mac app icon card remains")

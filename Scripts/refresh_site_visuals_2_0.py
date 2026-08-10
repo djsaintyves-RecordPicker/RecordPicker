@@ -281,6 +281,22 @@ def update_page(page: Path) -> bool:
     prefix = "../" * depth
     text = localize_existing_v20(text, locale)
 
+    if relative.name == "index.html" and relative.parent.name == "readme":
+        # The document hero already names the page. Remove the first content
+        # heading only when it repeats that localized title verbatim.
+        hero_title = re.search(r'<section class="doc-hero".*?<h1[^>]*>(.*?)</h1>', text, re.DOTALL)
+        content = re.search(r'<section class="doc-content">(.*?)</section>', text, re.DOTALL)
+        if hero_title and content:
+            first_heading = re.search(r'<h2[^>]*>(.*?)</h2>', content.group(1), re.DOTALL)
+            if first_heading:
+                plain = lambda value: re.sub(r'<[^>]+>', '', value).strip().casefold()
+                if plain(hero_title.group(1)) == plain(first_heading.group(1)):
+                    cleaned = (
+                        content.group(1)[: first_heading.start()]
+                        + content.group(1)[first_heading.end() :]
+                    )
+                    text = text[: content.start(1)] + cleaned + text[content.end(1) :]
+
     # The middle Mac feature card demonstrates full-text search with three
     # live matches outlined in red. Keep it tied to the real localized app UI.
     def refresh_mac_feature_row(match: re.Match[str]) -> str:
