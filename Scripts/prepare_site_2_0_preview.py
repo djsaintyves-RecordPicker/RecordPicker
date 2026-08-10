@@ -10,6 +10,7 @@ and every #RecordPickerChallenge banner/section untouched.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import argparse
 from html import escape, unescape
 from pathlib import Path
 import re
@@ -68,57 +69,10 @@ class ReleaseCopy:
     privacy: str
 
 
-FRENCH_COPY = {
-    "fr-FR": ReleaseCopy(
-        "Record Picker 2.0 est notre évolution la plus importante : l’expérience "
-        "s’organise désormais autour de trois façons de choisir le prochain disque — "
-        "Disque du jour, Mood Pick et Random Pick.",
-        (
-            "Disque du jour relie l’actualité musicale vérifiée — anniversaires, "
-            "rééditions et, si vous l’activez, concerts à proximité — aux disques de "
-            "votre collection ou de votre liste de souhaits. Chaque suggestion en "
-            "explique la raison et cite sa source.",
-            "Vous pouvez parcourir plusieurs suggestions adaptées au moment, puis "
-            "améliorer le classement privé sur l’appareil avec Pertinent et Non pertinent.",
-            "Le nouveau Graphe de collection met en relation les œuvres, les "
-            "enregistrements, les interprètes et les différentes éditions, avec un "
-            "intérêt particulier pour la musique classique.",
-            "Une prise en main plus claire, un nouvel accueil sur Mac et une navigation "
-            "plus compacte sur iPhone rendent les fonctions principales plus faciles à trouver.",
-            "Les rapprochements MusicBrainz, les contrôles de qualité des données, les "
-            "traductions et les performances ont été renforcés.",
-        ),
-        "Votre collection et votre liste de souhaits restent privées : les rapprochements "
-        "et la personnalisation s’effectuent sur votre appareil.",
-    ),
-    "fr-CA": ReleaseCopy(
-        "Record Picker 2.0 est notre évolution la plus importante : l’expérience "
-        "s’organise désormais autour de trois façons de choisir le prochain disque — "
-        "Disque du jour, Mood Pick et Random Pick.",
-        (
-            "Disque du jour relie l’actualité musicale vérifiée — anniversaires, "
-            "rééditions et, si vous l’activez, concerts à proximité — aux disques de "
-            "votre collection ou de votre liste de souhaits. Chaque suggestion en "
-            "explique la raison et cite sa source.",
-            "Vous pouvez parcourir plusieurs suggestions adaptées au moment, puis "
-            "améliorer le classement privé sur l’appareil avec Pertinent et Non pertinent.",
-            "Le nouveau Graphe de collection met en relation les œuvres, les "
-            "enregistrements, les interprètes et les différentes éditions, avec un "
-            "intérêt particulier pour la musique classique.",
-            "Une prise en main plus claire, un nouvel accueil sur Mac et une navigation "
-            "plus compacte sur iPhone rendent les fonctions principales plus faciles à trouver.",
-            "Les rapprochements MusicBrainz, les contrôles de qualité des données, les "
-            "traductions et les performances ont été renforcés.",
-        ),
-        "Votre collection et votre liste de souhaits restent privées : les rapprochements "
-        "et la personnalisation s’effectuent sur votre appareil.",
-    ),
-}
+FRENCH_LOCALES = {"fr-FR", "fr-CA"}
 
 
 def parse_note(locale: str) -> ReleaseCopy:
-    if locale in FRENCH_COPY:
-        return FRENCH_COPY[locale]
     path = APP_NOTES / f"{locale}.txt"
     if not path.exists():
         raise RuntimeError(f"Missing localized 2.0 source: {path}")
@@ -168,10 +122,13 @@ def preview_section(copy: ReleaseCopy, status: str, media: bool) -> str:
     )
 
 
-def preview_card(copy: ReleaseCopy, status: str) -> str:
+def preview_card(copy: ReleaseCopy, status: str, *, upcoming: bool = True) -> str:
     bullets = "".join(f"<li>{escape(point)}</li>" for point in copy.bullets)
+    classes = "release-card v20-release-card"
+    if upcoming:
+        classes = "release-card release-preview release-upcoming v20-release-card"
     return (
-        '<article class="release-card release-preview release-upcoming v20-release-card" '
+        f'<article class="{classes}" '
         'data-release-version="2.0"><div class="release-head">'
         '<span class="version-pill">v2.0</span><div>'
         f'<h3>{escape(copy.headline)}</h3>'
@@ -263,7 +220,11 @@ def update_page(path: Path, copy: ReleaseCopy, *, french: bool = False) -> bool:
     else:
         status = preview_status(match.group(0), path)
         if path.parent.name == "readme":
-            replacement = preview_card(copy, status)
+            replacement = preview_card(
+                copy,
+                status,
+                upcoming="release-upcoming" in match.group(0),
+            )
         else:
             replacement = preview_section(copy, status, False)
         updated = text[:match.start()] + replacement + text[match.end():]
@@ -278,22 +239,37 @@ def update_page(path: Path, copy: ReleaseCopy, *, french: bool = False) -> bool:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--history-only",
+        action="store_true",
+        help="Synchronize only the published App Store history cards.",
+    )
+    args = parser.parse_args()
     if not APP_NOTES.exists():
         raise RuntimeError(f"Record Picker 2.0 sources not found: {APP_NOTES}")
     changed: list[Path] = []
     for directory, note_locale in LOCALE_NOTE.items():
         root = ROOT / directory if directory else ROOT
         copy = parse_note(note_locale)
-        pages = (root / "index.html", root / "readme" / "index.html", root / "screenshots" / "index.html")
+        pages = (
+            (root / "readme" / "index.html",)
+            if args.history_only
+            else (root / "index.html", root / "readme" / "index.html", root / "screenshots" / "index.html")
+        )
         for path in pages:
             if update_page(
                 path,
                 copy,
-                french=note_locale in FRENCH_COPY,
+                french=note_locale in FRENCH_LOCALES,
             ):
                 changed.append(path)
-    print(f"Prepared Record Picker 2.0 preview on {len(changed)} localized pages.")
-    print("Record Picker 1.9 remains the only current release; contest markup is unchanged.")
+    if args.history_only:
+        print(f"Synchronized Record Picker 2.0 App Store history on {len(changed)} localized pages.")
+        print("Published availability metadata and contest markup are unchanged.")
+    else:
+        print(f"Prepared Record Picker 2.0 preview on {len(changed)} localized pages.")
+        print("Record Picker 1.9 remains the only current release; contest markup is unchanged.")
 
 
 if __name__ == "__main__":
