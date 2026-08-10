@@ -401,6 +401,23 @@ def update_page(page: Path) -> bool:
             flags=re.DOTALL,
         )
 
+    if relative.name == "index.html" and relative.parent.name == "readme":
+        # Artwork search combines three real providers. Keep the localized
+        # sentence around the source list, but never present Cover Art Archive
+        # as the only automatic source.
+        feature_cards = list(
+            re.finditer(r'<article class="card feature-card">.*?</article>', text, flags=re.DOTALL)
+        )
+        if len(feature_cards) >= 2:
+            artwork_card = feature_cards[1]
+            updated_card = re.sub(
+                r'Cover Art Archive(?! · iTunes Search · Deezer)',
+                'Cover Art Archive · iTunes Search · Deezer',
+                artwork_card.group(0),
+                count=1,
+            )
+            text = text[:artwork_card.start()] + updated_card + text[artwork_card.end():]
+
     url_pattern = re.compile(
         r'(?P<prefix>(?:\.\./)*)(?P<path>assets/screenshots/(?!v20/)[^"\'?# >]+)'
         r'(?P<query>\?[^"\' >]+)?'

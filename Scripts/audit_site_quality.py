@@ -282,6 +282,19 @@ def main() -> None:
                 errors.append(f"{relative}: balanced two-visual feature intro missing")
             if '<figcaption>Record Picker 2.0</figcaption>' in text:
                 errors.append(f"{relative}: redundant generic screenshot caption")
+            feature_cards = re.findall(
+                r'<article class="card feature-card">.*?</article>',
+                text,
+                flags=re.DOTALL,
+            )
+            if feature_cards and (
+                len(feature_cards) < 2
+                or not all(
+                    source in feature_cards[1]
+                    for source in ("Cover Art Archive", "iTunes Search", "Deezer")
+                )
+            ):
+                errors.append(f"{relative}: artwork providers are incomplete")
         if '<h2>Catalogue, en beauté</h2>' in text:
             errors.append(f"{relative}: Mac feature title is not phrased as an infinitive")
         if kind == "index.html":
