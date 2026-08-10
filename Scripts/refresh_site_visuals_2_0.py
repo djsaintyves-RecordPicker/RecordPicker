@@ -57,6 +57,31 @@ GALLERY_ASSETS = {
     "watch": ("watch-random-pick.png",),
 }
 
+COMPACT_README_INTROS = {
+    "th": (
+        "คอลเลกชันที่เป็นระเบียบและค้นพบได้เสมอ",
+        (
+            "นำเข้า CSV, สแกนบาร์โค้ด และเพิ่มข้อมูลด้วยตนเอง",
+            "ค้นหาข้อมูลผ่าน MusicBrainz และ Discogs เมื่อคุณร้องขอ",
+            "ตรวจสอบคุณภาพข้อมูล รายการซ้ำ และภาพปก",
+            "เลือกแบบสุ่มหรือด้วย Mood Pick พร้อมตัวกรองและประวัติ",
+            "ซิงค์ส่วนตัวผ่าน iCloud และสำรองข้อมูลเป็น JSON",
+            "ฟรีสูงสุด 100 แผ่น ซื้อ Pro ครั้งเดียวเพื่อใช้คอลเลกชันไม่จำกัด",
+        ),
+    ),
+    "vi": (
+        "Bộ sưu tập gọn gàng, luôn dễ khám phá",
+        (
+            "Nhập CSV, quét mã vạch và thêm dữ liệu thủ công",
+            "Tra cứu MusicBrainz và Discogs chỉ khi bạn yêu cầu",
+            "Kiểm tra chất lượng dữ liệu, bản trùng lặp và ảnh bìa",
+            "Chọn ngẫu nhiên hoặc Mood Pick với bộ lọc và lịch sử",
+            "Đồng bộ riêng tư qua iCloud và sao lưu JSON",
+            "Miễn phí tối đa 100 đĩa; mua Pro một lần để mở khóa bộ sưu tập không giới hạn",
+        ),
+    ),
+}
+
 
 def page_locale(page: Path) -> str:
     relative = page.relative_to(ROOT)
@@ -281,6 +306,35 @@ def update_page(page: Path) -> bool:
     prefix = "../" * depth
     text = localize_existing_v20(text, locale)
 
+    version_label = "Versions"
+
+    def unify_version_navigation(match: re.Match[str]) -> str:
+        nonlocal version_label
+        nav = match.group(0)
+        readme_link = re.search(r'<a href="([^"]*readme/)">', nav)
+        version_link = re.search(
+            r'<a href="[^"]*#(?:versions|version-history)">(.*?)</a>',
+            nav,
+            flags=re.DOTALL,
+        )
+        if not readme_link or not version_link:
+            return nav
+        version_label = re.sub(r'<[^>]+>', '', version_link.group(1)).strip() or version_label
+        return re.sub(
+            r'(<a href=")[^"]*#(?:versions|version-history)(">)',
+            rf'\g<1>{readme_link.group(1)}#version-history\g<2>',
+            nav,
+            count=1,
+        )
+
+    text = re.sub(
+        r'<nav class="nav-links".*?</nav>',
+        unify_version_navigation,
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
+
     if relative.name == "index.html" and relative.parent.name == "readme":
         # The document hero already names the page. Remove the first content
         # heading only when it repeats that localized title verbatim.
@@ -296,6 +350,48 @@ def update_page(page: Path) -> bool:
                         + content.group(1)[first_heading.end() :]
                     )
                     text = text[: content.start(1)] + cleaned + text[content.end(1) :]
+
+        # One public concept, one destination: the navigation label and the
+        # complete release history use the same localized name.
+        text = re.sub(
+            r'<h2[^>]*>[^<]*</h2>(?=<div class="(?:timeline compact current-release-timeline|release-list)">)',
+            f'<h2 id="version-history">{version_label}</h2>',
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        text = re.sub(
+            r'(<details class="release-history-archive"><summary>).*?(</summary>)',
+            r'\g<1>Record Picker ≤ 1.8\g<2>',
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        if locale in COMPACT_README_INTROS and 'class="context-pair feature-intro"' not in text:
+            heading, bullets = COMPACT_README_INTROS[locale]
+            items = "".join(f"<li>{item}</li>" for item in bullets)
+            def compact_visual(filename: str) -> str:
+                avif = asset_url(prefix, locale, filename, ".avif")
+                webp = asset_url(prefix, locale, filename, ".webp")
+                return (
+                    '<figure class="context-visual wide"><picture>'
+                    f'<source srcset="{avif}" type="image/avif">'
+                    f'<source srcset="{webp}" type="image/webp">'
+                    f'<img loading="lazy" alt="" src="{webp}" width="1440" height="900" decoding="async">'
+                    '</picture></figure>'
+                )
+            intro = (
+                f"<h2>{heading}</h2><ul>{items}</ul>"
+                '<div class="context-pair feature-intro">'
+                f'{compact_visual("mac-home.jpeg")}'
+                f'{compact_visual("mac-todays-pick.jpeg")}'
+                "</div>"
+            )
+            text = text.replace(
+                f'<h2 id="version-history">{version_label}</h2>',
+                intro + f'<h2 id="version-history">{version_label}</h2>',
+                1,
+            )
 
     # The middle Mac feature card demonstrates full-text search with three
     # live matches outlined in red. Keep it tied to the real localized app UI.

@@ -164,7 +164,19 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        nav = re.search(r'<nav class="nav-links".*?</nav>', text, flags=re.DOTALL)
+        if not nav or not re.search(
+            r'href="[^"]*readme/#version-history"',
+            nav.group(0),
+        ):
+            errors.append(f"{relative}: Versions navigation does not open the full history")
         if kind == "readme/index.html":
+            if text.count('id="version-history"') != 1:
+                errors.append(f"{relative}: unique version history destination missing")
+            if '<details class="release-history-archive">' in text and (
+                '<summary>Record Picker ≤ 1.8</summary>' not in text
+            ):
+                errors.append(f"{relative}: previous-version archive label is ambiguous")
             hero_title = re.search(
                 r'<section class="doc-hero".*?<h1[^>]*>(.*?)</h1>',
                 text,
