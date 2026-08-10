@@ -1,8 +1,8 @@
 {
   "configuredSources": 46,
-  "contributingSources": 29,
-  "generatedAt": "2026-08-09T19:01:38Z",
-  "reachableSources": 44,
+  "contributingSources": 28,
+  "generatedAt": "2026-08-10T02:35:32Z",
+  "reachableSources": 43,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -29,9 +29,10 @@
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
-      "downloadedArticles": 15,
-      "resolvedEvents": 4,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "HTTP Error 415: Unsupported Media Type",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -109,7 +110,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -188,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -212,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 16,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -223,7 +224,7 @@
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 5,
       "resolvedEvents": 4,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
@@ -247,7 +248,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
