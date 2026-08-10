@@ -359,6 +359,22 @@ def update_page(page: Path) -> bool:
             count=1,
             flags=re.DOTALL,
         )
+        # This block is a visual gateway to the complete screenshot gallery.
+        # Keep its promise literal and language-safe: the localized "Screenshots"
+        # kicker, Record Picker 2.0, then the two representative app views.
+        def normalize_home_gallery_heading(match: re.Match[str]) -> str:
+            section = match.group(0)
+            section = re.sub(r'<h2>.*?</h2>', '<h2>Record Picker 2.0</h2>', section, count=1, flags=re.DOTALL)
+            section = re.sub(r'<p class="lead">.*?</p>', '', section, count=1, flags=re.DOTALL)
+            return section
+
+        text = re.sub(
+            r'<section class="section gallery".*?</section>',
+            normalize_home_gallery_heading,
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
 
     if relative.name == "index.html" and relative.parent.name == "screenshots":
         # A screenshots page should open directly on the gallery. The full

@@ -311,6 +311,15 @@ def main() -> None:
                 or "mac-collection.webp" not in home_gallery.group(1)
             ):
                 errors.append(f"{relative}: complete localized homepage gallery missing")
+            gallery_section = re.search(
+                r'<section class="section gallery".*?</section>',
+                text,
+                flags=re.DOTALL,
+            )
+            if not gallery_section or "<h2>Record Picker 2.0</h2>" not in gallery_section.group(0):
+                errors.append(f"{relative}: homepage gallery heading does not match its visuals")
+            elif '<p class="lead">' in gallery_section.group(0):
+                errors.append(f"{relative}: redundant homepage gallery promise remains")
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "fr"
