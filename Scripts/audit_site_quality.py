@@ -164,6 +164,14 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        if 'href="/press/reviews/"' not in text:
+            errors.append(f"{relative}: press-review entry point missing")
+        if relative == Path("press/reviews/index.html"):
+            if (
+                '"@type":"NewsArticle"' not in text
+                or "https://www.mac4ever.com/audio/197509-" not in text
+            ):
+                errors.append(f"{relative}: Mac4Ever article metadata missing")
         nav = re.search(r'<nav class="nav-links".*?</nav>', text, flags=re.DOTALL)
         if not nav or not re.search(
             r'href="[^"]*readme/#version-history"',
@@ -282,7 +290,7 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260809-doc-heading-spacing" not in text:
+        if "quality.css?v=20260811-press-review" not in text:
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
             intro = re.search(
@@ -310,6 +318,22 @@ def main() -> None:
         if '<h2>Catalogue, en beauté</h2>' in text:
             errors.append(f"{relative}: Mac feature title is not phrased as an infinitive")
         if kind == "index.html":
+            press_review = re.search(
+                r'<section class="section press-review-spotlight".*?</section>',
+                text,
+                flags=re.DOTALL,
+            )
+            review_locale = (
+                relative.parts[0]
+                if relative.parts and relative.parts[0] in LOCALES
+                else "fr"
+            )
+            if (
+                not press_review
+                or "https://www.mac4ever.com/audio/197509-" not in press_review.group(0)
+                or f"assets/screenshots/v20/{review_locale}/mac-mood-pick" not in press_review.group(0)
+            ):
+                errors.append(f"{relative}: localized Mac4Ever press spotlight incomplete")
             hero_showcase = re.search(
                 r'<div class="hero-showcase v20-hero-showcase">(.*?)</div>',
                 text,
@@ -353,7 +377,8 @@ def main() -> None:
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
         )
-        if len(selected_languages) != 1:
+        global_bilingual_page = relative == Path("press/reviews/index.html")
+        if not global_bilingual_page and len(selected_languages) != 1:
             errors.append(
                 f"{relative}: expected one selected language, found {len(selected_languages)}"
             )
@@ -497,7 +522,7 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 2
+    expected_content_pages = expected_locales * 9 + 3
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"

@@ -197,6 +197,77 @@ picture {
   flex: 1;
 }
 
+.press-download-grid .press-review-card {
+  grid-column: 1 / -1;
+}
+
+.press-review-spotlight,
+.press-review-entry {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(380px, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.press-review-spotlight {
+  margin-block: clamp(42px, 7vw, 92px);
+  padding-block: clamp(36px, 6vw, 72px);
+  border-block: 1px solid var(--line);
+}
+
+.press-review-copy h2 {
+  max-width: 18ch;
+  margin: 8px 0 12px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.press-review-byline {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.press-review-copy blockquote {
+  max-width: 46rem;
+  margin: 24px 0;
+  padding-inline-start: 20px;
+  border-inline-start: 3px solid var(--red);
+  color: var(--text);
+  font-size: var(--type-lead);
+  font-weight: 720;
+  line-height: 1.48;
+}
+
+.press-review-visual {
+  overflow: hidden;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.press-review-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.press-review-entry {
+  margin: 18px 0 46px;
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+}
+
+.press-review-context {
+  max-width: 760px;
+}
+
 .official-identity {
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
@@ -230,6 +301,15 @@ picture {
 @media (max-width: 820px) {
   .press-download-grid {
     grid-template-columns: 1fr;
+  }
+
+  .press-review-spotlight,
+  .press-review-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .press-review-visual {
+    order: -1;
   }
 
   .official-identity {
