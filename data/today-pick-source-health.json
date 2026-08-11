@@ -1,17 +1,17 @@
 {
   "configuredSources": 46,
-  "contributingSources": 29,
-  "generatedAt": "2026-08-10T19:17:48Z",
+  "contributingSources": 28,
+  "generatedAt": "2026-08-11T02:28:34Z",
   "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 3,
+      "downloadedArticles": 4,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 24,
+      "downloadedArticles": 25,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -24,7 +24,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -42,7 +42,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -84,7 +84,7 @@
     },
     "Jazz Views": {
       "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "error": "<urlopen error timed out>",
       "resolvedEvents": 0,
       "status": "failed",
       "url": "https://www.jazzviews.net/feed"
@@ -115,7 +115,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -139,7 +139,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
