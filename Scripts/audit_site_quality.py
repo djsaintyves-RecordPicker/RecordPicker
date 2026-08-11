@@ -61,6 +61,20 @@ def local_target(page: Path, value: str) -> Path | None:
     return target.resolve()
 
 
+def page_language(relative: Path, text: str) -> str:
+    if relative.parts and relative.parts[0] in LOCALES:
+        return relative.parts[0]
+    match = re.search(r'<html\s+lang="([^"]+)"', text, flags=re.IGNORECASE)
+    if not match:
+        return ""
+    language = match.group(1).casefold()
+    if language == "fr-ca":
+        return "fr-ca"
+    if language.startswith("fr"):
+        return "fr"
+    return language
+
+
 def main() -> None:
     audit_homepage_descriptions()
     audit_remaining_localized_copy()
@@ -164,8 +178,12 @@ def main() -> None:
                 )
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
-        if 'href="/press/reviews/"' not in text:
-            errors.append(f"{relative}: press-review entry point missing")
+        page_locale = page_language(relative, text)
+        is_french_page = page_locale in {"fr", "fr-ca"}
+        if is_french_page and 'href="/press/reviews/"' not in text:
+            errors.append(f"{relative}: French press-review entry point missing")
+        if not is_french_page and 'href="/press/reviews/"' in text:
+            errors.append(f"{relative}: French press-review exposed on non-French page")
         if relative == Path("press/reviews/index.html"):
             if (
                 '"@type":"NewsArticle"' not in text
@@ -328,12 +346,15 @@ def main() -> None:
                 if relative.parts and relative.parts[0] in LOCALES
                 else "fr"
             )
-            if (
-                not press_review
-                or "https://www.mac4ever.com/audio/197509-" not in press_review.group(0)
-                or f"assets/screenshots/v20/{review_locale}/mac-mood-pick" not in press_review.group(0)
-            ):
-                errors.append(f"{relative}: localized Mac4Ever press spotlight incomplete")
+            if review_locale in {"fr", "fr-ca"}:
+                if (
+                    not press_review
+                    or "https://www.mac4ever.com/audio/197509-" not in press_review.group(0)
+                    or f"assets/screenshots/v20/{review_locale}/mac-mood-pick" not in press_review.group(0)
+                ):
+                    errors.append(f"{relative}: French Mac4Ever press spotlight incomplete")
+            elif press_review:
+                errors.append(f"{relative}: French Mac4Ever spotlight on non-French home")
             hero_showcase = re.search(
                 r'<div class="hero-showcase v20-hero-showcase">(.*?)</div>',
                 text,

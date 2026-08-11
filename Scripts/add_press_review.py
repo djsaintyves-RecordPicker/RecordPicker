@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add the Mac4Ever article to a durable, localized press-review surface."""
+"""Add the French Mac4Ever article to French-language site pages only."""
 
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ LOCALES = {
     "ko", "nb", "nl", "pl", "pt-br", "pt-pt", "ru", "sv", "th", "tr", "vi",
     "zh-hans", "zh-hant",
 }
+FRENCH_LOCALES = {"fr", "fr-ca"}
 
 PRESS_REVIEW_LABELS = {
     "ar": "تغطية صحفية", "ca": "Ressenyes de premsa", "da": "Presseomtale",
@@ -86,6 +87,14 @@ def locale_for(page: Path, text: str) -> str:
     match = re.search(r'data-page-lang="([^"]+)"', text)
     if match:
         return match.group(1)
+    html_lang = re.search(r'<html\s+lang="([^"]+)"', text, flags=re.IGNORECASE)
+    if html_lang:
+        language = html_lang.group(1).casefold()
+        if language == "fr-ca":
+            return "fr-ca"
+        if language.startswith("fr"):
+            return "fr"
+        return language
     relative = page.relative_to(ROOT)
     return relative.parts[0] if relative.parts and relative.parts[0] in LOCALES else "fr"
 
@@ -116,7 +125,7 @@ def review_spotlight(locale: str) -> str:
 
 def build_review_page() -> None:
     template = (ROOT / "press" / "index.html").read_text(encoding="utf-8")
-    title = "Revue de presse / Press review - Record Picker"
+    title = "Revue de presse - Record Picker"
     description = (
         "Les articles consacrés à Record Picker, l’app Apple qui aide à cataloguer "
         "et redécouvrir une collection de vinyles et de CD."
@@ -159,8 +168,7 @@ def build_review_page() -> None:
         '<div class="header-actions"><a class="store-link" '
         'href="https://apps.apple.com/fr/app/recordpicker/id6780422305" '
         'data-app-store-link>App Store</a><span class="language-trigger press-language-pill" '
-        'aria-label="Français et anglais"><span lang="fr">FR</span> / '
-        '<span lang="en">EN</span></span>'
+        'aria-label="Français">Français</span>'
         '</div></header>',
         template,
         count=1,
@@ -169,7 +177,7 @@ def build_review_page() -> None:
     main = (
         '<main id="main-content" class="doc-shell press-review-page">'
         '<section class="doc-hero"><p class="glass-pill eyebrow">Record Picker</p>'
-        '<h1>Revue de presse <span lang="en">/ Press review</span></h1>'
+        '<h1>Revue de presse</h1>'
         '<p class="doc-tagline">Les médias parlent de Record Picker.</p>'
         '<div class="doc-actions"><a class="button primary" href="/press/">Dossier de presse</a>'
         '<a class="button glass" href="/fr/">Accueil</a></div></section>'
@@ -190,10 +198,6 @@ def build_review_page() -> None:
         '<source srcset="/assets/screenshots/v20/fr/mac-mood-pick.webp" type="image/webp">'
         '<img alt="" src="/assets/screenshots/v20/fr/mac-mood-pick.webp" width="1440" '
         'height="900" decoding="async"></picture></figure></article>'
-        '<section class="press-review-context" lang="en"><h2>Press review</h2>'
-        '<p>Mac4Ever highlights Record Picker’s three ways to choose what plays next, '
-        'its support for classical collections, its native Apple apps, and its '
-        'subscription-free model. The original article is published in French.</p></section>'
         '</section></main>'
     )
     template = re.sub(r"<main\b.*?</main>", main, template, count=1, flags=re.DOTALL)
@@ -248,8 +252,11 @@ def update_page(page: Path) -> bool:
     text = page.read_text(encoding="utf-8")
     original = text
     locale = locale_for(page, text)
+    is_french = locale in FRENCH_LOCALES
     label = PRESS_REVIEW_LABELS.get(locale, "Press review")
-    if 'href="/press/reviews/"' not in text:
+    if not is_french:
+        text = re.sub(r'<a href="/press/reviews/">.*?</a>', "", text)
+    elif 'href="/press/reviews/"' not in text:
         press_link = re.search(r'<a href="/press/">.*?</a>', text)
         if press_link:
             text = text[:press_link.start()] + (
@@ -261,8 +268,16 @@ def update_page(page: Path) -> bool:
         and relative.parts[1] == "index.html"
     )
     if is_home:
-        spotlight = review_spotlight(locale)
-        if 'class="section press-review-spotlight"' in text:
+        if not is_french:
+            text = re.sub(
+                r'<section class="section press-review-spotlight".*?</section>',
+                "",
+                text,
+                count=1,
+                flags=re.DOTALL,
+            )
+        elif 'class="section press-review-spotlight"' in text:
+            spotlight = review_spotlight(locale)
             text = re.sub(
                 r'<section class="section press-review-spotlight".*?</section>',
                 spotlight,
@@ -271,6 +286,7 @@ def update_page(page: Path) -> bool:
                 flags=re.DOTALL,
             )
         else:
+            spotlight = review_spotlight(locale)
             text = text.replace(
                 '<section class="contact-band">',
                 spotlight + '<section class="contact-band">',
