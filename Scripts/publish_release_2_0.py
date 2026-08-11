@@ -13,7 +13,7 @@ from refresh_site_visuals_2_0 import asset_url, page_locale
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "data/release-state.json"
-CSS_VERSION = "20260809-v20-mac-product-hero"
+CSS_VERSION = "20260811-press-review"
 JS_VERSION = "20260809-v20-pick-carousel"
 LOCALE_DIRS = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
