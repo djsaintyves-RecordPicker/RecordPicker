@@ -299,7 +299,6 @@ def main() -> None:
         for requirement in (
             'class="skip-link"',
             'id="main-content"',
-            "site.js?v=20260809-v20-pick-carousel",
             'href="/press/"',
             'href="https://www.instagram.com/recordpicker/" rel="me"',
             'href="https://www.youtube.com/@recordpicker" rel="me"',
@@ -308,7 +307,15 @@ def main() -> None:
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")
-        if "quality.css?v=20260811-press-review" not in text:
+        if not any(version in text for version in (
+            "site.js?v=20260809-v20-pick-carousel",
+            "site.js?v=20260812-growth-funnel",
+        )):
+            errors.append(f"{relative}: missing versioned site.js")
+        if not any(version in text for version in (
+            "quality.css?v=20260811-press-review",
+            "quality.css?v=20260812-growth-funnel",
+        )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
             intro = re.search(

@@ -15,31 +15,31 @@ ROOT = Path(__file__).resolve().parents[1]
 # privacy, optional iCloud sync on iPhone/iPad/Mac, and Apple Watch availability.
 COPY: dict[str, tuple[str, str]] = {
     "": (
-        "Cataloguez vos vinyles et CD, puis choisissez quoi écouter avec le tirage aléatoire, Mood Pick et le Disque du jour sur iPhone, iPad, Apple Watch et Mac.",
+        "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement.",
         "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection reste privée, peut se synchroniser via iCloud entre iPhone, iPad et Mac, et vous accompagne aussi sur Apple Watch.",
     ),
     "fr": (
-        "Cataloguez vos vinyles et CD, puis choisissez quoi écouter avec le tirage aléatoire, Mood Pick et le Disque du jour sur iPhone, iPad, Apple Watch et Mac.",
+        "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement.",
         "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection reste privée, peut se synchroniser via iCloud entre iPhone, iPad et Mac, et vous accompagne aussi sur Apple Watch.",
     ),
     "fr-ca": (
-        "Cataloguez vos vinyles et CD, puis choisissez quoi écouter avec le tirage aléatoire, Mood Pick et le Disque du jour sur iPhone, iPad, Apple Watch et Mac.",
+        "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement.",
         "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection reste privée, peut se synchroniser via iCloud entre iPhone, iPad et Mac, et vous accompagne aussi sur Apple Watch.",
     ),
     "en-au": (
-        "Catalogue your vinyl and CDs, then choose what to play with customisable Random Pick, Mood Pick and Today’s Pick on iPhone, iPad, Apple Watch and Mac.",
+        "Choose the next vinyl record or CD with Random Pick, Mood Pick or Today’s Pick. Free for up to 100 records, with no ads or subscription.",
         "Catalogue your vinyl and CDs, then choose the next record with customisable Random Pick, Mood Pick or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad and Mac, and is also available on Apple Watch.",
     ),
     "en-ca": (
-        "Catalogue your vinyl and CDs, then choose what to play with customizable Random Pick, Mood Pick and Today’s Pick on iPhone, iPad, Apple Watch and Mac.",
+        "Choose the next vinyl record or CD with Random Pick, Mood Pick or Today’s Pick. Free for up to 100 records, with no ads or subscription.",
         "Catalogue your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad and Mac, and is also available on Apple Watch.",
     ),
     "en-gb": (
-        "Catalogue your vinyl and CDs, then choose what to play with customisable Random Pick, Mood Pick and Today’s Pick on iPhone, iPad, Apple Watch and Mac.",
+        "Choose the next vinyl record or CD with Random Pick, Mood Pick or Today’s Pick. Free for up to 100 records, with no ads or subscription.",
         "Catalogue your vinyl and CDs, then choose the next record with customisable Random Pick, Mood Pick or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad and Mac, and is also available on Apple Watch.",
     ),
     "en-us": (
-        "Catalog your vinyl and CDs, then choose what to play with customizable Random Pick, Mood Pick, and Today’s Pick on iPhone, iPad, Apple Watch, and Mac.",
+        "Choose the next vinyl record or CD with Random Pick, Mood Pick or Today’s Pick. Free for up to 100 records, with no ads or subscription.",
         "Catalog your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick, or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad, and Mac, and is also available on Apple Watch.",
     ),
     "ar": (

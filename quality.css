@@ -677,6 +677,16 @@ picture {
 .challenge-button:hover { background: #ff5273; }
 .challenge-rules-button { border-color: rgba(255,255,255,.2); background: rgba(255,255,255,.08); color: #fff; }
 .challenge-rules-button:hover { background: rgba(255,255,255,.14); }
+.challenge-rules-link {
+  align-self: center;
+  padding: 10px 4px;
+  color: rgba(255,255,255,.76);
+  font-size: .9rem;
+  font-weight: 780;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.challenge-rules-link:hover { color: #fff; }
 .challenge-legal { max-width: 680px; margin: 20px 0 0; color: rgba(255,255,255,.6); font-size: .82rem; line-height: 1.55; }
 .challenge-media { width: min(100%, 350px); margin: 0 auto; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: #09050b; box-shadow: 0 30px 70px rgba(0,0,0,.42); }
 .challenge-media video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #09050b; object-fit: cover; }

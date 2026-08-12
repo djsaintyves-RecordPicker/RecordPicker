@@ -111,7 +111,14 @@
       element.textContent = storefront.market || "";
     });
     document.querySelectorAll("[data-app-store-link]").forEach(function (element) {
-      if (storefront.url) element.setAttribute("href", storefront.url);
+      if (!storefront.url) return;
+      var campaign = element.getAttribute("data-app-store-campaign");
+      var url = storefront.url;
+      if (campaign) {
+        var separator = url.indexOf("?") === -1 ? "?" : "&";
+        url += separator + "pt=129016722&ct=" + encodeURIComponent(campaign) + "&mt=8";
+      }
+      element.setAttribute("href", url);
     });
   }
   function detectStorefront() {
