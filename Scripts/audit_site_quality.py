@@ -490,6 +490,17 @@ def main() -> None:
                 errors.append(f"{relative}: historical {version} still has a status")
         if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
             next_release_pages += 1
+            next_block = re.search(
+                rf'<(?:section|article)\b[^>]*data-release-version="{re.escape(NEXT_VERSION)}"[^>]*>',
+                text,
+            )
+            if not next_block or not re.search(
+                r'class="[^"]*(?:next-release|release-upcoming)[^"]*"',
+                next_block.group(0),
+            ):
+                errors.append(f"{relative}: next {NEXT_VERSION} is not marked as upcoming")
+            if next_block and "current-release" in next_block.group(0):
+                errors.append(f"{relative}: next {NEXT_VERSION} is incorrectly marked current")
         if f'data-release-gallery="{CURRENT_VERSION}"' in text:
             current_gallery_pages += 1
         if f'"softwareVersion":"{CURRENT_VERSION}"' in text:
@@ -561,7 +572,8 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
-    expected_release_cards = expected_locales * (3 if PUBLICATION_PHASE == "full" else 2)
+    versions_per_history = (3 if PUBLICATION_PHASE == "full" else 2) + (1 if NEXT_VERSION else 0)
+    expected_release_cards = expected_locales * versions_per_history
     if release_pages != expected_release_cards:
         errors.append(
             f"expected {expected_release_cards} versioned release cards, "

@@ -16,7 +16,15 @@
       "watch"
     ]
   },
-  "next_release": null,
+  "next_release": {
+    "version": "2.1",
+    "platforms": {
+      "iphone": "coming_soon",
+      "ipad": "coming_soon",
+      "mac": "coming_soon",
+      "watch": "coming_soon"
+    }
+  },
   "historical_releases": [
     "1.9",
     "1.8",

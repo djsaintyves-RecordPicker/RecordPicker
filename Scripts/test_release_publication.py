@@ -46,7 +46,8 @@ def main() -> None:
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
         assert current == "2.0"
-        assert state["next_release"] is None
+        assert state["next_release"]["version"] == "2.1"
+        assert set(state["next_release"]["platforms"].values()) == {"coming_soon"}
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
         for root in roots:
