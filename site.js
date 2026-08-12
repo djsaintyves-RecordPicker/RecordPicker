@@ -107,6 +107,24 @@
       element.setAttribute("aria-label", getTranslation(element.getAttribute("data-i18n-aria-label"), lang, element.__recordPickerFrAriaLabel));
     });
   }
+  function acquisitionSource() {
+    var source = "";
+    try {
+      var parameters = new URLSearchParams(window.location.search);
+      var requested = String(parameters.get("utm_source") || "").toLowerCase();
+      if (requested === "instagram" || requested === "facebook" || requested === "youtube" || requested === "threads") {
+        source = requested;
+        sessionStorage.setItem("recordpicker-acquisition-source", source);
+      } else {
+        source = sessionStorage.getItem("recordpicker-acquisition-source") || "";
+      }
+      if (!source && /(^|\.)instagram\.com$/i.test(document.referrer ? new URL(document.referrer).hostname : "")) {
+        source = "instagram";
+        sessionStorage.setItem("recordpicker-acquisition-source", source);
+      }
+    } catch (error) {}
+    return source;
+  }
   function applyStorefront(lang) {
     var storefront = storefronts[lang] || storefronts["en-gb"];
     if (!storefront) return;
@@ -119,6 +137,10 @@
     document.querySelectorAll("[data-app-store-link]").forEach(function (element) {
       if (!storefront.url) return;
       var campaign = element.getAttribute("data-app-store-campaign");
+      var source = acquisitionSource();
+      if (campaign && source) {
+        campaign += "_" + source.charAt(0).toUpperCase() + source.slice(1);
+      }
       var url = storefront.url;
       if (campaign) {
         var separator = url.indexOf("?") === -1 ? "?" : "&";

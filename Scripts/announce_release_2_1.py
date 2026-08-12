@@ -17,6 +17,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 APP_NOTES = ROOT.parent / "RecordPicker" / "AppStoreReleaseNotes" / "2.1"
+ANNOUNCEMENT_DATE = "2026-08-12"
 
 LOCALE_NOTE = {
     "": "fr-FR", "ar": "ar-SA", "ca": "ca", "da": "da", "de": "de-DE",
@@ -120,6 +121,12 @@ def insert_or_replace(text: str, block: str, anchor: str, path: Path) -> str:
 def update_page(path: Path, block: str, anchor: str) -> bool:
     text = path.read_text(encoding="utf-8")
     updated = insert_or_replace(text, block, anchor, path)
+    if 'data-release-version="2.1"' in updated:
+        updated = re.sub(
+            r'("dateModified":")[^"]+(\")',
+            rf'\g<1>{ANNOUNCEMENT_DATE}\g<2>',
+            updated,
+        )
     if updated == text:
         return False
     path.write_text(updated, encoding="utf-8")

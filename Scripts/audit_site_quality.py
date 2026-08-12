@@ -21,6 +21,7 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
+NEXT_RELEASE_DATE = "2026-08-12"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -109,6 +110,11 @@ def main() -> None:
             try:
                 schema = json.loads(unescape(payload))
                 if schema.get("@type") == "SoftwareApplication":
+                    if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
+                        if schema.get("dateModified") != NEXT_RELEASE_DATE:
+                            errors.append(
+                                f"{page.relative_to(ROOT)}: stale structured-data modification date"
+                            )
                     if set(schema.get("sameAs", [])) != OFFICIAL_SOCIALS:
                         errors.append(
                             f"{page.relative_to(ROOT)}: official sameAs profiles incomplete"
@@ -312,6 +318,7 @@ def main() -> None:
             "site.js?v=20260812-growth-funnel",
             "site.js?v=20260812-complete-growth",
             "site.js?v=20260812-final-funnel",
+            "site.js?v=20260813-indexnow-social",
         )):
             errors.append(f"{relative}: missing versioned site.js")
         if not any(version in text for version in (

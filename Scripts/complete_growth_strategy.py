@@ -184,7 +184,7 @@ def update_page(path: Path) -> None:
         text,
     )
     text = text.replace('data-app-store-campaign="RP20_Website"', f'data-app-store-campaign="{campaign}"')
-    text = re.sub(r'site\.js\?v=[^"\']+', 'site.js?v=20260812-complete-growth', text)
+    text = re.sub(r'site\.js\?v=[^"\']+', 'site.js?v=20260813-indexnow-social', text)
     text = re.sub(r'quality\.css\?v=[^"\']+', 'quality.css?v=20260812-complete-growth', text)
 
     rel = relative_url(path)
