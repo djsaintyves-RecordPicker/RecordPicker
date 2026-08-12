@@ -13,6 +13,12 @@
   var manualLanguageKey = "recordpicker-language-manual";
   var localeMap = {};
   var localeIndexes = {};
+  var contestEndsAt = Date.parse("2026-08-22T21:59:59Z");
+  if (Date.now() > contestEndsAt) {
+    document.querySelectorAll(".challenge-announcement, .challenge-section").forEach(function (element) {
+      element.remove();
+    });
+  }
   locales.forEach(function (locale, index) {
     localeMap[locale.id] = locale;
     localeIndexes[locale.id] = index;
@@ -119,6 +125,18 @@
         url += separator + "pt=129016722&ct=" + encodeURIComponent(campaign) + "&mt=8";
       }
       element.setAttribute("href", url);
+      element.addEventListener("click", function () {
+        try {
+          var clickLog = JSON.parse(localStorage.getItem("recordpicker-app-store-clicks") || "[]");
+          clickLog.push({
+            at: new Date().toISOString(),
+            campaign: campaign || "unattributed",
+            page: window.location.pathname,
+            language: lang
+          });
+          localStorage.setItem("recordpicker-app-store-clicks", JSON.stringify(clickLog.slice(-50)));
+        } catch (error) {}
+      }, { once: true });
     });
   }
   function detectStorefront() {
