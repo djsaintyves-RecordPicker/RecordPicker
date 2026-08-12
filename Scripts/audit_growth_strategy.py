@@ -52,6 +52,20 @@ site_js = (ROOT / "site.js").read_text(encoding="utf-8")
 if '2026-08-22T21:59:59Z' not in site_js or '.challenge-announcement, .challenge-section' not in site_js:
     errors.append("site.js: missing automatic post-contest transition")
 
+for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "index.html"]:
+    text = home.read_text(encoding="utf-8")
+    positions = [
+        text.find('class="section v20-preview current-release"'),
+        text.find('class="section split" id="app"'),
+        text.find('class="section press-review-spotlight"'),
+        text.find('class="section privacy-compact"'),
+        text.find('class="challenge-section"'),
+    ]
+    if -1 in positions or positions != sorted(positions):
+        errors.append(f"{home.relative_to(ROOT)}: product-first homepage hierarchy is incomplete")
+    if 'data-app-store-campaign="RP20_InstagramMac4Ever"' not in text:
+        errors.append(f"{home.relative_to(ROOT)}: Mac4Ever conversion CTA missing")
+
 if errors:
     raise SystemExit("\n".join(errors))
 print(f"OK: {len(pages)} pages, {len(canonicals)} canonicals, tracked store links and evergreen contest transition.")

@@ -311,12 +311,14 @@ def main() -> None:
             "site.js?v=20260809-v20-pick-carousel",
             "site.js?v=20260812-growth-funnel",
             "site.js?v=20260812-complete-growth",
+            "site.js?v=20260812-final-funnel",
         )):
             errors.append(f"{relative}: missing versioned site.js")
         if not any(version in text for version in (
             "quality.css?v=20260811-press-review",
             "quality.css?v=20260812-growth-funnel",
             "quality.css?v=20260812-complete-growth",
+            "quality.css?v=20260812-final-funnel",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":

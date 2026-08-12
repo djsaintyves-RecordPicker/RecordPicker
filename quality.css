@@ -1148,6 +1148,13 @@ main .kicker,
   margin: 12px 0 0;
 }
 
+.press-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 @media (max-width: 700px) {
   .growth-methods { grid-template-columns: 1fr; }
 }
