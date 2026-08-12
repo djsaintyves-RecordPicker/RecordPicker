@@ -4,6 +4,7 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
 
+
   <url>
     <loc>https://recordpicker.app/contest/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -21,6 +22,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -42,6 +44,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ar/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -53,6 +56,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ar/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -62,6 +66,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -127,6 +132,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ar/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -144,6 +150,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -165,6 +172,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ar/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -174,6 +182,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -187,6 +196,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ar/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -196,6 +206,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -217,6 +228,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/de/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -228,6 +240,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/de/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -237,6 +250,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -294,6 +308,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/de/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -311,6 +326,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -332,6 +348,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/de/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -341,6 +358,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -354,6 +372,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/de/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -363,6 +382,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -384,6 +404,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/en-us/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -395,6 +416,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/en-us/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -404,6 +426,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -473,6 +496,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/en-us/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -490,6 +514,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -511,6 +536,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/en-us/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -520,6 +546,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -533,6 +560,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/en-us/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -542,6 +570,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -563,6 +592,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ca/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -574,6 +604,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ca/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -583,6 +614,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -648,6 +680,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ca/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -665,6 +698,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -686,6 +720,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ca/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -695,6 +730,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -708,6 +744,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ca/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -717,6 +754,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -738,6 +776,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ko/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -749,6 +788,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ko/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -758,6 +798,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -823,6 +864,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ko/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -840,6 +882,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -861,6 +904,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ko/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -870,6 +914,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -883,6 +928,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ko/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -892,6 +938,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -913,6 +960,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hans/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -924,6 +972,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hans/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -933,6 +982,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -990,6 +1040,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hans/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1007,6 +1058,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1028,6 +1080,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hans/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1037,6 +1090,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1050,6 +1104,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hans/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1059,6 +1114,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1080,6 +1136,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hant/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1091,6 +1148,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hant/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1100,6 +1158,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1165,6 +1224,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hant/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1182,6 +1242,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1203,6 +1264,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hant/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1212,6 +1274,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1225,6 +1288,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/zh-hant/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1234,6 +1298,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1255,6 +1320,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/da/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1266,6 +1332,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/da/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1275,6 +1342,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1340,6 +1408,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/da/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1357,6 +1426,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1378,6 +1448,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/da/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1387,6 +1458,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1400,6 +1472,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/da/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1409,6 +1482,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1430,6 +1504,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-es/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1441,6 +1516,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-es/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1450,6 +1526,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1507,6 +1584,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-es/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1524,6 +1602,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1545,6 +1624,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-es/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1554,6 +1634,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1567,6 +1648,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-es/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1576,6 +1658,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1597,6 +1680,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fi/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1608,6 +1692,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fi/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1617,6 +1702,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1682,6 +1768,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fi/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1699,6 +1786,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1720,6 +1808,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fi/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1729,6 +1818,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1742,6 +1832,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fi/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1751,6 +1842,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1768,6 +1860,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr-ca/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1779,6 +1872,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr-ca/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1788,6 +1882,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1841,6 +1936,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr-ca/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1854,6 +1950,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1871,6 +1968,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr-ca/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1880,6 +1978,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1893,6 +1992,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr-ca/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1902,6 +2002,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1919,6 +2020,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1930,6 +2032,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -1939,6 +2042,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -1992,6 +2096,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2005,6 +2110,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2022,6 +2128,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2031,6 +2138,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2044,6 +2152,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/fr/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2053,6 +2162,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2074,6 +2184,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/el/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2085,6 +2196,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/el/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2094,6 +2206,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2159,6 +2272,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/el/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2176,6 +2290,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2197,6 +2312,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/el/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2206,6 +2322,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2219,6 +2336,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/el/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2228,6 +2346,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2249,6 +2368,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/he/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2260,6 +2380,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/he/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2269,6 +2390,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2334,6 +2456,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/he/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2351,6 +2474,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2372,6 +2496,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/he/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2381,6 +2506,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2394,6 +2520,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/he/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2403,6 +2530,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2424,6 +2552,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/hi/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2435,6 +2564,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/hi/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2444,6 +2574,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2509,6 +2640,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/hi/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2526,6 +2658,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2547,6 +2680,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/hi/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2556,6 +2690,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2569,6 +2704,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/hi/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2578,6 +2714,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2599,6 +2736,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/id/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2610,6 +2748,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/id/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2619,6 +2758,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2684,6 +2824,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/id/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2701,6 +2842,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2722,6 +2864,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/id/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2731,6 +2874,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2744,6 +2888,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/id/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2753,6 +2898,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2774,6 +2920,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/it/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2785,6 +2932,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/it/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2794,6 +2942,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2859,6 +3008,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/it/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2876,6 +3026,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2897,6 +3048,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/it/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2906,6 +3058,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2919,6 +3072,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/it/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2928,6 +3082,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -2949,6 +3104,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ja/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2960,6 +3116,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ja/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -2969,6 +3126,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3026,6 +3184,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ja/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3043,6 +3202,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3064,6 +3224,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ja/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3073,6 +3234,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3086,6 +3248,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ja/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3095,6 +3258,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3116,6 +3280,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nl/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3127,6 +3292,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nl/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3136,6 +3302,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3201,6 +3368,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nl/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3218,6 +3386,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3239,6 +3408,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nl/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3248,6 +3418,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3261,6 +3432,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nl/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3270,6 +3442,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3291,6 +3464,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nb/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3302,6 +3476,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nb/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3311,6 +3486,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3376,6 +3552,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nb/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3393,6 +3570,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3414,6 +3592,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nb/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3423,6 +3602,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3436,6 +3616,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/nb/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3445,6 +3626,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3466,6 +3648,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pl/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3477,6 +3660,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pl/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3486,6 +3670,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3551,6 +3736,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pl/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3568,6 +3754,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3589,6 +3776,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pl/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3598,6 +3786,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3611,6 +3800,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pl/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3620,6 +3810,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3641,6 +3832,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-br/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3652,6 +3844,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-br/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3661,6 +3854,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3726,6 +3920,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-br/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3743,6 +3938,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3764,6 +3960,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-br/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3773,6 +3970,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3786,6 +3984,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-br/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3795,6 +3994,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3816,6 +4016,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-pt/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3827,6 +4028,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-pt/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3836,6 +4038,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3901,6 +4104,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-pt/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3918,6 +4122,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3939,6 +4144,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-pt/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3948,6 +4154,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3961,6 +4168,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/pt-pt/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -3970,6 +4178,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -3991,6 +4200,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ru/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4002,6 +4212,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ru/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4011,6 +4222,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4076,6 +4288,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ru/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4093,6 +4306,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4114,6 +4328,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ru/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4123,6 +4338,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4136,6 +4352,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/ru/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4145,6 +4362,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4166,6 +4384,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/sv/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4177,6 +4396,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/sv/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4186,6 +4406,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4251,6 +4472,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/sv/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4268,6 +4490,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4289,6 +4512,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/sv/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4298,6 +4522,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4311,6 +4536,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/sv/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4320,6 +4546,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4341,6 +4568,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/tr/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4352,6 +4580,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/tr/privacy/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4361,6 +4590,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4426,6 +4656,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/tr/readme/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4443,6 +4674,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4464,6 +4696,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/tr/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4473,6 +4706,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4486,6 +4720,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/tr/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4495,6 +4730,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4516,6 +4752,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-mx/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4525,6 +4762,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4546,6 +4784,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-mx/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4555,6 +4794,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4568,6 +4808,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-mx/random-vinyl-record-picker/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4577,6 +4818,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4596,6 +4838,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4653,6 +4896,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/es-mx/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4662,6 +4906,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4683,6 +4928,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/th/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4692,6 +4938,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4713,6 +4960,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/th/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4722,6 +4970,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4735,6 +4984,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/th/random-vinyl-record-picker/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4744,6 +4994,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4763,6 +5014,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4828,6 +5080,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/th/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4837,6 +5090,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4858,6 +5112,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/vi/choose-vinyl-record/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4867,6 +5122,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4888,6 +5144,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/vi/manage-vinyl-collection/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4897,6 +5154,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4910,6 +5168,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/vi/random-vinyl-record-picker/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -4919,6 +5178,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -4938,6 +5198,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -5003,6 +5264,7 @@
   </url>
 
 
+
   <url>
     <loc>https://recordpicker.app/vi/support/</loc>
     <lastmod>2026-08-12</lastmod>
@@ -5012,6 +5274,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
@@ -5031,6 +5294,7 @@
       <image:title>Record Picker 2.0 app preview</image:title>
     </image:image>
   </url>
+
 
 
   <url>
