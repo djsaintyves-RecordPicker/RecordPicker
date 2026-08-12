@@ -85,10 +85,13 @@ def update_home(path: Path, french: bool) -> None:
         title = "Quel vinyle écouter ? Choisissez avec Record Picker"
         description = "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement."
         text = text.replace("Gratuit · Pro à vie", "Gratuit jusqu’à 100 disques · Pro à vie")
+        text = text.replace("70 codes Pro · 14 jours · dès le 9 août", "70 codes Pro · 5 gagnants par jour · jusqu’au 22 août")
     else:
         title = "Choose What Vinyl Record to Play — Record Picker"
         description = "Choose the next vinyl record or CD with Random Pick, Mood Pick or Today’s Pick. Free for up to 100 records, with no ads or subscription."
         text = text.replace("Free · Lifetime Pro", "Free for up to 100 records · Lifetime Pro")
+        text = text.replace("70 Pro codes · 14 days · starts August 9", "70 Pro codes · 5 winners daily · until August 22")
+        text = text.replace("70 Pro codes · 14 days · starts 9 August", "70 Pro codes · 5 winners daily · until 22 August")
     text = replace_meta(text, title, description)
     text = track_store_links(text)
     match = re.search(r'<section class="challenge-section".*?(<figure class="challenge-media">.*?</figure>)</section>', text, re.DOTALL)
