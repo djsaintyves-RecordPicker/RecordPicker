@@ -1,8 +1,8 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
-  "generatedAt": "2026-08-12T19:32:37Z",
-  "reachableSources": 44,
+  "contributingSources": 30,
+  "generatedAt": "2026-08-13T02:48:33Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -24,7 +24,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -54,7 +54,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -83,10 +83,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 7,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -109,7 +108,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -139,7 +138,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -188,7 +187,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -236,7 +235,7 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
@@ -247,7 +246,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
