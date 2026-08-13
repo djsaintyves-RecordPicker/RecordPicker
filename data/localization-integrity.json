@@ -12,7 +12,7 @@
     "es-es": "bfa750e6e727e60b66b62a485a9d56fed2609f1db6b11b6400bcca76e753f025",
     "es-mx": "1b5a1a7c96988cf9fb5ca7a61a961cb1f39d746924147ef4500969b3a6591844",
     "fi": "5b44d98ae666712d4ed9ca569872ac18a9a015985ce39499f5593fdbd307dca1",
-    "fr": "6862571073501b5d9e3a65c5afa670d067063885df202df141fa9bcd5bcaf9a4",
+    "fr": "8acec6d08df25721e3c746a4142eb047c44275b88a64e610f73a9237296d5f43",
     "fr-ca": "5fea5dfe41ae66d7aaf575196bd060709793422a3766f89fd4033cb850c49bb6",
     "he": "03301b6679bfc365d78b21af66dbc8696ddcf4a9a613e029658d5b0c5b52bc89",
     "hi": "19565891a7f57a88c9eb3326a391aa57c8c949f7ba21b705b6093e2fb9d2e228",
@@ -35,6 +35,6 @@
   },
   "locale_group_count": 32,
   "page_count": 300,
-  "review_reason": "Reapply the localized Record Picker 2.1 announcement after current site automation updates",
+  "review_reason": "Temporarily remove non-converting YouTube, Facebook, Threads and Reddit links while keeping Instagram",
   "schema": 1
 }

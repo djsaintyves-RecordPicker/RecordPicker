@@ -28,10 +28,8 @@ SOCIAL_IMAGE_URL = (
 )
 OFFICIAL_SOCIALS = {
     "https://www.instagram.com/recordpicker/",
-    "https://www.youtube.com/@recordpicker",
-    "https://www.facebook.com/profile.php?id=61591096987226",
-    "https://www.threads.net/@recordpicker",
 }
+REMOVED_SOCIAL_HOSTS = ("youtube.com", "facebook.com", "threads.net", "reddit.com")
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
     "es-es", "es-mx", "fi", "fr", "fr-ca", "he", "hi", "id", "it", "ja", "ko",
@@ -102,6 +100,9 @@ def main() -> None:
         errors.append("full publication still has a platform that is not available")
     for page in pages:
         text = page.read_text(encoding="utf-8")
+        for host in REMOVED_SOCIAL_HOSTS:
+            if re.search(rf'href="https://(?:www\.)?{re.escape(host)}/', text):
+                errors.append(f"{page.relative_to(ROOT)}: temporarily removed social link {host} remains")
         for value in re.findall(r'(?:href|src|srcset)="([^"]+)"', text):
             target = local_target(page, value)
             if target and not target.exists():
@@ -307,9 +308,6 @@ def main() -> None:
             'id="main-content"',
             'href="/press/"',
             'href="https://www.instagram.com/recordpicker/" rel="me"',
-            'href="https://www.youtube.com/@recordpicker" rel="me"',
-            'href="https://www.facebook.com/profile.php?id=61591096987226" rel="me"',
-            'href="https://www.threads.net/@recordpicker" rel="me"',
         ):
             if requirement not in text:
                 errors.append(f"{relative}: missing {requirement}")

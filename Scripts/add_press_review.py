@@ -236,13 +236,6 @@ def build_review_page() -> None:
     template = template.replace('href="../', 'href="../../')
     template = template.replace('src="../', 'src="../../')
     template = template.replace('srcset="../', 'srcset="../../')
-    if 'href="https://www.threads.net/@recordpicker" rel="me"' not in template:
-        template = template.replace(
-            '</nav></footer>',
-            '<a href="https://www.threads.net/@recordpicker" rel="me">Threads</a>'
-            '</nav></footer>',
-            1,
-        )
     target = ROOT / "press" / "reviews" / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(template, encoding="utf-8")

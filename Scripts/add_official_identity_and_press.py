@@ -14,9 +14,6 @@ SITE_URL = "https://recordpicker.app/"
 LOGO_URL = SITE_URL + "assets/brand/icon-512.png"
 SOCIALS = [
     "https://www.instagram.com/recordpicker/",
-    "https://www.youtube.com/@recordpicker",
-    "https://www.facebook.com/profile.php?id=61591096987226",
-    "https://www.threads.net/@recordpicker",
 ]
 
 PRESS_LABELS = {
@@ -101,22 +98,11 @@ def update_footer(text: str, locale: str) -> str:
     text = re.sub(
         r'https://(?:www\.)?instagram\.com/recordpicker/?', SOCIALS[0], text
     )
-    text = re.sub(
-        r'https://(?:www\.)?youtube\.com/@recordpicker/?', SOCIALS[1], text
-    )
-    text = re.sub(
-        r'https://(?:www\.)?facebook\.com/profile\.php\?id=61591096987226',
-        SOCIALS[2],
-        text,
-    )
-    text = re.sub(
-        r'https://(?:www\.)?threads\.net/@recordpicker/?', SOCIALS[3], text
-    )
     missing: list[str] = []
     if 'href="/press/"' not in text:
         label = PRESS_LABELS.get(locale, "Press kit")
         missing.append(f'<a href="/press/">{label}</a>')
-    for url, label in zip(SOCIALS, ("Instagram", "YouTube", "Facebook", "Threads")):
+    for url, label in zip(SOCIALS, ("Instagram",)):
         if f'href="{url}" rel="me"' not in text:
             missing.append(f'<a href="{url}" rel="me">{label}</a>')
     if missing:
@@ -173,12 +159,7 @@ def build_press_page() -> None:
         f'<link rel="alternate" hreflang="x-default" href="{canonical}">',
     )
 
-    main = '''<main id="main-content" class="doc-shell press-page"><section class="doc-hero"><p class="glass-pill eyebrow">Record Picker</p><h1>Dossier de presse <span lang="en">/ Press kit</span></h1><p class="doc-tagline">Informations officielles, documents prêts à l’emploi et visuels haute définition.</p><div class="doc-actions"><a class="button primary" href="/assets/press/Record-Picker-Dossier-de-presse-FR.pdf">Télécharger en français</a><a class="button glass" href="/assets/press/Record-Picker-Press-Kit-EN.pdf" lang="en">Download in English</a></div></section><section class="doc-content"><p class="doc-meta">Record Picker · Août 2026</p><p class="lead">Record Picker est une app Apple native pour cataloguer et redécouvrir une collection de vinyles et de CD sur iPhone, iPad, Mac et Apple Watch.</p><div class="press-download-grid"><article class="card"><h2>Dossier de presse français</h2><p>Présentation, fonctions principales, confidentialité, modèle économique et fiche technique.</p><a class="button glass" href="/assets/press/Record-Picker-Dossier-de-presse-FR.pdf">PDF · 5 pages</a></article><article class="card" lang="en"><h2>English press kit</h2><p>Official overview, key features, privacy, business model, and essential product facts.</p><a class="button glass" href="/assets/press/Record-Picker-Press-Kit-EN.pdf">PDF · 5 pages</a></article><article class="card"><h2>Archive complète</h2><p>Les deux dossiers, les textes de présentation et huit visuels de presse prêts à télécharger.</p><a class="button glass" href="/assets/press/Record-Picker-Press-Kit.zip">ZIP · PDF, textes et visuels</a></article></div><section class="official-identity" aria-labelledby="official-identity-title"><img src="/assets/brand/icon-512.png" width="160" height="160" alt="Logo officiel Record Picker"><div><p class="kicker">Identité officielle</p><h2 id="official-identity-title">Record Picker</h2><p><a href="https://recordpicker.app/">recordpicker.app</a></p><nav class="official-social-links" aria-label="Profils officiels Record Picker"><a href="https://www.instagram.com/recordpicker/" rel="me">Instagram · @recordpicker</a><a href="https://www.youtube.com/@recordpicker" rel="me">YouTube · @recordpicker</a><a href="https://www.facebook.com/profile.php?id=61591096987226" rel="me">Facebook · Record Picker</a></nav></div></section><h2>Contact presse</h2><p>Yves Durand · <a href="mailto:djsaintyves@mac.com">djsaintyves@mac.com</a></p><p>Pour l’assistance produit : <a href="mailto:support@recordpicker.app">support@recordpicker.app</a>.</p></section></main>'''
-    main = main.replace(
-        '</nav></div></section><h2>Contact presse</h2>',
-        '<a href="https://www.threads.net/@recordpicker" rel="me">Threads · @recordpicker</a>'
-        '</nav></div></section><h2>Contact presse</h2>',
-    )
+    main = '''<main id="main-content" class="doc-shell press-page"><section class="doc-hero"><p class="glass-pill eyebrow">Record Picker</p><h1>Dossier de presse <span lang="en">/ Press kit</span></h1><p class="doc-tagline">Informations officielles, documents prêts à l’emploi et visuels haute définition.</p><div class="doc-actions"><a class="button primary" href="/assets/press/Record-Picker-Dossier-de-presse-FR.pdf">Télécharger en français</a><a class="button glass" href="/assets/press/Record-Picker-Press-Kit-EN.pdf" lang="en">Download in English</a></div></section><section class="doc-content"><p class="doc-meta">Record Picker · Août 2026</p><p class="lead">Record Picker est une app Apple native pour cataloguer et redécouvrir une collection de vinyles et de CD sur iPhone, iPad, Mac et Apple Watch.</p><div class="press-download-grid"><article class="card"><h2>Dossier de presse français</h2><p>Présentation, fonctions principales, confidentialité, modèle économique et fiche technique.</p><a class="button glass" href="/assets/press/Record-Picker-Dossier-de-presse-FR.pdf">PDF · 5 pages</a></article><article class="card" lang="en"><h2>English press kit</h2><p>Official overview, key features, privacy, business model, and essential product facts.</p><a class="button glass" href="/assets/press/Record-Picker-Press-Kit-EN.pdf">PDF · 5 pages</a></article><article class="card"><h2>Archive complète</h2><p>Les deux dossiers, les textes de présentation et huit visuels de presse prêts à télécharger.</p><a class="button glass" href="/assets/press/Record-Picker-Press-Kit.zip">ZIP · PDF, textes et visuels</a></article></div><section class="official-identity" aria-labelledby="official-identity-title"><img src="/assets/brand/icon-512.png" width="160" height="160" alt="Logo officiel Record Picker"><div><p class="kicker">Identité officielle</p><h2 id="official-identity-title">Record Picker</h2><p><a href="https://recordpicker.app/">recordpicker.app</a></p><nav class="official-social-links" aria-label="Profil officiel Record Picker"><a href="https://www.instagram.com/recordpicker/" rel="me">Instagram · @recordpicker</a></nav></div></section><h2>Contact presse</h2><p>Yves Durand · <a href="mailto:djsaintyves@mac.com">djsaintyves@mac.com</a></p><p>Pour l’assistance produit : <a href="mailto:support@recordpicker.app">support@recordpicker.app</a>.</p></section></main>'''
     template = re.sub(r"<main\b.*?</main>", main, template, count=1, flags=re.DOTALL)
 
     page_schema = {
