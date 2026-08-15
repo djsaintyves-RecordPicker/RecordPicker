@@ -1,7 +1,7 @@
 {
   "configuredSources": 46,
   "contributingSources": 11,
-  "generatedAt": "2026-08-15T06:58:16Z",
+  "generatedAt": "2026-08-15T12:59:42Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
@@ -101,7 +101,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 15,
+      "downloadedArticles": 16,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -144,7 +144,7 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
