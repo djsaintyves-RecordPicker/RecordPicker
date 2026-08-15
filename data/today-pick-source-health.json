@@ -1,8 +1,8 @@
 {
   "configuredSources": 46,
   "contributingSources": 11,
-  "generatedAt": "2026-08-15T12:59:42Z",
-  "reachableSources": 45,
+  "generatedAt": "2026-08-15T18:48:01Z",
+  "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 2,
@@ -65,9 +65,10 @@
       "url": "https://www.radiofrance.fr/francemusique/rss"
     },
     "Groove": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "<urlopen error timed out>",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
@@ -101,7 +102,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 16,
+      "downloadedArticles": 15,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -235,7 +236,7 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
