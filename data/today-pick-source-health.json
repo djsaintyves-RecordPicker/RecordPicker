@@ -1,12 +1,12 @@
 {
   "configuredSources": 46,
-  "contributingSources": 21,
-  "generatedAt": "2026-08-16T06:59:51Z",
-  "reachableSources": 44,
+  "contributingSources": 29,
+  "generatedAt": "2026-08-16T18:47:53Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 2,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
@@ -18,13 +18,13 @@
     },
     "Bandcamp Daily": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -36,7 +36,7 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
@@ -60,15 +60,14 @@
     },
     "France Musique": {
       "downloadedArticles": 20,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
     },
     "Groove": {
-      "downloadedArticles": 0,
-      "error": "<urlopen error timed out>",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
@@ -85,7 +84,7 @@
     },
     "Jazz Views": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
@@ -109,7 +108,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -121,13 +120,13 @@
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -139,7 +138,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -182,13 +181,13 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 6,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -206,30 +205,30 @@
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 1,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 5,
-      "resolvedEvents": 0,
+      "downloadedArticles": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 21,
+      "downloadedArticles": 20,
       "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
@@ -278,7 +277,7 @@
     },
     "WBGO Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.wbgo.org/music.rss"
     }
