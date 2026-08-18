@@ -47,14 +47,6 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Contextual help, faster artwork, safer backup and restore, accessibility,
   localisation and interface refinements improve everyday use.
 
-### v2.0
-
-- Today's Pick connects verified music news, anniversaries, reissues and
-  optional nearby concerts to records already owned or wanted.
-- Mood Pick and Random Pick offer complementary ways to choose what to play.
-- Collection Graph, stronger evidence and private relevance feedback make the
-  collection easier to explore and rediscover.
-
 ### v1.9 - Available now on iPhone, iPad, Apple Watch and Mac
 
 - Today's Pick gives collectors a timely, private reason to rediscover a

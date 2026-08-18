@@ -68,6 +68,7 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
+            assert 'data-release-version="2.0"' not in readme
             assert 'data-release-version="2.2"' in home
             assert 'data-release-version="2.2"' in readme
             assert 'data-release-version="2.2"' in screenshots
@@ -78,6 +79,9 @@ def main() -> None:
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
             assert '<figcaption>Record Picker 2.0</figcaption>' not in readme
+            assert "Record Picker 2.0" not in home
+            assert "Record Picker 2.0" not in readme
+            assert "Record Picker 2.0" not in screenshots
             assert f'data-release-gallery="{current}"' in screenshots
             assert 'data-release-version="2.1"' not in screenshots
             assert 'class="media-section v20-preview' not in screenshots
@@ -95,6 +99,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
+            assert '"softwareVersion":"2.1"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page

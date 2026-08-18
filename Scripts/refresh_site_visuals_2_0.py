@@ -225,13 +225,14 @@ def gallery(prefix: str, locale: str) -> str:
         cards = "".join(picture(prefix, locale, platform, name) for name in GALLERY_ASSETS[platform])
         if not cards:
             continue
+        platform_label = "macOS 2.1" if platform == "mac" else "iOS 2.1.1"
         groups.append(
-            f'<div class="platform-shot-group"><h3>{platform_names[platform]} · Record Picker 2.0</h3>'
+            f'<div class="platform-shot-group"><h3>{platform_names[platform]} · {platform_label}</h3>'
             f'<div class="shot-grid v20-shot-grid {platform}-grid">{cards}</div></div>'
         )
     return (
         f'<section class="media-section v20-screenshot-gallery" data-release-gallery="{current_public_version()}">'
-        '<div class="section-head"><h2>Record Picker 2.0</h2></div>'
+        '<div class="section-head"><h2>iOS 2.1.1 · macOS 2.1</h2></div>'
         + "".join(groups)
         + '</section>'
     )
@@ -463,10 +464,10 @@ def update_page(page: Path) -> bool:
         )
         # This block is a visual gateway to the complete screenshot gallery.
         # Keep its promise literal and language-safe: the localized "Screenshots"
-        # kicker, Record Picker 2.0, then the two representative app views.
+        # kicker, current iOS/macOS versions, then the representative app views.
         def normalize_home_gallery_heading(match: re.Match[str]) -> str:
             section = match.group(0)
-            section = re.sub(r'<h2>.*?</h2>', '<h2>Record Picker 2.0</h2>', section, count=1, flags=re.DOTALL)
+            section = re.sub(r'<h2>.*?</h2>', '<h2>iOS 2.1.1 · macOS 2.1</h2>', section, count=1, flags=re.DOTALL)
             section = re.sub(r'<p class="lead">.*?</p>', '', section, count=1, flags=re.DOTALL)
             return section
 
@@ -542,7 +543,7 @@ def update_page(page: Path) -> bool:
     text = text.replace("v19-home-ipad", "v20-home-ipad")
     text = re.sub(
         r'(<section class="section gallery".*?</section>)',
-        lambda match: match.group(1).replace("Record Picker 1.8", "Record Picker 2.0"),
+        lambda match: match.group(1).replace("Record Picker 1.8", "iOS 2.1.1 · macOS 2.1"),
         text,
         count=1,
         flags=re.DOTALL,
@@ -597,7 +598,7 @@ def update_media_sitemap() -> None:
             entries.append(
                 "\n    <image:image>\n"
                 f"      <image:loc>{asset}</image:loc>\n"
-                "      <image:title>Record Picker 2.0 app preview</image:title>\n"
+                "      <image:title>Record Picker · iOS 2.1.1 · macOS 2.1 app preview</image:title>\n"
                 "    </image:image>"
             )
         return block.replace("</url>", "".join(entries) + "\n  </url>")

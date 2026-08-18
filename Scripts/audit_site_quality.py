@@ -146,6 +146,20 @@ def main() -> None:
             continue
         content_pages += 1
         relative = page.relative_to(ROOT)
+        for obsolete_version in (
+            "Record Picker 2.0",
+            "Record Picker v2.0",
+            "macOS 2.0",
+            'data-release-version="2.0"',
+        ):
+            if obsolete_version in text:
+                errors.append(f"{relative}: obsolete public version label {obsolete_version}")
+        if re.search(r"Record Picker 2\.1(?!\.1)", text) or "Record Picker 2.1.1" in text:
+            errors.append(f"{relative}: current version is missing its iOS/macOS platform label")
+        if '>v2.1.1<' in text:
+            errors.append(f"{relative}: generic 2.1.1 version pill remains")
+        if '<span id="site-footer-version">Record Picker · iOS 2.1.1 · macOS 2.1</span>' not in text:
+            errors.append(f"{relative}: current iOS/macOS footer versions missing")
         if relative in {
             Path("mac-app/index.html"),
             Path("fr/mac-app/index.html"),
@@ -402,7 +416,7 @@ def main() -> None:
                 text,
                 flags=re.DOTALL,
             )
-            if not gallery_section or "<h2>Record Picker 2.0</h2>" not in gallery_section.group(0):
+            if not gallery_section or "<h2>iOS 2.1.1 · macOS 2.1</h2>" not in gallery_section.group(0):
                 errors.append(f"{relative}: homepage gallery heading does not match its visuals")
             elif '<p class="lead">' in gallery_section.group(0):
                 errors.append(f"{relative}: redundant homepage gallery promise remains")
@@ -508,7 +522,12 @@ def main() -> None:
                 errors.append(f"{relative}: next {NEXT_VERSION} is incorrectly marked current")
         if f'data-release-gallery="{CURRENT_VERSION}"' in text:
             current_gallery_pages += 1
-        if f'"softwareVersion":"{CURRENT_VERSION}"' in text:
+        metadata_version = (
+            RELEASE_STATE["current_release"]["platform_versions"]["mac"]
+            if kind == "mac-app/index.html"
+            else CURRENT_VERSION
+        )
+        if f'"softwareVersion":"{metadata_version}"' in text:
             current_metadata_pages += 1
         if SOCIAL_IMAGE_URL in text:
             current_social_pages += 1
@@ -577,9 +596,9 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
-    # Version history currently keeps the active release plus 2.0, 1.9 and
-    # 1.8. Older releases remain documented in the repository README.
-    versions_per_history = (4 if PUBLICATION_PHASE == "full" else 3) + (1 if NEXT_VERSION else 0)
+    # Version history keeps the active release plus 1.9 and 1.8. Public pages
+    # intentionally omit 2.0 so only distributed and upcoming names appear.
+    versions_per_history = (3 if PUBLICATION_PHASE == "full" else 2) + (1 if NEXT_VERSION else 0)
     expected_release_cards = expected_locales * versions_per_history
     if release_pages != expected_release_cards:
         errors.append(
