@@ -1,8 +1,8 @@
 {
   "configuredSources": 46,
-  "contributingSources": 27,
-  "generatedAt": "2026-08-18T01:51:33Z",
-  "reachableSources": 44,
+  "contributingSources": 25,
+  "generatedAt": "2026-08-18T07:05:20Z",
+  "reachableSources": 43,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 1,
@@ -11,7 +11,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 23,
+      "downloadedArticles": 26,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -54,7 +54,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -102,7 +102,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 16,
+      "downloadedArticles": 17,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -120,9 +120,10 @@
       "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 1,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "The read operation timed out",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
@@ -158,7 +159,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -182,7 +183,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -242,7 +243,7 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 7,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
