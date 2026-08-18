@@ -259,7 +259,7 @@ def update_page(path: Path) -> bool:
     localized_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALE_DIRS else relative.parts
     kind = "/".join(localized_parts)
     if kind == "index.html" and 'data-release-version="2.0"' in text:
-        site_language = relative.parts[0] if relative.parts and relative.parts[0] in LOCALE_DIRS else "fr"
+        site_language = relative.parts[0] if relative.parts and relative.parts[0] in LOCALE_DIRS else "en-us"
         text = promote_home(text, prefix, locale, site_language)
     elif kind == "readme/index.html":
         text = promote_readme(text, prefix, locale)
@@ -292,7 +292,7 @@ def update_page(path: Path) -> bool:
         text,
         flags=re.DOTALL,
     )
-    if relative == Path("index.html") or (relative.parts and relative.parts[0] in {"fr", "fr-ca"}):
+    if relative.parts and relative.parts[0] in {"fr", "fr-ca"}:
         text = text.replace("iPhone paysage", "iPhone en mode paysage")
         text = text.replace(
             '<h2>Catalogue, en beauté</h2>',

@@ -124,7 +124,7 @@ def apply_search_metadata(path: Path, text: str) -> str:
     relative = path.relative_to(ROOT)
     locale = relative.parts[0] if len(relative.parts) > 1 else ""
     kind = "/".join(relative.parts[-2:]) if len(relative.parts) > 1 else relative.as_posix()
-    if locale in ENGLISH_REGIONS:
+    if locale in ENGLISH_REGIONS and page_kind(path) in REGIONAL_METADATA:
         title_template, description_template = REGIONAL_METADATA[page_kind(path)]
         market = REGIONAL_MARKET_NAMES[locale]
         place = REGIONAL_MARKET_PLACES[locale]
@@ -154,6 +154,85 @@ def apply_search_metadata(path: Path, text: str) -> str:
                 "Vous hésitez devant vos disques ? Découvrez cinq méthodes rapides — humeur, hasard, actualité, rotation et contrainte — pour choisir le bon vinyle à écouter.",
             )
     return text
+
+
+LOCALE_LABELS = {
+    "": "International", "ar": "العالم العربي", "ca": "Catalunya",
+    "da": "Danmark", "de": "Deutschland", "el": "Ελλάδα",
+    "en-au": "Australia", "en-ca": "Canada", "en-gb": "UK", "en-us": "US",
+    "es-es": "España", "es-mx": "México", "fi": "Suomi", "fr": "France",
+    "fr-ca": "Canada", "he": "ישראל", "hi": "भारत", "id": "Indonesia",
+    "it": "Italia", "ja": "日本", "ko": "대한민국", "nb": "Norge",
+    "nl": "Nederland", "pl": "Polska", "pt-br": "Brasil", "pt-pt": "Portugal",
+    "ru": "Россия", "sv": "Sverige", "th": "ประเทศไทย", "tr": "Türkiye",
+    "vi": "Việt Nam", "zh-hans": "简体中文", "zh-hant": "繁體中文",
+}
+
+
+def metadata_values(path: Path) -> tuple[str, str] | None:
+    text = path.read_text(encoding="utf-8")
+    title = re.search(r"<title>(.*?)</title>", text, flags=re.DOTALL)
+    description = re.search(r'<meta name="description" content="([^"]*)">', text)
+    if not title or not description:
+        return None
+    return title.group(1), description.group(1)
+
+
+def locale_for(path: Path) -> str:
+    rel = path.relative_to(ROOT)
+    return rel.parts[0] if len(rel.parts) > 1 and rel.parts[0] in LOCALE_LABELS else ""
+
+
+def deduplicate_metadata(pages: list[Path]) -> None:
+    """Keep regional landing pages distinct without rewriting translated copy.
+
+    A compact market qualifier is preferable to identical snippets: it tells
+    search engines and collectors which storefront/localization a result serves.
+    """
+    values: dict[Path, tuple[str, str] | None] = {}
+    for path in pages:
+        value = metadata_values(path)
+        if not value:
+            values[path] = None
+            continue
+        title, description = value
+        label = LOCALE_LABELS[locale_for(path)]
+        title = re.sub(rf"(?: — {re.escape(label)})+$", "", title)
+        description = re.sub(rf"(?: · {re.escape(label)})+(?: · [^·]+)?$", "", description)
+        values[path] = (title, description)
+    title_groups: dict[str, list[Path]] = {}
+    description_groups: dict[str, list[Path]] = {}
+    for path, value in values.items():
+        if value:
+            title_groups.setdefault(value[0], []).append(path)
+            description_groups.setdefault(value[1], []).append(path)
+
+    duplicate_titles = {path for group in title_groups.values() if len(group) > 1 for path in group}
+    duplicate_descriptions = {path for group in description_groups.values() if len(group) > 1 for path in group}
+    topic_labels = {
+        "vi": {"screenshots": "Ảnh chụp màn hình", "manage-vinyl-collection": "Quản lý bộ sưu tập", "mac-app": "Ứng dụng Mac", "choose-vinyl-record": "Chọn đĩa", "random-vinyl-record-picker": "Chọn ngẫu nhiên"},
+        "th": {"screenshots": "ภาพหน้าจอ", "manage-vinyl-collection": "จัดการคอลเลกชัน", "mac-app": "แอป Mac", "choose-vinyl-record": "เลือกแผ่นเสียง", "random-vinyl-record-picker": "สุ่มเลือกแผ่นเสียง"},
+    }
+    affected = duplicate_titles | duplicate_descriptions
+    for path, value in values.items():
+        value = values[path]
+        if not value:
+            continue
+        title, description = value
+        label = LOCALE_LABELS[locale_for(path)]
+        if path in duplicate_titles:
+            title = f"{title} — {label}"
+        if path in duplicate_descriptions:
+            group = description_groups[value[1]]
+            locale = locale_for(path)
+            same_locale = sum(locale_for(member) == locale for member in group) > 1
+            slug = path.parent.name
+            topic = topic_labels.get(locale, {}).get(slug)
+            qualifier = f"{label} · {topic}" if same_locale and topic else label
+            description = f"{description} · {qualifier}"
+        # Rewrite every page so repeated qualifiers from earlier generator runs
+        # are removed even when the underlying metadata is now unique.
+        path.write_text(replace_metadata(path.read_text(encoding="utf-8"), title, description), encoding="utf-8")
 
 
 def locale_campaign(path: Path) -> str:
@@ -371,6 +450,7 @@ def main() -> None:
     pages = [path for path in ROOT.rglob("index.html") if not any(part.startswith(".") for part in path.relative_to(ROOT).parts)]
     for path in pages:
         update_page(path)
+    deduplicate_metadata(pages)
     allowed = canonical_urls()
     trim_sitemap(ROOT / "sitemap.xml", allowed)
     trim_sitemap(ROOT / "sitemap-media.xml", allowed)

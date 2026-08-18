@@ -360,7 +360,7 @@ def main() -> None:
             review_locale = (
                 relative.parts[0]
                 if relative.parts and relative.parts[0] in LOCALES
-                else "fr"
+                else "en-us"
             )
             if review_locale in {"fr", "fr-ca"}:
                 if (
@@ -408,7 +408,7 @@ def main() -> None:
                 errors.append(f"{relative}: redundant homepage gallery promise remains")
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
-                expected_home_locale = "fr"
+                expected_home_locale = "en-us"
             if expected_home_locale and f"assets/screenshots/v20/{expected_home_locale}/mac-home" not in text:
                 errors.append(f"{relative}: French Mac home preview missing")
         selected_languages = re.findall(
@@ -570,7 +570,7 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 3
+    expected_content_pages = expected_locales * 9 + 3 + 12
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"

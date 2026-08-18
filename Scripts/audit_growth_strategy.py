@@ -78,13 +78,14 @@ for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "
     positions = [
         text.find('class="section v21-preview current-release"'),
         text.find('class="section split" id="app"'),
-        text.find('class="section press-review-spotlight"'),
         text.find('class="section privacy-compact"'),
         text.find('class="challenge-section"'),
     ]
+    if home != ROOT / "index.html":
+        positions.insert(2, text.find('class="section press-review-spotlight"'))
     if -1 in positions or positions != sorted(positions):
         errors.append(f"{home.relative_to(ROOT)}: product-first homepage hierarchy is incomplete")
-    if 'data-app-store-campaign="RP20_InstagramMac4Ever"' not in text:
+    if home != ROOT / "index.html" and 'data-app-store-campaign="RP20_InstagramMac4Ever"' not in text:
         errors.append(f"{home.relative_to(ROOT)}: Mac4Ever conversion CTA missing")
 
 if errors:
