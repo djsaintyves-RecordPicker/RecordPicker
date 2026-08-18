@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finish the Search Console, evergreen conversion and attribution work."""
+"""Finish the international SEO, evergreen conversion and attribution work."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://recordpicker.app"
-ENGLISH_REGIONS = {"en-au", "en-ca", "en-gb"}
+ENGLISH_REGIONS = {"en-au", "en-ca", "en-gb", "en-us"}
 PUBLIC_PAGE_PATHS = {
     "",
     "support/",
@@ -33,19 +33,127 @@ def relative_url(path: Path) -> str:
 
 
 def canonical_for(path: Path) -> str:
-    rel_url = relative_url(path)
-    parts = rel_url.strip("/").split("/") if rel_url != "/" else []
-    if parts and parts[0] in ENGLISH_REGIONS:
-        suffix = "/".join(parts[1:])
-        return f"{SITE}/en-us/{suffix + '/' if suffix else ''}"
-    root_suffix = rel_url.strip("/")
-    root_page_key = root_suffix + "/" if root_suffix else ""
-    if root_page_key in PUBLIC_PAGE_PATHS:
-        suffix = root_suffix
-        french_equivalent = ROOT / "fr" / suffix / "index.html" if suffix else ROOT / "fr" / "index.html"
-        if french_equivalent.exists():
-            return f"{SITE}/fr/{suffix + '/' if suffix else ''}"
-    return SITE + rel_url
+    """Give every public localization the URL it actually serves.
+
+    hreflang pages must be self-canonical. Consolidating regional English
+    pages on en-US, or the x-default pages on French, made Google ignore the
+    declared canonical and prevented Bing from treating those markets as
+    independent landing pages.
+    """
+    return SITE + relative_url(path)
+
+
+REGIONAL_MARKET_NAMES = {
+    "en-au": "Australia",
+    "en-ca": "Canada",
+    "en-gb": "UK",
+    "en-us": "US",
+}
+
+REGIONAL_MARKET_PLACES = {
+    "en-au": "Australia",
+    "en-ca": "Canada",
+    "en-gb": "the UK",
+    "en-us": "the US",
+}
+
+REGIONAL_METADATA = {
+    "index.html": (
+        "Choose What Record to Play — Record Picker {market}",
+        "Catalogue vinyl records and CDs, then choose what to play with Random Pick, Mood Pick or Today’s Pick. Made for collectors in {place}; free for up to 100 records.",
+    ),
+    "support/index.html": (
+        "Record Picker Support — {market}",
+        "Get Record Picker help in {place} for Discogs CSV imports, backups, iCloud sync, Apple Watch, purchases and managing a vinyl or CD collection.",
+    ),
+    "privacy/index.html": (
+        "Record Picker Privacy — {market}",
+        "Read how Record Picker keeps your vinyl and CD catalogue private in {place}, with no advertising, no data selling and no collection stored on our servers.",
+    ),
+    "screenshots/index.html": (
+        "Record Picker Screenshots — {market}",
+        "See Record Picker on iPhone, iPad, Mac and Apple Watch: catalogue records, check duplicates and rediscover your collection in {place}.",
+    ),
+    "readme/index.html": (
+        "Record Picker Features — {market}",
+        "Explore Record Picker features for collectors in {place}: vinyl and CD cataloguing, Discogs import, Random Pick, Mood Pick, Today’s Pick and private iCloud sync.",
+    ),
+    "mac-app/index.html": (
+        "Record Picker for Mac — {market}",
+        "Catalogue, enrich and rediscover a vinyl or CD collection with the native Record Picker Mac app, available to collectors in {place} without a subscription.",
+    ),
+    "choose-vinyl-record/index.html": (
+        "How to Choose a Vinyl Record to Play — {market}",
+        "Five practical ways to choose your next vinyl record in {place}: use mood, a random pick, music news, collection rotation or one simple listening constraint.",
+    ),
+    "random-vinyl-record-picker/index.html": (
+        "Random Vinyl Record Picker — {market}",
+        "Pick a vinyl record at random in {place} while respecting genres, favourites, exclusions and less-played albums. Try Record Picker free with up to 100 records.",
+    ),
+    "manage-vinyl-collection/index.html": (
+        "Manage a Vinyl Record Collection — {market}",
+        "A practical guide for collectors in {place} to catalogue vinyl and CDs, prevent duplicate purchases, preserve pressing details and rediscover overlooked records.",
+    ),
+}
+
+
+def page_kind(path: Path) -> str:
+    relative = path.relative_to(ROOT)
+    if relative.parts and relative.parts[0] in ENGLISH_REGIONS:
+        relative = Path(*relative.parts[1:])
+    return relative.as_posix()
+
+
+def replace_metadata(text: str, title: str, description: str) -> str:
+    replacements = (
+        (r"<title>.*?</title>", f"<title>{escape(title)}</title>"),
+        (r'(<meta name="description" content=")[^"]*(">)', rf"\g<1>{escape(description, quote=True)}\g<2>"),
+        (r'(<meta property="og:title" content=")[^"]*(">)', rf"\g<1>{escape(title, quote=True)}\g<2>"),
+        (r'(<meta property="og:description" content=")[^"]*(">)', rf"\g<1>{escape(description, quote=True)}\g<2>"),
+        (r'(<meta property="og:image:alt" content=")[^"]*(">)', rf"\g<1>{escape(title, quote=True)}\g<2>"),
+        (r'(<meta name="twitter:image:alt" content=")[^"]*(">)', rf"\g<1>{escape(title, quote=True)}\g<2>"),
+        (r'(<meta name="twitter:title" content=")[^"]*(">)', rf"\g<1>{escape(title, quote=True)}\g<2>"),
+        (r'(<meta name="twitter:description" content=")[^"]*(">)', rf"\g<1>{escape(description, quote=True)}\g<2>"),
+    )
+    for pattern, replacement in replacements:
+        text = re.sub(pattern, replacement, text, count=1, flags=re.DOTALL)
+    return text
+
+
+def apply_search_metadata(path: Path, text: str) -> str:
+    relative = path.relative_to(ROOT)
+    locale = relative.parts[0] if len(relative.parts) > 1 else ""
+    kind = "/".join(relative.parts[-2:]) if len(relative.parts) > 1 else relative.as_posix()
+    if locale in ENGLISH_REGIONS:
+        title_template, description_template = REGIONAL_METADATA[page_kind(path)]
+        market = REGIONAL_MARKET_NAMES[locale]
+        place = REGIONAL_MARKET_PLACES[locale]
+        return replace_metadata(
+            text,
+            title_template.format(market=market, place=place),
+            description_template.format(market=market, place=place),
+        )
+
+    if kind == "choose-vinyl-record/index.html":
+        if locale == "fr-ca":
+            return replace_metadata(
+                text,
+                "Quel disque vinyle écouter ? 5 idées — Canada",
+                "Humeur, hasard, actualité musicale, rotation ou contrainte simple : cinq façons de choisir le prochain vinyle à écouter et de faire vivre sa collection au Canada.",
+            )
+        if locale == "fr":
+            return replace_metadata(
+                text,
+                "Quel vinyle écouter ? 5 méthodes — Record Picker",
+                "Humeur, hasard, actualité musicale, rotation ou contrainte simple : cinq méthodes pour choisir le prochain vinyle et redécouvrir sa collection avec Record Picker.",
+            )
+        if relative == Path("choose-vinyl-record/index.html"):
+            return replace_metadata(
+                text,
+                "Comment choisir le bon vinyle à écouter ?",
+                "Vous hésitez devant vos disques ? Découvrez cinq méthodes rapides — humeur, hasard, actualité, rotation et contrainte — pour choisir le bon vinyle à écouter.",
+            )
+    return text
 
 
 def locale_campaign(path: Path) -> str:
@@ -171,6 +279,7 @@ def update_page(path: Path) -> None:
     text = re.sub(r'<link rel="canonical" href="[^"]+">', f'<link rel="canonical" href="{canonical}">', text, count=1)
     text = re.sub(r'<meta property="og:url" content="[^"]+">', f'<meta property="og:url" content="{canonical}">', text, count=1)
     text = update_structured_data(text, old_url, canonical)
+    text = apply_search_metadata(path, text)
     text = re.sub(
         r'("publisher":\{"@type":"Organization","name":"Record Picker","url":")[^"]+',
         r'\1https://recordpicker.app/',
@@ -217,12 +326,42 @@ def canonical_urls() -> set[str]:
 def trim_sitemap(path: Path, allowed: set[str]) -> None:
     text = path.read_text(encoding="utf-8")
     blocks = re.findall(r"\s*<url>.*?</url>", text, flags=re.DOTALL)
-    kept = []
+    by_url: dict[str, str] = {}
     for block in blocks:
         match = re.search(r"<loc>([^<]+)</loc>", block)
-        if match and match.group(1) in allowed:
-            block = re.sub(r"<lastmod>[^<]+</lastmod>", "<lastmod>2026-08-12</lastmod>", block)
-            kept.append(block.rstrip())
+        if match:
+            by_url[match.group(1)] = block
+
+    def template_url(url: str) -> str | None:
+        for locale in ("en-au", "en-ca", "en-gb"):
+            marker = f"/{locale}/"
+            if marker in url:
+                return url.replace(marker, "/en-us/", 1)
+        suffix = url.removeprefix(SITE + "/")
+        if suffix == "":
+            return SITE + "/fr/"
+        if suffix.split("/", 1)[0] in {
+            "support", "privacy", "screenshots", "readme", "mac-app",
+            "choose-vinyl-record", "random-vinyl-record-picker",
+            "manage-vinyl-collection",
+        }:
+            return SITE + "/fr/" + suffix
+        return None
+
+    kept = []
+    media_sitemap = path.name == "sitemap-media.xml"
+    for url in sorted(allowed):
+        block = by_url.get(url)
+        if block is None and media_sitemap:
+            source = template_url(url)
+            template = by_url.get(source or "")
+            if template:
+                block = template.replace(f"<loc>{source}</loc>", f"<loc>{url}</loc>", 1)
+        if block is None:
+            block = f"\n  <url>\n    <loc>{url}</loc>\n    <lastmod>2026-08-18</lastmod>\n  </url>"
+        else:
+            block = re.sub(r"<lastmod>[^<]+</lastmod>", "<lastmod>2026-08-18</lastmod>", block)
+        kept.append(block.rstrip())
     closing = "</urlset>"
     prefix = text[: text.find("<url>")].rstrip()
     path.write_text(prefix + "\n" + "\n".join(kept) + "\n" + closing + "\n", encoding="utf-8")

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify canonical consolidation, search answers and App Store attribution."""
+"""Verify self-canonicals, regional search metadata and App Store attribution."""
 
 from __future__ import annotations
 
@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 errors: list[str] = []
 pages = [path for path in ROOT.rglob("index.html") if not any(part.startswith(".") for part in path.relative_to(ROOT).parts)]
 canonicals: set[str] = set()
+regional_titles: dict[str, list[Path]] = {}
+regional_descriptions: dict[str, list[Path]] = {}
 
 for path in pages:
     relative = path.relative_to(ROOT)
@@ -22,11 +24,23 @@ for path in pages:
     canonical = match.group(1)
     canonicals.add(canonical)
     parts = relative.parts
-    if parts[0] in {"en-au", "en-ca", "en-gb"}:
-        suffix = "/".join(parts[1:-1])
-        expected = "https://recordpicker.app/en-us/" + (suffix + "/" if suffix else "")
-        if canonical != expected:
-            errors.append(f"{relative}: expected consolidated canonical {expected}")
+    expected_path = "/" if relative == Path("index.html") else "/" + relative.parent.as_posix().strip("/") + "/"
+    expected = "https://recordpicker.app" + expected_path
+    if canonical != expected:
+        errors.append(f"{relative}: expected self-canonical {expected}")
+    og_url = re.search(r'<meta property="og:url" content="([^"]+)">', text)
+    if not og_url or og_url.group(1) != expected:
+        errors.append(f"{relative}: og:url does not match self-canonical")
+    if parts[0] in {"en-au", "en-ca", "en-gb", "en-us"}:
+        title = re.search(r"<title>(.*?)</title>", text, flags=re.DOTALL)
+        description = re.search(r'<meta name="description" content="([^"]*)">', text)
+        if not title or not description:
+            errors.append(f"{relative}: missing regional title or description")
+        else:
+            regional_titles.setdefault(title.group(1), []).append(relative)
+            regional_descriptions.setdefault(description.group(1), []).append(relative)
+            if len(description.group(1)) < 120:
+                errors.append(f"{relative}: regional description is too short")
     for link in re.findall(r'<a\b[^>]*data-app-store-link[^>]*>', text):
         if 'data-app-store-campaign=' not in link:
             errors.append(f"{relative}: untracked App Store link")
@@ -38,6 +52,13 @@ for path in pages:
     if is_priority_guide:
         if 'data-growth-answer' not in text or 'data-growth-faq' not in text:
             errors.append(f"{relative}: missing visible answer or FAQ schema")
+
+for value, relatives in regional_titles.items():
+    if len(relatives) > 1:
+        errors.append(f"duplicate regional title on {', '.join(map(str, relatives))}: {value}")
+for value, relatives in regional_descriptions.items():
+    if len(relatives) > 1:
+        errors.append(f"duplicate regional description on {', '.join(map(str, relatives))}")
 
 for sitemap_name in ("sitemap.xml", "sitemap-media.xml"):
     text = (ROOT / sitemap_name).read_text(encoding="utf-8")
@@ -55,7 +76,7 @@ if '2026-08-22T21:59:59Z' not in site_js or '.challenge-announcement, .challenge
 for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "index.html"]:
     text = home.read_text(encoding="utf-8")
     positions = [
-        text.find('class="section v20-preview current-release"'),
+        text.find('class="section v21-preview current-release"'),
         text.find('class="section split" id="app"'),
         text.find('class="section press-review-spotlight"'),
         text.find('class="section privacy-compact"'),
@@ -68,4 +89,4 @@ for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "
 
 if errors:
     raise SystemExit("\n".join(errors))
-print(f"OK: {len(pages)} pages, {len(canonicals)} canonicals, tracked store links and evergreen contest transition.")
+print(f"OK: {len(pages)} self-canonical pages, unique regional metadata, tracked store links and evergreen contest transition.")
