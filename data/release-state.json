@@ -2,12 +2,18 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "2.0",
+    "version": "2.1.1",
+    "platform_versions": {
+      "iphone": "2.1.1",
+      "ipad": "2.1.1",
+      "watch": "2.1.1",
+      "mac": "2.1"
+    },
     "platforms": {
       "iphone": "available",
       "ipad": "available",
-      "mac": "available",
-      "watch": "available"
+      "watch": "available",
+      "mac": "available"
     },
     "required_platforms_for_full_release": [
       "iphone",
@@ -16,16 +22,9 @@
       "watch"
     ]
   },
-  "next_release": {
-    "version": "2.1",
-    "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
-      "mac": "coming_soon",
-      "watch": "coming_soon"
-    }
-  },
+  "next_release": null,
   "historical_releases": [
+    "2.0",
     "1.9",
     "1.8",
     "1.6",

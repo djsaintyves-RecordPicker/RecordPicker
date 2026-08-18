@@ -577,7 +577,9 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
-    versions_per_history = (3 if PUBLICATION_PHASE == "full" else 2) + (1 if NEXT_VERSION else 0)
+    # Version history currently keeps the active release plus 2.0, 1.9 and
+    # 1.8. Older releases remain documented in the repository README.
+    versions_per_history = (4 if PUBLICATION_PHASE == "full" else 3) + (1 if NEXT_VERSION else 0)
     expected_release_cards = expected_locales * versions_per_history
     if release_pages != expected_release_cards:
         errors.append(

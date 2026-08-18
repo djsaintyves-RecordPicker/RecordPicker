@@ -26,7 +26,15 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v2.0 - Coming soon
+### v2.1.1 - Available now on iPhone, iPad and Apple Watch; v2.1 on Mac
+
+- Compact-iPhone layouts keep navigation visible, including in portrait on
+  iPhone SE.
+- Discogs CSV imports handle real-world exports more reliably.
+- Contextual help, faster artwork, safer backup and restore, accessibility,
+  localisation and interface refinements improve everyday use.
+
+### v2.0
 
 The next version is announced without a release date or unconfirmed feature
 promises. Screenshots will be replaced only with real captures from a

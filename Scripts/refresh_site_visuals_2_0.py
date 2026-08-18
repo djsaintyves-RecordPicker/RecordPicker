@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 import re
 from urllib.parse import urlsplit
@@ -229,11 +230,16 @@ def gallery(prefix: str, locale: str) -> str:
             f'<div class="shot-grid v20-shot-grid {platform}-grid">{cards}</div></div>'
         )
     return (
-        '<section class="media-section v20-screenshot-gallery" data-release-gallery="2.0">'
+        f'<section class="media-section v20-screenshot-gallery" data-release-gallery="{current_public_version()}">'
         '<div class="section-head"><h2>Record Picker 2.0</h2></div>'
         + "".join(groups)
         + '</section>'
     )
+
+
+def current_public_version() -> str:
+    state = json.loads((ROOT / "data" / "release-state.json").read_text(encoding="utf-8"))
+    return state["current_release"]["version"]
 
 
 def localize_existing_v20(text: str, locale: str) -> str:
