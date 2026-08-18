@@ -1,0 +1,7 @@
+Record Picker 2.2 giúp nhập, lập danh mục và khám phá lại bộ sưu tập chính xác hơn.
+
+• Nhập CSV giờ phân biệt rõ bộ sưu tập với danh sách mong muốn, hỗ trợ ánh xạ cột tùy chỉnh và hiển thị bản tổng kết chi tiết.
+• Gợi ý nghệ sĩ, thể loại, hãng đĩa cùng định dạng vật lý ưu tiên giúp nhập nhanh hơn mà không ghi đè siêu dữ liệu của bạn.
+• Sắp xếp và lọc nhiều thể loại giúp duyệt dễ hơn, đồng thời cải thiện Random Pick và Mood Pick.
+• Đĩa nhạc hôm nay hiển thị nguồn, độ mới và bằng chứng đáng tin cậy hơn; phản hồi phù hợp hay không phù hợp giúp cải thiện gợi ý sau này.
+• Các cải tiến về độ tin cậy, trợ năng và bản dịch giữ bộ sưu tập lớn nhanh và riêng tư trên iPhone, iPad và Mac.

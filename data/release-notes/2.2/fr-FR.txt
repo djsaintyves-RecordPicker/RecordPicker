@@ -1,0 +1,7 @@
+Record Picker 2.2 rend l’import, le catalogage et la redécouverte de votre collection plus précis.
+
+• L’import CSV distingue clairement le Bac à disques de la liste de souhaits, permet d’associer les colonnes et fournit un bilan détaillé.
+• Les suggestions d’artistes, genres et labels, ainsi que le format physique préféré, accélèrent la saisie sans écraser vos métadonnées.
+• Le tri et les filtres multi-genres facilitent l’exploration et affinent Random Pick et Mood Pick.
+• Disque du jour affiche des sources, une fraîcheur et des preuves plus solides, avec un retour pertinent ou non pertinent pour améliorer les suggestions.
+• Des améliorations de fiabilité, d’accessibilité et de traduction préservent fluidité et confidentialité sur iPhone, iPad et Mac.

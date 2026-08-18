@@ -1,0 +1,7 @@
+Record Picker 2.2 makes importing, cataloging and rediscovering your collection more precise.
+
+• CSV import now clearly separates the Record Crate from the Wishlist, supports custom column mapping and gives a detailed result summary.
+• Artist, genre and label suggestions, plus a preferred physical format, make manual entry faster without overwriting your own metadata.
+• Genre sorting and multi-genre filters make the library easier to explore and sharpen Random Pick and Mood Pick.
+• Today’s Pick now shows stronger sources, freshness and evidence, with relevant or not relevant feedback to improve future suggestions.
+• Reliability, accessibility and localization improvements keep large collections responsive and private across iPhone, iPad and Mac.

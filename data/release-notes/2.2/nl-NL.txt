@@ -1,0 +1,7 @@
+Record Picker 2.2 maakt het importeren, catalogiseren en herontdekken van je collectie nauwkeuriger.
+
+• CSV-import maakt nu duidelijk onderscheid tussen collectie en verlanglijst, ondersteunt eigen kolomtoewijzing en toont een uitgebreid resultaat.
+• Suggesties voor artiesten, genres en labels en een voorkeursformaat versnellen de invoer zonder je eigen metadata te overschrijven.
+• Genresortering en filters voor meerdere genres maken bladeren eenvoudiger en verfijnen Random Pick en Mood Pick.
+• Plaat van de dag toont sterkere bronnen, actualiteit en onderbouwing; feedback als relevant of niet relevant verbetert volgende suggesties.
+• Verbeteringen in betrouwbaarheid, toegankelijkheid en vertaling houden grote collecties snel en privé op iPhone, iPad en Mac.

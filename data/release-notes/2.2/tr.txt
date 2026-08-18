@@ -1,0 +1,7 @@
+Record Picker 2.2, koleksiyonunuzu içe aktarmayı, kataloglamayı ve yeniden keşfetmeyi daha hassas hâle getirir.
+
+• CSV içe aktarma artık koleksiyon ile istek listesini açıkça ayırır, özel sütun eşlemeyi destekler ve ayrıntılı sonuç özeti sunar.
+• Sanatçı, tür ve plak şirketi önerileriyle tercih edilen fiziksel format, kendi meta verilerinizi değiştirmeden girişi hızlandırır.
+• Tür sıralaması ve çoklu tür filtreleri keşfi kolaylaştırır, Random Pick ve Mood Pick sonuçlarını iyileştirir.
+• Günün Plağı daha güçlü kaynaklar, güncellik ve kanıt gösterir; ilgili veya ilgisiz geri bildirimi sonraki önerileri geliştirir.
+• Güvenilirlik, erişilebilirlik ve çeviri iyileştirmeleri büyük koleksiyonları iPhone, iPad ve Mac’te hızlı ve özel tutar.

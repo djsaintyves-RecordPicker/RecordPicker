@@ -26,6 +26,19 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+### v2.2 - Coming soon on iPhone, iPad and Mac
+
+- CSV import clearly separates the Record Crate from the Wishlist, supports
+  custom column mapping and provides a detailed result summary.
+- Artist, genre and label suggestions, plus a preferred physical format, make
+  manual entry faster without overwriting the collector's own metadata.
+- Genre sorting and multi-genre filters make the library easier to explore and
+  sharpen Random Pick and Mood Pick.
+- Today's Pick shows stronger sources, freshness and evidence, with relevant or
+  not relevant feedback to improve future suggestions.
+- Reliability, accessibility and localization improvements keep large
+  collections responsive and private across iPhone, iPad and Mac.
+
 ### v2.1.1 - Available now on iPhone, iPad and Apple Watch; v2.1 on Mac
 
 - Compact-iPhone layouts keep navigation visible, including in portrait on
@@ -36,9 +49,11 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ### v2.0
 
-The next version is announced without a release date or unconfirmed feature
-promises. Screenshots will be replaced only with real captures from a
-distributed build.
+- Today's Pick connects verified music news, anniversaries, reissues and
+  optional nearby concerts to records already owned or wanted.
+- Mood Pick and Random Pick offer complementary ways to choose what to play.
+- Collection Graph, stronger evidence and private relevance feedback make the
+  collection easier to explore and rediscover.
 
 ### v1.9 - Available now on iPhone, iPad, Apple Watch and Mac
 
@@ -146,7 +161,7 @@ Public copy has a semantic integrity baseline. After reviewing an intentional
 change across the generated localized pages, accept it explicitly:
 
 ```sh
-python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.0 site copy"
+python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.2 site copy"
 ```
 
 The lock covers titles, descriptions, visible main content and accessible

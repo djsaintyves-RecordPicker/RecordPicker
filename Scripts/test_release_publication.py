@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the fully published 2.1.1 site without changing the working tree."""
+"""Exercise the published 2.1.1 site and its 2.2 preview without changing the tree."""
 
 from __future__ import annotations
 
@@ -46,7 +46,14 @@ def main() -> None:
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
         assert current == "2.1.1"
-        assert state["next_release"] is None
+        assert state["next_release"] == {
+            "version": "2.2",
+            "platforms": {
+                "iphone": "coming_soon",
+                "ipad": "coming_soon",
+                "mac": "coming_soon",
+            },
+        }
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.1.1", "ipad": "2.1.1", "watch": "2.1.1", "mac": "2.1"
         }
@@ -61,6 +68,12 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
+            assert 'data-release-version="2.2"' in home
+            assert 'data-release-version="2.2"' in readme
+            assert 'data-release-version="2.2"' in screenshots
+            assert "next-release v22-preview" in home
+            assert "release-upcoming v22-release-card" in readme
+            assert "next-release v22-gallery-marker" in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
@@ -94,7 +107,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: published 2.1.1 state, unique visuals, Random Pick demo and watchOS gallery are responsive-ready.")
+    print("OK: published 2.1.1 state and localized 2.2 preview are responsive-ready.")
 
 
 if __name__ == "__main__":
