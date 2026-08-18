@@ -89,7 +89,7 @@ def page_locale(page: Path) -> str:
     first = relative.parts[0]
     if first in SITE_LOCALES:
         return first
-    return "fr" if first in {"index.html", "screenshots", "readme", "support", "privacy", "mac-app"} else "en-us"
+    return "en-us" if first == "index.html" else ("fr" if first in {"screenshots", "readme", "support", "privacy", "mac-app"} else "en-us")
 
 
 def available_locale(locale: str, filename: str) -> str:

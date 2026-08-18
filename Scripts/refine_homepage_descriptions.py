@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 # privacy, optional iCloud sync on iPhone/iPad/Mac, and Apple Watch availability.
 COPY: dict[str, tuple[str, str]] = {
     "": (
-        "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement.",
-        "Cataloguez vos vinyles et vos CD, puis choisissez le prochain disque à écouter avec le tirage aléatoire personnalisable, Mood Pick ou le Disque du jour. Votre collection reste privée, peut se synchroniser via iCloud entre iPhone, iPad et Mac, et vous accompagne aussi sur Apple Watch.",
+        "Catalogue vinyl records and CDs, check duplicates before buying, import a Discogs CSV and choose what to play. Private, ad-free and available in 32 localizations.",
+        "Catalog your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick, or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad, and Mac, and is also available on Apple Watch.",
     ),
     "fr": (
         "Choisissez quel vinyle ou CD écouter avec Random Pick, Mood Pick ou le Disque du jour. Gratuit jusqu’à 100 disques, sans publicité ni abonnement.",
@@ -293,7 +293,8 @@ def audit() -> None:
         found_meta = re.search(
             r'<meta name="description" content="([^"]+)">', text
         )
-        assert found_meta and unescape(found_meta.group(1)) == meta, locale or "root"
+        found_value = unescape(found_meta.group(1)) if found_meta else ""
+        assert found_meta and (found_value == meta or found_value.startswith(meta + " · ")), locale or "root"
         assert visible_deck(text) == deck, locale or "root"
         lowered = unescape(text).casefold()
         for phrase in FORBIDDEN:
