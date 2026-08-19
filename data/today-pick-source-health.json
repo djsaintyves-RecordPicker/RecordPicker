@@ -1,7 +1,7 @@
 {
   "configuredSources": 46,
-  "contributingSources": 7,
-  "generatedAt": "2026-08-19T07:06:21Z",
+  "contributingSources": 8,
+  "generatedAt": "2026-08-19T13:09:46Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
@@ -12,7 +12,7 @@
     },
     "BBC Music": {
       "downloadedArticles": 24,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -101,7 +101,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 16,
+      "downloadedArticles": 17,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -163,7 +163,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 27,
-      "resolvedEvents": 4,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -229,12 +229,12 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 22,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 9,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
@@ -246,7 +246,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
