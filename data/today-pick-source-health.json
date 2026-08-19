@@ -1,17 +1,17 @@
 {
   "configuredSources": 46,
-  "contributingSources": 15,
-  "generatedAt": "2026-08-18T18:57:12Z",
+  "contributingSources": 17,
+  "generatedAt": "2026-08-19T01:53:35Z",
   "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 25,
+      "downloadedArticles": 24,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -24,7 +24,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -35,14 +35,15 @@
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 1,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "HTTP Error 403: Forbidden",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 6,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -54,7 +55,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -83,10 +84,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -102,7 +102,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 14,
+      "downloadedArticles": 15,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -115,13 +115,13 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
@@ -133,7 +133,7 @@
     },
     "Musikexpress": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.musikexpress.de/feed/"
     },
@@ -158,7 +158,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -212,7 +212,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -247,7 +247,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
@@ -265,14 +265,14 @@
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
     "VAN Magazine": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 0,
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "noRecentArticles",
       "url": "https://van-magazine.com/feed/"
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
