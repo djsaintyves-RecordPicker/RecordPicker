@@ -26,7 +26,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v2.2 - Coming soon on iPhone, iPad and Mac
+### v2.2 - Available now on Mac; coming soon on iPhone and iPad
 
 - CSV import clearly separates the Record Crate from the Wishlist, supports
   custom column mapping and provides a detailed result summary.

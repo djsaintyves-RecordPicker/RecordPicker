@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published 2.1.1 site and its 2.2 preview without changing the tree."""
+"""Exercise the published macOS 2.2 site and upcoming iOS 2.2 preview."""
 
 from __future__ import annotations
 
@@ -51,11 +51,11 @@ def main() -> None:
             "platforms": {
                 "iphone": "coming_soon",
                 "ipad": "coming_soon",
-                "mac": "coming_soon",
+                "mac": "available",
             },
         }
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.1.1", "ipad": "2.1.1", "watch": "2.1.1", "mac": "2.1"
+            "iphone": "2.1.1", "ipad": "2.1.1", "watch": "2.1.1", "mac": "2.2"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -73,7 +73,8 @@ def main() -> None:
             assert 'data-release-version="2.2"' in readme
             assert 'data-release-version="2.2"' in screenshots
             assert "next-release v22-preview" in home
-            assert "release-upcoming v22-release-card" in readme
+            assert "release-partial v22-release-card" in readme
+            assert "release-upcoming v22-release-card" not in readme
             assert "next-release v22-gallery-marker" in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
@@ -99,7 +100,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.1"' in mac_app
+            assert '"softwareVersion":"2.2"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
@@ -112,7 +113,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: published 2.1.1 state and localized 2.2 preview are responsive-ready.")
+    print("OK: macOS 2.2 is published and localized iOS 2.2 previews remain upcoming.")
 
 
 if __name__ == "__main__":

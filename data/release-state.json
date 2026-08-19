@@ -7,7 +7,7 @@
       "iphone": "2.1.1",
       "ipad": "2.1.1",
       "watch": "2.1.1",
-      "mac": "2.1"
+      "mac": "2.2"
     },
     "platforms": {
       "iphone": "available",
@@ -27,7 +27,7 @@
     "platforms": {
       "iphone": "coming_soon",
       "ipad": "coming_soon",
-      "mac": "coming_soon"
+      "mac": "available"
     }
   },
   "historical_releases": [

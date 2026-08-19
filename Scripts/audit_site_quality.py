@@ -21,7 +21,7 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-NEXT_RELEASE_DATE = "2026-08-18"
+NEXT_RELEASE_DATE = "2026-08-19"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -158,7 +158,7 @@ def main() -> None:
             errors.append(f"{relative}: current version is missing its iOS/macOS platform label")
         if '>v2.1.1<' in text:
             errors.append(f"{relative}: generic 2.1.1 version pill remains")
-        if '<span id="site-footer-version">Record Picker · iOS 2.1.1 · macOS 2.1</span>' not in text:
+        if '<span id="site-footer-version">Record Picker · iOS 2.1.1 · macOS 2.2</span>' not in text:
             errors.append(f"{relative}: current iOS/macOS footer versions missing")
         if relative in {
             Path("mac-app/index.html"),
@@ -416,7 +416,7 @@ def main() -> None:
                 text,
                 flags=re.DOTALL,
             )
-            if not gallery_section or "<h2>iOS 2.1.1 · macOS 2.1</h2>" not in gallery_section.group(0):
+            if not gallery_section or "<h2>iOS 2.1.1 · macOS 2.2</h2>" not in gallery_section.group(0):
                 errors.append(f"{relative}: homepage gallery heading does not match its visuals")
             elif '<p class="lead">' in gallery_section.group(0):
                 errors.append(f"{relative}: redundant homepage gallery promise remains")
@@ -514,10 +514,10 @@ def main() -> None:
                 text,
             )
             if not next_block or not re.search(
-                r'class="[^"]*(?:next-release|release-upcoming)[^"]*"',
+                r'class="[^"]*(?:next-release|release-upcoming|release-partial)[^"]*"',
                 next_block.group(0),
             ):
-                errors.append(f"{relative}: next {NEXT_VERSION} is not marked as upcoming")
+                errors.append(f"{relative}: staged {NEXT_VERSION} release state is missing")
             if next_block and "current-release" in next_block.group(0):
                 errors.append(f"{relative}: next {NEXT_VERSION} is incorrectly marked current")
         if f'data-release-gallery="{CURRENT_VERSION}"' in text:
