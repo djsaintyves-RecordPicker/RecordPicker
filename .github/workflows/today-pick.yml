@@ -32,6 +32,8 @@ jobs:
             --regional-output-dir site/data/regions \
             --require-ticketmaster \
             --minimum-editorial-sources 6 \
+            --fallback-feed site/data/today-pick-v1.json \
+            --fallback-editorial-max-age-hours 72 \
             --ttl-hours 36
           python3 - <<'PY'
           import json
