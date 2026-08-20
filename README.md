@@ -26,11 +26,33 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v2.0 - Coming soon
+### v2.3 - Coming soon
 
-The next version is announced without a release date or unconfirmed feature
-promises. Screenshots will be replaced only with real captures from a
-distributed build.
+- A more complete Apple Watch experience for picking another record and
+  following the result from the wrist.
+- Clearer iPhone-Watch synchronization states for picks and artwork.
+- Playback status appears consistently on iPhone, iPad and Mac.
+- Today's Pick notifications can reflect several new suggestions with an
+  incrementing badge.
+
+### v2.2 - Available now on iPhone, iPad, Apple Watch and Mac
+
+- CSV import clearly separates the Record Crate from the Wishlist, supports
+  custom column mapping and gives a detailed result summary.
+- Artist, genre and label suggestions, plus a preferred physical format, make
+  manual entry faster without overwriting the collector's metadata.
+- Genre sorting and multi-genre filters make the library easier to explore and
+  sharpen Random Pick and Mood Pick.
+- Today's Pick presents stronger sources, freshness and evidence, with useful
+  or not useful feedback to improve future suggestions.
+- Reliability, accessibility and localization improvements keep large
+  collections responsive and private across Apple devices.
+
+### v2.1
+
+- Mood Pick, Today's Pick and Random Pick have consistent names across the app.
+- Picking, artwork display and Apple Watch synchronization are smoother and
+  more reliable.
 
 ### v1.9 - Available now on iPhone, iPad, Apple Watch and Mac
 
@@ -136,7 +158,7 @@ Public copy has a semantic integrity baseline. After reviewing an intentional
 change across the generated localized pages, accept it explicitly:
 
 ```sh
-python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.0 site copy"
+python3 Scripts/site_localization_integrity.py --accept --reason "Published 2.2 and announced 2.3"
 ```
 
 The lock covers titles, descriptions, visible main content and accessible

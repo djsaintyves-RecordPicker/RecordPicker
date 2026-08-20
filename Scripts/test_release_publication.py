@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the fully published 2.0 site without changing the working tree."""
+"""Exercise the published 2.2 site and its 2.3 announcement."""
 
 from __future__ import annotations
 
@@ -31,12 +31,9 @@ def main() -> None:
             target,
             ignore=shutil.ignore_patterns(".git", "__pycache__", "*.pyc"),
         )
-        refresh = target / "Scripts" / "refresh_site_visuals_2_0.py"
         audit = target / "Scripts" / "audit_site_quality.py"
-        run("python3", str(refresh), cwd=target)
         run("python3", str(audit), cwd=target)
-        # A second pass proves that the visual refresh remains safely idempotent.
-        run("python3", str(refresh), cwd=target)
+        # A second pass proves that the publication audit is safely repeatable.
         run("python3", str(audit), cwd=target)
 
         state = json.loads(
@@ -45,8 +42,8 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.0"
-        assert state["next_release"]["version"] == "2.1"
+        assert current == "2.2"
+        assert state["next_release"]["version"] == "2.3"
         assert set(state["next_release"]["platforms"].values()) == {"coming_soon"}
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -66,7 +63,7 @@ def main() -> None:
             assert f'data-release-gallery="{current}"' in screenshots
             assert 'class="media-section v20-preview' not in screenshots
             assert 'class="media-section current-release v20-preview' not in screenshots
-            assert 'data-preview-gallery="2.0"' not in screenshots
+            assert f'data-preview-gallery="{current}"' not in screenshots
             if root == target or root.name in {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
                 assert "watch-random-pick" in screenshots
             assert "data-random-pick-demo" in home
@@ -91,7 +88,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: published 2.0 state, unique visuals, Random Pick demo and watchOS gallery are responsive-ready.")
+    print("OK: 2.2 is published, 2.3 is announced, and the localized site remains responsive-ready.")
 
 
 if __name__ == "__main__":
