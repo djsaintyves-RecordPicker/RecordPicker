@@ -26,7 +26,16 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v2.2 - Available now on Mac; coming soon on iPhone and iPad
+### v2.3 - Coming soon
+
+- A more complete Apple Watch experience for picking another record and
+  following the result from the wrist.
+- Clearer iPhone-Watch synchronization states for picks and artwork.
+- Playback status appears consistently on iPhone, iPad and Mac.
+- Today's Pick notifications can reflect several new suggestions with an
+  incrementing badge.
+
+### v2.2 - Available now on iPhone, iPad, Apple Watch and Mac
 
 - CSV import clearly separates the Record Crate from the Wishlist, supports
   custom column mapping and provides a detailed result summary.
@@ -39,7 +48,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Reliability, accessibility and localization improvements keep large
   collections responsive and private across iPhone, iPad and Mac.
 
-### v2.1.1 - Available now on iPhone, iPad and Apple Watch; v2.1 on Mac
+### v2.1.1
 
 - Compact-iPhone layouts keep navigation visible, including in portrait on
   iPhone SE.

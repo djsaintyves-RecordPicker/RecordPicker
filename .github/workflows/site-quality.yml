@@ -26,5 +26,5 @@ jobs:
         run: PYTHONPATH=Scripts python3 -m unittest Scripts/test_site_localization_integrity.py
       - name: Validate IndexNow publication batch
         run: python3 Scripts/submit_indexnow.py --dry-run
-      - name: Simulate the complete 2.0 publication twice
+      - name: Validate the 2.2 publication and 2.3 announcement twice
         run: python3 Scripts/test_release_publication.py

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published macOS 2.2 site and upcoming iOS 2.2 preview."""
+"""Exercise the published 2.2 site and its localized 2.3 announcement."""
 
 from __future__ import annotations
 
@@ -31,12 +31,9 @@ def main() -> None:
             target,
             ignore=shutil.ignore_patterns(".git", "__pycache__", "*.pyc"),
         )
-        refresh = target / "Scripts" / "refresh_site_visuals_2_0.py"
         audit = target / "Scripts" / "audit_site_quality.py"
-        run("python3", str(refresh), cwd=target)
         run("python3", str(audit), cwd=target)
-        # A second pass proves that the visual refresh remains safely idempotent.
-        run("python3", str(refresh), cwd=target)
+        # A second pass proves that the publication audit remains repeatable.
         run("python3", str(audit), cwd=target)
 
         state = json.loads(
@@ -45,17 +42,18 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.1.1"
+        assert current == "2.2"
         assert state["next_release"] == {
-            "version": "2.2",
+            "version": "2.3",
             "platforms": {
                 "iphone": "coming_soon",
                 "ipad": "coming_soon",
-                "mac": "available",
+                "mac": "coming_soon",
+                "watch": "coming_soon",
             },
         }
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.1.1", "ipad": "2.1.1", "watch": "2.1.1", "mac": "2.2"
+            "iphone": "2.2", "ipad": "2.2", "watch": "2.2", "mac": "2.2"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -68,14 +66,12 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
-            assert 'data-release-version="2.0"' not in readme
-            assert 'data-release-version="2.2"' in home
-            assert 'data-release-version="2.2"' in readme
-            assert 'data-release-version="2.2"' in screenshots
-            assert "next-release v22-preview" in home
-            assert "release-partial v22-release-card" in readme
-            assert "release-upcoming v22-release-card" not in readme
-            assert "next-release v22-gallery-marker" in screenshots
+            assert 'data-release-version="2.3"' in home
+            assert 'data-release-version="2.3"' in readme
+            assert 'data-release-version="2.3"' in screenshots
+            assert "v23-preview next-release" in home
+            assert "release-upcoming v23-release-card" in readme
+            assert "next-release v23-gallery-marker" in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
@@ -84,10 +80,10 @@ def main() -> None:
             assert "Record Picker 2.0" not in readme
             assert "Record Picker 2.0" not in screenshots
             assert f'data-release-gallery="{current}"' in screenshots
-            assert 'data-release-version="2.1"' not in screenshots
+            assert 'data-release-version="2.1.1"' not in screenshots
             assert 'class="media-section v20-preview' not in screenshots
             assert 'class="media-section current-release v20-preview' not in screenshots
-            assert 'data-preview-gallery="2.0"' not in screenshots
+            assert f'data-preview-gallery="{current}"' not in screenshots
             if root == target or root.name in {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
                 assert "watch-random-pick" in screenshots
             assert "data-random-pick-demo" in home
@@ -113,7 +109,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: macOS 2.2 is published and localized iOS 2.2 previews remain upcoming.")
+    print("OK: 2.2 is published and the localized 2.3 announcement is ready.")
 
 
 if __name__ == "__main__":

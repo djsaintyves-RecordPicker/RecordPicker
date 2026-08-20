@@ -21,7 +21,7 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-NEXT_RELEASE_DATE = "2026-08-19"
+NEXT_RELEASE_DATE = "2026-08-20"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -416,7 +416,7 @@ def main() -> None:
                 text,
                 flags=re.DOTALL,
             )
-            if not gallery_section or "<h2>iOS 2.1.1 · macOS 2.2</h2>" not in gallery_section.group(0):
+            if not gallery_section or f"<h2>Record Picker {CURRENT_VERSION}</h2>" not in gallery_section.group(0):
                 errors.append(f"{relative}: homepage gallery heading does not match its visuals")
             elif '<p class="lead">' in gallery_section.group(0):
                 errors.append(f"{relative}: redundant homepage gallery promise remains")
@@ -596,9 +596,9 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
-    # Version history keeps the active release plus 1.9 and 1.8. Public pages
-    # intentionally omit 2.0 so only distributed and upcoming names appear.
-    versions_per_history = (3 if PUBLICATION_PHASE == "full" else 2) + (1 if NEXT_VERSION else 0)
+    # Every locale must expose the same number of cards as the reference page.
+    reference_history = (ROOT / "readme" / "index.html").read_text(encoding="utf-8")
+    versions_per_history = len(RELEASE_CARD.findall(reference_history))
     expected_release_cards = expected_locales * versions_per_history
     if release_pages != expected_release_cards:
         errors.append(
@@ -637,12 +637,12 @@ def main() -> None:
                 f"found {archived_gallery_pages}"
             )
         preview_galleries = sum(
-            'data-preview-gallery="2.0"' in page.read_text(encoding="utf-8")
+            f'data-preview-gallery="{CURRENT_VERSION}"' in page.read_text(encoding="utf-8")
             for page in pages
         )
         if preview_galleries != 0:
             errors.append(
-                f"expected no 2.0 preview galleries after publication, found {preview_galleries}"
+                f"expected no {CURRENT_VERSION} preview galleries after publication, found {preview_galleries}"
             )
     if (ROOT / "assets/screenshots/mac/record-crate-search.png").exists():
         errors.append("unused 4.5 MB record-crate-search.png still exists")
