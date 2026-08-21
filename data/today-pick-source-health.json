@@ -1,7 +1,7 @@
 {
   "configuredSources": 46,
-  "contributingSources": 8,
-  "generatedAt": "2026-08-20T19:00:21Z",
+  "contributingSources": 11,
+  "generatedAt": "2026-08-21T01:58:14Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
@@ -11,7 +11,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 17,
+      "downloadedArticles": 18,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -42,7 +42,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -54,7 +54,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -157,7 +157,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -187,7 +187,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -235,13 +235,13 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 2,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
