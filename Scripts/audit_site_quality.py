@@ -21,7 +21,7 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-NEXT_RELEASE_DATE = "2026-08-20"
+CURRENT_RELEASE_DATE = "2026-08-22"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -111,11 +111,10 @@ def main() -> None:
             try:
                 schema = json.loads(unescape(payload))
                 if schema.get("@type") == "SoftwareApplication":
-                    if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
-                        if schema.get("dateModified") != NEXT_RELEASE_DATE:
-                            errors.append(
-                                f"{page.relative_to(ROOT)}: stale structured-data modification date"
-                            )
+                    if schema.get("dateModified") != CURRENT_RELEASE_DATE:
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: stale structured-data modification date"
+                        )
                     if set(schema.get("sameAs", [])) != OFFICIAL_SOCIALS:
                         errors.append(
                             f"{page.relative_to(ROOT)}: official sameAs profiles incomplete"
@@ -158,8 +157,8 @@ def main() -> None:
             errors.append(f"{relative}: current version is missing its iOS/macOS platform label")
         if '>v2.1.1<' in text:
             errors.append(f"{relative}: generic 2.1.1 version pill remains")
-        if '<span id="site-footer-version">Record Picker · iOS 2.1.1 · macOS 2.2</span>' not in text:
-            errors.append(f"{relative}: current iOS/macOS footer versions missing")
+        if f'<span id="site-footer-version">Record Picker · {CURRENT_VERSION}</span>' not in text:
+            errors.append(f"{relative}: current footer version missing")
         if relative in {
             Path("mac-app/index.html"),
             Path("fr/mac-app/index.html"),

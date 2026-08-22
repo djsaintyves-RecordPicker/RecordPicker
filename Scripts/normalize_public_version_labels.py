@@ -8,7 +8,8 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_LABEL = "iOS 2.1.1 · macOS 2.2"
+CURRENT_VERSION = "2.3"
+CURRENT_LABEL = f"Record Picker {CURRENT_VERSION}"
 
 RELEASE_20_CARD = re.compile(
     r'<article class="release-card[^>]*data-release-version="2\.0"[^>]*>.*?</article>',
@@ -25,8 +26,8 @@ def normalize(path: Path) -> bool:
         "iPhone · Record Picker 2.0": "iPhone · Record Picker 2.1.1",
         "iPad · Record Picker 2.0": "iPad · Record Picker 2.1.1",
         "Apple Watch · Record Picker 2.0": "Apple Watch · Record Picker 2.1.1",
-        "Mac · Record Picker 2.1": "Mac · macOS 2.2",
-        "Mac · macOS 2.1": "Mac · macOS 2.2",
+        "Mac · Record Picker 2.1": "Mac · Record Picker 2.3",
+        "Mac · macOS 2.1": "Mac · Record Picker 2.3",
         "iPhone · Record Picker 2.1.1": "iPhone · iOS 2.1.1",
         "iPad · Record Picker 2.1.1": "iPad · iOS 2.1.1",
         "Apple Watch · Record Picker 2.1.1": "Apple Watch · iOS 2.1.1",
@@ -37,7 +38,7 @@ def normalize(path: Path) -> bool:
     updated = updated.replace("<h2>Record Picker 2.0</h2>", f"<h2>{CURRENT_LABEL}</h2>")
     updated = updated.replace("<h2>Record Picker 2.1</h2>", f"<h2>{CURRENT_LABEL}</h2>")
     updated = updated.replace("<strong>Record Picker 2.0</strong>", f"<strong>{CURRENT_LABEL}</strong>")
-    updated = updated.replace("macOS 2.0", "macOS 2.2")
+    updated = updated.replace("macOS 2.0", CURRENT_LABEL)
     updated = updated.replace("iOS 2.1.1 · macOS 2.1", CURRENT_LABEL)
     updated = updated.replace("Record Picker v2.0", "Record Picker")
     updated = updated.replace("Record Picker 2.0", "Record Picker")
@@ -49,11 +50,15 @@ def normalize(path: Path) -> bool:
     updated = re.sub(r"Record Picker 2\.1(?!\.1)", "Record Picker", updated)
     updated = updated.replace(
         '<span id="site-footer-version">Record Picker v2.1.1</span>',
-        f'<span id="site-footer-version">Record Picker · {CURRENT_LABEL}</span>',
+        f'<span id="site-footer-version">Record Picker · {CURRENT_VERSION}</span>',
     )
 
     if path.name == "index.html" and path.parent.name == "mac-app":
-        updated = re.sub(r'"softwareVersion":"[^"]+"', '"softwareVersion":"2.2"', updated)
+        updated = re.sub(
+            r'"softwareVersion":"[^"]+"',
+            f'"softwareVersion":"{CURRENT_VERSION}"',
+            updated,
+        )
 
     if updated == text:
         return False
