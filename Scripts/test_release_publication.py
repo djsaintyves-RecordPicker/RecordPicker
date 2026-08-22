@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published 2.2 site and its localized 2.3 announcement."""
+"""Exercise the fully published Record Picker 2.3 site."""
 
 from __future__ import annotations
 
@@ -42,18 +42,10 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.2"
-        assert state["next_release"] == {
-            "version": "2.3",
-            "platforms": {
-                "iphone": "coming_soon",
-                "ipad": "coming_soon",
-                "mac": "coming_soon",
-                "watch": "coming_soon",
-            },
-        }
+        assert current == "2.3"
+        assert "next_release" not in state
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.2", "ipad": "2.2", "watch": "2.2", "mac": "2.2"
+            "iphone": "2.3", "ipad": "2.3", "watch": "2.3", "mac": "2.3"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -66,12 +58,17 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
-            assert 'data-release-version="2.3"' in home
+            assert 'data-release-version="2.2"' not in home
             assert 'data-release-version="2.3"' in readme
-            assert 'data-release-version="2.3"' in screenshots
-            assert "v23-preview next-release" in home
-            assert "release-upcoming v23-release-card" in readme
-            assert "next-release v23-gallery-marker" in screenshots
+            assert 'data-release-version="2.3"' not in screenshots
+            assert "v23-preview current-release" in home
+            assert 'class="platform-expansion"' in home
+            assert 'class="platform-beta-callout"' in home
+            assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
+            assert ">Android<" in home and ">Windows<" in home
+            assert home.count('class="future-platform"') == 2
+            assert "release-upcoming v23-release-card" not in readme
+            assert "v23-gallery-marker" not in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
@@ -96,7 +93,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.2"' in mac_app
+            assert '"softwareVersion":"2.3"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
@@ -109,7 +106,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: 2.2 is published and the localized 2.3 announcement is ready.")
+    print("OK: Record Picker 2.3 is published across every localized site.")
 
 
 if __name__ == "__main__":

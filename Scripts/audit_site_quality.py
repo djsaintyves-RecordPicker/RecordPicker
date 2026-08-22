@@ -21,7 +21,7 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-NEXT_RELEASE_DATE = "2026-08-20"
+CURRENT_RELEASE_DATE = "2026-08-22"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -82,6 +82,7 @@ def main() -> None:
     content_pages = 0
     release_pages = 0
     homes = 0
+    platform_expansion_pages = 0
     next_release_pages = 0
     current_gallery_pages = 0
     current_metadata_pages = 0
@@ -111,11 +112,10 @@ def main() -> None:
             try:
                 schema = json.loads(unescape(payload))
                 if schema.get("@type") == "SoftwareApplication":
-                    if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
-                        if schema.get("dateModified") != NEXT_RELEASE_DATE:
-                            errors.append(
-                                f"{page.relative_to(ROOT)}: stale structured-data modification date"
-                            )
+                    if schema.get("dateModified") != CURRENT_RELEASE_DATE:
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: stale structured-data modification date"
+                        )
                     if set(schema.get("sameAs", [])) != OFFICIAL_SOCIALS:
                         errors.append(
                             f"{page.relative_to(ROOT)}: official sameAs profiles incomplete"
@@ -158,8 +158,8 @@ def main() -> None:
             errors.append(f"{relative}: current version is missing its iOS/macOS platform label")
         if '>v2.1.1<' in text:
             errors.append(f"{relative}: generic 2.1.1 version pill remains")
-        if '<span id="site-footer-version">Record Picker · iOS 2.1.1 · macOS 2.2</span>' not in text:
-            errors.append(f"{relative}: current iOS/macOS footer versions missing")
+        if f'<span id="site-footer-version">Record Picker · {CURRENT_VERSION}</span>' not in text:
+            errors.append(f"{relative}: current footer version missing")
         if relative in {
             Path("mac-app/index.html"),
             Path("fr/mac-app/index.html"),
@@ -338,6 +338,10 @@ def main() -> None:
             "quality.css?v=20260812-growth-funnel",
             "quality.css?v=20260812-complete-growth",
             "quality.css?v=20260812-final-funnel",
+            "quality.css?v=20260822-no-contest",
+            "quality.css?v=20260822-android-beta",
+            "quality.css?v=20260822-platform-spacing",
+            "quality.css?v=20260822-platform-architecture",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -537,6 +541,14 @@ def main() -> None:
             archived_gallery_pages += 1
         if kind == "index.html":
             homes += 1
+            if 'class="platform-expansion"' in text:
+                platform_expansion_pages += 1
+            else:
+                errors.append(f"{relative}: Android and Windows development announcement missing")
+            if text.count('class="future-platform"') != 2:
+                errors.append(f"{relative}: Android and Windows hero badges missing")
+            if 'class="platform-beta-callout"' not in text:
+                errors.append(f"{relative}: Android beta recruitment call-to-action missing")
             for forbidden in ("v18-showcase", "release-history", "support-band"):
                 if forbidden in text:
                     errors.append(f"{relative}: verbose home section {forbidden} remains")
@@ -589,13 +601,19 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 3 + 12
+    # Nine established pages plus the three localized platform pages.
+    expected_content_pages = expected_locales * 12 + 2 + 12
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
+    if platform_expansion_pages != expected_locales:
+        errors.append(
+            f"expected {expected_locales} Android/Windows announcements, "
+            f"found {platform_expansion_pages}"
+        )
     # Every locale must expose the same number of cards as the reference page.
     reference_history = (ROOT / "readme" / "index.html").read_text(encoding="utf-8")
     versions_per_history = len(RELEASE_CARD.findall(reference_history))

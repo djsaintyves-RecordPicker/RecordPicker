@@ -2,12 +2,14 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
+Android and Windows versions are in development. Release details will be announced
+when both versions are ready.
+
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
 
 ## Public pages
 
 - Official website: https://recordpicker.app/
-- 3 Picks Challenge official rules: https://recordpicker.app/contest/
 - Discover page: https://recordpicker.app/
 - Support: https://recordpicker.app/support/
 - Screenshots: https://recordpicker.app/screenshots/
@@ -17,7 +19,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - How to choose what vinyl record to play next: https://recordpicker.app/choose-vinyl-record/
 - Random vinyl record picker app: https://recordpicker.app/random-vinyl-record-picker/
 - Manage and rediscover a vinyl collection: https://recordpicker.app/manage-vinyl-collection/
-- App Store: https://apps.apple.com/fr/app/recordpicker/id6780422305
+- App Store: https://apps.apple.com/app/id6780422305
 - YouTube: https://www.youtube.com/@recordpicker
 - Facebook: https://www.facebook.com/profile.php?id=61591096987226
 - Instagram: https://www.instagram.com/recordpicker/
@@ -26,7 +28,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
-### v2.3 - Coming soon
+### v2.3 - Available now on iPhone, iPad, Apple Watch and Mac
 
 - A more complete Apple Watch experience for picking another record and
   following the result from the wrist.
@@ -152,6 +154,8 @@ python3 Scripts/refine_homepage_descriptions.py
 python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/complete_growth_strategy.py
+python3 Scripts/publish_release_2_3.py
+python3 Scripts/announce_android_pc_development.py
 python3 Scripts/audit_growth_strategy.py
 python3 Scripts/audit_site_quality.py
 python3 Scripts/site_localization_integrity.py
@@ -162,7 +166,7 @@ Public copy has a semantic integrity baseline. After reviewing an intentional
 change across the generated localized pages, accept it explicitly:
 
 ```sh
-python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.2 site copy"
+python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.3 site copy"
 ```
 
 The lock covers titles, descriptions, visible main content and accessible
