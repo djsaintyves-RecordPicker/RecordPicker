@@ -13,12 +13,6 @@
   var manualLanguageKey = "recordpicker-language-manual";
   var localeMap = {};
   var localeIndexes = {};
-  var contestEndsAt = Date.parse("2026-08-22T21:59:59Z");
-  if (Date.now() > contestEndsAt) {
-    document.querySelectorAll(".challenge-announcement, .challenge-section").forEach(function (element) {
-      element.remove();
-    });
-  }
   locales.forEach(function (locale, index) {
     localeMap[locale.id] = locale;
     localeIndexes[locale.id] = index;

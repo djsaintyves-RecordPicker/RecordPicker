@@ -10,7 +10,6 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 ## Public pages
 
 - Official website: https://recordpicker.app/
-- 3 Picks Challenge official rules: https://recordpicker.app/contest/
 - Discover page: https://recordpicker.app/
 - Support: https://recordpicker.app/support/
 - Screenshots: https://recordpicker.app/screenshots/
