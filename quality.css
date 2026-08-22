@@ -601,7 +601,7 @@ picture {
 
 .platform-expansion {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 300px);
   align-items: center;
   gap: clamp(24px, 5vw, 64px);
   width: min(1180px, calc(100% - 32px));
@@ -640,8 +640,11 @@ picture {
 .platform-expansion-badges {
   display: grid;
   grid-template-columns: repeat(2, minmax(82px, 1fr));
-  gap: 10px;
-  min-width: min(100%, 220px);
+  justify-self: center;
+  width: 100%;
+  max-width: 280px;
+  gap: 14px;
+  padding-inline: 8px;
 }
 .platform-expansion-badges span,
 .platform-expansion-badges small {
@@ -663,7 +666,11 @@ picture {
 
 @media (max-width: 720px) {
   .platform-expansion { grid-template-columns: 1fr; }
-  .platform-expansion-badges { width: 100%; }
+  .platform-expansion-badges {
+    width: 100%;
+    max-width: none;
+    padding-inline: 0;
+  }
   .badge-row .future-platform {
     flex: 1 1 calc(50% - 10px);
     justify-content: center;
