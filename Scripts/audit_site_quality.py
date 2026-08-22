@@ -82,6 +82,7 @@ def main() -> None:
     content_pages = 0
     release_pages = 0
     homes = 0
+    platform_expansion_pages = 0
     next_release_pages = 0
     current_gallery_pages = 0
     current_metadata_pages = 0
@@ -337,6 +338,7 @@ def main() -> None:
             "quality.css?v=20260812-growth-funnel",
             "quality.css?v=20260812-complete-growth",
             "quality.css?v=20260812-final-funnel",
+            "quality.css?v=20260822-platform-expansion",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -536,6 +538,10 @@ def main() -> None:
             archived_gallery_pages += 1
         if kind == "index.html":
             homes += 1
+            if 'class="platform-expansion"' in text:
+                platform_expansion_pages += 1
+            else:
+                errors.append(f"{relative}: Android and PC development announcement missing")
             for forbidden in ("v18-showcase", "release-history", "support-band"):
                 if forbidden in text:
                     errors.append(f"{relative}: verbose home section {forbidden} remains")
@@ -595,6 +601,11 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
+    if platform_expansion_pages != expected_locales:
+        errors.append(
+            f"expected {expected_locales} Android/PC announcements, "
+            f"found {platform_expansion_pages}"
+        )
     # Every locale must expose the same number of cards as the reference page.
     reference_history = (ROOT / "readme" / "index.html").read_text(encoding="utf-8")
     versions_per_history = len(RELEASE_CARD.findall(reference_history))
