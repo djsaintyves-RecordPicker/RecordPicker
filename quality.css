@@ -584,6 +584,21 @@ picture {
 .platform-shot-group { margin-top: 42px; }
 .platform-shot-group h3 { font-size: 1.12rem; }
 
+.badge-row .future-platform {
+  gap: 7px;
+  border-style: dashed;
+  background: color-mix(in srgb, var(--glass-surface) 86%, var(--red) 14%);
+}
+.badge-row .future-platform b {
+  font: inherit;
+}
+.badge-row .future-platform small {
+  color: var(--red);
+  font-size: 0.68em;
+  font-weight: 720;
+  white-space: nowrap;
+}
+
 .platform-expansion {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -634,6 +649,10 @@ picture {
 @media (max-width: 720px) {
   .platform-expansion { grid-template-columns: 1fr; }
   .platform-expansion-badges { width: 100%; }
+  .badge-row .future-platform {
+    flex: 1 1 calc(50% - 10px);
+    justify-content: center;
+  }
 }
 .v20-shot-grid { margin-top: 18px; }
 .v20-shot-grid.mac-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

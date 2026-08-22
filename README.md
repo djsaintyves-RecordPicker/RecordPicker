@@ -2,7 +2,7 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Android and PC versions are in development. Release details will be announced
+Android and Windows versions are in development. Release details will be announced
 when both versions are ready.
 
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
