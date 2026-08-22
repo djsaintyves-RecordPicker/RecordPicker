@@ -704,6 +704,57 @@ def editorial_health_document(
     }
 
 
+def fallback_editorial_events(
+    feed_path: Path,
+    now: datetime,
+    fresh_source_names: set[str],
+    maximum_age_hours: int,
+) -> tuple[list[dict[str, Any]], dict[str, int], str]:
+    """Reuse recent editorial events for sources missing from this collection.
+
+    The previous feed must still be structurally canonical, but it may have
+    expired since it was published. Individual fallback events are bounded by
+    ``maximum_age_hours`` so a failing publisher cannot keep an item alive
+    indefinitely.
+    """
+
+    if maximum_age_hours < 1:
+        raise CollectionError("fallback editorial maximum age must be positive")
+    try:
+        previous = json.loads(feed_path.read_text(encoding="utf-8"))
+        previous_generated_at = builder.parse_timestamp(
+            previous.get("generatedAt"),
+            "fallback.generatedAt",
+        )
+        canonical = builder.validate_published_feed(
+            previous,
+            relative_to=previous_generated_at,
+        )
+    except (OSError, json.JSONDecodeError, builder.FeedValidationError) as error:
+        raise CollectionError(f"invalid fallback feed: {error}") from error
+
+    cutoff = now - timedelta(hours=maximum_age_hours)
+    events: list[dict[str, Any]] = []
+    counts: dict[str, int] = {}
+    for event in canonical["events"]:
+        source_name = clean_text(event.get("sourceName"))
+        if (
+            event.get("sourceKind") != "editorial"
+            or not source_name
+            or source_name in fresh_source_names
+        ):
+            continue
+        published_at = builder.parse_timestamp(
+            event.get("publishedAt"),
+            f"{event.get('id', 'fallback-event')}.publishedAt",
+        )
+        if published_at < cutoff or published_at > now + timedelta(minutes=5):
+            continue
+        events.append(event)
+        counts[source_name] = counts.get(source_name, 0) + 1
+    return events, dict(sorted(counts.items())), builder.isoformat(previous_generated_at)
+
+
 def source_domain(event: dict[str, Any]) -> str:
     return builder.canonical_domain(event["sourceURL"])
 
@@ -1419,6 +1470,8 @@ def main() -> int:
     parser.add_argument("--without-wikimedia", action="store_true")
     parser.add_argument("--require-ticketmaster", action="store_true")
     parser.add_argument("--minimum-editorial-sources", type=int, default=0)
+    parser.add_argument("--fallback-feed", type=Path)
+    parser.add_argument("--fallback-editorial-max-age-hours", type=int, default=72)
     parser.add_argument(
         "--ticketmaster-countries",
         default="FR,GB,US,CA,DE,ES,IT,NL,BE,CH,AT,AU,MX,JP,PL,NO,SE,FI",
@@ -1450,9 +1503,48 @@ def main() -> int:
     )
     health_document = editorial_health_document(now, editorial_health)
     required_editorial_sources = max(0, arguments.minimum_editorial_sources)
-    if health_document["contributingSources"] < required_editorial_sources:
+    fresh_source_names = {
+        name
+        for name, value in editorial_health.items()
+        if int(value.get("resolvedEvents", 0)) > 0
+    }
+    effective_source_names = set(fresh_source_names)
+    if (
+        len(effective_source_names) < required_editorial_sources
+        and arguments.fallback_feed is not None
+    ):
+        try:
+            fallback_events, fallback_counts, fallback_generated_at = fallback_editorial_events(
+                arguments.fallback_feed,
+                now,
+                fresh_source_names,
+                arguments.fallback_editorial_max_age_hours,
+            )
+        except CollectionError as error:
+            parser.error(str(error))
+        if fallback_events:
+            document["events"] = unique_events(document["events"] + fallback_events)
+            effective_source_names.update(fallback_counts)
+            for name, count in fallback_counts.items():
+                if name in editorial_health:
+                    editorial_health[name]["fallbackEvents"] = count
+                    editorial_health[name]["usingFallback"] = True
+            health_document = editorial_health_document(now, editorial_health)
+            health_document["fallback"] = {
+                "eventCount": len(fallback_events),
+                "feedGeneratedAt": fallback_generated_at,
+                "maximumAgeHours": arguments.fallback_editorial_max_age_hours,
+                "sourceCount": len(fallback_counts),
+                "sources": fallback_counts,
+            }
+            warnings.append(
+                "editorial fallback reused "
+                f"{len(fallback_events)} recent events from {len(fallback_counts)} sources"
+            )
+    health_document["effectiveContributingSources"] = len(effective_source_names)
+    if len(effective_source_names) < required_editorial_sources:
         parser.error(
-            f"only {health_document['contributingSources']} editorial sources contributed; "
+            f"only {len(effective_source_names)} fresh or recent editorial sources contributed; "
             f"at least {required_editorial_sources} are required"
         )
     feed = builder.build_feed(document, now, arguments.ttl_hours)

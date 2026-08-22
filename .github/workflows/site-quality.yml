@@ -24,6 +24,8 @@ jobs:
         run: python3 Scripts/site_localization_integrity.py
       - name: Test localization integrity tooling
         run: PYTHONPATH=Scripts python3 -m unittest Scripts/test_site_localization_integrity.py
+      - name: Test Today Pick editorial fallback
+        run: PYTHONPATH=.github/today-pick python3 .github/today-pick/test_collect_today_pick_feed.py
       - name: Validate IndexNow publication batch
         run: python3 Scripts/submit_indexnow.py --dry-run
       - name: Validate the 2.2 publication and 2.3 announcement twice
