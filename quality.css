@@ -616,12 +616,27 @@ picture {
 }
 
 .platform-expansion h2 { margin-top: 10px; }
-.platform-expansion-copy > p:last-child {
+.platform-expansion-detail {
   max-width: 720px;
   margin: 14px 0 0;
   color: var(--muted);
   line-height: 1.65;
 }
+.platform-beta-callout {
+  max-width: 760px;
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--red) 34%, var(--line));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--glass-surface) 86%, var(--red) 14%);
+}
+.platform-beta-callout h3 { margin: 0; }
+.platform-beta-callout p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.platform-beta-callout .cta-row { margin-top: 16px; }
 .platform-expansion-badges {
   display: grid;
   grid-template-columns: repeat(2, minmax(82px, 1fr));

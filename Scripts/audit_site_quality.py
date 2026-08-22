@@ -339,6 +339,7 @@ def main() -> None:
             "quality.css?v=20260812-complete-growth",
             "quality.css?v=20260812-final-funnel",
             "quality.css?v=20260822-no-contest",
+            "quality.css?v=20260822-android-beta",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -544,6 +545,8 @@ def main() -> None:
                 errors.append(f"{relative}: Android and Windows development announcement missing")
             if text.count('class="future-platform"') != 2:
                 errors.append(f"{relative}: Android and Windows hero badges missing")
+            if 'class="platform-beta-callout"' not in text:
+                errors.append(f"{relative}: Android beta recruitment call-to-action missing")
             for forbidden in ("v18-showcase", "release-history", "support-band"):
                 if forbidden in text:
                     errors.append(f"{relative}: verbose home section {forbidden} remains")
