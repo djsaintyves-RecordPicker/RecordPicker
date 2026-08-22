@@ -73,10 +73,6 @@ for sitemap_name in ("sitemap.xml", "sitemap-media.xml"):
     if len(page_urls) != len(set(page_urls)):
         errors.append(f"{sitemap_name}: duplicate page URL")
 
-site_js = (ROOT / "site.js").read_text(encoding="utf-8")
-if '2026-08-22T21:59:59Z' not in site_js or '.challenge-announcement, .challenge-section' not in site_js:
-    errors.append("site.js: missing automatic post-contest transition")
-
 for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "index.html"]:
     text = home.read_text(encoding="utf-8")
     positions = [
@@ -85,7 +81,6 @@ for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "
         ),
         text.find('class="section split" id="app"'),
         text.find('class="section privacy-compact"'),
-        text.find('class="challenge-section"'),
     ]
     if home != ROOT / "index.html":
         positions.insert(2, text.find('class="section press-review-spotlight"'))
@@ -96,4 +91,4 @@ for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "
 
 if errors:
     raise SystemExit("\n".join(errors))
-print(f"OK: {len(pages)} self-canonical pages, unique regional metadata, tracked store links and evergreen contest transition.")
+print(f"OK: {len(pages)} self-canonical pages, unique regional metadata and tracked store links.")
