@@ -1,33 +1,28 @@
 {
   "configuredSources": 46,
-  "contributingSources": 0,
-  "effectiveContributingSources": 16,
+  "contributingSources": 4,
+  "effectiveContributingSources": 15,
   "fallback": {
-    "eventCount": 37,
-    "feedGeneratedAt": "2026-08-21T07:08:28Z",
+    "eventCount": 26,
+    "feedGeneratedAt": "2026-08-22T15:09:10Z",
     "maximumAgeHours": 72,
-    "sourceCount": 16,
+    "sourceCount": 11,
     "sources": {
       "Billboard": 6,
       "Clash": 2,
-      "Consequence": 1,
       "Electronic Groove": 2,
       "Jazz thing": 1,
       "Louder": 2,
-      "Metal Injection": 1,
       "MusicRadar": 1,
       "NME": 2,
       "OperaWire": 1,
-      "Pitchfork News": 4,
       "Rolling Stone Germany": 1,
-      "Rolling Stone Music": 1,
-      "Stereogum": 10,
-      "The Line of Best Fit": 1,
-      "The Quietus": 1
+      "Stereogum": 7,
+      "The Line of Best Fit": 1
     }
   },
-  "generatedAt": "2026-08-22T15:09:10Z",
-  "reachableSources": 44,
+  "generatedAt": "2026-08-22T18:49:40Z",
+  "reachableSources": 43,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -71,11 +66,9 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/",
-      "usingFallback": true
+      "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -117,7 +110,7 @@
     },
     "Jazz Views": {
       "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "error": "<urlopen error timed out>",
       "resolvedEvents": 0,
       "status": "failed",
       "url": "https://www.jazzviews.net/feed"
@@ -137,7 +130,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 18,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -152,16 +145,15 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://metalinjection.net/feed",
-      "usingFallback": true
+      "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "HTTP Error 522: <none>",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
@@ -209,11 +201,9 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 28,
-      "fallbackEvents": 4,
-      "resolvedEvents": 0,
+      "resolvedEvents": 7,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/",
-      "usingFallback": true
+      "url": "https://pitchfork.com/rss/news/"
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -237,11 +227,9 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/",
-      "usingFallback": true
+      "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -269,7 +257,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "fallbackEvents": 10,
+      "fallbackEvents": 7,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed",
@@ -283,7 +271,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 21,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
@@ -297,11 +285,9 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://thequietus.com/feed/",
-      "usingFallback": true
+      "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
       "downloadedArticles": 6,
