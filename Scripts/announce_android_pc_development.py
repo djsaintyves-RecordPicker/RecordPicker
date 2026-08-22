@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Announce the Android and PC work on every localized home page."""
+"""Announce the Android and Windows work on every localized home page."""
 
 from __future__ import annotations
 
@@ -52,10 +52,13 @@ ANNOUNCEMENT = re.compile(
     r'<section class="platform-expansion"[^>]*>.*?</section>', flags=re.DOTALL
 )
 FACTS = re.compile(r'<section class="facts-band">.*?</section>', flags=re.DOTALL)
+BADGE_ROW = re.compile(r'<div class="badge-row">.*?</div>', flags=re.DOTALL)
+CTA_ROW = re.compile(r'<div class="cta-row">')
 
 
 def announcement(locale: str) -> str:
     kicker, title, detail = COPY[locale]
+    title = title.replace("PC", "Windows").replace("pc", "Windows")
     return (
         '<section class="platform-expansion" aria-labelledby="platform-expansion-title">'
         '<div class="platform-expansion-copy">'
@@ -63,8 +66,19 @@ def announcement(locale: str) -> str:
         f'<h2 id="platform-expansion-title">{escape(title)}</h2>'
         f'<p>{escape(detail)}</p></div>'
         f'<div class="platform-expansion-badges" aria-label="{escape(title)}">'
-        '<span>Android</span><span>PC</span>'
+        '<span>Android</span><span>Windows</span>'
         f'<small>{escape(kicker)}</small></div></section>'
+    )
+
+
+def hero_badges(locale: str) -> str:
+    kicker = escape(COPY[locale][0])
+    return (
+        '<div class="badge-row">'
+        '<span>iPhone</span><span>iPad</span><span>Apple Watch</span><span>Mac</span>'
+        f'<span class="future-platform"><b>Android</b><small>{kicker}</small></span>'
+        f'<span class="future-platform"><b>Windows</b><small>{kicker}</small></span>'
+        '</div>'
     )
 
 
@@ -79,6 +93,12 @@ def update(locale: str) -> bool:
         if not facts:
             raise RuntimeError(f"Facts band not found in {path}")
         updated = text[:facts.end()] + block + text[facts.end():]
+    if BADGE_ROW.search(updated):
+        updated = BADGE_ROW.sub(hero_badges(locale), updated, count=1)
+    elif CTA_ROW.search(updated):
+        updated = CTA_ROW.sub(hero_badges(locale) + '<div class="cta-row">', updated, count=1)
+    else:
+        raise RuntimeError(f"Hero actions not found in {path}")
     if updated == text:
         return False
     path.write_text(updated, encoding="utf-8")
@@ -89,7 +109,7 @@ def refresh_stylesheet_version(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
     updated = re.sub(
         r'quality\.css\?v=[^"\']+',
-        'quality.css?v=20260822-platform-expansion',
+        'quality.css?v=20260822-platform-hero',
         text,
     )
     if updated == text:
@@ -102,7 +122,7 @@ def main() -> None:
     changed = sum(update(locale) for locale in COPY)
     refreshed = sum(refresh_stylesheet_version(path) for path in ROOT.rglob("*.html"))
     print(
-        f"Announced Android and PC development on {changed} localized home pages "
+        f"Announced Android and Windows development on {changed} localized home pages "
         f"and refreshed styles on {refreshed} pages."
     )
 

@@ -338,7 +338,7 @@ def main() -> None:
             "quality.css?v=20260812-growth-funnel",
             "quality.css?v=20260812-complete-growth",
             "quality.css?v=20260812-final-funnel",
-            "quality.css?v=20260822-platform-expansion",
+            "quality.css?v=20260822-platform-hero",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -541,7 +541,9 @@ def main() -> None:
             if 'class="platform-expansion"' in text:
                 platform_expansion_pages += 1
             else:
-                errors.append(f"{relative}: Android and PC development announcement missing")
+                errors.append(f"{relative}: Android and Windows development announcement missing")
+            if text.count('class="future-platform"') != 2:
+                errors.append(f"{relative}: Android and Windows hero badges missing")
             for forbidden in ("v18-showcase", "release-history", "support-band"):
                 if forbidden in text:
                     errors.append(f"{relative}: verbose home section {forbidden} remains")
@@ -603,7 +605,7 @@ def main() -> None:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
     if platform_expansion_pages != expected_locales:
         errors.append(
-            f"expected {expected_locales} Android/PC announcements, "
+            f"expected {expected_locales} Android/Windows announcements, "
             f"found {platform_expansion_pages}"
         )
     # Every locale must expose the same number of cards as the reference page.
