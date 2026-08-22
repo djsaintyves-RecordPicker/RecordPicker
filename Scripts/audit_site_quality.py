@@ -338,7 +338,7 @@ def main() -> None:
             "quality.css?v=20260812-growth-funnel",
             "quality.css?v=20260812-complete-growth",
             "quality.css?v=20260812-final-funnel",
-            "quality.css?v=20260822-platform-hero",
+            "quality.css?v=20260822-no-contest",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -596,7 +596,7 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 3 + 12
+    expected_content_pages = expected_locales * 9 + 2 + 12
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
