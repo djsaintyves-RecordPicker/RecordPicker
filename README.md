@@ -2,6 +2,9 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
+Android and PC versions are in development. Release details will be announced
+when both versions are ready.
+
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
 
 ## Public pages
@@ -153,6 +156,7 @@ python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/complete_growth_strategy.py
 python3 Scripts/publish_release_2_3.py
+python3 Scripts/announce_android_pc_development.py
 python3 Scripts/audit_growth_strategy.py
 python3 Scripts/audit_site_quality.py
 python3 Scripts/site_localization_integrity.py

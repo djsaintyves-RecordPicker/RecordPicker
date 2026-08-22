@@ -583,6 +583,58 @@ picture {
 
 .platform-shot-group { margin-top: 42px; }
 .platform-shot-group h3 { font-size: 1.12rem; }
+
+.platform-expansion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 12px;
+  padding: clamp(28px, 5vw, 46px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 92% 18%, rgba(255, 45, 85, 0.15), transparent 38%),
+    var(--surface);
+  box-shadow: var(--card-shadow);
+}
+
+.platform-expansion h2 { margin-top: 10px; }
+.platform-expansion-copy > p:last-child {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.platform-expansion-badges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(82px, 1fr));
+  gap: 10px;
+  min-width: min(100%, 220px);
+}
+.platform-expansion-badges span,
+.platform-expansion-badges small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass-surface);
+  font-weight: 780;
+}
+.platform-expansion-badges small {
+  grid-column: 1 / -1;
+  min-height: 36px;
+  color: var(--red);
+  font-size: var(--type-small);
+}
+
+@media (max-width: 720px) {
+  .platform-expansion { grid-template-columns: 1fr; }
+  .platform-expansion-badges { width: 100%; }
+}
 .v20-shot-grid { margin-top: 18px; }
 .v20-shot-grid.mac-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .v20-shot-grid.iphone-grid { grid-template-columns: repeat(4, minmax(180px, 1fr)); }
