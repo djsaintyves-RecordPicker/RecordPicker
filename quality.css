@@ -75,6 +75,63 @@
   display: none;
 }
 
+.platform-nav {
+  position: relative;
+}
+.platform-nav summary {
+  list-style: none;
+  cursor: pointer;
+}
+.platform-nav summary::-webkit-details-marker { display: none; }
+.platform-nav summary::after {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-inline-start: 8px;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  content: "";
+  transform: translateY(-2px) rotate(45deg);
+}
+.platform-nav[open] summary { color: var(--red); }
+.platform-nav-panel {
+  position: absolute;
+  z-index: 70;
+  inset-block-start: calc(100% + 12px);
+  inset-inline-start: 50%;
+  display: grid;
+  width: 250px;
+  padding: 7px;
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  background: var(--glass-strong);
+  box-shadow: 0 22px 58px rgba(17, 17, 20, 0.16);
+  backdrop-filter: blur(24px) saturate(1.25);
+  transform: translateX(-50%);
+}
+.platform-nav-panel a,
+.platform-nav-panel span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 10px;
+  padding: 10px 11px;
+  color: var(--ink);
+  font-weight: 650;
+}
+.platform-nav-panel a:hover,
+.platform-nav-panel a:focus-visible {
+  background: var(--soft);
+  color: var(--red);
+}
+.platform-nav-panel span { color: var(--muted); }
+.platform-nav-panel small {
+  color: var(--red);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 1040px) {
   .site-header {
     align-items: center;
@@ -110,6 +167,23 @@
     padding: 10px 12px;
     background: var(--surface);
     color: var(--ink);
+  }
+
+  .platform-nav {
+    grid-column: 1 / -1;
+  }
+  .platform-nav summary {
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: var(--surface);
+    color: var(--ink);
+  }
+  .platform-nav-panel {
+    position: static;
+    width: 100%;
+    margin-top: 6px;
+    box-shadow: none;
+    transform: none;
   }
 
   .nav-links .mobile-store-link {
@@ -657,6 +731,35 @@ picture {
   background: var(--glass-surface);
   font-weight: 780;
 }
+
+.platform-product-hero {
+  grid-template-columns: minmax(320px, 1fr) minmax(220px, 360px);
+}
+.platform-phone-visual,
+.platform-watch-visual {
+  justify-self: center;
+  margin: 0;
+}
+.platform-development-hero {
+  grid-template-columns: minmax(300px, 0.9fr) minmax(360px, 1.1fr);
+}
+.platform-beta-page {
+  max-width: none;
+  margin: 0;
+  padding: clamp(24px, 4vw, 38px);
+}
+.platform-symbol {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: min(280px, 72vw);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 28%;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: clamp(5rem, 13vw, 9rem);
+}
 .platform-expansion-badges small {
   grid-column: 1 / -1;
   min-height: 36px;
@@ -675,6 +778,11 @@ picture {
     flex: 1 1 calc(50% - 10px);
     justify-content: center;
   }
+}
+
+@media (max-width: 1040px) {
+  .platform-product-hero,
+  .platform-development-hero { grid-template-columns: 1fr; }
 }
 .v20-shot-grid { margin-top: 18px; }
 .v20-shot-grid.mac-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -341,6 +341,7 @@ def main() -> None:
             "quality.css?v=20260822-no-contest",
             "quality.css?v=20260822-android-beta",
             "quality.css?v=20260822-platform-spacing",
+            "quality.css?v=20260822-platform-architecture",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -600,7 +601,8 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    expected_content_pages = expected_locales * 9 + 2 + 12
+    # Nine established pages plus the three localized platform pages.
+    expected_content_pages = expected_locales * 12 + 2 + 12
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
