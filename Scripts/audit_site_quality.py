@@ -340,6 +340,7 @@ def main() -> None:
             "quality.css?v=20260812-final-funnel",
             "quality.css?v=20260822-no-contest",
             "quality.css?v=20260822-android-beta",
+            "quality.css?v=20260822-platform-spacing",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":

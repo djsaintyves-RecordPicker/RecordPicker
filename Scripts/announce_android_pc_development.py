@@ -155,7 +155,7 @@ def refresh_stylesheet_version(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
     updated = re.sub(
         r'quality\.css\?v=[^"\']+',
-        'quality.css?v=20260822-android-beta',
+        'quality.css?v=20260822-platform-spacing',
         text,
     )
     if updated == text:
