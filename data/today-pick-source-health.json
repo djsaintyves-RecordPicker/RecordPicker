@@ -1,29 +1,24 @@
 {
   "configuredSources": 46,
   "contributingSources": 1,
-  "effectiveContributingSources": 13,
+  "effectiveContributingSources": 8,
   "fallback": {
-    "eventCount": 28,
-    "feedGeneratedAt": "2026-08-23T07:01:43Z",
+    "eventCount": 14,
+    "feedGeneratedAt": "2026-08-23T13:03:05Z",
     "maximumAgeHours": 72,
-    "sourceCount": 12,
+    "sourceCount": 7,
     "sources": {
       "Billboard": 6,
-      "Clash": 2,
-      "Consequence": 2,
-      "Louder": 2,
-      "MusicRadar": 1,
-      "NME": 2,
+      "Louder": 1,
+      "NME": 1,
       "OperaWire": 1,
       "Pitchfork News": 3,
-      "Rolling Stone Germany": 1,
       "Rolling Stone Music": 1,
-      "Stereogum": 6,
-      "The Line of Best Fit": 1
+      "Stereogum": 1
     }
   },
-  "generatedAt": "2026-08-23T13:03:05Z",
-  "reachableSources": 45,
+  "generatedAt": "2026-08-23T18:49:11Z",
+  "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -32,7 +27,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 21,
+      "downloadedArticles": 22,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -59,19 +54,15 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.clashmusic.com/feed/",
-      "usingFallback": true
+      "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/",
-      "usingFallback": true
+      "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -110,9 +101,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -128,14 +120,14 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 18,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
     },
     "Louder": {
       "downloadedArticles": 40,
-      "fallbackEvents": 2,
+      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all",
@@ -155,11 +147,9 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.musicradar.com/feeds/all",
-      "usingFallback": true
+      "url": "https://www.musicradar.com/feeds/all"
     },
     "Musikexpress": {
       "downloadedArticles": 40,
@@ -169,7 +159,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
+      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.nme.com/feed",
@@ -197,7 +187,7 @@
       "usingFallback": true
     },
     "Pitchfork News": {
-      "downloadedArticles": 28,
+      "downloadedArticles": 29,
       "fallbackEvents": 3,
       "resolvedEvents": 0,
       "status": "ok",
@@ -218,11 +208,9 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.rollingstone.de/feed/",
-      "usingFallback": true
+      "url": "https://www.rollingstone.de/feed/"
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
@@ -258,7 +246,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "fallbackEvents": 6,
+      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed",
@@ -272,17 +260,15 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 20,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.thelineofbestfit.com/feed",
-      "usingFallback": true
+      "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
