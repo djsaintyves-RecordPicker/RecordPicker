@@ -1,28 +1,31 @@
 {
   "configuredSources": 46,
-  "contributingSources": 4,
-  "effectiveContributingSources": 15,
+  "contributingSources": 0,
+  "effectiveContributingSources": 14,
   "fallback": {
-    "eventCount": 26,
-    "feedGeneratedAt": "2026-08-22T15:09:10Z",
+    "eventCount": 31,
+    "feedGeneratedAt": "2026-08-22T18:49:40Z",
     "maximumAgeHours": 72,
-    "sourceCount": 11,
+    "sourceCount": 14,
     "sources": {
       "Billboard": 6,
       "Clash": 2,
+      "Consequence": 2,
       "Electronic Groove": 2,
       "Jazz thing": 1,
       "Louder": 2,
       "MusicRadar": 1,
       "NME": 2,
       "OperaWire": 1,
+      "Pitchfork News": 3,
       "Rolling Stone Germany": 1,
-      "Stereogum": 7,
+      "Rolling Stone Music": 1,
+      "Stereogum": 6,
       "The Line of Best Fit": 1
     }
   },
-  "generatedAt": "2026-08-22T18:49:40Z",
-  "reachableSources": 43,
+  "generatedAt": "2026-08-23T02:00:35Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -31,7 +34,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 21,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -66,9 +69,11 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 2,
+      "fallbackEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/"
+      "url": "https://consequence.net/category/music/feed/",
+      "usingFallback": true
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -109,10 +114,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "<urlopen error timed out>",
+      "downloadedArticles": 9,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -150,10 +154,9 @@
       "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
-      "downloadedArticles": 0,
-      "error": "HTTP Error 522: <none>",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
@@ -186,7 +189,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 0,
-      "error": "OndaRock: invalid XML feed",
+      "error": "HTTP Error 500: Internal Server Error",
       "resolvedEvents": 0,
       "status": "failed",
       "url": "https://www.ondarock.it/feed.php"
@@ -201,9 +204,11 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 28,
-      "resolvedEvents": 7,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/"
+      "url": "https://pitchfork.com/rss/news/",
+      "usingFallback": true
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -227,9 +232,11 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "fallbackEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/"
+      "url": "https://www.rollingstone.com/music/music-news/feed/",
+      "usingFallback": true
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -257,7 +264,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "fallbackEvents": 7,
+      "fallbackEvents": 6,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed",
@@ -271,7 +278,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 21,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
