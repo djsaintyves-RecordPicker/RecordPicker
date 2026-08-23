@@ -1,17 +1,16 @@
 {
   "configuredSources": 46,
-  "contributingSources": 0,
+  "contributingSources": 1,
   "effectiveContributingSources": 13,
   "fallback": {
-    "eventCount": 30,
-    "feedGeneratedAt": "2026-08-23T02:00:35Z",
+    "eventCount": 28,
+    "feedGeneratedAt": "2026-08-23T07:01:43Z",
     "maximumAgeHours": 72,
-    "sourceCount": 13,
+    "sourceCount": 12,
     "sources": {
       "Billboard": 6,
       "Clash": 2,
       "Consequence": 2,
-      "Electronic Groove": 2,
       "Louder": 2,
       "MusicRadar": 1,
       "NME": 2,
@@ -23,8 +22,8 @@
       "The Line of Best Fit": 1
     }
   },
-  "generatedAt": "2026-08-23T07:01:43Z",
-  "reachableSources": 44,
+  "generatedAt": "2026-08-23T13:03:05Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -82,11 +81,9 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://electronicgroove.com/feed/",
-      "usingFallback": true
+      "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
       "downloadedArticles": 20,
@@ -113,10 +110,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "<urlopen error timed out>",
+      "downloadedArticles": 9,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -187,7 +183,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 0,
-      "error": "HTTP Error 500: Internal Server Error",
+      "error": "OndaRock: invalid XML feed",
       "resolvedEvents": 0,
       "status": "failed",
       "url": "https://www.ondarock.it/feed.php"
@@ -275,8 +271,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 21,
-      "resolvedEvents": 0,
+      "downloadedArticles": 20,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
