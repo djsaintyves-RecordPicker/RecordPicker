@@ -40,7 +40,19 @@ def canonical_for(path: Path) -> str:
     declared canonical and prevented Bing from treating those markets as
     independent landing pages.
     """
-    return SITE + relative_url(path)
+    relative = relative_url(path)
+    # The unprefixed site is the English (US) x-default experience.  Keeping a
+    # second, byte-for-byte equivalent /en-us/ URL self-canonical created an
+    # avoidable duplicate cluster in Google.  Other regional English pages
+    # remain self-canonical because their storefront and market copy differ.
+    if relative == "/en-us/":
+        return SITE + "/"
+    if relative.startswith("/en-us/"):
+        root_relative = relative.removeprefix("/en-us")
+        counterpart = ROOT / root_relative.strip("/") / "index.html"
+        if counterpart.exists():
+            return SITE + root_relative
+    return SITE + relative
 
 
 REGIONAL_MARKET_NAMES = {
@@ -150,8 +162,8 @@ def apply_search_metadata(path: Path, text: str) -> str:
         if relative == Path("choose-vinyl-record/index.html"):
             return replace_metadata(
                 text,
-                "Comment choisir le bon vinyle à écouter ?",
-                "Vous hésitez devant vos disques ? Découvrez cinq méthodes rapides — humeur, hasard, actualité, rotation et contrainte — pour choisir le bon vinyle à écouter.",
+                "How to Choose the Right Vinyl Record to Play",
+                "Not sure which vinyl record to play? Use mood, chance, music news, collection rotation or one simple constraint to choose the right album in seconds.",
             )
     return text
 
@@ -378,8 +390,8 @@ def update_page(path: Path) -> None:
     rel = relative_url(path)
     random_picker = rel.rstrip("/").endswith("random-vinyl-record-picker")
     choose = rel.rstrip("/").endswith("choose-vinyl-record")
-    first = rel.strip("/").split("/")[0] if rel != "/" else "fr"
-    french = first in {"fr", "fr-ca"} or rel in {"/choose-vinyl-record/", "/random-vinyl-record-picker/"}
+    first = rel.strip("/").split("/")[0] if rel != "/" else "en-us"
+    french = first in {"fr", "fr-ca"}
     english = first in {"en-us", "en-gb", "en-ca", "en-au"}
     if (choose or random_picker) and (french or english):
         section, schema = faq_markup(french, random_picker)

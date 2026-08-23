@@ -29,9 +29,16 @@ for path in pages:
     canonicals.add(canonical)
     parts = relative.parts
     expected_path = "/" if relative == Path("index.html") else "/" + relative.parent.as_posix().strip("/") + "/"
+    if expected_path == "/en-us/":
+        expected_path = "/"
+    elif expected_path.startswith("/en-us/"):
+        root_path = expected_path.removeprefix("/en-us")
+        counterpart = ROOT / root_path.strip("/") / "index.html"
+        if counterpart.exists():
+            expected_path = root_path
     expected = "https://recordpicker.app" + expected_path
     if canonical != expected:
-        errors.append(f"{relative}: expected self-canonical {expected}")
+        errors.append(f"{relative}: expected canonical {expected}")
     og_url = re.search(r'<meta property="og:url" content="([^"]+)">', text)
     if not og_url or og_url.group(1) != expected:
         errors.append(f"{relative}: og:url does not match self-canonical")
@@ -91,4 +98,4 @@ for home in [ROOT / "index.html", ROOT / "fr" / "index.html", ROOT / "fr-ca" / "
 
 if errors:
     raise SystemExit("\n".join(errors))
-print(f"OK: {len(pages)} self-canonical pages, unique regional metadata and tracked store links.")
+print(f"OK: {len(pages)} canonical pages, unique regional metadata and tracked store links.")

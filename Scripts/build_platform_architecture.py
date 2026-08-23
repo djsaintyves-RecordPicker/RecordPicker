@@ -33,6 +33,19 @@ REGION_NAMES = {
     "en-gb": "United Kingdom", "en-us": "United States",
 }
 
+SEO_LOCALE_LABELS = {
+    "": "", "ar": "العربية", "ca": "Català", "da": "Dansk",
+    "de": "Deutsch", "el": "Ελληνικά", "en-au": "Australia",
+    "en-ca": "Canada", "en-gb": "United Kingdom", "en-us": "United States",
+    "es-es": "España", "es-mx": "México", "fi": "Suomi", "fr": "France",
+    "fr-ca": "Canada français", "he": "עברית", "hi": "हिन्दी",
+    "id": "Indonesia", "it": "Italiano", "ja": "日本語", "ko": "한국어",
+    "nb": "Norsk", "nl": "Nederlands", "pl": "Polski", "pt-br": "Brasil",
+    "pt-pt": "Portugal", "ru": "Русский", "sv": "Svenska", "th": "ไทย",
+    "tr": "Türkçe", "vi": "Tiếng Việt", "zh-hans": "简体中文",
+    "zh-hant": "繁體中文",
+}
+
 
 def locale_file(locale: str, route: str = "") -> Path:
     base = ROOT / locale if locale else ROOT
@@ -103,7 +116,7 @@ def iphone_visual(prefix: str, locale: str) -> str:
         '<picture>'
         f'<source srcset="{prefix}assets/screenshots/v20/{asset_locale}/iphone-todays-pick.avif" type="image/avif">'
         f'<source srcset="{prefix}assets/screenshots/v20/{asset_locale}/iphone-todays-pick.webp" type="image/webp">'
-        f'<img alt="" src="{prefix}assets/screenshots/v20/{asset_locale}/iphone-todays-pick.webp" width="1320" height="2868" decoding="async">'
+        f'<img alt="Record Picker Today’s Pick on iPhone" src="{prefix}assets/screenshots/v20/{asset_locale}/iphone-todays-pick.webp" width="1320" height="2868" decoding="async">'
         '</picture></figure>'
     )
 
@@ -116,7 +129,7 @@ def watch_visual(prefix: str, locale: str) -> str:
         '<figure class="context-visual watch platform-watch-visual"><picture>'
         f'<source srcset="{prefix}assets/screenshots/v20/{asset_locale}/watch-random-pick.avif" type="image/avif">'
         f'<source srcset="{prefix}assets/screenshots/v20/{asset_locale}/watch-random-pick.webp" type="image/webp">'
-        f'<img alt="" src="{prefix}assets/screenshots/v20/{asset_locale}/watch-random-pick.webp" width="748" height="892" decoding="async">'
+        f'<img alt="Record Picker Random Pick on Apple Watch" src="{prefix}assets/screenshots/v20/{asset_locale}/watch-random-pick.webp" width="748" height="892" decoding="async">'
         '</picture></figure>'
     )
 
@@ -180,6 +193,8 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         region = REGION_NAMES[locale]
         title = f"{title} — {region}"
         description = f"{description} Available in {region}."
+    elif locale:
+        title = f"{title} — {SEO_LOCALE_LABELS[locale]}"
     return main, title, description
 
 
