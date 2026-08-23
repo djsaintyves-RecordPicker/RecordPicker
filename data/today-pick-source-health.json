@@ -1,18 +1,17 @@
 {
   "configuredSources": 46,
   "contributingSources": 0,
-  "effectiveContributingSources": 14,
+  "effectiveContributingSources": 13,
   "fallback": {
-    "eventCount": 31,
-    "feedGeneratedAt": "2026-08-22T18:49:40Z",
+    "eventCount": 30,
+    "feedGeneratedAt": "2026-08-23T02:00:35Z",
     "maximumAgeHours": 72,
-    "sourceCount": 14,
+    "sourceCount": 13,
     "sources": {
       "Billboard": 6,
       "Clash": 2,
       "Consequence": 2,
       "Electronic Groove": 2,
-      "Jazz thing": 1,
       "Louder": 2,
       "MusicRadar": 1,
       "NME": 2,
@@ -24,8 +23,8 @@
       "The Line of Best Fit": 1
     }
   },
-  "generatedAt": "2026-08-23T02:00:35Z",
-  "reachableSources": 45,
+  "generatedAt": "2026-08-23T07:01:43Z",
+  "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 3,
@@ -114,18 +113,17 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 0,
+      "error": "<urlopen error timed out>",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
       "downloadedArticles": 10,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.jazzthing.de/feed/",
-      "usingFallback": true
+      "url": "https://www.jazzthing.de/feed/"
     },
     "Jenesaispop": {
       "downloadedArticles": 10,
@@ -134,7 +132,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 19,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
