@@ -28,6 +28,11 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## App Store version history
 
+## Platform roadmap
+
+- Windows: coming soon.
+- Android: in development.
+
 ### v2.3 - Available now on iPhone, iPad, Apple Watch and Mac
 
 - A more complete Apple Watch experience for picking another record and
