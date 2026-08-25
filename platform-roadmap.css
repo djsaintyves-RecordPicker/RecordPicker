@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  width: min(1240px, calc(100% - 32px));
-  margin: -42px auto 58px;
+  width: min(1180px, calc(100% - 32px));
+  margin: 12px auto 58px;
 }
 
 .platform-roadmap > div {
@@ -43,7 +43,7 @@
 @media (max-width: 720px) {
   .platform-roadmap {
     grid-template-columns: 1fr;
-    margin-top: -42px;
+    margin-top: 12px;
   }
 
   .platform-roadmap > div {

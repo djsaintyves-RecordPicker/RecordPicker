@@ -746,6 +746,18 @@ picture {
   border-radius: 18px;
   box-shadow: var(--shadow);
 }
+
+/* The recruitment poster is portrait artwork. Keep it secondary on wide
+   screens so it does not dictate the height of the whole campaign panel. */
+@media (min-width: 721px) {
+  .beta-campaign {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  }
+
+  .beta-campaign-visual {
+    width: min(100%, 270px);
+  }
+}
 .beta-campaign-page {
   align-self: center;
 }
