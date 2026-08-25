@@ -342,6 +342,7 @@ def main() -> None:
             "quality.css?v=20260822-android-beta",
             "quality.css?v=20260822-platform-spacing",
             "quality.css?v=20260822-platform-architecture",
+            "quality.css?v=20260825-android-beta",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -541,7 +542,7 @@ def main() -> None:
             archived_gallery_pages += 1
         if kind == "index.html":
             homes += 1
-            if 'class="platform-expansion"' in text:
+            if re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', text):
                 platform_expansion_pages += 1
             else:
                 errors.append(f"{relative}: Android and Windows development announcement missing")

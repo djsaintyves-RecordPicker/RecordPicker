@@ -711,6 +711,47 @@ picture {
   line-height: 1.6;
 }
 .platform-beta-callout .cta-row { margin-top: 16px; }
+.beta-campaign {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+  border-color: color-mix(in srgb, var(--red) 46%, var(--line));
+  background:
+    radial-gradient(circle at 92% 18%, rgba(255, 45, 85, 0.24), transparent 42%),
+    var(--surface);
+}
+.beta-scope {
+  display: inline-flex;
+  margin: 0 0 12px !important;
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--red) 40%, var(--line));
+  border-radius: 999px;
+  color: var(--text) !important;
+  background: color-mix(in srgb, var(--glass-surface) 78%, var(--red) 22%);
+  font-size: var(--type-small);
+  font-weight: 760;
+  line-height: 1.35 !important;
+}
+.beta-campaign-visual,
+.beta-poster {
+  display: block;
+  justify-self: center;
+  width: min(100%, 360px);
+  margin: 0;
+}
+.beta-campaign-visual img,
+.beta-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid color-mix(in srgb, var(--red) 32%, var(--line));
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+.beta-campaign-page {
+  align-self: center;
+}
+.platform-development-hero:has(.beta-poster) {
+  grid-template-columns: minmax(250px, 0.72fr) minmax(320px, 1fr) minmax(240px, 0.72fr);
+}
 .platform-expansion-badges {
   display: grid;
   grid-template-columns: repeat(2, minmax(82px, 1fr));
@@ -778,11 +819,14 @@ picture {
     flex: 1 1 calc(50% - 10px);
     justify-content: center;
   }
+  .beta-campaign-visual,
+  .beta-poster { width: min(100%, 330px); }
 }
 
 @media (max-width: 1040px) {
   .platform-product-hero,
-  .platform-development-hero { grid-template-columns: 1fr; }
+  .platform-development-hero,
+  .platform-development-hero:has(.beta-poster) { grid-template-columns: 1fr; }
 }
 .v20-shot-grid { margin-top: 18px; }
 .v20-shot-grid.mac-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

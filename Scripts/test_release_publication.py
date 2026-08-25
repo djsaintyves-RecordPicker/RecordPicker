@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -62,9 +63,11 @@ def main() -> None:
             assert 'data-release-version="2.3"' in readme
             assert 'data-release-version="2.3"' not in screenshots
             assert "v23-preview current-release" in home
-            assert 'class="platform-expansion"' in home
+            assert re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', home)
             assert 'class="platform-beta-callout"' in home
             assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
+            assert "12" in home
+            assert "android-beta-" in home and ".webp" in home
             assert ">Android<" in home and ">Windows<" in home
             assert home.count('class="future-platform"') == 2
             assert "release-upcoming v23-release-card" not in readme

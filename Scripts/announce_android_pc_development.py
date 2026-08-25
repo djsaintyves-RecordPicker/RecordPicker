@@ -87,8 +87,49 @@ BETA_COPY = {
     "zh-hant": ("招募 Android Beta 測試者", "我們正在招募 15 至 20 名志願者。您需要擁有 Google 帳戶以及相容的 Android 手機、平板電腦或 Chromebook，並連續參與測試至少 14 天並提供意見。", "參加 Android Beta 測試"),
 }
 
+BETA_DETAIL_12 = {
+    "": "We are looking for 12 beta testers with a Google Account and a compatible Android phone or tablet. Join the closed test for 14 consecutive days, try the app regularly, and share feedback on bugs, the interface, and performance.",
+    "ar": "نبحث عن 12 مختبرًا تجريبيًا لديهم حساب Google وهاتف أو جهاز لوحي متوافق يعمل بنظام Android. شارك في الاختبار المغلق لمدة 14 يومًا متتاليًا، وجرّب التطبيق بانتظام، وشارك ملاحظاتك حول الأخطاء والواجهة والأداء.",
+    "ca": "Busquem 12 provadors beta amb un compte de Google i un telèfon o una tauleta Android compatibles. Participa en la prova tancada durant 14 dies consecutius, prova l’app regularment i comparteix comentaris sobre errors, interfície i rendiment.",
+    "da": "Vi søger 12 betatestere med en Google-konto og en kompatibel Android-telefon eller -tablet. Deltag i den lukkede test i 14 sammenhængende dage, prøv appen regelmæssigt, og del feedback om fejl, brugerflade og ydeevne.",
+    "de": "Wir suchen 12 Betatester mit einem Google-Konto und einem kompatiblen Android-Smartphone oder -Tablet. Nimm 14 Tage in Folge am geschlossenen Test teil, teste die App regelmäßig und gib Feedback zu Fehlern, Oberfläche und Leistung.",
+    "el": "Αναζητούμε 12 δοκιμαστές beta με Λογαριασμό Google και συμβατό τηλέφωνο ή tablet Android. Συμμετάσχετε στην κλειστή δοκιμή για 14 συνεχόμενες ημέρες, δοκιμάζετε τακτικά την εφαρμογή και μοιραστείτε σχόλια για σφάλματα, διεπαφή και απόδοση.",
+    "en-au": "We are looking for 12 beta testers with a Google Account and a compatible Android phone or tablet. Join the closed test for 14 consecutive days, try the app regularly, and share feedback on bugs, the interface and performance.",
+    "en-ca": "We are looking for 12 beta testers with a Google Account and a compatible Android phone or tablet. Join the closed test for 14 consecutive days, try the app regularly, and share feedback on bugs, the interface, and performance.",
+    "en-gb": "We are looking for 12 beta testers with a Google Account and a compatible Android phone or tablet. Join the closed test for 14 consecutive days, try the app regularly, and share feedback on bugs, the interface and performance.",
+    "en-us": "We are looking for 12 beta testers with a Google Account and a compatible Android phone or tablet. Join the closed test for 14 consecutive days, try the app regularly, and share feedback on bugs, the interface, and performance.",
+    "es-es": "Buscamos 12 probadores beta con una cuenta de Google y un teléfono o una tableta Android compatibles. Participa en la prueba cerrada durante 14 días consecutivos, usa la app con regularidad y comparte comentarios sobre errores, interfaz y rendimiento.",
+    "es-mx": "Buscamos 12 testers beta con una Cuenta de Google y un teléfono o una tablet Android compatibles. Participa en la prueba cerrada durante 14 días consecutivos, usa la app con regularidad y comparte comentarios sobre errores, interfaz y rendimiento.",
+    "fi": "Etsimme 12 beetatestaajaa, joilla on Google-tili ja yhteensopiva Android-puhelin tai -tabletti. Osallistu suljettuun testiin 14 peräkkäisen päivän ajan, kokeile sovellusta säännöllisesti ja anna palautetta virheistä, käyttöliittymästä ja suorituskyvystä.",
+    "fr": "Nous recherchons 12 bêta-testeurs disposant d’un compte Google et d’un téléphone ou d’une tablette Android compatible. Participez au test fermé pendant 14 jours consécutifs, essayez régulièrement l’app et partagez vos retours sur les bugs, l’interface et la fluidité.",
+    "fr-ca": "Nous recherchons 12 bêta-testeurs disposant d’un compte Google et d’un téléphone ou d’une tablette Android compatible. Participez au test fermé pendant 14 jours consécutifs, essayez régulièrement l’app et partagez vos commentaires sur les bogues, l’interface et la performance.",
+    "he": "אנו מחפשים 12 בודקי בטא עם חשבון Google וטלפון או טאבלט Android תואם. הצטרפו לבדיקה הסגורה למשך 14 ימים רצופים, נסו את האפליקציה באופן קבוע ושתפו משוב על תקלות, הממשק והביצועים.",
+    "hi": "हम ऐसे 12 बीटा परीक्षकों की तलाश कर रहे हैं जिनके पास Google खाता और संगत Android फ़ोन या टैबलेट हो। लगातार 14 दिनों तक बंद परीक्षण में शामिल हों, ऐप को नियमित रूप से आज़माएँ और बग, इंटरफ़ेस तथा प्रदर्शन पर प्रतिक्रिया दें।",
+    "id": "Kami mencari 12 penguji beta dengan Akun Google dan ponsel atau tablet Android yang kompatibel. Ikuti pengujian tertutup selama 14 hari berturut-turut, coba aplikasi secara rutin, dan berikan masukan tentang bug, antarmuka, dan performa.",
+    "it": "Cerchiamo 12 beta tester con un Account Google e un telefono o tablet Android compatibile. Partecipa al test chiuso per 14 giorni consecutivi, prova regolarmente l’app e condividi commenti su bug, interfaccia e prestazioni.",
+    "ja": "Google アカウントと対応する Android スマートフォンまたはタブレットをお持ちのベータテスターを12名募集しています。14日間連続でクローズドテストに参加し、アプリを定期的に試して、バグ、操作画面、動作についてフィードバックをお寄せください。",
+    "ko": "Google 계정과 호환되는 Android 휴대전화 또는 태블릿을 보유한 베타 테스터 12명을 모집합니다. 14일 연속 비공개 테스트에 참여하고 앱을 정기적으로 사용하면서 버그, 인터페이스, 성능에 대한 의견을 공유해 주세요.",
+    "nb": "Vi søker 12 Android-betatestere med en Google-konto og en kompatibel telefon eller et nettbrett. Delta i den lukkede testen i 14 sammenhengende dager, prøv appen regelmessig, og del tilbakemeldinger om feil, grensesnitt og ytelse.",
+    "nl": "We zoeken 12 bètatesters met een Google-account en een compatibele Android-telefoon of tablet. Doe 14 opeenvolgende dagen mee aan de gesloten test, probeer de app regelmatig en deel feedback over bugs, interface en prestaties.",
+    "pl": "Szukamy 12 beta testerów z kontem Google i zgodnym telefonem lub tabletem z Androidem. Weź udział w zamkniętym teście przez 14 kolejnych dni, regularnie korzystaj z aplikacji i podziel się opinią o błędach, interfejsie i wydajności.",
+    "pt-br": "Procuramos 12 testadores beta com uma Conta do Google e um celular ou tablet Android compatível. Participe do teste fechado por 14 dias consecutivos, experimente o app regularmente e envie comentários sobre bugs, interface e desempenho.",
+    "pt-pt": "Procuramos 12 testadores beta com uma Conta Google e um telemóvel ou tablet Android compatível. Participe no teste fechado durante 14 dias consecutivos, experimente regularmente a app e partilhe comentários sobre erros, interface e desempenho.",
+    "ru": "Мы ищем 12 бета-тестеров с аккаунтом Google и совместимым телефоном или планшетом Android. Участвуйте в закрытом тесте 14 дней подряд, регулярно пробуйте приложение и делитесь отзывами об ошибках, интерфейсе и производительности.",
+    "sv": "Vi söker 12 Android-betatestare med ett Google-konto och en kompatibel telefon eller surfplatta. Delta i det slutna testet i 14 dagar i följd, prova appen regelbundet och dela återkoppling om fel, gränssnitt och prestanda.",
+    "th": "เรากำลังมองหาผู้ทดสอบเบต้า 12 คนที่มีบัญชี Google และโทรศัพท์หรือแท็บเล็ต Android ที่รองรับ เข้าร่วมการทดสอบแบบปิดเป็นเวลา 14 วันติดต่อกัน ทดลองใช้แอปเป็นประจำ และส่งความคิดเห็นเกี่ยวกับข้อบกพร่อง อินเทอร์เฟซ และประสิทธิภาพ",
+    "tr": "Google Hesabı ve uyumlu bir Android telefon veya tablet sahibi 12 beta test kullanıcısı arıyoruz. Kapalı teste 14 gün kesintisiz katılın, uygulamayı düzenli olarak deneyin ve hatalar, arayüz ile performans hakkında geri bildirim paylaşın.",
+    "vi": "Chúng tôi đang tìm 12 người thử nghiệm beta có Tài khoản Google và điện thoại hoặc máy tính bảng Android tương thích. Hãy tham gia thử nghiệm kín trong 14 ngày liên tục, dùng ứng dụng thường xuyên và chia sẻ phản hồi về lỗi, giao diện và hiệu năng.",
+    "zh-hans": "我们正在招募 12 名 Beta 测试者。您需要拥有 Google 账号和兼容的 Android 手机或平板电脑，连续 14 天参加封闭测试，定期试用应用，并反馈错误、界面和性能问题。",
+    "zh-hant": "我們正在招募 12 名 Beta 測試者。您需要擁有 Google 帳戶和相容的 Android 手機或平板電腦，連續 14 天參加封閉測試，定期試用 App，並回報錯誤、介面和效能問題。",
+}
+
+BETA_SCOPE_COPY = {
+    "fr": "Candidatures ouvertes dans le monde entier · Bêta disponible en anglais et en français",
+    "fr-ca": "Candidatures ouvertes dans le monde entier · Bêta disponible en anglais et en français",
+}
+
 ANNOUNCEMENT = re.compile(
-    r'<section class="platform-expansion"[^>]*>.*?</section>', flags=re.DOTALL
+    r'<section class="[^"]*\bplatform-expansion\b[^"]*"[^>]*>.*?</section>', flags=re.DOTALL
 )
 FACTS = re.compile(r'<section class="facts-band">.*?</section>', flags=re.DOTALL)
 BADGE_ROW = re.compile(r'<div class="badge-row">.*?</div>', flags=re.DOTALL)
@@ -97,23 +138,29 @@ CTA_ROW = re.compile(r'<div class="cta-row">')
 
 def announcement(locale: str) -> str:
     kicker, title, detail = COPY[locale]
-    beta_title, beta_detail, beta_button = BETA_COPY[locale]
+    beta_title, _, beta_button = BETA_COPY[locale]
+    beta_detail = BETA_DETAIL_12[locale]
+    scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
     title = title.replace("PC", "Windows").replace("pc", "Windows")
     subject = quote("Record Picker Android beta volunteer")
+    body = quote("Country / region:\nAndroid device model:\nPreferred beta language: English / French:\n")
+    visual = "android-beta-fr.webp" if locale in {"fr", "fr-ca"} else "android-beta-en.webp"
+    visual_alt = beta_title
     return (
-        '<section class="platform-expansion" aria-labelledby="platform-expansion-title">'
+        '<section class="platform-expansion beta-campaign" aria-labelledby="platform-expansion-title">'
         '<div class="platform-expansion-copy">'
         f'<p class="kicker">{escape(kicker)}</p>'
         f'<h2 id="platform-expansion-title">{escape(title)}</h2>'
         f'<p class="platform-expansion-detail">{escape(detail)}</p>'
         '<div class="platform-beta-callout">'
+        f'<p class="beta-scope">🌍 {escape(scope)}</p>'
         f'<h3>{escape(beta_title)}</h3><p>{escape(beta_detail)}</p>'
         '<div class="cta-row compact">'
-        f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}">{escape(beta_button)}</a>'
+        f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}&amp;body={body}">{escape(beta_button)}</a>'
         '</div></div></div>'
-        f'<div class="platform-expansion-badges" aria-label="{escape(title)}">'
-        '<span>Android</span><span>Windows</span>'
-        f'<small>{escape(kicker)}</small></div></section>'
+        f'<a class="beta-campaign-visual" href="{("/" + locale) if locale else ""}/android-app/" aria-label="{escape(beta_title)}">'
+        f'<img loading="lazy" src="/assets/beta/{visual}" alt="{escape(visual_alt)}" width="1080" height="1920" decoding="async">'
+        '</a></section>'
     )
 
 
@@ -132,13 +179,14 @@ def update(locale: str) -> bool:
     path = ROOT / locale / "index.html" if locale else ROOT / "index.html"
     text = path.read_text(encoding="utf-8")
     block = announcement(locale)
-    if ANNOUNCEMENT.search(text):
-        updated = ANNOUNCEMENT.sub(block, text, count=1)
-    else:
-        facts = FACTS.search(text)
-        if not facts:
-            raise RuntimeError(f"Facts band not found in {path}")
-        updated = text[:facts.end()] + block + text[facts.end():]
+    # Rebuild the campaign in one canonical position. Removing every previous
+    # generated block first also repairs duplicates left by an interrupted or
+    # older generator run.
+    updated = ANNOUNCEMENT.sub("", text)
+    facts = FACTS.search(updated)
+    if not facts:
+        raise RuntimeError(f"Facts band not found in {path}")
+    updated = updated[:facts.end()] + block + updated[facts.end():]
     if BADGE_ROW.search(updated):
         updated = BADGE_ROW.sub(hero_badges(locale), updated, count=1)
     elif CTA_ROW.search(updated):
@@ -155,7 +203,7 @@ def refresh_stylesheet_version(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
     updated = re.sub(
         r'quality\.css\?v=[^"\']+',
-        'quality.css?v=20260822-platform-architecture',
+        'quality.css?v=20260825-android-beta',
         text,
     )
     if updated == text:

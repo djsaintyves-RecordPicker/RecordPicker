@@ -7,12 +7,12 @@ from html import escape
 from pathlib import Path
 import re
 
-from announce_android_pc_development import BETA_COPY, COPY
+from announce_android_pc_development import BETA_COPY, BETA_DETAIL_12, BETA_SCOPE_COPY, COPY
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TODAY = "2026-08-22"
-STYLE_VERSION = "20260822-platform-architecture"
+TODAY = "2026-08-25"
+STYLE_VERSION = "20260825-android-beta"
 
 PLATFORM_LABELS = {
     "": "Platforms", "ar": "المنصات", "ca": "Plataformes", "da": "Platforme",
@@ -174,19 +174,26 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         )
     else:
         kicker, _, detail = COPY[locale]
-        beta_title, beta_detail, beta_button = BETA_COPY[locale]
+        beta_title, _, beta_button = BETA_COPY[locale]
+        beta_detail = BETA_DETAIL_12[locale]
+        scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
         title = "Record Picker — Android"
         description = plain(beta_detail)
         subject = "Record%20Picker%20Android%20beta%20volunteer"
+        body = "Country%20%2F%20region%3A%0AAndroid%20device%20model%3A%0APreferred%20beta%20language%3A%20English%20%2F%20French%3A%0A"
+        visual = "android-beta-fr.webp" if locale in {"fr", "fr-ca"} else "android-beta-en.webp"
         main = (
             '<main id="main-content"><section class="hero platform-product-hero platform-development-hero">'
             f'<div class="hero-copy"><p class="kicker">{escape(kicker)}</p><h1>Record Picker</h1>'
             f'<p class="tagline">Android</p><p class="deck">{escape(detail)}</p></div>'
-            '<div class="platform-beta-callout platform-beta-page">'
+            '<div class="platform-beta-callout platform-beta-page beta-campaign-page">'
+            f'<p class="beta-scope">🌍 {escape(scope)}</p>'
             f'<h2>{escape(beta_title)}</h2><p>{escape(beta_detail)}</p>'
             '<div class="cta-row compact">'
-            f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}">{escape(beta_button)}</a>'
-            '</div></div></section>'
+            f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}&amp;body={body}">{escape(beta_button)}</a>'
+            '</div></div>'
+            f'<figure class="beta-poster"><img src="/assets/beta/{visual}" alt="{escape(beta_title)}" width="1080" height="1920" decoding="async"></figure>'
+            '</section>'
             f'{contact}</main>'
         )
     if locale in REGION_NAMES:

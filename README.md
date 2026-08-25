@@ -5,6 +5,10 @@ Record Picker helps you rediscover your physical music collection and choose the
 Android and Windows versions are in development. Release details will be announced
 when both versions are ready.
 
+The Android closed beta is recruiting 12 testers worldwide. The beta is
+available in English and French; participants need a compatible Android phone
+or tablet, a Google Account, and 14 consecutive days to test and share feedback.
+
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
 
 ## Public pages
