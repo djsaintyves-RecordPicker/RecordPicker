@@ -46,7 +46,7 @@ def main() -> None:
         assert current == "2.3"
         next_release = state.get("next_release")
         if next_release:
-            assert next_release["version"] == "2.3.1"
+            assert next_release["version"] == "2.3.2"
             assert set(next_release["platforms"].values()) == {"coming_soon"}
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.3", "ipad": "2.3", "watch": "2.3", "mac": "2.3"
@@ -76,12 +76,12 @@ def main() -> None:
             assert "release-upcoming v23-release-card" not in readme
             assert "v23-gallery-marker" not in screenshots
             if next_release:
-                assert 'data-release-version="2.3.1"' in home
-                assert 'data-release-version="2.3.1"' in readme
-                assert 'data-release-version="2.3.1"' in screenshots
-                assert "v231-preview next-release" in home
-                assert "release-upcoming v231-release-card" in readme
-                assert "v231-gallery-marker" in screenshots
+                assert 'data-release-version="2.3.2"' in home
+                assert 'data-release-version="2.3.2"' in readme
+                assert 'data-release-version="2.3.2"' in screenshots
+                assert "v232-preview next-release" in home
+                assert "release-upcoming v232-release-card" in readme
+                assert "v232-gallery-marker" in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
             assert intro.count('<figure class="context-visual wide">') == 2
@@ -119,7 +119,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Record Picker 2.3 is published and the optional 2.3.1 preview is coherent across every localized site.")
+    print("OK: Record Picker 2.3 is published and the optional 2.3.2 preview is coherent across every localized site.")
 
 
 if __name__ == "__main__":

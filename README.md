@@ -37,7 +37,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Windows: coming soon.
 - Android: in development.
 
-### v2.3.1 - Coming soon on iPhone, iPad, Apple Watch and Mac
+### v2.3.2 - Coming soon on iPhone, iPad, Apple Watch and Mac
 
 - A portable `.recordpicker` file will carry the collection, wishlist,
   favourites, custom artwork and pick history between devices.
@@ -173,8 +173,8 @@ python3 Scripts/refine_remaining_localized_copy.py
 python3 Scripts/add_official_identity_and_press.py
 python3 Scripts/complete_growth_strategy.py
 python3 Scripts/publish_release_2_3.py
-python3 Scripts/announce_release_2_3_1.py
-python3 Scripts/test_release_2_3_1_staging.py
+python3 Scripts/announce_release_2_3_2.py
+python3 Scripts/test_release_2_3_2_staging.py
 python3 Scripts/announce_android_pc_development.py
 python3 Scripts/audit_growth_strategy.py
 python3 Scripts/audit_site_quality.py
@@ -182,11 +182,11 @@ python3 Scripts/site_localization_integrity.py
 python3 Scripts/test_release_publication.py
 ```
 
-When all 2.3.1 builds for iPhone, iPad, Apple Watch and Mac are approved and
+When all 2.3.2 builds for iPhone, iPad, Apple Watch and Mac are approved and
 ready, promote the staged announcement with the explicit safety gate:
 
 ```sh
-python3 Scripts/publish_release_2_3_1.py \
+python3 Scripts/publish_release_2_3_2.py \
   --confirm-apple-builds-ready \
   --publication-date YYYY-MM-DD
 ```
