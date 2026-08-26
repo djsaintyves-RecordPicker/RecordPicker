@@ -1,8 +1,22 @@
 {
   "configuredSources": 46,
-  "contributingSources": 8,
+  "contributingSources": 2,
   "effectiveContributingSources": 8,
-  "generatedAt": "2026-08-26T01:59:06Z",
+  "fallback": {
+    "eventCount": 22,
+    "feedGeneratedAt": "2026-08-26T01:59:06Z",
+    "maximumAgeHours": 72,
+    "sourceCount": 6,
+    "sources": {
+      "BrooklynVegan": 1,
+      "Consequence": 3,
+      "Pitchfork News": 8,
+      "Rolling Stone Music": 3,
+      "The Line of Best Fit": 6,
+      "The Quietus": 1
+    }
+  },
+  "generatedAt": "2026-08-26T07:09:44Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
@@ -12,8 +26,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 26,
-      "resolvedEvents": 1,
+      "downloadedArticles": 28,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -31,9 +45,11 @@
     },
     "BrooklynVegan": {
       "downloadedArticles": 5,
-      "resolvedEvents": 3,
+      "fallbackEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.brooklynvegan.com/feed/"
+      "url": "https://www.brooklynvegan.com/feed/",
+      "usingFallback": true
     },
     "Clash": {
       "downloadedArticles": 10,
@@ -43,9 +59,11 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 5,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/"
+      "url": "https://consequence.net/category/music/feed/",
+      "usingFallback": true
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -102,7 +120,7 @@
       "url": "https://jenesaispop.com/feed/"
     },
     "Le Monde Musiques": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
@@ -164,9 +182,11 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 29,
-      "resolvedEvents": 14,
+      "fallbackEvents": 8,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/"
+      "url": "https://pitchfork.com/rss/news/",
+      "usingFallback": true
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -188,9 +208,11 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/"
+      "url": "https://www.rollingstone.com/music/music-news/feed/",
+      "usingFallback": true
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -230,21 +252,25 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 19,
-      "resolvedEvents": 4,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "fallbackEvents": 6,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.thelineofbestfit.com/feed"
+      "url": "https://www.thelineofbestfit.com/feed",
+      "usingFallback": true
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 6,
+      "fallbackEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://thequietus.com/feed/"
+      "url": "https://thequietus.com/feed/",
+      "usingFallback": true
     },
     "The Wire": {
       "downloadedArticles": 3,
@@ -253,7 +279,7 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 14,
+      "downloadedArticles": 19,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
