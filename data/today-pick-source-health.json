@@ -1,12 +1,12 @@
 {
   "configuredSources": 46,
-  "contributingSources": 2,
-  "effectiveContributingSources": 21,
+  "contributingSources": 1,
+  "effectiveContributingSources": 19,
   "fallback": {
-    "eventCount": 42,
-    "feedGeneratedAt": "2026-08-26T13:17:33Z",
+    "eventCount": 41,
+    "feedGeneratedAt": "2026-08-26T20:03:34Z",
     "maximumAgeHours": 72,
-    "sourceCount": 19,
+    "sourceCount": 18,
     "sources": {
       "Billboard": 2,
       "BrooklynVegan": 1,
@@ -25,12 +25,11 @@
       "Stereogum": 10,
       "The Classic Review": 1,
       "The Line of Best Fit": 1,
-      "The Quietus": 1,
       "Variety Music": 2
     }
   },
-  "generatedAt": "2026-08-26T20:03:34Z",
-  "reachableSources": 45,
+  "generatedAt": "2026-08-27T09:51:19Z",
+  "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 2,
@@ -39,8 +38,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 36,
-      "resolvedEvents": 2,
+      "downloadedArticles": 30,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -111,15 +110,16 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -252,7 +252,7 @@
       "usingFallback": true
     },
     "Sequenza21": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
@@ -289,12 +289,12 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 21,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 8,
       "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
@@ -303,11 +303,9 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://thequietus.com/feed/",
-      "usingFallback": true
+      "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
       "downloadedArticles": 3,
@@ -316,7 +314,7 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 16,
+      "downloadedArticles": 15,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
