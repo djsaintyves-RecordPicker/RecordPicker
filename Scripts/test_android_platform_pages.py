@@ -15,7 +15,6 @@ for directory in COPY:
     page = root / "android-app/index.html"
     text = page.read_text(encoding="utf-8")
     route = f"{directory}/android-app" if directory else "android-app"
-    asset_locale = "fr-fr" if directory in {"fr", "fr-ca"} else "en-us"
 
     assert f'<link rel="canonical" href="https://recordpicker.app/{route}/">' in text, directory
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
@@ -29,9 +28,7 @@ for directory in COPY:
     schema = json.loads(unescape(payload.group(1)))
     assert schema["@type"] == "WebPage", directory
     assert schema["url"] == f"https://recordpicker.app/{route}/", directory
-    assert schema["primaryImageOfPage"]["url"].endswith(
-        f"/assets/screenshots/multiplatform/{asset_locale}/android-home.webp"
-    ), directory
+    assert "primaryImageOfPage" not in schema, directory
     assert schema["about"]["@type"] == "SoftwareApplication", directory
     assert schema["about"]["operatingSystem"] == "Android", directory
     assert "downloadUrl" not in schema, directory

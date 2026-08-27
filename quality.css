@@ -846,65 +846,6 @@ picture {
 .v20-shot-grid.ipad-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .v20-shot-grid .shot-card img { aspect-ratio: auto; object-fit: contain; }
 
-.platform-screenshot-showcase {
-  padding-block: clamp(48px, 7vw, 78px);
-}
-
-.platform-screenshot-showcase .section-head {
-  margin-bottom: 30px;
-}
-
-.platform-screenshot-showcase .section-head h2 {
-  margin-top: 10px;
-}
-
-.platform-screenshot-grid {
-  display: grid;
-  gap: clamp(16px, 3vw, 28px);
-  align-items: start;
-}
-
-.android-screenshot-grid {
-  grid-template-columns: repeat(3, minmax(180px, 300px));
-}
-
-.windows-screenshot-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.platform-screenshot {
-  margin: 0;
-  padding: 10px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--surface-strong);
-  box-shadow: var(--card-shadow);
-}
-
-.platform-screenshot img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 7px;
-  background: #fff;
-}
-
-@media (max-width: 760px) {
-  .android-screenshot-grid,
-  .windows-screenshot-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .android-screenshot-grid {
-    justify-items: center;
-  }
-
-  .android-screenshot-grid .platform-screenshot {
-    width: min(100%, 337px);
-  }
-}
-
 @media (max-width: 760px) {
   .doc-hero h1 {
     font-size: clamp(2.35rem, 12vw, 3.45rem);

@@ -153,50 +153,6 @@ def watch_visual(prefix: str, locale: str) -> str:
     )
 
 
-def screenshot_locale(locale: str) -> str:
-    """Use French UI only on French-language pages; use en-US everywhere else."""
-    return "fr-fr" if locale in {"fr", "fr-ca"} else "en-us"
-
-
-def platform_screenshots(locale: str, platform: str) -> str:
-    asset_locale = screenshot_locale(locale)
-    language_label = "fr-FR" if asset_locale == "fr-fr" else "en-US"
-    if platform == "android":
-        names = ("android-home.webp", "android-collection.webp", "android-random-pick.webp")
-        dimensions = ((1080, 2400),) * 3
-        alt = (
-            ("Accueil de Record Picker sur Android", "Collection de disques dans Record Picker sur Android", "Résultat Random Pick dans Record Picker sur Android")
-            if asset_locale == "fr-fr"
-            else ("Record Picker home on Android", "Record collection in Record Picker on Android", "Random Pick result in Record Picker on Android")
-        )
-        grid_class = "platform-screenshot-grid android-screenshot-grid"
-        title = "Android"
-    else:
-        names = ("windows-home.webp", "windows-collection.webp")
-        dimensions = ((1120, 760),) * 2
-        alt = (
-            ("Accueil de Record Picker pour Windows", "Collection de disques dans Record Picker pour Windows")
-            if asset_locale == "fr-fr"
-            else ("Record Picker home for Windows", "Record collection in Record Picker for Windows")
-        )
-        grid_class = "platform-screenshot-grid windows-screenshot-grid"
-        title = "Windows"
-    figures = "".join(
-        '<figure class="platform-screenshot">'
-        f'<img src="/assets/screenshots/multiplatform/{asset_locale}/{name}" '
-        f'alt="{escape(description, quote=True)}" width="{width}" height="{height}" '
-        'loading="lazy" decoding="async">'
-        '</figure>'
-        for name, (width, height), description in zip(names, dimensions, alt)
-    )
-    return (
-        f'<section class="gallery platform-screenshot-showcase" aria-labelledby="{platform}-screenshots-title">'
-        f'<div class="section-head"><p class="kicker">{title} · {language_label}</p>'
-        f'<h2 id="{platform}-screenshots-title">{title}</h2></div>'
-        f'<div class="{grid_class}">{figures}</div></section>'
-    )
-
-
 def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, str, str]:
     deck = inner(r'<p class="deck">(.*?)</p>', home, "home description")
     available = plain(inner(r'<section class="section v23-preview.*?<p class="kicker">(.*?)</p>', home, "availability"))
@@ -257,7 +213,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '</div></div>'
             f'<figure class="beta-poster"><img src="/assets/beta/{visual}" alt="{escape(beta_title)}" width="1080" height="1920" decoding="async"></figure>'
             '</section>'
-            f'{platform_screenshots(locale, "android")}{contact}</main>'
+            f'{contact}</main>'
         )
     else:
         note_locale = RELEASE_LOCALES[locale]
@@ -276,7 +232,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '<h2>Record Picker · Windows</h2>'
             f'<p class="lead">{escape(release_copy.headline)}</p></div>'
             f'<div class="v20-preview-panel"><ul>{points}</ul></div></section>'
-            f'{platform_screenshots(locale, "windows")}{contact}</main>'
+            f'{contact}</main>'
         )
     if locale in REGION_NAMES:
         region = REGION_NAMES[locale]
@@ -308,8 +264,6 @@ def build_page(locale: str, route: str) -> Path:
     text = re.sub(r'<main id="main-content"[^>]*>.*?</main>', main, text, count=1, flags=re.DOTALL)
     if route in {"android-app", "windows-app"}:
         language = inner(r'<html\s+lang="([^"]+)"', text, "page language")
-        platform = "Android" if route == "android-app" else "Windows"
-        image_width, image_height = ((1080, 2400) if route == "android-app" else (1120, 760))
         schema = json.dumps(
             {
                 "@context": "https://schema.org",
@@ -319,12 +273,6 @@ def build_page(locale: str, route: str) -> Path:
                 "url": f"https://recordpicker.app/{route_path}/",
                 "inLanguage": language,
                 "dateModified": TODAY,
-                "primaryImageOfPage": {
-                    "@type": "ImageObject",
-                    "url": f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/{platform.casefold()}-home.webp",
-                    "width": image_width,
-                    "height": image_height,
-                },
                 **(
                     {
                         "about": {
