@@ -220,7 +220,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             f'{release}{contact}</main>'
         )
     elif route == "android-app":
-        kicker, _, detail = COPY[locale]
+        kicker = COPY[locale][0]
         beta_title, _, beta_button = BETA_COPY[locale]
         beta_detail = BETA_DETAIL_12[locale]
         scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
@@ -232,7 +232,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         main = (
             '<main id="main-content"><section class="hero platform-product-hero platform-development-hero">'
             f'<div class="hero-copy"><p class="kicker">{escape(kicker)}</p><h1>Record Picker</h1>'
-            f'<p class="tagline">Android</p><p class="deck">{escape(detail)}</p></div>'
+            '<p class="tagline">Android</p></div>'
             '<div class="platform-beta-callout platform-beta-page beta-campaign-page">'
             f'<p class="beta-scope">🌍 {escape(scope)}</p>'
             f'<h2>{escape(beta_title)}</h2><p>{escape(beta_detail)}</p>'

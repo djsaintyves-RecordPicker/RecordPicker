@@ -9,6 +9,9 @@ for directory in COPY:
     asset_locale = "fr-fr" if directory in {"fr", "fr-ca"} else "en-us"
 
     android = (root / "android-app/index.html").read_text(encoding="utf-8")
+    android_hero = android.split('</section>', 1)[0]
+    assert '<p class="tagline">Android</p>' in android_hero, directory
+    assert '<p class="deck">' not in android_hero, directory
     assert 'class="platform-screenshot-grid android-screenshot-grid"' in android, directory
     assert android.count(f'<img src="/assets/screenshots/multiplatform/{asset_locale}/android-') == 3, directory
     assert f'/assets/screenshots/multiplatform/{asset_locale}/android-home.webp' in android, directory
