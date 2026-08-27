@@ -15,7 +15,7 @@ from announce_release_2_3_1 import COPY as RELEASE_232_COPY, LOCALES as RELEASE_
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = "2026-08-27"
-STYLE_VERSION = "20260825-android-beta"
+STYLE_VERSION = "20260827-platform-screens"
 
 PLATFORM_LABELS = {
     "": "Platforms", "ar": "المنصات", "ca": "Plataformes", "da": "Platforme",
@@ -137,6 +137,50 @@ def watch_visual(prefix: str, locale: str) -> str:
     )
 
 
+def screenshot_locale(locale: str) -> str:
+    """Use French UI only on French-language pages; use en-US everywhere else."""
+    return "fr-fr" if locale in {"fr", "fr-ca"} else "en-us"
+
+
+def platform_screenshots(locale: str, platform: str) -> str:
+    asset_locale = screenshot_locale(locale)
+    language_label = "fr-FR" if asset_locale == "fr-fr" else "en-US"
+    if platform == "android":
+        names = ("android-home.webp", "android-collection.webp", "android-random-pick.webp")
+        dimensions = ((1080, 2400),) * 3
+        alt = (
+            ("Accueil de Record Picker sur Android", "Collection de disques dans Record Picker sur Android", "Résultat Random Pick dans Record Picker sur Android")
+            if asset_locale == "fr-fr"
+            else ("Record Picker home on Android", "Record collection in Record Picker on Android", "Random Pick result in Record Picker on Android")
+        )
+        grid_class = "platform-screenshot-grid android-screenshot-grid"
+        title = "Android"
+    else:
+        names = ("windows-home.webp", "windows-collection.webp")
+        dimensions = ((1120, 760),) * 2
+        alt = (
+            ("Accueil de Record Picker pour Windows", "Collection de disques dans Record Picker pour Windows")
+            if asset_locale == "fr-fr"
+            else ("Record Picker home for Windows", "Record collection in Record Picker for Windows")
+        )
+        grid_class = "platform-screenshot-grid windows-screenshot-grid"
+        title = "Windows"
+    figures = "".join(
+        '<figure class="platform-screenshot">'
+        f'<img src="/assets/screenshots/multiplatform/{asset_locale}/{name}" '
+        f'alt="{escape(description, quote=True)}" width="{width}" height="{height}" '
+        'loading="lazy" decoding="async">'
+        '</figure>'
+        for name, (width, height), description in zip(names, dimensions, alt)
+    )
+    return (
+        f'<section class="gallery platform-screenshot-showcase" aria-labelledby="{platform}-screenshots-title">'
+        f'<div class="section-head"><p class="kicker">{title} · {language_label}</p>'
+        f'<h2 id="{platform}-screenshots-title">{title}</h2></div>'
+        f'<div class="{grid_class}">{figures}</div></section>'
+    )
+
+
 def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, str, str]:
     deck = inner(r'<p class="deck">(.*?)</p>', home, "home description")
     available = plain(inner(r'<section class="section v23-preview.*?<p class="kicker">(.*?)</p>', home, "availability"))
@@ -197,7 +241,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '</div></div>'
             f'<figure class="beta-poster"><img src="/assets/beta/{visual}" alt="{escape(beta_title)}" width="1080" height="1920" decoding="async"></figure>'
             '</section>'
-            f'{contact}</main>'
+            f'{platform_screenshots(locale, "android")}{contact}</main>'
         )
     else:
         note_locale = RELEASE_LOCALES[locale]
@@ -216,7 +260,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '<h2>Record Picker · Windows</h2>'
             f'<p class="lead">{escape(release_copy.headline)}</p></div>'
             f'<div class="v20-preview-panel"><ul>{points}</ul></div></section>'
-            f'{contact}</main>'
+            f'{platform_screenshots(locale, "windows")}{contact}</main>'
         )
     if locale in REGION_NAMES:
         region = REGION_NAMES[locale]
@@ -255,6 +299,13 @@ def build_page(locale: str, route: str) -> Path:
                 "description": description,
                 "url": f"https://recordpicker.app/{route_path}/",
                 "inLanguage": language,
+                "dateModified": TODAY,
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/windows-home.webp",
+                    "width": 1120,
+                    "height": 760,
+                },
                 "isPartOf": {
                     "@type": "WebSite",
                     "name": "Record Picker",
@@ -282,6 +333,9 @@ def build_page(locale: str, route: str) -> Path:
         text = re.sub(r'"operatingSystem":"[^"]+"', f'"operatingSystem":"{escape({"ios-app": "iOS 26 / iPadOS 26", "watch-app": "watchOS 26", "android-app": "Android"}[route])}"', text)
         text = re.sub(r'("softwareVersion":")[^"]+', r'\g<1>2.3', text)
         text = re.sub(r'("dateModified":")[^"]+', r'\g<1>2026-08-22', text)
+        if route == "android-app":
+            android_image = f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/android-home.webp"
+            text = re.sub(r'("screenshot":")[^"]+', rf'\g<1>{android_image}', text)
     text = re.sub(
         r'<span id="site-footer-version">.*?</span>',
         '<span id="site-footer-version">Record Picker · 2.3</span>',
@@ -337,7 +391,8 @@ def update_navigation(path: Path, locale: str) -> bool:
     else:
         updated_header = header[:anchor.start()] + platform_menu(locale, prefix) + header[anchor.end():]
     updated = text.replace(header, updated_header, 1)
-    updated = re.sub(r'quality\.css\?v=[^"\']+', f'quality.css?v={STYLE_VERSION}', updated)
+    target_style = STYLE_VERSION if path.parent.name in {"android-app", "windows-app"} else "20260825-android-beta"
+    updated = re.sub(r'quality\.css\?v=[^"\']+', f'quality.css?v={target_style}', updated)
     if updated == text:
         return False
     path.write_text(updated, encoding="utf-8")
@@ -348,7 +403,15 @@ def update_sitemap(path: Path, routes: list[str]) -> None:
     text = path.read_text(encoding="utf-8")
     for route in routes:
         url = f"https://recordpicker.app/{route}/"
-        if f"<loc>{url}</loc>" not in text:
+        if f"<loc>{url}</loc>" in text:
+            text = re.sub(
+                rf'(<url><loc>{re.escape(url)}</loc>.*?<lastmod>)[^<]+(</lastmod>)',
+                rf'\g<1>{TODAY}\2',
+                text,
+                count=1,
+                flags=re.DOTALL,
+            )
+        else:
             text = text.replace("</urlset>", f"<url><loc>{url}</loc><lastmod>{TODAY}</lastmod></url>\n</urlset>")
     path.write_text(text, encoding="utf-8")
 
