@@ -22,6 +22,7 @@ CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
 CURRENT_RELEASE_DATE = "2026-08-22"
+MAC_RELEASE_DATE = "2026-08-27"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -101,6 +102,9 @@ def main() -> None:
         errors.append("full publication still has a platform that is not available")
     for page in pages:
         text = page.read_text(encoding="utf-8")
+        relative = page.relative_to(ROOT)
+        relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
+        kind = "/".join(relative_parts)
         for host in REMOVED_SOCIAL_HOSTS:
             if re.search(rf'href="https://(?:www\.)?{re.escape(host)}/', text):
                 errors.append(f"{page.relative_to(ROOT)}: temporarily removed social link {host} remains")
@@ -112,7 +116,12 @@ def main() -> None:
             try:
                 schema = json.loads(unescape(payload))
                 if schema.get("@type") == "SoftwareApplication":
-                    if schema.get("dateModified") != CURRENT_RELEASE_DATE:
+                    expected_release_date = (
+                        MAC_RELEASE_DATE
+                        if kind == "mac-app/index.html"
+                        else CURRENT_RELEASE_DATE
+                    )
+                    if schema.get("dateModified") != expected_release_date:
                         errors.append(
                             f"{page.relative_to(ROOT)}: stale structured-data modification date"
                         )
@@ -145,7 +154,6 @@ def main() -> None:
         if "<main" not in text:
             continue
         content_pages += 1
-        relative = page.relative_to(ROOT)
         for obsolete_version in (
             "Record Picker 2.0",
             "Record Picker v2.0",
@@ -158,7 +166,12 @@ def main() -> None:
             errors.append(f"{relative}: current version is missing its iOS/macOS platform label")
         if '>v2.1.1<' in text:
             errors.append(f"{relative}: generic 2.1.1 version pill remains")
-        if f'<span id="site-footer-version">Record Picker · {CURRENT_VERSION}</span>' not in text:
+        footer_version = (
+            RELEASE_STATE["current_release"]["platform_versions"]["mac"]
+            if kind == "mac-app/index.html"
+            else CURRENT_VERSION
+        )
+        if f'<span id="site-footer-version">Record Picker · {footer_version}</span>' not in text:
             errors.append(f"{relative}: current footer version missing")
         if relative in {
             Path("mac-app/index.html"),
@@ -197,8 +210,6 @@ def main() -> None:
                 errors.append(
                     f"{relative}: English screenshot fallback on a non-English page"
                 )
-        relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
-        kind = "/".join(relative_parts)
         page_locale = page_language(relative, text)
         is_french_page = page_locale in {"fr", "fr-ca"}
         if is_french_page and 'href="/press/reviews/"' not in text:

@@ -37,7 +37,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Windows: coming soon.
 - Android: in development.
 
-### v2.3.2 - Coming soon on iPhone, iPad, Apple Watch and Mac
+### v2.3.2 - Available now on Mac; coming soon on iPhone, iPad and Apple Watch
 
 - A portable `.recordpicker` file will carry the collection, wishlist,
   favourites, custom artwork and pick history between devices.
@@ -175,6 +175,8 @@ python3 Scripts/complete_growth_strategy.py
 python3 Scripts/publish_release_2_3.py
 python3 Scripts/announce_release_2_3_2.py
 python3 Scripts/test_release_2_3_2_staging.py
+python3 Scripts/publish_release_2_3_2_mac.py
+python3 Scripts/test_release_2_3_2_mac_publication.py
 python3 Scripts/announce_android_pc_development.py
 python3 Scripts/audit_growth_strategy.py
 python3 Scripts/audit_site_quality.py

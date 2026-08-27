@@ -47,9 +47,12 @@ def main() -> None:
         next_release = state.get("next_release")
         if next_release:
             assert next_release["version"] == "2.3.2"
-            assert set(next_release["platforms"].values()) == {"coming_soon"}
+            assert next_release["platforms"] == {
+                "iphone": "coming_soon", "ipad": "coming_soon",
+                "mac": "available", "watch": "coming_soon",
+            }
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.3", "ipad": "2.3", "watch": "2.3", "mac": "2.3"
+            "iphone": "2.3", "ipad": "2.3", "watch": "2.3", "mac": "2.3.2"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -80,7 +83,7 @@ def main() -> None:
                 assert 'data-release-version="2.3.2"' in readme
                 assert 'data-release-version="2.3.2"' in screenshots
                 assert "v232-preview next-release" in home
-                assert "release-upcoming v232-release-card" in readme
+                assert "release-partial v232-release-card" in readme
                 assert "v232-gallery-marker" in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
             intro = readme.split('<div class="context-pair feature-intro">', 1)[1].split('</div>', 1)[0]
@@ -106,7 +109,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.3"' in mac_app
+            assert '"softwareVersion":"2.3.2"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
