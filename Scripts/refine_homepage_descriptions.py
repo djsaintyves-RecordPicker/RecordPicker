@@ -39,7 +39,7 @@ COPY: dict[str, tuple[str, str]] = {
         "Catalogue your vinyl and CDs, then choose the next record with customisable Random Pick, Mood Pick or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad and Mac, and is also available on Apple Watch.",
     ),
     "en-us": (
-        "Catalog vinyl records and CDs, import Discogs, check duplicates and use Random Pick, Mood Pick or Today’s Pick to choose what to play. Private and ad-free.",
+        "Catalog vinyl records and CDs in the US, import Discogs, check duplicates, and use Random Pick, Mood Pick or Today’s Pick. Private, ad-free, and native.",
         "Catalog your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick, or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad, and Mac, and is also available on Apple Watch.",
     ),
     "ar": (
@@ -91,11 +91,11 @@ COPY: dict[str, tuple[str, str]] = {
         "Cataloga i tuoi vinili e CD e scegli il prossimo disco con una selezione casuale personalizzabile, Mood Pick o il Disco del giorno. La collezione rimane privata, può sincronizzarsi tramite iCloud tra iPhone, iPad e Mac ed è disponibile anche su Apple Watch.",
     ),
     "ja": (
-        "レコードやCDを整理し、カスタマイズできるランダム選択、Mood Pick、今日の一枚から、Appleデバイスで次に聴く一枚を選べます。",
+        "レコードとCDを整理し、Discogsからコレクションを読み込み、重複やジャケット情報を確認できます。カスタマイズ可能なランダム選択、Mood Pick、今日の一枚で、次に聴く作品を迷わず決定。iPhone、iPad、Apple Watch、Macに対応し、コレクションは非公開・広告なしで管理できます。",
         "レコードやCDを整理し、カスタマイズできるランダム選択、Mood Pick、今日の一枚から、次に聴く一枚を選べます。コレクションは非公開のまま、iCloudでiPhone、iPad、Mac間を同期でき、Apple Watchでも利用できます。",
     ),
     "ko": (
-        "바이닐과 CD를 정리하고 맞춤 설정 가능한 무작위 선택, Mood Pick, 오늘의 음반으로 Apple 기기에서 다음에 들을 음반을 골라 보세요.",
+        "바이닐과 CD를 정리하고 Discogs에서 컬렉션을 가져오며 중복 항목과 커버 정보를 확인하세요. 맞춤 설정 가능한 무작위 선택, Mood Pick, 오늘의 음반으로 다음에 들을 앨범을 고를 수 있습니다. iPhone, iPad, Apple Watch, Mac에서 컬렉션을 비공개로 광고 없이 관리할 수 있습니다.",
         "바이닐과 CD를 정리하고 맞춤 설정 가능한 무작위 선택, Mood Pick 또는 오늘의 음반으로 다음 음반을 골라 보세요. 컬렉션은 비공개로 유지되며 iCloud를 통해 iPhone, iPad, Mac 간에 동기화할 수 있고 Apple Watch에서도 이용할 수 있습니다.",
     ),
     "nb": (
@@ -139,11 +139,11 @@ COPY: dict[str, tuple[str, str]] = {
         "Lập danh mục đĩa than và CD, rồi chọn đĩa tiếp theo bằng lựa chọn ngẫu nhiên có thể tùy chỉnh, Mood Pick hoặc Đĩa nhạc hôm nay. Bộ sưu tập luôn riêng tư, có thể đồng bộ qua iCloud giữa iPhone, iPad và Mac, đồng thời cũng có trên Apple Watch.",
     ),
     "zh-hans": (
-        "整理黑胶唱片和 CD，再通过可自定义的随机选择、Mood Pick 和今日唱片，在 Apple 设备上决定下一张听什么。",
+        "整理黑胶唱片与 CD，从 Discogs 导入收藏、检查重复项目并完善封面和资料，再通过可自定义的随机选择、Mood Pick 和今日唱片决定下一张听什么。Record Picker 原生支持 iPhone、iPad、Apple Watch 与 Mac，收藏保持私密、无广告，最多可免费管理 100 张唱片。",
         "整理黑胶唱片和 CD，再通过可自定义的随机选择、Mood Pick 或今日唱片决定下一张听什么。你的收藏始终保持私密，可通过 iCloud 在 iPhone、iPad 和 Mac 之间同步，也可在 Apple Watch 上使用。",
     ),
     "zh-hant": (
-        "整理黑膠唱片和 CD，再透過可自訂的隨機選擇、Mood Pick 和今日唱片，在 Apple 裝置上決定下一張聽什麼。",
+        "整理黑膠唱片與 CD，從 Discogs 匯入收藏、檢查重複項目並完善封面與資料，再透過可自訂的隨機選擇、Mood Pick 和今日唱片決定下一張聽什麼。Record Picker 原生支援 iPhone、iPad、Apple Watch 與 Mac，收藏保持私密、無廣告，最多可免費管理 100 張唱片。",
         "整理黑膠唱片和 CD，再透過可自訂的隨機選擇、Mood Pick 或今日唱片決定下一張聽什麼。你的收藏始終保持私密，可透過 iCloud 在 iPhone、iPad 和 Mac 之間同步，也可在 Apple Watch 上使用。",
     ),
 }

@@ -21,6 +21,17 @@ PRESERVED_GENERATED_PAGES = {
     ("en-us", "watch-app"),
 }
 
+ANDROID_SEO_TITLES = {
+    "en-au": "Android beta testers wanted — Australia | Record Picker",
+    "en-ca": "Android beta testers wanted — Canada | Record Picker",
+    "en-gb": "Android beta testers wanted — UK | Record Picker",
+    "en-us": "Android beta testers wanted — US | Record Picker",
+    "fr": "Bêta Android en France | Record Picker",
+    "fr-ca": "Bêta Android au Canada | Record Picker",
+    "pt-br": "Beta Android no Brasil | Record Picker",
+    "pt-pt": "Beta Android em Portugal | Record Picker",
+}
+
 PLATFORM_LABELS = {
     "": "Platforms", "ar": "المنصات", "ca": "Plataformes", "da": "Platforme",
     "de": "Plattformen", "el": "Πλατφόρμες", "en-au": "Platforms",
@@ -196,7 +207,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         beta_title, _, beta_button = BETA_COPY[locale]
         beta_detail = BETA_DETAIL_12[locale]
         scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
-        title = f"{beta_title} | Record Picker"
+        title = ANDROID_SEO_TITLES.get(locale, f"{beta_title} | Record Picker")
         description = plain(beta_detail)
         subject = "Record%20Picker%20Android%20beta%20volunteer"
         body = "Country%20%2F%20region%3A%0AAndroid%20device%20model%3A%0APreferred%20beta%20language%3A%20English%20%2F%20French%3A%0A"
@@ -367,6 +378,11 @@ def update_navigation(path: Path, locale: str) -> bool:
     else:
         updated_header = header[:anchor.start()] + platform_menu(locale, prefix) + header[anchor.end():]
     updated = text.replace(header, updated_header, 1)
+    updated = re.sub(
+        r'href="((?:\.\./)*)index\.html(#[^"]*)?"',
+        lambda found: f'href="{found.group(1) or "./"}{found.group(2) or ""}"',
+        updated,
+    )
     target_style = STYLE_VERSION if path.parent.name in {"android-app", "windows-app"} else "20260825-android-beta"
     updated = re.sub(r'quality\.css\?v=[^"\']+', f'quality.css?v={target_style}', updated)
     if updated == text:

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from collections import defaultdict
 from html import unescape
 import json
 from pathlib import Path
@@ -90,6 +91,8 @@ def main() -> None:
     current_social_pages = 0
     optimized_picture_pages = 0
     archived_gallery_pages = 0
+    seo_titles: dict[str, list[Path]] = defaultdict(list)
+    seo_descriptions: dict[str, list[Path]] = defaultdict(list)
     if PUBLICATION_PHASE not in {"partial", "full"}:
         errors.append(f"unknown publication phase {PUBLICATION_PHASE}")
     platform_states = RELEASE_STATE["current_release"]["platforms"]
@@ -105,6 +108,8 @@ def main() -> None:
         relative = page.relative_to(ROOT)
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        if re.search(r'href="(?:\.\./)*index\.html(?:#[^"]*)?"', text):
+            errors.append(f"{relative}: internal index.html link creates a duplicate URL")
         platform_route = relative_parts[-2] if len(relative_parts) >= 2 else ""
         if platform_route in {"ios-app", "watch-app", "android-app", "windows-app"}:
             for hreflang, href in re.findall(
@@ -187,6 +192,14 @@ def main() -> None:
         if "<main" not in text:
             continue
         content_pages += 1
+        title_match = re.search(r"<title>(.*?)</title>", text, flags=re.DOTALL)
+        description_match = re.search(
+            r'<meta name="description" content="([^"]*)"', text, flags=re.DOTALL
+        )
+        if title_match:
+            seo_titles[unescape(title_match.group(1)).strip()].append(relative)
+        if description_match:
+            seo_descriptions[unescape(description_match.group(1)).strip()].append(relative)
         for obsolete_version in (
             "Record Picker 2.0",
             "Record Picker v2.0",
@@ -704,6 +717,12 @@ def main() -> None:
                 "obsolete screenshot archives should not be visible; "
                 f"found {archived_gallery_pages}"
             )
+    for label, values in (("title", seo_titles), ("meta description", seo_descriptions)):
+        for value, duplicates in values.items():
+            if value and len(duplicates) > 1:
+                errors.append(
+                    f"duplicate {label} on " + ", ".join(str(path) for path in duplicates)
+                )
         preview_galleries = sum(
             f'data-preview-gallery="{CURRENT_VERSION}"' in page.read_text(encoding="utf-8")
             for page in pages
