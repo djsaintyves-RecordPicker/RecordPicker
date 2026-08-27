@@ -59,6 +59,19 @@ def clarify_home_release(path: Path) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def refresh_screenshot_version_labels(path: Path) -> None:
+    text = path.read_text(encoding="utf-8")
+    replacements = {
+        "Mac · Record Picker 2.3": "Mac · Record Picker 2.3.2",
+        "iPhone · iOS 2.1.1": "iPhone · Record Picker 2.3",
+        "iPad · iOS 2.1.1": "iPad · Record Picker 2.3",
+        "Apple Watch · iOS 2.1.1": "Apple Watch · Record Picker 2.3",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    path.write_text(text, encoding="utf-8")
+
+
 def improve_guide_copy(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
     text = re.sub(
@@ -155,6 +168,11 @@ def main() -> None:
     )
     for path in home_paths:
         clarify_home_release(path)
+
+    screenshot_paths = [ROOT / "screenshots/index.html"]
+    screenshot_paths.extend(ROOT.glob("*/screenshots/index.html"))
+    for path in screenshot_paths:
+        refresh_screenshot_version_labels(path)
 
     changed_urls = {
         SITE + "/",
