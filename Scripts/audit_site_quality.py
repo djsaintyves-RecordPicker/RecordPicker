@@ -614,8 +614,8 @@ def main() -> None:
     if len(pages) < 278:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
-    # Nine established pages plus the three localized platform pages.
-    expected_content_pages = expected_locales * 12 + 2 + 12
+    # Nine established pages plus four localized platform pages.
+    expected_content_pages = expected_locales * 13 + 2 + 12
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
@@ -648,9 +648,10 @@ def main() -> None:
             f"found {current_gallery_pages}"
         )
     if PUBLICATION_PHASE == "full":
-        if current_metadata_pages != content_pages:
+        expected_metadata_pages = content_pages - expected_locales
+        if current_metadata_pages != expected_metadata_pages:
             errors.append(
-                f"only {current_metadata_pages}/{content_pages} pages expose "
+                f"only {current_metadata_pages}/{expected_metadata_pages} applicable pages expose "
                 f"softwareVersion {CURRENT_VERSION}"
             )
         if current_social_pages != content_pages:

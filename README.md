@@ -37,6 +37,9 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Windows: coming soon.
 - Android: in development.
 
+Localized Windows preview pages are available under `/windows-app/` for every
+supported site language.
+
 ### v2.3.2 - Available now on Mac; coming soon on iPhone, iPad and Apple Watch
 
 - A portable `.recordpicker` file will carry the collection, wishlist,

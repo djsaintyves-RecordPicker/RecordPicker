@@ -4,14 +4,17 @@
 from __future__ import annotations
 
 from html import escape
+import json
 from pathlib import Path
 import re
 
 from announce_android_pc_development import BETA_COPY, BETA_DETAIL_12, BETA_SCOPE_COPY, COPY
+from announce_release_2_1 import COMING_SOON
+from announce_release_2_3_1 import COPY as RELEASE_232_COPY, LOCALES as RELEASE_LOCALES
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TODAY = "2026-08-25"
+TODAY = "2026-08-27"
 STYLE_VERSION = "20260825-android-beta"
 
 PLATFORM_LABELS = {
@@ -172,7 +175,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             f'<div class="cta-row">{button}</div></div>{watch_visual(prefix, locale)}</section>'
             f'{release}{contact}</main>'
         )
-    else:
+    elif route == "android-app":
         kicker, _, detail = COPY[locale]
         beta_title, _, beta_button = BETA_COPY[locale]
         beta_detail = BETA_DETAIL_12[locale]
@@ -194,6 +197,25 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '</div></div>'
             f'<figure class="beta-poster"><img src="/assets/beta/{visual}" alt="{escape(beta_title)}" width="1080" height="1920" decoding="async"></figure>'
             '</section>'
+            f'{contact}</main>'
+        )
+    else:
+        note_locale = RELEASE_LOCALES[locale]
+        release_copy = RELEASE_232_COPY[note_locale]
+        coming_soon = COMING_SOON[note_locale]
+        title = "Record Picker — Windows"
+        description = release_copy.points[2]
+        points = "".join(f"<li>{escape(point)}</li>" for point in release_copy.points)
+        main = (
+            '<main id="main-content"><section class="hero platform-product-hero platform-development-hero">'
+            f'<div class="hero-copy"><p class="kicker">{escape(coming_soon)}</p><h1>Record Picker</h1>'
+            f'<p class="tagline">Windows</p><p class="deck">{escape(description)}</p></div>'
+            '<div class="platform-symbol windows-symbol" aria-hidden="true">⊞</div>'
+            '</section><section class="section platform-expansion windows-preview">'
+            f'<div class="section-head"><p class="kicker">{escape(coming_soon)}</p>'
+            '<h2>Record Picker · Windows</h2>'
+            f'<p class="lead">{escape(release_copy.headline)}</p></div>'
+            f'<div class="v20-preview-panel"><ul>{points}</ul></div></section>'
             f'{contact}</main>'
         )
     if locale in REGION_NAMES:
@@ -220,9 +242,58 @@ def build_page(locale: str, route: str) -> Path:
         rf'\g<1>{route}/',
         text,
     )
-    text = set_meta(text, route if not locale else f"{locale}/{route}", title, description)
+    route_path = route if not locale else f"{locale}/{route}"
+    text = set_meta(text, route_path, title, description)
     text = re.sub(r'<main id="main-content"[^>]*>.*?</main>', main, text, count=1, flags=re.DOTALL)
-    text = re.sub(r'"operatingSystem":"[^"]+"', f'"operatingSystem":"{escape({"ios-app": "iOS 26 / iPadOS 26", "watch-app": "watchOS 26", "android-app": "Android"}[route])}"', text)
+    if route == "windows-app":
+        language = inner(r'<html\s+lang="([^"]+)"', text, "page language")
+        schema = json.dumps(
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": title,
+                "description": description,
+                "url": f"https://recordpicker.app/{route_path}/",
+                "inLanguage": language,
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "Record Picker",
+                    "url": "https://recordpicker.app/",
+                },
+            },
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        text = re.sub(
+            r'<script type="application/ld\+json">\{"@context":"https://schema\.org","@type":"SoftwareApplication".*?</script>',
+            f'<script type="application/ld+json">{schema}</script>',
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        for attribute in ('property="og:image:alt"', 'name="twitter:image:alt"'):
+            text = re.sub(
+                rf'(<meta {attribute} content=")[^"]*(")',
+                rf'\g<1>{escape(title, quote=True)}\2',
+                text,
+                count=1,
+            )
+    else:
+        text = re.sub(r'"operatingSystem":"[^"]+"', f'"operatingSystem":"{escape({"ios-app": "iOS 26 / iPadOS 26", "watch-app": "watchOS 26", "android-app": "Android"}[route])}"', text)
+        text = re.sub(r'("softwareVersion":")[^"]+', r'\g<1>2.3', text)
+        text = re.sub(r'("dateModified":")[^"]+', r'\g<1>2026-08-22', text)
+    text = re.sub(
+        r'<span id="site-footer-version">.*?</span>',
+        '<span id="site-footer-version">Record Picker · 2.3</span>',
+        text,
+        flags=re.DOTALL,
+    )
+    text = re.sub(
+        r'("position":2,"name":")[^"]+',
+        rf'\g<1>{escape(title, quote=True)}',
+        text,
+        count=1,
+    )
     path = locale_file(locale, route)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -231,15 +302,16 @@ def build_page(locale: str, route: str) -> Path:
 
 def platform_menu(locale: str, prefix: str) -> str:
     label = escape(PLATFORM_LABELS[locale])
-    status = escape(COPY[locale][0])
+    android_status = escape(COPY[locale][0])
+    windows_status = escape(COMING_SOON[RELEASE_LOCALES[locale]])
     return (
         '<details class="platform-nav"><summary>' + label + '</summary>'
         '<div class="platform-nav-panel">'
         f'<a href="{prefix}ios-app/">iPhone · iPad</a>'
         f'<a href="{prefix}watch-app/">Apple Watch</a>'
         f'<a href="{prefix}mac-app/">Mac</a>'
-        f'<a href="{prefix}android-app/">Android <small>{status}</small></a>'
-        f'<span>Windows <small>{status}</small></span>'
+        f'<a href="{prefix}android-app/">Android <small>{android_status}</small></a>'
+        f'<a href="{prefix}windows-app/">Windows <small>{windows_status}</small></a>'
         '</div></details>'
     )
 
@@ -250,17 +322,20 @@ def update_navigation(path: Path, locale: str) -> bool:
     if not header_match:
         return False
     header = header_match.group(0)
-    if 'class="platform-nav"' in header:
-        updated = re.sub(r'quality\.css\?v=[^"\']+', f'quality.css?v={STYLE_VERSION}', text)
-        if updated != text:
-            path.write_text(updated, encoding="utf-8")
-            return True
-        return False
-    anchor = re.search(r'<a href="([^"]*?)mac-app/">.*?</a>', header, flags=re.DOTALL)
+    anchor = re.search(r'<a href="([^"]*?)android-app/">.*?</a>', header, flags=re.DOTALL)
     if not anchor:
-        raise RuntimeError(f"Missing Mac navigation in {path}")
+        raise RuntimeError(f"Missing Android navigation in {path}")
     prefix = anchor.group(1)
-    updated_header = header[:anchor.start()] + platform_menu(locale, prefix) + header[anchor.end():]
+    if 'class="platform-nav"' in header:
+        updated_header = re.sub(
+            r'<details class="platform-nav">.*?</details>',
+            platform_menu(locale, prefix),
+            header,
+            count=1,
+            flags=re.DOTALL,
+        )
+    else:
+        updated_header = header[:anchor.start()] + platform_menu(locale, prefix) + header[anchor.end():]
     updated = text.replace(header, updated_header, 1)
     updated = re.sub(r'quality\.css\?v=[^"\']+', f'quality.css?v={STYLE_VERSION}', updated)
     if updated == text:
@@ -279,7 +354,7 @@ def update_sitemap(path: Path, routes: list[str]) -> None:
 
 
 def main() -> None:
-    routes = ("ios-app", "watch-app", "android-app")
+    routes = ("ios-app", "watch-app", "android-app", "windows-app")
     pages = [build_page(locale, route) for locale in COPY for route in routes]
     changed = 0
     for path in ROOT.rglob("*.html"):
