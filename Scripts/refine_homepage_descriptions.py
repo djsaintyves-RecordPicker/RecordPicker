@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 # privacy, optional iCloud sync on iPhone/iPad/Mac, and Apple Watch availability.
 COPY: dict[str, tuple[str, str]] = {
     "": (
-        "Catalogue vinyl records and CDs, check duplicates before buying, import a Discogs CSV and choose what to play. Private, ad-free and available in 32 localizations.",
+        "Catalog vinyl records and CDs, import Discogs, check duplicates and use Random Pick, Mood Pick or Today’s Pick to choose what to play. Private and ad-free.",
         "Catalog your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick, or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad, and Mac, and is also available on Apple Watch.",
     ),
     "fr": (
@@ -39,7 +39,7 @@ COPY: dict[str, tuple[str, str]] = {
         "Catalogue your vinyl and CDs, then choose the next record with customisable Random Pick, Mood Pick or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad and Mac, and is also available on Apple Watch.",
     ),
     "en-us": (
-        "Catalogue vinyl records and CDs, then choose what to play with Random Pick, Mood Pick or Today’s Pick. Made for collectors in the US; free for up to 100 records.",
+        "Catalog vinyl records and CDs, import Discogs, check duplicates and use Random Pick, Mood Pick or Today’s Pick to choose what to play. Private and ad-free.",
         "Catalog your vinyl and CDs, then choose the next record with customizable Random Pick, Mood Pick, or Today’s Pick. Your collection stays private, can sync through iCloud across iPhone, iPad, and Mac, and is also available on Apple Watch.",
     ),
     "ar": (
