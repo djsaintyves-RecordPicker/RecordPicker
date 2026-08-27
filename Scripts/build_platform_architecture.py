@@ -16,6 +16,10 @@ from announce_release_2_3_1 import COPY as RELEASE_232_COPY, LOCALES as RELEASE_
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = "2026-08-27"
 STYLE_VERSION = "20260827-platform-screens"
+PRESERVED_GENERATED_PAGES = {
+    ("", "watch-app"),
+    ("en-us", "watch-app"),
+}
 
 PLATFORM_LABELS = {
     "": "Platforms", "ar": "المنصات", "ca": "Plataformes", "da": "Platforme",
@@ -75,6 +79,7 @@ def plain(value: str) -> str:
 
 def set_meta(text: str, route: str, title: str, description: str) -> str:
     canonical = f"https://recordpicker.app/{route}/"
+    platform_route = route.rsplit("/", 1)[-1]
     text = re.sub(r"<title>.*?</title>", f"<title>{escape(title)}</title>", text, count=1)
     replacements = {
         "description": description,
@@ -96,6 +101,17 @@ def set_meta(text: str, route: str, title: str, description: str) -> str:
     text = re.sub(
         r'(<link rel="canonical" href=")[^"]*(")',
         rf'\g<1>{canonical}\2', text, count=1,
+    )
+    text = re.sub(
+        r'(<link rel="alternate" hreflang="(?!x-default)[^"]+" '
+        r'href="https://recordpicker\.app/[a-z]{2}(?:-[a-z]{2,4})?/)(?=">)',
+        rf'\g<1>{platform_route}/',
+        text,
+    )
+    text = re.sub(
+        r'(<a class="language-option" href="/[a-z]{2}(?:-[a-z]{2,4})?/)(?=" hreflang=)',
+        rf'\g<1>{platform_route}/',
+        text,
     )
     return text
 
@@ -224,7 +240,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         beta_title, _, beta_button = BETA_COPY[locale]
         beta_detail = BETA_DETAIL_12[locale]
         scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
-        title = "Record Picker — Android"
+        title = f"{beta_title} | Record Picker"
         description = plain(beta_detail)
         subject = "Record%20Picker%20Android%20beta%20volunteer"
         body = "Country%20%2F%20region%3A%0AAndroid%20device%20model%3A%0APreferred%20beta%20language%3A%20English%20%2F%20French%3A%0A"
@@ -264,9 +280,10 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         )
     if locale in REGION_NAMES:
         region = REGION_NAMES[locale]
-        title = f"{title} — {region}"
+        if route != "android-app":
+            title = f"{title} — {region}"
         description = f"{description} Available in {region}."
-    elif locale:
+    elif locale and route != "android-app":
         title = f"{title} — {SEO_LOCALE_LABELS[locale]}"
     return main, title, description
 
@@ -289,8 +306,10 @@ def build_page(locale: str, route: str) -> Path:
     route_path = route if not locale else f"{locale}/{route}"
     text = set_meta(text, route_path, title, description)
     text = re.sub(r'<main id="main-content"[^>]*>.*?</main>', main, text, count=1, flags=re.DOTALL)
-    if route == "windows-app":
+    if route in {"android-app", "windows-app"}:
         language = inner(r'<html\s+lang="([^"]+)"', text, "page language")
+        platform = "Android" if route == "android-app" else "Windows"
+        image_width, image_height = ((1080, 2400) if route == "android-app" else (1120, 760))
         schema = json.dumps(
             {
                 "@context": "https://schema.org",
@@ -302,10 +321,22 @@ def build_page(locale: str, route: str) -> Path:
                 "dateModified": TODAY,
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
-                    "url": f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/windows-home.webp",
-                    "width": 1120,
-                    "height": 760,
+                    "url": f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/{platform.casefold()}-home.webp",
+                    "width": image_width,
+                    "height": image_height,
                 },
+                **(
+                    {
+                        "about": {
+                            "@type": "SoftwareApplication",
+                            "name": "Record Picker",
+                            "applicationCategory": "MultimediaApplication",
+                            "operatingSystem": "Android",
+                        }
+                    }
+                    if route == "android-app"
+                    else {}
+                ),
                 "isPartOf": {
                     "@type": "WebSite",
                     "name": "Record Picker",
@@ -333,9 +364,6 @@ def build_page(locale: str, route: str) -> Path:
         text = re.sub(r'"operatingSystem":"[^"]+"', f'"operatingSystem":"{escape({"ios-app": "iOS 26 / iPadOS 26", "watch-app": "watchOS 26", "android-app": "Android"}[route])}"', text)
         text = re.sub(r'("softwareVersion":")[^"]+', r'\g<1>2.3', text)
         text = re.sub(r'("dateModified":")[^"]+', r'\g<1>2026-08-22', text)
-        if route == "android-app":
-            android_image = f"https://recordpicker.app/assets/screenshots/multiplatform/{screenshot_locale(locale)}/android-home.webp"
-            text = re.sub(r'("screenshot":")[^"]+', rf'\g<1>{android_image}', text)
     text = re.sub(
         r'<span id="site-footer-version">.*?</span>',
         '<span id="site-footer-version">Record Picker · 2.3</span>',
@@ -418,7 +446,16 @@ def update_sitemap(path: Path, routes: list[str]) -> None:
 
 def main() -> None:
     routes = ("ios-app", "watch-app", "android-app", "windows-app")
-    pages = [build_page(locale, route) for locale in COPY for route in routes]
+    pages = []
+    preserved = 0
+    for locale in COPY:
+        for route in routes:
+            target = locale_file(locale, route)
+            if (locale, route) in PRESERVED_GENERATED_PAGES and target.exists():
+                pages.append(target)
+                preserved += 1
+            else:
+                pages.append(build_page(locale, route))
     changed = 0
     for path in ROOT.rglob("*.html"):
         relative = path.relative_to(ROOT)
@@ -427,7 +464,10 @@ def main() -> None:
     sitemap_routes = [f"{locale}/{route}" if locale else route for locale in COPY for route in routes]
     update_sitemap(ROOT / "sitemap.xml", sitemap_routes)
     update_sitemap(ROOT / "sitemap-media.xml", sitemap_routes)
-    print(f"Built {len(pages)} platform pages and updated navigation on {changed} pages.")
+    print(
+        f"Built {len(pages) - preserved} platform pages, preserved {preserved} SEO-specific pages "
+        f"and updated navigation on {changed} pages."
+    )
 
 
 if __name__ == "__main__":

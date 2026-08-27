@@ -105,6 +105,22 @@ def main() -> None:
         relative = page.relative_to(ROOT)
         relative_parts = relative.parts[1:] if relative.parts and relative.parts[0] in LOCALES else relative.parts
         kind = "/".join(relative_parts)
+        platform_route = relative_parts[-2] if len(relative_parts) >= 2 else ""
+        if platform_route in {"ios-app", "watch-app", "android-app", "windows-app"}:
+            for hreflang, href in re.findall(
+                r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">', text
+            ):
+                if hreflang != "x-default" and not href.endswith(f"/{platform_route}/"):
+                    errors.append(
+                        f"{relative}: hreflang {hreflang} points outside {platform_route}"
+                    )
+            for href, hreflang in re.findall(
+                r'<a class="language-option" href="([^"]+)" hreflang="([^"]+)"', text
+            ):
+                if not href.endswith(f"/{platform_route}/"):
+                    errors.append(
+                        f"{relative}: language option {hreflang} points outside {platform_route}"
+                    )
         for host in REMOVED_SOCIAL_HOSTS:
             if re.search(rf'href="https://(?:www\.)?{re.escape(host)}/', text):
                 errors.append(f"{page.relative_to(ROOT)}: temporarily removed social link {host} remains")
@@ -112,9 +128,24 @@ def main() -> None:
             target = local_target(page, value)
             if target and not target.exists():
                 errors.append(f"{page.relative_to(ROOT)}: missing {target.relative_to(ROOT)}")
+        android_page_schema_found = False
         for payload in re.findall(r'<script type="application/ld\+json"[^>]*>(.*?)</script>', text, flags=re.DOTALL):
             try:
                 schema = json.loads(unescape(payload))
+                if kind == "android-app/index.html" and schema.get("@type") == "WebPage":
+                    android_page_schema_found = True
+                    about = schema.get("about", {})
+                    if (
+                        about.get("@type") != "SoftwareApplication"
+                        or about.get("operatingSystem") != "Android"
+                        or "downloadUrl" in schema
+                        or "offers" in schema
+                        or "downloadUrl" in about
+                        or "offers" in about
+                    ):
+                        errors.append(
+                            f"{page.relative_to(ROOT)}: inaccurate Android availability metadata"
+                        )
                 if schema.get("@type") == "SoftwareApplication":
                     expected_release_date = (
                         MAC_RELEASE_DATE
@@ -151,6 +182,8 @@ def main() -> None:
                         )
             except json.JSONDecodeError as error:
                 errors.append(f"{page.relative_to(ROOT)}: invalid JSON-LD: {error}")
+        if kind == "android-app/index.html" and not android_page_schema_found:
+            errors.append(f"{page.relative_to(ROOT)}: Android WebPage metadata missing")
         if "<main" not in text:
             continue
         content_pages += 1
@@ -649,7 +682,9 @@ def main() -> None:
             f"found {current_gallery_pages}"
         )
     if PUBLICATION_PHASE == "full":
-        expected_metadata_pages = content_pages - expected_locales
+        # Android and Windows are announced but not downloadable yet, so their
+        # pages intentionally use WebPage metadata without a softwareVersion.
+        expected_metadata_pages = content_pages - (expected_locales * 2)
         if current_metadata_pages != expected_metadata_pages:
             errors.append(
                 f"only {current_metadata_pages}/{expected_metadata_pages} applicable pages expose "
