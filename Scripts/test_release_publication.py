@@ -75,6 +75,13 @@ def main() -> None:
             for page in (home, screenshots, mac_app):
                 assert "<h2>Record Picker 2.4 · Apple</h2>" in page
             assert "Apple · " in readme
+            assert 'class="v24-feature-list"' in home
+            assert 'class="v24-feature-list"' in readme
+            assert 'class="v24-feature-list"' in mac_app
+            if root.name in {"fr", "fr-ca"}:
+                assert "Choisissez un nombre de disques ou une durée approximative" in home
+                assert "Cette file est distincte de la liste de souhaits" in home
+                assert "Sur Mac et iPad, une vue interactive révèle les liens" in home
             assert "v24-graph-grid" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app

@@ -1349,6 +1349,37 @@ main .kicker,
   margin-top: 0;
 }
 
+.v24-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.v24-feature-list li {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+}
+
+.v24-feature-list strong {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.v24-feature-list span {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .v24-graph-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1397,7 +1428,8 @@ main .kicker,
 }
 
 @media (max-width: 760px) {
-  .v24-graph-grid {
+  .v24-graph-grid,
+  .v24-feature-list {
     grid-template-columns: 1fr;
   }
 }

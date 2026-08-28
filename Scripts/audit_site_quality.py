@@ -403,6 +403,7 @@ def main() -> None:
             "quality.css?v=20260825-beta-layout",
             "quality.css?v=20260827-platform-screens",
             "quality.css?v=20260828-v24",
+            "quality.css?v=20260828-v24-notes",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":

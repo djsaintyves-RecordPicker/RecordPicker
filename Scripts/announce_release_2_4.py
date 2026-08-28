@@ -30,14 +30,39 @@ APP_LOCALE = {
 
 KEYS = {
     "headline": "Compose a progression from records you already own.",
+    "journey_title": "Listening Journeys",
     "journey": "Record Picker builds each journey locally from records you own, linking shared genres, styles and nearby years without inventing missing metadata.",
     "listen_title": "Listen Later",
     "listen": "Add an owned record from its details to keep it ready for another listening session.",
     "graph_title": "Graphe de collection",
     "graph": "Record Picker relie les œuvres, compositeurs, interprètes, chefs, ensembles et éditions sans modifier vos données.",
+    "scanner_title": "Scan a barcode",
     "scanner": "Use a Mac camera or an iPhone through Continuity Camera. Recognition happens locally on this Mac.",
+    "today_title": "Today’s Pick",
     "today": "Your city, map center and radius stay on this device. The public global feed is filtered locally. Your collection and wishlist are never sent.",
+    "share_title": "Share this card",
     "privacy": "Collection status, private notes, listening history and location are never included.",
+}
+
+EDITORIAL_OVERRIDES = {
+    "fr": {
+        "headline": "Avec la version 2.4, préparez plusieurs écoutes, gardez vos prochains disques sous la main et explorez les liens de votre collection.",
+        "journey": "Choisissez un nombre de disques ou une durée approximative : Record Picker compose un parcours cohérent uniquement à partir des albums que vous possédez. Chaque transition est expliquée, et le parcours reste modifiable, enregistrable en brouillon et reprenable sur iPhone, iPad ou Mac.",
+        "listen": "Ajoutez à une file privée les disques que vous possédez déjà, réorganisez-les librement et retrouvez la liste sur vos appareils Apple. Cette file est distincte de la liste de souhaits.",
+        "graph": "Sur Mac et iPad, une vue interactive révèle les liens entre œuvres, compositeurs, interprètes, chefs, ensembles et éditions. Le graphe est calculé localement à partir de vos fiches et ne modifie aucune donnée.",
+        "scanner": "Sur Mac, scannez un code EAN ou UPC avec la caméra du Mac ou avec un iPhone utilisé via Caméra Continuité. L’image reste sur l’appareil ; vous vérifiez ensuite les informations proposées avant d’ajouter le disque.",
+        "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
+        "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+    },
+    "en": {
+        "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
+        "journey": "Choose a number of records or an approximate duration. Record Picker creates a coherent journey using only albums you own, explains every transition, and lets you edit, save and resume it on iPhone, iPad or Mac.",
+        "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
+        "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+        "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+        "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+        "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    },
 }
 
 STRING_ENTRY = re.compile(r'^"((?:\\.|[^"\\])*)"\s*=\s*"((?:\\.|[^"\\])*)";$')
@@ -68,6 +93,10 @@ def refresh_copy(app_root: Path) -> None:
             field: entries[source]
             for field, source in KEYS.items()
         }
+        if directory in {"fr", "fr-ca"}:
+            localized[directory].update(EDITORIAL_OVERRIDES["fr"])
+        elif directory in {"", "en-au", "en-ca", "en-gb", "en-us"}:
+            localized[directory].update(EDITORIAL_OVERRIDES["en"])
     COPY_PATH.parent.mkdir(parents=True, exist_ok=True)
     COPY_PATH.write_text(
         json.dumps(localized, ensure_ascii=False, indent=2) + "\n",
@@ -84,16 +113,20 @@ def screenshots(directory: str) -> tuple[str, str]:
     )
 
 
-def feature_items(copy: dict[str, str]) -> str:
-    points = (
-        copy["journey"],
-        f'{copy["listen_title"]} — {copy["listen"]}',
-        f'{copy["graph_title"]} — {copy["graph"]}',
-        copy["scanner"],
-        copy["today"],
-        copy["privacy"],
+def feature_items(copy: dict[str, str], names: tuple[str, ...] | None = None) -> str:
+    features = {
+        "journey": (copy["journey_title"], copy["journey"]),
+        "listen": (copy["listen_title"], copy["listen"]),
+        "graph": (copy["graph_title"], copy["graph"]),
+        "scanner": (copy["scanner_title"], copy["scanner"]),
+        "today": (copy["today_title"], copy["today"]),
+        "share": (copy["share_title"], copy["privacy"]),
+    }
+    selected = names or tuple(features)
+    return "".join(
+        f"<li><strong>{escape(features[name][0])}</strong><span>{escape(features[name][1])}</span></li>"
+        for name in selected
     )
-    return "".join(f"<li>{escape(point)}</li>" for point in points)
 
 
 def figures(directory: str, copy: dict[str, str], *, loading: str = "lazy") -> str:
@@ -114,7 +147,7 @@ def home(directory: str, copy: dict[str, str], status: str) -> str:
         f'<section class="section next-release v24-preview" id="versions" data-release-version="{VERSION}">'
         f'<div class="section-head"><p class="kicker">{escape(apple_status)}</p><h2>Record Picker {VERSION} · Apple</h2>'
         f'<p class="lead">{escape(copy["headline"])}</p></div>'
-        f'<div class="v24-preview-layout"><div class="v20-preview-panel"><ul>{feature_items(copy)}</ul></div>'
+        f'<div class="v24-preview-layout"><div class="v20-preview-panel"><ul class="v24-feature-list">{feature_items(copy)}</ul></div>'
         f'{figures(directory, copy)}</div></section>'
     )
 
@@ -125,7 +158,7 @@ def history(copy: dict[str, str], status: str) -> str:
         f'<article class="release-card release-preview release-upcoming v24-release-card" data-release-version="{VERSION}">'
         f'<div class="release-head"><span class="version-pill">v{VERSION}</span><div><h3>{escape(copy["headline"])}</h3>'
         f'<p class="release-platform-summary"><strong>{escape(platforms)}</strong></p></div></div>'
-        f'<ul>{feature_items(copy)}</ul></article>'
+        f'<ul class="v24-feature-list">{feature_items(copy)}</ul></article>'
     )
 
 
@@ -144,8 +177,9 @@ def mac_preview(directory: str, copy: dict[str, str], status: str) -> str:
         f'<section class="next-release v24-mac-preview" data-release-version="{VERSION}">'
         f'<div class="section-head"><p class="kicker">{escape(apple_status)}</p><h2>Record Picker {VERSION} · Apple</h2>'
         f'<p class="lead">{escape(copy["graph"])}</p></div>'
-        f'<div class="v20-preview-panel"><ul><li>{escape(copy["journey"])}</li>'
-        f'<li>{escape(copy["scanner"])}</li></ul></div>{figures(directory, copy)}</section>'
+        f'<div class="v20-preview-panel"><ul class="v24-feature-list">'
+        f'{feature_items(copy, ("graph", "journey", "scanner"))}</ul></div>'
+        f'{figures(directory, copy)}</section>'
     )
 
 
