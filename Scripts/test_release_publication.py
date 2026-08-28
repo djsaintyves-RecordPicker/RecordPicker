@@ -72,6 +72,9 @@ def main() -> None:
             assert readme.count('data-release-version="2.4"') == 1
             assert screenshots.count('data-release-version="2.4"') == 1
             assert mac_app.count('data-release-version="2.4"') == 1
+            for page in (home, screenshots, mac_app):
+                assert "<h2>Record Picker 2.4 · Apple</h2>" in page
+            assert "Apple · " in readme
             assert "v24-graph-grid" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app

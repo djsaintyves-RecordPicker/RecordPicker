@@ -109,9 +109,10 @@ def figures(directory: str, copy: dict[str, str], *, loading: str = "lazy") -> s
 
 
 def home(directory: str, copy: dict[str, str], status: str) -> str:
+    apple_status = f"Apple · {status}"
     return (
         f'<section class="section next-release v24-preview" id="versions" data-release-version="{VERSION}">'
-        f'<div class="section-head"><p class="kicker">{escape(status)}</p><h2>Record Picker {VERSION}</h2>'
+        f'<div class="section-head"><p class="kicker">{escape(apple_status)}</p><h2>Record Picker {VERSION} · Apple</h2>'
         f'<p class="lead">{escape(copy["headline"])}</p></div>'
         f'<div class="v24-preview-layout"><div class="v20-preview-panel"><ul>{feature_items(copy)}</ul></div>'
         f'{figures(directory, copy)}</div></section>'
@@ -119,7 +120,7 @@ def home(directory: str, copy: dict[str, str], status: str) -> str:
 
 
 def history(copy: dict[str, str], status: str) -> str:
-    platforms = f"{status} · iPhone · iPad · Apple Watch · Mac"
+    platforms = f"Apple · {status} · iPhone · iPad · Apple Watch · Mac"
     return (
         f'<article class="release-card release-preview release-upcoming v24-release-card" data-release-version="{VERSION}">'
         f'<div class="release-head"><span class="version-pill">v{VERSION}</span><div><h3>{escape(copy["headline"])}</h3>'
@@ -129,17 +130,19 @@ def history(copy: dict[str, str], status: str) -> str:
 
 
 def gallery(directory: str, copy: dict[str, str], status: str) -> str:
+    apple_status = f"Apple · {status}"
     return (
         f'<section class="media-section next-release v24-gallery" data-release-version="{VERSION}">'
-        f'<div class="section-head"><p class="kicker">{escape(status)}</p><h2>Record Picker {VERSION}</h2>'
+        f'<div class="section-head"><p class="kicker">{escape(apple_status)}</p><h2>Record Picker {VERSION} · Apple</h2>'
         f'<p class="lead">{escape(copy["headline"])}</p></div>{figures(directory, copy)}</section>'
     )
 
 
 def mac_preview(directory: str, copy: dict[str, str], status: str) -> str:
+    apple_status = f"Apple · {status}"
     return (
         f'<section class="next-release v24-mac-preview" data-release-version="{VERSION}">'
-        f'<div class="section-head"><p class="kicker">{escape(status)}</p><h2>Record Picker {VERSION}</h2>'
+        f'<div class="section-head"><p class="kicker">{escape(apple_status)}</p><h2>Record Picker {VERSION} · Apple</h2>'
         f'<p class="lead">{escape(copy["graph"])}</p></div>'
         f'<div class="v20-preview-panel"><ul><li>{escape(copy["journey"])}</li>'
         f'<li>{escape(copy["scanner"])}</li></ul></div>{figures(directory, copy)}</section>'
@@ -155,7 +158,13 @@ def stage_locale(directory: str, locale: str, copy: dict[str, str]) -> int:
     text = path.read_text(encoding="utf-8")
     text = text.replace("</section>></section><section", "</section><section")
     text = text.replace("</section>tion><section", "</section><section")
-    if not block(text, VERSION, "section"):
+    upcoming = block(text, VERSION, "section")
+    if upcoming:
+        replacement = home(directory, copy, status)
+        updated = text[:upcoming.start()] + replacement + text[upcoming.end():]
+        changed += updated != text
+        text = updated
+    else:
         text = text.replace(
             f'id="versions" data-release-version="{CURRENT_VERSION}"',
             f'id="version-2-3-2" data-release-version="{CURRENT_VERSION}"',
@@ -170,7 +179,13 @@ def stage_locale(directory: str, locale: str, copy: dict[str, str]) -> int:
 
     path = locale_root / "readme" / "index.html"
     text = path.read_text(encoding="utf-8")
-    if not block(text, VERSION, "article"):
+    upcoming = block(text, VERSION, "article")
+    if upcoming:
+        replacement = history(copy, status)
+        updated = text[:upcoming.start()] + replacement + text[upcoming.end():]
+        changed += updated != text
+        text = updated
+    else:
         current = block(text, CURRENT_VERSION, "article")
         if not current:
             raise RuntimeError(f"Missing current {CURRENT_VERSION} block in {path}")
@@ -180,7 +195,13 @@ def stage_locale(directory: str, locale: str, copy: dict[str, str]) -> int:
 
     path = locale_root / "screenshots" / "index.html"
     text = path.read_text(encoding="utf-8")
-    if not block(text, VERSION, "section"):
+    upcoming = block(text, VERSION, "section")
+    if upcoming:
+        replacement = gallery(directory, copy, status)
+        updated = text[:upcoming.start()] + replacement + text[upcoming.end():]
+        changed += updated != text
+        text = updated
+    else:
         current = re.search(
             rf'<section\b[^>]*data-release-gallery="{re.escape(CURRENT_VERSION)}"[^>]*>.*?</section>',
             text,
@@ -194,7 +215,13 @@ def stage_locale(directory: str, locale: str, copy: dict[str, str]) -> int:
 
     path = locale_root / "mac-app" / "index.html"
     text = path.read_text(encoding="utf-8")
-    if not block(text, VERSION, "section"):
+    upcoming = block(text, VERSION, "section")
+    if upcoming:
+        replacement = mac_preview(directory, copy, status)
+        updated = text[:upcoming.start()] + replacement + text[upcoming.end():]
+        changed += updated != text
+        text = updated
+    else:
         marker = "</section></main>"
         if marker not in text:
             raise RuntimeError(f"Missing mac page insertion point in {path}")
