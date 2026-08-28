@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the fully published Record Picker 2.3 site."""
+"""Exercise published 2.3.2 pages with the staged 2.4 announcement."""
 
 from __future__ import annotations
 
@@ -45,7 +45,15 @@ def main() -> None:
         current = state["current_release"]["version"]
         assert current == "2.3.2"
         next_release = state.get("next_release")
-        assert next_release is None
+        assert next_release == {
+            "version": "2.4",
+            "platforms": {
+                "iphone": "coming_soon",
+                "ipad": "coming_soon",
+                "mac": "coming_soon",
+                "watch": "coming_soon",
+            },
+        }
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.3.2", "ipad": "2.3.2", "watch": "2.3.2", "mac": "2.3.2"
         }
@@ -60,6 +68,18 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
+            assert home.count('data-release-version="2.4"') == 1
+            assert readme.count('data-release-version="2.4"') == 1
+            assert screenshots.count('data-release-version="2.4"') == 1
+            assert mac_app.count('data-release-version="2.4"') == 1
+            assert "v24-graph-grid" in home
+            assert "v24-graph-grid" in screenshots
+            assert "v24-graph-grid" in mac_app
+            screenshot_locale = "fr" if root.name in {"fr", "fr-ca"} else "en-us"
+            expected_graph_path = f"/assets/screenshots/v24/{screenshot_locale}/collection-graph-interactive.webp"
+            assert expected_graph_path in home
+            assert expected_graph_path in screenshots
+            assert expected_graph_path in mac_app
             assert 'data-release-version="2.2"' not in home
             assert 'data-release-version="2.3"' in readme
             assert 'data-release-version="2.3"' not in screenshots
@@ -113,10 +133,11 @@ def main() -> None:
             ".v20-hero-showcase",
             ".v20-home-screens",
             ".v20-shot-grid",
+            ".v24-graph-grid",
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Record Picker 2.3.2 is published across every localized site and Apple platform.")
+    print("OK: Record Picker 2.3.2 remains published and 2.4 is announced across every localized site.")
 
 
 if __name__ == "__main__":

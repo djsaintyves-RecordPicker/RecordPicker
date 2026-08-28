@@ -1338,3 +1338,66 @@ main .kicker,
 @media (max-width: 700px) {
   .growth-methods { grid-template-columns: 1fr; }
 }
+
+.v24-preview-layout {
+  display: grid;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.v24-preview-layout .v20-preview-panel {
+  margin-top: 0;
+}
+
+.v24-graph-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.v24-preview-layout .v24-graph-grid {
+  margin-top: 0;
+}
+
+.v24-graph-grid figure {
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  box-shadow: var(--card-shadow);
+}
+
+.v24-graph-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.v24-graph-grid figcaption {
+  padding: 10px 4px 2px;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.v24-mac-preview {
+  margin-top: 52px;
+  padding-top: 42px;
+  border-top: 1px solid var(--line);
+}
+
+.v24-mac-preview .v20-preview-panel {
+  margin-top: 26px;
+}
+
+@media (max-width: 760px) {
+  .v24-graph-grid {
+    grid-template-columns: 1fr;
+  }
+}

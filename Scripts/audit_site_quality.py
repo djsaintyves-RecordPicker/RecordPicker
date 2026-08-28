@@ -402,6 +402,7 @@ def main() -> None:
             "quality.css?v=20260825-android-beta",
             "quality.css?v=20260825-beta-layout",
             "quality.css?v=20260827-platform-screens",
+            "quality.css?v=20260828-v24",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -683,7 +684,8 @@ def main() -> None:
             f"expected {expected_release_cards} versioned release cards, "
             f"found {release_pages}"
         )
-    expected_next_pages = expected_locales * 3 if PUBLICATION_PHASE == "full" and NEXT_VERSION else 0
+    # Staged releases appear on the home, history, screenshot and Mac pages.
+    expected_next_pages = expected_locales * 4 if PUBLICATION_PHASE == "full" and NEXT_VERSION else 0
     if next_release_pages != expected_next_pages:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"

@@ -43,5 +43,14 @@
       "en-us/mac-home.jpeg"
     ],
     "social": "assets/social/social-home.png"
+  },
+  "next_release": {
+    "version": "2.4",
+    "platforms": {
+      "iphone": "coming_soon",
+      "ipad": "coming_soon",
+      "mac": "coming_soon",
+      "watch": "coming_soon"
+    }
   }
 }
