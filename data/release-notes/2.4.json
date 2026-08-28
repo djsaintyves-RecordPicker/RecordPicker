@@ -14,11 +14,11 @@
     "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "share_journey_title": "Share Journey",
+    "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     "scanner_heading": "Add a new record by scanning its barcode",
     "today_heading": "Today’s Pick · Choose a geographic area",
-    "share_heading": "Share a pick or listening journey"
+    "share_heading": "Share a listening journey"
   },
   "ar": {
     "headline": "قم بتأليف تقدم من ألبومات الموسيقى التي تمتلكها بالفعل.",
@@ -35,11 +35,11 @@
     "today_area_title": "منطقة الحفلات الموسيقية القريبة",
     "today": "تبقى مدينتك ومركز الخريطة ونصف القطر على هذا الجهاز. تتم تصفية الخلاصة العالمية العامة محليًا. لن يتم إرسال مجموعتك وقائمة الرغبات أبدًا.",
     "preview_title": "معاينة",
-    "share_title": "شارك هذه البطاقة",
+    "share_journey_title": "شارك الرحلة",
     "privacy": "لا يتم تضمين حالة المجموعة والملاحظات الخاصة وسجل الاستماع والموقع أبدًا.",
     "scanner_heading": "أسطوانة جديدة · مسح الباركود",
     "today_heading": "أسطوانة اليوم · منطقة الحفلات الموسيقية القريبة",
-    "share_heading": "معاينة · شارك هذه البطاقة"
+    "share_heading": "معاينة · شارك الرحلة"
   },
   "ca": {
     "headline": "Escriu una progressió a partir d'àlbums de música que ja tens.",
@@ -56,11 +56,11 @@
     "today_area_title": "Zona de concerts propera",
     "today": "La vostra ciutat, el centre del mapa i el radi es mantenen en aquest dispositiu. El feed global públic es filtra localment. La teva col·lecció i llista de desitjos mai s'envien.",
     "preview_title": "Vista prèvia",
-    "share_title": "Comparteix aquesta targeta",
+    "share_journey_title": "Comparteix el viatge",
     "privacy": "L'estat de la col·lecció, les notes privades, l'historial d'escolta i la ubicació mai s'inclouen.",
     "scanner_heading": "Disc nou · Escaneja un codi de barres",
     "today_heading": "Disc del dia · Zona de concerts propera",
-    "share_heading": "Vista prèvia · Comparteix aquesta targeta"
+    "share_heading": "Vista prèvia · Comparteix el viatge"
   },
   "da": {
     "headline": "Komponer en progression fra musikalbum, du allerede ejer.",
@@ -77,11 +77,11 @@
     "today_area_title": "Koncertområde i nærheden",
     "today": "Din by, kortcenter og radius forbliver på denne enhed. Det offentlige globale feed filtreres lokalt. Din samling og ønskeliste sendes aldrig.",
     "preview_title": "Forhåndsvisning",
-    "share_title": "Del dette kort",
+    "share_journey_title": "Del rejse",
     "privacy": "Samlingsstatus, private noter, lyttehistorik og placering er aldrig inkluderet.",
     "scanner_heading": "Ny plade · Scan en stregkode",
     "today_heading": "Dagens plade · Koncertområde i nærheden",
-    "share_heading": "Forhåndsvisning · Del dette kort"
+    "share_heading": "Forhåndsvisning · Del rejse"
   },
   "de": {
     "headline": "Stellen Sie eine Folge aus Musikalben zusammen, die Sie bereits besitzen.",
@@ -98,11 +98,11 @@
     "today_area_title": "In der Nähe befindliches Konzertgelände",
     "today": "Ihre Stadt, Kartenmitte und Umkreis bleiben auf diesem Gerät. Der öffentliche globale Feed wird lokal gefiltert. Ihre Sammlung und Wunschliste werden niemals versendet.",
     "preview_title": "Vorschau",
-    "share_title": "Teilen Sie diese Karte",
+    "share_journey_title": "Reise teilen",
     "privacy": "Der Sammlungsstatus, private Notizen, der Hörverlauf und der Standort werden niemals berücksichtigt.",
     "scanner_heading": "Neue Platte · Scannen Sie einen Barcode",
     "today_heading": "Platte des Tages · In der Nähe befindliches Konzertgelände",
-    "share_heading": "Vorschau · Teilen Sie diese Karte"
+    "share_heading": "Vorschau · Reise teilen"
   },
   "el": {
     "headline": "Συνθέστε μια εξέλιξη από μουσικά άλμπουμ που έχετε ήδη.",
@@ -119,11 +119,11 @@
     "today_area_title": "Κοντινός χώρος συναυλιών",
     "today": "Η πόλη, το κέντρο του χάρτη και η ακτίνα σας παραμένουν σε αυτήν τη συσκευή. Η δημόσια παγκόσμια ροή φιλτράρεται τοπικά. Η συλλογή και η λίστα επιθυμιών σας δεν αποστέλλονται ποτέ.",
     "preview_title": "Προεπισκόπηση",
-    "share_title": "Μοιραστείτε αυτήν την κάρτα",
+    "share_journey_title": "Κοινή χρήση ταξιδιού",
     "privacy": "Η κατάσταση της συλλογής, οι ιδιωτικές σημειώσεις, το ιστορικό ακρόασης και η τοποθεσία δεν περιλαμβάνονται ποτέ.",
     "scanner_heading": "Νέος δίσκος · Σαρώστε έναν γραμμωτό κώδικα",
     "today_heading": "Δίσκος της ημέρας · Κοντινός χώρος συναυλιών",
-    "share_heading": "Προεπισκόπηση · Μοιραστείτε αυτήν την κάρτα"
+    "share_heading": "Προεπισκόπηση · Κοινή χρήση ταξιδιού"
   },
   "en-au": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -140,11 +140,11 @@
     "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "share_journey_title": "Share Journey",
+    "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     "scanner_heading": "Add a new record by scanning its barcode",
     "today_heading": "Today’s Pick · Choose a geographic area",
-    "share_heading": "Share a pick or listening journey"
+    "share_heading": "Share a listening journey"
   },
   "en-ca": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -161,11 +161,11 @@
     "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "share_journey_title": "Share Journey",
+    "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     "scanner_heading": "Add a new record by scanning its barcode",
     "today_heading": "Today’s Pick · Choose a geographic area",
-    "share_heading": "Share a pick or listening journey"
+    "share_heading": "Share a listening journey"
   },
   "en-gb": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -182,11 +182,11 @@
     "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "share_journey_title": "Share Journey",
+    "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     "scanner_heading": "Add a new record by scanning its barcode",
     "today_heading": "Today’s Pick · Choose a geographic area",
-    "share_heading": "Share a pick or listening journey"
+    "share_heading": "Share a listening journey"
   },
   "en-us": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -203,11 +203,11 @@
     "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "share_journey_title": "Share Journey",
+    "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     "scanner_heading": "Add a new record by scanning its barcode",
     "today_heading": "Today’s Pick · Choose a geographic area",
-    "share_heading": "Share a pick or listening journey"
+    "share_heading": "Share a listening journey"
   },
   "es-es": {
     "headline": "Componga una progresión a partir de álbumes de música que ya posee.",
@@ -224,11 +224,11 @@
     "today_area_title": "Zona de conciertos cercana",
     "today": "Su ciudad, centro del mapa y radio permanecen en este dispositivo. El feed público global se filtra localmente. Su colección y lista de deseos nunca se envían.",
     "preview_title": "Vista previa",
-    "share_title": "Comparte esta tarjeta",
+    "share_journey_title": "Compartir viaje",
     "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen.",
     "scanner_heading": "Nuevo disco · escanear un código de barras",
     "today_heading": "Disco del día · Zona de conciertos cercana",
-    "share_heading": "Vista previa · Comparte esta tarjeta"
+    "share_heading": "Vista previa · Compartir viaje"
   },
   "es-mx": {
     "headline": "Componga una progresión a partir de álbumes de música que ya posee.",
@@ -245,11 +245,11 @@
     "today_area_title": "Zona de conciertos cercana",
     "today": "Su ciudad, centro del mapa y radio permanecen en este dispositivo. El feed público global se filtra localmente. Su colección y lista de deseos nunca se envían.",
     "preview_title": "Vista previa",
-    "share_title": "Comparte esta tarjeta",
+    "share_journey_title": "Compartir viaje",
     "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen.",
     "scanner_heading": "Nuevo disco · escanear un código de barras",
     "today_heading": "Disco del día · Zona de conciertos cercana",
-    "share_heading": "Vista previa · Comparte esta tarjeta"
+    "share_heading": "Vista previa · Compartir viaje"
   },
   "fi": {
     "headline": "Säveltä eteneminen jo omistamistasi musiikkialbumeista.",
@@ -266,11 +266,11 @@
     "today_area_title": "Läheinen konserttialue",
     "today": "Kaupunki, karttakeskus ja säde pysyvät tällä laitteella. Julkinen yleinen syöte suodatetaan paikallisesti. Kokoelmaasi ja toivelistaasi ei koskaan lähetetä.",
     "preview_title": "Esikatselu",
-    "share_title": "Jaa tämä kortti",
+    "share_journey_title": "Jaa matka",
     "privacy": "Kokoelman tila, yksityiset muistiinpanot, kuunteluhistoria ja sijainti eivät sisälly koskaan.",
     "scanner_heading": "Uusi ennätys · Skannaa viivakoodi",
     "today_heading": "Päivän levy · Läheinen konserttialue",
-    "share_heading": "Esikatselu · Jaa tämä kortti"
+    "share_heading": "Esikatselu · Jaa matka"
   },
   "fr": {
     "headline": "Avec la version 2.4, préparez plusieurs écoutes, gardez vos prochains disques sous la main et explorez les liens de votre collection.",
@@ -287,11 +287,11 @@
     "today_area_title": "Zone des concerts à proximité",
     "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
     "preview_title": "Aperçu",
-    "share_title": "Partager cette carte",
-    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+    "share_journey_title": "Partager le parcours",
+    "privacy": "Avant de partager un parcours d’écoute, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
     "scanner_heading": "Ajouter un nouveau disque par code-barres",
     "today_heading": "Disque du jour · Choisir une zone géographique",
-    "share_heading": "Partager un choix ou un parcours"
+    "share_heading": "Partager un parcours d’écoute"
   },
   "fr-ca": {
     "headline": "Avec la version 2.4, préparez plusieurs écoutes, gardez vos prochains disques sous la main et explorez les liens de votre collection.",
@@ -308,11 +308,11 @@
     "today_area_title": "Zone des concerts à proximité",
     "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
     "preview_title": "Aperçu",
-    "share_title": "Partager cette carte",
-    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+    "share_journey_title": "Partager le parcours",
+    "privacy": "Avant de partager un parcours d’écoute, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
     "scanner_heading": "Ajouter un nouveau disque par code-barres",
     "today_heading": "Disque du jour · Choisir une zone géographique",
-    "share_heading": "Partager un choix ou un parcours"
+    "share_heading": "Partager un parcours d’écoute"
   },
   "he": {
     "headline": "חבר התקדמות מאלבומי מוזיקה שכבר בבעלותך.",
@@ -329,11 +329,11 @@
     "today_area_title": "אזור קונצרטים קרוב",
     "today": "העיר, מרכז המפה והרדיוס שלך נשארים במכשיר הזה. הפיד הגלובלי הציבורי מסונן באופן מקומי. האוסף ורשימת המשאלות שלך לעולם לא נשלחים.",
     "preview_title": "תצוגה מקדימה",
-    "share_title": "שתף את הכרטיס הזה",
+    "share_journey_title": "שתף מסע",
     "privacy": "סטטוס אוסף, הערות פרטיות, היסטוריית האזנה ומיקום לעולם אינם כלולים.",
     "scanner_heading": "תקליט חדש · סרוק ברקוד",
     "today_heading": "תקליט היום · אזור קונצרטים קרוב",
-    "share_heading": "תצוגה מקדימה · שתף את הכרטיס הזה"
+    "share_heading": "תצוגה מקדימה · שתף מסע"
   },
   "hi": {
     "headline": "आपके पास पहले से मौजूद संगीत एल्बमों की एक श्रृंखला बनाएं।",
@@ -350,11 +350,11 @@
     "today_area_title": "निकटवर्ती संगीत कार्यक्रम क्षेत्र",
     "today": "आपका शहर, मानचित्र केंद्र और दायरा इस डिवाइस पर रहता है। सार्वजनिक वैश्विक फ़ीड को स्थानीय रूप से फ़िल्टर किया जाता है। आपका संग्रह और इच्छा सूची कभी नहीं भेजी जाती।",
     "preview_title": "पूर्वावलोकन",
-    "share_title": "इस कार्ड को साझा करें",
+    "share_journey_title": "यात्रा साझा करें",
     "privacy": "संग्रह की स्थिति, निजी नोट्स, सुनने का इतिहास और स्थान कभी भी शामिल नहीं किए जाते हैं।",
     "scanner_heading": "नया रिकॉर्ड · बारकोड स्कैन करें",
     "today_heading": "आज का रिकॉर्ड · निकटवर्ती संगीत कार्यक्रम क्षेत्र",
-    "share_heading": "पूर्वावलोकन · इस कार्ड को साझा करें"
+    "share_heading": "पूर्वावलोकन · यात्रा साझा करें"
   },
   "id": {
     "headline": "Buatlah perkembangan dari album musik yang sudah Anda miliki.",
@@ -371,11 +371,11 @@
     "today_area_title": "Area konser terdekat",
     "today": "Kota, pusat peta, dan radius Anda tetap ada di perangkat ini. Umpan global publik difilter secara lokal. Koleksi dan daftar keinginan Anda tidak pernah dikirim.",
     "preview_title": "Pratinjau",
-    "share_title": "Bagikan kartu ini",
+    "share_journey_title": "Bagikan Perjalanan",
     "privacy": "Status pengumpulan, catatan pribadi, riwayat mendengarkan, dan lokasi tidak pernah disertakan.",
     "scanner_heading": "Piringan baru · Pindai kode batang",
     "today_heading": "Piringan hari ini · Area konser terdekat",
-    "share_heading": "Pratinjau · Bagikan kartu ini"
+    "share_heading": "Pratinjau · Bagikan Perjalanan"
   },
   "it": {
     "headline": "Componi una progressione dagli album musicali che già possiedi.",
@@ -392,11 +392,11 @@
     "today_area_title": "Zona concerti nelle vicinanze",
     "today": "La tua città, il centro della mappa e il raggio rimangono su questo dispositivo. Il feed globale pubblico viene filtrato localmente. La tua collezione e la tua lista dei desideri non verranno mai inviate.",
     "preview_title": "Anteprima",
-    "share_title": "Condividi questa carta",
+    "share_journey_title": "Condividi Viaggio",
     "privacy": "Lo stato della raccolta, le note private, la cronologia di ascolto e la posizione non vengono mai inclusi.",
     "scanner_heading": "Nuovo disco · Scansiona un codice a barre",
     "today_heading": "Disco del giorno · Zona concerti nelle vicinanze",
-    "share_heading": "Anteprima · Condividi questa carta"
+    "share_heading": "Anteprima · Condividi Viaggio"
   },
   "ja": {
     "headline": "すでに所有している音楽アルバムから進行を作成します。",
@@ -413,11 +413,11 @@
     "today_area_title": "近くのコンサートエリア",
     "today": "Your city, map center and radius stay on this device. 公開グローバル フィードはローカルでフィルターされます。 あなたのコレクションとウィッシュリストは決して送信されません。",
     "preview_title": "プレビュー",
-    "share_title": "このカードを共有する",
+    "share_journey_title": "旅を共有する",
     "privacy": "コレクションのステータス、個人的なメモ、視聴履歴、場所は決して含まれません。",
     "scanner_heading": "新しいレコード · バーコードをスキャンする",
     "today_heading": "今日の一枚 · 近くのコンサートエリア",
-    "share_heading": "プレビュー · このカードを共有する"
+    "share_heading": "プレビュー · 旅を共有する"
   },
   "ko": {
     "headline": "이미 소유한 음악 앨범에서 진행 상황을 구성해 보세요.",
@@ -434,11 +434,11 @@
     "today_area_title": "인근 콘서트장",
     "today": "귀하의 도시, 지도 중심 및 반경은 이 기기에 유지됩니다. 공개 글로벌 피드는 로컬로 필터링됩니다. 귀하의 컬렉션과 위시리스트는 전송되지 않습니다.",
     "preview_title": "미리보기",
-    "share_title": "이 카드를 공유하세요",
+    "share_journey_title": "여행을 공유하세요",
     "privacy": "컬렉션 상태, 비공개 메모, 청취 기록 및 위치는 포함되지 않습니다.",
     "scanner_heading": "새 음반 · 바코드 스캔",
     "today_heading": "오늘의 음반 · 인근 콘서트장",
-    "share_heading": "미리보기 · 이 카드를 공유하세요"
+    "share_heading": "미리보기 · 여행을 공유하세요"
   },
   "nb": {
     "headline": "Komponer en progresjon fra musikkalbum du allerede eier.",
@@ -455,11 +455,11 @@
     "today_area_title": "Konsertområde i nærheten",
     "today": "Byen, kartsenteret og radiusen din forblir på denne enheten. Den offentlige globale feeden filtreres lokalt. Din samling og ønskeliste blir aldri sendt.",
     "preview_title": "Forhåndsvisning",
-    "share_title": "Del dette kortet",
+    "share_journey_title": "Del reise",
     "privacy": "Samlingsstatus, private notater, lyttehistorikk og plassering er aldri inkludert.",
     "scanner_heading": "Ny plate · Skann en strekkode",
     "today_heading": "Dagens plate · Konsertområde i nærheten",
-    "share_heading": "Forhåndsvisning · Del dette kortet"
+    "share_heading": "Forhåndsvisning · Del reise"
   },
   "nl": {
     "headline": "Componeer een vervolg op de muziekalbums die je al hebt.",
@@ -476,11 +476,11 @@
     "today_area_title": "Nabijgelegen concertruimte",
     "today": "Uw stad, kaartcentrum en straal blijven op dit apparaat staan. De openbare mondiale feed wordt lokaal gefilterd. Je collectie en verlanglijst worden nooit verzonden.",
     "preview_title": "Voorbeeld",
-    "share_title": "Deel deze kaart",
+    "share_journey_title": "Deel reis",
     "privacy": "Ophaalstatus, privénotities, luistergeschiedenis en locatie worden nooit meegenomen.",
     "scanner_heading": "Nieuwe plaat · Scan een streepjescode",
     "today_heading": "Plaat van de dag · Nabijgelegen concertruimte",
-    "share_heading": "Voorbeeld · Deel deze kaart"
+    "share_heading": "Voorbeeld · Deel reis"
   },
   "pl": {
     "headline": "Skomponuj progresję z albumów muzycznych, które już posiadasz.",
@@ -497,11 +497,11 @@
     "today_area_title": "W pobliżu sala koncertowa",
     "today": "Twoje miasto, centrum mapy i promień pozostają na tym urządzeniu. Publiczny globalny kanał jest filtrowany lokalnie. Twoja kolekcja i lista życzeń nigdy nie są wysyłane.",
     "preview_title": "Podgląd",
-    "share_title": "Udostępnij tę kartę",
+    "share_journey_title": "Udostępnij podróż",
     "privacy": "Stan kolekcji, prywatne notatki, historia słuchania i lokalizacja nigdy nie są uwzględniane.",
     "scanner_heading": "Nowa płyta · Zeskanuj kod kreskowy",
     "today_heading": "Płyta dnia · W pobliżu sala koncertowa",
-    "share_heading": "Podgląd · Udostępnij tę kartę"
+    "share_heading": "Podgląd · Udostępnij podróż"
   },
   "pt-br": {
     "headline": "Componha uma progressão a partir de álbuns de música que você já possui.",
@@ -518,11 +518,11 @@
     "today_area_title": "Área de concertos próxima",
     "today": "Sua cidade, centro do mapa e raio permanecem neste dispositivo. O feed global público é filtrado localmente. Sua coleção e lista de desejos nunca são enviadas.",
     "preview_title": "Visualização",
-    "share_title": "Compartilhe este cartão",
+    "share_journey_title": "Compartilhar jornada",
     "privacy": "Status da coleção, notas privadas, histórico de audição e localização nunca são incluídos.",
     "scanner_heading": "Novo disco · Digitalize um código de barras",
     "today_heading": "Disco do dia · Área de concertos próxima",
-    "share_heading": "Visualização · Compartilhe este cartão"
+    "share_heading": "Visualização · Compartilhar jornada"
   },
   "pt-pt": {
     "headline": "Componha uma progressão a partir de álbuns de música que já tenha.",
@@ -539,11 +539,11 @@
     "today_area_title": "Área de concertos próxima",
     "today": "A sua cidade, centro do mapa e raio permanecem neste dispositivo. O feed global público é filtrado localmente. A sua coleção e lista de desejos nunca são enviadas.",
     "preview_title": "Visualização",
-    "share_title": "Partilhe este cartão",
+    "share_journey_title": "Partilhar jornada",
     "privacy": "O estado da coleção, notas privadas, histórico de audição e localização nunca são incluídos.",
     "scanner_heading": "Novo disco · Digitalizar um código de barras",
     "today_heading": "Disco do dia · Área de concertos próxima",
-    "share_heading": "Visualização · Partilhe este cartão"
+    "share_heading": "Visualização · Partilhar jornada"
   },
   "ru": {
     "headline": "Составьте альбом из уже имеющихся у вас музыкальных альбомов.",
@@ -560,11 +560,11 @@
     "today_area_title": "Рядом концертная площадка",
     "today": "Ваш город, центр карты и радиус останутся на этом устройстве. Публичный глобальный канал фильтруется локально. Ваша коллекция и список желаний никогда не отправляются.",
     "preview_title": "Предварительный просмотр",
-    "share_title": "Поделиться этой картой",
+    "share_journey_title": "Поделиться путешествием",
     "privacy": "Статус коллекции, личные заметки, история прослушивания и местоположение никогда не включаются.",
     "scanner_heading": "Новая пластинка · Сканируйте штрих-код",
     "today_heading": "Пластинка дня · Рядом концертная площадка",
-    "share_heading": "Предварительный просмотр · Поделиться этой картой"
+    "share_heading": "Предварительный просмотр · Поделиться путешествием"
   },
   "sv": {
     "headline": "Komponera en fortsättning från musikalbum du redan äger.",
@@ -581,11 +581,11 @@
     "today_area_title": "Konsertområde i närheten",
     "today": "Din stad, kartcentrum och radie stannar på den här enheten. Det offentliga globala flödet filtreras lokalt. Din samling och önskelista skickas aldrig.",
     "preview_title": "Förhandsgranska",
-    "share_title": "Dela detta kort",
+    "share_journey_title": "Dela resa",
     "privacy": "Samlingsstatus, privata anteckningar, lyssningshistorik och plats ingår aldrig.",
     "scanner_heading": "Ny skiva · Skanna en streckkod",
     "today_heading": "Dagens skiva · Konsertområde i närheten",
-    "share_heading": "Förhandsgranska · Dela detta kort"
+    "share_heading": "Förhandsgranska · Dela resa"
   },
   "th": {
     "headline": "เขียนความก้าวหน้าจากอัลบั้มเพลงที่คุณมีอยู่แล้ว",
@@ -602,11 +602,11 @@
     "today_area_title": "ใกล้สถานที่จัดคอนเสิร์ต",
     "today": "เมือง ศูนย์กลางแผนที่ และรัศมีของคุณจะยังคงอยู่ในอุปกรณ์นี้ ฟีดส่วนกลางสาธารณะจะถูกกรองภายในเครื่อง คอลเลกชันและสิ่งที่อยากได้ของคุณจะไม่ถูกส่งไป",
     "preview_title": "ดูตัวอย่าง",
-    "share_title": "แบ่งปันการ์ดใบนี้",
+    "share_journey_title": "แบ่งปันการเดินทาง",
     "privacy": "สถานะคอลเลกชัน บันทึกส่วนตัว ประวัติการฟัง และสถานที่จะไม่รวมอยู่ด้วย",
     "scanner_heading": "แผ่นเสียงใหม่ · สแกนบาร์โค้ด",
     "today_heading": "แผ่นประจำวัน · ใกล้สถานที่จัดคอนเสิร์ต",
-    "share_heading": "ดูตัวอย่าง · แบ่งปันการ์ดใบนี้"
+    "share_heading": "ดูตัวอย่าง · แบ่งปันการเดินทาง"
   },
   "tr": {
     "headline": "Zaten sahip olduğunuz müzik albümlerinden bir ilerleme oluşturun.",
@@ -623,11 +623,11 @@
     "today_area_title": "Yakındaki konser alanı",
     "today": "Şehriniz, harita merkeziniz ve yarıçapınız bu cihazda kalır. Genel küresel yayın yerel olarak filtrelenir. Koleksiyonunuz ve istek listeniz asla gönderilmez.",
     "preview_title": "Önizleme",
-    "share_title": "Bu kartı paylaş",
+    "share_journey_title": "Yolculuğu Paylaş",
     "privacy": "Koleksiyon durumu, özel notlar, dinleme geçmişi ve konum hiçbir zaman dahil edilmez.",
     "scanner_heading": "Yeni plak · Barkod tarayın",
     "today_heading": "Günün Plağı · Yakındaki konser alanı",
-    "share_heading": "Önizleme · Bu kartı paylaş"
+    "share_heading": "Önizleme · Yolculuğu Paylaş"
   },
   "vi": {
     "headline": "Soạn tiến trình từ album nhạc bạn đã sở hữu.",
@@ -644,11 +644,11 @@
     "today_area_title": "Khu vực hòa nhạc gần đó",
     "today": "Thành phố, trung tâm bản đồ và bán kính của bạn vẫn ở trên thiết bị này. Nguồn cấp dữ liệu toàn cầu công cộng được lọc cục bộ. Bộ sưu tập và danh sách mong muốn của bạn không bao giờ được gửi.",
     "preview_title": "Xem trước",
-    "share_title": "Chia sẻ thẻ này",
+    "share_journey_title": "Chia sẻ hành trình",
     "privacy": "Trạng thái bộ sưu tập, ghi chú riêng tư, lịch sử nghe và vị trí không bao giờ được bao gồm.",
     "scanner_heading": "Kỷ lục mới · Quét mã vạch",
     "today_heading": "Đĩa nhạc hôm nay · Khu vực hòa nhạc gần đó",
-    "share_heading": "Xem trước · Chia sẻ thẻ này"
+    "share_heading": "Xem trước · Chia sẻ hành trình"
   },
   "zh-hans": {
     "headline": "从您已经拥有的音乐专辑中创作一个进展。",
@@ -665,11 +665,11 @@
     "today_area_title": "附近的演唱会场地",
     "today": "您的城市、地图中心和半径保留在此设备上。 公共全局提要在本地进行过滤。 您的收藏和愿望清单永远不会发送。",
     "preview_title": "预览",
-    "share_title": "分享这张卡",
+    "share_journey_title": "分享旅程",
     "privacy": "收藏状态、私人笔记、收听历史记录和位置永远不包括在内。",
     "scanner_heading": "新款 唱片 · 扫描条形码",
     "today_heading": "今日唱片 · 附近的演唱会场地",
-    "share_heading": "预览 · 分享这张卡"
+    "share_heading": "预览 · 分享旅程"
   },
   "zh-hant": {
     "headline": "從您已經擁有的音樂專輯中創作一個進展。",
@@ -686,10 +686,10 @@
     "today_area_title": "附近的演唱會場地",
     "today": "您的城市、地圖中心和半徑保留在此裝置上。 公共全域提要在本機進行篩選。 您的收藏和願望清單永遠不會發送。",
     "preview_title": "預覽",
-    "share_title": "分享這張卡",
+    "share_journey_title": "分享旅程",
     "privacy": "收藏狀態、私人筆記、收聽歷史記錄和位置永遠不包括在內。",
     "scanner_heading": "新款 唱片 · 掃描條碼",
     "today_heading": "今日唱片 · 附近的演唱會場地",
-    "share_heading": "預覽 · 分享這張卡"
+    "share_heading": "預覽 · 分享旅程"
   }
 }

@@ -78,12 +78,18 @@ def main() -> None:
             assert 'class="v24-feature-list"' in home
             assert 'class="v24-feature-list"' in readme
             assert 'class="v24-feature-list"' in mac_app
+            for page in (home, readme):
+                assert "Partager un choix ou un parcours" not in page
+                assert "Share a pick or listening journey" not in page
+                assert "sharing a pick or journey" not in page
             if root.name in {"fr", "fr-ca"}:
                 assert "Choisissez un nombre de disques ou une durée approximative" in home
                 assert "Cette file est distincte de la liste de souhaits" in home
                 assert "Sur Mac et iPad, une vue interactive révèle les liens" in home
                 assert "Pour ajouter un nouveau disque sur Mac, scannez son code-barres" in home
                 assert "Ajouter un nouveau disque par code-barres" in home
+                assert "Partager un parcours d’écoute" in home
+                assert "Avant de partager un parcours d’écoute" in home
             assert "v24-graph-grid" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app

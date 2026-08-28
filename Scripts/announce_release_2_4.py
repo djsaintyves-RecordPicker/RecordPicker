@@ -43,7 +43,7 @@ KEYS = {
     "today_area_title": "Nearby concert area",
     "today": "Your city, map center and radius stay on this device. The public global feed is filtered locally. Your collection and wishlist are never sent.",
     "preview_title": "Preview",
-    "share_title": "Share this card",
+    "share_journey_title": "Share Journey",
     "privacy": "Collection status, private notes, listening history and location are never included.",
 }
 
@@ -57,8 +57,8 @@ EDITORIAL_OVERRIDES = {
         "scanner": "Pour ajouter un nouveau disque sur Mac, scannez son code-barres EAN ou UPC avec la caméra du Mac, ou avec un iPhone via Caméra Continuité. La reconnaissance se fait localement, puis vous vérifiez les informations proposées avant de créer la fiche.",
         "today_heading": "Disque du jour · Choisir une zone géographique",
         "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
-        "share_heading": "Partager un choix ou un parcours",
-        "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+        "share_heading": "Partager un parcours d’écoute",
+        "privacy": "Avant de partager un parcours d’écoute, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
     },
     "en": {
         "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -69,8 +69,8 @@ EDITORIAL_OVERRIDES = {
         "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
         "today_heading": "Today’s Pick · Choose a geographic area",
         "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
-        "share_heading": "Share a pick or listening journey",
-        "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+        "share_heading": "Share a listening journey",
+        "privacy": "Preview the exact card before sharing a listening journey. Collection status, private notes, listening history and location are always excluded.",
     },
 }
 
@@ -105,7 +105,7 @@ def refresh_copy(app_root: Path) -> None:
         localized[directory].update({
             "scanner_heading": f'{localized[directory]["new_record_title"]} · {localized[directory]["scanner_title"]}',
             "today_heading": f'{localized[directory]["today_title"]} · {localized[directory]["today_area_title"]}',
-            "share_heading": f'{localized[directory]["preview_title"]} · {localized[directory]["share_title"]}',
+            "share_heading": f'{localized[directory]["preview_title"]} · {localized[directory]["share_journey_title"]}',
         })
         if directory in {"fr", "fr-ca"}:
             localized[directory].update(EDITORIAL_OVERRIDES["fr"])
