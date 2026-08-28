@@ -14,7 +14,7 @@ from announce_release_2_3_1 import COPY as RELEASE_232_COPY, LOCALES as RELEASE_
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TODAY = "2026-08-27"
+TODAY = "2026-08-28"
 STYLE_VERSION = "20260827-platform-screens"
 PRESERVED_GENERATED_PAGES = {
     ("", "watch-app"),
@@ -166,7 +166,7 @@ def watch_visual(prefix: str, locale: str) -> str:
 
 def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, str, str]:
     deck = inner(r'<p class="deck">(.*?)</p>', home, "home description")
-    available = plain(inner(r'<section class="section v23-preview.*?<p class="kicker">(.*?)</p>', home, "availability"))
+    available = plain(inner(r'<section class="section v232-preview.*?<p class="kicker">(.*?)</p>', home, "availability"))
     contact = match(r'<section class="contact-band">.*?</section>', home, "contact section")
     prefix = visual_prefix(mac_page)
     button = store_button(home)
@@ -190,7 +190,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         )
     elif route == "watch-app":
         title = "Record Picker — Apple Watch"
-        release = match(r'<section class="section v23-preview.*?</section>', home, "watch release section")
+        release = match(r'<section class="section v232-preview.*?</section>', home, "watch release section")
         description = (
             plain(inner(r'<p class="lead">(.*?)</p>', release, "watch description"))
             + " " + plain(deck)
@@ -321,11 +321,11 @@ def build_page(locale: str, route: str) -> Path:
             )
     else:
         text = re.sub(r'"operatingSystem":"[^"]+"', f'"operatingSystem":"{escape({"ios-app": "iOS 26 / iPadOS 26", "watch-app": "watchOS 26", "android-app": "Android"}[route])}"', text)
-        text = re.sub(r'("softwareVersion":")[^"]+', r'\g<1>2.3', text)
-        text = re.sub(r'("dateModified":")[^"]+', r'\g<1>2026-08-22', text)
+        text = re.sub(r'("softwareVersion":")[^"]+', r'\g<1>2.3.2', text)
+        text = re.sub(r'("dateModified":")[^"]+', rf'\g<1>{TODAY}', text)
     text = re.sub(
         r'<span id="site-footer-version">.*?</span>',
-        '<span id="site-footer-version">Record Picker · 2.3</span>',
+        '<span id="site-footer-version">Record Picker · 2.3.2</span>',
         text,
         flags=re.DOTALL,
     )

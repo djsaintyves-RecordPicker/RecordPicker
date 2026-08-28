@@ -37,7 +37,7 @@ assert "Tirer un disque" not in watch
 assert "Today’s Pick links reliable music news" in watch
 
 screenshots = read("fr/screenshots/index.html")
-assert "Mac 2.3.2" in screenshots
+assert "Aperçus Record Picker 2.3.2" in screenshots
 assert "iPhone, iPad et Apple Watch" in meta(screenshots, "description")
 
 international_screenshots = read("screenshots/index.html")
@@ -45,13 +45,13 @@ assert "Screenshots and videos" in international_screenshots
 assert "Voir Record Picker" not in international_screenshots
 for screenshot_path in [ROOT / "screenshots/index.html", *ROOT.glob("*/screenshots/index.html")]:
     screenshot_text = screenshot_path.read_text(encoding="utf-8")
-    assert "Mac · Record Picker 2.3.2" in screenshot_text
-    assert "iPhone · Record Picker 2.3" in screenshot_text
-    assert "iPad · Record Picker 2.3" in screenshot_text
+    assert "Record Picker 2.3.2" in screenshot_text
+    assert "iPhone · Record Picker 2.3.2" in screenshot_text
+    assert "iPad · Record Picker 2.3.2" in screenshot_text
     assert "iOS 2.1.1" not in screenshot_text
 
 android = read("fr/android-app/index.html")
-assert "12 testeurs" in android
+assert "12 bêta-testeurs" in android
 assert "15 à 20" not in meta(android, "description")
 assert "Chromebook" not in meta(android, "description")
 
@@ -63,6 +63,6 @@ for sitemap_name in ("sitemap.xml", "sitemap-media.xml"):
         "https://recordpicker.app/fr/android-app/",
     ):
         block = re.search(rf"<url>.*?<loc>{re.escape(url)}</loc>.*?</url>", sitemap, re.DOTALL)
-        assert block and "<lastmod>2026-08-27</lastmod>" in block.group(0)
+        assert block and "<lastmod>2026-08-28</lastmod>" in block.group(0)
 
 print("OK: search snippets, language, release clarity and sitemap dates are coherent.")

@@ -2,12 +2,12 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "2.3",
+    "version": "2.3.2",
     "platform_versions": {
-      "iphone": "2.3",
-      "ipad": "2.3",
+      "iphone": "2.3.2",
+      "ipad": "2.3.2",
       "mac": "2.3.2",
-      "watch": "2.3"
+      "watch": "2.3.2"
     },
     "platforms": {
       "iphone": "available",
@@ -23,6 +23,7 @@
     ]
   },
   "historical_releases": [
+    "2.3",
     "2.2",
     "2.1.1",
     "1.9",
@@ -42,14 +43,5 @@
       "en-us/mac-home.jpeg"
     ],
     "social": "assets/social/social-home.png"
-  },
-  "next_release": {
-    "version": "2.3.2",
-    "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
-      "mac": "available",
-      "watch": "coming_soon"
-    }
   }
 }

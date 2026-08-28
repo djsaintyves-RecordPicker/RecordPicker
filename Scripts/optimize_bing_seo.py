@@ -12,13 +12,23 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 
 TITLE_OVERRIDES = {
+    "screenshots/index.html": "Record Picker 2.3.2 Screenshots: Mac, iPhone & Watch",
+    "fr/screenshots/index.html": "Aperçus Record Picker 2.3.2 : Mac, iPhone et Watch",
     "en-us/index.html": "Vinyl Collection App & Random Record Picker | Record Picker — US",
     "en-us/choose-vinyl-record/index.html": "How to Choose the Right Vinyl Record: 5 Quick Ways — US",
-    "en-us/screenshots/index.html": "Record Picker Screenshots: Mac 2.3.2, iPhone & Watch — US",
+    "en-us/screenshots/index.html": "Record Picker 2.3.2 Screenshots: Mac, iPhone & Watch — US",
     "en-us/watch-app/index.html": "Apple Watch Random Record Picker | Record Picker — US",
 }
 
 DESCRIPTION_OVERRIDES = {
+    "screenshots/index.html": (
+        "See Record Picker 2.3.2 on Mac, iPhone, iPad and Apple Watch, including the catalog, Random Pick, "
+        "Mood Pick and Today’s Pick."
+    ),
+    "fr/screenshots/index.html": (
+        "Découvrez Record Picker 2.3.2 sur Mac, iPhone, iPad et Apple Watch : catalogue, tirage aléatoire, "
+        "Mood Pick et Disque du jour."
+    ),
     "en-us/index.html": (
         "Catalog vinyl records and CDs in the US, import Discogs, check duplicates, and use Random Pick, "
         "Mood Pick or Today’s Pick. Private, ad-free, and native."
@@ -28,7 +38,7 @@ DESCRIPTION_OVERRIDES = {
         "pick, music news, collection rotation or one simple rule."
     ),
     "en-us/screenshots/index.html": (
-        "See the US edition of Record Picker 2.3.2 on Mac and 2.3 on iPhone, iPad and Apple Watch, including "
+        "See the US edition of Record Picker 2.3.2 on Mac, iPhone, iPad and Apple Watch, including "
         "the catalog, Random Pick, Mood Pick and Today’s Pick."
     ),
     "en-us/watch-app/index.html": (

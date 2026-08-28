@@ -53,6 +53,16 @@ def update_metadata(path: Path, date: str) -> bool:
     text = re.sub(r'("softwareVersion":")[^"]+', rf'\g<1>{VERSION}', text)
     text = re.sub(r'("dateModified":")[^"]+', rf'\g<1>{date}', text)
     text = re.sub(r'<span id="site-footer-version">.*?</span>', f'<span id="site-footer-version">Record Picker · {VERSION}</span>', text, flags=re.DOTALL)
+    text = text.replace("<h2>Record Picker 2.3</h2>", f"<h2>Record Picker {VERSION}</h2>")
+    for platform in ("iPhone", "iPad", "Apple Watch"):
+        text = text.replace(
+            f"{platform} · Record Picker 2.3<",
+            f"{platform} · Record Picker {VERSION}<",
+        )
+    text = text.replace(
+        '<span class="version-pill">Record Picker 2.3</span>',
+        '<span class="version-pill">iOS 2.1.1 · macOS 2.1</span>',
+    )
     if text != original:
         path.write_text(text, encoding="utf-8")
         return True

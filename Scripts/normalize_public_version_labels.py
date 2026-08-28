@@ -8,7 +8,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_VERSION = "2.3"
+CURRENT_VERSION = "2.3.2"
 CURRENT_LABEL = f"Record Picker {CURRENT_VERSION}"
 
 RELEASE_20_CARD = re.compile(
@@ -26,8 +26,8 @@ def normalize(path: Path) -> bool:
         "iPhone · Record Picker 2.0": "iPhone · Record Picker 2.1.1",
         "iPad · Record Picker 2.0": "iPad · Record Picker 2.1.1",
         "Apple Watch · Record Picker 2.0": "Apple Watch · Record Picker 2.1.1",
-        "Mac · Record Picker 2.1": "Mac · Record Picker 2.3",
-        "Mac · macOS 2.1": "Mac · Record Picker 2.3",
+        "Mac · Record Picker 2.1": "Mac · Record Picker 2.3.2",
+        "Mac · macOS 2.1": "Mac · Record Picker 2.3.2",
         "iPhone · Record Picker 2.1.1": "iPhone · iOS 2.1.1",
         "iPad · Record Picker 2.1.1": "iPad · iOS 2.1.1",
         "Apple Watch · Record Picker 2.1.1": "Apple Watch · iOS 2.1.1",
@@ -44,7 +44,11 @@ def normalize(path: Path) -> bool:
     updated = updated.replace("Record Picker 2.0", "Record Picker")
     updated = updated.replace(
         '<span class="version-pill">v2.1.1</span>',
-        f'<span class="version-pill">{CURRENT_LABEL}</span>',
+        '<span class="version-pill">iOS 2.1.1 · macOS 2.1</span>',
+    )
+    updated = updated.replace(
+        '<span class="version-pill">Record Picker 2.3</span>',
+        '<span class="version-pill">iOS 2.1.1 · macOS 2.1</span>',
     )
     updated = updated.replace("Record Picker 2.1.1", "iOS 2.1.1")
     updated = re.sub(r"Record Picker 2\.1(?!\.1)", "Record Picker", updated)

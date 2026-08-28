@@ -141,13 +141,13 @@ def main() -> None:
     for path in (ROOT / "screenshots/index.html", ROOT / "en-us/screenshots/index.html"):
         replace_metadata(
             path,
-            "Record Picker Screenshots: Mac 2.3.2, iPhone & Watch",
-            "See Record Picker 2.3.2 on Mac and 2.3 on iPhone, iPad and Apple Watch, including the catalog, Random Pick, Mood Pick and Today’s Pick.",
+            "Record Picker 2.3.2 Screenshots: Mac, iPhone & Watch",
+            "See Record Picker 2.3.2 on Mac, iPhone, iPad and Apple Watch, including the catalog, Random Pick, Mood Pick and Today’s Pick.",
         )
     replace_metadata(
         ROOT / "fr/screenshots/index.html",
-        "Aperçus Record Picker : Mac 2.3.2, iPhone et Watch",
-        "Découvrez Record Picker 2.3.2 sur Mac et 2.3 sur iPhone, iPad et Apple Watch : catalogue, tirage aléatoire, Mood Pick et Disque du jour.",
+        "Aperçus Record Picker 2.3.2 : Mac, iPhone et Watch",
+        "Découvrez Record Picker 2.3.2 sur Mac, iPhone, iPad et Apple Watch : catalogue, tirage aléatoire, Mood Pick et Disque du jour.",
     )
     replace_metadata(
         ROOT / "android-app/index.html",
