@@ -7,12 +7,18 @@
     "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
     "graph_title": "Collection Graph",
     "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+    "new_record_title": "New record",
     "scanner_title": "Scan a barcode",
-    "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+    "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded."
+    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "scanner_heading": "Add a new record by scanning its barcode",
+    "today_heading": "Today’s Pick · Choose a geographic area",
+    "share_heading": "Share a pick or listening journey"
   },
   "ar": {
     "headline": "قم بتأليف تقدم من ألبومات الموسيقى التي تمتلكها بالفعل.",
@@ -22,12 +28,18 @@
     "listen": "أضف ألبومًا موسيقيًا مملوكًا من تفاصيله لإبقائه جاهزًا لجلسة استماع أخرى.",
     "graph_title": "مخطط المجموعة",
     "graph": "يربط Record Picker الأعمال والمؤلفين والعازفين وقادة الأوركسترا والفرق والإصدارات من دون تغيير بياناتك.",
+    "new_record_title": "أسطوانة جديدة",
     "scanner_title": "مسح الباركود",
     "scanner": "استخدم كاميرا Mac أو iPhone من خلال Continuity Camera. يحدث التعرف محليًا على جهاز Mac هذا.",
     "today_title": "أسطوانة اليوم",
+    "today_area_title": "منطقة الحفلات الموسيقية القريبة",
     "today": "تبقى مدينتك ومركز الخريطة ونصف القطر على هذا الجهاز. تتم تصفية الخلاصة العالمية العامة محليًا. لن يتم إرسال مجموعتك وقائمة الرغبات أبدًا.",
+    "preview_title": "معاينة",
     "share_title": "شارك هذه البطاقة",
-    "privacy": "لا يتم تضمين حالة المجموعة والملاحظات الخاصة وسجل الاستماع والموقع أبدًا."
+    "privacy": "لا يتم تضمين حالة المجموعة والملاحظات الخاصة وسجل الاستماع والموقع أبدًا.",
+    "scanner_heading": "أسطوانة جديدة · مسح الباركود",
+    "today_heading": "أسطوانة اليوم · منطقة الحفلات الموسيقية القريبة",
+    "share_heading": "معاينة · شارك هذه البطاقة"
   },
   "ca": {
     "headline": "Escriu una progressió a partir d'àlbums de música que ja tens.",
@@ -37,12 +49,18 @@
     "listen": "Afegeix un àlbum de música propi dels seus detalls per mantenir-lo a punt per a una altra sessió d'escolta.",
     "graph_title": "Gràfic de col·lecció",
     "graph": "Record Picker enllaça obres, compositors, intèrprets, directors, conjunts i edicions sense canviar les teves dades.",
+    "new_record_title": "Disc nou",
     "scanner_title": "Escaneja un codi de barres",
     "scanner": "Utilitzeu una càmera Mac o un iPhone mitjançant la càmera de continuïtat. El reconeixement es fa localment en aquest Mac.",
     "today_title": "Disc del dia",
+    "today_area_title": "Zona de concerts propera",
     "today": "La vostra ciutat, el centre del mapa i el radi es mantenen en aquest dispositiu. El feed global públic es filtra localment. La teva col·lecció i llista de desitjos mai s'envien.",
+    "preview_title": "Vista prèvia",
     "share_title": "Comparteix aquesta targeta",
-    "privacy": "L'estat de la col·lecció, les notes privades, l'historial d'escolta i la ubicació mai s'inclouen."
+    "privacy": "L'estat de la col·lecció, les notes privades, l'historial d'escolta i la ubicació mai s'inclouen.",
+    "scanner_heading": "Disc nou · Escaneja un codi de barres",
+    "today_heading": "Disc del dia · Zona de concerts propera",
+    "share_heading": "Vista prèvia · Comparteix aquesta targeta"
   },
   "da": {
     "headline": "Komponer en progression fra musikalbum, du allerede ejer.",
@@ -52,12 +70,18 @@
     "listen": "Tilføj et ejet musikalbum fra dets detaljer for at holde det klar til endnu en lyttesession.",
     "graph_title": "Samlingsgraf",
     "graph": "Record Picker linker værker, komponister, performere, dirigenter, ensembler og udgaver uden at ændre dine data.",
+    "new_record_title": "Ny plade",
     "scanner_title": "Scan en stregkode",
     "scanner": "Brug et Mac-kamera eller en iPhone via Continuity Camera. Genkendelse sker lokalt på denne Mac.",
     "today_title": "Dagens plade",
+    "today_area_title": "Koncertområde i nærheden",
     "today": "Din by, kortcenter og radius forbliver på denne enhed. Det offentlige globale feed filtreres lokalt. Din samling og ønskeliste sendes aldrig.",
+    "preview_title": "Forhåndsvisning",
     "share_title": "Del dette kort",
-    "privacy": "Samlingsstatus, private noter, lyttehistorik og placering er aldrig inkluderet."
+    "privacy": "Samlingsstatus, private noter, lyttehistorik og placering er aldrig inkluderet.",
+    "scanner_heading": "Ny plade · Scan en stregkode",
+    "today_heading": "Dagens plade · Koncertområde i nærheden",
+    "share_heading": "Forhåndsvisning · Del dette kort"
   },
   "de": {
     "headline": "Stellen Sie eine Folge aus Musikalben zusammen, die Sie bereits besitzen.",
@@ -67,12 +91,18 @@
     "listen": "Fügen Sie ein eigenes Musikalbum aus seinen Details hinzu, um es für eine weitere Hörsitzung bereitzuhalten.",
     "graph_title": "Sammlungsdiagramm",
     "graph": "Record Picker verknüpft Werke, Komponisten, Interpreten, Dirigenten, Ensembles und Editionen, ohne Ihre Daten zu verändern.",
+    "new_record_title": "Neue Platte",
     "scanner_title": "Scannen Sie einen Barcode",
     "scanner": "Verwenden Sie eine Mac-Kamera oder ein iPhone über Continuity Camera. Die Erkennung erfolgt lokal auf diesem Mac.",
     "today_title": "Platte des Tages",
+    "today_area_title": "In der Nähe befindliches Konzertgelände",
     "today": "Ihre Stadt, Kartenmitte und Umkreis bleiben auf diesem Gerät. Der öffentliche globale Feed wird lokal gefiltert. Ihre Sammlung und Wunschliste werden niemals versendet.",
+    "preview_title": "Vorschau",
     "share_title": "Teilen Sie diese Karte",
-    "privacy": "Der Sammlungsstatus, private Notizen, der Hörverlauf und der Standort werden niemals berücksichtigt."
+    "privacy": "Der Sammlungsstatus, private Notizen, der Hörverlauf und der Standort werden niemals berücksichtigt.",
+    "scanner_heading": "Neue Platte · Scannen Sie einen Barcode",
+    "today_heading": "Platte des Tages · In der Nähe befindliches Konzertgelände",
+    "share_heading": "Vorschau · Teilen Sie diese Karte"
   },
   "el": {
     "headline": "Συνθέστε μια εξέλιξη από μουσικά άλμπουμ που έχετε ήδη.",
@@ -82,12 +112,18 @@
     "listen": "Προσθέστε ένα ιδιόκτητο μουσικό άλμπουμ από τα στοιχεία του για να το διατηρήσετε έτοιμο για μια άλλη συνεδρία ακρόασης.",
     "graph_title": "Γράφημα συλλογής",
     "graph": "Το Record Picker συνδέει έργα, συνθέτες, ερμηνευτές, μαέστρους, σύνολα και εκδόσεις χωρίς να αλλάξει τα δεδομένα σας.",
+    "new_record_title": "Νέος δίσκος",
     "scanner_title": "Σαρώστε έναν γραμμωτό κώδικα",
     "scanner": "Χρησιμοποιήστε μια κάμερα Mac ή ένα iPhone μέσω της κάμερας Continuity. Η αναγνώριση γίνεται τοπικά σε αυτόν τον Mac.",
     "today_title": "Δίσκος της ημέρας",
+    "today_area_title": "Κοντινός χώρος συναυλιών",
     "today": "Η πόλη, το κέντρο του χάρτη και η ακτίνα σας παραμένουν σε αυτήν τη συσκευή. Η δημόσια παγκόσμια ροή φιλτράρεται τοπικά. Η συλλογή και η λίστα επιθυμιών σας δεν αποστέλλονται ποτέ.",
+    "preview_title": "Προεπισκόπηση",
     "share_title": "Μοιραστείτε αυτήν την κάρτα",
-    "privacy": "Η κατάσταση της συλλογής, οι ιδιωτικές σημειώσεις, το ιστορικό ακρόασης και η τοποθεσία δεν περιλαμβάνονται ποτέ."
+    "privacy": "Η κατάσταση της συλλογής, οι ιδιωτικές σημειώσεις, το ιστορικό ακρόασης και η τοποθεσία δεν περιλαμβάνονται ποτέ.",
+    "scanner_heading": "Νέος δίσκος · Σαρώστε έναν γραμμωτό κώδικα",
+    "today_heading": "Δίσκος της ημέρας · Κοντινός χώρος συναυλιών",
+    "share_heading": "Προεπισκόπηση · Μοιραστείτε αυτήν την κάρτα"
   },
   "en-au": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -97,12 +133,18 @@
     "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
     "graph_title": "Collection Graph",
     "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+    "new_record_title": "New record",
     "scanner_title": "Scan a barcode",
-    "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+    "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded."
+    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "scanner_heading": "Add a new record by scanning its barcode",
+    "today_heading": "Today’s Pick · Choose a geographic area",
+    "share_heading": "Share a pick or listening journey"
   },
   "en-ca": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -112,12 +154,18 @@
     "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
     "graph_title": "Collection Graph",
     "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+    "new_record_title": "New record",
     "scanner_title": "Scan a barcode",
-    "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+    "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded."
+    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "scanner_heading": "Add a new record by scanning its barcode",
+    "today_heading": "Today’s Pick · Choose a geographic area",
+    "share_heading": "Share a pick or listening journey"
   },
   "en-gb": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -127,12 +175,18 @@
     "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
     "graph_title": "Collection Graph",
     "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+    "new_record_title": "New record",
     "scanner_title": "Scan a barcode",
-    "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+    "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded."
+    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "scanner_heading": "Add a new record by scanning its barcode",
+    "today_heading": "Today’s Pick · Choose a geographic area",
+    "share_heading": "Share a pick or listening journey"
   },
   "en-us": {
     "headline": "Version 2.4 helps you plan several listening sessions, keep your next records close at hand and explore the connections inside your collection.",
@@ -142,12 +196,18 @@
     "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
     "graph_title": "Collection Graph",
     "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
+    "new_record_title": "New record",
     "scanner_title": "Scan a barcode",
-    "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+    "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
-    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded."
+    "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
+    "scanner_heading": "Add a new record by scanning its barcode",
+    "today_heading": "Today’s Pick · Choose a geographic area",
+    "share_heading": "Share a pick or listening journey"
   },
   "es-es": {
     "headline": "Componga una progresión a partir de álbumes de música que ya posee.",
@@ -157,12 +217,18 @@
     "listen": "Agregue un álbum de música propio desde sus detalles para mantenerlo listo para otra sesión de escucha.",
     "graph_title": "Gráfico de colección",
     "graph": "Record Picker vincula obras, compositores, intérpretes, directores, conjuntos y ediciones sin cambiar sus datos.",
+    "new_record_title": "Nuevo disco",
     "scanner_title": "escanear un código de barras",
     "scanner": "Utilice una cámara Mac o un iPhone a través de Continuity Camera. El reconocimiento ocurre localmente en esta Mac.",
     "today_title": "Disco del día",
+    "today_area_title": "Zona de conciertos cercana",
     "today": "Su ciudad, centro del mapa y radio permanecen en este dispositivo. El feed público global se filtra localmente. Su colección y lista de deseos nunca se envían.",
+    "preview_title": "Vista previa",
     "share_title": "Comparte esta tarjeta",
-    "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen."
+    "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen.",
+    "scanner_heading": "Nuevo disco · escanear un código de barras",
+    "today_heading": "Disco del día · Zona de conciertos cercana",
+    "share_heading": "Vista previa · Comparte esta tarjeta"
   },
   "es-mx": {
     "headline": "Componga una progresión a partir de álbumes de música que ya posee.",
@@ -172,12 +238,18 @@
     "listen": "Agregue un álbum de música propio desde sus detalles para mantenerlo listo para otra sesión de escucha.",
     "graph_title": "Grafo de la colección",
     "graph": "Record Picker relaciona obras, compositores, intérpretes, directores, conjuntos y ediciones sin modificar tus datos.",
+    "new_record_title": "Nuevo disco",
     "scanner_title": "escanear un código de barras",
     "scanner": "Utilice una cámara Mac o un iPhone a través de Continuity Camera. El reconocimiento ocurre localmente en esta Mac.",
     "today_title": "Disco del día",
+    "today_area_title": "Zona de conciertos cercana",
     "today": "Su ciudad, centro del mapa y radio permanecen en este dispositivo. El feed público global se filtra localmente. Su colección y lista de deseos nunca se envían.",
+    "preview_title": "Vista previa",
     "share_title": "Comparte esta tarjeta",
-    "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen."
+    "privacy": "El estado de la colección, las notas privadas, el historial de escucha y la ubicación nunca se incluyen.",
+    "scanner_heading": "Nuevo disco · escanear un código de barras",
+    "today_heading": "Disco del día · Zona de conciertos cercana",
+    "share_heading": "Vista previa · Comparte esta tarjeta"
   },
   "fi": {
     "headline": "Säveltä eteneminen jo omistamistasi musiikkialbumeista.",
@@ -187,12 +259,18 @@
     "listen": "Lisää omistamasi musiikkialbumi sen tiedoista pitääksesi sen valmiina toista kuuntelua varten.",
     "graph_title": "Kokoelman yhteydet",
     "graph": "Record Picker yhdistää teokset, säveltäjät, esittäjät, kapellimestarit, kokoonpanot ja painokset muuttamatta tietojasi.",
+    "new_record_title": "Uusi ennätys",
     "scanner_title": "Skannaa viivakoodi",
     "scanner": "Käytä Mac-kameraa tai iPhonea Continuity Cameran kautta. Tunnistus tapahtuu paikallisesti tässä Macissa.",
     "today_title": "Päivän levy",
+    "today_area_title": "Läheinen konserttialue",
     "today": "Kaupunki, karttakeskus ja säde pysyvät tällä laitteella. Julkinen yleinen syöte suodatetaan paikallisesti. Kokoelmaasi ja toivelistaasi ei koskaan lähetetä.",
+    "preview_title": "Esikatselu",
     "share_title": "Jaa tämä kortti",
-    "privacy": "Kokoelman tila, yksityiset muistiinpanot, kuunteluhistoria ja sijainti eivät sisälly koskaan."
+    "privacy": "Kokoelman tila, yksityiset muistiinpanot, kuunteluhistoria ja sijainti eivät sisälly koskaan.",
+    "scanner_heading": "Uusi ennätys · Skannaa viivakoodi",
+    "today_heading": "Päivän levy · Läheinen konserttialue",
+    "share_heading": "Esikatselu · Jaa tämä kortti"
   },
   "fr": {
     "headline": "Avec la version 2.4, préparez plusieurs écoutes, gardez vos prochains disques sous la main et explorez les liens de votre collection.",
@@ -202,12 +280,18 @@
     "listen": "Ajoutez à une file privée les disques que vous possédez déjà, réorganisez-les librement et retrouvez la liste sur vos appareils Apple. Cette file est distincte de la liste de souhaits.",
     "graph_title": "Graphe de collection",
     "graph": "Sur Mac et iPad, une vue interactive révèle les liens entre œuvres, compositeurs, interprètes, chefs, ensembles et éditions. Le graphe est calculé localement à partir de vos fiches et ne modifie aucune donnée.",
+    "new_record_title": "Nouveau disque",
     "scanner_title": "Scanner un code-barres",
-    "scanner": "Sur Mac, scannez un code EAN ou UPC avec la caméra du Mac ou avec un iPhone utilisé via Caméra Continuité. L’image reste sur l’appareil ; vous vérifiez ensuite les informations proposées avant d’ajouter le disque.",
+    "scanner": "Pour ajouter un nouveau disque sur Mac, scannez son code-barres EAN ou UPC avec la caméra du Mac, ou avec un iPhone via Caméra Continuité. La reconnaissance se fait localement, puis vous vérifiez les informations proposées avant de créer la fiche.",
     "today_title": "Disque du jour",
+    "today_area_title": "Zone des concerts à proximité",
     "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
+    "preview_title": "Aperçu",
     "share_title": "Partager cette carte",
-    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus."
+    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+    "scanner_heading": "Ajouter un nouveau disque par code-barres",
+    "today_heading": "Disque du jour · Choisir une zone géographique",
+    "share_heading": "Partager un choix ou un parcours"
   },
   "fr-ca": {
     "headline": "Avec la version 2.4, préparez plusieurs écoutes, gardez vos prochains disques sous la main et explorez les liens de votre collection.",
@@ -217,12 +301,18 @@
     "listen": "Ajoutez à une file privée les disques que vous possédez déjà, réorganisez-les librement et retrouvez la liste sur vos appareils Apple. Cette file est distincte de la liste de souhaits.",
     "graph_title": "Graphe de collection",
     "graph": "Sur Mac et iPad, une vue interactive révèle les liens entre œuvres, compositeurs, interprètes, chefs, ensembles et éditions. Le graphe est calculé localement à partir de vos fiches et ne modifie aucune donnée.",
+    "new_record_title": "Nouveau disque",
     "scanner_title": "Scanner un code-barres",
-    "scanner": "Sur Mac, scannez un code EAN ou UPC avec la caméra du Mac ou avec un iPhone utilisé via Caméra Continuité. L’image reste sur l’appareil ; vous vérifiez ensuite les informations proposées avant d’ajouter le disque.",
+    "scanner": "Pour ajouter un nouveau disque sur Mac, scannez son code-barres EAN ou UPC avec la caméra du Mac, ou avec un iPhone via Caméra Continuité. La reconnaissance se fait localement, puis vous vérifiez les informations proposées avant de créer la fiche.",
     "today_title": "Disque du jour",
+    "today_area_title": "Zone des concerts à proximité",
     "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
+    "preview_title": "Aperçu",
     "share_title": "Partager cette carte",
-    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus."
+    "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
+    "scanner_heading": "Ajouter un nouveau disque par code-barres",
+    "today_heading": "Disque du jour · Choisir une zone géographique",
+    "share_heading": "Partager un choix ou un parcours"
   },
   "he": {
     "headline": "חבר התקדמות מאלבומי מוזיקה שכבר בבעלותך.",
@@ -232,12 +322,18 @@
     "listen": "הוסף אלבום מוזיקה בבעלות מהפרטים שלו כדי לשמור אותו מוכן לסשן האזנה נוסף.",
     "graph_title": "גרף אוסף",
     "graph": "Record Picker מקשר בין יצירות, מלחינים, מבצעים, מנצחים, הרכבים ומהדורות מבלי לשנות את הנתונים שלך.",
+    "new_record_title": "תקליט חדש",
     "scanner_title": "סרוק ברקוד",
     "scanner": "השתמש במצלמת Mac או באייפון דרך מצלמת המשכיות. זיהוי מתרחש באופן מקומי ב-Mac זה.",
     "today_title": "תקליט היום",
+    "today_area_title": "אזור קונצרטים קרוב",
     "today": "העיר, מרכז המפה והרדיוס שלך נשארים במכשיר הזה. הפיד הגלובלי הציבורי מסונן באופן מקומי. האוסף ורשימת המשאלות שלך לעולם לא נשלחים.",
+    "preview_title": "תצוגה מקדימה",
     "share_title": "שתף את הכרטיס הזה",
-    "privacy": "סטטוס אוסף, הערות פרטיות, היסטוריית האזנה ומיקום לעולם אינם כלולים."
+    "privacy": "סטטוס אוסף, הערות פרטיות, היסטוריית האזנה ומיקום לעולם אינם כלולים.",
+    "scanner_heading": "תקליט חדש · סרוק ברקוד",
+    "today_heading": "תקליט היום · אזור קונצרטים קרוב",
+    "share_heading": "תצוגה מקדימה · שתף את הכרטיס הזה"
   },
   "hi": {
     "headline": "आपके पास पहले से मौजूद संगीत एल्बमों की एक श्रृंखला बनाएं।",
@@ -247,12 +343,18 @@
     "listen": "किसी स्वामित्व वाले संगीत एल्बम को किसी अन्य श्रवण सत्र के लिए तैयार रखने के लिए उसके विवरण से जोड़ें।",
     "graph_title": "संग्रह ग्राफ़",
     "graph": "Record Picker आपके डेटा को बदले बिना कार्यों, संगीतकारों, कलाकारों, कंडक्टरों, कलाकारों की टुकड़ी और संस्करणों को लिंक करता है।",
+    "new_record_title": "नया रिकॉर्ड",
     "scanner_title": "बारकोड स्कैन करें",
     "scanner": "कॉन्टिन्युटी कैमरा के माध्यम से Mac कैमरा या iPhone का उपयोग करें। इस Mac पर पहचान स्थानीय रूप से होती है।",
     "today_title": "आज का रिकॉर्ड",
+    "today_area_title": "निकटवर्ती संगीत कार्यक्रम क्षेत्र",
     "today": "आपका शहर, मानचित्र केंद्र और दायरा इस डिवाइस पर रहता है। सार्वजनिक वैश्विक फ़ीड को स्थानीय रूप से फ़िल्टर किया जाता है। आपका संग्रह और इच्छा सूची कभी नहीं भेजी जाती।",
+    "preview_title": "पूर्वावलोकन",
     "share_title": "इस कार्ड को साझा करें",
-    "privacy": "संग्रह की स्थिति, निजी नोट्स, सुनने का इतिहास और स्थान कभी भी शामिल नहीं किए जाते हैं।"
+    "privacy": "संग्रह की स्थिति, निजी नोट्स, सुनने का इतिहास और स्थान कभी भी शामिल नहीं किए जाते हैं।",
+    "scanner_heading": "नया रिकॉर्ड · बारकोड स्कैन करें",
+    "today_heading": "आज का रिकॉर्ड · निकटवर्ती संगीत कार्यक्रम क्षेत्र",
+    "share_heading": "पूर्वावलोकन · इस कार्ड को साझा करें"
   },
   "id": {
     "headline": "Buatlah perkembangan dari album musik yang sudah Anda miliki.",
@@ -262,12 +364,18 @@
     "listen": "Tambahkan album musik milik dari detailnya agar tetap siap untuk sesi mendengarkan lainnya.",
     "graph_title": "Grafik Koleksi",
     "graph": "Tautan Record Picker karya, komposer, pemain, konduktor, ansambel, dan edisi tanpa mengubah data Anda.",
+    "new_record_title": "Piringan baru",
     "scanner_title": "Pindai kode batang",
     "scanner": "Gunakan kamera Mac atau iPhone melalui Continuity Camera. Pengenalan terjadi secara lokal di Mac ini.",
     "today_title": "Piringan hari ini",
+    "today_area_title": "Area konser terdekat",
     "today": "Kota, pusat peta, dan radius Anda tetap ada di perangkat ini. Umpan global publik difilter secara lokal. Koleksi dan daftar keinginan Anda tidak pernah dikirim.",
+    "preview_title": "Pratinjau",
     "share_title": "Bagikan kartu ini",
-    "privacy": "Status pengumpulan, catatan pribadi, riwayat mendengarkan, dan lokasi tidak pernah disertakan."
+    "privacy": "Status pengumpulan, catatan pribadi, riwayat mendengarkan, dan lokasi tidak pernah disertakan.",
+    "scanner_heading": "Piringan baru · Pindai kode batang",
+    "today_heading": "Piringan hari ini · Area konser terdekat",
+    "share_heading": "Pratinjau · Bagikan kartu ini"
   },
   "it": {
     "headline": "Componi una progressione dagli album musicali che già possiedi.",
@@ -277,12 +385,18 @@
     "listen": "Aggiungi un album musicale di tua proprietà dai suoi dettagli per tenerlo pronto per un'altra sessione di ascolto.",
     "graph_title": "Grafico della raccolta",
     "graph": "Record Picker collega opere, compositori, interpreti, direttori d'orchestra, ensemble ed edizioni senza modificare i tuoi dati.",
+    "new_record_title": "Nuovo disco",
     "scanner_title": "Scansiona un codice a barre",
     "scanner": "Utilizza una fotocamera Mac o un iPhone tramite Continuity Camera. Il riconoscimento avviene localmente su questo Mac.",
     "today_title": "Disco del giorno",
+    "today_area_title": "Zona concerti nelle vicinanze",
     "today": "La tua città, il centro della mappa e il raggio rimangono su questo dispositivo. Il feed globale pubblico viene filtrato localmente. La tua collezione e la tua lista dei desideri non verranno mai inviate.",
+    "preview_title": "Anteprima",
     "share_title": "Condividi questa carta",
-    "privacy": "Lo stato della raccolta, le note private, la cronologia di ascolto e la posizione non vengono mai inclusi."
+    "privacy": "Lo stato della raccolta, le note private, la cronologia di ascolto e la posizione non vengono mai inclusi.",
+    "scanner_heading": "Nuovo disco · Scansiona un codice a barre",
+    "today_heading": "Disco del giorno · Zona concerti nelle vicinanze",
+    "share_heading": "Anteprima · Condividi questa carta"
   },
   "ja": {
     "headline": "すでに所有している音楽アルバムから進行を作成します。",
@@ -292,12 +406,18 @@
     "listen": "所有している音楽アルバムを詳細から追加して、別のリスニング セッションに備えられるようにします。",
     "graph_title": "コレクショングラフ",
     "graph": "Record Picker は、データを変更せずに、作品、作曲家、演奏者、指揮者、アンサンブル、エディションをリンクします。",
+    "new_record_title": "新しいレコード",
     "scanner_title": "バーコードをスキャンする",
     "scanner": "Continuity Camera を介して Mac カメラまたは iPhone を使用します。 認識はこの Mac 上でローカルに行われます。",
     "today_title": "今日の一枚",
+    "today_area_title": "近くのコンサートエリア",
     "today": "Your city, map center and radius stay on this device. 公開グローバル フィードはローカルでフィルターされます。 あなたのコレクションとウィッシュリストは決して送信されません。",
+    "preview_title": "プレビュー",
     "share_title": "このカードを共有する",
-    "privacy": "コレクションのステータス、個人的なメモ、視聴履歴、場所は決して含まれません。"
+    "privacy": "コレクションのステータス、個人的なメモ、視聴履歴、場所は決して含まれません。",
+    "scanner_heading": "新しいレコード · バーコードをスキャンする",
+    "today_heading": "今日の一枚 · 近くのコンサートエリア",
+    "share_heading": "プレビュー · このカードを共有する"
   },
   "ko": {
     "headline": "이미 소유한 음악 앨범에서 진행 상황을 구성해 보세요.",
@@ -307,12 +427,18 @@
     "listen": "다른 청취 세션을 위해 준비할 수 있도록 세부정보에서 소유한 음악 앨범을 추가하세요.",
     "graph_title": "컬렉션 그래프",
     "graph": "Record Picker 링크는 데이터를 변경하지 않고도 작품, 작곡가, 연주자, 지휘자, 앙상블 및 에디션을 연결합니다.",
+    "new_record_title": "새 음반",
     "scanner_title": "바코드 스캔",
     "scanner": "연속성 카메라를 통해 Mac 카메라나 iPhone을 사용하세요. 인식은 이 Mac에서 로컬로 이루어집니다.",
     "today_title": "오늘의 음반",
+    "today_area_title": "인근 콘서트장",
     "today": "귀하의 도시, 지도 중심 및 반경은 이 기기에 유지됩니다. 공개 글로벌 피드는 로컬로 필터링됩니다. 귀하의 컬렉션과 위시리스트는 전송되지 않습니다.",
+    "preview_title": "미리보기",
     "share_title": "이 카드를 공유하세요",
-    "privacy": "컬렉션 상태, 비공개 메모, 청취 기록 및 위치는 포함되지 않습니다."
+    "privacy": "컬렉션 상태, 비공개 메모, 청취 기록 및 위치는 포함되지 않습니다.",
+    "scanner_heading": "새 음반 · 바코드 스캔",
+    "today_heading": "오늘의 음반 · 인근 콘서트장",
+    "share_heading": "미리보기 · 이 카드를 공유하세요"
   },
   "nb": {
     "headline": "Komponer en progresjon fra musikkalbum du allerede eier.",
@@ -322,12 +448,18 @@
     "listen": "Legg til et eid musikkalbum fra detaljene for å holde det klart for en ny lytteøkt.",
     "graph_title": "Samlingsgraf",
     "graph": "Record Picker knytter sammen verk, komponister, utøvere, dirigenter, ensembler og utgaver uten å endre dataene dine.",
+    "new_record_title": "Ny plate",
     "scanner_title": "Skann en strekkode",
     "scanner": "Bruk et Mac-kamera eller en iPhone gjennom Continuity Camera. Gjenkjenning skjer lokalt på denne Mac-en.",
     "today_title": "Dagens plate",
+    "today_area_title": "Konsertområde i nærheten",
     "today": "Byen, kartsenteret og radiusen din forblir på denne enheten. Den offentlige globale feeden filtreres lokalt. Din samling og ønskeliste blir aldri sendt.",
+    "preview_title": "Forhåndsvisning",
     "share_title": "Del dette kortet",
-    "privacy": "Samlingsstatus, private notater, lyttehistorikk og plassering er aldri inkludert."
+    "privacy": "Samlingsstatus, private notater, lyttehistorikk og plassering er aldri inkludert.",
+    "scanner_heading": "Ny plate · Skann en strekkode",
+    "today_heading": "Dagens plate · Konsertområde i nærheten",
+    "share_heading": "Forhåndsvisning · Del dette kortet"
   },
   "nl": {
     "headline": "Componeer een vervolg op de muziekalbums die je al hebt.",
@@ -337,12 +469,18 @@
     "listen": "Voeg een eigen muziekalbum toe vanuit de details om het gereed te houden voor een volgende luistersessie.",
     "graph_title": "Verzamelgrafiek",
     "graph": "Record Picker koppelt werken, componisten, artiesten, dirigenten, ensembles en edities zonder uw gegevens te wijzigen.",
+    "new_record_title": "Nieuwe plaat",
     "scanner_title": "Scan een streepjescode",
     "scanner": "Gebruik een Mac-camera of een iPhone via Continuity Camera. Herkenning gebeurt lokaal op deze Mac.",
     "today_title": "Plaat van de dag",
+    "today_area_title": "Nabijgelegen concertruimte",
     "today": "Uw stad, kaartcentrum en straal blijven op dit apparaat staan. De openbare mondiale feed wordt lokaal gefilterd. Je collectie en verlanglijst worden nooit verzonden.",
+    "preview_title": "Voorbeeld",
     "share_title": "Deel deze kaart",
-    "privacy": "Ophaalstatus, privénotities, luistergeschiedenis en locatie worden nooit meegenomen."
+    "privacy": "Ophaalstatus, privénotities, luistergeschiedenis en locatie worden nooit meegenomen.",
+    "scanner_heading": "Nieuwe plaat · Scan een streepjescode",
+    "today_heading": "Plaat van de dag · Nabijgelegen concertruimte",
+    "share_heading": "Voorbeeld · Deel deze kaart"
   },
   "pl": {
     "headline": "Skomponuj progresję z albumów muzycznych, które już posiadasz.",
@@ -352,12 +490,18 @@
     "listen": "Dodaj posiadany album muzyczny z jego szczegółów, aby był gotowy na kolejną sesję odsłuchową.",
     "graph_title": "Graf kolekcji",
     "graph": "Record Picker łączy utwory, kompozytorów, wykonawców, dyrygentów, zespoły i wydania bez zmieniania danych.",
+    "new_record_title": "Nowa płyta",
     "scanner_title": "Zeskanuj kod kreskowy",
     "scanner": "Użyj aparatu Mac lub iPhone'a za pomocą kamery Continuity. Rozpoznawanie odbywa się lokalnie na tym komputerze Mac.",
     "today_title": "Płyta dnia",
+    "today_area_title": "W pobliżu sala koncertowa",
     "today": "Twoje miasto, centrum mapy i promień pozostają na tym urządzeniu. Publiczny globalny kanał jest filtrowany lokalnie. Twoja kolekcja i lista życzeń nigdy nie są wysyłane.",
+    "preview_title": "Podgląd",
     "share_title": "Udostępnij tę kartę",
-    "privacy": "Stan kolekcji, prywatne notatki, historia słuchania i lokalizacja nigdy nie są uwzględniane."
+    "privacy": "Stan kolekcji, prywatne notatki, historia słuchania i lokalizacja nigdy nie są uwzględniane.",
+    "scanner_heading": "Nowa płyta · Zeskanuj kod kreskowy",
+    "today_heading": "Płyta dnia · W pobliżu sala koncertowa",
+    "share_heading": "Podgląd · Udostępnij tę kartę"
   },
   "pt-br": {
     "headline": "Componha uma progressão a partir de álbuns de música que você já possui.",
@@ -367,12 +511,18 @@
     "listen": "Adicione um álbum de música de sua propriedade a partir de seus detalhes para mantê-lo pronto para outra sessão de audição.",
     "graph_title": "Gráfico de coleção",
     "graph": "O Record Picker vincula obras, compositores, intérpretes, maestros, conjuntos e edições sem alterar seus dados.",
+    "new_record_title": "Novo disco",
     "scanner_title": "Digitalize um código de barras",
     "scanner": "Use uma câmera Mac ou um iPhone através da Continuity Camera. O reconhecimento acontece localmente neste Mac.",
     "today_title": "Disco do dia",
+    "today_area_title": "Área de concertos próxima",
     "today": "Sua cidade, centro do mapa e raio permanecem neste dispositivo. O feed global público é filtrado localmente. Sua coleção e lista de desejos nunca são enviadas.",
+    "preview_title": "Visualização",
     "share_title": "Compartilhe este cartão",
-    "privacy": "Status da coleção, notas privadas, histórico de audição e localização nunca são incluídos."
+    "privacy": "Status da coleção, notas privadas, histórico de audição e localização nunca são incluídos.",
+    "scanner_heading": "Novo disco · Digitalize um código de barras",
+    "today_heading": "Disco do dia · Área de concertos próxima",
+    "share_heading": "Visualização · Compartilhe este cartão"
   },
   "pt-pt": {
     "headline": "Componha uma progressão a partir de álbuns de música que já tenha.",
@@ -382,12 +532,18 @@
     "listen": "Adicione um álbum de música da sua propriedade a partir dos seus detalhes para o manter pronto para outra sessão de audição.",
     "graph_title": "Gráfico de coleção",
     "graph": "O Record Picker vincula obras, compositores, intérpretes, maestros, conjuntos e edições sem alterar seus dados.",
+    "new_record_title": "Novo disco",
     "scanner_title": "Digitalizar um código de barras",
     "scanner": "Utilize uma câmara Mac ou um iPhone através da Continuity Camera. O reconhecimento acontece localmente neste Mac.",
     "today_title": "Disco do dia",
+    "today_area_title": "Área de concertos próxima",
     "today": "A sua cidade, centro do mapa e raio permanecem neste dispositivo. O feed global público é filtrado localmente. A sua coleção e lista de desejos nunca são enviadas.",
+    "preview_title": "Visualização",
     "share_title": "Partilhe este cartão",
-    "privacy": "O estado da coleção, notas privadas, histórico de audição e localização nunca são incluídos."
+    "privacy": "O estado da coleção, notas privadas, histórico de audição e localização nunca são incluídos.",
+    "scanner_heading": "Novo disco · Digitalizar um código de barras",
+    "today_heading": "Disco do dia · Área de concertos próxima",
+    "share_heading": "Visualização · Partilhe este cartão"
   },
   "ru": {
     "headline": "Составьте альбом из уже имеющихся у вас музыкальных альбомов.",
@@ -397,12 +553,18 @@
     "listen": "Добавьте принадлежащий вам музыкальный альбом из его сведений, чтобы подготовить его к следующему сеансу прослушивания.",
     "graph_title": "График коллекции",
     "graph": "Record Picker связывает произведения, композиторов, исполнителей, дирижеров, ансамбли и издания без изменения ваших данных.",
+    "new_record_title": "Новая пластинка",
     "scanner_title": "Сканируйте штрих-код",
     "scanner": "Используйте камеру Mac или iPhone через камеру непрерывности. Распознавание происходит локально на этом Mac.",
     "today_title": "Пластинка дня",
+    "today_area_title": "Рядом концертная площадка",
     "today": "Ваш город, центр карты и радиус останутся на этом устройстве. Публичный глобальный канал фильтруется локально. Ваша коллекция и список желаний никогда не отправляются.",
+    "preview_title": "Предварительный просмотр",
     "share_title": "Поделиться этой картой",
-    "privacy": "Статус коллекции, личные заметки, история прослушивания и местоположение никогда не включаются."
+    "privacy": "Статус коллекции, личные заметки, история прослушивания и местоположение никогда не включаются.",
+    "scanner_heading": "Новая пластинка · Сканируйте штрих-код",
+    "today_heading": "Пластинка дня · Рядом концертная площадка",
+    "share_heading": "Предварительный просмотр · Поделиться этой картой"
   },
   "sv": {
     "headline": "Komponera en fortsättning från musikalbum du redan äger.",
@@ -412,12 +574,18 @@
     "listen": "Lägg till ett ägt musikalbum från dess detaljer för att hålla det redo för en ny lyssningssession.",
     "graph_title": "Samlingsgraf",
     "graph": "Record Picker länkar samman verk, kompositörer, artister, dirigenter, ensembler och utgåvor utan att ändra dina data.",
+    "new_record_title": "Ny skiva",
     "scanner_title": "Skanna en streckkod",
     "scanner": "Använd en Mac-kamera eller en iPhone via Continuity Camera. Igenkänning sker lokalt på denna Mac.",
     "today_title": "Dagens skiva",
+    "today_area_title": "Konsertområde i närheten",
     "today": "Din stad, kartcentrum och radie stannar på den här enheten. Det offentliga globala flödet filtreras lokalt. Din samling och önskelista skickas aldrig.",
+    "preview_title": "Förhandsgranska",
     "share_title": "Dela detta kort",
-    "privacy": "Samlingsstatus, privata anteckningar, lyssningshistorik och plats ingår aldrig."
+    "privacy": "Samlingsstatus, privata anteckningar, lyssningshistorik och plats ingår aldrig.",
+    "scanner_heading": "Ny skiva · Skanna en streckkod",
+    "today_heading": "Dagens skiva · Konsertområde i närheten",
+    "share_heading": "Förhandsgranska · Dela detta kort"
   },
   "th": {
     "headline": "เขียนความก้าวหน้าจากอัลบั้มเพลงที่คุณมีอยู่แล้ว",
@@ -427,12 +595,18 @@
     "listen": "เพิ่มอัลบั้มเพลงที่เป็นเจ้าของจากรายละเอียดเพื่อเตรียมให้พร้อมสำหรับการฟังเซสชันอื่น",
     "graph_title": "กราฟคอลเลกชัน",
     "graph": "Record Picker เชื่อมโยงผลงาน ผู้ประพันธ์ นักแสดง วาทยกร วงดนตรี และฉบับต่าง ๆ โดยไม่แก้ไขข้อมูลของคุณ",
+    "new_record_title": "แผ่นเสียงใหม่",
     "scanner_title": "สแกนบาร์โค้ด",
     "scanner": "ใช้กล้อง Mac หรือ iPhone ผ่านกล้องต่อเนื่อง การจดจำเกิดขึ้นภายในเครื่องบน Mac เครื่องนี้",
     "today_title": "แผ่นประจำวัน",
+    "today_area_title": "ใกล้สถานที่จัดคอนเสิร์ต",
     "today": "เมือง ศูนย์กลางแผนที่ และรัศมีของคุณจะยังคงอยู่ในอุปกรณ์นี้ ฟีดส่วนกลางสาธารณะจะถูกกรองภายในเครื่อง คอลเลกชันและสิ่งที่อยากได้ของคุณจะไม่ถูกส่งไป",
+    "preview_title": "ดูตัวอย่าง",
     "share_title": "แบ่งปันการ์ดใบนี้",
-    "privacy": "สถานะคอลเลกชัน บันทึกส่วนตัว ประวัติการฟัง และสถานที่จะไม่รวมอยู่ด้วย"
+    "privacy": "สถานะคอลเลกชัน บันทึกส่วนตัว ประวัติการฟัง และสถานที่จะไม่รวมอยู่ด้วย",
+    "scanner_heading": "แผ่นเสียงใหม่ · สแกนบาร์โค้ด",
+    "today_heading": "แผ่นประจำวัน · ใกล้สถานที่จัดคอนเสิร์ต",
+    "share_heading": "ดูตัวอย่าง · แบ่งปันการ์ดใบนี้"
   },
   "tr": {
     "headline": "Zaten sahip olduğunuz müzik albümlerinden bir ilerleme oluşturun.",
@@ -442,12 +616,18 @@
     "listen": "Sahip olunan bir müzik albümünü başka bir dinleme oturumuna hazır tutmak için ayrıntılarından ekleyin.",
     "graph_title": "Koleksiyon Grafiği",
     "graph": "Record Picker verilerinizi değiştirmeden eserleri, bestecileri, icracıları, şefleri, toplulukları ve baskıları birbirine bağlar.",
+    "new_record_title": "Yeni plak",
     "scanner_title": "Barkod tarayın",
     "scanner": "Devamlılık Kamerası aracılığıyla bir Mac kamera veya iPhone kullanın. Tanıma bu Mac'te yerel olarak gerçekleşir.",
     "today_title": "Günün Plağı",
+    "today_area_title": "Yakındaki konser alanı",
     "today": "Şehriniz, harita merkeziniz ve yarıçapınız bu cihazda kalır. Genel küresel yayın yerel olarak filtrelenir. Koleksiyonunuz ve istek listeniz asla gönderilmez.",
+    "preview_title": "Önizleme",
     "share_title": "Bu kartı paylaş",
-    "privacy": "Koleksiyon durumu, özel notlar, dinleme geçmişi ve konum hiçbir zaman dahil edilmez."
+    "privacy": "Koleksiyon durumu, özel notlar, dinleme geçmişi ve konum hiçbir zaman dahil edilmez.",
+    "scanner_heading": "Yeni plak · Barkod tarayın",
+    "today_heading": "Günün Plağı · Yakındaki konser alanı",
+    "share_heading": "Önizleme · Bu kartı paylaş"
   },
   "vi": {
     "headline": "Soạn tiến trình từ album nhạc bạn đã sở hữu.",
@@ -457,12 +637,18 @@
     "listen": "Thêm album nhạc thuộc sở hữu từ thông tin chi tiết của album đó để luôn sẵn sàng cho phiên nghe khác.",
     "graph_title": "Đồ thị bộ sưu tập",
     "graph": "Record Picker liên kết tác phẩm, nhà soạn nhạc, nghệ sĩ biểu diễn, nhạc trưởng, ban nhạc và ấn bản mà không thay đổi dữ liệu của bạn.",
+    "new_record_title": "Kỷ lục mới",
     "scanner_title": "Quét mã vạch",
     "scanner": "Sử dụng máy ảnh Mac hoặc iPhone thông qua Camera liên tục. Quá trình nhận dạng diễn ra cục bộ trên máy Mac này.",
     "today_title": "Đĩa nhạc hôm nay",
+    "today_area_title": "Khu vực hòa nhạc gần đó",
     "today": "Thành phố, trung tâm bản đồ và bán kính của bạn vẫn ở trên thiết bị này. Nguồn cấp dữ liệu toàn cầu công cộng được lọc cục bộ. Bộ sưu tập và danh sách mong muốn của bạn không bao giờ được gửi.",
+    "preview_title": "Xem trước",
     "share_title": "Chia sẻ thẻ này",
-    "privacy": "Trạng thái bộ sưu tập, ghi chú riêng tư, lịch sử nghe và vị trí không bao giờ được bao gồm."
+    "privacy": "Trạng thái bộ sưu tập, ghi chú riêng tư, lịch sử nghe và vị trí không bao giờ được bao gồm.",
+    "scanner_heading": "Kỷ lục mới · Quét mã vạch",
+    "today_heading": "Đĩa nhạc hôm nay · Khu vực hòa nhạc gần đó",
+    "share_heading": "Xem trước · Chia sẻ thẻ này"
   },
   "zh-hans": {
     "headline": "从您已经拥有的音乐专辑中创作一个进展。",
@@ -472,12 +658,18 @@
     "listen": "从其详细信息中添加拥有的音乐专辑，以使其为另一次聆听会话做好准备。",
     "graph_title": "收藏关系图",
     "graph": "Record Picker 在不修改数据的情况下关联作品、作曲家、演奏者、指挥、乐团和发行版本。",
+    "new_record_title": "新款 唱片",
     "scanner_title": "扫描条形码",
     "scanner": "通过连续性相机使用 Mac 相机或 iPhone。 识别发生在这台 Mac 上本地。",
     "today_title": "今日唱片",
+    "today_area_title": "附近的演唱会场地",
     "today": "您的城市、地图中心和半径保留在此设备上。 公共全局提要在本地进行过滤。 您的收藏和愿望清单永远不会发送。",
+    "preview_title": "预览",
     "share_title": "分享这张卡",
-    "privacy": "收藏状态、私人笔记、收听历史记录和位置永远不包括在内。"
+    "privacy": "收藏状态、私人笔记、收听历史记录和位置永远不包括在内。",
+    "scanner_heading": "新款 唱片 · 扫描条形码",
+    "today_heading": "今日唱片 · 附近的演唱会场地",
+    "share_heading": "预览 · 分享这张卡"
   },
   "zh-hant": {
     "headline": "從您已經擁有的音樂專輯中創作一個進展。",
@@ -487,11 +679,17 @@
     "listen": "從其詳細資訊中添加擁有的音樂專輯，以使其為另一次聆聽會話做好準備。",
     "graph_title": "收藏關係圖",
     "graph": "Record Picker 在不修改資料的情況下關聯作品、作曲家、演奏者、指揮、樂團和發行版本。",
+    "new_record_title": "新款 唱片",
     "scanner_title": "掃描條碼",
     "scanner": "透過連續性相機使用 Mac 相機或 iPhone。 識別發生在這台 Mac 上本地。",
     "today_title": "今日唱片",
+    "today_area_title": "附近的演唱會場地",
     "today": "您的城市、地圖中心和半徑保留在此裝置上。 公共全域提要在本機進行篩選。 您的收藏和願望清單永遠不會發送。",
+    "preview_title": "預覽",
     "share_title": "分享這張卡",
-    "privacy": "收藏狀態、私人筆記、收聽歷史記錄和位置永遠不包括在內。"
+    "privacy": "收藏狀態、私人筆記、收聽歷史記錄和位置永遠不包括在內。",
+    "scanner_heading": "新款 唱片 · 掃描條碼",
+    "today_heading": "今日唱片 · 附近的演唱會場地",
+    "share_heading": "預覽 · 分享這張卡"
   }
 }

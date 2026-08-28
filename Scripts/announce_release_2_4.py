@@ -36,10 +36,13 @@ KEYS = {
     "listen": "Add an owned record from its details to keep it ready for another listening session.",
     "graph_title": "Graphe de collection",
     "graph": "Record Picker relie les œuvres, compositeurs, interprètes, chefs, ensembles et éditions sans modifier vos données.",
+    "new_record_title": "Nouveau disque",
     "scanner_title": "Scan a barcode",
     "scanner": "Use a Mac camera or an iPhone through Continuity Camera. Recognition happens locally on this Mac.",
     "today_title": "Today’s Pick",
+    "today_area_title": "Nearby concert area",
     "today": "Your city, map center and radius stay on this device. The public global feed is filtered locally. Your collection and wishlist are never sent.",
+    "preview_title": "Preview",
     "share_title": "Share this card",
     "privacy": "Collection status, private notes, listening history and location are never included.",
 }
@@ -50,8 +53,11 @@ EDITORIAL_OVERRIDES = {
         "journey": "Choisissez un nombre de disques ou une durée approximative : Record Picker compose un parcours cohérent uniquement à partir des albums que vous possédez. Chaque transition est expliquée, et le parcours reste modifiable, enregistrable en brouillon et reprenable sur iPhone, iPad ou Mac.",
         "listen": "Ajoutez à une file privée les disques que vous possédez déjà, réorganisez-les librement et retrouvez la liste sur vos appareils Apple. Cette file est distincte de la liste de souhaits.",
         "graph": "Sur Mac et iPad, une vue interactive révèle les liens entre œuvres, compositeurs, interprètes, chefs, ensembles et éditions. Le graphe est calculé localement à partir de vos fiches et ne modifie aucune donnée.",
-        "scanner": "Sur Mac, scannez un code EAN ou UPC avec la caméra du Mac ou avec un iPhone utilisé via Caméra Continuité. L’image reste sur l’appareil ; vous vérifiez ensuite les informations proposées avant d’ajouter le disque.",
+        "scanner_heading": "Ajouter un nouveau disque par code-barres",
+        "scanner": "Pour ajouter un nouveau disque sur Mac, scannez son code-barres EAN ou UPC avec la caméra du Mac, ou avec un iPhone via Caméra Continuité. La reconnaissance se fait localement, puis vous vérifiez les informations proposées avant de créer la fiche.",
+        "today_heading": "Disque du jour · Choisir une zone géographique",
         "today": "Choisissez une ville et un rayon, y compris au-delà des frontières, puis visualisez sur la carte les concerts et actualités dont la date et le lieu ont pu être vérifiés. Le réglage et la comparaison avec votre collection restent privés.",
+        "share_heading": "Partager un choix ou un parcours",
         "privacy": "Avant de partager un choix ou un parcours, vous voyez exactement la carte qui sera envoyée. Le statut de collection, les notes privées, l’historique d’écoute et la localisation en sont toujours exclus.",
     },
     "en": {
@@ -59,8 +65,11 @@ EDITORIAL_OVERRIDES = {
         "journey": "Choose a number of records or an approximate duration. Record Picker creates a coherent journey using only albums you own, explains every transition, and lets you edit, save and resume it on iPhone, iPad or Mac.",
         "listen": "Add records you already own to a private, ordered queue, rearrange them freely and find the same list on your Apple devices. Listen Later remains separate from your wishlist.",
         "graph": "On Mac and iPad, an interactive view reveals connections between works, composers, performers, conductors, ensembles and editions. The graph is calculated locally from your records and never changes their data.",
-        "scanner": "On Mac, scan an EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Images stay on the device, and you review the proposed information before adding the record.",
+        "scanner_heading": "Add a new record by scanning its barcode",
+        "scanner": "To add a new record on Mac, scan its EAN or UPC barcode with the Mac camera or an iPhone through Continuity Camera. Recognition happens locally, then you review the proposed details before creating the entry.",
+        "today_heading": "Today’s Pick · Choose a geographic area",
         "today": "Choose a city and radius, including across national borders, then see concerts and news with verified dates and locations on the map. Your settings and collection matching remain private.",
+        "share_heading": "Share a pick or listening journey",
         "privacy": "Preview the exact card before sharing a pick or journey. Collection status, private notes, listening history and location are always excluded.",
     },
 }
@@ -93,6 +102,11 @@ def refresh_copy(app_root: Path) -> None:
             field: entries[source]
             for field, source in KEYS.items()
         }
+        localized[directory].update({
+            "scanner_heading": f'{localized[directory]["new_record_title"]} · {localized[directory]["scanner_title"]}',
+            "today_heading": f'{localized[directory]["today_title"]} · {localized[directory]["today_area_title"]}',
+            "share_heading": f'{localized[directory]["preview_title"]} · {localized[directory]["share_title"]}',
+        })
         if directory in {"fr", "fr-ca"}:
             localized[directory].update(EDITORIAL_OVERRIDES["fr"])
         elif directory in {"", "en-au", "en-ca", "en-gb", "en-us"}:
@@ -118,9 +132,9 @@ def feature_items(copy: dict[str, str], names: tuple[str, ...] | None = None) ->
         "journey": (copy["journey_title"], copy["journey"]),
         "listen": (copy["listen_title"], copy["listen"]),
         "graph": (copy["graph_title"], copy["graph"]),
-        "scanner": (copy["scanner_title"], copy["scanner"]),
-        "today": (copy["today_title"], copy["today"]),
-        "share": (copy["share_title"], copy["privacy"]),
+        "scanner": (copy["scanner_heading"], copy["scanner"]),
+        "today": (copy["today_heading"], copy["today"]),
+        "share": (copy["share_heading"], copy["privacy"]),
     }
     selected = names or tuple(features)
     return "".join(

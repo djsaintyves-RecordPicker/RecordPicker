@@ -82,6 +82,8 @@ def main() -> None:
                 assert "Choisissez un nombre de disques ou une durée approximative" in home
                 assert "Cette file est distincte de la liste de souhaits" in home
                 assert "Sur Mac et iPad, une vue interactive révèle les liens" in home
+                assert "Pour ajouter un nouveau disque sur Mac, scannez son code-barres" in home
+                assert "Ajouter un nouveau disque par code-barres" in home
             assert "v24-graph-grid" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app
