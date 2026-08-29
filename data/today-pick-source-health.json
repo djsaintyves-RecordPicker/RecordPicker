@@ -1,28 +1,27 @@
 {
   "configuredSources": 46,
-  "contributingSources": 2,
-  "effectiveContributingSources": 14,
+  "contributingSources": 0,
+  "effectiveContributingSources": 11,
   "fallback": {
-    "eventCount": 29,
-    "feedGeneratedAt": "2026-08-29T07:06:21Z",
+    "eventCount": 23,
+    "feedGeneratedAt": "2026-08-29T16:44:08Z",
     "maximumAgeHours": 72,
-    "sourceCount": 12,
+    "sourceCount": 11,
     "sources": {
       "Clash": 2,
       "Consequence": 1,
       "Louder": 1,
-      "Metal Injection": 1,
-      "MusicRadar": 5,
+      "MusicRadar": 4,
       "NME": 3,
       "NPR Music": 1,
       "OperaWire": 1,
       "Rolling Stone Music": 4,
-      "Stereogum": 8,
+      "Stereogum": 4,
       "The Line of Best Fit": 1,
       "The Quietus": 1
     }
   },
-  "generatedAt": "2026-08-29T16:44:08Z",
+  "generatedAt": "2026-08-29T20:56:22Z",
   "reachableSources": 44,
   "sources": {
     "Attack Magazine": {
@@ -33,7 +32,7 @@
     },
     "BBC Music": {
       "downloadedArticles": 33,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -109,7 +108,7 @@
     },
     "Jazz Views": {
       "downloadedArticles": 0,
-      "error": "<urlopen error timed out>",
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
       "status": "failed",
       "url": "https://www.jazzviews.net/feed"
@@ -142,11 +141,9 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://metalinjection.net/feed",
-      "usingFallback": true
+      "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
@@ -156,7 +153,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "fallbackEvents": 5,
+      "fallbackEvents": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all",
@@ -257,7 +254,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "fallbackEvents": 8,
+      "fallbackEvents": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed",
@@ -271,7 +268,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 25,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
