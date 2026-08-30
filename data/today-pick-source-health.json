@@ -1,26 +1,25 @@
 {
   "configuredSources": 46,
-  "contributingSources": 2,
-  "effectiveContributingSources": 12,
+  "contributingSources": 0,
+  "effectiveContributingSources": 9,
   "fallback": {
-    "eventCount": 21,
-    "feedGeneratedAt": "2026-08-29T20:56:22Z",
+    "eventCount": 17,
+    "feedGeneratedAt": "2026-08-30T05:26:11Z",
     "maximumAgeHours": 72,
-    "sourceCount": 10,
+    "sourceCount": 9,
     "sources": {
-      "Clash": 2,
+      "Clash": 1,
       "Consequence": 1,
-      "MusicRadar": 4,
+      "MusicRadar": 3,
       "NME": 3,
       "NPR Music": 1,
       "OperaWire": 1,
-      "Rolling Stone Music": 4,
+      "Rolling Stone Music": 3,
       "Stereogum": 3,
-      "The Line of Best Fit": 1,
-      "The Quietus": 1
+      "The Line of Best Fit": 1
     }
   },
-  "generatedAt": "2026-08-30T05:26:11Z",
+  "generatedAt": "2026-08-30T11:56:02Z",
   "reachableSources": 43,
   "sources": {
     "Attack Magazine": {
@@ -31,7 +30,7 @@
     },
     "BBC Music": {
       "downloadedArticles": 33,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -55,7 +54,7 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
+      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/",
@@ -150,7 +149,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "fallbackEvents": 4,
+      "fallbackEvents": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all",
@@ -219,7 +218,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "fallbackEvents": 4,
+      "fallbackEvents": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/",
@@ -265,8 +264,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 25,
-      "resolvedEvents": 2,
+      "downloadedArticles": 24,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
@@ -280,11 +279,9 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://thequietus.com/feed/",
-      "usingFallback": true
+      "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
       "downloadedArticles": 4,
