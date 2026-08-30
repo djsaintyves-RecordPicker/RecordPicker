@@ -1,28 +1,27 @@
 {
   "configuredSources": 46,
-  "contributingSources": 0,
-  "effectiveContributingSources": 11,
+  "contributingSources": 2,
+  "effectiveContributingSources": 12,
   "fallback": {
-    "eventCount": 23,
-    "feedGeneratedAt": "2026-08-29T16:44:08Z",
+    "eventCount": 21,
+    "feedGeneratedAt": "2026-08-29T20:56:22Z",
     "maximumAgeHours": 72,
-    "sourceCount": 11,
+    "sourceCount": 10,
     "sources": {
       "Clash": 2,
       "Consequence": 1,
-      "Louder": 1,
       "MusicRadar": 4,
       "NME": 3,
       "NPR Music": 1,
       "OperaWire": 1,
       "Rolling Stone Music": 4,
-      "Stereogum": 4,
+      "Stereogum": 3,
       "The Line of Best Fit": 1,
       "The Quietus": 1
     }
   },
-  "generatedAt": "2026-08-29T20:56:22Z",
-  "reachableSources": 44,
+  "generatedAt": "2026-08-30T05:26:11Z",
+  "reachableSources": 43,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 2,
@@ -32,7 +31,7 @@
     },
     "BBC Music": {
       "downloadedArticles": 33,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -133,11 +132,9 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.loudersound.com/feeds/all",
-      "usingFallback": true
+      "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
@@ -241,9 +238,10 @@
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "Slipped Disc: invalid XML feed",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
@@ -254,7 +252,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "fallbackEvents": 4,
+      "fallbackEvents": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://stereogum.com/feed",
@@ -268,7 +266,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 25,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
