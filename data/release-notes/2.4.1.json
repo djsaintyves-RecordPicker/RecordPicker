@@ -1,0 +1,299 @@
+{
+  "": {
+    "headline": "Record Picker 2.4.1 prepares private, encrypted synchronization between Mac, iPhone, iPad, Windows and Android through a shared folder you choose.",
+    "sync_title": "One collection across platforms",
+    "sync": "Your collection, artwork, Listen Later queue and Listening Journey drafts can stay aligned across devices, even while you work offline.",
+    "account_title": "No Record Picker account required",
+    "account": "Files are encrypted on your device before they reach the storage provider, which never receives a readable collection.",
+    "recovery_title": "A key that stays in your hands",
+    "recovery": "An association code connects authorized devices. Keep it safe: Record Picker cannot recover a lost key."
+  },
+  "ar": {
+    "headline": "حافظ على توافق أجهزة Mac وiPhone وiPad وWindows وAndroid من خلال مجلد مشترك تختاره. يقوم Record Picker بتشفير المجموعة الموجودة على هذا الجهاز قبل أن يستلمها موفر التخزين.",
+    "sync_title": "المزامنة المشفرة عبر الأنظمة الأساسية",
+    "sync": "تستخدم المزامنة عبر الأنظمة الأساسية مجلدًا تختاره وتقوم بتشفير كل ملف مجموعة قبل أن يصل إلى موفر التخزين.",
+    "account_title": "لا يلزم وجود حساب Record Picker.",
+    "account": "يقوم الموفر بتخزين الملفات المشفرة، وليس مجموعة قابلة للقراءة.",
+    "recovery_title": "الخصوصية والانتعاش",
+    "recovery": "رمز الاقتران هو الطريقة الوحيدة لفك تشفير المجموعة المشتركة. لا يمكن لـ Record Picker استعادته في حالة فقده."
+  },
+  "ca": {
+    "headline": "Manteniu Mac, iPhone, iPad, Windows i Android alineats mitjançant una carpeta compartida que trieu. Record Picker xifra la col·lecció en aquest dispositiu abans que el proveïdor d'emmagatzematge la rebi.",
+    "sync_title": "Sincronització multiplataforma xifrada",
+    "sync": "La sincronització multiplataforma utilitza una carpeta que trieu i xifra tots els fitxers de col·lecció abans que arribin al proveïdor d'emmagatzematge.",
+    "account_title": "No cal cap compte Record Picker.",
+    "account": "El proveïdor emmagatzema fitxers xifrats, no una col·lecció llegible.",
+    "recovery_title": "Privadesa i recuperació",
+    "recovery": "El codi d'associació és l'única manera de desxifrar la col·lecció compartida. Record Picker no pot recuperar-lo si es perd."
+  },
+  "da": {
+    "headline": "Hold Mac, iPhone, iPad, Windows og Android justeret gennem en delt mappe, du vælger. Record Picker krypterer samlingen på denne enhed, før lagerudbyderen modtager den.",
+    "sync_title": "Krypteret synkronisering på tværs af platforme",
+    "sync": "Synkronisering på tværs af platforme bruger en mappe, du vælger, og krypterer hver samlingsfil, før den når lagerudbyderen.",
+    "account_title": "Der kræves ingen Record Picker konto.",
+    "account": "Udbyderen gemmer krypterede filer, ikke en læsbar samling.",
+    "recovery_title": "Privatliv og gendannelse",
+    "recovery": "Tilknytningskoden er den eneste måde at dekryptere den delte samling på. Record Picker kan ikke gendanne den, hvis den går tabt."
+  },
+  "de": {
+    "headline": "Halten Sie Mac, iPhone, iPad, Windows und Android über einen von Ihnen ausgewählten freigegebenen Ordner aufeinander abgestimmt. Record Picker verschlüsselt die Sammlung auf diesem Gerät, bevor der Speicheranbieter sie erhält.",
+    "sync_title": "Verschlüsselte plattformübergreifende Synchronisierung",
+    "sync": "Bei der plattformübergreifenden Synchronisierung wird ein von Ihnen ausgewählter Ordner verwendet und jede Sammlungsdatei verschlüsselt, bevor sie den Speicheranbieter erreicht.",
+    "account_title": "Es ist kein Record Picker-Konto erforderlich.",
+    "account": "Der Anbieter speichert verschlüsselte Dateien, keine lesbare Sammlung.",
+    "recovery_title": "Privatsphäre und Wiederherstellung",
+    "recovery": "Der Assoziationscode ist die einzige Möglichkeit, die gemeinsame Sammlung zu entschlüsseln. Record Picker kann es nicht wiederherstellen, wenn es verloren geht."
+  },
+  "el": {
+    "headline": "Διατηρήστε τα Mac, iPhone, iPad, Windows και Android ευθυγραμμισμένα μέσω ενός κοινόχρηστου φακέλου που θα επιλέξετε. Το Record Picker κρυπτογραφεί τη συλλογή σε αυτήν τη συσκευή προτού τη λάβει ο πάροχος αποθήκευσης.",
+    "sync_title": "Κρυπτογραφημένος συγχρονισμός μεταξύ πλατφορμών",
+    "sync": "Ο συγχρονισμός μεταξύ πλατφορμών χρησιμοποιεί έναν φάκελο που επιλέγετε και κρυπτογραφεί κάθε αρχείο συλλογής προτού φτάσει στον πάροχο αποθήκευσης.",
+    "account_title": "Δεν απαιτείται λογαριασμός Record Picker.",
+    "account": "Ο πάροχος αποθηκεύει κρυπτογραφημένα αρχεία, όχι μια αναγνώσιμη συλλογή.",
+    "recovery_title": "Απόρρητο και ανάκτηση",
+    "recovery": "Ο κωδικός συσχέτισης είναι ο μόνος τρόπος αποκρυπτογράφησης της κοινόχρηστης συλλογής. Το Record Picker δεν μπορεί να το ανακτήσει εάν χαθεί."
+  },
+  "en-au": {
+    "headline": "Record Picker 2.4.1 prepares private, encrypted synchronization between Mac, iPhone, iPad, Windows and Android through a shared folder you choose.",
+    "sync_title": "One collection across platforms",
+    "sync": "Your collection, artwork, Listen Later queue and Listening Journey drafts can stay aligned across devices, even while you work offline.",
+    "account_title": "No Record Picker account required",
+    "account": "Files are encrypted on your device before they reach the storage provider, which never receives a readable collection.",
+    "recovery_title": "A key that stays in your hands",
+    "recovery": "An association code connects authorized devices. Keep it safe: Record Picker cannot recover a lost key."
+  },
+  "en-ca": {
+    "headline": "Record Picker 2.4.1 prepares private, encrypted synchronization between Mac, iPhone, iPad, Windows and Android through a shared folder you choose.",
+    "sync_title": "One collection across platforms",
+    "sync": "Your collection, artwork, Listen Later queue and Listening Journey drafts can stay aligned across devices, even while you work offline.",
+    "account_title": "No Record Picker account required",
+    "account": "Files are encrypted on your device before they reach the storage provider, which never receives a readable collection.",
+    "recovery_title": "A key that stays in your hands",
+    "recovery": "An association code connects authorized devices. Keep it safe: Record Picker cannot recover a lost key."
+  },
+  "en-gb": {
+    "headline": "Record Picker 2.4.1 prepares private, encrypted synchronization between Mac, iPhone, iPad, Windows and Android through a shared folder you choose.",
+    "sync_title": "One collection across platforms",
+    "sync": "Your collection, artwork, Listen Later queue and Listening Journey drafts can stay aligned across devices, even while you work offline.",
+    "account_title": "No Record Picker account required",
+    "account": "Files are encrypted on your device before they reach the storage provider, which never receives a readable collection.",
+    "recovery_title": "A key that stays in your hands",
+    "recovery": "An association code connects authorized devices. Keep it safe: Record Picker cannot recover a lost key."
+  },
+  "en-us": {
+    "headline": "Record Picker 2.4.1 prepares private, encrypted synchronization between Mac, iPhone, iPad, Windows and Android through a shared folder you choose.",
+    "sync_title": "One collection across platforms",
+    "sync": "Your collection, artwork, Listen Later queue and Listening Journey drafts can stay aligned across devices, even while you work offline.",
+    "account_title": "No Record Picker account required",
+    "account": "Files are encrypted on your device before they reach the storage provider, which never receives a readable collection.",
+    "recovery_title": "A key that stays in your hands",
+    "recovery": "An association code connects authorized devices. Keep it safe: Record Picker cannot recover a lost key."
+  },
+  "es-es": {
+    "headline": "Mantenga Mac, iPhone, iPad, Windows y Android alineados a través de una carpeta compartida que elija. Record Picker cifra la colección en este dispositivo antes de que el proveedor de almacenamiento la reciba.",
+    "sync_title": "Sincronización multiplataforma cifrada",
+    "sync": "La sincronización multiplataforma utiliza una carpeta que usted elige y cifra cada archivo de la colección antes de que llegue al proveedor de almacenamiento.",
+    "account_title": "No se requiere ninguna cuenta Record Picker.",
+    "account": "El proveedor almacena archivos cifrados, no una colección legible.",
+    "recovery_title": "Privacidad y recuperación",
+    "recovery": "El código de asociación es la única forma de descifrar la colección compartida. Record Picker no puede recuperarlo si se pierde."
+  },
+  "es-mx": {
+    "headline": "Mantenga Mac, iPhone, iPad, Windows y Android alineados a través de una carpeta compartida que elija. Record Picker cifra la colección en este dispositivo antes de que el proveedor de almacenamiento la reciba.",
+    "sync_title": "Sincronización multiplataforma cifrada",
+    "sync": "La sincronización multiplataforma utiliza una carpeta que usted elige y cifra cada archivo de la colección antes de que llegue al proveedor de almacenamiento.",
+    "account_title": "No se requiere ninguna cuenta Record Picker.",
+    "account": "El proveedor almacena archivos cifrados, no una colección legible.",
+    "recovery_title": "Privacidad y recuperación",
+    "recovery": "El código de asociación es la única forma de descifrar la colección compartida. Record Picker no puede recuperarlo si se pierde."
+  },
+  "fi": {
+    "headline": "Pidä Mac, iPhone, iPad, Windows ja Android kohdistettuna valitsemasi jaetun kansion kautta. Record Picker salaa tämän laitteen kokoelman, ennen kuin tallennustilan toimittaja vastaanottaa sen.",
+    "sync_title": "Salattu alustojen välinen synkronointi",
+    "sync": "Alustaen välinen synkronointi käyttää valitsemaasi kansiota ja salaa jokaisen kokoelmatiedoston ennen kuin se saavuttaa tallennuspalveluntarjoajan.",
+    "account_title": "Tiliä Record Picker ei tarvita.",
+    "account": "Palveluntarjoaja tallentaa salattuja tiedostoja, ei luettavaa kokoelmaa.",
+    "recovery_title": "Yksityisyys ja palautus",
+    "recovery": "Yhteyskoodi on ainoa tapa purkaa jaetun kokoelman salaus. Record Picker ei voi palauttaa sitä, jos se katoaa."
+  },
+  "fr": {
+    "headline": "La version 2.4.1 prépare une synchronisation privée et chiffrée entre Mac, iPhone, iPad, Windows et Android, à partir d’un dossier partagé de votre choix.",
+    "sync_title": "Une collection synchronisée entre plateformes",
+    "sync": "La collection, les pochettes, la liste À écouter plus tard et les brouillons de parcours d’écoute pourront rester cohérents sur vos appareils, même lorsque vous travaillez hors ligne.",
+    "account_title": "Aucun compte Record Picker à créer",
+    "account": "Les fichiers sont chiffrés sur l’appareil avant d’arriver chez le fournisseur de stockage. Celui-ci ne reçoit jamais une collection lisible.",
+    "recovery_title": "Une clé qui reste entre vos mains",
+    "recovery": "Un code d’association relie les appareils autorisés. Il faudra le conserver précieusement : Record Picker ne pourra pas récupérer une clé perdue."
+  },
+  "fr-ca": {
+    "headline": "La version 2.4.1 prépare une synchronisation privée et chiffrée entre Mac, iPhone, iPad, Windows et Android, à partir d’un dossier partagé de votre choix.",
+    "sync_title": "Une collection synchronisée entre plateformes",
+    "sync": "La collection, les pochettes, la liste À écouter plus tard et les brouillons de parcours d’écoute pourront rester cohérents sur vos appareils, même lorsque vous travaillez hors ligne.",
+    "account_title": "Aucun compte Record Picker à créer",
+    "account": "Les fichiers sont chiffrés sur l’appareil avant d’arriver chez le fournisseur de stockage. Celui-ci ne reçoit jamais une collection lisible.",
+    "recovery_title": "Une clé qui reste entre vos mains",
+    "recovery": "Un code d’association relie les appareils autorisés. Il faudra le conserver précieusement : Record Picker ne pourra pas récupérer une clé perdue."
+  },
+  "he": {
+    "headline": "שמור על Mac, iPhone, iPad, Windows ו-Android מיושרים באמצעות תיקייה משותפת שתבחר. Record Picker מצפין את האוסף במכשיר זה לפני שספק האחסון מקבל אותו.",
+    "sync_title": "סנכרון מוצפן בין פלטפורמות",
+    "sync": "סנכרון חוצה פלטפורמות משתמש בתיקייה שתבחר ומצפין כל קובץ אוסף לפני שהוא מגיע לספק האחסון.",
+    "account_title": "אין צורך בחשבון Record Picker.",
+    "account": "הספק מאחסן קבצים מוצפנים, לא אוסף קריא.",
+    "recovery_title": "פרטיות ושחזור",
+    "recovery": "קוד השיוך הוא הדרך היחידה לפענח את האוסף המשותף. Record Picker לא יכול לשחזר אותו אם הוא יאבד."
+  },
+  "hi": {
+    "headline": "अपने द्वारा चुने गए साझा फ़ोल्डर के माध्यम से Mac, iPhone, iPad, Windows और Android को संरेखित रखें। Record Picker स्टोरेज प्रदाता को प्राप्त होने से पहले इस डिवाइस पर संग्रह को एन्क्रिप्ट करता है।",
+    "sync_title": "एन्क्रिप्टेड क्रॉस-प्लेटफ़ॉर्म सिंक्रनाइज़ेशन",
+    "sync": "क्रॉस-प्लेटफ़ॉर्म सिंक आपके द्वारा चुने गए फ़ोल्डर का उपयोग करता है और स्टोरेज प्रदाता तक पहुंचने से पहले प्रत्येक संग्रह फ़ाइल को एन्क्रिप्ट करता है।",
+    "account_title": "कोई Record Picker खाता आवश्यक नहीं है.",
+    "account": "प्रदाता एन्क्रिप्टेड फ़ाइलें संग्रहीत करता है, पढ़ने योग्य संग्रह नहीं।",
+    "recovery_title": "गोपनीयता और पुनर्प्राप्ति",
+    "recovery": "एसोसिएशन कोड साझा संग्रह को डिक्रिप्ट करने का एकमात्र तरीका है। Record Picker खो जाने पर इसे पुनर्प्राप्त नहीं किया जा सकता।"
+  },
+  "id": {
+    "headline": "Jaga agar Mac, iPhone, iPad, Windows, dan Android tetap selaras melalui folder bersama yang Anda pilih. Record Picker mengenkripsi koleksi di perangkat ini sebelum penyedia penyimpanan menerimanya.",
+    "sync_title": "Sinkronisasi lintas platform terenkripsi",
+    "sync": "Sinkronisasi lintas platform menggunakan folder yang Anda pilih dan mengenkripsi setiap file koleksi sebelum mencapai penyedia penyimpanan.",
+    "account_title": "Tidak diperlukan akun Record Picker.",
+    "account": "Penyedia menyimpan file terenkripsi, bukan koleksi yang dapat dibaca.",
+    "recovery_title": "Privasi dan pemulihan",
+    "recovery": "Kode asosiasi adalah satu-satunya cara untuk mendekripsi koleksi bersama. Record Picker tidak dapat memulihkannya jika hilang."
+  },
+  "it": {
+    "headline": "Mantieni allineati Mac, iPhone, iPad, Windows e Android tramite una cartella condivisa di tua scelta. Record Picker crittografa la raccolta su questo dispositivo prima che il provider di archiviazione la riceva.",
+    "sync_title": "Sincronizzazione multipiattaforma crittografata",
+    "sync": "La sincronizzazione multipiattaforma utilizza una cartella scelta da te e crittografa ogni file della raccolta prima che raggiunga il provider di archiviazione.",
+    "account_title": "Non è richiesto alcun account Record Picker.",
+    "account": "Il provider archivia file crittografati, non una raccolta leggibile.",
+    "recovery_title": "Privacy e recupero",
+    "recovery": "Il codice di associazione è l'unico modo per decrittografare la raccolta condivisa. Record Picker non può recuperarlo se viene perso."
+  },
+  "ja": {
+    "headline": "選択した共有フォルダーを通じて、Mac、iPhone、iPad、Windows、Android を常に連携させます。 Record Picker は、ストレージ プロバイダーがコレクションを受信する前に、このデバイス上のコレクションを暗号化します。",
+    "sync_title": "暗号化されたクロスプラットフォーム同期",
+    "sync": "クロスプラットフォーム同期では、選択したフォルダーを使用し、すべてのコレクション ファイルがストレージ プロバイダーに到達する前に暗号化されます。",
+    "account_title": "Record Picker アカウントは必要ありません。",
+    "account": "プロバイダーは、読み取り可能なコレクションではなく、暗号化されたファイルを保存します。",
+    "recovery_title": "プライバシーと回復",
+    "recovery": "アソシエーション コードは、共有コレクションを復号化する唯一の方法です。 Record Picker を紛失すると復元できません。"
+  },
+  "ko": {
+    "headline": "선택한 공유 폴더를 통해 Mac, iPhone, iPad, Windows 및 Android를 정렬된 상태로 유지하세요. Record Picker은 저장소 공급자가 컬렉션을 수신하기 전에 이 기기의 컬렉션을 암호화합니다.",
+    "sync_title": "암호화된 크로스 플랫폼 동기화",
+    "sync": "크로스 플랫폼 동기화는 선택한 폴더를 사용하고 모든 컬렉션 파일이 스토리지 공급자에 도달하기 전에 암호화합니다.",
+    "account_title": "Record Picker 계정은 필요하지 않습니다.",
+    "account": "공급자는 읽을 수 있는 컬렉션이 아닌 암호화된 파일을 저장합니다.",
+    "recovery_title": "개인정보 보호 및 복구",
+    "recovery": "연결 코드는 공유 컬렉션을 해독하는 유일한 방법입니다. Record Picker은(는) 분실된 경우 복구할 수 없습니다."
+  },
+  "nb": {
+    "headline": "Hold Mac, iPhone, iPad, Windows og Android på linje gjennom en delt mappe du velger. Record Picker krypterer samlingen på denne enheten før lagringsleverandøren mottar den.",
+    "sync_title": "Kryptert synkronisering på tvers av plattformer",
+    "sync": "Synkronisering på tvers av plattformer bruker en mappe du velger og krypterer hver samlingsfil før den når lagringsleverandøren.",
+    "account_title": "Ingen Record Picker-konto kreves.",
+    "account": "Leverandøren lagrer krypterte filer, ikke en lesbar samling.",
+    "recovery_title": "Personvern og gjenoppretting",
+    "recovery": "Tilknytningskoden er den eneste måten å dekryptere den delte samlingen på. Record Picker kan ikke gjenopprette den hvis den går tapt."
+  },
+  "nl": {
+    "headline": "Houd Mac, iPhone, iPad, Windows en Android op één lijn via een gedeelde map die u kiest. Record Picker codeert de verzameling op dit apparaat voordat de opslagprovider deze ontvangt.",
+    "sync_title": "Gecodeerde platformonafhankelijke synchronisatie",
+    "sync": "Synchronisatie op meerdere platforms maakt gebruik van een door u gekozen map en codeert elk verzamelbestand voordat het de opslagprovider bereikt.",
+    "account_title": "Er is geen Record Picker-account vereist.",
+    "account": "De provider slaat gecodeerde bestanden op, geen leesbare verzameling.",
+    "recovery_title": "Privacy en herstel",
+    "recovery": "De associatiecode is de enige manier om de gedeelde collectie te ontsleutelen. Record Picker kan het niet herstellen als het verloren gaat."
+  },
+  "pl": {
+    "headline": "Trzymaj Maca, iPhone'a, iPada, Windowsa i Androida w jednym wybranym folderze udostępnionym. Record Picker szyfruje kolekcję na tym urządzeniu, zanim otrzyma ją dostawca przestrzeni dyskowej.",
+    "sync_title": "Szyfrowana synchronizacja między platformami",
+    "sync": "Synchronizacja między platformami wykorzystuje wybrany przez Ciebie folder i szyfruje każdy plik kolekcji, zanim dotrze do dostawcy pamięci masowej.",
+    "account_title": "Żadne konto Record Picker nie jest wymagane.",
+    "account": "Dostawca przechowuje zaszyfrowane pliki, a nie czytelną kolekcję.",
+    "recovery_title": "Prywatność i odzyskiwanie",
+    "recovery": "Kod skojarzenia to jedyny sposób na odszyfrowanie udostępnionej kolekcji. Record Picker nie może go odzyskać, jeśli został utracony."
+  },
+  "pt-br": {
+    "headline": "Mantenha Mac, iPhone, iPad, Windows e Android alinhados por meio de uma pasta compartilhada de sua escolha. Record Picker criptografa a coleção neste dispositivo antes que o provedor de armazenamento a receba.",
+    "sync_title": "Sincronização criptografada entre plataformas",
+    "sync": "A sincronização entre plataformas usa uma pasta que você escolhe e criptografa todos os arquivos da coleção antes que eles cheguem ao provedor de armazenamento.",
+    "account_title": "Nenhuma conta Record Picker é necessária.",
+    "account": "O provedor armazena arquivos criptografados, não uma coleção legível.",
+    "recovery_title": "Privacidade e recuperação",
+    "recovery": "O código de associação é a única maneira de descriptografar a coleção compartilhada. Record Picker não poderá recuperá-lo se for perdido."
+  },
+  "pt-pt": {
+    "headline": "Mantenha o Mac, iPhone, iPad, Windows e Android alinhados através de uma pasta partilhada à sua escolha. Record Picker encripta a coleção neste dispositivo antes de o fornecedor de armazenamento a receber.",
+    "sync_title": "Sincronização encriptada entre plataformas",
+    "sync": "A sincronização entre plataformas utiliza uma pasta que escolhe e encripta todos os ficheiros da coleção antes de chegarem ao fornecedor de armazenamento.",
+    "account_title": "Não é necessária nenhuma conta Record Picker.",
+    "account": "O fornecedor armazena ficheiros encriptados, não uma coleção legível.",
+    "recovery_title": "Privacidade e recuperação",
+    "recovery": "O código de associação é a única forma de desencriptar a coleção partilhada. Record Picker não poderá recuperá-lo se for perdido."
+  },
+  "ru": {
+    "headline": "Обеспечьте синхронизацию Mac, iPhone, iPad, Windows и Android с помощью выбранной вами общей папки. Record Picker шифрует коллекцию на этом устройстве до того, как ее получит поставщик хранилища.",
+    "sync_title": "Зашифрованная межплатформенная синхронизация",
+    "sync": "Межплатформенная синхронизация использует выбранную вами папку и шифрует каждый файл коллекции, прежде чем он достигнет поставщика хранилища.",
+    "account_title": "Учетная запись Record Picker не требуется.",
+    "account": "Поставщик хранит зашифрованные файлы, а не читаемую коллекцию.",
+    "recovery_title": "Конфиденциальность и восстановление",
+    "recovery": "Код ассоциации — единственный способ расшифровать общую коллекцию. Record Picker не сможет восстановить его, если он утерян."
+  },
+  "sv": {
+    "headline": "Håll Mac, iPhone, iPad, Windows och Android anpassade genom en delad mapp du väljer. Record Picker krypterar samlingen på den här enheten innan lagringsleverantören tar emot den.",
+    "sync_title": "Krypterad synkronisering över flera plattformar",
+    "sync": "Cross-platform sync använder en mapp du väljer och krypterar varje samlingsfil innan den når lagringsleverantören.",
+    "account_title": "Inget Record Picker-konto krävs.",
+    "account": "Leverantören lagrar krypterade filer, inte en läsbar samling.",
+    "recovery_title": "Sekretess och återställning",
+    "recovery": "Associationskoden är det enda sättet att dekryptera den delade samlingen. Record Picker kan inte återställa den om den försvinner."
+  },
+  "th": {
+    "headline": "ทำให้ Mac, iPhone, iPad, Windows และ Android อยู่ในแนวเดียวกันผ่านโฟลเดอร์แชร์ที่คุณเลือก Record Picker เข้ารหัสคอลเลกชันบนอุปกรณ์นี้ก่อนที่ผู้ให้บริการพื้นที่เก็บข้อมูลจะได้รับ",
+    "sync_title": "การซิงโครไนซ์ข้ามแพลตฟอร์มที่เข้ารหัส",
+    "sync": "การซิงค์ข้ามแพลตฟอร์มใช้โฟลเดอร์ที่คุณเลือกและเข้ารหัสทุกไฟล์คอลเลกชันก่อนที่จะถึงผู้ให้บริการพื้นที่จัดเก็บข้อมูล",
+    "account_title": "ไม่จำเป็นต้องมีบัญชี Record Picker",
+    "account": "ผู้ให้บริการจัดเก็บไฟล์ที่เข้ารหัส ไม่ใช่คอลเลกชันที่สามารถอ่านได้",
+    "recovery_title": "ความเป็นส่วนตัวและการกู้คืน",
+    "recovery": "รหัสการเชื่อมโยงเป็นวิธีเดียวในการถอดรหัสคอลเลกชันที่แชร์ Record Picker ไม่สามารถกู้คืนได้หากสูญหาย"
+  },
+  "tr": {
+    "headline": "Seçtiğiniz paylaşılan bir klasör aracılığıyla Mac, iPhone, iPad, Windows ve Android'i aynı hizada tutun. Record Picker, depolama sağlayıcısı almadan önce bu cihazdaki koleksiyonu şifreler.",
+    "sync_title": "Şifreli platformlar arası senkronizasyon",
+    "sync": "Platformlar arası senkronizasyon, seçtiğiniz bir klasörü kullanır ve her koleksiyon dosyasını depolama sağlayıcısına ulaşmadan önce şifreler.",
+    "account_title": "Record Picker hesabı gerekli değildir.",
+    "account": "Sağlayıcı, okunabilir bir koleksiyon değil, şifrelenmiş dosyaları saklar.",
+    "recovery_title": "Gizlilik ve kurtarma",
+    "recovery": "İlişkilendirme kodu, paylaşılan koleksiyonun şifresini çözmenin tek yoludur. Record Picker kaybolursa onu kurtaramaz."
+  },
+  "vi": {
+    "headline": "Giữ Mac, iPhone, iPad, Windows và Android được căn chỉnh thông qua thư mục dùng chung mà bạn chọn. Record Picker mã hóa bộ sưu tập trên thiết bị này trước khi nhà cung cấp bộ nhớ nhận được.",
+    "sync_title": "Đồng bộ hóa đa nền tảng được mã hóa",
+    "sync": "Đồng bộ hóa đa nền tảng sử dụng thư mục bạn chọn và mã hóa mọi tệp bộ sưu tập trước khi đến nhà cung cấp bộ nhớ.",
+    "account_title": "Không cần có tài khoản Record Picker.",
+    "account": "Nhà cung cấp lưu trữ các tệp được mã hóa chứ không phải bộ sưu tập có thể đọc được.",
+    "recovery_title": "Quyền riêng tư và phục hồi",
+    "recovery": "Mã liên kết là cách duy nhất để giải mã bộ sưu tập được chia sẻ. Record Picker không thể khôi phục nếu bị mất."
+  },
+  "zh-hans": {
+    "headline": "通过您选择的共享文件夹使 Mac、iPhone、iPad、Windows 和 Android 保持一致。 Record Picker 会在存储提供商收到该集合之前对其进行加密。",
+    "sync_title": "加密跨平台同步",
+    "sync": "跨平台同步使用您选择的文件夹，并在每个集合文件到达存储提供商之前对其进行加密。",
+    "account_title": "不需要 Record Picker 帐户。",
+    "account": "提供程序存储加密文件，而不是可读集合。",
+    "recovery_title": "隐私和恢复",
+    "recovery": "关联代码是解密共享集合的唯一方法。 Record Picker 如果丢失则无法恢复。"
+  },
+  "zh-hant": {
+    "headline": "透過您選擇的共享資料夾使 Mac、iPhone、iPad、Windows 和 Android 保持一致。 Record Picker 會在儲存提供者收到該集合之前對其進行加密。",
+    "sync_title": "加密跨平台同步",
+    "sync": "跨平台同步使用您選擇的資料夾，並在每個集合檔案到達儲存提供者之前對其進行加密。",
+    "account_title": "不需要 Record Picker 帳號。",
+    "account": "提供者儲存加密文件，而不是可讀集合。",
+    "recovery_title": "隱私和恢復",
+    "recovery": "關聯代碼是解密共享集合的唯一方法。 Record Picker 若遺失則無法復原。"
+  }
+}

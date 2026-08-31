@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise published 2.3.2 pages with the staged 2.4 announcement."""
+"""Exercise published 2.4 pages with the staged 2.4.1 announcement."""
 
 from __future__ import annotations
 
@@ -43,10 +43,10 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.3.2"
+        assert current == "2.4"
         next_release = state.get("next_release")
         assert next_release == {
-            "version": "2.4",
+            "version": "2.4.1",
             "platforms": {
                 "iphone": "coming_soon",
                 "ipad": "coming_soon",
@@ -55,7 +55,7 @@ def main() -> None:
             },
         }
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.3.2", "ipad": "2.3.2", "watch": "2.3.2", "mac": "2.3.2"
+            "iphone": "2.4", "ipad": "2.4", "watch": "2.4", "mac": "2.4"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -72,6 +72,10 @@ def main() -> None:
             assert readme.count('data-release-version="2.4"') == 1
             assert screenshots.count('data-release-version="2.4"') == 1
             assert mac_app.count('data-release-version="2.4"') == 1
+            assert home.count('data-release-version="2.4.1"') == 1
+            assert readme.count('data-release-version="2.4.1"') == 1
+            assert screenshots.count('data-release-version="2.4.1"') == 1
+            assert mac_app.count('data-release-version="2.4.1"') == 1
             for page in (home, screenshots, mac_app):
                 assert "<h2>Record Picker 2.4 · Apple</h2>" in page
             assert "Apple · " in readme
@@ -101,7 +105,7 @@ def main() -> None:
             assert 'data-release-version="2.2"' not in home
             assert 'data-release-version="2.3"' in readme
             assert 'data-release-version="2.3"' not in screenshots
-            assert "v232-preview current-release" in home
+            assert "current-release v24-preview" in home
             assert re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', home)
             assert 'class="platform-beta-callout"' in home
             assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
@@ -111,10 +115,10 @@ def main() -> None:
             assert home.count('class="future-platform"') == 2
             assert "release-upcoming v23-release-card" not in readme
             assert "v23-gallery-marker" not in screenshots
-            assert 'data-release-version="2.3.2"' in home
+            assert 'data-release-version="2.3.2"' not in home
             assert 'data-release-version="2.3.2"' in readme
             assert 'data-release-version="2.3.2"' not in screenshots
-            assert "v232-preview current-release" in home
+            assert "current-release v24-preview" in home
             assert "release-upcoming v232-release-card" not in readme
             assert "v232-gallery-marker" not in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
@@ -141,7 +145,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.3.2"' in mac_app
+            assert '"softwareVersion":"2.4"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
@@ -155,7 +159,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Record Picker 2.3.2 remains published and 2.4 is announced across every localized site.")
+    print("OK: Record Picker 2.4 is published and 2.4.1 is announced across every localized site.")
 
 
 if __name__ == "__main__":
