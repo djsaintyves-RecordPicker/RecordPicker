@@ -1,35 +1,34 @@
 {
   "configuredSources": 46,
-  "contributingSources": 2,
+  "contributingSources": 5,
   "effectiveContributingSources": 8,
   "fallback": {
-    "eventCount": 18,
-    "feedGeneratedAt": "2026-09-03T21:03:31Z",
+    "eventCount": 8,
+    "feedGeneratedAt": "2026-09-04T04:36:18Z",
     "maximumAgeHours": 72,
-    "sourceCount": 6,
+    "sourceCount": 3,
     "sources": {
-      "Consequence": 3,
-      "NPR Music": 1,
-      "Pitchfork News": 3,
-      "Rolling Stone Music": 3,
+      "BBC Music": 1,
       "The Line of Best Fit": 2,
-      "The Quietus": 6
+      "The Quietus": 5
     }
   },
-  "generatedAt": "2026-09-04T04:36:18Z",
+  "generatedAt": "2026-09-04T11:19:57Z",
   "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 27,
-      "resolvedEvents": 1,
+      "downloadedArticles": 23,
+      "fallbackEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
+      "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+      "usingFallback": true
     },
     "Bandcamp Daily": {
       "downloadedArticles": 31,
@@ -57,11 +56,9 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "fallbackEvents": 3,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/",
-      "usingFallback": true
+      "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -76,7 +73,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -100,9 +97,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -161,17 +159,14 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://feeds.npr.org/1039/rss.xml",
-      "usingFallback": true
+      "url": "https://feeds.npr.org/1039/rss.xml"
     },
     "OndaRock": {
-      "downloadedArticles": 0,
-      "error": "OndaRock: invalid XML feed",
+      "downloadedArticles": 40,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
@@ -182,11 +177,9 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "fallbackEvents": 3,
-      "resolvedEvents": 0,
+      "resolvedEvents": 8,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/",
-      "usingFallback": true
+      "url": "https://pitchfork.com/rss/news/"
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -195,7 +188,7 @@
       "url": "https://www.rfi.fr/fr/musique/rss"
     },
     "Rockdelux": {
-      "downloadedArticles": 31,
+      "downloadedArticles": 35,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
@@ -208,11 +201,9 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "fallbackEvents": 3,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/",
-      "usingFallback": true
+      "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -251,8 +242,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 25,
-      "resolvedEvents": 1,
+      "downloadedArticles": 24,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
@@ -266,20 +257,20 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 6,
+      "fallbackEvents": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://thequietus.com/feed/",
       "usingFallback": true
     },
     "The Wire": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 16,
+      "downloadedArticles": 13,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
