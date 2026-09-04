@@ -3,22 +3,22 @@
   "contributingSources": 0,
   "effectiveContributingSources": 8,
   "fallback": {
-    "eventCount": 16,
-    "feedGeneratedAt": "2026-09-04T11:19:57Z",
+    "eventCount": 14,
+    "feedGeneratedAt": "2026-09-04T16:22:47Z",
     "maximumAgeHours": 72,
     "sourceCount": 8,
     "sources": {
       "BBC Music": 1,
       "Consequence": 3,
       "NPR Music": 1,
-      "Pitchfork News": 3,
+      "Pitchfork News": 2,
       "Rolling Stone Music": 2,
       "The Guardian Music": 1,
       "The Line of Best Fit": 2,
-      "The Quietus": 3
+      "The Quietus": 2
     }
   },
-  "generatedAt": "2026-09-04T16:22:47Z",
+  "generatedAt": "2026-09-04T20:46:46Z",
   "reachableSources": 46,
   "sources": {
     "Attack Magazine": {
@@ -28,7 +28,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 26,
+      "downloadedArticles": 27,
       "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
@@ -185,7 +185,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "fallbackEvents": 3,
+      "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/",
@@ -248,7 +248,7 @@
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
@@ -262,7 +262,7 @@
       "usingFallback": true
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 8,
       "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
@@ -271,7 +271,7 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 3,
+      "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://thequietus.com/feed/",
