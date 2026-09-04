@@ -128,6 +128,11 @@ BETA_SCOPE_COPY = {
     "fr-ca": "Candidatures ouvertes dans le monde entier · Bêta disponible en anglais et en français",
 }
 
+BETA_REWARD_COPY = {
+    "fr": "Les 12 testeurs qui terminent les 14 jours et transmettent un retour utile recevront un accès Pro à vie.",
+    "fr-ca": "Les 12 testeurs qui terminent les 14 jours et transmettent des commentaires utiles recevront un accès Pro à vie.",
+}
+
 ANNOUNCEMENT = re.compile(
     r'<section class="[^"]*\bplatform-expansion\b[^"]*"[^>]*>.*?</section>', flags=re.DOTALL
 )
@@ -141,9 +146,19 @@ def announcement(locale: str) -> str:
     beta_title, _, beta_button = BETA_COPY[locale]
     beta_detail = BETA_DETAIL_12[locale]
     scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
+    reward = BETA_REWARD_COPY.get(
+        locale,
+        "The 12 testers who complete the 14 days and send useful feedback will receive lifetime Pro access.",
+    )
     title = title.replace("PC", "Windows").replace("pc", "Windows")
     subject = quote("Record Picker Android beta volunteer")
-    body = quote("Country / region:\nAndroid device model:\nPreferred beta language: English / French:\n")
+    body = quote(
+        "Google Account email used for Google Play:\n"
+        "Country / region:\n"
+        "Android device model and version:\n"
+        "Preferred beta language: English / French:\n"
+        "I can stay enrolled for 14 consecutive days: Yes / No\n"
+    )
     visual = "android-beta-fr.webp" if locale in {"fr", "fr-ca"} else "android-beta-en.webp"
     visual_alt = beta_title
     return (
@@ -155,6 +170,7 @@ def announcement(locale: str) -> str:
         '<div class="platform-beta-callout">'
         f'<p class="beta-scope">🌍 {escape(scope)}</p>'
         f'<h3>{escape(beta_title)}</h3><p>{escape(beta_detail)}</p>'
+        f'<p><strong>{escape(reward)}</strong></p>'
         '<div class="cta-row compact">'
         f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}&amp;body={body}">{escape(beta_button)}</a>'
         '</div></div></div>'

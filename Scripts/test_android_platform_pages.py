@@ -20,6 +20,9 @@ for directory in COPY:
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
     assert BETA_COPY[directory][0] in text, directory
     assert BETA_COPY[directory][0] not in {"Coming soon", "Bientôt disponible"}, directory
+    assert "14" in text, directory
+    assert "lifetime Pro access" in text or "accès Pro à vie" in text, directory
+    assert "Google%20Account%20email" in text, directory
 
     payload = re.search(
         r'<script type="application/ld\+json">(.*?)</script>', text, flags=re.DOTALL

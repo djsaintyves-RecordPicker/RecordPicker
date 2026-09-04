@@ -8,7 +8,13 @@ import json
 from pathlib import Path
 import re
 
-from announce_android_pc_development import BETA_COPY, BETA_DETAIL_12, BETA_SCOPE_COPY, COPY
+from announce_android_pc_development import (
+    BETA_COPY,
+    BETA_DETAIL_12,
+    BETA_REWARD_COPY,
+    BETA_SCOPE_COPY,
+    COPY,
+)
 from announce_release_2_1 import COMING_SOON
 from announce_release_2_3_1 import COPY as RELEASE_232_COPY, LOCALES as RELEASE_LOCALES
 
@@ -207,10 +213,20 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
         beta_title, _, beta_button = BETA_COPY[locale]
         beta_detail = BETA_DETAIL_12[locale]
         scope = BETA_SCOPE_COPY.get(locale, "Worldwide applications welcome · Beta available in English and French")
+        reward = BETA_REWARD_COPY.get(
+            locale,
+            "The 12 testers who complete the 14 days and send useful feedback will receive lifetime Pro access.",
+        )
         title = ANDROID_SEO_TITLES.get(locale, f"{beta_title} | Record Picker")
         description = plain(beta_detail)
         subject = "Record%20Picker%20Android%20beta%20volunteer"
-        body = "Country%20%2F%20region%3A%0AAndroid%20device%20model%3A%0APreferred%20beta%20language%3A%20English%20%2F%20French%3A%0A"
+        body = (
+            "Google%20Account%20email%20used%20for%20Google%20Play%3A%0A"
+            "Country%20%2F%20region%3A%0A"
+            "Android%20device%20model%20and%20version%3A%0A"
+            "Preferred%20beta%20language%3A%20English%20%2F%20French%3A%0A"
+            "I%20can%20stay%20enrolled%20for%2014%20consecutive%20days%3A%20Yes%20%2F%20No%0A"
+        )
         visual = "android-beta-fr.webp" if locale in {"fr", "fr-ca"} else "android-beta-en.webp"
         main = (
             '<main id="main-content"><section class="hero platform-product-hero platform-development-hero">'
@@ -219,6 +235,7 @@ def build_main(locale: str, route: str, home: str, mac_page: str) -> tuple[str, 
             '<div class="platform-beta-callout platform-beta-page beta-campaign-page">'
             f'<p class="beta-scope">🌍 {escape(scope)}</p>'
             f'<h2>{escape(beta_title)}</h2><p>{escape(beta_detail)}</p>'
+            f'<p><strong>{escape(reward)}</strong></p>'
             '<div class="cta-row compact">'
             f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}&amp;body={body}">{escape(beta_button)}</a>'
             '</div></div>'
