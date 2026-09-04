@@ -1,9 +1,23 @@
 {
   "configuredSources": 46,
-  "contributingSources": 9,
-  "effectiveContributingSources": 9,
-  "generatedAt": "2026-09-03T21:03:31Z",
-  "reachableSources": 44,
+  "contributingSources": 2,
+  "effectiveContributingSources": 8,
+  "fallback": {
+    "eventCount": 18,
+    "feedGeneratedAt": "2026-09-03T21:03:31Z",
+    "maximumAgeHours": 72,
+    "sourceCount": 6,
+    "sources": {
+      "Consequence": 3,
+      "NPR Music": 1,
+      "Pitchfork News": 3,
+      "Rolling Stone Music": 3,
+      "The Line of Best Fit": 2,
+      "The Quietus": 6
+    }
+  },
+  "generatedAt": "2026-09-04T04:36:18Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 5,
@@ -12,7 +26,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 26,
+      "downloadedArticles": 27,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -31,7 +45,7 @@
     },
     "BrooklynVegan": {
       "downloadedArticles": 1,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.brooklynvegan.com/feed/"
     },
@@ -43,9 +57,11 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 4,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/"
+      "url": "https://consequence.net/category/music/feed/",
+      "usingFallback": true
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -84,10 +100,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -146,9 +161,11 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "fallbackEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://feeds.npr.org/1039/rss.xml"
+      "url": "https://feeds.npr.org/1039/rss.xml",
+      "usingFallback": true
     },
     "OndaRock": {
       "downloadedArticles": 0,
@@ -165,9 +182,11 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 8,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/"
+      "url": "https://pitchfork.com/rss/news/",
+      "usingFallback": true
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -189,9 +208,11 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "fallbackEvents": 3,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/"
+      "url": "https://www.rollingstone.com/music/music-news/feed/",
+      "usingFallback": true
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -231,24 +252,28 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 25,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "fallbackEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://www.thelineofbestfit.com/feed"
+      "url": "https://www.thelineofbestfit.com/feed",
+      "usingFallback": true
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 8,
+      "fallbackEvents": 6,
+      "resolvedEvents": 0,
       "status": "ok",
-      "url": "https://thequietus.com/feed/"
+      "url": "https://thequietus.com/feed/",
+      "usingFallback": true
     },
     "The Wire": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
