@@ -4,7 +4,7 @@
   "effectiveContributingSources": 8,
   "fallback": {
     "eventCount": 14,
-    "feedGeneratedAt": "2026-09-04T16:22:47Z",
+    "feedGeneratedAt": "2026-09-04T20:46:46Z",
     "maximumAgeHours": 72,
     "sourceCount": 8,
     "sources": {
@@ -18,8 +18,8 @@
       "The Quietus": 2
     }
   },
-  "generatedAt": "2026-09-04T20:46:46Z",
-  "reachableSources": 46,
+  "generatedAt": "2026-09-05T04:32:14Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 4,
@@ -28,7 +28,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 27,
+      "downloadedArticles": 28,
       "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
@@ -104,9 +104,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -262,7 +263,7 @@
       "usingFallback": true
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 8,
+      "downloadedArticles": 10,
       "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
