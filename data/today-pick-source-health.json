@@ -3,23 +3,23 @@
   "contributingSources": 0,
   "effectiveContributingSources": 8,
   "fallback": {
-    "eventCount": 14,
-    "feedGeneratedAt": "2026-09-05T04:32:14Z",
+    "eventCount": 13,
+    "feedGeneratedAt": "2026-09-05T10:37:21Z",
     "maximumAgeHours": 72,
     "sourceCount": 8,
     "sources": {
       "BBC Music": 1,
       "Consequence": 3,
       "NPR Music": 1,
-      "Pitchfork News": 2,
+      "Pitchfork News": 1,
       "Rolling Stone Music": 2,
       "The Guardian Music": 1,
       "The Line of Best Fit": 2,
       "The Quietus": 2
     }
   },
-  "generatedAt": "2026-09-05T10:37:21Z",
-  "reachableSources": 46,
+  "generatedAt": "2026-09-05T15:15:50Z",
+  "reachableSources": 45,
   "sources": {
     "Attack Magazine": {
       "downloadedArticles": 4,
@@ -104,9 +104,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -185,7 +186,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "fallbackEvents": 2,
+      "fallbackEvents": 1,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/",
@@ -262,7 +263,7 @@
       "usingFallback": true
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 10,
       "fallbackEvents": 2,
       "resolvedEvents": 0,
       "status": "ok",
