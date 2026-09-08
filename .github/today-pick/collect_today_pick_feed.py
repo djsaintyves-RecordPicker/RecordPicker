@@ -1490,6 +1490,11 @@ def main() -> int:
         default="FR,GB,US,CA,DE,ES,IT,NL,BE,CH,AT,AU,MX,JP,PL,NO,SE,FI",
     )
     arguments = parser.parse_args()
+    output_paths = [path.resolve() for path in (
+        arguments.output, arguments.editorial_output, arguments.health_output
+    ) if path is not None]
+    if len(output_paths) != len(set(output_paths)):
+        parser.error("feed, editorial and health outputs must be distinct files")
     now = (
         builder.parse_timestamp(arguments.generated_at, "generated-at")
         if arguments.generated_at
@@ -1555,7 +1560,18 @@ def main() -> int:
                 f"{len(fallback_events)} recent events from {len(fallback_counts)} sources"
             )
     health_document["effectiveContributingSources"] = len(effective_source_names)
+    health_document["requiredContributingSources"] = required_editorial_sources
+    health_document["editorialSourceGatePassed"] = len(effective_source_names) >= required_editorial_sources
+    # Keep diagnostics even when publication is correctly rejected. This is a
+    # separate file; never replace the last usable feed on a failed source gate.
+    if arguments.health_output:
+        builder.atomic_write(
+            arguments.health_output,
+            (json.dumps(health_document, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+        )
     if len(effective_source_names) < required_editorial_sources:
+        for warning in warnings:
+            print(f"WARNING: {warning}", flush=True)
         parser.error(
             f"only {len(effective_source_names)} fresh or recent editorial sources contributed; "
             f"at least {required_editorial_sources} are required"
@@ -1566,11 +1582,6 @@ def main() -> int:
         builder.atomic_write(
             arguments.editorial_output,
             (json.dumps(document, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8"),
-        )
-    if arguments.health_output:
-        builder.atomic_write(
-            arguments.health_output,
-            (json.dumps(health_document, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8"),
         )
     if arguments.regional_output_dir:
         arguments.regional_output_dir.mkdir(parents=True, exist_ok=True)
