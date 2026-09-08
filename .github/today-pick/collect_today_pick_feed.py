@@ -485,6 +485,9 @@ class MusicBrainzArtistResolver:
         self,
         json_fetcher: Callable[[str], dict[str, Any]] = fetch_musicbrainz_json,
         delay_seconds: float = MUSICBRAINZ_DELAY_SECONDS,
+        recovery_cooldown_seconds: float = 60,
+        maximum_recovery_probes: int = 2,
+        monotonic_clock: Callable[[], float] = time.monotonic,
     ) -> None:
         self.json_fetcher = json_fetcher
         self.delay_seconds = max(0, delay_seconds)
@@ -492,6 +495,10 @@ class MusicBrainzArtistResolver:
         self.identity_roles: dict[str, set[str]] = {}
         self._last_request_at: float | None = None
         self._service_unavailable = False
+        self._clock = monotonic_clock
+        self._recovery_cooldown = max(1, recovery_cooldown_seconds)
+        self._recovery_probes_remaining = max(0, maximum_recovery_probes)
+        self._retry_service_at = 0.0
 
     def resolve(
         self,
@@ -521,8 +528,11 @@ class MusicBrainzArtistResolver:
             if name_key not in seen:
                 seen.add(name_key)
                 resolved.append(exact)
-        self.cache[key] = resolved[:4]
-        return self.cache[key]
+        # An outage is not proof that a headline has no identifiable artist.
+        # Do not memoize an incomplete result while the circuit is open.
+        if not self._service_unavailable:
+            self.cache[key] = resolved[:4]
+        return resolved[:4]
 
     def resolve_exact(self, identity: str) -> str | None:
         """Return an artist only when MusicBrainz confirms the exact name."""
@@ -531,10 +541,12 @@ class MusicBrainzArtistResolver:
         key = f"exact:{normalized(value)}"
         if not value or len(value) > builder.MAX_NAME_LENGTH:
             return None
-        if self._service_unavailable:
-            return None
         if key in self.cache:
             return self.cache[key][0] if self.cache[key] else None
+        if self._service_unavailable:
+            if self._recovery_probes_remaining <= 0 or self._clock() < self._retry_service_at:
+                return None
+            self._recovery_probes_remaining -= 1
         if self._last_request_at is not None and self.delay_seconds:
             remaining = self.delay_seconds - (time.monotonic() - self._last_request_at)
             if remaining > 0:
@@ -546,14 +558,15 @@ class MusicBrainzArtistResolver:
         try:
             document = self.json_fetcher(url)
         except Exception:
-            # A single fetch already includes bounded retries.  Continuing to
-            # issue hundreds of identical requests would turn a temporary
-            # MusicBrainz incident into a stalled feed generation.
+            # Each fetch already retries. Keep a bounded circuit breaker but
+            # allow a small number of spaced recovery probes during this run.
             self._service_unavailable = True
+            self._retry_service_at = self._clock() + self._recovery_cooldown
             raise
         finally:
             self._last_request_at = time.monotonic()
         expected = normalized(value)
+        self._service_unavailable = False
         candidates: list[tuple[int, str, set[str]]] = []
         for item in document.get("artists", []):
             if not isinstance(item, dict):
