@@ -1,5 +1,20 @@
 # Today Pick resolver recovery — 2026-09-08
 
+## Transport retry fix, 10 September 2026
+
+Two failing offline regressions showed that a direct TimeoutError raised by
+response.read() bypassed the documented second MusicBrainz attempt. Connection
+reset errors had the same uncaught transport category. fetch_bytes now retries
+these within its existing attempt count and delay; partial responses are never
+accepted. All 12 offline tests pass. No identity, score, freshness or publisher
+threshold is relaxed.
+
+Live editorial-only check: `/tmp/rp25-feed-retryfix-20260910.yeG3T6`, journal
+`/tmp/rp25-feed-retryfix-20260910.log`, rejected with exit 2 and zero contributing
+publishers (six required), MusicBrainz HTTP 503. This proves neither restored
+provider availability nor a valid production feed. The transport fix and this
+branch remain undeployed; no published feed was replaced.
+
 This branch is isolated from existing uncommitted editorial-summary and site
 work. No production feed, freshness threshold, identity score or six-publisher
 requirement is changed.

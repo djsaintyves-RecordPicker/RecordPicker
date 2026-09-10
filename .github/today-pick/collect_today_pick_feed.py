@@ -191,7 +191,9 @@ def fetch_bytes(url: str, accept: str, timeout: int = 30, attempts: int = 4) -> 
             except ValueError:
                 delay = 2 ** attempt
             time.sleep(delay)
-        except URLError as error:
+        except (URLError, TimeoutError, ConnectionError) as error:
+            # A timeout/reset during response.read() need not be wrapped by
+            # urllib. Retry the complete request, never a partial response.
             last_error = error
             if attempt + 1 >= attempts:
                 raise
