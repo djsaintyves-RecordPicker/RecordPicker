@@ -2,8 +2,8 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Android and Windows versions are in development. Release details will be announced
-when both versions are ready.
+Windows 2.4.3 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
+Android remains in development.
 
 The Android closed beta is recruiting 12 testers worldwide. The beta is
 available in English and French; participants need a compatible Android phone
@@ -34,10 +34,10 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## Platform roadmap
 
-- Windows: coming soon.
+- Windows: 2.4.3 available on the Microsoft Store (Windows 11, x64 and ARM64).
 - Android: in development.
 
-Localized Windows preview pages are available under `/windows-app/` for every
+Localized Windows product pages are available under `/windows-app/` for every
 supported site language.
 
 ### v2.3.2 - Available now on Mac; coming soon on iPhone, iPad and Apple Watch

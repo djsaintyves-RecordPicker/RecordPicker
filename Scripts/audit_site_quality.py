@@ -213,6 +213,7 @@ def main() -> None:
         if '>v2.1.1<' in text:
             errors.append(f"{relative}: generic 2.1.1 version pill remains")
         footer_version = (
+            "Windows 2.4.3" if kind == "windows-app/index.html" else
             RELEASE_STATE["current_release"]["platform_versions"]["mac"]
             if kind == "mac-app/index.html"
             else CURRENT_VERSION
