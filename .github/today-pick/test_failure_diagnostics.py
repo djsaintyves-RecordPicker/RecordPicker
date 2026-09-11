@@ -24,6 +24,10 @@ class FailedCollectionDiagnosticsTests(unittest.TestCase):
             argv.extend(extra)
 
         def collect(*args, **kwargs):
+            cache = kwargs["resolver"].identity_cache
+            if cache is not None:
+                cache.remember("radiohead", "Radiohead", set(),
+                               "a74b1b7f-71a5-4011-9441-d0b5e4122711")
             kwargs["editorial_health"].update({
                 f"Source {index}": {"status": "ok", "resolvedEvents": 1}
                 for index in range(source_count)
@@ -69,7 +73,7 @@ class FailedCollectionDiagnosticsTests(unittest.TestCase):
             self.assertTrue(health["editorialSourceGatePassed"])
 
     def test_output_aliases_are_rejected_before_collection(self):
-        for option in ["--health-output", "--editorial-output"]:
+        for option in ["--health-output", "--editorial-output", "--identity-cache"]:
             with self.subTest(option=option), tempfile.TemporaryDirectory() as directory:
                 folder = Path(directory)
                 original = b"do not overwrite"
@@ -78,6 +82,19 @@ class FailedCollectionDiagnosticsTests(unittest.TestCase):
                 self.assertEqual(code, 2)
                 self.assertEqual(calls, 0)
                 self.assertEqual((folder / "feed.json").read_bytes(), original)
+
+    def test_failed_feed_preserves_only_successful_identity_checks(self):
+        from verified_identity_cache import VerifiedIdentityCache
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            original = b"previous feed"
+            (folder / "feed.json").write_bytes(original)
+            cache_path = folder / "identities.json"
+            code, _, calls = self.invoke(folder, 1, extra=["--identity-cache", str(cache_path)])
+            self.assertEqual(code, 2)
+            self.assertEqual(calls, 1)
+            self.assertEqual((folder / "feed.json").read_bytes(), original)
+            self.assertEqual(VerifiedIdentityCache(cache_path).get("radiohead")["name"], "Radiohead")
 
 
 if __name__ == "__main__":

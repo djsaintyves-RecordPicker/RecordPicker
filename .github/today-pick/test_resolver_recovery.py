@@ -1,11 +1,31 @@
 """Offline checks: recovery never bypasses exact artist verification."""
 import unittest
+from unittest.mock import patch
+from datetime import datetime, timezone
 from urllib.error import HTTPError
 
 from collect_today_pick_feed import MusicBrainzArtistResolver
+import collect_today_pick_feed as collector
 
 
 class ResolverRecoveryTests(unittest.TestCase):
+    def test_collection_shares_verified_identities_between_sources(self):
+        resolver = self.make_resolver([self.artist('Radiohead')])
+        def editorial(_now, **kwargs):
+            self.assertIs(kwargs['resolver'], resolver)
+            self.assertEqual(resolver.resolve_exact('Radiohead'), 'Radiohead')
+            return [], []
+        def wikimedia(_now, **kwargs):
+            self.assertIs(kwargs['resolver'], resolver)
+            self.assertEqual(resolver.resolve_exact('Radiohead'), 'Radiohead')
+            return [], []
+        with patch.object(collector, 'MusicBrainzArtistResolver', return_value=resolver), \
+             patch.object(collector, 'editorial_events', side_effect=editorial), \
+             patch.object(collector, 'wikimedia_on_this_day_events', side_effect=wikimedia):
+            collector.collect(datetime.now(timezone.utc), include_musicbrainz=False,
+                              include_musicbrainz_events=False)
+        self.assertEqual(self.calls, 1)
+
     def make_resolver(self, responses):
         self.now = 0
         self.calls = 0

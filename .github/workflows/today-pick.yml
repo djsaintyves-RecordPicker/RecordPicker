@@ -23,12 +23,14 @@ jobs:
           path: site
 
       - name: Collect and validate public events
+        id: collect
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: |
           python3 site/.github/today-pick/collect_today_pick_feed.py \
             --output site/data/today-pick-v1.json \
             --health-output site/data/today-pick-source-health.json \
+            --identity-cache site/.github/today-pick/artist-identities.json \
             --regional-output-dir site/data/regions \
             --require-ticketmaster \
             --minimum-editorial-sources 6 \
@@ -66,4 +68,32 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/today-pick-v1.json data/today-pick-source-health.json data/regions
           git commit -m "Refresh Today Pick public feed"
+          git push
+
+      - name: Preserve verified identities independently of feed publication
+        if: ${{ !cancelled() && (steps.collect.outcome == 'success' || steps.collect.outcome == 'failure') }}
+        working-directory: site
+        run: |
+          set -euo pipefail
+          cache=.github/today-pick/artist-identities.json
+          if [ ! -f "$cache" ]; then
+            echo "No verified identity cache was produced."
+            exit 0
+          fi
+          python3 - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, ".github/today-pick")
+          from verified_identity_cache import VerifiedIdentityCache
+          VerifiedIdentityCache(Path(".github/today-pick/artist-identities.json"))
+          PY
+          git config user.name "Record Picker Feed Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- "$cache"
+          if git diff --cached --quiet -- "$cache"; then
+            exit 0
+          fi
+          # Never stage failed feed/health outputs here. A failed collection
+          # must remain failed even when its verified identities are retained.
+          git commit --only -m "Preserve verified Today Pick artist identities" -- "$cache"
           git push

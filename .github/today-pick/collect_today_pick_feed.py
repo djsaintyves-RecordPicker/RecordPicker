@@ -29,6 +29,7 @@ from urllib.request import Request, urlopen
 from xml.etree import ElementTree
 
 import build_today_pick_feed as builder
+from verified_identity_cache import VerifiedIdentityCache
 
 
 USER_AGENT = "RecordPickerTodayPick/1.10 (https://recordpicker.app/support/)"
@@ -490,10 +491,12 @@ class MusicBrainzArtistResolver:
         recovery_cooldown_seconds: float = 60,
         maximum_recovery_probes: int = 2,
         monotonic_clock: Callable[[], float] = time.monotonic,
+        identity_cache: VerifiedIdentityCache | None = None,
     ) -> None:
         self.json_fetcher = json_fetcher
         self.delay_seconds = max(0, delay_seconds)
         self.cache: dict[str, list[str]] = {}
+        self.identity_cache = identity_cache
         self.identity_roles: dict[str, set[str]] = {}
         self._last_request_at: float | None = None
         self._service_unavailable = False
@@ -545,6 +548,11 @@ class MusicBrainzArtistResolver:
             return None
         if key in self.cache:
             return self.cache[key][0] if self.cache[key] else None
+        if self.identity_cache is not None:
+            verified = self.identity_cache.get(normalized(value))
+            if verified is not None:
+                self.identity_roles[normalized(verified["name"])] = set(verified["roles"])
+                return verified["name"]
         if self._service_unavailable:
             if self._recovery_probes_remaining <= 0 or self._clock() < self._retry_service_at:
                 return None
@@ -569,7 +577,7 @@ class MusicBrainzArtistResolver:
             self._last_request_at = time.monotonic()
         expected = normalized(value)
         self._service_unavailable = False
-        candidates: list[tuple[int, str, set[str]]] = []
+        candidates: list[tuple[int, str, set[str], str]] = []
         for item in document.get("artists", []):
             if not isinstance(item, dict):
                 continue
@@ -596,10 +604,13 @@ class MusicBrainzArtistResolver:
                 and score >= MUSICBRAINZ_MINIMUM_SCORE
                 and (normalized(name) == expected or exact_alias)
             ):
-                candidates.append((score, name, roles))
+                candidates.append((score, name, roles, item.get("id", "")))
         resolved = sorted(candidates, key=lambda result: (-result[0], result[1]))
         if resolved:
             self.identity_roles[normalized(resolved[0][1])] = resolved[0][2]
+            if self.identity_cache is not None:
+                _, name, roles, mbid = resolved[0]
+                self.identity_cache.remember(expected, name, roles, mbid)
         self.cache[key] = [resolved[0][1]] if resolved else []
         return self.cache[key][0] if self.cache[key] else None
 
@@ -1425,11 +1436,15 @@ def collect(
     ticketmaster_api_key: str | None = None,
     ticketmaster_countries: Iterable[str] = (),
     editorial_health: dict[str, dict[str, Any]] | None = None,
+    resolver: MusicBrainzArtistResolver | None = None,
 ) -> tuple[dict[str, Any], list[str]]:
     events: list[dict[str, Any]] = []
     warnings: list[str] = []
+    # Keep verified identities and the bounded recovery budget across sources.
+    # A second resolver would forget editorial results and retry the same outage.
+    resolver = resolver or MusicBrainzArtistResolver()
     if include_editorial:
-        collected, messages = editorial_events(now, health=editorial_health)
+        collected, messages = editorial_events(now, health=editorial_health, resolver=resolver)
         events.extend(collected)
         warnings.extend(messages)
     if include_musicbrainz:
@@ -1441,7 +1456,7 @@ def collect(
         events.extend(collected)
         warnings.extend(messages)
     if include_wikimedia:
-        collected, messages = wikimedia_on_this_day_events(now)
+        collected, messages = wikimedia_on_this_day_events(now, resolver=resolver)
         events.extend(collected)
         warnings.extend(messages)
     if ticketmaster_api_key:
@@ -1476,6 +1491,8 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--editorial-output", type=Path)
     parser.add_argument("--health-output", type=Path)
+    parser.add_argument("--identity-cache", type=Path,
+                        help="optional durable cache of verified artist identities")
     parser.add_argument("--regional-output-dir", type=Path)
     parser.add_argument("--generated-at", help="fixed ISO-8601 timestamp")
     parser.add_argument("--ttl-hours", type=int, default=36)
@@ -1493,10 +1510,11 @@ def main() -> int:
     )
     arguments = parser.parse_args()
     output_paths = [path.resolve() for path in (
-        arguments.output, arguments.editorial_output, arguments.health_output
+        arguments.output, arguments.editorial_output, arguments.health_output,
+        arguments.identity_cache,
     ) if path is not None]
     if len(output_paths) != len(set(output_paths)):
-        parser.error("feed, editorial and health outputs must be distinct files")
+        parser.error("feed, editorial, health and identity cache outputs must be distinct files")
     now = (
         builder.parse_timestamp(arguments.generated_at, "generated-at")
         if arguments.generated_at
@@ -1511,6 +1529,10 @@ def main() -> int:
         except CollectionError as error:
             parser.error(str(error))
     editorial_health: dict[str, dict[str, Any]] = {}
+    try:
+        identity_cache = VerifiedIdentityCache(arguments.identity_cache) if arguments.identity_cache else None
+    except (ValueError, OSError) as error:
+        parser.error(f"invalid identity cache: {error}")
     document, warnings = collect(
         now,
         include_editorial=not arguments.without_editorial,
@@ -1520,7 +1542,12 @@ def main() -> int:
         ticketmaster_api_key=ticketmaster_api_key,
         ticketmaster_countries=arguments.ticketmaster_countries.split(","),
         editorial_health=editorial_health,
+        resolver=MusicBrainzArtistResolver(identity_cache=identity_cache),
     )
+    # Keep only successful identity checks even if the independent news-source
+    # gate below rejects publication. Never alter an event's freshness here.
+    if identity_cache is not None:
+        identity_cache.save()
     health_document = editorial_health_document(now, editorial_health)
     required_editorial_sources = max(0, arguments.minimum_editorial_sources)
     fresh_source_names = {
