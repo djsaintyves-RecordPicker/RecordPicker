@@ -419,7 +419,23 @@ def parse_editorial_feed(
     try:
         root = ElementTree.fromstring(payload)
     except ElementTree.ParseError as error:
-        raise CollectionError(f"{source.name}: invalid XML feed") from error
+        # Some publishers emit literal ampersands in titles/attributes. Escape
+        # only bare ampersands outside CDATA/comments, then require strict XML
+        # parsing again. Preserve existing entities and all article timestamps.
+        chunks = re.split(rb'(<!\[CDATA\[.*?\]\]>|<!--.*?-->)', payload, flags=re.S)
+        repaired = b''.join(
+            chunk if index % 2 else re.sub(
+                rb'&(?!#[0-9]+;|#x[0-9a-fA-F]+;|[A-Za-z_:][A-Za-z0-9_.:\-]*;)',
+                b'&amp;', chunk,
+            )
+            for index, chunk in enumerate(chunks)
+        )
+        if repaired == payload:
+            raise CollectionError(f"{source.name}: invalid XML feed") from error
+        try:
+            root = ElementTree.fromstring(repaired)
+        except ElementTree.ParseError as second_error:
+            raise CollectionError(f"{source.name}: invalid XML feed") from second_error
 
     items = root.findall(".//item")
     if not items:
