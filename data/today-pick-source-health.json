@@ -3,8 +3,8 @@
   "contributingSources": 14,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 14,
-  "generatedAt": "2026-09-13T16:19:02Z",
-  "reachableSources": 45,
+  "generatedAt": "2026-09-13T20:51:47Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 30,
+      "downloadedArticles": 32,
       "resolvedEvents": 4,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
