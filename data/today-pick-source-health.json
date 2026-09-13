@@ -1,55 +1,40 @@
 {
   "configuredSources": 46,
-  "contributingSources": 0,
-  "effectiveContributingSources": 7,
-  "fallback": {
-    "eventCount": 11,
-    "feedGeneratedAt": "2026-09-05T20:22:26Z",
-    "maximumAgeHours": 72,
-    "sourceCount": 7,
-    "sources": {
-      "BBC Music": 1,
-      "Consequence": 3,
-      "Pitchfork News": 1,
-      "Rolling Stone Music": 2,
-      "The Guardian Music": 1,
-      "The Line of Best Fit": 2,
-      "The Quietus": 1
-    }
-  },
-  "generatedAt": "2026-09-06T04:41:36Z",
-  "reachableSources": 45,
+  "contributingSources": 13,
+  "editorialSourceGatePassed": true,
+  "effectiveContributingSources": 13,
+  "generatedAt": "2026-09-13T04:50:32Z",
+  "reachableSources": 46,
+  "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 8,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 28,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "downloadedArticles": 24,
+      "resolvedEvents": 3,
       "status": "ok",
-      "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
-      "usingFallback": true
+      "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 30,
+      "downloadedArticles": 28,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 0,
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "noRecentArticles",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -60,11 +45,9 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "fallbackEvents": 3,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://consequence.net/category/music/feed/",
-      "usingFallback": true
+      "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
       "downloadedArticles": 15,
@@ -91,22 +74,21 @@
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
-      "downloadedArticles": 7,
+      "downloadedArticles": 8,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 3,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -123,7 +105,7 @@
     },
     "Le Monde Musiques": {
       "downloadedArticles": 20,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
     },
@@ -135,7 +117,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -165,7 +147,7 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
@@ -183,11 +165,9 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "resolvedEvents": 12,
       "status": "ok",
-      "url": "https://pitchfork.com/rss/news/",
-      "usingFallback": true
+      "url": "https://pitchfork.com/rss/news/"
     },
     "RFI Musique": {
       "downloadedArticles": 30,
@@ -196,7 +176,7 @@
       "url": "https://www.rfi.fr/fr/musique/rss"
     },
     "Rockdelux": {
-      "downloadedArticles": 38,
+      "downloadedArticles": 40,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
@@ -209,11 +189,9 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
-      "url": "https://www.rollingstone.com/music/music-news/feed/",
-      "usingFallback": true
+      "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
@@ -222,7 +200,7 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
@@ -241,48 +219,42 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 24,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "downloadedArticles": 19,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://www.theguardian.com/music/rss",
-      "usingFallback": true
+      "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "fallbackEvents": 2,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://www.thelineofbestfit.com/feed",
-      "usingFallback": true
+      "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "fallbackEvents": 1,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
-      "url": "https://thequietus.com/feed/",
-      "usingFallback": true
+      "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 12,
+      "downloadedArticles": 27,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
@@ -294,14 +266,14 @@
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
     "VAN Magazine": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://van-magazine.com/feed/"
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
