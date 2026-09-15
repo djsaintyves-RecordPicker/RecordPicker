@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 16,
+  "contributingSources": 14,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 16,
-  "generatedAt": "2026-09-15T17:00:55Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 14,
+  "generatedAt": "2026-09-15T21:22:31Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 25,
-      "resolvedEvents": 3,
+      "downloadedArticles": 28,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -45,12 +45,12 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
     "DJ Mag": {
-      "downloadedArticles": 14,
+      "downloadedArticles": 15,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://djmag.com/rss.xml"
@@ -74,7 +74,7 @@
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
-      "downloadedArticles": 8,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jazziz.com/feed/"
@@ -165,7 +165,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -189,15 +189,14 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 0,
-      "error": "HTTP Error 403: Forbidden",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 12,
+      "resolvedEvents": 1,
+      "status": "ok",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
