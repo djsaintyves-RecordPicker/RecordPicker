@@ -3,7 +3,7 @@
   "contributingSources": 14,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 14,
-  "generatedAt": "2026-09-15T21:22:31Z",
+  "generatedAt": "2026-09-16T04:51:15Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -32,9 +32,9 @@
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
-      "downloadedArticles": 0,
+      "downloadedArticles": 1,
       "resolvedEvents": 0,
-      "status": "noRecentArticles",
+      "status": "ok",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -159,13 +159,13 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -200,9 +200,9 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 0,
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "noRecentArticles",
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
@@ -224,7 +224,7 @@
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
@@ -248,7 +248,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
@@ -273,7 +273,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
