@@ -1,26 +1,26 @@
 {
   "configuredSources": 46,
-  "contributingSources": 14,
+  "contributingSources": 13,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 14,
-  "generatedAt": "2026-09-16T16:58:35Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 13,
+  "generatedAt": "2026-09-16T21:19:38Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 24,
+      "downloadedArticles": 25,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 27,
+      "downloadedArticles": 26,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -80,15 +80,16 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -165,7 +166,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -231,7 +232,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 21,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
