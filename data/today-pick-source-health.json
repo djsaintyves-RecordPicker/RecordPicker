@@ -3,19 +3,19 @@
   "contributingSources": 14,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 14,
-  "generatedAt": "2026-09-16T11:37:14Z",
+  "generatedAt": "2026-09-16T16:58:35Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 28,
-      "resolvedEvents": 3,
+      "downloadedArticles": 24,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -129,7 +129,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -165,7 +165,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -195,7 +195,7 @@
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://es.rollingstone.com/feed/"
     },
@@ -236,14 +236,14 @@
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
@@ -254,7 +254,7 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 23,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
@@ -273,7 +273,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
