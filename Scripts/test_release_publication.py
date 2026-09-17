@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise published 2.4 pages with the staged 2.4.1 announcement."""
+"""Exercise the published cross-platform 2.5 pages."""
 
 from __future__ import annotations
 
@@ -43,19 +43,11 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.4"
+        assert current == "2.5"
         next_release = state.get("next_release")
-        assert next_release == {
-            "version": "2.4.1",
-            "platforms": {
-                "iphone": "coming_soon",
-                "ipad": "coming_soon",
-                "mac": "coming_soon",
-                "watch": "coming_soon",
-            },
-        }
+        assert next_release is None
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.4", "ipad": "2.4", "watch": "2.4", "mac": "2.4"
+            "iphone": "2.5", "ipad": "2.5", "watch": "2.5", "mac": "2.5", "windows": "2.5"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -68,17 +60,17 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
-            assert home.count('data-release-version="2.4"') == 1
-            assert readme.count('data-release-version="2.4"') == 1
-            assert screenshots.count('data-release-version="2.4"') == 1
-            assert mac_app.count('data-release-version="2.4"') == 1
-            assert home.count('data-release-version="2.4.1"') == 1
-            assert readme.count('data-release-version="2.4.1"') == 1
-            assert screenshots.count('data-release-version="2.4.1"') == 1
-            assert mac_app.count('data-release-version="2.4.1"') == 1
+            assert home.count('data-release-version="2.5"') == 1
+            assert readme.count('data-release-version="2.5"') == 1
+            assert screenshots.count('data-release-version="2.5"') == 1
+            assert mac_app.count('data-release-version="2.5"') == 1
+            assert 'data-release-version="2.4.1"' not in home
+            assert 'data-release-version="2.4.1"' not in readme
+            assert 'data-release-version="2.4.1"' not in screenshots
+            assert 'data-release-version="2.4.1"' not in mac_app
             for page in (home, screenshots, mac_app):
-                assert "<h2>Record Picker 2.4 · Apple</h2>" in page
-            assert "Apple · " in readme
+                assert "<h2>Record Picker 2.5</h2>" in page
+            assert "Apple · Windows · " in home
             assert 'class="v24-feature-list"' in home
             assert 'class="v24-feature-list"' in readme
             assert 'class="v24-feature-list"' in mac_app
@@ -87,25 +79,20 @@ def main() -> None:
                 assert "Share a pick or listening journey" not in page
                 assert "sharing a pick or journey" not in page
             if root.name in {"fr", "fr-ca"}:
-                assert "Choisissez un nombre de disques ou une durée approximative" in home
-                assert "Cette file est distincte de la liste de souhaits" in home
-                assert "Sur Mac et iPad, une vue interactive révèle les liens" in home
-                assert "Pour ajouter un nouveau disque sur Mac, scannez son code-barres" in home
-                assert "Ajouter un nouveau disque par code-barres" in home
-                assert "Partager un parcours d’écoute" in home
-                assert "Avant de partager un parcours d’écoute" in home
-            assert "v24-graph-grid" in home
+                assert "Un graphe fidèle à vos filtres" in home
+                assert "Déplacer plusieurs disques ensemble" in home
+                assert "Des analyses d’écoute plus fiables" in home
+                assert "Votre collection raconte son histoire" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app
             screenshot_locale = "fr" if root.name in {"fr", "fr-ca"} else "en-us"
             expected_graph_path = f"/assets/screenshots/v24/{screenshot_locale}/collection-graph-interactive.webp"
-            assert expected_graph_path in home
             assert expected_graph_path in screenshots
             assert expected_graph_path in mac_app
             assert 'data-release-version="2.2"' not in home
             assert 'data-release-version="2.3"' in readme
             assert 'data-release-version="2.3"' not in screenshots
-            assert "current-release v24-preview" in home
+            assert "current-release v25-preview" in home
             assert re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', home)
             assert 'class="platform-beta-callout"' in home
             assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
@@ -118,7 +105,7 @@ def main() -> None:
             assert 'data-release-version="2.3.2"' not in home
             assert 'data-release-version="2.3.2"' in readme
             assert 'data-release-version="2.3.2"' not in screenshots
-            assert "current-release v24-preview" in home
+            assert "current-release v25-preview" in home
             assert "release-upcoming v232-release-card" not in readme
             assert "v232-gallery-marker" not in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
@@ -145,7 +132,7 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.4"' in mac_app
+            assert '"softwareVersion":"2.5"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
@@ -159,7 +146,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Record Picker 2.4 is published and 2.4.1 is announced across every localized site.")
+    print("OK: Record Picker 2.5 is published across every localized Apple and Windows site.")
 
 
 if __name__ == "__main__":

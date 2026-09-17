@@ -13,7 +13,7 @@ for directory, locale in LOCALES.items():
     assert f'<link rel="canonical" href="https://recordpicker.app/{route}/">' in text, directory
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
     assert '<p class="tagline">Windows</p>' in text, directory
-    assert 'data-windows-version="2.4.3"' in text, directory
+    assert 'data-windows-version="2.5"' in text, directory
     assert 'href="https://apps.microsoft.com/detail/9N2ZWRL4M3JC"' in text, directory
     assert 'Windows 11' in text, directory
     assert 'windows-preview' not in text, directory
