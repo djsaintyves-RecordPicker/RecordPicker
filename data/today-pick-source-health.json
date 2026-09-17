@@ -3,7 +3,7 @@
   "contributingSources": 13,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 13,
-  "generatedAt": "2026-09-16T21:19:38Z",
+  "generatedAt": "2026-09-17T04:55:06Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -74,7 +74,7 @@
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jazziz.com/feed/"
@@ -190,7 +190,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -249,7 +249,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 4,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
