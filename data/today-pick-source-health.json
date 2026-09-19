@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 29,
+  "contributingSources": 27,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 29,
-  "generatedAt": "2026-09-19T11:01:46Z",
+  "effectiveContributingSources": 27,
+  "generatedAt": "2026-09-19T15:53:52Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -153,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 14,
+      "resolvedEvents": 13,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -201,7 +201,7 @@
     },
     "Sequenza21": {
       "downloadedArticles": 1,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
     },
@@ -213,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 15,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -254,14 +254,14 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 13,
-      "resolvedEvents": 0,
+      "downloadedArticles": 23,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
     },
     "Télérama Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
