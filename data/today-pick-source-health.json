@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 26,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 26,
-  "generatedAt": "2026-09-18T20:55:37Z",
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-09-19T04:39:41Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -32,16 +32,16 @@
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 0,
+      "error": "HTTP Error 415: Unsupported Media Type",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
-      "downloadedArticles": 0,
-      "error": "HTTP Error 503: Service Unavailable",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 3,
+      "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
@@ -118,7 +118,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 10,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -148,7 +148,7 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
@@ -160,7 +160,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -201,9 +201,9 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 0,
-      "resolvedEvents": 0,
-      "status": "noRecentArticles",
+      "downloadedArticles": 1,
+      "resolvedEvents": 1,
+      "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
