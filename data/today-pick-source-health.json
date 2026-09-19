@@ -3,8 +3,8 @@
   "contributingSources": 27,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 27,
-  "generatedAt": "2026-09-19T15:53:52Z",
-  "reachableSources": 46,
+  "generatedAt": "2026-09-19T20:42:22Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 6,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -105,13 +106,13 @@
     },
     "Le Monde Musiques": {
       "downloadedArticles": 20,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.lemonde.fr/musiques/rss_full.xml"
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -207,7 +208,7 @@
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
