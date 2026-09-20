@@ -3,7 +3,7 @@
   "contributingSources": 29,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 29,
-  "generatedAt": "2026-09-20T11:26:38Z",
+  "generatedAt": "2026-09-20T16:08:37Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 7,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -213,13 +213,13 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 16,
+      "resolvedEvents": 18,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 15,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
