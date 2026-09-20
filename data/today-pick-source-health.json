@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 28,
-  "generatedAt": "2026-09-20T04:55:33Z",
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-09-20T11:26:38Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 23,
+      "downloadedArticles": 22,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -123,13 +123,13 @@
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -153,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -183,7 +183,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -213,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 14,
+      "resolvedEvents": 16,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
