@@ -78,7 +78,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/choose-vinyl-record/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/da/</loc>
@@ -722,7 +722,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/manage-vinyl-collection/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/nb/</loc>
@@ -842,7 +842,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/privacy/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/pt-br/</loc>
@@ -918,11 +918,11 @@
   </url>
 <url>
     <loc>https://recordpicker.app/random-vinyl-record-picker/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/readme/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/ru/</loc>
@@ -942,7 +942,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/ru/privacy/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/ru/random-vinyl-record-picker/</loc>
@@ -966,7 +966,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/support/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/sv/</loc>
@@ -1162,7 +1162,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/zh-hant/manage-vinyl-collection/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/zh-hant/privacy/</loc>
@@ -1184,9 +1184,9 @@
     <loc>https://recordpicker.app/zh-hant/support/</loc>
     <lastmod>2026-09-17</lastmod>
   </url>
-<url><loc>https://recordpicker.app/ios-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/watch-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/android-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/ios-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/watch-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/android-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/ar/ios-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/ar/watch-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/ar/android-app/</loc><lastmod>2026-09-17</lastmod></url>
@@ -1286,40 +1286,36 @@
 <url><loc>https://recordpicker.app/en-us/discogs-companion-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/en-us/import-discogs-csv/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/en-us/vinyl-duplicate-checker/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-us/ios-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-us/watch-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-us/android-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/ar/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/ca/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/ar/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/ca/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/da/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/de/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/el/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-au/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-ca/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-gb/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/en-us/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/en-au/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/en-ca/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/en-gb/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/es-es/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/es-mx/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/fi/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/fr/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/fi/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://recordpicker.app/fr/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/fr-ca/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/he/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/he/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/hi/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/id/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/it/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/ja/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/ko/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/ko/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/nb/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/nl/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/pl/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/pt-br/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/pt-pt/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/ru/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/ru/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 <url><loc>https://recordpicker.app/sv/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/th/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/tr/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/vi/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
 <url><loc>https://recordpicker.app/zh-hans/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
-<url><loc>https://recordpicker.app/zh-hant/windows-app/</loc><lastmod>2026-09-17</lastmod></url>
+<url><loc>https://recordpicker.app/zh-hant/windows-app/</loc><lastmod>2026-09-21</lastmod></url>
 </urlset>
