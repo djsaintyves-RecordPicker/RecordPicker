@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 29,
+  "contributingSources": 30,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 29,
-  "generatedAt": "2026-09-22T21:20:51Z",
-  "reachableSources": 44,
+  "effectiveContributingSources": 30,
+  "generatedAt": "2026-09-23T04:46:55Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 6,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -112,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -142,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -195,10 +194,9 @@
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 0,
-      "error": "HTTP Error 403: Forbidden",
+      "downloadedArticles": 12,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
@@ -215,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 17,
+      "resolvedEvents": 18,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -250,7 +248,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
@@ -275,7 +273,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
