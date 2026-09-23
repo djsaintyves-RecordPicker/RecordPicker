@@ -45,7 +45,7 @@ def main() -> None:
         current = state["current_release"]["version"]
         assert current == "2.5"
         next_release = state.get("next_release")
-        assert next_release is None
+        assert next_release == {"version": "2.6", "platforms": {p: "coming_soon" for p in ("iphone", "ipad", "watch", "mac", "windows")}}
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.5", "ipad": "2.5", "watch": "2.5", "mac": "2.5", "windows": "2.5"
         }
@@ -56,6 +56,9 @@ def main() -> None:
             readme = (root / "readme" / "index.html").read_text(encoding="utf-8")
             screenshots = (root / "screenshots" / "index.html").read_text(encoding="utf-8")
             mac_app = (root / "mac-app" / "index.html").read_text(encoding="utf-8")
+            for page in (home, readme, screenshots, mac_app):
+                assert page.count('data-release-version="2.6"') == 1
+                assert 'Record Picker 2.6 “Snow Leopard”' in page
             assert "v20-hero" in home and "v20-home-screens" in home
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
