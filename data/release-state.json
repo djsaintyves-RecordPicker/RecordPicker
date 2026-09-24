@@ -2,12 +2,12 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "2.5",
+    "version": "2.6",
     "platform_versions": {
-      "iphone": "2.5",
-      "ipad": "2.5",
-      "watch": "2.5",
-      "mac": "2.5",
+      "iphone": "2.6",
+      "ipad": "2.6",
+      "watch": "2.6",
+      "mac": "2.6",
       "windows": "2.5"
     },
     "platforms": {
@@ -21,11 +21,11 @@
       "iphone",
       "ipad",
       "watch",
-      "mac",
-      "windows"
+      "mac"
     ]
   },
   "historical_releases": [
+    "2.5",
     "2.4",
     "2.4.3",
     "2.3.2",
@@ -53,10 +53,6 @@
   "next_release": {
     "version": "2.6",
     "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
-      "watch": "coming_soon",
-      "mac": "coming_soon",
       "windows": "coming_soon"
     }
   }

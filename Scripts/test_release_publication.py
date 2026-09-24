@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published cross-platform 2.5 pages."""
+"""Exercise the published Apple 2.6 pages and Windows 2.5 availability."""
 
 from __future__ import annotations
 
@@ -43,11 +43,11 @@ def main() -> None:
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
-        assert current == "2.5"
+        assert current == "2.6"
         next_release = state.get("next_release")
-        assert next_release == {"version": "2.6", "platforms": {p: "coming_soon" for p in ("iphone", "ipad", "watch", "mac", "windows")}}
+        assert next_release == {"version": "2.6", "platforms": {"windows": "coming_soon"}}
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.5", "ipad": "2.5", "watch": "2.5", "mac": "2.5", "windows": "2.5"
+            "iphone": "2.6", "ipad": "2.6", "watch": "2.6", "mac": "2.6", "windows": "2.5"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -63,17 +63,18 @@ def main() -> None:
             assert ".avif" in home and ".webp" in home
             assert f'data-release-version="{current}"' in home
             assert f'data-release-version="{current}"' in readme
-            assert home.count('data-release-version="2.5"') == 1
+            assert home.count('data-release-version="2.5"') == 0
             assert readme.count('data-release-version="2.5"') == 1
-            assert screenshots.count('data-release-version="2.5"') == 1
-            assert mac_app.count('data-release-version="2.5"') == 1
+            assert screenshots.count('data-release-version="2.5"') == 0
+            assert mac_app.count('data-release-version="2.5"') == 0
             assert 'data-release-version="2.4.1"' not in home
             assert 'data-release-version="2.4.1"' not in readme
             assert 'data-release-version="2.4.1"' not in screenshots
             assert 'data-release-version="2.4.1"' not in mac_app
             for page in (home, screenshots, mac_app):
-                assert "<h2>Record Picker 2.5</h2>" in page
-            assert "Apple · Windows · " in home
+                assert '<h2>Record Picker 2.6 “Snow Leopard”</h2>' in page
+            assert "Windows 2.5 · " in home
+            assert "Windows 2.6 · " in home
             assert 'class="v24-feature-list"' in home
             assert 'class="v24-feature-list"' in readme
             assert 'class="v24-feature-list"' in mac_app
@@ -95,7 +96,7 @@ def main() -> None:
             assert 'data-release-version="2.2"' not in home
             assert 'data-release-version="2.3"' in readme
             assert 'data-release-version="2.3"' not in screenshots
-            assert "current-release v25-preview" in home
+            assert "current-release v26-preview" in home
             assert re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', home)
             assert 'class="platform-beta-callout"' in home
             assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
@@ -108,7 +109,7 @@ def main() -> None:
             assert 'data-release-version="2.3.2"' not in home
             assert 'data-release-version="2.3.2"' in readme
             assert 'data-release-version="2.3.2"' not in screenshots
-            assert "current-release v25-preview" in home
+            assert "current-release v26-preview" in home
             assert "release-upcoming v232-release-card" not in readme
             assert "v232-gallery-marker" not in screenshots
             assert readme.count('<div class="context-pair feature-intro">') == 1
@@ -135,11 +136,20 @@ def main() -> None:
             assert "random-record-a" not in home
             assert "random-picked-cover" not in home
             assert "data-previous-versions" not in screenshots
-            assert '"softwareVersion":"2.5"' in mac_app
+            assert '"softwareVersion":"2.6"' in mac_app
             if root != target and not root.name.startswith("en-"):
                 for page in (home, readme, screenshots, mac_app):
                     assert "assets/screenshots/v20/en-us/" not in page
 
+        for root in roots:
+            windows = (root / "windows-app/index.html").read_text()
+            assert 'data-windows-version="2.5"' in windows
+            assert 'Record Picker · 2.5</span>' in windows
+            assert 'data-windows-version="2.6"' not in windows
+            for route in ('ios-app/index.html', 'watch-app/index.html', 'mac-app/index.html'):
+                apple = (root / route).read_text()
+                assert '\"softwareVersion\":\"2.6\"' in apple
+                assert 'Record Picker · 2.6</span>' in apple
         css = (target / "quality.css").read_text(encoding="utf-8")
         for selector in (
             ".v20-hero-showcase",
@@ -149,7 +159,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Record Picker 2.5 is published across every localized Apple and Windows site.")
+    print("OK: Apple 2.6 is published across every locale; Windows remains 2.5.")
 
 
 if __name__ == "__main__":

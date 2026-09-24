@@ -30,6 +30,12 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Reddit: https://www.reddit.com/user/RepulsiveInsect919/
 - Contact: support@recordpicker.app
 
+## Current Apple release
+
+Record Picker 2.6 “Snow Leopard” is available on iPhone, iPad, Apple Watch and Mac.
+It improves collection backups, cover artwork restoration and reliability.
+Windows remains at 2.5; Windows 2.6 is coming soon.
+
 ## App Store version history
 
 ## Platform roadmap

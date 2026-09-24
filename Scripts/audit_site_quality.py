@@ -22,8 +22,8 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-CURRENT_RELEASE_DATE = "2026-09-17"
-MAC_RELEASE_DATE = "2026-09-17"
+CURRENT_RELEASE_DATE = "2026-09-24"
+MAC_RELEASE_DATE = "2026-09-24"
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -103,7 +103,8 @@ def main() -> None:
     required_platforms = set(
         RELEASE_STATE["current_release"]["required_platforms_for_full_release"]
     )
-    if set(platform_states) != required_platforms:
+    platform_versions = RELEASE_STATE["current_release"]["platform_versions"]
+    if {p for p in platform_states if platform_versions.get(p) == CURRENT_VERSION} != required_platforms:
         errors.append("release-state platform list does not match the publication gate")
     if PUBLICATION_PHASE == "full" and set(platform_states.values()) != {"available"}:
         errors.append("full publication still has a platform that is not available")
@@ -219,6 +220,8 @@ def main() -> None:
         footer_version = (
             RELEASE_STATE["current_release"]["platform_versions"]["mac"]
             if kind == "mac-app/index.html"
+            else RELEASE_STATE["current_release"]["platform_versions"]["windows"]
+            if kind == "windows-app/index.html"
             else CURRENT_VERSION
         )
         if f'<span id="site-footer-version">Record Picker · {footer_version}</span>' not in text:
@@ -577,7 +580,7 @@ def main() -> None:
                     errors.append(f"{relative}: next {NEXT_VERSION} status missing")
             elif version in HISTORICAL_VERSIONS and status:
                 errors.append(f"{relative}: historical {version} still has a status")
-        if NEXT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
+        if NEXT_VERSION and NEXT_VERSION != CURRENT_VERSION and f'data-release-version="{NEXT_VERSION}"' in text:
             next_release_pages += 1
             next_block = re.search(
                 rf'<(?:section|article)\b[^>]*data-release-version="{re.escape(NEXT_VERSION)}"[^>]*>',
@@ -690,7 +693,7 @@ def main() -> None:
             f"found {release_pages}"
         )
     # Staged releases appear on the home, history, screenshot and Mac pages.
-    expected_next_pages = expected_locales * 4 if PUBLICATION_PHASE == "full" and NEXT_VERSION else 0
+    expected_next_pages = expected_locales * 4 if PUBLICATION_PHASE == "full" and NEXT_VERSION and NEXT_VERSION != CURRENT_VERSION else 0
     if next_release_pages != expected_next_pages:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
