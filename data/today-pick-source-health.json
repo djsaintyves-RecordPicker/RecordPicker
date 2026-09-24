@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 31,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 31,
-  "generatedAt": "2026-09-23T21:31:10Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-09-24T04:53:49Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 25,
+      "downloadedArticles": 26,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 6,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -141,19 +142,19 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -183,7 +184,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -213,7 +214,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
