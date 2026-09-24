@@ -1,0 +1,278 @@
+{
+  "release": "2.6",
+  "reviewed_at": "2026-09-24",
+  "assets": {
+    "assets/screenshots/v26/en-us/mac-home.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "30fb070d1074a9a821ecaae7d510205b089208a950421a70efa5fd21598f2b88",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-home.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "30fb070d1074a9a821ecaae7d510205b089208a950421a70efa5fd21598f2b88",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-collection.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "40e10c4041bdc92dbb4513bf3b840999f02b44831c540c170353362b890ad49f",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-collection.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "40e10c4041bdc92dbb4513bf3b840999f02b44831c540c170353362b890ad49f",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-todays-pick.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "acce798cf5c6fe9083be9586125d4313fa2edc2ba25cce3bc38e5f7e06bb7b8b",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-todays-pick.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "acce798cf5c6fe9083be9586125d4313fa2edc2ba25cce3bc38e5f7e06bb7b8b",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-mood-pick.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "257436856986843ca237bb0ed4941c7980455ddda1a6e85a74ae222d0ae9acca",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-mood-pick.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "257436856986843ca237bb0ed4941c7980455ddda1a6e85a74ae222d0ae9acca",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-random-pick.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "aa13e2a16f89a2c670e161333816c3d00b3181a9ade53f8974af8eef44bc9347",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-random-pick.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "aa13e2a16f89a2c670e161333816c3d00b3181a9ade53f8974af8eef44bc9347",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-data-quality.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "15be43774b0ad04e87844d2fc331128c2183da835b14a9935d472b9cee1b91aa",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-data-quality.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "15be43774b0ad04e87844d2fc331128c2183da835b14a9935d472b9cee1b91aa",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-search-results.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "a1250c3df42e9951ef3794b1d7e0c0d4c044464ad39ba05752d401437afb2b0d",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-search-results.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "a1250c3df42e9951ef3794b1d7e0c0d4c044464ad39ba05752d401437afb2b0d",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-collection-graph.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "7e3600a191732f6cb2313bf94fdd808d47b401dcf0763ea6594840b27e7209ef",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-collection-graph.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "7e3600a191732f6cb2313bf94fdd808d47b401dcf0763ea6594840b27e7209ef",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-graph-relationships.webp": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "57eeb0deb36059c4ba7ab127feeabe4005e948423d4fc35df1d57af06722db4d",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/mac-graph-relationships.avif": {
+      "version": "2.6",
+      "platform": "mac",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 2.6 (41), captured from installed app on 2026-09-24",
+      "source_sha256": "57eeb0deb36059c4ba7ab127feeabe4005e948423d4fc35df1d57af06722db4d",
+      "width": 1224,
+      "height": 768
+    },
+    "assets/screenshots/v26/en-us/iphone-collection.webp": {
+      "version": "2.6",
+      "platform": "iphone",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Authentic Apple capture from the Record Picker 2.6 campaign sources",
+      "source_sha256": "2b79cab80d8a02c52159620fe627b64963cac41af689d46bf144b283fb07e7b0",
+      "width": 1105,
+      "height": 2400
+    },
+    "assets/screenshots/v26/en-us/iphone-collection.avif": {
+      "version": "2.6",
+      "platform": "iphone",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Authentic Apple capture from the Record Picker 2.6 campaign sources",
+      "source_sha256": "2b79cab80d8a02c52159620fe627b64963cac41af689d46bf144b283fb07e7b0",
+      "width": 1105,
+      "height": 2400
+    },
+    "assets/screenshots/v26/en-us/android-collection.webp": {
+      "version": "2.6",
+      "platform": "android",
+      "language": "en-us",
+      "kind": "beta-screenshot",
+      "source": "Record Picker 2.6 development/beta campaign source; not a public release",
+      "source_sha256": "e3887f170c08feca0aef3d9f3ea145b6ef49ad19a30c87bd8cbebcbc137938d6",
+      "width": 1080,
+      "height": 2400
+    },
+    "assets/screenshots/v26/en-us/android-collection.avif": {
+      "version": "2.6",
+      "platform": "android",
+      "language": "en-us",
+      "kind": "beta-screenshot",
+      "source": "Record Picker 2.6 development/beta campaign source; not a public release",
+      "source_sha256": "e3887f170c08feca0aef3d9f3ea145b6ef49ad19a30c87bd8cbebcbc137938d6",
+      "width": 1080,
+      "height": 2400
+    },
+    "assets/screenshots/v26/fr/iphone-collection.webp": {
+      "version": "2.6",
+      "platform": "iphone",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Authentic Apple capture from the Record Picker 2.6 campaign sources",
+      "source_sha256": "a2a04ea872fc8b8cf4910130af75cb267891a594d338c99dbfe1bad53b7d0e29",
+      "width": 1105,
+      "height": 2400
+    },
+    "assets/screenshots/v26/fr/iphone-collection.avif": {
+      "version": "2.6",
+      "platform": "iphone",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Authentic Apple capture from the Record Picker 2.6 campaign sources",
+      "source_sha256": "a2a04ea872fc8b8cf4910130af75cb267891a594d338c99dbfe1bad53b7d0e29",
+      "width": 1105,
+      "height": 2400
+    },
+    "assets/screenshots/v26/fr/android-collection.webp": {
+      "version": "2.6",
+      "platform": "android",
+      "language": "fr",
+      "kind": "beta-screenshot",
+      "source": "Record Picker 2.6 development/beta campaign source; not a public release",
+      "source_sha256": "491a8b90b7b2be79c2faa658a7fa008023cdcb6cffdb8c650ab048f9480cc73e",
+      "width": 1080,
+      "height": 2400
+    },
+    "assets/screenshots/v26/fr/android-collection.avif": {
+      "version": "2.6",
+      "platform": "android",
+      "language": "fr",
+      "kind": "beta-screenshot",
+      "source": "Record Picker 2.6 development/beta campaign source; not a public release",
+      "source_sha256": "491a8b90b7b2be79c2faa658a7fa008023cdcb6cffdb8c650ab048f9480cc73e",
+      "width": 1080,
+      "height": 2400
+    }
+  },
+  "unavailable": [
+    "No verified 2.5+ iPad or Apple Watch screenshot was found; prior screenshots are not published."
+  ],
+  "unchanged_artwork": [
+    "App icons and branding: version-independent identity.",
+    "Album-cover Random Pick demo: interactive illustration, not an app screenshot."
+  ],
+  "retired": [
+    "All pre-2.5 app screenshots in public HTML and image sitemap",
+    "Older Android recruitment composite",
+    "Older screenshot sets inside the press download"
+  ]
+}

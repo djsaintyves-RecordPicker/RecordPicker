@@ -1433,3 +1433,9 @@ main .kicker,
     grid-template-columns: 1fr;
   }
 }
+
+/* Capture provenance is visible when a localized screenshot is unavailable. */
+.screenshot-provenance{display:block!important;margin:10px 0 0;color:var(--muted,#777);font-size:12px;line-height:1.5;text-align:center;}
+.platform-shot-group:has(.shot-grid:empty){display:none;}
+
+.context-pair:not(:has(figure)){grid-template-columns:1fr;}

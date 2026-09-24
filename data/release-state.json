@@ -42,13 +42,14 @@
     "1.1"
   ],
   "publication_assets": {
-    "hero": "en-us/mac-home.jpeg",
+    "hero": "en-us/mac-home.webp",
     "screenshots": [
-      "en-us/iphone-random-pick.png",
-      "en-us/ipad-random-pick.png",
-      "en-us/mac-home.jpeg"
+      "en-us/mac-home.webp",
+      "en-us/mac-collection.webp",
+      "fr/iphone-collection.webp"
     ],
-    "social": "assets/social/social-home.png"
+    "social": "assets/social/social-home.png",
+    "screenshot_directory": "v26"
   },
   "next_release": {
     "version": "2.6",

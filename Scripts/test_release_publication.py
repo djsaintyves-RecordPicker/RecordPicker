@@ -89,8 +89,8 @@ def main() -> None:
                 assert "Votre collection raconte son histoire" in home
             assert "v24-graph-grid" in screenshots
             assert "v24-graph-grid" in mac_app
-            screenshot_locale = "fr" if root.name in {"fr", "fr-ca"} else "en-us"
-            expected_graph_path = f"/assets/screenshots/v24/{screenshot_locale}/collection-graph-interactive.webp"
+            screenshot_locale = "en-us"
+            expected_graph_path = f"/assets/screenshots/v26/{screenshot_locale}/mac-collection-graph.webp"
             assert expected_graph_path in screenshots
             assert expected_graph_path in mac_app
             assert 'data-release-version="2.2"' not in home
@@ -101,7 +101,7 @@ def main() -> None:
             assert 'class="platform-beta-callout"' in home
             assert "support@recordpicker.app?subject=Record%20Picker%20Android%20beta%20volunteer" in home
             assert "12" in home
-            assert "android-beta-" in home and ".webp" in home
+            assert "android-collection.webp" in home
             assert ">Android<" in home and ">Windows<" in home
             assert home.count('class="future-platform"') == 2
             assert "release-upcoming v23-release-card" not in readme
@@ -125,7 +125,7 @@ def main() -> None:
             assert 'class="media-section current-release v20-preview' not in screenshots
             assert f'data-preview-gallery="{current}"' not in screenshots
             if root == target or root.name in {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}:
-                assert "watch-random-pick" in screenshots
+                assert "watch-random-pick" not in screenshots
             assert "data-random-pick-demo" in home
             assert 'class="random-vinyl"' in home
             assert 'class="random-pick-button"' in home

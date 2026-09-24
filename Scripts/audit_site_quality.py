@@ -237,7 +237,7 @@ def main() -> None:
         if relative.parts[0] in {"en-au", "en-ca", "en-gb", "en-us"}:
             if "Today Pick" in text:
                 errors.append(f"{relative}: stale Today Pick product name")
-        if re.search(r'assets/screenshots/(?:v1[0-9]/|iphone/|ipad/|mac/)', text):
+        if re.search(r'assets/screenshots/(?:v1[0-9]/|v2[0-4]/|iphone/|ipad/|mac/)', text):
             errors.append(f"{relative}: obsolete screenshot remains")
         for forbidden_visual in (
             "assets/screenshots/iphone/import.jpeg",
@@ -319,11 +319,11 @@ def main() -> None:
                 else "fr"
             )
             expected_visual = (
-                f"assets/screenshots/v20/{visual_locale}/mac-home.webp"
+                f"assets/screenshots/v26/en-us/mac-home.webp"
             )
             if expected_visual not in text:
                 errors.append(
-                    f"{relative}: localized Mac 2.0 home visual missing"
+                    f"{relative}: verified Mac 2.6 home visual missing"
                 )
             if 'class="mac-intro"' in text:
                 hero_visual = re.search(
@@ -331,7 +331,7 @@ def main() -> None:
                     text,
                     flags=re.DOTALL,
                 )
-                if not hero_visual or "<figcaption" in hero_visual.group(1):
+                if not hero_visual or '<figcaption class="screenshot-provenance">' not in hero_visual.group(1):
                     errors.append(
                         f"{relative}: Mac hero visual missing or still captioned"
                     )
@@ -347,16 +347,16 @@ def main() -> None:
                     flags=re.DOTALL,
                 )
                 expected_search = (
-                    f"assets/screenshots/v20/{visual_locale}/mac-search-results.webp"
+                    f"assets/screenshots/v26/en-us/mac-search-results.webp"
                 )
                 expected_mood = (
-                    f"assets/screenshots/v20/{visual_locale}/mac-mood-pick.webp"
+                    f"assets/screenshots/v26/en-us/mac-mood-pick.webp"
                 )
                 if len(feature_cards) != 3 or expected_search not in feature_cards[1]:
                     errors.append(
                         f"{relative}: localized Mac search-result illustration missing from middle card"
                     )
-                elif "<figcaption" in feature_cards[1]:
+                elif '<figcaption class="screenshot-provenance">' not in feature_cards[1]:
                     errors.append(
                         f"{relative}: redundant caption remains on Mac search-result illustration"
                     )
@@ -368,7 +368,7 @@ def main() -> None:
                     errors.append(
                         f"{relative}: localized Mood Pick illustration missing from third card"
                     )
-                elif "<figcaption" in feature_cards[2]:
+                elif '<figcaption class="screenshot-provenance">' not in feature_cards[2]:
                     errors.append(
                         f"{relative}: redundant caption remains on Mood Pick illustration"
                     )
@@ -453,7 +453,7 @@ def main() -> None:
                 if (
                     not press_review
                     or "https://www.mac4ever.com/audio/197509-" not in press_review.group(0)
-                    or f"assets/screenshots/v20/{review_locale}/mac-mood-pick" not in press_review.group(0)
+                    or f"assets/screenshots/v26/en-us/mac-mood-pick" not in press_review.group(0)
                 ):
                     errors.append(f"{relative}: French Mac4Ever press spotlight incomplete")
             elif press_review:
@@ -469,7 +469,7 @@ def main() -> None:
                 or "mac-home.webp" not in hero_showcase.group(1)
             ):
                 errors.append(f"{relative}: localized three-choice screen missing from hero")
-            elif "<figcaption" in hero_showcase.group(1):
+            elif '<figcaption class="screenshot-provenance">' not in hero_showcase.group(1):
                 errors.append(f"{relative}: redundant homepage hero caption remains")
             if 'class="v20-home-preview"' in text:
                 errors.append(f"{relative}: three-choice screen is duplicated below the hero")
@@ -480,7 +480,7 @@ def main() -> None:
             )
             if (
                 not home_gallery
-                or "iphone-todays-pick.webp" not in home_gallery.group(1)
+                or "iphone-collection.webp" not in home_gallery.group(1)
                 or "mac-collection.webp" not in home_gallery.group(1)
             ):
                 errors.append(f"{relative}: complete localized homepage gallery missing")
@@ -496,7 +496,7 @@ def main() -> None:
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "en-us"
-            if expected_home_locale and f"assets/screenshots/v20/{expected_home_locale}/mac-home" not in text:
+            if expected_home_locale and f"assets/screenshots/v26/en-us/mac-home" not in text:
                 errors.append(f"{relative}: French Mac home preview missing")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
@@ -510,7 +510,7 @@ def main() -> None:
             errors.append(f"{relative}: forbidden tutorial image")
         if re.search(r'<(?:img\b[^>]*\bsrc|source\b[^>]*\bsrcset)="(?:"|\?)', text):
             errors.append(f"{relative}: empty or query-only image source")
-        if re.search(r'<figcaption(?![^>]*class="visually-hidden")', text):
+        if re.search(r'<figcaption(?![^>]*class="(?:visually-hidden|screenshot-provenance)")', text):
             errors.append(f"{relative}: visible figure caption remains")
         for image_tag in re.findall(r'<img\b[^>]*>', text):
             for attribute in ("alt", "width", "height"):
@@ -520,7 +520,7 @@ def main() -> None:
         functional_images = [
             re.sub(r'\.(?:avif|webp|png|jpe?g)(?:\?[^"\']*)?$', '', source, flags=re.IGNORECASE)
             for source in re.findall(
-                r'<img\b[^>]*src="([^"]*assets/screenshots/v20/[^"]+)"', text, flags=re.IGNORECASE
+                r'<img\b[^>]*src="([^"]*assets/screenshots/v26/[^"]+)"', text, flags=re.IGNORECASE
             )
         ]
         repeated_images = {source for source in functional_images if functional_images.count(source) > 1}
@@ -543,10 +543,8 @@ def main() -> None:
             if "random-record-a" in text or "random-pick-marker" in text or "random-picked-cover" in text:
                 errors.append(f"{relative}: obsolete abstract Random Pick illustration remains")
         if kind == "screenshots/index.html":
-            directory_locale = relative.parts[0] if relative.parts and relative.parts[0] in LOCALES else "fr"
-            watch_locales = {"fr", "fr-ca", "en-us", "en-au", "en-ca", "en-gb"}
-            if directory_locale in watch_locales and "watch-random-pick" not in text:
-                errors.append(f"{relative}: localized watchOS 2.0 preview missing")
+            if 'watch-random-pick' in text or 'ipad-random-pick' in text:
+                errors.append(f"{relative}: unverified iPad/Watch screenshot remains")
             if re.search(
                 r'<section class="media-section[^\"]*v20-preview[^\"]*"',
                 text,
@@ -632,7 +630,7 @@ def main() -> None:
             errors.append(f"{relative}: stale macOS 1.8 label")
 
     media_sitemap = (ROOT / "sitemap-media.xml").read_text(encoding="utf-8")
-    if re.search(r"assets/screenshots/(?:v1[0-9]/|iphone/|ipad/|mac/)", media_sitemap):
+    if re.search(r"assets/screenshots/(?:v1[0-9]/|v2[0-4]/|iphone/|ipad/|mac/)", media_sitemap):
         errors.append("sitemap-media.xml: obsolete screenshot remains")
     for forbidden_visual in (
         "assets/screenshots/iphone/import.jpeg",
@@ -754,7 +752,7 @@ def main() -> None:
         if image.stat().st_size > 600_000:
             errors.append(f"{image.relative_to(ROOT)} exceeds 600 KB")
     for relative in RELEASE_STATE["publication_assets"]["screenshots"]:
-        source = ROOT / "assets" / "screenshots" / "v20" / relative
+        source = ROOT / "assets" / "screenshots" / RELEASE_STATE["publication_assets"]["screenshot_directory"] / relative
         for suffix, maximum in ((".webp", 300_000), (".avif", 250_000)):
             derivative = source.with_suffix(suffix)
             if not derivative.is_file():
@@ -765,6 +763,14 @@ def main() -> None:
         for page in (ROOT / language).rglob("*.html"):
             if '<html lang=' in page.read_text(encoding="utf-8") and 'dir="rtl"' not in page.read_text(encoding="utf-8"):
                 errors.append(f"{page.relative_to(ROOT)}: RTL direction missing")
+    manifest = json.loads((ROOT / "data/media-release-manifest.json").read_text())
+    for page in pages:
+        for source in re.findall(r'<img\b[^>]*src="([^"]*assets/screenshots/[^"]+)"', page.read_text()):
+            asset = source[source.index("assets/screenshots/"):]
+            if asset not in manifest["assets"]:
+                errors.append(f"{page.relative_to(ROOT)}: screenshot without verified provenance {asset}")
+            elif tuple(map(int, manifest["assets"][asset]["version"].split("."))) < (2, 5):
+                errors.append(f"{page.relative_to(ROOT)}: screenshot predates version 2.5")
     if errors:
         print("\n".join(errors[:100]))
         raise SystemExit(f"Quality audit failed with {len(errors)} error(s).")
