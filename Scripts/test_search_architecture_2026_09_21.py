@@ -106,6 +106,6 @@ for sitemap_name in ("sitemap.xml", "sitemap-media.xml"):
         url = f"https://recordpicker.app/{route}/"
         block = re.search(rf"<url>.*?<loc>{re.escape(url)}</loc>.*?</url>", sitemap, re.DOTALL)
         assert block, (sitemap_name, url)
-        assert "<lastmod>2026-09-21</lastmod>" in block.group(0), (sitemap_name, url)
+        assert "<lastmod>2026-09-26</lastmod>" in block.group(0), (sitemap_name, url)
 
 print("OK: international English content, Bing descriptions, canonical menus and sitemap dates are coherent.")

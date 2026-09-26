@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify temporary Android and Windows screenshots are not published."""
+"""Verify only authenticated platform screenshots are published."""
 
 from announce_android_pc_development import COPY, ROOT
 
@@ -14,9 +14,14 @@ for directory in COPY:
     assert "/assets/screenshots/multiplatform/" not in android, directory
 
     windows = (root / "windows-app/index.html").read_text(encoding="utf-8")
-    assert "platform-screenshot" not in windows, directory
+    assert "/assets/screenshots/v26/windows/windows-random-pick-fr.webp" in windows, directory
+    assert "authentic Microsoft Store capture" in windows, directory
     assert "/assets/screenshots/multiplatform/" not in windows, directory
+
+    screenshots = (root / "screenshots/index.html").read_text(encoding="utf-8")
+    assert "/assets/screenshots/v26/windows/windows-random-pick-fr.webp" in screenshots, directory
+    assert "https://apps.microsoft.com/detail/9N2ZWRL4M3JC" in screenshots, directory
 
 assert not (ROOT / "assets/screenshots/multiplatform").exists()
 
-print(f"Verified temporary platform screenshots are absent across {len(COPY)} locales.")
+print(f"Verified authentic Windows screenshots and absent temporary assets across {len(COPY)} locales.")

@@ -261,6 +261,36 @@
       "source_sha256": "491a8b90b7b2be79c2faa658a7fa008023cdcb6cffdb8c650ab048f9480cc73e",
       "width": 1080,
       "height": 2400
+    },
+    "assets/screenshots/v26/windows/windows-random-pick-fr.jpg": {
+      "version": "2.6",
+      "platform": "windows",
+      "language": "fr-fr",
+      "kind": "screenshot",
+      "source": "Record Picker Windows 2.6, authentic Microsoft Store listing capture retrieved on 2026-09-26",
+      "source_sha256": "97f9657e0d15df706ae1e93043374758efc7724e3b147f2d4f7da0b831cb12ff",
+      "width": 1920,
+      "height": 1032
+    },
+    "assets/screenshots/v26/windows/windows-random-pick-fr.webp": {
+      "version": "2.6",
+      "platform": "windows",
+      "language": "fr-fr",
+      "kind": "screenshot",
+      "source": "Record Picker Windows 2.6, authentic Microsoft Store listing capture retrieved on 2026-09-26",
+      "source_sha256": "97f9657e0d15df706ae1e93043374758efc7724e3b147f2d4f7da0b831cb12ff",
+      "width": 1920,
+      "height": 1032
+    },
+    "assets/screenshots/v26/windows/windows-random-pick-fr.avif": {
+      "version": "2.6",
+      "platform": "windows",
+      "language": "fr-fr",
+      "kind": "screenshot",
+      "source": "Record Picker Windows 2.6, authentic Microsoft Store listing capture retrieved on 2026-09-26",
+      "source_sha256": "97f9657e0d15df706ae1e93043374758efc7724e3b147f2d4f7da0b831cb12ff",
+      "width": 1920,
+      "height": 1032
     }
   },
   "unavailable": [

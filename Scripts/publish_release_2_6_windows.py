@@ -12,6 +12,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 MICROSOFT_STORE = "https://apps.microsoft.com/detail/9N2ZWRL4M3JC"
 RELEASE_DATE = "2026-09-24"
+ALL_OPERATING_SYSTEMS = "iOS 26 / iPadOS 26 / watchOS 26 / macOS 26 / Windows 11"
 PLATFORM_ROUTES = {"ios-app", "watch-app", "mac-app", "android-app", "windows-app"}
 SITE_LANGUAGES = [
     "ar", "de", "en-AU", "en-CA", "en-US", "en-GB", "ca", "ko", "zh-Hans",
@@ -65,7 +66,9 @@ def replace_json_ld(text: str, relative: Path) -> str:
                 }
             if is_cross_platform_page:
                 systems = str(item.get("operatingSystem", ""))
-                if "Windows 11" not in systems:
+                if not systems or systems == "Windows 11":
+                    item["operatingSystem"] = ALL_OPERATING_SYSTEMS
+                elif "Windows 11" not in systems:
                     item["operatingSystem"] = f"{systems} / Windows 11".strip(" /")
                 download = item.get("downloadUrl")
                 if isinstance(download, str) and download != MICROSOFT_STORE:

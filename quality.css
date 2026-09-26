@@ -1439,3 +1439,27 @@ main .kicker,
 .platform-shot-group:has(.shot-grid:empty){display:none;}
 
 .context-pair:not(:has(figure)){grid-template-columns:1fr;}
+.windows-shot-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.windows-authentic {
+  overflow: hidden;
+  background: #fff;
+}
+
+.windows-authentic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.press-kit-status {
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, #fff 92%, currentColor 8%);
+}
