@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 35,
+  "contributingSources": 34,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 35,
-  "generatedAt": "2026-09-26T05:00:14Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 34,
+  "generatedAt": "2026-09-26T11:27:04Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 8,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -99,7 +100,7 @@
     },
     "Jenesaispop": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jenesaispop.com/feed/"
     },
@@ -141,7 +142,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -183,7 +184,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -231,7 +232,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 20,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
