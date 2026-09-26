@@ -613,8 +613,8 @@ def main() -> None:
                 platform_expansion_pages += 1
             else:
                 errors.append(f"{relative}: Android and Windows development announcement missing")
-            if text.count('class="future-platform"') != 2:
-                errors.append(f"{relative}: Android and Windows hero badges missing")
+            if text.count('class="future-platform"') != 1 or '<span>Windows</span>' not in text:
+                errors.append(f"{relative}: released Windows or Android development badge missing")
             if 'class="platform-beta-callout"' not in text:
                 errors.append(f"{relative}: Android beta recruitment call-to-action missing")
             for forbidden in ("v18-showcase", "release-history", "support-band"):

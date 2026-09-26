@@ -7,6 +7,9 @@ from announce_release_2_3_1 import LOCALES, ROOT
 
 for directory, locale in LOCALES.items():
     root = ROOT / directory if directory else ROOT
+    home = (root / "index.html").read_text(encoding="utf-8")
+    assert '<span>Windows</span><span class="future-platform"><b>Android</b>' in home, directory
+    assert '<span class="future-platform"><b>Windows</b>' not in home, directory
     page = root / "windows-app/index.html"
     text = page.read_text(encoding="utf-8")
     route = f"{directory}/windows-app" if directory not in {"", "en-us"} else "windows-app"

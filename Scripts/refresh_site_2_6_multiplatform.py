@@ -25,6 +25,17 @@ def add_store_to_footer(text: str) -> str:
     return text[:match.start(3)] + link + text[match.start(3):]
 
 
+def promote_windows_badge(text: str) -> str:
+    """Show released Windows beside the released Apple platforms."""
+    return re.sub(
+        r'(<span class="future-platform"><b>Android</b><small>.*?</small></span>)'
+        r'<span class="future-platform"><b>Windows</b><small>.*?</small></span>',
+        r'<span>Windows</span>\1',
+        text,
+        count=1,
+    )
+
+
 def add_windows_visual(text: str, *, gallery: bool) -> str:
     marker = f'{WINDOWS_IMAGE}.webp'
     if marker in text:
@@ -121,6 +132,8 @@ def main() -> None:
         text = path.read_text(encoding="utf-8")
         updated = text.replace("quality.css?v=20260828-v24-notes", "quality.css?v=20260926-v26-windows")
         updated = add_store_to_footer(updated)
+        if relative.name == "index.html" and len(relative.parts) <= 2:
+            updated = promote_windows_badge(updated)
         if "windows-app" in relative.parts:
             updated = add_windows_visual(updated, gallery=False)
         if relative.parts and relative.parts[-2:] == ("screenshots", "index.html"):
