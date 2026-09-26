@@ -89,12 +89,20 @@ def update_press_web(text: str) -> str:
     )
     text = text.replace(old_actions, new_actions)
     notice_anchor = '<p class="lead">Record Picker 2.6 permet de cataloguer'
+    current_notice = '<p class="press-kit-status" role="note"><strong>Dossiers à jour :</strong> les documents, textes et visuels reflètent Record Picker 2.6 sur les plateformes Apple et Windows.</p>'
+    old_notice = '<p class="press-kit-status" role="note"><strong>Mise à jour en cours :</strong> la page web reflète la version 2.6 Apple et Windows. Les dossiers PDF restent temporairement centrés sur les plateformes Apple.</p>'
+    text = text.replace(old_notice, current_notice)
     if notice_anchor in text and 'press-kit-status' not in text:
         text = text.replace(
             notice_anchor,
-            '<p class="press-kit-status" role="note"><strong>Mise à jour en cours :</strong> la page web reflète la version 2.6 Apple et Windows. Les dossiers PDF restent temporairement centrés sur les plateformes Apple.</p>' + notice_anchor,
+            current_notice + notice_anchor,
             1,
         )
+    text = text.replace('PDF · 5 pages', 'PDF · 6 pages')
+    text = text.replace(
+        'Les deux dossiers, les textes de présentation et huit visuels de presse prêts à télécharger.',
+        'Les deux dossiers, les textes de présentation et des visuels authentiques Apple et Windows prêts à télécharger.',
+    )
     return text
 
 
@@ -103,6 +111,26 @@ def update_reviews_web(text: str) -> str:
         "Les articles consacrés à Record Picker, l’app Apple qui aide à cataloguer et redécouvrir une collection de vinyles et de CD.",
         "Les articles consacrés à Record Picker, l’app Apple et Windows qui aide à cataloguer et redécouvrir une collection de vinyles et de CD.",
     )
+
+
+def add_weekend_campaign_link(text: str, relative: Path) -> str:
+    if "data-weekend-campaign" in text:
+        return text
+    if relative.as_posix() == "en-gb/index.html":
+        block = (
+            '<aside class="campaign-site-banner" data-weekend-campaign>'
+            '<strong>#HelpRecordPicker</strong><span>One exceptional weekend to help Record Picker get seen.</span>'
+            '<a href="/help-record-picker/">See how to help</a></aside>'
+        )
+    elif relative.as_posix() == "fr/index.html":
+        block = (
+            '<aside class="campaign-site-banner" data-weekend-campaign>'
+            '<strong>#HelpRecordPicker</strong><span>Un week-end d’action exceptionnel pour rendre Record Picker visible.</span>'
+            '<a href="/fr/aidez-record-picker/">Voir comment aider</a></aside>'
+        )
+    else:
+        return text
+    return text.replace('<main id="main-content">', '<main id="main-content">' + block, 1)
 
 
 def update_screenshot_metadata(text: str, relative: Path) -> str:
@@ -132,6 +160,7 @@ def main() -> None:
         text = path.read_text(encoding="utf-8")
         updated = text.replace("quality.css?v=20260828-v24-notes", "quality.css?v=20260926-v26-windows")
         updated = add_store_to_footer(updated)
+        updated = add_weekend_campaign_link(updated, relative)
         if relative.name == "index.html" and len(relative.parts) <= 2:
             updated = promote_windows_badge(updated)
         if "windows-app" in relative.parts:

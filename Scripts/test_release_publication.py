@@ -37,6 +37,29 @@ def main() -> None:
         # A second pass proves that the publication audit remains repeatable.
         run("python3", str(audit), cwd=target)
 
+        campaign_pages = {
+            "help-record-picker/index.html": (
+                'lang="en-GB"',
+                'href="https://recordpicker.app/help-record-picker/"',
+                'href="/fr/aidez-record-picker/"',
+                "#HelpRecordPicker",
+                "No reward, no script and no five-star request",
+            ),
+            "fr/aidez-record-picker/index.html": (
+                'lang="fr-FR"',
+                'href="https://recordpicker.app/fr/aidez-record-picker/"',
+                'href="/help-record-picker/"',
+                "#HelpRecordPicker",
+                "pas de demande de cinq étoiles",
+            ),
+        }
+        for relative, required_fragments in campaign_pages.items():
+            campaign = (target / relative).read_text(encoding="utf-8")
+            assert all(fragment in campaign for fragment in required_fragments)
+            assert "/assets/campaign/basile-records.jpeg" in campaign
+            assert "https://apps.apple.com/" in campaign
+            assert "https://apps.microsoft.com/detail/9N2ZWRL4M3JC" in campaign
+
         state = json.loads(
             (target / "data" / "release-state.json").read_text(encoding="utf-8")
         )
@@ -104,7 +127,8 @@ def main() -> None:
             assert "12" in home
             assert "android-collection.webp" in home
             assert ">Android<" in home and ">Windows<" in home
-            assert home.count('class="future-platform"') == 2
+            assert home.count('class="future-platform"') == 1
+            assert '<span>Windows</span>' in home
             assert "release-upcoming v23-release-card" not in readme
             assert "v23-gallery-marker" not in screenshots
             assert 'data-release-version="2.3.2"' not in home

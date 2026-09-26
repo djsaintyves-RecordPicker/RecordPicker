@@ -82,8 +82,16 @@ def main() -> None:
     audit_homepage_descriptions()
     audit_remaining_localized_copy()
     # Snory Teller is an independent app; RP release rules apply only to RP pages.
-    pages = sorted(path for path in ROOT.rglob("*.html")
-                   if path.relative_to(ROOT).parts[0] != "snory-teller")
+    temporary_campaign_pages = {
+        Path("help-record-picker/index.html"),
+        Path("fr/aidez-record-picker/index.html"),
+    }
+    pages = sorted(
+        path
+        for path in ROOT.rglob("*.html")
+        if path.relative_to(ROOT).parts[0] != "snory-teller"
+        and path.relative_to(ROOT) not in temporary_campaign_pages
+    )
     errors: list[str] = []
     content_pages = 0
     release_pages = 0

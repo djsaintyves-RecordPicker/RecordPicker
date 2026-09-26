@@ -1463,3 +1463,27 @@ main .kicker,
   border-radius: 0.85rem;
   background: color-mix(in srgb, #fff 92%, currentColor 8%);
 }
+.campaign-page{background:#fff;color:#111}
+.campaign-shell{max-width:1240px;margin:0 auto;padding:72px 32px 48px}
+.campaign-hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:56px;align-items:start}
+.campaign-copy h1{font-size:clamp(3rem,7vw,6.6rem);line-height:.94;letter-spacing:-.055em;max-width:12ch;margin:.18em 0 .28em}
+.campaign-lead{font-size:clamp(1.25rem,2.1vw,1.75rem);line-height:1.42;max-width:34em;color:#3f3f46}
+.campaign-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:40px 0 30px}
+.campaign-actions article{border:1px solid #e4e4e7;border-radius:24px;padding:24px;background:#fff;box-shadow:0 14px 45px rgba(24,24,27,.06)}
+.campaign-actions article>strong{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#ef233c;color:#fff;font-size:1.05rem}
+.campaign-actions h2{font-size:1.35rem;margin:18px 0 8px}
+.campaign-actions p{font-size:1rem;line-height:1.55;color:#52525b;margin:0}
+.campaign-ctas{align-items:stretch}
+.campaign-ctas .button{white-space:normal;text-align:center}
+.campaign-platforms{margin-top:28px;font-size:1.08rem}
+.campaign-hashtags{font-size:1.05rem;font-weight:750;color:#d91d38;overflow-wrap:anywhere}
+.campaign-basile{margin:0;background:#f7f7f8;border:1px solid #e4e4e7;border-radius:30px;padding:14px;box-shadow:0 22px 70px rgba(24,24,27,.11)}
+.campaign-basile img{display:block;width:100%;height:min(67vh,760px);object-fit:cover;object-position:52% 52%;border-radius:20px}
+.campaign-basile figcaption{padding:14px 8px 6px;color:#52525b;font-size:.96rem;line-height:1.45}
+.campaign-note{margin-top:52px;padding:38px;border-radius:28px;background:#f7f7f8;border:1px solid #e4e4e7}
+.campaign-note h2{font-size:2rem;margin:0 0 8px}
+.campaign-note p{font-size:1.15rem;line-height:1.6;max-width:62em;margin:0;color:#3f3f46}
+.campaign-site-banner{display:flex;align-items:center;justify-content:center;gap:18px;padding:15px 24px;background:#fff;border-bottom:1px solid #e4e4e7;color:#18181b;text-align:center}
+.campaign-site-banner strong{color:#d91d38}.campaign-site-banner a{font-weight:750;color:#d91d38;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.campaign-shell{padding:48px 20px}.campaign-hero{grid-template-columns:1fr}.campaign-actions{grid-template-columns:1fr}.campaign-basile{max-width:520px}.campaign-copy h1{font-size:clamp(3rem,14vw,5.2rem)}}
+@media(max-width:700px){.campaign-site-banner{align-items:flex-start;flex-direction:column;gap:5px;text-align:left}}
