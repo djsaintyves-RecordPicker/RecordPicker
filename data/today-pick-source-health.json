@@ -3,7 +3,7 @@
   "contributingSources": 34,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 34,
-  "generatedAt": "2026-09-26T16:24:58Z",
+  "generatedAt": "2026-09-26T21:11:44Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 17,
+      "downloadedArticles": 18,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -39,7 +39,7 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
@@ -112,7 +112,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -142,7 +142,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -154,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 12,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -190,7 +190,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
