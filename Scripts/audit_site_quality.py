@@ -703,9 +703,9 @@ def main() -> None:
             f"found {current_gallery_pages}"
         )
     if PUBLICATION_PHASE == "full":
-        # Android and Windows are announced but not downloadable yet, so their
-        # pages intentionally use WebPage metadata without a softwareVersion.
-        expected_metadata_pages = content_pages - (expected_locales * 2)
+        # Android is still in development and intentionally uses WebPage
+        # metadata. Windows 2.6 is public and exposes SoftwareApplication data.
+        expected_metadata_pages = content_pages - expected_locales
         if current_metadata_pages != expected_metadata_pages:
             errors.append(
                 f"only {current_metadata_pages}/{expected_metadata_pages} applicable pages expose "

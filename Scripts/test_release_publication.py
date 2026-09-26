@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published Apple 2.6 pages and Windows 2.5 availability."""
+"""Exercise the published Record Picker 2.6 pages on Apple and Windows."""
 
 from __future__ import annotations
 
@@ -45,9 +45,9 @@ def main() -> None:
         current = state["current_release"]["version"]
         assert current == "2.6"
         next_release = state.get("next_release")
-        assert next_release == {"version": "2.6", "platforms": {"windows": "coming_soon"}}
+        assert next_release is None
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.6", "ipad": "2.6", "watch": "2.6", "mac": "2.6", "windows": "2.5"
+            "iphone": "2.6", "ipad": "2.6", "watch": "2.6", "mac": "2.6", "windows": "2.6"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -73,8 +73,9 @@ def main() -> None:
             assert 'data-release-version="2.4.1"' not in mac_app
             for page in (home, screenshots, mac_app):
                 assert '<h2>Record Picker 2.6 “Snow Leopard”</h2>' in page
-            assert "Windows 2.5 · " in home
-            assert "Windows 2.6 · " in home
+            assert "Windows 2.5 · " not in home
+            assert "Windows 2.6 · " not in home
+            assert "Mac · Windows · " in home
             assert 'class="v24-feature-list"' in home
             assert 'class="v24-feature-list"' in readme
             assert 'class="v24-feature-list"' in mac_app
@@ -143,9 +144,9 @@ def main() -> None:
 
         for root in roots:
             windows = (root / "windows-app/index.html").read_text()
-            assert 'data-windows-version="2.5"' in windows
-            assert 'Record Picker · 2.5</span>' in windows
-            assert 'data-windows-version="2.6"' not in windows
+            assert 'data-windows-version="2.6"' in windows
+            assert 'Record Picker · 2.6</span>' in windows
+            assert 'id="windows-app-schema"' in windows
             for route in ('ios-app/index.html', 'watch-app/index.html', 'mac-app/index.html'):
                 apple = (root / route).read_text()
                 assert '\"softwareVersion\":\"2.6\"' in apple
@@ -159,7 +160,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Apple 2.6 is published across every locale; Windows remains 2.5.")
+    print("OK: Record Picker 2.6 is published across Apple and Windows in every locale.")
 
 
 if __name__ == "__main__":

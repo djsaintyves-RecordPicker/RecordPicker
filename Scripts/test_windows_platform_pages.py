@@ -9,19 +9,22 @@ for directory, locale in LOCALES.items():
     root = ROOT / directory if directory else ROOT
     page = root / "windows-app/index.html"
     text = page.read_text(encoding="utf-8")
-    route = f"{directory}/windows-app" if directory else "windows-app"
+    route = f"{directory}/windows-app" if directory not in {"", "en-us"} else "windows-app"
     assert f'<link rel="canonical" href="https://recordpicker.app/{route}/">' in text, directory
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
     assert '<p class="tagline">Windows</p>' in text, directory
-    assert 'data-windows-version="2.5"' in text, directory
+    assert 'data-windows-version="2.6"' in text, directory
     assert 'href="https://apps.microsoft.com/detail/9N2ZWRL4M3JC"' in text, directory
     assert 'Windows 11' in text, directory
     assert 'windows-preview' not in text, directory
     assert '"@type":"WebPage"' in text, directory
     assert f'"url":"https://recordpicker.app/{route}/"' in text, directory
-    assert '"@type":"SoftwareApplication"' not in text, directory
-    assert '"downloadUrl"' not in text, directory
-    assert '"offers"' not in text, directory
+    assert 'id="windows-app-schema"' in text, directory
+    assert '"@type":"SoftwareApplication"' in text, directory
+    assert '"softwareVersion":"2.6"' in text, directory
+    assert '"operatingSystem":"Windows 11"' in text, directory
+    assert '"downloadUrl":"https://apps.microsoft.com/detail/9N2ZWRL4M3JC"' in text, directory
+    assert '"offers"' in text, directory
     assert "Android beta testers" not in text, directory
     assert "bêta-testeurs Android" not in text, directory
 
@@ -36,7 +39,7 @@ for directory, locale in LOCALES.items():
 for sitemap_name in ("sitemap.xml", "sitemap-media.xml"):
     sitemap = (ROOT / sitemap_name).read_text(encoding="utf-8")
     for directory in LOCALES:
-        route = f"{directory}/windows-app" if directory else "windows-app"
+        route = f"{directory}/windows-app" if directory not in {"", "en-us"} else "windows-app"
         assert f"<loc>https://recordpicker.app/{route}/</loc>" in sitemap, route
 
 print(f"Verified localized Windows pages and navigation across {len(LOCALES)} locales.")

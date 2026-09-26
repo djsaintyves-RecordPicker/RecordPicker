@@ -2,7 +2,7 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Windows 2.5 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
+Windows 2.6 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
 Android remains in development.
 
 The Android closed beta is recruiting 12 testers worldwide. The beta is
@@ -30,17 +30,16 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - Reddit: https://www.reddit.com/user/RepulsiveInsect919/
 - Contact: support@recordpicker.app
 
-## Current Apple release
+## Current release
 
-Record Picker 2.6 “Snow Leopard” is available on iPhone, iPad, Apple Watch and Mac.
+Record Picker 2.6 “Snow Leopard” is available on iPhone, iPad, Apple Watch, Mac and Windows.
 It improves collection backups, cover artwork restoration and reliability.
-Windows remains at 2.5; Windows 2.6 is coming soon.
 
 ## App Store version history
 
 ## Platform roadmap
 
-- Windows: 2.5 available on the Microsoft Store (Windows 11, x64 and ARM64).
+- Windows: 2.6 available on the Microsoft Store (Windows 11, x64 and ARM64).
 - Android: in development.
 
 Localized Windows product pages are available under `/windows-app/` for every
