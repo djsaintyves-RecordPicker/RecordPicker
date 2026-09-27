@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 37,
+  "contributingSources": 36,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 37,
-  "generatedAt": "2026-09-27T05:20:37Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 36,
+  "generatedAt": "2026-09-27T12:04:57Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,7 +39,7 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 8,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -153,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 12,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -183,7 +184,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 2,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -213,7 +214,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 17,
+      "resolvedEvents": 18,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -230,8 +231,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 19,
-      "resolvedEvents": 2,
+      "downloadedArticles": 18,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
