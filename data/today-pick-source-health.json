@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 36,
+  "contributingSources": 35,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 36,
-  "generatedAt": "2026-09-27T21:22:24Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 35,
+  "generatedAt": "2026-09-28T05:26:16Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 7,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 8,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -112,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -160,13 +159,13 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
     "Pitchfork News": {
       "downloadedArticles": 29,
-      "resolvedEvents": 13,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -184,7 +183,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -201,31 +200,31 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 17,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 5,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
