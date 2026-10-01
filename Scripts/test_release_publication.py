@@ -68,7 +68,23 @@ def main() -> None:
         current = state["current_release"]["version"]
         assert current == "2.6"
         next_release = state.get("next_release")
-        assert next_release is None
+        assert next_release['version'] == '2.7'
+        assert next_release['platforms'] == {
+            p: 'coming_soon' for p in ('iphone', 'ipad', 'watch', 'mac')
+        }
+        notes = json.loads((target / 'data/release-notes/2.7.json').read_text())
+        from html import unescape
+        for root in (target, *(target / locale for locale in LOCALES)):
+            for route in ('index.html', 'readme/index.html', 'screenshots/index.html', 'mac-app/index.html'):
+                page = (root / route).read_text()
+                match = re.search(r'<(section|article)\b[^>]*data-release-version="2\.7"[^>]*>.*?</\1>', page, re.S)
+                assert match, (root, route)
+                assert 'current-release' not in match.group()
+                assert 'Windows' not in match.group()
+                assert any(note in unescape(match.group()) for note in notes.values())
+        before = {p: p.read_bytes() for p in target.rglob('*.html')}
+        run('python3', 'Scripts/announce_release_2_7.py', cwd=target)
+        assert all(p.read_bytes() == content for p, content in before.items())
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.6", "ipad": "2.6", "watch": "2.6", "mac": "2.6", "windows": "2.6"
         }

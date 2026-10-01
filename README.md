@@ -35,6 +35,13 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 Record Picker 2.6 “Snow Leopard” is available on iPhone, iPad, Apple Watch, Mac and Windows.
 It improves collection backups, cover artwork restoration and reliability.
 
+Apple 2.7 is coming soon on iPhone, iPad, Apple Watch and Mac, pending App Store review.
+It brings more varied Listening Journeys, saved Collection Stories, a combined
+acquisition/listening timeline and collection-wide missing-information lookup.
+Camera import on iPhone, improved metadata and review lookup, Mac shortcuts and
+listening synchronisation are also improved. Windows 2.6 remains the public
+Microsoft Store release; the Windows 2.7 MSI is delivered separately for testing.
+
 ## App Store version history
 
 ## Platform roadmap
