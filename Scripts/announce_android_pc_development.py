@@ -144,6 +144,8 @@ CTA_ROW = re.compile(r'<div class="cta-row">')
 def update_beta_banner(text: str, locale: str) -> str:
     """Put the localized Android recruitment banner above the home hero."""
     text = re.sub(r'<aside\b[^>]*(?:data-weekend-campaign|data-beta-recruitment)[^>]*>.*?</aside>', '', text, flags=re.S)
+    # Refresh the stylesheet cache so returning visitors see the yellow background.
+    text = re.sub(r'(quality\.css)\?v=[^"]+', r'\1?v=20261001-beta-banner', text)
     title, _, button = BETA_COPY[locale]
     # Reuse the existing application link and its email template.
     match = re.search(r'href="(mailto:support@recordpicker\.app\?subject=Record%20Picker%20Android%20beta%20volunteer[^"]*)"', text)
