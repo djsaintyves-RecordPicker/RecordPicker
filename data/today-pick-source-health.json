@@ -3,7 +3,7 @@
   "contributingSources": 32,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 32,
-  "generatedAt": "2026-10-01T05:57:45Z",
+  "generatedAt": "2026-10-01T13:18:42Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -69,7 +69,7 @@
     },
     "Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://groove.de/feed/"
     },
@@ -80,14 +80,14 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 9,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
       "downloadedArticles": 10,
-      "resolvedEvents": 7,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 11,
+      "resolvedEvents": 13,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -123,7 +123,7 @@
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
@@ -135,7 +135,7 @@
     },
     "Musikexpress": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.musikexpress.de/feed/"
     },
@@ -153,13 +153,13 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 15,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -183,7 +183,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 8,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -213,13 +213,13 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 19,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 12,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
@@ -236,14 +236,14 @@
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "downloadedArticles": 9,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 11,
+      "resolvedEvents": 12,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
@@ -254,7 +254,7 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 17,
+      "downloadedArticles": 15,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
@@ -266,7 +266,7 @@
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
     "VAN Magazine": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://van-magazine.com/feed/"
