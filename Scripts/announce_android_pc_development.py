@@ -141,6 +141,23 @@ BADGE_ROW = re.compile(r'<div class="badge-row">.*?</div>', flags=re.DOTALL)
 CTA_ROW = re.compile(r'<div class="cta-row">')
 
 
+def update_beta_banner(text: str, locale: str) -> str:
+    """Put the localized Android recruitment banner above the home hero."""
+    text = re.sub(r'<aside\b[^>]*(?:data-weekend-campaign|data-beta-recruitment)[^>]*>.*?</aside>', '', text, flags=re.S)
+    title, _, button = BETA_COPY[locale]
+    # Reuse the existing application link and its email template.
+    match = re.search(r'href="(mailto:support@recordpicker\.app\?subject=Record%20Picker%20Android%20beta%20volunteer[^"]*)"', text)
+    if not match:
+        raise RuntimeError('Android beta application link missing: ' + locale)
+    block = ('<aside class="beta-site-banner" data-beta-recruitment>'
+             f'<strong>{escape(title)}</strong>'
+             f'<a href="{match.group(1)}">{escape(button)}</a></aside>')
+    marker = '<main id="main-content">'
+    if marker not in text:
+        raise RuntimeError('Home main landmark missing: ' + locale)
+    return text.replace(marker, marker + block, 1)
+
+
 def announcement(locale: str) -> str:
     kicker, title, detail = COPY[locale]
     beta_title, _, beta_button = BETA_COPY[locale]
@@ -203,6 +220,7 @@ def update(locale: str) -> bool:
     if not facts:
         raise RuntimeError(f"Facts band not found in {path}")
     updated = updated[:facts.end()] + block + updated[facts.end():]
+    updated = update_beta_banner(updated, locale)
     if BADGE_ROW.search(updated):
         updated = BADGE_ROW.sub(hero_badges(locale), updated, count=1)
     elif CTA_ROW.search(updated):

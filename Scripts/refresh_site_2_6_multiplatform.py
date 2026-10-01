@@ -113,24 +113,12 @@ def update_reviews_web(text: str) -> str:
     )
 
 
-def add_weekend_campaign_link(text: str, relative: Path) -> str:
-    if "data-weekend-campaign" in text:
+def add_beta_campaign_link(text: str, relative: Path) -> str:
+    from announce_android_pc_development import BETA_COPY, update_beta_banner
+    locale = '' if relative.as_posix() == 'index.html' else relative.parent.as_posix()
+    if relative.name != 'index.html' or locale not in BETA_COPY:
         return text
-    if relative.as_posix() == "en-gb/index.html":
-        block = (
-            '<aside class="campaign-site-banner" data-weekend-campaign>'
-            '<strong>#HelpRecordPicker</strong><span>One exceptional weekend to help Record Picker get seen.</span>'
-            '<a href="/help-record-picker/">See how to help</a></aside>'
-        )
-    elif relative.as_posix() == "fr/index.html":
-        block = (
-            '<aside class="campaign-site-banner" data-weekend-campaign>'
-            '<strong>#HelpRecordPicker</strong><span>Un week-end d’action exceptionnel pour rendre Record Picker visible.</span>'
-            '<a href="/fr/aidez-record-picker/">Voir comment aider</a></aside>'
-        )
-    else:
-        return text
-    return text.replace('<main id="main-content">', '<main id="main-content">' + block, 1)
+    return update_beta_banner(text, locale)
 
 
 def update_screenshot_metadata(text: str, relative: Path) -> str:
@@ -160,7 +148,7 @@ def main() -> None:
         text = path.read_text(encoding="utf-8")
         updated = text.replace("quality.css?v=20260828-v24-notes", "quality.css?v=20260926-v26-windows")
         updated = add_store_to_footer(updated)
-        updated = add_weekend_campaign_link(updated, relative)
+        updated = add_beta_campaign_link(updated, relative)
         if relative.name == "index.html" and len(relative.parts) <= 2:
             updated = promote_windows_badge(updated)
         if "windows-app" in relative.parts:
