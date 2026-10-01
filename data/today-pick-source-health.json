@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 31,
+  "contributingSources": 32,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 31,
-  "generatedAt": "2026-09-30T22:17:27Z",
+  "effectiveContributingSources": 32,
+  "generatedAt": "2026-10-01T05:57:45Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -74,7 +74,7 @@
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 7,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jazziz.com/feed/"
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -183,13 +183,13 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -248,7 +248,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
@@ -273,7 +273,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
