@@ -12,6 +12,10 @@ ROUTES = ('index.html', 'readme/index.html', 'screenshots/index.html', 'mac-app/
 
 
 def main():
+    state = json.loads((ROOT / 'data/release-state.json').read_text())
+    if all(state['current_release']['platform_versions'].get(p) == '2.7' for p in ('iphone', 'ipad', 'watch', 'mac')):
+        print('Apple 2.7 is available; announcement left unchanged.')
+        return
     notes = json.loads((ROOT / 'data/release-notes/2.7.json').read_text())
     changed = 0
     for directory, locale in LOCALES.items():

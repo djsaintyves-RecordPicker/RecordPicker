@@ -22,8 +22,10 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-CURRENT_RELEASE_DATE = "2026-09-24"
-MAC_RELEASE_DATE = "2026-09-24"
+CURRENT_RELEASE_DATE = "2026-10-03"
+MAC_RELEASE_DATE = "2026-10-03"
+WINDOWS_RELEASE_DATE = "2026-09-24"
+SCREENSHOT_VERSION = RELEASE_STATE['publication_assets']['screenshot_version']
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
     "https://recordpicker.app/" + RELEASE_STATE["publication_assets"]["social"]
@@ -168,6 +170,8 @@ def main() -> None:
                     expected_release_date = (
                         MAC_RELEASE_DATE
                         if kind == "mac-app/index.html"
+                        else WINDOWS_RELEASE_DATE
+                        if kind == "windows-app/index.html"
                         else CURRENT_RELEASE_DATE
                     )
                     if schema.get("dateModified") != expected_release_date:
@@ -499,7 +503,7 @@ def main() -> None:
                 text,
                 flags=re.DOTALL,
             )
-            if not gallery_section or f"<h2>Record Picker {CURRENT_VERSION}</h2>" not in gallery_section.group(0):
+            if not gallery_section or f"<h2>Record Picker {SCREENSHOT_VERSION}</h2>" not in gallery_section.group(0):
                 errors.append(f"{relative}: homepage gallery heading does not match its visuals")
             elif '<p class="lead">' in gallery_section.group(0):
                 errors.append(f"{relative}: redundant homepage gallery promise remains")
@@ -601,11 +605,14 @@ def main() -> None:
                 errors.append(f"{relative}: staged {NEXT_VERSION} release state is missing")
             if next_block and "current-release" in next_block.group(0):
                 errors.append(f"{relative}: next {NEXT_VERSION} is incorrectly marked current")
-        if f'data-release-gallery="{CURRENT_VERSION}"' in text:
+        screenshot_version = RELEASE_STATE['publication_assets']['screenshot_version']
+        if f'data-release-gallery="{screenshot_version}"' in text:
             current_gallery_pages += 1
         metadata_version = (
             RELEASE_STATE["current_release"]["platform_versions"]["mac"]
             if kind == "mac-app/index.html"
+            else RELEASE_STATE["current_release"]["platform_versions"]["windows"]
+            if kind == "windows-app/index.html"
             else CURRENT_VERSION
         )
         if f'"softwareVersion":"{metadata_version}"' in text:

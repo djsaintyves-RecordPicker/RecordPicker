@@ -2,12 +2,12 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "2.6",
+    "version": "2.7",
     "platform_versions": {
-      "iphone": "2.6",
-      "ipad": "2.6",
-      "watch": "2.6",
-      "mac": "2.6",
+      "iphone": "2.7",
+      "ipad": "2.7",
+      "watch": "2.7",
+      "mac": "2.7",
       "windows": "2.6"
     },
     "platforms": {
@@ -21,11 +21,11 @@
       "iphone",
       "ipad",
       "watch",
-      "mac",
-      "windows"
+      "mac"
     ]
   },
   "historical_releases": [
+    "2.6",
     "2.5",
     "2.4",
     "2.4.3",
@@ -50,16 +50,7 @@
       "fr/iphone-collection.webp"
     ],
     "social": "assets/social/social-home.png",
-    "screenshot_directory": "v26"
-  },
-  "next_release": {
-    "version": "2.7",
-    "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
-      "watch": "coming_soon",
-      "mac": "coming_soon"
-    },
-    "distribution": "app_store_review_pending"
+    "screenshot_directory": "v26",
+    "screenshot_version": "2.6"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-10-03T06:10:57.935867+00:00",
+  "appID": "6780422305",
+  "versions": [
+    {
+      "platform": "MAC_OS",
+      "version": "2.7",
+      "appStoreState": "READY_FOR_SALE"
+    },
+    {
+      "platform": "IOS",
+      "version": "2.7",
+      "appStoreState": "READY_FOR_SALE"
+    }
+  ]
+}
