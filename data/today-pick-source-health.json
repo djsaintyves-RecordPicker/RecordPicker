@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 32,
+  "contributingSources": 31,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 32,
-  "generatedAt": "2026-10-03T11:41:44Z",
+  "effectiveContributingSources": 31,
+  "generatedAt": "2026-10-03T16:19:15Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 22,
-      "resolvedEvents": 1,
+      "downloadedArticles": 18,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 12,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -147,7 +147,7 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
@@ -219,7 +219,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
