@@ -6,6 +6,10 @@ from announce_release_2_7 import ROOT, ROUTES, LOCALES
 
 
 def main():
+    state = json.loads((ROOT / 'data/release-state.json').read_text())
+    if all(state['current_release']['platform_versions'].get(p) == '2.7' for p in ('iphone', 'ipad', 'watch', 'mac')):
+        print('Apple 2.7 is already published; later announcements left unchanged.')
+        return
     for directory in LOCALES:
         for route in ROUTES:
             path = ROOT / directory / route

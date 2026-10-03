@@ -2,7 +2,7 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Windows 2.6 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
+Windows 2.7 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
 Android remains in development.
 
 The Android closed beta is recruiting 12 testers worldwide. The beta is
@@ -32,21 +32,21 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## Current release
 
-Record Picker 2.6 “Snow Leopard” is available on iPhone, iPad, Apple Watch, Mac and Windows.
-It improves collection backups, cover artwork restoration and reliability.
+Record Picker 2.7 is available on iPhone, iPad, Apple Watch, Mac and Windows.
+On Apple it brings more varied Listening Journeys, saved Collection Stories,
+a combined acquisition/listening timeline and collection-wide missing-information
+lookup, plus camera import on iPhone and clearer navigation.
 
-Apple 2.7 is coming soon on iPhone, iPad, Apple Watch and Mac, pending App Store review.
-It brings more varied Listening Journeys, saved Collection Stories, a combined
-acquisition/listening timeline and collection-wide missing-information lookup.
-Camera import on iPhone, improved metadata and review lookup, Mac shortcuts and
-listening synchronisation are also improved. Windows 2.6 remains the public
-Microsoft Store release; the Windows 2.7 MSI is delivered separately for testing.
+Record Picker 2.7.1 is coming soon, pending App Store review on Apple and
+Microsoft Store certification on Windows. Import a record with a Discogs release
+ID or release link, then preview genres, all styles, tracks and edition details
+before saving. Existing 2.7 downloads remain available during review.
 
 ## App Store version history
 
 ## Platform roadmap
 
-- Windows: 2.6 available on the Microsoft Store (Windows 11, x64 and ARM64).
+- Windows: 2.7 available on the Microsoft Store (Windows 11, x64 and ARM64); 2.7.1 submitted for certification.
 - Android: in development.
 
 Localized Windows product pages are available under `/windows-app/` for every

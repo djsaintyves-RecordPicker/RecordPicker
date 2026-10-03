@@ -1,0 +1,130 @@
+{
+  "el": [
+    "Εισαγάγετε δίσκους με αναγνωριστικό έκδοσης Discogs ή σύνδεσμο έκδοσης.",
+    "Ελέγξτε είδη, όλα τα στυλ, κομμάτια και στοιχεία έκδοσης πριν από την αποθήκευση."
+  ],
+  "es-ES": [
+    "Importa discos con un ID de edición de Discogs o un enlace a la edición.",
+    "Revisa los géneros, todos los estilos, las pistas y los detalles de la edición antes de guardar."
+  ],
+  "sv": [
+    "Importera skivor med ett Discogs-utgivnings-ID eller en länk till utgåvan.",
+    "Granska genrer, alla stilar, spår och utgåvedetaljer innan du sparar."
+  ],
+  "pl": [
+    "Importuj płyty za pomocą identyfikatora wydania Discogs lub linku do wydania.",
+    "Sprawdź gatunki, wszystkie style, utwory i szczegóły wydania przed zapisaniem."
+  ],
+  "nl-NL": [
+    "Importeer platen met een Discogs-release-ID of releaselink.",
+    "Bekijk genres, alle stijlen, nummers en editiegegevens voordat u opslaat."
+  ],
+  "en-GB": [
+    "Import records using a Discogs release ID or release link.",
+    "Preview genres, all styles, tracks and edition details before saving."
+  ],
+  "ja": [
+    "DiscogsのリリースIDまたはリリースへのリンクでレコードを取り込めます。",
+    "保存前にジャンル、すべてのスタイル、曲目、版の詳細を確認できます。"
+  ],
+  "hi": [
+    "Discogs रिलीज़ आईडी या रिलीज़ लिंक से रिकॉर्ड आयात करें।",
+    "सहेजने से पहले शैलियों, सभी स्टाइल, ट्रैक और संस्करण के विवरण की समीक्षा करें।"
+  ],
+  "ru": [
+    "Импортируйте пластинки по идентификатору релиза Discogs или ссылке на релиз.",
+    "Проверьте жанры, все стили, композиции и сведения об издании перед сохранением."
+  ],
+  "fr-FR": [
+    "Importez un disque avec son identifiant de publication Discogs ou son lien.",
+    "Vérifiez les genres, tous les styles, les pistes et les détails de l’édition avant d’enregistrer."
+  ],
+  "de-DE": [
+    "Importieren Sie Schallplatten mit einer Discogs-Veröffentlichungs-ID oder einem Veröffentlichungslink.",
+    "Prüfen Sie Genres, alle Stile, Titel und Editionsdetails vor dem Speichern."
+  ],
+  "en-AU": [
+    "Import records using a Discogs release ID or release link.",
+    "Preview genres, all styles, tracks and edition details before saving."
+  ],
+  "en-US": [
+    "Import records using a Discogs release ID or release link.",
+    "Preview genres, all styles, tracks and edition details before saving."
+  ],
+  "tr": [
+    "Discogs sürüm kimliği veya sürüm bağlantısıyla plakları içe aktarın.",
+    "Kaydetmeden önce türleri, tüm stilleri, parçaları ve baskı ayrıntılarını inceleyin."
+  ],
+  "es-MX": [
+    "Importa discos con un ID de edición de Discogs o un enlace a la edición.",
+    "Revisa los géneros, todos los estilos, las pistas y los detalles de la edición antes de guardar."
+  ],
+  "vi": [
+    "Nhập đĩa bằng mã bản phát hành Discogs hoặc liên kết bản phát hành.",
+    "Xem trước thể loại, tất cả phong cách, bài nhạc và thông tin ấn bản trước khi lưu."
+  ],
+  "no": [
+    "Importer plater med en Discogs-utgivelses-ID eller en lenke til utgivelsen.",
+    "Se sjangre, alle stiler, spor og utgivelsesdetaljer før du lagrer."
+  ],
+  "ar-SA": [
+    "استورد الأسطوانات باستخدام معرّف إصدار Discogs أو رابط الإصدار.",
+    "راجع الأنواع وجميع الأنماط والمسارات وتفاصيل النسخة قبل الحفظ."
+  ],
+  "en-CA": [
+    "Import records using a Discogs release ID or release link.",
+    "Preview genres, all styles, tracks and edition details before saving."
+  ],
+  "pt-BR": [
+    "Importe discos usando um ID de lançamento do Discogs ou um link para o lançamento.",
+    "Confira gêneros, todos os estilos, faixas e detalhes da edição antes de salvar."
+  ],
+  "th": [
+    "นำเข้าแผ่นเสียงด้วยรหัสรุ่นเผยแพร่ของ Discogs หรือลิงก์ไปยังรุ่นเผยแพร่",
+    "ตรวจสอบแนวเพลง สไตล์ทั้งหมด แทร็ก และรายละเอียดรุ่นก่อนบันทึก"
+  ],
+  "fr-CA": [
+    "Importez un disque avec son identifiant de publication Discogs ou son lien.",
+    "Vérifiez les genres, tous les styles, les pistes et les détails de l’édition avant d’enregistrer."
+  ],
+  "ca": [
+    "Importeu discos amb un identificador de publicació de Discogs o un enllaç.",
+    "Reviseu els gèneres, tots els estils, les pistes i els detalls de l’edició abans de desar."
+  ],
+  "fi": [
+    "Tuo levyjä Discogs-julkaisutunnuksella tai julkaisulinkillä.",
+    "Tarkista tyylilajit, kaikki tyylit, kappaleet ja painoksen tiedot ennen tallentamista."
+  ],
+  "da": [
+    "Importér plader med et Discogs-udgivelses-id eller et udgivelseslink.",
+    "Se genrer, alle stilarter, numre og udgivelsesoplysninger, før du gemmer."
+  ],
+  "ko": [
+    "Discogs 릴리스 ID 또는 릴리스 링크로 음반을 가져옵니다.",
+    "저장하기 전에 장르, 모든 스타일, 트랙 및 판본 정보를 확인합니다."
+  ],
+  "zh-Hans": [
+    "使用 Discogs 发行版 ID 或发行版链接导入唱片。",
+    "保存前预览流派、所有风格、曲目及版本详情。"
+  ],
+  "id": [
+    "Impor rekaman menggunakan ID rilis Discogs atau tautan rilis.",
+    "Tinjau genre, semua gaya, trek, dan detail edisi sebelum menyimpan."
+  ],
+  "pt-PT": [
+    "Importe discos com um ID de edição do Discogs ou uma ligação para a edição.",
+    "Confira géneros, todos os estilos, faixas e detalhes da edição antes de guardar."
+  ],
+  "zh-Hant": [
+    "使用 Discogs 發行版 ID 或發行版連結匯入唱片。",
+    "儲存前預覽曲風、所有風格、曲目與版本詳細資訊。"
+  ],
+  "he": [
+    "ייבוא תקליטים באמצעות מזהה מהדורה של Discogs או קישור למהדורה.",
+    "בדיקת ז׳אנרים, כל הסגנונות, רצועות ופרטי המהדורה לפני השמירה."
+  ],
+  "it": [
+    "Importa dischi con un ID di pubblicazione Discogs o un link alla pubblicazione.",
+    "Controlla generi, tutti gli stili, tracce e dettagli dell’edizione prima di salvare."
+  ]
+}

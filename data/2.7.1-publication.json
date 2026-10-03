@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-03T15:10:00Z",
+  "availableVersion": "2.7",
+  "upcomingVersion": "2.7.1",
+  "apple": {
+    "appID": "6780422305",
+    "build": "69",
+    "ios": "WAITING_FOR_REVIEW",
+    "macOS": "WAITING_FOR_REVIEW",
+    "releaseType": "AFTER_APPROVAL"
+  },
+  "windows": {
+    "productID": "9N2ZWRL4M3JC",
+    "version": "2.7.1.0",
+    "submission": 5,
+    "state": "In certification",
+    "releaseType": "AS_SOON_AS_CERTIFICATION_PASSES",
+    "availableSubmission": 4,
+    "availableVersion": "2.7"
+  }
+}

@@ -24,7 +24,7 @@ NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
 CURRENT_RELEASE_DATE = "2026-10-03"
 MAC_RELEASE_DATE = "2026-10-03"
-WINDOWS_RELEASE_DATE = "2026-09-24"
+WINDOWS_RELEASE_DATE = "2026-10-03"
 SCREENSHOT_VERSION = RELEASE_STATE['publication_assets']['screenshot_version']
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
@@ -425,6 +425,7 @@ def main() -> None:
             "quality.css?v=20260828-v24-notes",
             "quality.css?v=20260926-v26-windows",
             "quality.css?v=20261001-beta-banner",
+            "quality.css?v=20261003-v271",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":
@@ -707,8 +708,9 @@ def main() -> None:
             f"expected {expected_release_cards} versioned release cards, "
             f"found {release_pages}"
         )
-    # Staged releases appear on the home, history, screenshot and Mac pages.
-    expected_next_pages = expected_locales * 4 if PUBLICATION_PHASE == "full" and NEXT_VERSION and NEXT_VERSION != CURRENT_VERSION else 0
+    # The announcement declares the routes that expose the upcoming release.
+    announcement_routes = NEXT_RELEASE.get("announcement_routes", ["index.html", "readme/index.html", "screenshots/index.html", "mac-app/index.html"]) if NEXT_RELEASE else []
+    expected_next_pages = expected_locales * len(announcement_routes) if PUBLICATION_PHASE == "full" and NEXT_VERSION and NEXT_VERSION != CURRENT_VERSION else 0
     if next_release_pages != expected_next_pages:
         errors.append(
             f"expected {expected_next_pages} next-release pages, found {next_release_pages}"
@@ -721,7 +723,7 @@ def main() -> None:
         )
     if PUBLICATION_PHASE == "full":
         # Android is still in development and intentionally uses WebPage
-        # metadata. Windows 2.6 is public and exposes SoftwareApplication data.
+        # metadata. The public Windows release exposes SoftwareApplication data.
         expected_metadata_pages = content_pages - expected_locales
         if current_metadata_pages != expected_metadata_pages:
             errors.append(

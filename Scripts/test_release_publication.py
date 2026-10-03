@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published Record Picker 2.7 on Apple with Windows 2.6 preserved."""
+"""Exercise the published Record Picker 2.7 on Apple with Windows 2.7 preserved."""
 
 from __future__ import annotations
 
@@ -67,7 +67,7 @@ def main() -> None:
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
         assert current == "2.7"
-        assert state.get("next_release") is None
+        assert state["next_release"]["version"] == "2.7.1"
         notes = json.loads((target / 'data/release-notes/2.7.json').read_text())
         from html import unescape
         for root in (target, *(target / locale for locale in LOCALES)):
@@ -76,16 +76,27 @@ def main() -> None:
                 match = re.search(r'<(section|article)\b[^>]*data-release-version="2\.7"[^>]*>.*?</\1>', page, re.S)
                 assert match, (root, route)
                 assert 'current-release' in match.group()
-                assert 'Windows 2.6' in match.group()
+                assert 'Windows 2.7' in match.group()
                 assert 'release-upcoming' not in match.group() and 'next-release' not in match.group()
                 assert any(note in unescape(match.group()) for note in notes.values())
+        upcoming_notes = json.loads((target / 'data/release-notes/2.7.1.json').read_text())
+        from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES, COMING_SOON
+        for directory, locale in ANNOUNCEMENT_LOCALES.items():
+            for route in state['next_release']['announcement_routes']:
+                page = (target / directory / route).read_text()
+                upcoming = re.search(r'<(section|article)\b[^>]*data-release-version="2\.7\.1"[^>]*>.*?</\1>', page, re.S)
+                assert upcoming, (directory, route)
+                assert COMING_SOON[locale] in unescape(upcoming.group())
+                assert 'current-release' not in upcoming.group()
+                assert all(note in unescape(upcoming.group()) for note in upcoming_notes[locale])
         before = {p: p.read_bytes() for p in target.rglob('*.html')}
         before[target / 'data/release-state.json'] = (target / 'data/release-state.json').read_bytes()
         run('python3', 'Scripts/publish_release_2_7_apple.py', cwd=target)
         run('python3', 'Scripts/announce_release_2_7.py', cwd=target)
+        run('python3', 'Scripts/announce_release_2_7_1.py', cwd=target)
         assert all(p.read_bytes() == content for p, content in before.items())
         assert state["current_release"]["platform_versions"] == {
-            "iphone": "2.7", "ipad": "2.7", "watch": "2.7", "mac": "2.7", "windows": "2.6"
+            "iphone": "2.7", "ipad": "2.7", "watch": "2.7", "mac": "2.7", "windows": "2.7"
         }
 
         roots = (target,) + tuple(target / locale for locale in LOCALES)
@@ -112,7 +123,7 @@ def main() -> None:
             for page in (home, screenshots, mac_app):
                 assert '<h2>Record Picker 2.7</h2>' in page
             assert "Windows 2.5 · " not in home
-            assert "Windows 2.6 · " in home
+            assert "Windows 2.7 · " in home
             assert "iPhone · iPad · Apple Watch · Mac · " in home
             assert 'class="v24-feature-list"' in home
             assert 'class="v24-feature-list"' in readme
@@ -185,8 +196,8 @@ def main() -> None:
 
         for root in roots:
             windows = (root / "windows-app/index.html").read_text()
-            assert 'data-windows-version="2.6"' in windows
-            assert 'Record Picker · 2.6</span>' in windows
+            assert 'data-windows-version="2.7"' in windows
+            assert 'Record Picker · 2.7</span>' in windows
             assert 'id="windows-app-schema"' in windows
             for route in ('ios-app/index.html', 'watch-app/index.html', 'mac-app/index.html'):
                 apple = (root / route).read_text()
@@ -201,7 +212,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Apple 2.7 is published in every locale; Windows 2.6 and screenshot provenance are preserved.")
+    print("OK: Apple 2.7 is published in every locale; Windows 2.7 and screenshot provenance are preserved.")
 
 
 if __name__ == "__main__":

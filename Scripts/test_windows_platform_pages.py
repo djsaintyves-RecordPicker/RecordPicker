@@ -16,7 +16,7 @@ for directory, locale in LOCALES.items():
     assert f'<link rel="canonical" href="https://recordpicker.app/{route}/">' in text, directory
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
     assert '<p class="tagline">Windows</p>' in text, directory
-    assert 'data-windows-version="2.6"' in text, directory
+    assert 'data-windows-version="2.7"' in text, directory
     assert 'href="https://apps.microsoft.com/detail/9N2ZWRL4M3JC"' in text, directory
     assert 'Windows 11' in text, directory
     assert 'windows-preview' not in text, directory
@@ -24,7 +24,7 @@ for directory, locale in LOCALES.items():
     assert f'"url":"https://recordpicker.app/{route}/"' in text, directory
     assert 'id="windows-app-schema"' in text, directory
     assert '"@type":"SoftwareApplication"' in text, directory
-    assert '"softwareVersion":"2.6"' in text, directory
+    assert '"softwareVersion":"2.7"' in text, directory
     assert '"operatingSystem":"Windows 11"' in text, directory
     assert '"downloadUrl":"https://apps.microsoft.com/detail/9N2ZWRL4M3JC"' in text, directory
     assert '"offers"' in text, directory

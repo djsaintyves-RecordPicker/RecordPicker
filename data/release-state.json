@@ -8,7 +8,7 @@
       "ipad": "2.7",
       "watch": "2.7",
       "mac": "2.7",
-      "windows": "2.6"
+      "windows": "2.7"
     },
     "platforms": {
       "iphone": "available",
@@ -21,7 +21,8 @@
       "iphone",
       "ipad",
       "watch",
-      "mac"
+      "mac",
+      "windows"
     ]
   },
   "historical_releases": [
@@ -52,5 +53,27 @@
     "social": "assets/social/social-home.png",
     "screenshot_directory": "v26",
     "screenshot_version": "2.6"
+  },
+  "next_release": {
+    "version": "2.7.1",
+    "platforms": {
+      "iphone": "coming_soon",
+      "ipad": "coming_soon",
+      "watch": "coming_soon",
+      "mac": "coming_soon",
+      "windows": "coming_soon"
+    },
+    "distribution": {
+      "apple": "app_store_review_pending",
+      "windows": "microsoft_store_certification_pending"
+    },
+    "announcement_routes": [
+      "index.html",
+      "readme/index.html",
+      "screenshots/index.html",
+      "mac-app/index.html",
+      "ios-app/index.html",
+      "windows-app/index.html"
+    ]
   }
 }
