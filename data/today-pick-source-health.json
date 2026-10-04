@@ -3,7 +3,7 @@
   "contributingSources": 31,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 31,
-  "generatedAt": "2026-10-03T21:18:09Z",
+  "generatedAt": "2026-10-04T05:55:59Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 19,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -147,7 +147,7 @@
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
@@ -159,7 +159,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -207,13 +207,13 @@
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 19,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -273,7 +273,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
