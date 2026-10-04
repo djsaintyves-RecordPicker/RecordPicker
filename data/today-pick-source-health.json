@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 31,
+  "contributingSources": 28,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 31,
-  "generatedAt": "2026-10-04T05:55:59Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 28,
+  "generatedAt": "2026-10-04T12:24:00Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 22,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 5,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -99,7 +100,7 @@
     },
     "Jenesaispop": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://jenesaispop.com/feed/"
     },
@@ -111,7 +112,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 11,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -153,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 17,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -183,13 +184,13 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 3,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -213,7 +214,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 20,
+      "resolvedEvents": 21,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -231,7 +232,7 @@
     },
     "The Guardian Music": {
       "downloadedArticles": 21,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
