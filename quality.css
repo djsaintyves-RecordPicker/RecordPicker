@@ -1497,3 +1497,12 @@ main .kicker,
 .beta-site-banner strong{color:#18181b}.beta-site-banner a{font-weight:750;color:#18181b;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.campaign-shell{padding:48px 20px}.campaign-hero{grid-template-columns:1fr}.campaign-actions{grid-template-columns:1fr}.campaign-basile{max-width:520px}.campaign-copy h1{font-size:clamp(3rem,14vw,5.2rem)}}
 @media(max-width:700px){.beta-site-banner{align-items:flex-start;flex-direction:column;gap:5px;text-align:left}}
+
+/* Two clear discovery paths, with touch targets that stay readable on phones. */
+.collection-intents{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.collection-intents a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid rgba(220,20,40,.22);border-radius:16px;color:var(--accent,#c81429);font-weight:650;text-decoration:none;box-sizing:border-box}
+.collection-intents a:hover{background:rgba(220,20,40,.06)}
+.collection-intents a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:700px){.collection-intents{gap:8px}.collection-intents a{flex:1 1 150px;justify-content:center;text-align:center}.hero .cta-row .button{min-height:44px}}
+.hero-free-tier{font-size:.95rem;font-weight:600;margin:12px 0 0;color:var(--muted,#555)}
+@media(max-width:700px){.hero .cta-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hero .cta-row .button{min-width:0;padding:10px 12px;text-align:center;justify-content:center;white-space:normal}.hero .cta-row .button:last-child{grid-column:1/-1;justify-self:start}}

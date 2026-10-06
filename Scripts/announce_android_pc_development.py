@@ -51,6 +51,9 @@ COPY = {
 
 # Recruitment copy lives beside the platform announcement so rerunning this
 # generator cannot silently remove the beta call-to-action.
+from update_android_beta_status import STATUS as BETA_STATUS
+COPY.update({locale: (BETA_STATUS[locale], row[1], row[2]) for locale, row in COPY.items()})
+
 BETA_COPY = {
     "": ("Android beta testers wanted", "We are looking for 15 to 20 volunteers with a Google Account and a compatible Android phone, tablet, or Chromebook. Testers must remain enrolled for at least 14 consecutive days and share feedback.", "Volunteer for the Android beta"),
     "ar": ("مطلوب مختبرو إصدار Android التجريبي", "نبحث عن 15 إلى 20 متطوعًا لديهم حساب Google وهاتف أو جهاز لوحي يعمل بنظام Android أو Chromebook متوافق. يجب أن يظل المختبرون مسجلين لمدة 14 يومًا متتاليًا على الأقل وأن يشاركوا ملاحظاتهم.", "تطوّع لاختبار إصدار Android التجريبي"),

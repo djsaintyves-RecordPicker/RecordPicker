@@ -46,6 +46,9 @@ STATUS = {
     "zh-hant": ("即將推出", "開發中"),
 }
 
+from announce_android_pc_development import COPY as ANDROID_COPY
+STATUS = {locale: (row[0], ANDROID_COPY[locale][0]) for locale, row in STATUS.items()}
+
 BLOCK = re.compile(
     r'<section class="platform-roadmap" aria-label="[^"]*" data-platform-roadmap>.*?</section>',
     flags=re.DOTALL,

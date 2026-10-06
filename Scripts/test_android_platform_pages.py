@@ -14,14 +14,14 @@ for directory in COPY:
     root = ROOT / directory if directory else ROOT
     page = root / "android-app/index.html"
     text = page.read_text(encoding="utf-8")
-    route = f"{directory}/android-app" if directory else "android-app"
+    route = f"{directory}/android-app" if directory and directory != "en-us" else "android-app"
 
     assert f'<link rel="canonical" href="https://recordpicker.app/{route}/">' in text, directory
     assert f'<meta property="og:url" content="https://recordpicker.app/{route}/">' in text, directory
     assert BETA_COPY[directory][0] in text, directory
     assert BETA_COPY[directory][0] not in {"Coming soon", "Bientôt disponible"}, directory
     assert "14" in text, directory
-    assert "lifetime Pro access" in text or "accès Pro à vie" in text, directory
+    assert any(copy in text for copy in ("lifetime Pro access", "accès Pro à vie", "acesso Pro vitalício")), directory
     assert "Google%20Account%20email" in text, directory
 
     payload = re.search(

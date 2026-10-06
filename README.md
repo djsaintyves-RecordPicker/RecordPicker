@@ -218,3 +218,24 @@ python3 Scripts/site_localization_integrity.py --accept --reason "Reviewed 2.3 s
 The lock covers titles, descriptions, visible main content and accessible
 image/control labels. It detects accidental localization drift while ignoring
 unrelated HTML formatting.
+
+## Search discovery and beta recruitment
+
+The 6 October 2026 discovery update clarifies two existing uses: cataloguing
+vinyl records and CDs, and choosing what to play from an owned collection.
+English, French, Italian and Portuguese homepages link directly to the relevant
+existing guides. The French CD guide explains imports, editions and the free
+100-record limit. The Italian Mac page no longer labels the app itself as 2.6;
+real screenshots retain their actual capture version. Above-the-fold home images
+load eagerly, and the touch targets remain usable on phones.
+
+All 32 storefront labels preserve translated free-tier wording at runtime.
+Android navigation and status badges now say Waiting for beta testers, with
+localized equivalents. Beta language and 14-day participation requirements stay
+explicit. Public release status remains governed by `data/release-state.json`;
+this update does not publish an app release.
+
+Run `Scripts/adapt_search_discovery_2026_10_06.py` and
+`Scripts/update_android_beta_status.py` to apply these scoped copy updates.
+Review and explicitly accept the resulting localization-integrity manifest
+before deployment.
