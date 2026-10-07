@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
+  "contributingSources": 30,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 28,
-  "generatedAt": "2026-10-07T06:02:46Z",
+  "effectiveContributingSources": 30,
+  "generatedAt": "2026-10-07T13:26:51Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 24,
-      "resolvedEvents": 1,
+      "downloadedArticles": 20,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,7 +39,7 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
@@ -62,7 +62,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -129,37 +129,37 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
     "Musikexpress": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.musikexpress.de/feed/"
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
     "NPR Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -177,7 +177,7 @@
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 19,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
@@ -213,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 21,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -230,20 +230,20 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 22,
-      "resolvedEvents": 1,
+      "downloadedArticles": 25,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 11,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
@@ -254,7 +254,7 @@
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 15,
+      "downloadedArticles": 12,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"

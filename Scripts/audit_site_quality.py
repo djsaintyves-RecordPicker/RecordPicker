@@ -81,6 +81,8 @@ def page_language(relative: Path, text: str) -> str:
 def main() -> None:
     from audit_snory_teller import audit
     audit()
+    from audit_physical import audit as audit_physical
+    audit_physical()
     audit_homepage_descriptions()
     audit_remaining_localized_copy()
     # Snory Teller is an independent app; RP release rules apply only to RP pages.
@@ -91,7 +93,7 @@ def main() -> None:
     pages = sorted(
         path
         for path in ROOT.rglob("*.html")
-        if path.relative_to(ROOT).parts[0] != "snory-teller"
+        if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical"}
         and path.relative_to(ROOT) not in temporary_campaign_pages
     )
     errors: list[str] = []

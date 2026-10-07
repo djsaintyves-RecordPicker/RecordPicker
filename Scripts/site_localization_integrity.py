@@ -86,7 +86,7 @@ def current_groups() -> tuple[int, dict[str, str]]:
     page_count = 0
     for path in sorted(ROOT.rglob("*.html")):
         # Preserve the RP-only semantic baseline when adding this separate subsite.
-        if path.relative_to(ROOT).parts[0] == "snory-teller":
+        if path.relative_to(ROOT).parts[0] in {"snory-teller", "physical"}:
             continue
         result = page_digest(path)
         if result is None:

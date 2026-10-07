@@ -239,3 +239,11 @@ Run `Scripts/adapt_search_discovery_2026_10_06.py` and
 `Scripts/update_android_beta_status.py` to apply these scoped copy updates.
 Review and explicitly accept the resulting localization-integrity manifest
 before deployment.
+
+## Physical support pages
+
+The separate Physical app uses `/physical/privacy/`, `/physical/support/` and
+`/physical/about/`, with French equivalents under `/physical/fr/`. These pages
+describe the current development app, not future ads or Health imports.
+Run `python3 Scripts/audit_physical.py`; the main quality audit also includes it.
+Physical has its own content and is excluded from Record Picker release checks.
