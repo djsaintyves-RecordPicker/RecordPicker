@@ -480,6 +480,30 @@ picture {
   border-bottom: 1px solid var(--line);
 }
 
+.release-30 .release-tier-grid {
+  margin-block: 24px;
+}
+
+.release-30 .release-tier {
+  height: 100%;
+}
+
+.release-30 .release-tier[data-offer="light"] {
+  border-top: 3px solid var(--red);
+}
+
+.release-30 .release-offer-terms {
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .release-30 .release-tier-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .release-271 > ul {
   margin-block: 18px 0;
   padding-inline-start: 24px;

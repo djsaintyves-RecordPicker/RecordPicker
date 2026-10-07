@@ -3,7 +3,7 @@
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
 Windows 2.7 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
-Android remains in development.
+Android is waiting for beta testers.
 
 The Android closed beta is recruiting 12 testers worldwide. The beta is
 available in English and French; participants need a compatible Android phone
@@ -37,17 +37,36 @@ On Apple it brings more varied Listening Journeys, saved Collection Stories,
 a combined acquisition/listening timeline and collection-wide missing-information
 lookup, plus camera import on iPhone and clearer navigation.
 
-Record Picker 2.7.1 is coming soon, pending App Store review on Apple and
-Microsoft Store certification on Windows. Import a record with a Discogs release
-ID or release link, then preview genres, all styles, tracks and edition details
-before saving. Existing 2.7 downloads remain available during review.
+Apple 2.7.1 is available. Its Discogs release ID/link import previews genres,
+styles, tracks and edition details before saving.
+
+Record Picker 3.0 (formerly the 2.8 development cycle) is in preparation. Its
+agreed Light offer is €2.99 as a one-time purchase: a simple album catalogue,
+unlimited records and imports, Random Pick, Today's Pick and Mood Pick, plus
+favourites, search, backup and restore. Pro adds Listening Journeys, collection
+graphs, advanced statistics, Reviews/Keywords tools, batch enrichment and
+private pressing details. Existing Pro purchases retain their rights and the
+Pro price remains unchanged. The local storefront price is shown before
+purchase. Private pressing photos currently remain on the device.
+
+The offer is staged on all 33 localized site variants; it does not imply that
+3.0 has been submitted or released. English and French copy was edited
+manually; the other new offer translations remain machine drafts pending a
+native-speaker linguistic review. Existing screenshots retain their actual
+capture versions. The yellow Android beta recruitment banner is preserved.
 
 ## App Store version history
 
 ## Platform roadmap
 
-- Windows: 2.7 available on the Microsoft Store (Windows 11, x64 and ARM64); 2.7.1 submitted for certification.
-- Android: in development.
+- Windows: 2.7 available on the Microsoft Store; 3.0 is under validation with Windows 10 x64 and Windows 11 ARM64 compatibility targets.
+- Android: waiting for beta testers; ChromeOS compatibility is being validated through the Android app.
+- 3.1: audio recognition; 3.2: recognition from record spines.
+
+Regenerate the agreed offer with `python3 Scripts/announce_release_3_0.py`.
+Its publication state is separate from the current release in
+`data/release-state.json`. Store availability must be verified before promoting
+3.0 from a staged announcement to the current release.
 
 Localized Windows product pages are available under `/windows-app/` for every
 supported site language.

@@ -55,17 +55,37 @@
     "screenshot_version": "2.6"
   },
   "next_release": {
-    "version": "2.7.1",
+    "version": "3.0",
     "platforms": {
-      "iphone": "coming_soon",
-      "ipad": "coming_soon",
-      "watch": "coming_soon",
-      "mac": "coming_soon",
-      "windows": "coming_soon"
+      "iphone": "in_preparation",
+      "ipad": "in_preparation",
+      "watch": "in_preparation",
+      "mac": "in_preparation",
+      "windows": "in_preparation",
+      "android": "in_preparation",
+      "chromeos": "in_preparation"
     },
     "distribution": {
-      "apple": "app_store_review_pending",
-      "windows": "microsoft_store_certification_pending"
+      "apple": "preparing_submission",
+      "windows": "validation",
+      "android": "closed_beta_recruitment",
+      "chromeos": "validation"
+    },
+    "offer": {
+      "light": {
+        "price_eur": "2.99",
+        "purchase_type": "one_time",
+        "records_and_imports": "unlimited",
+        "picks": [
+          "random",
+          "today",
+          "mood"
+        ]
+      },
+      "pro": {
+        "existing_purchases_preserved": true,
+        "price": "unchanged"
+      }
     },
     "announcement_routes": [
       "index.html",

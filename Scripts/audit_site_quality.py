@@ -428,6 +428,7 @@ def main() -> None:
             "quality.css?v=20260926-v26-windows",
             "quality.css?v=20261001-beta-banner",
             "quality.css?v=20261003-v271",
+            "quality.css?v=20261007-v30-offer",
         )):
             errors.append(f"{relative}: missing versioned quality.css")
         if kind == "readme/index.html":

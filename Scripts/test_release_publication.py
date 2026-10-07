@@ -67,7 +67,11 @@ def main() -> None:
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]
         assert current == "2.7"
-        assert state["next_release"]["version"] == "2.7.1"
+        assert state["next_release"]["version"] == "3.0"
+        assert set(state['next_release']['platforms'].values()) == {'in_preparation'}
+        assert state['next_release']['offer']['light']['picks'] == ['random', 'today', 'mood']
+        assert state['next_release']['offer']['light']['price_eur'] == '2.99'
+        assert state['next_release']['offer']['pro']['existing_purchases_preserved']
         notes = json.loads((target / 'data/release-notes/2.7.json').read_text())
         from html import unescape
         for root in (target, *(target / locale for locale in LOCALES)):
@@ -79,21 +83,24 @@ def main() -> None:
                 assert 'Windows 2.7' in match.group()
                 assert 'release-upcoming' not in match.group() and 'next-release' not in match.group()
                 assert any(note in unescape(match.group()) for note in notes.values())
-        upcoming_notes = json.loads((target / 'data/release-notes/2.7.1.json').read_text())
-        from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES, COMING_SOON
+        upcoming_copy = json.loads((target / 'data/release-notes/3.0-offer.json').read_text())
+        from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
         for directory, locale in ANNOUNCEMENT_LOCALES.items():
             for route in state['next_release']['announcement_routes']:
                 page = (target / directory / route).read_text()
-                upcoming = re.search(r'<(section|article)\b[^>]*data-release-version="2\.7\.1"[^>]*>.*?</\1>', page, re.S)
+                upcoming = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0"[^>]*>.*?</\1>', page, re.S)
                 assert upcoming, (directory, route)
-                assert COMING_SOON[locale] in unescape(upcoming.group())
+                assert upcoming_copy[locale]['status'] in unescape(upcoming.group())
                 assert 'current-release' not in upcoming.group()
-                assert all(note in unescape(upcoming.group()) for note in upcoming_notes[locale])
+                assert all(upcoming_copy[locale][key] in unescape(upcoming.group())
+                           for key in ('title', 'light_title', 'light', 'pro_title', 'pro', 'terms'))
+                assert 'data-offer="light"' in upcoming.group()
+                assert 'data-offer="pro"' in upcoming.group()
+                assert 'data-release-version="2.7.1"' not in page
         before = {p: p.read_bytes() for p in target.rglob('*.html')}
         before[target / 'data/release-state.json'] = (target / 'data/release-state.json').read_bytes()
-        run('python3', 'Scripts/publish_release_2_7_apple.py', cwd=target)
-        run('python3', 'Scripts/announce_release_2_7.py', cwd=target)
-        run('python3', 'Scripts/announce_release_2_7_1.py', cwd=target)
+        run('python3', 'Scripts/announce_release_3_0.py', cwd=target)
+        run('python3', 'Scripts/announce_release_3_0.py', cwd=target)
         assert all(p.read_bytes() == content for p, content in before.items())
         assert state["current_release"]["platform_versions"] == {
             "iphone": "2.7", "ipad": "2.7", "watch": "2.7", "mac": "2.7", "windows": "2.7"
@@ -212,7 +219,7 @@ def main() -> None:
             "@media (max-width: 760px)",
         ):
             assert selector in css
-    print("OK: Apple 2.7 is published in every locale; Windows 2.7 and screenshot provenance are preserved.")
+    print("OK: 3.0 Light/Pro offer is staged in every locale; store availability, beta recruitment and screenshot provenance are preserved.")
 
 
 if __name__ == "__main__":
