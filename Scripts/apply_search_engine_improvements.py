@@ -46,14 +46,8 @@ def page_route(path: Path) -> str:
 
 
 def public_url(path: Path) -> str:
-    locale = page_locale(path)
-    route = page_route(path)
-    if locale == "en-us":
-        counterpart = ROOT / route / "index.html" if route else ROOT / "index.html"
-        if counterpart.exists():
-            return SITE + "/" + route
-    prefix = f"{locale}/" if locale else ""
-    return SITE + "/" + prefix + route
+    from site_canonical_policy import canonical_for
+    return canonical_for(path, ROOT)
 
 
 def text_only(value: str) -> str:
@@ -350,6 +344,8 @@ def main() -> None:
     deduplicate_titles(paths)
     for name in ("sitemap.xml", "sitemap-media.xml"):
         trim_sitemap(ROOT / name)
+    from site_canonical_policy import write
+    write(ROOT)
     print(f"Applied search-engine improvements to {len(paths)} pages.")
 
 

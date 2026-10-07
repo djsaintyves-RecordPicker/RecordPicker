@@ -33,26 +33,8 @@ def relative_url(path: Path) -> str:
 
 
 def canonical_for(path: Path) -> str:
-    """Give every public localization the URL it actually serves.
-
-    hreflang pages must be self-canonical. Consolidating regional English
-    pages on en-US, or the x-default pages on French, made Google ignore the
-    declared canonical and prevented Bing from treating those markets as
-    independent landing pages.
-    """
-    relative = relative_url(path)
-    # The unprefixed site is the English (US) x-default experience.  Keeping a
-    # second, byte-for-byte equivalent /en-us/ URL self-canonical created an
-    # avoidable duplicate cluster in Google.  Other regional English pages
-    # remain self-canonical because their storefront and market copy differ.
-    if relative == "/en-us/":
-        return SITE + "/"
-    if relative.startswith("/en-us/"):
-        root_relative = relative.removeprefix("/en-us")
-        counterpart = ROOT / root_relative.strip("/") / "index.html"
-        if counterpart.exists():
-            return SITE + root_relative
-    return SITE + relative
+    from site_canonical_policy import canonical_for as preferred_url
+    return preferred_url(path, ROOT)
 
 
 REGIONAL_MARKET_NAMES = {
@@ -466,6 +448,8 @@ def main() -> None:
     allowed = canonical_urls()
     trim_sitemap(ROOT / "sitemap.xml", allowed)
     trim_sitemap(ROOT / "sitemap-media.xml", allowed)
+    from site_canonical_policy import write
+    write(ROOT)
     print(f"Completed growth strategy across {len(pages)} pages and {len(allowed)} canonical URLs.")
 
 

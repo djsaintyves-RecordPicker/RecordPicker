@@ -20,6 +20,10 @@ jobs:
         run: python3 -m compileall -q Scripts
       - name: Validate generated pages
         run: python3 Scripts/audit_site_quality.py
+      - name: Validate canonical and reciprocal language signals
+        run: |
+          python3 Scripts/site_canonical_policy.py
+          PYTHONPATH=Scripts python3 -m unittest Scripts/test_site_canonical_policy.py
       - name: Verify accepted localized copy
         run: python3 Scripts/site_localization_integrity.py
       - name: Test localization integrity tooling

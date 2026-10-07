@@ -95,7 +95,8 @@ def plain(value: str) -> str:
 
 
 def set_meta(text: str, route: str, title: str, description: str) -> str:
-    canonical = f"https://recordpicker.app/{route}/"
+    from site_canonical_policy import canonical_for
+    canonical = canonical_for(ROOT / route / "index.html", ROOT)
     platform_route = route.rsplit("/", 1)[-1]
     text = re.sub(r"<title>.*?</title>", f"<title>{escape(title)}</title>", text, count=1)
     replacements = {
@@ -445,6 +446,8 @@ def main() -> None:
     sitemap_routes = [f"{locale}/{route}" if locale else route for locale in COPY for route in routes]
     update_sitemap(ROOT / "sitemap.xml", sitemap_routes)
     update_sitemap(ROOT / "sitemap-media.xml", sitemap_routes)
+    from site_canonical_policy import write
+    write(ROOT)
     print(
         f"Built {len(pages) - preserved} platform pages, preserved {preserved} SEO-specific pages "
         f"and updated navigation on {changed} pages."
