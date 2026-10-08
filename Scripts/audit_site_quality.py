@@ -92,11 +92,15 @@ def main() -> None:
         Path("help-record-picker/index.html"),
         Path("fr/aidez-record-picker/index.html"),
     }
+    creator_manifest = json.loads((ROOT / "data/creator-hub/manifest.json").read_text())
+    creator_pages = {Path(url.split("recordpicker.app/")[1]) / "index.html" for url in creator_manifest["pages"]}
+    from audit_creator_locales import audit as audit_creator_locales
+    audit_creator_locales()
     pages = sorted(
         path
         for path in ROOT.rglob("*.html")
         if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical"}
-        and path.relative_to(ROOT) not in {Path("apps/index.html"), Path("fr/apps/index.html"), Path("apps/dulpi/index.html"), Path("fr/apps/dulpi/index.html")}
+        and path.relative_to(ROOT) not in creator_pages
         and path.relative_to(ROOT) not in temporary_campaign_pages
     )
     from audit_creator_hub import audit as audit_creator_hub
