@@ -84,6 +84,11 @@ def generate(templates):
       leading=re.match(r'^\s*',original).group(0); trailing=re.search(r'\s*$',original).group(0)
       setattr(node,field,leading+translated+trailing)
      else:node.set(field,translated)
+   for button in doc.xpath("//*[contains(@class,'playlist-actions') or contains(@class,'platforms')]/a"):
+    for part in button.iter():
+     if part.text:part.text=part.text.replace(' ↗','').replace('↗','')
+     if part.tail:part.tail=part.tail.replace(' ↗','').replace('↗','')
+    if button.get('aria-label'):button.set('aria-label',button.get('aria-label').replace(' ↗','').replace('↗',''))
    doc.set('lang',locale if locale!='no' else 'nb'); doc.set('dir','rtl' if lang in ('ar','he','ur') else 'ltr')
    pageurl=url(locale,kind)
    head.xpath('link[@rel="canonical"]')[0].set('href',pageurl)
