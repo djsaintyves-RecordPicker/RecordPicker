@@ -1,0 +1,13 @@
+{
+  "hub": "apps/",
+  "dulpi": "apps/dulpi/",
+  "s05e01": "apps/my-musical-update/s05e01/",
+  "s05e02": "apps/my-musical-update/s05e02/",
+  "record-guide": "record-picker/guides/",
+  "discogs": "record-picker/guides/import-discogs/",
+  "backup": "record-picker/guides/backup/",
+  "rediscover": "record-picker/guides/rediscover/",
+  "choose": "record-picker/guides/choose/",
+  "snory-guide": "snory-teller-guide/",
+  "physical-guide": "physical-routine-guide/"
+}

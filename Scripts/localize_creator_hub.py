@@ -12,13 +12,14 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/creator-hub'
 LOCALES='ar-SA bn-BD ca cs da de-DE el en-AU en-CA en-GB en-US es-ES es-MX fi fr-CA fr-FR gu-IN he hi hr hu id it ja kn-IN ko ml-IN mr-IN ms nl-NL no or-IN pa-IN pl pt-BR pt-PT ro ru sk sl-SI sv ta-IN te-IN th tr uk ur-PK vi zh-Hans zh-Hant'.split()
 NAMES=['العربية','বাংলা','Català','Čeština','Dansk','Deutsch','Ελληνικά','English (Australia)','English (Canada)','English (UK)','English (US)','Español (España)','Español (México)','Suomi','Français (Canada)','Français (France)','ગુજરાતી','עברית','हिन्दी','Hrvatski','Magyar','Bahasa Indonesia','Italiano','日本語','ಕನ್ನಡ','한국어','മലയാളം','मराठी','Bahasa Melayu','Nederlands','Norsk','ଓଡ଼ିଆ','ਪੰਜਾਬੀ','Polski','Português (Brasil)','Português (Portugal)','Română','Русский','Slovenčina','Slovenščina','Svenska','தமிழ்','తెలుగు','ไทย','Türkçe','Українська','اردو','Tiếng Việt','简体中文','繁體中文']
-BRANDS=['Yves Durand','Record Picker','Physical Routine','Snory Teller','Dulpi','My Musical Update','MY MUSICAL UPDATE','Apple Music','Microsoft Store','App Store','Spotify','Deezer','Instagram','Facebook','YouTube','Reddit','October Mess','September Desires','LPI']
+BRANDS=['Yves Durand','Record Picker','Physical Routine','Snory Teller','Dulpi','My Musical Update','MY MUSICAL UPDATE','Apple Music','Microsoft Store','App Store','Spotify','Deezer','Instagram','Facebook','YouTube','Reddit','October Mess','September Desires','LPI','Discogs','MusicBuddy','Random Pick','Mood Pick','Record of the Day','Listen Later','CSV','JSON']
 ATTRS={'alt','aria-label','title'}
 def language(locale):
  if locale.startswith('zh-'): return 'zh-CN' if locale=='zh-Hans' else 'zh-TW'
  return locale.split('-')[0]
 def prefix(locale): return '' if locale=='en-US' else 'fr/' if locale=='fr-FR' else locale.lower()+'/'
-def url(locale,kind): return 'https://recordpicker.app/'+prefix(locale)+'apps/'+('dulpi/' if kind=='dulpi' else '')
+ROUTES=json.loads((DATA/'routes.json').read_text())
+def url(locale,kind): return 'https://recordpicker.app/'+prefix(locale)+ROUTES[kind]
 def strings(doc):
  for node in doc.iter():
   if not isinstance(node.tag,str): continue
@@ -74,7 +75,7 @@ def generate(templates):
  csshash=hashlib.sha256((ROOT/'apps/styles.css').read_bytes()).hexdigest()[:12]
  for locale,name in zip(LOCALES,NAMES):
   lang=language(locale); cache=json.loads((DATA/(lang+'.json')).read_text()) if lang not in ('en','fr') else {}
-  for kind in ('hub','dulpi'):
+  for kind in ROUTES:
    doc=html.fromstring(templates[('fr' if lang=='fr' else 'en')+'-'+kind]); head=doc.find('head')
    if cache:
     for node,field,s in strings(doc):
@@ -102,6 +103,8 @@ def generate(templates):
    rp_locale={'ar-SA':'ar','de-DE':'de','nl-NL':'nl','no':'nb','fr-FR':'fr','en-US':''}.get(locale,locale.lower())
    for node in doc.xpath('//*[@href]'):
     href=node.get('href')
+    for route in ROUTES.values():
+     if href in ('/'+route,'/fr/'+route):node.set('href','/'+prefix(locale)+route)
     if href in ('/apps/','/fr/apps/'):node.set('href','/'+prefix(locale)+'apps/')
     elif href.startswith(('/snory-teller/en-US/','/snory-teller/fr-FR/')):
      parts=href.split('/');parts[2]=locale;node.set('href','/'.join(parts))
@@ -121,6 +124,24 @@ def generate(templates):
     if not (ROOT/destination.lstrip('/')/'index.html').is_file():
      base=language(locale); destination='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
     primary.set('href',destination)
+   # Named, non-personal events; no analytics request until a provider is configured.
+   for link in doc.xpath('//a[@href]'):
+    href=link.get('href');event=None;destination=None
+    if 'apps.apple.com/' in href:event='store_click';destination='apple_mac' if 'platform=mac' in href else 'apple_ios'
+    elif 'apps.microsoft.com/' in href:event='store_click';destination='microsoft'
+    elif '/android-app/' in href:event='beta_click';destination='android'
+    elif any(host in href for host in ('music.apple.com/','open.spotify.com/','deezer.com/')):
+     event='playlist_click';destination='apple_music' if 'music.apple' in href else 'spotify' if 'spotify' in href else 'deezer'
+    if event:
+     link.set('data-umami-event',event);link.set('data-umami-event-destination',destination)
+    if 'apps.apple.com/app/recordpicker/' in href:
+     from urllib.parse import urlsplit,parse_qsl,urlunsplit
+     parsed=urlsplit(href);query=dict(parse_qsl(parsed.query));query.update(pt='129016722',ct='yd_'+kind+'_'+destination,mt='8')
+     link.set('href',urlunsplit(parsed._replace(query=urlencode(query))))
+   if kind not in ('hub','dulpi'):
+    for link in doc.xpath('//header//a[starts-with(@href,"#")]'):
+     link.set('href','/'+prefix(locale)+'apps/'+link.get('href'))
+   etree.SubElement(head,'script',src='/apps/measurement.js',defer='defer')
    if kind=='hub':
     for edition in ('v26','v20'):
      shot='/assets/screenshots/'+edition+'/'+(rp_locale or 'en-us')+'/mac-collection.webp'
@@ -153,9 +174,9 @@ def generate(templates):
      elif isinstance(value,list):
       for item in value:fix(item)
     fix(data);script.text=json.dumps(data,ensure_ascii=False)
-   path=ROOT/(prefix(locale)+'apps/'+('dulpi/' if kind=='dulpi' else '')+'index.html');path.parent.mkdir(parents=True,exist_ok=True)
+   path=ROOT/(prefix(locale)+ROUTES[kind]+'index.html');path.parent.mkdir(parents=True,exist_ok=True)
    path.write_text('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n')
- manifest={'locales':LOCALES,'pages':[url(l,k) for l in LOCALES for k in ('hub','dulpi')],'translation':'Google Translate machine translation; authored French and English retained; human review pending for additional languages.'}
+ manifest={'locales':LOCALES,'pages':[url(l,k) for l in LOCALES for k in ROUTES],'translation':'Google Translate machine translation; authored French and English retained; human review pending for additional languages.'}
  (DATA/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
  for filename in ('sitemap.xml','sitemap-media.xml'):
   path=ROOT/filename;tree=etree.parse(str(path));ns='http://www.sitemaps.org/schemas/sitemap/0.9';known={x.text for x in tree.findall('.//{'+ns+'}loc')}
@@ -163,7 +184,7 @@ def generate(templates):
    if entry not in known:
     node=etree.SubElement(tree.getroot(),'{'+ns+'}url');etree.SubElement(node,'{'+ns+'}loc').text=entry;etree.SubElement(node,'{'+ns+'}lastmod').text='2026-10-08'
   path.write_bytes(etree.tostring(tree,encoding='UTF-8',xml_declaration=True,pretty_print=True))
- print('Generated 100 pages across 50 ASC locales')
+ print(f'Generated {len(ROUTES)*50} pages across 50 ASC locales')
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--refresh',action='store_true');args=p.parse_args()
  templates=json.loads((DATA/'templates.json').read_text())

@@ -74,3 +74,5 @@ h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-s
 
 /* Device language replaces the manual picker. */
 .hub-header{grid-template-columns:1fr}.hub-header>.hub-menu{grid-column:1;grid-row:2}.hub-header>strong{max-width:none}
+/* Short hub summaries and focused reading pages. */
+.guide-topic{display:block;padding:16px 20px;margin:12px 0;border:1px solid var(--border,#d8d6d1);border-radius:12px;text-decoration:none}.detail-page{max-width:800px;margin:48px auto}.detail-page h1{font-size:clamp(30px,4vw,44px)}.detail-page>.playlist-cover{max-width:360px;border:0;padding:0}.episode-link{display:inline-block;margin-top:16px;font-weight:600;text-decoration:none}.guide{margin-top:36px}.guide-nav{margin-top:36px}

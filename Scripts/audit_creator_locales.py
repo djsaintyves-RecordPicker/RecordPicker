@@ -37,7 +37,7 @@ def audit():
    if target.is_dir():target=target/'index.html'
    assert target.is_file(),(url,link)
   for payload in re.findall(r'<script type="application/ld\+json">(.*?)</script>',text,re.S):json.loads(payload)
-  if not url.endswith('/dulpi/'):
+  if url.endswith('/apps/'):
    assert page.ids.index('community')<page.ids.index('guide-snory'),url
    for service in ('music.apple.com/fr/playlist/','open.spotify.com/playlist/','deezer.com/fr/playlist/'):assert text.count(service)>=2,(url,service)
    assert 'apps.apple.com/app/recordpicker/id6780422305' in text
@@ -50,6 +50,6 @@ def audit():
    if not (ROOT/expected.lstrip('/')/'index.html').is_file():
     base=page.lang.split('-')[0];expected='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
    assert site==expected,(url,'wrong RP site language',site,expected)
-  else:assert 'https://dulpi.recordpicker.app' not in text,(url,'restricted tool exposed')
- print('Creator localization: 100 pages, 50 locales, reciprocal SEO, assets and store/playlist links validated')
+  elif url.endswith('/dulpi/'):assert 'https://dulpi.recordpicker.app' not in text,(url,'restricted tool exposed')
+ print(f'Creator localization: {len(manifest["pages"])} pages, 50 locales, reciprocal SEO, assets and store/playlist links validated')
 if __name__=='__main__':audit()
