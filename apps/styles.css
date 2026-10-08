@@ -33,3 +33,4 @@ a:hover{color:#555} .platforms a:hover{background:#444;color:#fff}
 .music .playlist-actions{width:100%;max-width:280px}.music .playlist-actions a{width:100%;min-width:0}@media(max-width:760px){.music .playlist-actions{max-width:240px}}
 /* Uniform streaming-button sizing, including wrapped translated labels. */
 .music :is(.playlist-actions,.platforms) a{font-size:15px;line-height:1.4;padding:12px 16px;min-height:54px}.music .playlist-actions{grid-auto-rows:1fr;display:grid;gap:10px}.music .platforms{grid-auto-rows:1fr}
+.music .platforms a{width:100%;max-width:280px;justify-self:center}.music .platforms a:first-child{justify-self:start}.music .platforms a:last-child{justify-self:end}@media(max-width:760px){.music .platforms a{max-width:240px;justify-self:start}.music .platforms a:last-child{justify-self:start}}
