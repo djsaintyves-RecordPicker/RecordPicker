@@ -109,6 +109,10 @@ def generate(templates):
      candidate='/'+rp_locale+'/android-app/' if rp_locale else '/android-app/'
      node.set('href',candidate if (ROOT/candidate.lstrip('/')/'index.html').is_file() else '/android-app/')
     elif href in ('/apps/dulpi/','/fr/apps/dulpi/'):node.set('href','/'+prefix(locale)+'apps/dulpi/')
+    elif href in ('/readme/','/support/','/fr/readme/','/fr/support/'):
+     route='/'+href.strip('/').split('/')[-1]+'/'
+     candidate='/'+rp_locale+route if rp_locale else route
+     node.set('href',candidate if (ROOT/candidate.lstrip('/')/'index.html').is_file() else route)
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href
      if (ROOT/candidate.lstrip('/')/'index.html').is_file():node.set('href',candidate)
