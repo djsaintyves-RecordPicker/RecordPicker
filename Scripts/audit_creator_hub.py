@@ -13,7 +13,7 @@ def audit():
     for rel in ('apps/index.html','fr/apps/index.html'):
         p=ROOT/rel; s=p.read_text(); page=Page(); page.feed(s)
         assert page.h1 == 1, rel
-        for name in ('Record Picker','Physical Routine','Snory Teller','my_musical_update'):
+        for name in ('Record Picker','Physical Routine','Snory Teller','Dulpi','my_musical_update'):
             assert name in s, (rel,name)
         for link in page.links:
             u=urlsplit(link)
