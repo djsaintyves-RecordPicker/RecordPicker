@@ -103,6 +103,8 @@ def generate(templates):
    for node in doc.xpath('//*[@href]'):
     href=node.get('href')
     if href in ('/apps/','/fr/apps/'):node.set('href','/'+prefix(locale)+'apps/')
+    elif href.startswith(('/snory-teller/en-US/','/snory-teller/fr-FR/')):
+     parts=href.split('/');parts[2]=locale;node.set('href','/'.join(parts))
     elif href in ('/apps/dulpi/','/fr/apps/dulpi/'):node.set('href','/'+prefix(locale)+'apps/dulpi/')
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href
