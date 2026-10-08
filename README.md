@@ -27,7 +27,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - YouTube: https://www.youtube.com/@recordpicker
 - Facebook: https://www.facebook.com/profile.php?id=61591096987226
 - Instagram: https://www.instagram.com/recordpicker/
-- Reddit: https://www.reddit.com/user/RepulsiveInsect919/
+- Reddit: https://www.reddit.com/user/Record_Picker/
 - Contact: support@recordpicker.app
 
 ## Current release
