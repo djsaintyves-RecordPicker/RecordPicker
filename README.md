@@ -27,7 +27,7 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 - YouTube: https://www.youtube.com/@recordpicker
 - Facebook: https://www.facebook.com/profile.php?id=61591096987226
 - Instagram: https://www.instagram.com/recordpicker/
-- Reddit: https://www.reddit.com/user/RepulsiveInsect919/
+- Reddit: https://www.reddit.com/user/Record_Picker/
 - Contact: support@recordpicker.app
 
 ## Current release
@@ -258,3 +258,11 @@ The separate Physical app uses `/physical/privacy/`, `/physical/support/` and
 describe the current development app, not future ads or Health imports.
 Run `python3 Scripts/audit_physical.py`; the main quality audit also includes it.
 Physical has its own content and is excluded from Record Picker release checks.
+
+## Creator ecosystem — 8 October 2026
+
+The bilingual creator hub lives at `/apps/` (English) and `/fr/apps/` (French). Principal Record Picker, Physical Routine and Snory Teller pages link to one another and to this hub. Keep product claims and availability separate. Hub pages have a dedicated link audit; canonical and localization checks still apply. Snory Teller has its own sitemap, also declared in robots.txt.
+
+Instagram profile verified in Safari: `https://www.instagram.com/my_musical_update/`, bio “Monthly playlists”. Existing links: Spotify, Apple Music, Record Picker App Store, Record Picker website, Mac4Ever article. Proposed bio: “Monthly playlists & music discoveries 🎶\nCreator of @recordpicker\nMy apps: music, movement & nights ↓”. Proposed destination for the existing website slot: `https://recordpicker.app/apps/?utm_source=instagram&utm_medium=social&utm_campaign=creator_hub&utm_content=my_musical_update_bio`, label “My apps · Yves Durand”. Retain music-service links and the direct App Store link. No Instagram profile edits or posts were made by this release.
+
+Next editorial work: a Snory Teller bedside setup and report-reading guide; a Physical Routine first-week guide; contextual links to existing Record Picker collection guides. Keep each article useful on its own. Do not promise sleep improvements, stronger watch motors or guaranteed search rankings. Measure search clicks and impressions in the existing webmaster consoles; campaign parameters alone do not provide analytics, and no tracking scripts were added.

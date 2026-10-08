@@ -32,7 +32,9 @@ SOCIAL_IMAGE_URL = (
 )
 OFFICIAL_SOCIALS = {
     "https://www.instagram.com/recordpicker/",
+
 }
+RESTORED_SOCIAL_LINKS = {"https://www.facebook.com/profile.php?id=61591096987226", "https://www.youtube.com/@recordpicker"}
 REMOVED_SOCIAL_HOSTS = ("youtube.com", "facebook.com", "threads.net", "reddit.com")
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
@@ -90,12 +92,19 @@ def main() -> None:
         Path("help-record-picker/index.html"),
         Path("fr/aidez-record-picker/index.html"),
     }
+    creator_manifest = json.loads((ROOT / "data/creator-hub/manifest.json").read_text())
+    creator_pages = {Path(url.split("recordpicker.app/")[1]) / "index.html" for url in creator_manifest["pages"]}
+    from audit_creator_locales import audit as audit_creator_locales
+    audit_creator_locales()
     pages = sorted(
         path
         for path in ROOT.rglob("*.html")
         if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical"}
+        and path.relative_to(ROOT) not in creator_pages
         and path.relative_to(ROOT) not in temporary_campaign_pages
     )
+    from audit_creator_hub import audit as audit_creator_hub
+    audit_creator_hub()
     errors: list[str] = []
     content_pages = 0
     release_pages = 0
@@ -144,7 +153,7 @@ def main() -> None:
                         f"{relative}: language option {hreflang} points outside {platform_route}"
                     )
         for host in REMOVED_SOCIAL_HOSTS:
-            if re.search(rf'href="https://(?:www\.)?{re.escape(host)}/', text):
+            if any(host in url and url not in OFFICIAL_SOCIALS | RESTORED_SOCIAL_LINKS for url in re.findall(r'href="(https://[^"]+)"', text)):
                 errors.append(f"{page.relative_to(ROOT)}: temporarily removed social link {host} remains")
         for value in re.findall(r'(?:href|src|srcset)="([^"]+)"', text):
             target = local_target(page, value)

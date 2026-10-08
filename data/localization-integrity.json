@@ -26,7 +26,7 @@
     "pt-br": "49a9717e7aa525e3d9f87a92901334f2ffaa71d69058b120e616429428c1695c",
     "pt-pt": "cba34902477d4fa856acfcc27aaf91ac52c9a86ea29ab7f133c4110c9c9a4353",
     "ru": "e7a4e284ecb9e5362bd985d004b986c392d3dbc2039040b1555ff99fe563a996",
-    "shared": "8c564e2fc2a662d8765ff381f919184558cc44833c453b8e2f8c533f7471c094",
+    "shared": "7b5876a3f6cb44a1a5ea87eab45a4757e7d4e444908a5eba6ee576e34d9bcfa2",
     "sv": "294fc75134525dfbc1c537728c1f02126f508fdfc17e90c9037ed8ade186c4b3",
     "th": "3f15ffa8b041da88a93806743633f56aa79361f25f454a270b5eeb4d2aae67aa",
     "tr": "f7dfa14660348841934379c209ed0cc588028ba11f221f512257e5cf297546cf",
@@ -36,7 +36,7 @@
     "zh-hant": "155b9406d5d82e7c4ccc42875e1ccc4667689f89435bf0aebec9e8e943f6d2cf"
   },
   "locale_group_count": 34,
-  "page_count": 445,
-  "review_reason": "Reviewed agreed future 3.0 Light/Pro offer: English and French manual copy, brand names preserved, other new localized offer strings are machine drafts pending linguistic review; store availability and captured screenshot versions unchanged.",
+  "page_count": 545,
+  "review_reason": "Editorial review: correct audio input, gain and restricted school software translations",
   "schema": 1
 }
