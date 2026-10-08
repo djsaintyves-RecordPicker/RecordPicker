@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 545,
-  "review_reason": "Expand Record Picker guide with six practical sections and localized support and features links",
+  "review_reason": "Remove manual language navigation and select device language with English fallback",
   "schema": 1
 }

@@ -130,17 +130,13 @@ def generate(templates):
       break
    if kind=='dulpi':
     for old in doc.xpath('//header/a')[1:]:old.getparent().remove(old)
-   navs=doc.xpath('//header/nav')
-   if navs:
-    nav=navs[-1]; nav.clear(); nav.set('class','language-nav')
-   else:nav=etree.SubElement(doc.find('body').find('header'),'nav',{'class':'language-nav'})
-   details=etree.SubElement(nav,'details',{'class':'language-picker'})
-   etree.SubElement(details,'summary').text=name+' ▾'
-   links=etree.SubElement(details,'div',{'class':'language-options'})
-   for other,othername in zip(LOCALES,NAMES):
-    a=etree.SubElement(links,'a',href='/'+prefix(other)+'apps/'+('dulpi/' if kind=='dulpi' else ''),hreflang=other,lang=other,dir='auto')
-    a.text=othername
-    if other==locale:a.set('aria-current','page')
+   for nav in doc.xpath('//header/nav[not(@class="hub-menu")]'):
+    nav.getparent().remove(nav)
+   for script in head.xpath('script[@src="/apps/locale.js"]|script[starts-with(@src,"/apps/locale.js?")]'):
+    head.remove(script)
+   localehash=hashlib.sha256((ROOT/'apps/locale.js').read_bytes()).hexdigest()[:12]
+   language_script=etree.Element('script',src='/apps/locale.js?v='+localehash)
+   head.insert(2,language_script)
    for primary in doc.xpath('//*[@id="physical-routine"]/a'):
     primary.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
    for script in doc.xpath('//script[@type="application/ld+json"]'):

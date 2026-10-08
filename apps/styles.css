@@ -71,3 +71,6 @@ h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-s
 .availability,.routine-art span,.app-preview figcaption,.presentation-shot figcaption,footer,.hub-header>strong,.hub-menu-group>summary,.hub-menu-panel a,.hub-menu-panel .platforms a,.language-picker summary,.language-options a{font-size:var(--type-meta);line-height:1.5}
 .tag,.guide p.tag,.card p.tag,.music p.tag,.playlist-cover small{font-size:var(--type-label);line-height:1.5}
 @media(max-width:600px){:root{--type-section:28px;--type-subsection:20px;--type-body:16px}.hub-header>strong,.hub-menu-group>summary,.hub-header .language-picker summary{font-size:var(--type-meta)}}
+
+/* Device language replaces the manual picker. */
+.hub-header{grid-template-columns:1fr}.hub-header>.hub-menu{grid-column:1;grid-row:2}.hub-header>strong{max-width:none}
