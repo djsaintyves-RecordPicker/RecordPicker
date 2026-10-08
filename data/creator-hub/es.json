@@ -32,7 +32,7 @@
   "Listen on Deezer — September Desires": "Escuchar en Deezer — September Desires",
   "All my playlists": "Todas mis listas de reproducción",
   "Instagram": "Instagram",
-  "@my_musical_update ↗": "@mi_actualización_musical ↗",
+  "@my_musical_update ↗": "@my_musical_update ↗",
   "@recordpicker ↗": "@recordpicker ↗",
   "My projects": "Mis proyectos",
   "Record Picker": "Record Picker",
@@ -123,7 +123,7 @@
   "too.": "también.",
   "These projects share a creator but remain separate apps: their reports and features are not combined.": "Estos proyectos comparten un creador pero siguen siendo aplicaciones separadas: sus informes y características no se combinan.",
   "© 2026 Yves Durand ·": "© 2026 Yves Durand ·",
-  "support@recordpicker.app": "soporte@recordpicker.app",
+  "support@recordpicker.app": "support@recordpicker.app",
   "Each app has its own terms and privacy policy.": "Cada aplicación tiene sus propios términos y política de privacidad.",
   "Dulpi — supporting inclusive education": "Dulpi — apoyando la educación inclusiva",
   "Dulpi brings together information needed to support students with additional educational needs. It aims to reduce time spent searching and re-entering information, giving school teams more time for student support.": "Dulpi reúne información necesaria para apoyar a los estudiantes con necesidades educativas adicionales. Su objetivo es reducir el tiempo dedicado a buscar y volver a ingresar información, dando a los equipos escolares más tiempo para apoyar a los estudiantes.",
@@ -144,5 +144,7 @@
   "Dulpi Windows 0.11.03 · Screenshot from the presentation document: entirely fictional people and data. Click to enlarge.": "Dulpi Windows 0.11.03 · Captura de pantalla del documento de presentación: personas y datos enteramente ficticios. Haga clic para ampliar.",
   "A project with controlled rollout": "Un proyecto con implementación controlada",
   "Dulpi is restricted to authorised staff in participating schools. This public page provides no access to the application or student records. Field trials do not constitute general institutional approval; wider deployment remains subject to the necessary validations.": "Dulpi está restringido al personal autorizado en las escuelas participantes. Esta página pública no proporciona acceso a la aplicación ni a los registros de los estudiantes. Las pruebas de campo no constituyen una aprobación institucional general; un despliegue más amplio sigue sujeto a las validaciones necesarias.",
-  "Summary based on the institutional presentation dated 1 October 2026. Screenshots show demonstration versions.": "Resumen basado en la presentación institucional del 1 de octubre de 2026. Las capturas de pantalla muestran versiones de demostración."
+  "Summary based on the institutional presentation dated 1 October 2026. Screenshots show demonstration versions.": "Resumen basado en la presentación institucional del 1 de octubre de 2026. Las capturas de pantalla muestran versiones de demostración.",
+  "Available on iPhone, iPad, Mac and Windows": "Disponible en iPhone, iPad, Mac y Windows",
+  "App Store · macOS": "App Store · macOS"
 }

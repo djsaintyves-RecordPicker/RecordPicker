@@ -107,6 +107,18 @@ def generate(templates):
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href
      if (ROOT/candidate.lstrip('/')/'index.html').is_file():node.set('href',candidate)
+   for primary in doc.xpath('//*[@id="record-picker"]/*[@class="app-actions"]/a[not(contains(@class,"store-button"))]'):
+    destination='/'+rp_locale+'/' if rp_locale else '/'
+    if not (ROOT/destination.lstrip('/')/'index.html').is_file():
+     base=language(locale); destination='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
+    primary.set('href',destination)
+   if kind=='hub':
+    for edition in ('v26','v20'):
+     shot='/assets/screenshots/'+edition+'/'+(rp_locale or 'en-us')+'/mac-collection.webp'
+     if (ROOT/shot.lstrip('/')).is_file():
+      for image in doc.xpath('//*[@id="record-picker"]//figure//img'):image.set('src',shot)
+      for image_link in doc.xpath('//*[@id="record-picker"]//figure/a'):image_link.set('href',shot)
+      break
    if kind=='dulpi':
     for old in doc.xpath('//header/a')[1:]:old.getparent().remove(old)
    navs=doc.xpath('//header/nav')
@@ -120,6 +132,8 @@ def generate(templates):
     a=etree.SubElement(links,'a',href='/'+prefix(other)+'apps/'+('dulpi/' if kind=='dulpi' else ''),hreflang=other,lang=other,dir='auto')
     a.text=othername
     if other==locale:a.set('aria-current','page')
+   for primary in doc.xpath('//*[@id="physical-routine"]/a'):
+    primary.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
    for script in doc.xpath('//script[@type="application/ld+json"]'):
     data=json.loads(script.text)
     def fix(value):

@@ -3,6 +3,7 @@ import json,re
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
+from lxml import html
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
  def __init__(self):super().__init__();self.links=[];self.alternates={};self.lang=None;self.direction=None;self.h1=0;self.canonical=None;self.ids=[]
@@ -37,6 +38,15 @@ def audit():
    for service in ('music.apple.com/fr/playlist/','open.spotify.com/playlist/','deezer.com/fr/playlist/'):assert text.count(service)>=2,(url,service)
    assert 'apps.apple.com/app/recordpicker/id6780422305' in text
    assert 'apps.microsoft.com/detail/9N2ZWRL4M3JC' in text
+   doc=html.fromstring(text); card=doc.get_element_by_id('record-picker')
+   assert card.xpath('.//a[contains(@href,"platform=mac")]'),(url,'Mac store link missing')
+   assert '/mac-collection.webp' in card.xpath('.//figure//img')[0].get('src'),(url,'Mac screenshot missing')
+   site=card.xpath('.//*[@class="app-actions"]/a[not(contains(@class,"store-button"))]')[0].get('href')
+   locale={'ar-SA':'ar','de-DE':'de','nl-NL':'nl','no':'nb','fr-FR':'fr','en-US':''}.get(page.lang,page.lang.lower())
+   expected='/'+locale+'/' if locale else '/'
+   if not (ROOT/expected.lstrip('/')/'index.html').is_file():
+    base=page.lang.split('-')[0];expected='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
+   assert site==expected,(url,'wrong RP site language',site,expected)
   else:assert 'https://dulpi.recordpicker.app' not in text,(url,'restricted tool exposed')
  print('Creator localization: 100 pages, 50 locales, reciprocal SEO, assets and store/playlist links validated')
 if __name__=='__main__':audit()
