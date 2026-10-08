@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://recordpicker.app/sitemap.xml
+Sitemap: https://recordpicker.app/snory-teller/sitemap.xml

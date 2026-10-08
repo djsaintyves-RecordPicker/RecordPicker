@@ -94,8 +94,11 @@ def main() -> None:
         path
         for path in ROOT.rglob("*.html")
         if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical"}
+        and path.relative_to(ROOT) not in {Path("apps/index.html"), Path("fr/apps/index.html")}
         and path.relative_to(ROOT) not in temporary_campaign_pages
     )
+    from audit_creator_hub import audit as audit_creator_hub
+    audit_creator_hub()
     errors: list[str] = []
     content_pages = 0
     release_pages = 0
