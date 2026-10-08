@@ -8,3 +8,5 @@ header nav{display:flex;gap:12px;align-items:center}header [aria-current="page"]
 .platforms a,.social-links a{display:inline-flex;align-items:center;gap:12px}.platform-logo{width:24px;height:24px;flex-shrink:0;filter:invert(1)}.social-links{display:flex;flex-wrap:wrap;gap:20px 32px;margin-top:28px}.social-links img{width:22px;height:22px;flex-shrink:0}
 
 .ecosystem{border-top:1px solid #d8d6d1;margin-top:48px;padding:40px 0}.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.community-grid article{padding:22px;border:1px solid #d8d6d1;border-radius:12px;background:white}.community-grid h3{font-size:19px}.community-grid p{font-size:16px;color:#555}@media(max-width:600px){.community-grid{grid-template-columns:1fr}}
+
+.presentation-shot{margin:32px 0;padding:20px;background:#eae8e3;border-radius:12px;text-align:center}.presentation-shot img{max-width:100%;max-height:420px;object-fit:contain}.presentation-shot figcaption{font-size:14px;margin-top:14px;color:#555}
