@@ -91,7 +91,7 @@
   "Prepare for a night and understand the report": "Prepare-se para uma noite e entenda o relatório",
   "Before you start": "Antes de começar",
   "Place your plugged-in iPhone on a stable surface near the bed, with its microphone unobstructed. Keep it clear of bedding.": "Coloque o iPhone conectado em uma superfície estável perto da cama, com o microfone desobstruído. Mantenha-o longe da roupa de cama.",
-  "Run a short test in that position. Check that the microphone animation reacts to sound. It shows audio input, not successful snoring recognition.": "Faça um pequeno teste nessa posição. Verifique se a animação do microfone reage ao som. Ele mostra entrada de áudio, sem reconhecimento de ronco bem-sucedido.",
+  "Run a short test in that position. Check that the microphone animation reacts to sound. It shows audio input, not successful snoring recognition.": "Faça um pequeno teste nessa posição. Verifique se a animação do microfone reage ao som. A animação indica que o microfone recebe som. O reconhecimento do ronco deve ser verificado separadamente.",
   "If you use alerts, wear your watch and run the test provided in the app, then lock your iPhone. Check alert onset and stopping separately.": "Se você usa alertas, use seu relógio e faça o teste fornecido no aplicativo, depois bloqueie seu iPhone. Verifique o início e a parada do alerta separadamente.",
   "Start listening. If you adjust input gain, change one setting at a time and repeat the same test. Higher gain does not guarantee better recognition.": "Comece a ouvir. Se você ajustar o ganho de entrada, altere uma configuração de cada vez e repita o mesmo teste. Maior ganho não garante melhor reconhecimento.",
   "Read the morning figures in order": "Leia os números da manhã em ordem",

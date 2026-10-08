@@ -21,3 +21,10 @@ canonical, localization-integrity and quality checks. Both sitemaps include all
 100 pages. Language links are static and crawlable; no language detection or
 redirect prevents visitors from choosing their preferred version. Dulpi remains
 a public presentation only, with no interactive demo or restricted-app link.
+
+Editorial review on 8 October 2026 checked the authored FR/EN presentation and
+made targeted corrections in German, Spanish, Italian, Dutch and Portuguese.
+Corrections distinguish microphone input from snoring recognition, input
+amplification from financial gain, educational adjustments from accommodation,
+and restricted software access from an application/request. This is a focused
+semantic review, not native-speaker validation of all 44 languages.

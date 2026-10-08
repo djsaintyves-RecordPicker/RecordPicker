@@ -68,7 +68,7 @@
   "App screenshot · click to enlarge": "Schermata dell'app · fare clic per ingrandire",
   "04 · EDUCATION": "04 · EDUCAZIONE",
   "Support coordinated student follow-up.": "Supportare il follow-up coordinato degli studenti.",
-  "A workspace for reviewing students’ needs, educational accommodations and supporting documents.": "Uno spazio di lavoro per esaminare le esigenze degli studenti, gli alloggi didattici e i documenti giustificativi.",
+  "A workspace for reviewing students’ needs, educational accommodations and supporting documents.": "Uno spazio di lavoro per esaminare le esigenze degli studenti, gli adattamenti didattici e i documenti giustificativi.",
   "Restricted to authorised staff, according to their access rights within the school.": "Riservato al personale autorizzato, compatibilmente con i diritti di accesso all'interno della scuola.",
   "Discover the Dulpi project →": "Scopri il progetto Dulpi →",
   "Keep exploring": "Continua a esplorare",
@@ -91,7 +91,7 @@
   "Prepare for a night and understand the report": "Preparati per una notte e comprendi il rapporto",
   "Before you start": "Prima di iniziare",
   "Place your plugged-in iPhone on a stable surface near the bed, with its microphone unobstructed. Keep it clear of bedding.": "Posiziona l'iPhone collegato su una superficie stabile vicino al letto, con il microfono libero. Tenerlo lontano dalla biancheria da letto.",
-  "Run a short test in that position. Check that the microphone animation reacts to sound. It shows audio input, not successful snoring recognition.": "Esegui un breve test in quella posizione. Controlla che l'animazione del microfono reagisca al suono. Mostra input audio, riconoscimento del russamento non riuscito.",
+  "Run a short test in that position. Check that the microphone animation reacts to sound. It shows audio input, not successful snoring recognition.": "Esegui un breve test in quella posizione. Controlla che l'animazione del microfono reagisca al suono. L’animazione indica che il microfono riceve suoni. Il riconoscimento del russamento va verificato separatamente.",
   "If you use alerts, wear your watch and run the test provided in the app, then lock your iPhone. Check alert onset and stopping separately.": "Se utilizzi gli avvisi, indossa l'orologio ed esegui il test fornito nell'app, quindi blocca il tuo iPhone. Controllare l'attivazione e l'interruzione dell'avviso separatamente.",
   "Start listening. If you adjust input gain, change one setting at a time and repeat the same test. Higher gain does not guarantee better recognition.": "Inizia ad ascoltare. Se regoli il guadagno in ingresso, modifica un'impostazione alla volta e ripeti lo stesso test. Un guadagno più elevato non garantisce un migliore riconoscimento.",
   "Read the morning figures in order": "Leggi i dati del mattino in ordine",
@@ -143,6 +143,6 @@
   "Dulpi windows — fictional data": "Finestre Dulpi: dati fittizi",
   "Dulpi Windows 0.11.03 · Screenshot from the presentation document: entirely fictional people and data. Click to enlarge.": "Dulpi Windows 0.11.03 · Schermata del documento di presentazione: persone e dati del tutto fittizi. Clicca per ingrandire.",
   "A project with controlled rollout": "Un progetto con rollout controllato",
-  "Dulpi is restricted to authorised staff in participating schools. This public page provides no access to the application or student records. Field trials do not constitute general institutional approval; wider deployment remains subject to the necessary validations.": "Dulpi è riservato al personale autorizzato nelle scuole partecipanti. Questa pagina pubblica non fornisce accesso alla domanda o ai record degli studenti. Le sperimentazioni sul campo non costituiscono un'approvazione istituzionale generale; una diffusione più ampia resta soggetta alle necessarie convalide.",
+  "Dulpi is restricted to authorised staff in participating schools. This public page provides no access to the application or student records. Field trials do not constitute general institutional approval; wider deployment remains subject to the necessary validations.": "Dulpi è riservato al personale autorizzato nelle scuole partecipanti. Questa pagina pubblica non fornisce accesso all’applicazione o ai fascicoli degli studenti. Le sperimentazioni sul campo non costituiscono un'approvazione istituzionale generale; una diffusione più ampia resta soggetta alle necessarie convalide.",
   "Summary based on the institutional presentation dated 1 October 2026. Screenshots show demonstration versions.": "Sintesi basata sulla presentazione istituzionale del 1 ottobre 2026. Gli screenshot mostrano le versioni dimostrative."
 }
