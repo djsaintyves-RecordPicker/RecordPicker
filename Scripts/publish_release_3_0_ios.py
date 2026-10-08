@@ -69,6 +69,7 @@ def main():
                 return re.sub(r'<p class="release-platform-summary">.*?</p>',
                               lambda _: '<p class="release-platform-summary">Mac · Windows · 2.7 — '+escape(available)+'</p>', b, flags=re.S)
             text = re.sub(old_pattern, previous, text, flags=re.S)
+            text = re.sub(r'site\.js\?v=[^"\s]+', 'site.js?v=20261008-free-light-pro', text)
             text = re.sub(r'quality\.css\?v=[^"\s]+', 'quality.css?v=20261008-free-light-pro', text)
             if text != path.read_text():
                 path.write_text(text)
