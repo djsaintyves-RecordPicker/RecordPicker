@@ -40,6 +40,7 @@ PRICES = {
  'zh-hans':'100 张唱片以内免费 · 终身 Pro',
  'zh-hant':'100 張唱片以內免費 · 終身 Pro',
 }
+PRICES = {locale: copy.split(' · ')[0]+' · Light · Pro' for locale, copy in PRICES.items()}
 # Title, visible promise, two useful destinations, and short search description.
 FOCUS = {
  '': ('Vinyl & CD Collection App and Random Record Picker | Record Picker', 'Catalogue your vinyl and CDs. Choose what to play.', 'Organise vinyl and CDs', 'Choose a record to play', 'Catalogue your vinyl records and CDs, import a Discogs CSV and rediscover albums with Random Pick. Free for up to 100 records; lifetime Pro, with no subscription.'),
