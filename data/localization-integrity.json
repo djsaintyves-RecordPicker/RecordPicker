@@ -26,7 +26,7 @@
     "pt-br": "d40ddbe45d86bf34990d53db24832fa73ab5684c38cb173c566d034f1e9dc638",
     "pt-pt": "f53ff44bad509d5d44e1e2f68f45048bd8a075acdee0a700babe9780b9e9af36",
     "ru": "27d00f63520e7f9f01647f9728fad32e63f903dcf6ca9b96c16b577c3bd4b04a",
-    "shared": "42f66b4818cd58122f213d46ce8471f379d636e72513fcce5db20382a3ae4ffd",
+    "shared": "68b8c3878c75f168e57a22a3a2a5d4448bb03810a6196d9ce2042b38821a7321",
     "sv": "33570fbe42fc5dba9d89acddcbfc7209b64da549330d549b720e6e3c4607b2e6",
     "th": "aafd3630c2718632b04bfddf1f4511c1e3382d6ec9b237b62551cead5fb2aabd",
     "tr": "39cf922deb625d869f1fd10cbe2177cdb99c282c6c89b5af2e4a11eb1154fdd7",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 545,
-  "review_reason": "Remove repeated my from English creator hub introduction",
+  "review_reason": "Remove duplicate playlist titles and episode labels already visible on cover artwork",
   "schema": 1
 }
