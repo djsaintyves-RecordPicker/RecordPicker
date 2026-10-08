@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 from announce_release_2_3_1 import LOCALES
 from announce_release_2_1 import COMING_SOON
+from adapt_search_discovery_2026_10_06 import PRICES
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTES = ('index.html', 'readme/index.html', 'screenshots/index.html',
@@ -33,6 +34,8 @@ def main():
         elif locale.startswith('fr-'):
             status = 'La 3.0 est disponible sur iPhone, iPad et Apple Watch. Le Mac est en examen chez Apple ; la 3.0 Windows est en cours de soumission à Microsoft.'
         copies[locale]['status'] = status
+        free_title = PRICES[directory or 'en-us'].split(' · ')[0]
+        copies[locale]['free_title'] = free_title
         for route in ROUTES:
             path = ROOT / directory / route
             text = path.read_text()
@@ -42,9 +45,21 @@ def main():
             if not match:
                 raise RuntimeError(f'Missing 3.0 offer: {path}')
             block = match.group().replace('release-upcoming', 'release-partial').replace('next-release', 'release-partial')
+            block = re.sub(r'<p class="release-free-offer"[^>]*>.*?</p>', '', block, flags=re.S)
+            block = block.replace('<div class="grid two release-tier-grid">',
+                '<p class="release-free-offer" data-offer="free"><strong>'+escape(free_title)+'</strong></p>'
+                '<div class="grid two release-tier-grid">', 1)
             block = re.sub(r'<p class="release-platform-summary">.*?</p>',
                            lambda _: '<p class="release-platform-summary">'+escape(status)+'</p>', block, flags=re.S)
             text = re.sub(pattern, lambda _: block, text, count=1, flags=re.S)
+            if route == 'index.html':
+                text = re.sub(r'(<p class="hero-free-tier">).*?(</p>)',
+                              lambda m: m[1]+escape(free_title+' · Light · Pro')+m[2], text, flags=re.S)
+                text = re.sub(r'(<strong data-price-current>).*?(</strong>)',
+                              lambda m: m[1]+escape(free_title+' · Light · Pro')+m[2], text, flags=re.S)
+            text = text.replace('puis Pro à vie sans abonnement', 'puis Light ou Pro en achat unique sans abonnement')
+            text = text.replace('lifetime Pro, with no subscription', 'Light or Pro, with no subscription')
+            text = text.replace('with an optional one-time Pro unlock', 'with optional one-time Light or Pro upgrades')
             # The old release remains available on Mac/Windows, not on iOS.
             old_pattern = rf'<{tag}\b[^>]*data-release-version="2\.7"[^>]*>.*?</{tag}>'
             def previous(m):
@@ -54,6 +69,7 @@ def main():
                 return re.sub(r'<p class="release-platform-summary">.*?</p>',
                               lambda _: '<p class="release-platform-summary">Mac · Windows · 2.7 — '+escape(available)+'</p>', b, flags=re.S)
             text = re.sub(old_pattern, previous, text, flags=re.S)
+            text = re.sub(r'quality\.css\?v=[^"\s]+', 'quality.css?v=20261008-free-light-pro', text)
             if text != path.read_text():
                 path.write_text(text)
                 changed += 1

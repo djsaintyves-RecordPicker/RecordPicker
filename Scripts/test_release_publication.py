@@ -80,7 +80,8 @@ def main() -> None:
                     assert block, (locale_dir, route)
                     assert copies[locale]['status'] in unescape(block.group())
                     assert 'release-upcoming' not in block.group()
-                    assert 'data-offer="light"' in block.group() and 'data-offer="pro"' in block.group()
+                    assert all('data-offer="'+tier+'"' in block.group() for tier in ('free','light','pro'))
+                    assert copies[locale]['free_title'] in unescape(block.group())
                     assert all(copies[locale][key] in unescape(block.group())
                                for key in ('light_title', 'light', 'pro_title', 'pro', 'terms'))
                     if route in ('mac-app/index.html', 'windows-app/index.html'):
