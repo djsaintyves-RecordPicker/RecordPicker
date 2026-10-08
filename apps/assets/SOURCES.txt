@@ -5,3 +5,5 @@ October Mess S05E02: cover observed on the Apple Music playlist supplied by Yves
 September Desires S05E01: Apple Music playlist supplied by Yves Durand, cover exported from observed page assets on 2026-10-08. https://music.apple.com/fr/playlist/my-musical-update-s05e01-september-desires/pl.u-2NPMes2Pr7J
 
 Dulpi icon: existing project artwork from Sources/Dulpi/Resources/Dulpi.png, supplied by Yves Durand.
+
+App Store, Microsoft Store and Android SVG logos: Simple Icons, via jsDelivr (appstore/android v15, microsoftstore v11). Brand assets used to identify outbound platform links.

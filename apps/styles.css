@@ -48,3 +48,14 @@ html{scroll-padding-top:145px}section[id],article[id]{scroll-margin-top:145px}
 
 .hub-menu .platforms a[href*="music.apple.com"]{background:#d91e39;color:white}.hub-menu .platforms a[href*="open.spotify.com"]{background:#1ed760;color:#111}.hub-menu .platforms a[href*="open.spotify.com"] .platform-logo{filter:none}.hub-menu .platforms a[href*="deezer.com"]{background:#a238ff;color:white}
 @media(max-width:600px){.hub-header>.hub-menu{position:relative}.hub-menu-group{position:static}.hub-menu-panel{position:absolute;inset-inline:0;top:calc(100% + 8px);max-width:100%}}
+
+/* Store destinations use recognisable logos and accessible brand colours. */
+.store-logo{width:26px;height:26px;object-fit:contain;flex-shrink:0;filter:invert(1)}
+.app-actions .store-appstore,.hub-menu a.store-appstore{background:#0067d6;color:#fff;border-color:#0067d6}
+.app-actions .store-appstore:hover,.hub-menu a.store-appstore:hover{background:#0056b5;color:#fff}
+.app-actions .store-microsoftstore,.hub-menu a.store-microsoftstore{background:#0067b8;color:#fff;border-color:#0067b8}
+.app-actions .store-microsoftstore:hover,.hub-menu a.store-microsoftstore:hover{background:#00569b;color:#fff}
+.app-actions .store-android-beta,.hub-menu a.store-android-beta{background:#3ddc84;color:#10281b;border-color:#3ddc84}
+.app-actions .store-android-beta:hover,.hub-menu a.store-android-beta:hover{background:#32c775;color:#10281b}
+.store-android-beta .store-logo{filter:none}.card .app-actions .store-button{display:flex;align-items:center;justify-content:center;min-height:64px;line-height:1.4;gap:12px}
+.hub-menu :is(.store-appstore,.store-microsoftstore,.store-android-beta){display:flex;align-items:center;gap:10px;border-radius:8px}

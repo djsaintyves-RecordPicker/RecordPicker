@@ -26,7 +26,7 @@
     "pt-br": "c84cecd570214201608cfb83e289344f07ac0f787a0fe5b24c8d149571e4ac78",
     "pt-pt": "6769d50dea6e264471ac0b5e5bae9a537c02f45c50f2e772d8aba3c27e76e5b0",
     "ru": "8bd3c1433b3d161ac914045690fadb12b803c629e2c1973218bc8eda87c4701f",
-    "shared": "df9bd7ae818f759285a01a794dc87382fc46468d980804260ccca90482813b7d",
+    "shared": "2fd9d0ada028e32ccc17b6c9f1ad46a9b4b94c07151b4394bc513768cbc53bc7",
     "sv": "59180718eb4f29ef24846d04c66396d4776a7c88d4d35ad2daeb90d539dd926e",
     "th": "c80140e8a8b74184f7c53995f51258c267c949052a048365754e5d4ce64d4e46",
     "tr": "2b7235baf686ce992f381024548b6099268f4ad782af813ae002c01c485347f6",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 545,
-  "review_reason": "Make the permanent free tier prominent before Light and Pro, reusing the established localized 100-record wording; align English and French descriptions with both upgrades.",
+  "review_reason": "Brand store links and add localized beta recruitment, preserving Free Light Pro copy",
   "schema": 1
 }

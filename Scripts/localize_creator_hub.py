@@ -105,6 +105,9 @@ def generate(templates):
     if href in ('/apps/','/fr/apps/'):node.set('href','/'+prefix(locale)+'apps/')
     elif href.startswith(('/snory-teller/en-US/','/snory-teller/fr-FR/')):
      parts=href.split('/');parts[2]=locale;node.set('href','/'.join(parts))
+    elif href in ('/android-app/','/fr/android-app/'):
+     candidate='/'+rp_locale+'/android-app/' if rp_locale else '/android-app/'
+     node.set('href',candidate if (ROOT/candidate.lstrip('/')/'index.html').is_file() else '/android-app/')
     elif href in ('/apps/dulpi/','/fr/apps/dulpi/'):node.set('href','/'+prefix(locale)+'apps/dulpi/')
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href

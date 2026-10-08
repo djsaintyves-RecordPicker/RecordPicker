@@ -44,7 +44,7 @@ def audit():
    assert 'apps.microsoft.com/detail/9N2ZWRL4M3JC' in text
    assert any('platform=mac' in link for link in page.rp_links),(url,'Mac store link missing')
    assert not any('/screenshots/' in image for image in page.rp_images),(url,'app card screenshot retained')
-   site=next(link for link in page.rp_links if link.startswith('/') and not link.startswith('/assets/'))
+   site=next(link for link in page.rp_links if link.startswith('/') and not link.startswith('/assets/') and not link.endswith('/android-app/'))
    locale={'ar-SA':'ar','de-DE':'de','nl-NL':'nl','no':'nb','fr-FR':'fr','en-US':''}.get(page.lang,page.lang.lower())
    expected='/'+locale+'/' if locale else '/'
    if not (ROOT/expected.lstrip('/')/'index.html').is_file():
