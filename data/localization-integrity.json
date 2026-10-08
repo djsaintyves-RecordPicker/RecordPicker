@@ -26,7 +26,7 @@
     "pt-br": "49a9717e7aa525e3d9f87a92901334f2ffaa71d69058b120e616429428c1695c",
     "pt-pt": "cba34902477d4fa856acfcc27aaf91ac52c9a86ea29ab7f133c4110c9c9a4353",
     "ru": "e7a4e284ecb9e5362bd985d004b986c392d3dbc2039040b1555ff99fe563a996",
-    "shared": "309327c10d55dad7fa5dc98dbb265a33a9444804479e40e5d4cb9d7a280db2a0",
+    "shared": "650912147a775e68d38b7b3f8f0c68ce83ebb8b31fe0d26d602b3812358a8d4e",
     "sv": "294fc75134525dfbc1c537728c1f02126f508fdfc17e90c9037ed8ade186c4b3",
     "th": "3f15ffa8b041da88a93806743633f56aa79361f25f454a270b5eeb4d2aae67aa",
     "tr": "f7dfa14660348841934379c209ed0cc588028ba11f221f512257e5cf297546cf",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 449,
-  "review_reason": "Public Dulpi presentation from institutional document with explicitly fictional screenshots; remove application access link",
+  "review_reason": "Use Listen on labels for the three music services",
   "schema": 1
 }
