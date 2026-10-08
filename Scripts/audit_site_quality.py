@@ -418,6 +418,7 @@ def main() -> None:
             "site.js?v=20260812-complete-growth",
             "site.js?v=20260812-final-funnel",
             "site.js?v=20260813-indexnow-social",
+            "site.js?v=20261008-free-light-pro",
         )):
             errors.append(f"{relative}: missing versioned site.js")
         if not any(version in text for version in (
