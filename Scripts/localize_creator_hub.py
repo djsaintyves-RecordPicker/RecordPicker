@@ -158,7 +158,7 @@ def generate(templates):
    localehash=hashlib.sha256((ROOT/'apps/locale.js').read_bytes()).hexdigest()[:12]
    language_script=etree.Element('script',src='/apps/locale.js?v='+localehash)
    head.insert(2,language_script)
-   for primary in doc.xpath('//*[@id="physical-routine"]/a'):
+   for primary in doc.xpath('//*[@id="physical-routine"]/a|//header//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]'):
     primary.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
    for script in doc.xpath('//script[@type="application/ld+json"]'):
     data=json.loads(script.text)

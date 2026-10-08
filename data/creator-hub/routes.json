@@ -9,5 +9,6 @@
   "rediscover": "record-picker/guides/rediscover/",
   "choose": "record-picker/guides/choose/",
   "snory-guide": "snory-teller-guide/",
-  "physical-guide": "physical-routine-guide/"
+  "physical-guide": "physical-routine-guide/",
+  "music": "apps/my-musical-update/"
 }
