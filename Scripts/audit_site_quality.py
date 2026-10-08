@@ -32,7 +32,9 @@ SOCIAL_IMAGE_URL = (
 )
 OFFICIAL_SOCIALS = {
     "https://www.instagram.com/recordpicker/",
+
 }
+RESTORED_SOCIAL_LINKS = {"https://www.facebook.com/profile.php?id=61591096987226", "https://www.youtube.com/@recordpicker"}
 REMOVED_SOCIAL_HOSTS = ("youtube.com", "facebook.com", "threads.net", "reddit.com")
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
@@ -147,7 +149,7 @@ def main() -> None:
                         f"{relative}: language option {hreflang} points outside {platform_route}"
                     )
         for host in REMOVED_SOCIAL_HOSTS:
-            if re.search(rf'href="https://(?:www\.)?{re.escape(host)}/', text):
+            if any(host in url and url not in OFFICIAL_SOCIALS | RESTORED_SOCIAL_LINKS for url in re.findall(r'href="(https://[^"]+)"', text)):
                 errors.append(f"{page.relative_to(ROOT)}: temporarily removed social link {host} remains")
         for value in re.findall(r'(?:href|src|srcset)="([^"]+)"', text):
             target = local_target(page, value)
