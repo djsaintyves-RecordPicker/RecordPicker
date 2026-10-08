@@ -1,0 +1,1 @@
+Brand icons: Simple Icons, https://simpleicons.org/ (SVG files retrieved from npm simple-icons via jsDelivr, 2026-10-08). Brand marks remain the property of their respective owners. Used solely to identify destination services.
