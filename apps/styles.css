@@ -59,3 +59,15 @@ html{scroll-padding-top:145px}section[id],article[id]{scroll-margin-top:145px}
 .app-actions .store-android-beta:hover,.hub-menu a.store-android-beta:hover{background:#32c775;color:#10281b}
 .store-android-beta .store-logo{filter:none}.card .app-actions .store-button{display:flex;align-items:center;justify-content:center;min-height:64px;line-height:1.4;gap:12px}
 .hub-menu :is(.store-appstore,.store-microsoftstore,.store-android-beta){display:flex;align-items:center;gap:10px;border-radius:8px}
+
+/* Shared type scale for the hub and project presentation pages. */
+:root{--type-title:clamp(34px,5vw,56px);--type-section:32px;--type-subsection:22px;--type-body:18px;--type-control:16px;--type-meta:14px;--type-label:12px}
+body{font-size:var(--type-body);line-height:1.65}
+h1{font-size:var(--type-title);line-height:1.12}
+h2,.music h2{font-size:var(--type-section);line-height:1.25}
+h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-size:var(--type-subsection);line-height:1.35}
+.intro,.music>p:not(.tag),.card>p:not(.tag):not(.availability),.playlist-cover p,.guide p,.guide li,.community-grid p,.demo p,.demo li{font-size:var(--type-body);line-height:1.65}
+.app-actions .store-button,.app-actions>a:last-child,.music :is(.playlist-actions,.platforms) a,.social-links a,.project-nav a,.guide-nav{font-size:var(--type-control);line-height:1.5}
+.availability,.routine-art span,.app-preview figcaption,.presentation-shot figcaption,footer,.hub-header>strong,.hub-menu-group>summary,.hub-menu-panel a,.hub-menu-panel .platforms a,.language-picker summary,.language-options a{font-size:var(--type-meta);line-height:1.5}
+.tag,.guide p.tag,.card p.tag,.music p.tag,.playlist-cover small{font-size:var(--type-label);line-height:1.5}
+@media(max-width:600px){:root{--type-section:28px;--type-subsection:20px;--type-body:16px}.hub-header>strong,.hub-menu-group>summary,.hub-header .language-picker summary{font-size:var(--type-meta)}}
