@@ -21,6 +21,10 @@ DATE = '2026-10-07'
 
 
 def main():
+    state = json.loads((ROOT / 'data/release-state.json').read_text())
+    if state['current_release']['version'] == '3.0':
+        print('3.0 publication has started; verified availability preserved.')
+        return
     copies = json.loads((ROOT / 'data/release-notes/3.0-offer.json').read_text())
     if set(copies) != set(LOCALES.values()):
         raise RuntimeError('Missing localized 3.0 offer')

@@ -32,41 +32,33 @@ This repository hosts the public discovery, support, screenshots, privacy, and f
 
 ## Current release
 
-Record Picker 2.7 is available on iPhone, iPad, Apple Watch, Mac and Windows.
-On Apple it brings more varied Listening Journeys, saved Collection Stories,
-a combined acquisition/listening timeline and collection-wide missing-information
-lookup, plus camera import on iPhone and clearer navigation.
+Record Picker 3.0 is available on iPhone, iPad and Apple Watch. Mac 3.0
+is under App Store review. Windows 3.0 is being prepared for submission;
+its currently published version remains 2.7.1.
 
-Apple 2.7.1 is available. Its Discogs release ID/link import previews genres,
-styles, tracks and edition details before saving.
+Light costs €2.99 as a one-time purchase: a simple album catalogue,
+unlimited records and imports, Random Pick, Today's Pick and Mood Pick,
+plus favourites, search, backup and restore. Pro adds Listening Journeys,
+collection graphs, advanced statistics, Reviews/Keywords tools, batch
+enrichment and private pressing details. Existing Pro purchases retain their
+rights and the Pro price remains unchanged. The local storefront price is
+shown before purchase. Private pressing photos currently remain on the device.
 
-Record Picker 3.0 (formerly the 2.8 development cycle) is in preparation. Its
-agreed Light offer is €2.99 as a one-time purchase: a simple album catalogue,
-unlimited records and imports, Random Pick, Today's Pick and Mood Pick, plus
-favourites, search, backup and restore. Pro adds Listening Journeys, collection
-graphs, advanced statistics, Reviews/Keywords tools, batch enrichment and
-private pressing details. Existing Pro purchases retain their rights and the
-Pro price remains unchanged. The local storefront price is shown before
-purchase. Private pressing photos currently remain on the device.
-
-The offer is staged on all 33 localized site variants; it does not imply that
-3.0 has been submitted or released. English and French copy was edited
-manually; the other new offer translations remain machine drafts pending a
-native-speaker linguistic review. Existing screenshots retain their actual
-capture versions. The yellow Android beta recruitment banner is preserved.
-
-## App Store version history
+The offer and verified availability appear on all 33 localized site variants.
+English and French copy was edited manually; other new offer translations
+remain machine drafts pending native-speaker review. Screenshots retain
+their actual capture versions. The yellow Android beta recruitment banner
+is preserved.
 
 ## Platform roadmap
 
-- Windows: 2.7 available on the Microsoft Store; 3.0 is under validation with Windows 10 x64 and Windows 11 ARM64 compatibility targets.
-- Android: waiting for beta testers; ChromeOS compatibility is being validated through the Android app.
+- Windows: 2.7.1 available; 3.0 targets Windows 10 x64 and Windows 11 ARM64.
+- Android: closed beta, waiting for testers; ChromeOS validation uses the Android app.
 - 3.1: audio recognition; 3.2: recognition from record spines.
 
-Regenerate the agreed offer with `python3 Scripts/announce_release_3_0.py`.
-Its publication state is separate from the current release in
-`data/release-state.json`. Store availability must be verified before promoting
-3.0 from a staged announcement to the current release.
+Use `python3 Scripts/publish_release_3_0_ios.py` to preserve verified iOS
+availability and the mixed rollout in `data/release-state.json`.
+`announce_release_3_0.py` does not reset a publication already started.
 
 Localized Windows product pages are available under `/windows-app/` for every
 supported site language.

@@ -63,6 +63,40 @@ def main() -> None:
         state = json.loads(
             (target / "data" / "release-state.json").read_text(encoding="utf-8")
         )
+        if state['current_release']['version'] == '3.0':
+            from html import unescape
+            from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
+            assert state['publication_phase'] == 'partial'
+            assert state['current_release']['platform_versions'] == {
+                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '2.7', 'windows': '2.7'}
+            assert state['next_release']['platforms']['mac'] == 'in_review'
+            assert state['next_release']['offer']['light']['price_eur'] == '2.99'
+            assert state['next_release']['offer']['pro']['existing_purchases_preserved']
+            copies = json.loads((target / 'data/release-notes/3.0-offer.json').read_text())
+            for locale_dir, locale in ANNOUNCEMENT_LOCALES.items():
+                for route in state['next_release']['announcement_routes']:
+                    page = (target / locale_dir / route).read_text()
+                    block = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0"[^>]*>.*?</\1>', page, re.S)
+                    assert block, (locale_dir, route)
+                    assert copies[locale]['status'] in unescape(block.group())
+                    assert 'release-upcoming' not in block.group()
+                    assert 'data-offer="light"' in block.group() and 'data-offer="pro"' in block.group()
+                    assert all(copies[locale][key] in unescape(block.group())
+                               for key in ('light_title', 'light', 'pro_title', 'pro', 'terms'))
+                    if route in ('mac-app/index.html', 'windows-app/index.html'):
+                        assert 'Record Picker · 2.7</span>' in page
+                    else:
+                        assert 'Record Picker · 3.0</span>' in page
+            before = {p: p.read_bytes() for p in target.rglob('*.html')}
+            for name in ('data/release-state.json', 'data/release-notes/3.0-offer.json'):
+                p = target / name
+                before[p] = p.read_bytes()
+            for script in ('publish_release_3_0_ios.py', 'announce_release_3_0.py'):
+                run('python3', 'Scripts/' + script, cwd=target)
+                run('python3', 'Scripts/' + script, cwd=target)
+            assert all(p.read_bytes() == content for p, content in before.items())
+            print('OK: approved iOS 3.0, Light/Pro offer and mixed rollout remain accurate and repeatable')
+            return
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
         current = state["current_release"]["version"]

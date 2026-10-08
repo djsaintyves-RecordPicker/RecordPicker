@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "publication_phase": "full",
+  "publication_phase": "partial",
   "current_release": {
-    "version": "2.7",
+    "version": "3.0",
     "platform_versions": {
-      "iphone": "2.7",
-      "ipad": "2.7",
-      "watch": "2.7",
+      "iphone": "3.0",
+      "ipad": "3.0",
+      "watch": "3.0",
       "mac": "2.7",
       "windows": "2.7"
     },
@@ -20,9 +20,7 @@
     "required_platforms_for_full_release": [
       "iphone",
       "ipad",
-      "watch",
-      "mac",
-      "windows"
+      "watch"
     ]
   },
   "historical_releases": [
@@ -57,17 +55,17 @@
   "next_release": {
     "version": "3.0",
     "platforms": {
-      "iphone": "in_preparation",
-      "ipad": "in_preparation",
-      "watch": "in_preparation",
-      "mac": "in_preparation",
+      "iphone": "available",
+      "ipad": "available",
+      "watch": "available",
+      "mac": "in_review",
       "windows": "in_preparation",
       "android": "in_preparation",
       "chromeos": "in_preparation"
     },
     "distribution": {
-      "apple": "preparing_submission",
-      "windows": "validation",
+      "apple": "ios_available_mac_in_review",
+      "windows": "submission_in_progress",
       "android": "closed_beta_recruitment",
       "chromeos": "validation"
     },
