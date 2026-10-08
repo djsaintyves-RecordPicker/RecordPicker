@@ -36,3 +36,15 @@ a:hover{color:#555} .platforms a:hover{background:#444;color:#fff}
 .music .platforms a{width:100%;max-width:280px;justify-self:center}.music .platforms a:first-child{justify-self:start}.music .platforms a:last-child{justify-self:end}@media(max-width:760px){.music .platforms a{max-width:240px;justify-self:start}.music .platforms a:last-child{justify-self:start}}
 
 .desktop-preview img{display:block;width:100%;height:auto;max-height:none;border-radius:8px}.desktop-preview a{display:block}.desktop-preview{padding:14px}
+
+/* Creator hub: grouped, keyboard-accessible navigation shared by every locale. */
+.hub-header{position:sticky;top:0;z-index:30;display:grid;grid-template-columns:1fr auto;align-items:center;padding:18px 24px;background:#f5f4f1f5;backdrop-filter:blur(12px)}
+.hub-header>strong{font-size:14px}.hub-header>.language-nav{grid-column:2;grid-row:1}.hub-header>.hub-menu{grid-column:1/-1;grid-row:2;display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.hub-menu-group{position:relative}.hub-menu-group>summary{list-style:none;cursor:pointer;padding:8px 16px;border:1px solid #d8d6d1;border-radius:9px;background:white;font-size:14px;font-weight:650}.hub-menu-group>summary::-webkit-details-marker{display:none}.hub-menu-group>summary:after{content:' ▾'}.hub-menu-group[open]>summary{background:#eae8e3}
+.hub-menu-panel{position:absolute;inset-inline-start:0;top:calc(100% + 8px);min-width:250px;max-width:calc(100vw - 48px);max-height:65vh;overflow:auto;padding:10px;border:1px solid #d8d6d1;border-radius:12px;background:#fff;box-shadow:0 12px 35px #0002}
+.hub-menu-panel a{display:flex!important;align-items:center;gap:8px;padding:10px 12px;border-radius:7px;font-size:14px;text-decoration:none!important;margin:0!important}.hub-menu-panel a:hover{background:#f0efeb}.hub-menu-panel .platforms,.hub-menu-panel .social-links{display:flex;flex-direction:column;gap:6px;margin:0!important}.hub-menu-panel .platforms a{width:100%;height:auto;min-height:42px;font-size:14px;justify-content:flex-start}.hub-menu-panel img{width:20px;height:20px;object-fit:contain}.hub-menu-panel .platform-logo{margin:0!important}
+html{scroll-padding-top:145px}section[id],article[id]{scroll-margin-top:145px}
+@media(max-width:600px){.hub-header{padding:12px 18px;gap:8px}.hub-header>strong{max-width:210px;font-size:12px}.hub-header>.hub-menu{gap:6px;margin-top:4px}.hub-menu-group>summary{padding:7px 10px;font-size:12px}.hub-menu-panel{position:fixed;inset-inline:18px;top:138px;min-width:0;max-width:none;max-height:60vh}.hub-header .language-picker summary{font-size:12px}html{scroll-padding-top:155px}section[id],article[id]{scroll-margin-top:155px}}
+
+.hub-menu .platforms a[href*="music.apple.com"]{background:#d91e39;color:white}.hub-menu .platforms a[href*="open.spotify.com"]{background:#1ed760;color:#111}.hub-menu .platforms a[href*="open.spotify.com"] .platform-logo{filter:none}.hub-menu .platforms a[href*="deezer.com"]{background:#a238ff;color:white}
+@media(max-width:600px){.hub-header>.hub-menu{position:relative}.hub-menu-group{position:static}.hub-menu-panel{position:absolute;inset-inline:0;top:calc(100% + 8px);max-width:100%}}
