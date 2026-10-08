@@ -1,3 +1,5 @@
 Brand icons: Simple Icons, https://simpleicons.org/ (SVG files retrieved from npm simple-icons via jsDelivr, 2026-10-08). Brand marks remain the property of their respective owners. Used solely to identify destination services.
 
 October Mess S05E02: cover observed on the Apple Music playlist supplied by Yves Durand, exported via browser page assets on 2026-10-08. https://music.apple.com/fr/playlist/my-musical-update-s05e02-october-mess/pl.u-2NPoaF2Pr7J
+
+September Desires S05E01: Apple Music playlist supplied by Yves Durand, cover exported from observed page assets on 2026-10-08. https://music.apple.com/fr/playlist/my-musical-update-s05e01-september-desires/pl.u-2NPMes2Pr7J

@@ -26,7 +26,7 @@
     "pt-br": "49a9717e7aa525e3d9f87a92901334f2ffaa71d69058b120e616429428c1695c",
     "pt-pt": "cba34902477d4fa856acfcc27aaf91ac52c9a86ea29ab7f133c4110c9c9a4353",
     "ru": "e7a4e284ecb9e5362bd985d004b986c392d3dbc2039040b1555ff99fe563a996",
-    "shared": "50abea470efe16c39740b12e284c78d267557c02bd6b6f2c53b689f3b7a7a646",
+    "shared": "b863d9e4e91137610bda2fdcf0eae33b2d6c21aa6678f6a5b64f04cf39451a13",
     "sv": "294fc75134525dfbc1c537728c1f02126f508fdfc17e90c9037ed8ade186c4b3",
     "th": "3f15ffa8b041da88a93806743633f56aa79361f25f454a270b5eeb4d2aae67aa",
     "tr": "f7dfa14660348841934379c209ed0cc588028ba11f221f512257e5cf297546cf",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 449,
-  "review_reason": "Remove Dulpi interactive demo in both hub languages as explicitly requested by Yves; retain presentation link.",
+  "review_reason": "Complete September Desires cover and three destinations; move community before guides; highlight published Record Picker store links.",
   "schema": 1
 }
