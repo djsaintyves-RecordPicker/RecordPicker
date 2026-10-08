@@ -27,3 +27,7 @@ a:hover{color:#555} .platforms a:hover{background:#444;color:#fff}
 .music :is(.playlist-actions,.platforms) a[href^="https://open.spotify.com/"]{background:#1ed760;color:#111}.music :is(.playlist-actions,.platforms) a[href^="https://open.spotify.com/"]:hover{background:#19c457;color:#111}.music :is(.playlist-actions,.platforms) a[href^="https://open.spotify.com/"] .platform-logo{filter:none}
 .music :is(.playlist-actions,.platforms) a[href^="https://www.deezer.com/"]{background:#a238ff;color:#fff}.music :is(.playlist-actions,.platforms) a[href^="https://www.deezer.com/"]:hover{background:#8d25e7;color:#fff}
 .music :is(.playlist-actions,.platforms) a:focus-visible{outline:3px solid #111;outline-offset:4px;box-shadow:0 0 0 2px #fff}@media(prefers-reduced-motion:reduce){.music :is(.playlist-actions,.platforms) a{transition:none}}
+/* Profile destinations fill the same content width as the playlist cards. */
+.music .platforms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:12px}.music .platforms a{justify-content:center;text-align:center;min-width:0;white-space:normal;overflow-wrap:anywhere;height:100%}@media(max-width:760px){.music .platforms{grid-template-columns:1fr}}
+/* Playlist actions align with the artwork rather than the full card width. */
+.music .playlist-actions{width:100%;max-width:280px}.music .playlist-actions a{width:100%;min-width:0}@media(max-width:760px){.music .playlist-actions{max-width:240px}}
