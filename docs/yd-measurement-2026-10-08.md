@@ -21,18 +21,18 @@ Les liens Apple Store portent la campagne `yd_<page>_<destination>` ; cela perme
 l’attribution dans les statistiques Apple lorsqu’elles sont disponibles.
 Un clic n’est ni une installation ni une écoute achevée.
 
-Aucun compte Umami ni identifiant de site n’était disponible à la préparation.
-Le compte a ensuite été créé par Yves. Site configuré en région EU, identifiant public f162dadd-7a70-47d2-ae74-ccc7b3842adb. La configuration est activée ; vérification en production à consigner après déploiement.
-Pour activer : créer le compte Hobby gratuit, ajouter recordpicker.app, relever
-le Website ID, renseigner apps/measurement-config.json puis publier. Vérifier un
-clic de chaque catégorie dans Events puis retirer les essais des conclusions.
+Le compte a été créé par Yves. Site configuré en région EU, identifiant public
+f162dadd-7a70-47d2-ae74-ccc7b3842adb. Configuration publiée et réception vérifiée
+sur le tableau de bord : visites de la page YD et de S05E02, puis un événement
+playlist_click après ouverture de Spotify. Ces visites sont des essais internes.
+La réception réelle des catégories store_click et beta_click reste à vérifier.
 Les pages Snory existantes ne sont pas instrumentées, leur politique demeure intacte.
 
 La configuration exclut query strings et fragments ; aucun formulaire, nom,
 e-mail, identifiant de compte, son ou historique applicatif n’est transmis.
-Respect de DNT et GPC ; pas de cookies ni localStorage dans ce module.
-Avant activation, publier une notice qui nomme Umami, décrit les mesures,
-le prestataire et les moyens d’opposition ; vérifier la région de stockage du compte.
+Respect de DNT et GPC ; aucun cookie de mesure. Seule la préférence
+d’opposition peut être conservée dans localStorage. La notice publiée nomme
+Umami et donne accès à sa politique de confidentialité et au choix d’opposition.
 Documentation : https://docs.umami.is/docs ; https://umami.is/pricing.
 
 ## Suivi à effectuer
@@ -53,3 +53,12 @@ ne pas inventer de commentaire personnel sur les morceaux.
 ## Opposition
 
 Notice Umami ajoutée au pied de page. Une case permet de désactiver la mesure ; seule cette préférence est stockée localement. Les paramètres et fragments sont retirés des URL et seul le domaine du référent est conservé.
+
+## Reprise du site
+
+Le menu Projets mène directement aux destinations localisées ; My Musical
+Update dispose d’un index durable et de deux pages d’épisodes. Les guides
+complets ont été séparés de la page YD. Les 600 pages du périmètre créateur
+sont générées pour 50 locales. Traductions automatiques hors français et
+anglais à relire. Déploiement et validation GitHub réussis pour 6a4dd9762.
+Ne pas assimiler une publication à une indexation confirmée par Google.
