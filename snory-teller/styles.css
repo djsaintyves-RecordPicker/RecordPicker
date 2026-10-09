@@ -7,3 +7,7 @@ html{scroll-behavior:smooth}body{background:#071329}header,main,footer{max-width
 /* Accessible language selection shared by all localized pages. */
 header{flex-wrap:wrap;gap:16px}.language-picker{position:relative;margin-inline-start:auto;font-size:14px}.language-picker summary{cursor:pointer;padding:8px 12px;border:1px solid #72819b;border-radius:10px;list-style:none}.language-picker summary::-webkit-details-marker{display:none}.language-options{position:absolute;inset-inline-end:0;top:calc(100% + 8px);z-index:50;width:min(280px,80vw);max-height:60vh;overflow:auto;padding:8px;border:1px solid #72819b;border-radius:12px;background:#112344;box-shadow:0 12px 35px #0005}.language-options a{display:block!important;padding:8px 10px;margin:0!important;color:#fff;border-radius:6px;text-decoration:none}.language-options a:hover,.language-options [aria-current=page]{background:#24477a}html[dir=rtl] .hero,html[dir=rtl] .steps{text-align:right}html[dir=rtl] h1,html[lang^=zh] h1,html[lang^=ja] h1,html[lang^=ko] h1{letter-spacing:normal;line-height:1.25}
 .landing header .language-picker{border:0;padding:0}.landing header .language-picker summary{font-size:14px}
+
+.store-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#0067d6;color:#fff;border-radius:12px}.store-cta:hover{background:#0056b5;color:#fff}.store-cta img{flex:none}
+
+.secondary-cta{display:block;margin-top:16px;font-size:16px;text-decoration:none}

@@ -120,5 +120,6 @@
   "Design and development: Yves Durand, with assistance from AI tools. Visual identity: abstract curves in shades of blue selected by Yves Durand, with AI-assisted artwork adaptation. The decorative Watch waveform is a synthetic illustration, not a recording or live measurement.": "രൂപകൽപ്പനയും വികസനവും: Yves Durand, AI ടൂളുകളുടെ സഹായത്തോടെ. വിഷ്വൽ ഐഡൻ്റിറ്റി: Yves Durand തിരഞ്ഞെടുത്ത നീല നിറത്തിലുള്ള അമൂർത്ത വക്രങ്ങൾ, AI- സഹായത്തോടെയുള്ള കലാസൃഷ്‌ടി പൊരുത്തപ്പെടുത്തൽ. അലങ്കാര വാച്ച് തരംഗരൂപം ഒരു സിന്തറ്റിക് ചിത്രീകരണമാണ്, റെക്കോർഡിംഗോ തത്സമയ അളവെടുപ്പോ അല്ല.",
   "The app uses Apple frameworks SwiftUI, AVFoundation, SoundAnalysis, WatchConnectivity, WatchKit, HealthKit and Charts. This version integrates no third-party SDK. Apple trademarks and products belong to Apple Inc. Snory Teller is an independent project.": "ആപ്പ് ആപ്പിൾ ഫ്രെയിംവർക്കുകൾ സ്വിഫ്റ്റ്യുഐ, എവി ഫൗണ്ടേഷൻ, സൗണ്ട് അനാലിസിസ്, വാച്ച് കണക്റ്റിവിറ്റി, വാച്ച്കിറ്റ്, ഹെൽത്ത്കിറ്റ്, ചാർട്ടുകൾ എന്നിവ ഉപയോഗിക്കുന്നു. ഈ പതിപ്പ് മൂന്നാം കക്ഷി SDK-യെ സംയോജിപ്പിക്കുന്നില്ല. Apple വ്യാപാരമുദ്രകളും ഉൽപ്പന്നങ്ങളും Apple Inc. Snory Teller ഒരു സ്വതന്ത്ര പദ്ധതിയാണ്.",
   "© 2026 Yves Durand. All rights reserved.": "© 2026 Yves Durand. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം.",
-  ", subject “Snory Teller”.": ", വിഷയം \"Snory Teller\"."
+  ", subject “Snory Teller”.": ", വിഷയം \"Snory Teller\".",
+  "App Store · iPhone & Apple Watch": "App Store · iPhone & Apple വാച്ച്"
 }

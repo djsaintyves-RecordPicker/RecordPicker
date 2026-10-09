@@ -50,6 +50,8 @@ def generate():
     href=a.get('href')
     if href.startswith(('/snory-teller/en-US/','/snory-teller/fr-FR/')):
      parts=href.split('/');parts[2]=locale;a.set('href','/'.join(parts))
+    elif href in ['/snory-teller-guide/','/fr/snory-teller-guide/']:
+     a.set('href','/'+hub.prefix(locale)+'snory-teller-guide/')
     elif href.split('#')[0] in ['/apps/','/fr/apps/']:
      _,mark,fragment=href.partition('#');a.set('href','/'+hub.prefix(locale)+'apps/'+(mark+fragment if mark else ''))
     elif href in ['/physical/about/','/physical/fr/about/']:a.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))

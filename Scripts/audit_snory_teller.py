@@ -31,7 +31,7 @@ def audit():
             url = urlsplit(link)
             if url.scheme or link.startswith("#"): continue
             target = ROOT / url.path.lstrip("/") if link.startswith("/") else path.parent / url.path
-            assert target.resolve().is_relative_to((ROOT / "snory-teller").resolve()) or url.path.endswith("/apps/") or (target.is_dir() and (target/"index.html").is_file() and len(url.path.strip("/").split("/"))==1) or url.path in {"/", "/fr/", "/apps/", "/fr/apps/", "/physical/about/", "/physical/fr/about/"}, link
+            assert target.resolve().is_relative_to((ROOT / "snory-teller").resolve()) or url.path.endswith("/snory-teller-guide/") or url.path == "/apps/assets/appstore.svg" or url.path.endswith("/apps/") or (target.is_dir() and (target/"index.html").is_file() and len(url.path.strip("/").split("/"))==1) or url.path in {"/", "/fr/", "/apps/", "/fr/apps/", "/physical/about/", "/physical/fr/about/"}, link
             if target.is_dir(): target /= "index.html"
             assert target.is_file(), (path, link)
     print("Snory Teller: 200 localized pages, root and local links validated")
