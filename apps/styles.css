@@ -80,8 +80,5 @@ h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-s
 .card .limits{font-size:14px;line-height:1.5;color:#666}
 @media(prefers-color-scheme:dark){.card .limits{color:#b9bcc2}}
 
-/* Fit the Snory waves inside the same invisible circle as the project marks.
-   The source reaches radius 230/512; 2.8px inset brings it within 210/512. */
-.app-icon[src*="/snory-teller/icon"]{box-sizing:border-box;object-fit:contain;padding:2.8px}
 
 .hub-header>.hub-menu{grid-row:1}.studio-copyright{margin-top:28px;font-size:13px}
