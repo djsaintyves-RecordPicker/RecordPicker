@@ -26,7 +26,7 @@
     "pt-br": "c84cecd570214201608cfb83e289344f07ac0f787a0fe5b24c8d149571e4ac78",
     "pt-pt": "6769d50dea6e264471ac0b5e5bae9a537c02f45c50f2e772d8aba3c27e76e5b0",
     "ru": "8bd3c1433b3d161ac914045690fadb12b803c629e2c1973218bc8eda87c4701f",
-    "shared": "cb9cb977a7b863b73acf956008618295d7078be3134802d8caf19a95fe6f8558",
+    "shared": "5204fe1eb4d73bee95814acf71dea22bd50ea8016cbeec83c14ee4684ccb16a7",
     "sv": "59180718eb4f29ef24846d04c66396d4776a7c88d4d35ad2daeb90d539dd926e",
     "th": "c80140e8a8b74184f7c53995f51258c267c949052a048365754e5d4ce64d4e46",
     "tr": "2b7235baf686ce992f381024548b6099268f4ad782af813ae002c01c485347f6",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1045,
-  "review_reason": "Place Meal Picker fifth with Food & Drink category; refresh shared stylesheet version",
+  "review_reason": "Preserve studio and app brand names in localized project menus",
   "schema": 1
 }

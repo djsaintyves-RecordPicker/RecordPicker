@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/creator-hub'
 LOCALES='ar-SA bn-BD ca cs da de-DE el en-AU en-CA en-GB en-US es-ES es-MX fi fr-CA fr-FR gu-IN he hi hr hu id it ja kn-IN ko ml-IN mr-IN ms nl-NL no or-IN pa-IN pl pt-BR pt-PT ro ru sk sl-SI sv ta-IN te-IN th tr uk ur-PK vi zh-Hans zh-Hant'.split()
 NAMES=['العربية','বাংলা','Català','Čeština','Dansk','Deutsch','Ελληνικά','English (Australia)','English (Canada)','English (UK)','English (US)','Español (España)','Español (México)','Suomi','Français (Canada)','Français (France)','ગુજરાતી','עברית','हिन्दी','Hrvatski','Magyar','Bahasa Indonesia','Italiano','日本語','ಕನ್ನಡ','한국어','മലയാളം','मराठी','Bahasa Melayu','Nederlands','Norsk','ଓଡ଼ିଆ','ਪੰਜਾਬੀ','Polski','Português (Brasil)','Português (Portugal)','Română','Русский','Slovenčina','Slovenščina','Svenska','தமிழ்','తెలుగు','ไทย','Türkçe','Українська','اردو','Tiếng Việt','简体中文','繁體中文']
-BRANDS=['Yves Durand','Record Picker','Physical Routine','Snory Teller','Dulpi','My Musical Update','MY MUSICAL UPDATE','Apple Music','Microsoft Store','App Store','Spotify','Deezer','Instagram','Facebook','YouTube','Reddit','October Mess','September Desires','LPI','Discogs','MusicBuddy','Random Pick','Mood Pick','Record of the Day','Listen Later','CSV','JSON','Meal Picker']
+BRANDS=['Record Picker Studio','Yves Durand','Record Picker','Physical Routine','Snory Teller','Dulpi','My Musical Update','MY MUSICAL UPDATE','Apple Music','Microsoft Store','App Store','Spotify','Deezer','Instagram','Facebook','YouTube','Reddit','October Mess','September Desires','LPI','Discogs','MusicBuddy','Random Pick','Mood Pick','Record of the Day','Listen Later','CSV','JSON','Meal Picker']
 ATTRS={'alt','aria-label','title'}
 def language(locale):
  if locale.startswith('zh-'): return 'zh-CN' if locale=='zh-Hans' else 'zh-TW'
@@ -63,7 +63,7 @@ def refresh(templates):
  def one(lang):
   path=DATA/(lang+'.json'); cache=json.loads(path.read_text()) if path.exists() else {}
   for s in texts:
-   if s in BRANDS or not any(c.isalpha() for c in s) or s.startswith(('©','S05E','MY MUSICAL UPDATE ·')) or '@' in s: cache[s]=s
+   if s in BRANDS or s.split(' · ',1)[-1] in BRANDS or not any(c.isalpha() for c in s) or s.startswith(('©','S05E','MY MUSICAL UPDATE ·')) or '@' in s: cache[s]=s
   for batch in batches:
    missing=[(i,s) for i,s in batch if s not in cache]
    if missing:cache.update(translate_batch(lang,missing)); path.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n')
@@ -103,6 +103,9 @@ def generate(templates):
    rp_locale={'ar-SA':'ar','de-DE':'de','nl-NL':'nl','no':'nb','fr-FR':'fr','en-US':''}.get(locale,locale.lower())
    for node in doc.xpath('//*[@href]'):
     href=node.get('href')
+    for base in ('/apps/#','/fr/apps/#'):
+     if href.startswith(base):
+      href='/'+prefix(locale)+'apps/#'+href.split('#',1)[1];node.set('href',href);break
     for route in ROUTES.values():
      if href in ('/'+route,'/fr/'+route):node.set('href','/'+prefix(locale)+route)
     if href in ('/apps/','/fr/apps/'):node.set('href','/'+prefix(locale)+'apps/')
