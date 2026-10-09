@@ -92,6 +92,13 @@ def generate(templates):
     if button.get('aria-label'):button.set('aria-label',button.get('aria-label').replace(' ↗','').replace('↗',''))
    doc.set('lang',locale if locale!='no' else 'nb'); doc.set('dir','rtl' if lang in ('ar','he','ur') else 'ltr')
    pageurl=url(locale,kind)
+   # Studio identity belongs to the hub and its reading pages, not app sites.
+   for node in head.xpath('link[@rel="icon" or @rel="shortcut icon" or @rel="apple-touch-icon"]'):
+    head.remove(node)
+   etree.SubElement(head,'link',rel='icon',href='/assets/brand/rps/favicon.ico')
+   etree.SubElement(head,'link',rel='icon',type='image/png',sizes='32x32',href='/assets/brand/rps/icon-32.png')
+   etree.SubElement(head,'link',rel='icon',type='image/png',sizes='192x192',href='/assets/brand/rps/icon-192.png')
+   etree.SubElement(head,'link',rel='apple-touch-icon',sizes='180x180',href='/assets/brand/rps/icon-180.png')
    head.xpath('link[@rel="canonical"]')[0].set('href',pageurl)
    for node in head.xpath('link[@rel="alternate"]'):head.remove(node)
    for other in LOCALES:
