@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1045,
-  "review_reason": "Preserve studio and app brand names in localized project menus",
+  "review_reason": "Remove repeated studio header and put copyright last in footer",
   "schema": 1
 }
