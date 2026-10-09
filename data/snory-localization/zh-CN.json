@@ -121,5 +121,7 @@
   "The app uses Apple frameworks SwiftUI, AVFoundation, SoundAnalysis, WatchConnectivity, WatchKit, HealthKit and Charts. This version integrates no third-party SDK. Apple trademarks and products belong to Apple Inc. Snory Teller is an independent project.": "该应用程序使用 Apple 框架 SwiftUI、AVFoundation、SoundAnalysis、WatchConnectivity、WatchKit、HealthKit 和 Charts。该版本未集成第三方SDK。 Apple 商标和产品属于 Apple Inc.。Snory Teller 是一个独立项目。",
   "© 2026 Yves Durand. All rights reserved.": "© 2026 Yves Durand。版权所有。",
   ", subject “Snory Teller”.": "，主题“Snory Teller”。",
-  "App Store · iPhone & Apple Watch": "App Store · iPhone 和 Apple Watch"
+  "App Store · iPhone & Apple Watch": "App Store · iPhone 和 Apple Watch",
+  "Snory Teller aims to help interrupt snoring: discreet wrist vibrations prompt the snorer to turn onto their side. Vibration requests repeat while detected snoring continues, with the aim of disturbing their partner less.": "Snory Teller 旨在帮助打鼾：谨慎的手腕振动促使打鼾者侧身。当检测到打鼾继续时，振动请求会重复，目的是减少打扰他们的伴侣。",
+  "The app does not verify your position. It cannot guarantee that snoring will stop or that you or your partner will remain asleep.": "该应用程序不会验证您的位置。它不能保证打鼾会停止或您或您的伴侣会保持睡眠状态。"
 }

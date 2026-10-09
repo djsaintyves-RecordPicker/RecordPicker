@@ -121,5 +121,7 @@
   "The app uses Apple frameworks SwiftUI, AVFoundation, SoundAnalysis, WatchConnectivity, WatchKit, HealthKit and Charts. This version integrates no third-party SDK. Apple trademarks and products belong to Apple Inc. Snory Teller is an independent project.": "De app maakt gebruik van Apple-frameworks SwiftUI, AVFoundation, SoundAnalysis, WatchConnectivity, WatchKit, HealthKit en Charts. Deze versie integreert geen SDK van derden. Handelsmerken en producten van Apple zijn eigendom van Apple Inc. Snory Teller is een onafhankelijk project.",
   "© 2026 Yves Durand. All rights reserved.": "© 2026 Yves Durand. Alle rechten voorbehouden.",
   ", subject “Snory Teller”.": ", onderwerp “Snory Teller”.",
-  "App Store · iPhone & Apple Watch": "App Store · iPhone en Apple Watch"
+  "App Store · iPhone & Apple Watch": "App Store · iPhone en Apple Watch",
+  "Snory Teller aims to help interrupt snoring: discreet wrist vibrations prompt the snorer to turn onto their side. Vibration requests repeat while detected snoring continues, with the aim of disturbing their partner less.": "Snory Teller heeft tot doel het snurken te onderbreken: discrete polstrillingen zorgen ervoor dat de snurker zich op zijn zij draait. Trilverzoeken worden herhaald terwijl het gedetecteerde snurken doorgaat, met als doel de partner minder te storen.",
+  "The app does not verify your position. It cannot guarantee that snoring will stop or that you or your partner will remain asleep.": "De app verifieert uw positie niet. Het kan niet garanderen dat het snurken stopt of dat u of uw partner in slaap blijft."
 }

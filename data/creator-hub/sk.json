@@ -251,5 +251,7 @@
   "Disable measurement in this browser": "Zakázať meranie v tomto prehliadači",
   "My Musical Update — Yves Durand": "My Musical Update — Yves Durand",
   "Observe estimated snoring and try Apple Watch alerts.": "Sledujte odhadované chrápanie a vyskúšajte upozornenia Apple Watch.",
-  "App Store · iPhone & Apple Watch": "App Store · iPhone a Apple Watch"
+  "App Store · iPhone & Apple Watch": "App Store · iPhone a Apple Watch",
+  "The app does not verify your position. It cannot guarantee that snoring will stop or that you or your partner will remain asleep.": "Aplikácia neoveruje vašu polohu. Nemôže zaručiť, že chrápanie prestane alebo že vy alebo váš partner zostanete spať.",
+  "Snory Teller aims to help interrupt snoring: discreet wrist vibrations prompt the snorer to turn onto their side. Vibration requests repeat while detected snoring continues, with the aim of disturbing their partner less.": "Cieľom Snory Teller je pomôcť prerušiť chrápanie: diskrétne vibrácie zápästia prinútia chrápajúceho, aby sa otočil na bok. Žiadosti o vibrácie sa opakujú, kým zistené chrápanie pokračuje, s cieľom menej vyrušovať partnera."
 }

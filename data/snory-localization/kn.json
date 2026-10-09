@@ -121,5 +121,7 @@
   "The app uses Apple frameworks SwiftUI, AVFoundation, SoundAnalysis, WatchConnectivity, WatchKit, HealthKit and Charts. This version integrates no third-party SDK. Apple trademarks and products belong to Apple Inc. Snory Teller is an independent project.": "ಅಪ್ಲಿಕೇಶನ್ ಆಪಲ್ ಫ್ರೇಮ್‌ವರ್ಕ್‌ಗಳಾದ ಸ್ವಿಫ್ಟ್‌ಯುಐ, ಎವಿಫೌಂಡೇಶನ್, ಸೌಂಡ್ ಅನಾಲಿಸಿಸ್, ವಾಚ್‌ಕನೆಕ್ಟಿವಿಟಿ, ವಾಚ್‌ಕಿಟ್, ಹೆಲ್ತ್‌ಕಿಟ್ ಮತ್ತು ಚಾರ್ಟ್‌ಗಳನ್ನು ಬಳಸುತ್ತದೆ. ಈ ಆವೃತ್ತಿಯು ಯಾವುದೇ ಮೂರನೇ ವ್ಯಕ್ತಿಯ SDK ಅನ್ನು ಸಂಯೋಜಿಸುವುದಿಲ್ಲ. Apple ಟ್ರೇಡ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಉತ್ಪನ್ನಗಳು Apple Inc. Snory Teller ಒಂದು ಸ್ವತಂತ್ರ ಯೋಜನೆಯಾಗಿದೆ.",
   "© 2026 Yves Durand. All rights reserved.": "© 2026 Yves Durand. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
   ", subject “Snory Teller”.": ", ವಿಷಯ \"Snory Teller\".",
-  "App Store · iPhone & Apple Watch": "App Store · iPhone & Apple ವಾಚ್"
+  "App Store · iPhone & Apple Watch": "App Store · iPhone & Apple ವಾಚ್",
+  "Snory Teller aims to help interrupt snoring: discreet wrist vibrations prompt the snorer to turn onto their side. Vibration requests repeat while detected snoring continues, with the aim of disturbing their partner less.": "Snory Teller ಗೊರಕೆಯನ್ನು ಅಡ್ಡಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡುವ ಗುರಿ ಹೊಂದಿದೆ: ವಿವೇಚನಾಯುಕ್ತ ಮಣಿಕಟ್ಟಿನ ಕಂಪನಗಳು ಗೊರಕೆಯನ್ನು ಅವರ ಕಡೆಗೆ ತಿರುಗಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತವೆ. ಪತ್ತೆಯಾದ ಗೊರಕೆ ಮುಂದುವರಿದಾಗ ವೈಬ್ರೇಶನ್ ವಿನಂತಿಗಳು ಪುನರಾವರ್ತನೆಯಾಗುತ್ತವೆ, ಅವರ ಪಾಲುದಾರರಿಗೆ ತೊಂದರೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುವ ಉದ್ದೇಶದಿಂದ.",
+  "The app does not verify your position. It cannot guarantee that snoring will stop or that you or your partner will remain asleep.": "ಅಪ್ಲಿಕೇಶನ್ ನಿಮ್ಮ ಸ್ಥಾನವನ್ನು ಪರಿಶೀಲಿಸುವುದಿಲ್ಲ. ಗೊರಕೆ ನಿಲ್ಲುತ್ತದೆ ಅಥವಾ ನೀವು ಅಥವಾ ನಿಮ್ಮ ಸಂಗಾತಿ ನಿದ್ರಿಸುತ್ತೀರಿ ಎಂದು ಅದು ಖಾತರಿಪಡಿಸುವುದಿಲ್ಲ."
 }

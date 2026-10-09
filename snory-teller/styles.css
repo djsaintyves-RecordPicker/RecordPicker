@@ -11,3 +11,5 @@ header{flex-wrap:wrap;gap:16px}.language-picker{position:relative;margin-inline-
 .store-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#0067d6;color:#fff;border-radius:12px}.store-cta:hover{background:#0056b5;color:#fff}.store-cta img{flex:none}
 
 .secondary-cta{display:block;margin-top:16px;font-size:16px;text-decoration:none}
+
+.hero>div>p.limits{font-size:14px;line-height:1.5;color:#b6cadd}
