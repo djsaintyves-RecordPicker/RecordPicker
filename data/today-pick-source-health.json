@@ -3,8 +3,8 @@
   "contributingSources": 32,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 32,
-  "generatedAt": "2026-10-09T22:40:06Z",
-  "reachableSources": 46,
+  "generatedAt": "2026-10-10T05:54:58Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,13 +14,13 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 24,
+      "downloadedArticles": 25,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 33,
+      "downloadedArticles": 32,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 7,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -159,7 +159,7 @@
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -206,9 +206,10 @@
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
-      "downloadedArticles": 10,
+      "downloadedArticles": 0,
+      "error": "The read operation timed out",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
