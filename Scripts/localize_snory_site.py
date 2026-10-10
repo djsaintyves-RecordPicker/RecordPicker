@@ -3,7 +3,7 @@
 French/English authored text stays intact; other translations are cached public
 copy, machine translated and pending native-language editorial review.
 """
-import argparse,json,re,concurrent.futures
+import argparse,json,re,concurrent.futures,hashlib
 from pathlib import Path
 from lxml import html,etree
 import localize_creator_hub as hub
@@ -41,6 +41,7 @@ def generate():
       old=getattr(e,f);setattr(e,f,re.match(r'^\s*',old).group()+v+re.search(r'\s*$',old).group())
      else:e.set(f,v)
    d.set('lang','nb' if locale=='no' else locale);d.set('dir','rtl' if lang in ['ar','he','ur'] else 'ltr')
+   for css in head.xpath('link[@rel="stylesheet"]'):css.set('href','/snory-teller/styles.css?v='+hashlib.sha256((ROOT/'snory-teller/styles.css').read_bytes()).hexdigest()[:12])
    u=url(locale,kind);urls.append(u);head.xpath('link[@rel="canonical"]')[0].set('href',u)
    for e in head.xpath('meta[@property="og:url"]'):e.set('content',u)
    for e in head.xpath('link[@rel="alternate"]'):head.remove(e)
