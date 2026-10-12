@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 27,
+  "contributingSources": 28,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 27,
-  "generatedAt": "2026-10-11T21:59:24Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 28,
+  "generatedAt": "2026-10-12T06:00:52Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 29,
-      "resolvedEvents": 2,
+      "downloadedArticles": 33,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 7,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -112,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 9,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -201,7 +200,7 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 3,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
@@ -214,7 +213,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 17,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -244,7 +243,7 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 9,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
