@@ -32,5 +32,7 @@ jobs:
         run: PYTHONPATH=.github/today-pick python3 .github/today-pick/test_collect_today_pick_feed.py
       - name: Validate IndexNow publication batch
         run: python3 Scripts/submit_indexnow.py --dry-run
+      - name: Test incremental IndexNow notifications
+        run: PYTHONPATH=Scripts python3 -m unittest Scripts/test_submit_indexnow.py
       - name: Validate the current release and staged announcement twice
         run: python3 Scripts/test_release_publication.py
