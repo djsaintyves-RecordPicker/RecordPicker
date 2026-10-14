@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 31,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 31,
-  "generatedAt": "2026-10-14T17:12:37Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-10-14T21:42:32Z",
+  "reachableSources": 44,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -20,7 +20,7 @@
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 31,
+      "downloadedArticles": 30,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -80,15 +80,16 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 7,
+      "downloadedArticles": 8,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 7,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -111,7 +112,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -165,7 +166,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 9,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -183,7 +184,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -208,24 +209,24 @@
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 20,
+      "resolvedEvents": 19,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 6,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
