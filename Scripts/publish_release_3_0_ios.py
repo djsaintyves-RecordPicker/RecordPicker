@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish the approved Apple 3.0 offer, preserving Mac availability once confirmed."""
+"""Publish the approved Apple 3.0 offer, preserving verified desktop availability."""
 from html import escape, unescape
 import json
 from pathlib import Path
@@ -16,6 +16,7 @@ def main():
     copies_path = ROOT / 'data/release-notes/3.0-offer.json'
     copies = json.loads(copies_path.read_text())
     mac_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("mac") == "3.0"
+    windows_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("windows") == "3.0"
     changed = 0
     for directory, locale in LOCALES.items():
         home = (ROOT / directory / 'index.html').read_text()
@@ -40,6 +41,8 @@ def main():
                 status = '3.0 is available on iPhone, iPad, Apple Watch and Mac. Windows 3.0 is being prepared separately.'
             elif locale.startswith('fr-'):
                 status = 'La 3.0 est disponible sur iPhone, iPad, Apple Watch et Mac. La version 3.0 Windows est préparée séparément.'
+        if windows_available:
+            status = f'iPhone · iPad · Apple Watch · Mac · Windows · 3.0 — {available}.'
         copies[locale]['status'] = status
         free_title = PRICES[directory or 'en-us'].split(' · ')[0]
         copies[locale]['free_title'] = free_title
@@ -52,6 +55,8 @@ def main():
             if not match:
                 raise RuntimeError(f'Missing 3.0 offer: {path}')
             block = match.group().replace('release-upcoming', 'release-partial').replace('next-release', 'release-partial')
+            if windows_available:
+                block = block.replace('release-partial', 'current-release')
             block = re.sub(r'<p class="release-free-offer"[^>]*>.*?</p>', '', block, flags=re.S)
             block = block.replace('<div class="grid two release-tier-grid">',
                 '<p class="release-free-offer" data-offer="free"><strong>'+escape(free_title)+'</strong></p>'
@@ -74,7 +79,7 @@ def main():
             old_pattern = rf'<{tag}\b[^>]*data-release-version="2\.7"[^>]*>.*?</{tag}>'
             def previous(m):
                 b = m.group()
-                if tag == 'article':
+                if windows_available or tag == 'article':
                     return re.sub(r'<p class="release-platform-summary">.*?</p>', '', b, flags=re.S).replace(' current-release', '')
                 return re.sub(r'<p class="release-platform-summary">.*?</p>',
                               lambda _: '<p class="release-platform-summary">'+('Windows' if mac_available else 'Mac · Windows')+' · 2.7 — '+escape(available)+'</p>', b, flags=re.S)
@@ -87,27 +92,33 @@ def main():
     copies_path.write_text(json.dumps(copies, ensure_ascii=False, indent=2)+'\n')
     state_path = ROOT / 'data/release-state.json'
     state = json.loads(state_path.read_text())
-    state['publication_phase'] = 'partial'
+    state['publication_phase'] = 'full' if windows_available else 'partial'
     state['current_release']['version'] = '3.0'
-    state['current_release']['required_platforms_for_full_release'] = ['iphone', 'ipad', 'watch'] + (['mac'] if mac_available else [])
+    state['current_release']['required_platforms_for_full_release'] = ['iphone', 'ipad', 'watch'] + (['mac'] if mac_available else []) + (['windows'] if windows_available else [])
     for platform in ('iphone', 'ipad', 'watch'):
         state['current_release']['platform_versions'][platform] = '3.0'
         state['next_release']['platforms'][platform] = 'available'
     state['next_release']['platforms']['mac'] = 'available' if mac_available else 'in_review'
     state['next_release']['distribution']['apple'] = 'available' if mac_available else 'ios_available_mac_in_review'
-    state['next_release']['distribution']['windows'] = 'submission_in_progress'
+    if windows_available:
+        state['next_release']['platforms']['windows'] = 'available'
+        if '2.7' not in state['historical_releases']:
+            state['historical_releases'].insert(0, '2.7')
+    state['next_release']['distribution']['windows'] = 'available' if windows_available else 'submission_in_progress'
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2)+'\n')
     for path in ROOT.rglob('*.html'):
         relative = path.relative_to(ROOT).parts
         if any(p in relative for p in ('physical','snory-teller','apps','dulpi')):
             continue
         text = path.read_text()
-        if 'windows-app' not in relative and (mac_available or 'mac-app' not in relative):
+        if (windows_available or 'windows-app' not in relative) and (mac_available or 'mac-app' not in relative):
             text = text.replace('<span id="site-footer-version">Record Picker · 2.7</span>', '<span id="site-footer-version">Record Picker · 3.0</span>')
             text = text.replace('"softwareVersion":"2.7"', '"softwareVersion":"3.0"')
+        if windows_available and 'windows-app' in relative:
+            text = text.replace('Record Picker 2.7', 'Record Picker 3.0')
         if text != path.read_text():
             path.write_text(text)
-    print(f'Published approved Apple 3.0 offer on {changed} pages; other platforms preserved.')
+    print(f'Published verified 3.0 offer on {changed} pages; platform availability preserved.')
 
 if __name__ == '__main__':
     main()

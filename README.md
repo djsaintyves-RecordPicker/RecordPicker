@@ -2,7 +2,7 @@
 
 Record Picker helps you rediscover your physical music collection and choose the next album to play.
 
-Windows 2.7 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
+Windows 3.0 is available in the Microsoft Store: https://apps.microsoft.com/detail/9N2ZWRL4M3JC
 Android is waiting for beta testers.
 
 The Android closed beta is recruiting 12 testers worldwide. The beta is
@@ -11,14 +11,14 @@ or tablet, a Google Account, and 14 consecutive days to test and share feedback.
 
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
 
-## Record Picker 3.0 — Apple release (15 October 2026)
+## Record Picker 3.0 — Apple and Windows release (15 October 2026)
 
-Available on iPhone, iPad, Apple Watch and Mac. Free for up to 100 owned records.
+Available on iPhone, iPad, Apple Watch, Mac and Windows. Free for up to 100 owned records.
 Light (€2.99, lifetime) offers unlimited records/imports and the essential
 collection and picking tools. Pro (€9.99, lifetime) adds the advanced collection
-toolkit. Prices shown are for France; the App Store confirms local pricing.
+toolkit. Prices shown are for France; the local store confirms pricing.
 No subscription. Existing Pro purchases retain their rights.
-Windows 3.0 and Android rollout remain separate from this Apple announcement.
+Android remains a separate closed beta.
 
 ## Public pages
 
@@ -41,9 +41,8 @@ Windows 3.0 and Android rollout remain separate from this Apple announcement.
 
 ## Current release
 
-Record Picker 3.0 is available on iPhone, iPad and Apple Watch. Mac 3.0
-is under App Store review. Windows 3.0 is being prepared for submission;
-its currently published version remains 2.7.1.
+Record Picker 3.0 is available on iPhone, iPad, Apple Watch, Mac and Windows.
+Microsoft Partner Center confirms submission 6 is live (15 October 2026).
 
 Light costs €2.99 as a one-time purchase: a simple album catalogue,
 unlimited records and imports, Random Pick, Today's Pick and Mood Pick,
@@ -61,12 +60,12 @@ is preserved.
 
 ## Platform roadmap
 
-- Windows: 2.7.1 available; 3.0 targets Windows 10 x64 and Windows 11 ARM64.
+- Windows: 3.0 available for Windows 10 x64 and Windows 11 ARM64.
 - Android: closed beta, waiting for testers; ChromeOS validation uses the Android app.
 - 3.1: audio recognition; 3.2: recognition from record spines.
 
 Use `python3 Scripts/publish_release_3_0_ios.py` to preserve verified iOS
-availability and the mixed rollout in `data/release-state.json`.
+and desktop availability in `data/release-state.json`.
 `announce_release_3_0.py` does not reset a publication already started.
 
 Localized Windows product pages are available under `/windows-app/` for every
@@ -275,3 +274,5 @@ The bilingual creator hub lives at `/apps/` (English) and `/fr/apps/` (French). 
 Instagram profile verified in Safari: `https://www.instagram.com/my_musical_update/`, bio “Monthly playlists”. Existing links: Spotify, Apple Music, Record Picker App Store, Record Picker website, Mac4Ever article. Proposed bio: “Monthly playlists & music discoveries 🎶\nCreator of @recordpicker\nMy apps: music, movement & nights ↓”. Proposed destination for the existing website slot: `https://recordpicker.app/apps/?utm_source=instagram&utm_medium=social&utm_campaign=creator_hub&utm_content=my_musical_update_bio`, label “My apps · Yves Durand”. Retain music-service links and the direct App Store link. No Instagram profile edits or posts were made by this release.
 
 Next editorial work: a Snory Teller bedside setup and report-reading guide; a Physical Routine first-week guide; contextual links to existing Record Picker collection guides. Keep each article useful on its own. Do not promise sleep improvements, stronger watch motors or guaranteed search rankings. Measure search clicks and impressions in the existing webmaster consoles; campaign parameters alone do not provide analytics, and no tracking scripts were added.
+
+Windows 3.0 is available in Microsoft Store (submission 6, verified 15 October 2026). Free up to 100 records inclusive, Light EUR 2.99 lifetime and Pro EUR 9.99 lifetime. Windows 10 22H2 or later on x64; Windows 11 on ARM64.

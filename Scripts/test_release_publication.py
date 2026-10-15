@@ -66,9 +66,9 @@ def main() -> None:
         if state['current_release']['version'] == '3.0':
             from html import unescape
             from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
-            assert state['publication_phase'] == 'partial'
+            assert state['publication_phase'] == 'full'
             assert state['current_release']['platform_versions'] == {
-                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '3.0', 'windows': '2.7'}
+                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '3.0', 'windows': '3.0'}
             assert state['next_release']['platforms']['mac'] == 'available'
             assert state['next_release']['offer']['light']['price_eur'] == '2.99'
             assert state['next_release']['offer']['pro']['price_eur'] == '9.99'
@@ -86,7 +86,7 @@ def main() -> None:
                     assert all(copies[locale][key] in unescape(block.group())
                                for key in ('light_title', 'light', 'pro_title', 'pro', 'terms'))
                     if route == 'windows-app/index.html':
-                        assert 'Record Picker · 2.7</span>' in page
+                        assert 'Record Picker · 3.0</span>' in page
                     else:
                         assert 'Record Picker · 3.0</span>' in page
             before = {p: p.read_bytes() for p in target.rglob('*.html')}
@@ -97,7 +97,7 @@ def main() -> None:
                 run('python3', 'Scripts/' + script, cwd=target)
                 run('python3', 'Scripts/' + script, cwd=target)
             assert all(p.read_bytes() == content for p, content in before.items())
-            print('OK: approved Apple 3.0, Light/Pro offer and mixed rollout remain accurate and repeatable')
+            print('OK: approved Apple/Windows 3.0 and Light/Pro offer remain accurate and repeatable')
             return
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
