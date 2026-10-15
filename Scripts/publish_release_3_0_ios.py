@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish the approved iOS 3.0 offer; retain other platforms' live versions."""
+"""Publish the approved Apple 3.0 offer, preserving Mac availability once confirmed."""
 from html import escape, unescape
 import json
 from pathlib import Path
@@ -15,6 +15,7 @@ ROUTES = ('index.html', 'readme/index.html', 'screenshots/index.html',
 def main():
     copies_path = ROOT / 'data/release-notes/3.0-offer.json'
     copies = json.loads(copies_path.read_text())
+    mac_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("mac") == "3.0"
     changed = 0
     for directory, locale in LOCALES.items():
         home = (ROOT / directory / 'index.html').read_text()
@@ -33,6 +34,12 @@ def main():
             status = '3.0 is available on iPhone, iPad and Apple Watch. Mac is under App Store review; Windows 3.0 is being submitted to Microsoft.'
         elif locale.startswith('fr-'):
             status = 'La 3.0 est disponible sur iPhone, iPad et Apple Watch. Le Mac est en examen chez Apple ; la 3.0 Windows est en cours de soumission à Microsoft.'
+        if mac_available:
+            status = f'iPhone · iPad · Apple Watch · Mac · 3.0 — {available}. Windows · 3.0 — {COMING_SOON[locale]}.'
+            if locale.startswith('en-'):
+                status = '3.0 is available on iPhone, iPad, Apple Watch and Mac. Windows 3.0 is being prepared separately.'
+            elif locale.startswith('fr-'):
+                status = 'La 3.0 est disponible sur iPhone, iPad, Apple Watch et Mac. La version 3.0 Windows est préparée séparément.'
         copies[locale]['status'] = status
         free_title = PRICES[directory or 'en-us'].split(' · ')[0]
         copies[locale]['free_title'] = free_title
@@ -51,6 +58,9 @@ def main():
                 '<div class="grid two release-tier-grid">', 1)
             block = re.sub(r'<p class="release-platform-summary">.*?</p>',
                            lambda _: '<p class="release-platform-summary">'+escape(status)+'</p>', block, flags=re.S)
+            for tier in ('light', 'pro'):
+                block = re.sub(r'(<div class="card release-tier" data-offer="'+tier+r'"><h[34]>).*?(</h[34]>)',
+                               lambda m: m[1]+escape(copies[locale][tier+'_title'])+m[2], block, count=1, flags=re.S)
             text = re.sub(pattern, lambda _: block, text, count=1, flags=re.S)
             if route == 'index.html':
                 text = re.sub(r'(<p class="hero-free-tier">).*?(</p>)',
@@ -60,14 +70,14 @@ def main():
             text = text.replace('puis Pro à vie sans abonnement', 'puis Light ou Pro en achat unique sans abonnement')
             text = text.replace('lifetime Pro, with no subscription', 'Light or Pro, with no subscription')
             text = text.replace('with an optional one-time Pro unlock', 'with optional one-time Light or Pro upgrades')
-            # The old release remains available on Mac/Windows, not on iOS.
+            # Preserve older platform availability only where 3.0 is not released.
             old_pattern = rf'<{tag}\b[^>]*data-release-version="2\.7"[^>]*>.*?</{tag}>'
             def previous(m):
                 b = m.group()
                 if tag == 'article':
                     return re.sub(r'<p class="release-platform-summary">.*?</p>', '', b, flags=re.S).replace(' current-release', '')
                 return re.sub(r'<p class="release-platform-summary">.*?</p>',
-                              lambda _: '<p class="release-platform-summary">Mac · Windows · 2.7 — '+escape(available)+'</p>', b, flags=re.S)
+                              lambda _: '<p class="release-platform-summary">'+('Windows' if mac_available else 'Mac · Windows')+' · 2.7 — '+escape(available)+'</p>', b, flags=re.S)
             text = re.sub(old_pattern, previous, text, flags=re.S)
             text = re.sub(r'site\.js\?v=[^"\s]+', 'site.js?v=20261008-free-light-pro', text)
             text = re.sub(r'quality\.css\?v=[^"\s]+', 'quality.css?v=20261008-free-light-pro', text)
@@ -79,12 +89,12 @@ def main():
     state = json.loads(state_path.read_text())
     state['publication_phase'] = 'partial'
     state['current_release']['version'] = '3.0'
-    state['current_release']['required_platforms_for_full_release'] = ['iphone', 'ipad', 'watch']
+    state['current_release']['required_platforms_for_full_release'] = ['iphone', 'ipad', 'watch'] + (['mac'] if mac_available else [])
     for platform in ('iphone', 'ipad', 'watch'):
         state['current_release']['platform_versions'][platform] = '3.0'
         state['next_release']['platforms'][platform] = 'available'
-    state['next_release']['platforms']['mac'] = 'in_review'
-    state['next_release']['distribution']['apple'] = 'ios_available_mac_in_review'
+    state['next_release']['platforms']['mac'] = 'available' if mac_available else 'in_review'
+    state['next_release']['distribution']['apple'] = 'available' if mac_available else 'ios_available_mac_in_review'
     state['next_release']['distribution']['windows'] = 'submission_in_progress'
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2)+'\n')
     for path in ROOT.rglob('*.html'):
@@ -92,12 +102,12 @@ def main():
         if any(p in relative for p in ('physical','snory-teller','apps','dulpi')):
             continue
         text = path.read_text()
-        if 'mac-app' not in relative and 'windows-app' not in relative:
+        if 'windows-app' not in relative and (mac_available or 'mac-app' not in relative):
             text = text.replace('<span id="site-footer-version">Record Picker · 2.7</span>', '<span id="site-footer-version">Record Picker · 3.0</span>')
             text = text.replace('"softwareVersion":"2.7"', '"softwareVersion":"3.0"')
         if text != path.read_text():
             path.write_text(text)
-    print(f'Published approved iOS 3.0 offer on {changed} pages; Mac and Windows availability preserved.')
+    print(f'Published approved Apple 3.0 offer on {changed} pages; other platforms preserved.')
 
 if __name__ == '__main__':
     main()

@@ -11,6 +11,15 @@ or tablet, a Google Account, and 14 consecutive days to test and share feedback.
 
 This repository hosts the public discovery, support, screenshots, privacy, and features pages for Record Picker on GitHub Pages.
 
+## Record Picker 3.0 — Apple release (15 October 2026)
+
+Available on iPhone, iPad, Apple Watch and Mac. Free for up to 100 owned records.
+Light (€2.99, lifetime) offers unlimited records/imports and the essential
+collection and picking tools. Pro (€9.99, lifetime) adds the advanced collection
+toolkit. Prices shown are for France; the App Store confirms local pricing.
+No subscription. Existing Pro purchases retain their rights.
+Windows 3.0 and Android rollout remain separate from this Apple announcement.
+
 ## Public pages
 
 - Official website: https://recordpicker.app/

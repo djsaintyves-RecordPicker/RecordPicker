@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the published Record Picker 2.7 on Apple with Windows 2.7 preserved."""
+"""Verify Apple 3.0 pricing/publication while preserving the Windows rollout."""
 
 from __future__ import annotations
 
@@ -68,9 +68,10 @@ def main() -> None:
             from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
             assert state['publication_phase'] == 'partial'
             assert state['current_release']['platform_versions'] == {
-                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '2.7', 'windows': '2.7'}
-            assert state['next_release']['platforms']['mac'] == 'in_review'
+                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '3.0', 'windows': '2.7'}
+            assert state['next_release']['platforms']['mac'] == 'available'
             assert state['next_release']['offer']['light']['price_eur'] == '2.99'
+            assert state['next_release']['offer']['pro']['price_eur'] == '9.99'
             assert state['next_release']['offer']['pro']['existing_purchases_preserved']
             copies = json.loads((target / 'data/release-notes/3.0-offer.json').read_text())
             for locale_dir, locale in ANNOUNCEMENT_LOCALES.items():
@@ -84,7 +85,7 @@ def main() -> None:
                     assert copies[locale]['free_title'] in unescape(block.group())
                     assert all(copies[locale][key] in unescape(block.group())
                                for key in ('light_title', 'light', 'pro_title', 'pro', 'terms'))
-                    if route in ('mac-app/index.html', 'windows-app/index.html'):
+                    if route == 'windows-app/index.html':
                         assert 'Record Picker · 2.7</span>' in page
                     else:
                         assert 'Record Picker · 3.0</span>' in page
@@ -96,7 +97,7 @@ def main() -> None:
                 run('python3', 'Scripts/' + script, cwd=target)
                 run('python3', 'Scripts/' + script, cwd=target)
             assert all(p.read_bytes() == content for p, content in before.items())
-            print('OK: approved iOS 3.0, Light/Pro offer and mixed rollout remain accurate and repeatable')
+            print('OK: approved Apple 3.0, Light/Pro offer and mixed rollout remain accurate and repeatable')
             return
         assert state["publication_phase"] == "full"
         assert set(state["current_release"]["platforms"].values()) == {"available"}
