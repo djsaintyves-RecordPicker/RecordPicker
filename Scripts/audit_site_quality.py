@@ -24,7 +24,7 @@ NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
 CURRENT_RELEASE_DATE = "2026-10-03"
 MAC_RELEASE_DATE = "2026-10-03"
-WINDOWS_RELEASE_DATE = "2026-10-03"
+WINDOWS_RELEASE_DATE = "2026-10-15"
 SCREENSHOT_VERSION = RELEASE_STATE['publication_assets']['screenshot_version']
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
@@ -125,7 +125,7 @@ def main() -> None:
         RELEASE_STATE["current_release"]["required_platforms_for_full_release"]
     )
     platform_versions = RELEASE_STATE["current_release"]["platform_versions"]
-    if {p for p in platform_states if platform_versions.get(p) == CURRENT_VERSION} != required_platforms:
+    if {p for p in platform_states if platform_versions.get(p, "").split(".")[:2] == CURRENT_VERSION.split(".")[:2]} != required_platforms:
         errors.append("release-state platform list does not match the publication gate")
     if PUBLICATION_PHASE == "full" and set(platform_states.values()) != {"available"}:
         errors.append("full publication still has a platform that is not available")

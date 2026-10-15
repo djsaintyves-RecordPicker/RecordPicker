@@ -16,7 +16,7 @@ def main():
     copies_path = ROOT / 'data/release-notes/3.0-offer.json'
     copies = json.loads(copies_path.read_text())
     mac_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("mac") == "3.0"
-    windows_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("windows") == "3.0"
+    windows_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("windows") in ("3.0", "3.0.1")
     changed = 0
     for directory, locale in LOCALES.items():
         home = (ROOT / directory / 'index.html').read_text()
@@ -43,6 +43,8 @@ def main():
                 status = 'La 3.0 est disponible sur iPhone, iPad, Apple Watch et Mac. La version 3.0 Windows est préparée séparément.'
         if windows_available:
             status = f'iPhone · iPad · Apple Watch · Mac · Windows · 3.0 — {available}.'
+        if windows_available and json.loads((ROOT / 'data/release-state.json').read_text())['current_release']['platform_versions']['windows'] == '3.0.1':
+            status = f'iPhone · iPad · Apple Watch · Mac · 3.0 — {available} Windows · 3.0.1 — {available}'
         copies[locale]['status'] = status
         free_title = PRICES[directory or 'en-us'].split(' · ')[0]
         copies[locale]['free_title'] = free_title
@@ -118,6 +120,9 @@ def main():
             text = text.replace('Record Picker 2.7', 'Record Picker 3.0')
         if text != path.read_text():
             path.write_text(text)
+    if windows_available and json.loads(state_path.read_text())['current_release']['platform_versions']['windows'] == '3.0.1':
+        from publish_windows_3_0_1 import refresh_windows_pages
+        refresh_windows_pages(ROOT)
     print(f'Published verified 3.0 offer on {changed} pages; platform availability preserved.')
 
 if __name__ == '__main__':

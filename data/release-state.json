@@ -8,7 +8,7 @@
       "ipad": "3.0",
       "watch": "3.0",
       "mac": "3.0",
-      "windows": "3.0"
+      "windows": "3.0.1"
     },
     "platforms": {
       "iphone": "available",
