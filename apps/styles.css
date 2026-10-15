@@ -94,3 +94,13 @@ h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-s
 :is(.music,.hub-menu,main) :is(.playlist-actions,.platforms) a[href*="music.apple.com"]{background:#fff;color:#000;border:1px solid #d2d2d7}
 :is(.music,.hub-menu,main) :is(.playlist-actions,.platforms) a[href*="music.apple.com"]:hover{background:#f5f5f7;color:#000}
 a[href*="music.apple.com"] img.platform-logo{filter:none!important}
+
+/* Five projects share a consistent presentation and action area. */
+.project-card{display:flex;flex-direction:column;gap:24px;align-items:stretch}
+.project-card-head .tag{margin:0 0 18px}.project-card-head .app-icon{display:block;width:64px;height:64px;object-fit:contain;margin:0 0 24px}.project-card-head h2{margin:0}
+.project-card-body{flex:1}.project-card-body>p:first-child{margin-top:0}.project-card-body .availability{font-size:14px;color:#595959}
+.project-card-actions{display:flex;flex-direction:column;gap:12px;margin-top:auto}.project-card-actions>a{margin:0}
+.project-card-actions :is(.store-appstore,.store-microsoftstore,.store-android-beta){display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 16px;border-radius:8px;text-decoration:none;text-align:center;font-weight:650}
+.project-card-actions .store-appstore{background:#0067d6;color:#fff}.project-card-actions .store-appstore:hover{background:#0056b5}.project-card-actions .store-logo{width:26px;height:26px;filter:invert(1)}
+.project-card-actions .store-microsoftstore{background:#222;color:#fff}.project-card-actions .store-android-beta{background:#eef5ea;color:#1a492d}
+@media(prefers-color-scheme:dark){.project-card-body .availability{color:#ccc}}
