@@ -89,3 +89,8 @@ h3,.guide h3,.community-grid h3,.playlist-cover h3,.playlist-cover strong{font-s
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:600px){.studio-brand{max-width:400px;padding:12px 16px;margin-top:18px}}
 .release-note{padding:16px 18px;border-radius:12px;background:#edf3ff;color:#24446d;font-size:15px;line-height:1.6}.release-note strong{font-size:15px}@media(prefers-color-scheme:dark){.release-note{background:#182c47;color:#dbe9ff}}
+
+/* Apple Music: black music notes on white in every theme and menu. */
+:is(.music,.hub-menu) :is(.playlist-actions,.platforms) a[href*="music.apple.com"]{background:#fff;color:#000;border:1px solid #d2d2d7}
+:is(.music,.hub-menu) :is(.playlist-actions,.platforms) a[href*="music.apple.com"]:hover{background:#f5f5f7;color:#000}
+a[href*="music.apple.com"] img.platform-logo{filter:none!important}
