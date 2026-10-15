@@ -144,7 +144,7 @@ def generate(templates):
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href
      if (ROOT/candidate.lstrip('/')/'index.html').is_file():node.set('href',candidate)
-   for primary in doc.xpath('//*[@id="record-picker"]/*[@class="app-actions"]/a[not(contains(@class,"store-button"))]'):
+   for primary in doc.xpath('//*[@id="record-picker"]//a[not(contains(@class,"store-button"))]'):
     destination='/'+rp_locale+'/' if rp_locale else '/'
     if not (ROOT/destination.lstrip('/')/'index.html').is_file():
      base=language(locale); destination='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
@@ -183,7 +183,7 @@ def generate(templates):
    localehash=hashlib.sha256((ROOT/'apps/locale.js').read_bytes()).hexdigest()[:12]
    language_script=etree.Element('script',src='/apps/locale.js?v='+localehash)
    head.insert(2,language_script)
-   for primary in doc.xpath('//*[@id="physical-routine"]/a|//header//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]'):
+   for primary in doc.xpath('//*[@id="physical-routine"]//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]|//header//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]'):
     primary.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
    for script in doc.xpath('//script[@type="application/ld+json"]'):
     data=json.loads(script.text)
