@@ -99,7 +99,7 @@ def main() -> None:
     pages = sorted(
         path
         for path in ROOT.rglob("*.html")
-        if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical"}
+        if path.relative_to(ROOT).parts[0] not in {"snory-teller", "physical", "meal-picker"}
         and path.relative_to(ROOT) not in creator_pages
         and path.relative_to(ROOT) not in temporary_campaign_pages
     )
