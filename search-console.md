@@ -68,3 +68,23 @@ pages; it does not rewrite public copy. Historical generators share the same
 canonical policy. A new Google validation is requested only after deployment
 and verification of the live pages; it does not mean Google has accepted the
 change or completed its next crawl.
+
+## US Mac alias consolidation — 16 October 2026
+
+`/en-us/mac-app/` now immediately redirects to `/mac-app/`. GitHub Pages
+does not provide a per-route HTTP redirect configuration, so the alias uses
+an instant meta refresh, which Google treats as a permanent redirect.
+`location.replace` preserves query parameters and fragment links for visitors.
+The canonical, Open Graph URL, structured data and `en-US` alternate continue
+to identify `/mac-app/`; both sitemaps already omit the alias.
+
+Navigation links resolving to the US Mac alias, including relative links from
+the US homepage and platform pages, now point directly to `/mac-app/`.
+`site_canonical_policy.py --write` maintains the redirect and link alignment
+after future page generation. In-page skip links and other regional Mac pages
+remain unchanged. Sitemap modification dates are not advanced merely because
+a noncanonical alias changed.
+
+Google must crawl the updated alias before its reported canonical can change.
+No Search Console indexing request or validation submission is part of this
+correction. The existing deployment workflow retains its usual IndexNow notice.

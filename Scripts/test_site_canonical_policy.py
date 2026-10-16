@@ -48,6 +48,34 @@ class CanonicalPolicyTests(unittest.TestCase):
         path = self.page('en-gb', 'support')
         self.assertEqual(policy.canonical_for(path, self.root), f'{policy.SITE}/en-gb/support/')
 
+    def test_us_mac_alias_redirects_and_keeps_campaigns_and_deep_links(self):
+        self.page('', 'mac-app')
+        path = self.page('en-us', 'mac-app')
+        after = policy.normalize_page(path, self.root)
+        self.assertIn('<meta http-equiv="refresh" content="0;url=/mac-app/">', after)
+        self.assertIn('window.location.search + window.location.hash', after)
+        self.assertIn(f'<link rel="canonical" href="{policy.SITE}/mac-app/">', after)
+        self.assertIn('<main>Keep this regional content.</main>', after)
+        path.write_text(after)
+        self.assertEqual(policy.normalize_page(path, self.root), after)
+        self.assertNotIn('http-equiv="refresh"', policy.normalize_page(self.root / 'mac-app/index.html', self.root))
+
+    def test_mac_navigation_resolves_aliases_but_keeps_other_languages_and_skip_links(self):
+        text = ('<a href="../mac-app/?utm_source=instagram&amp;x=1#screens">Mac</a>'
+                '<a href="https://recordpicker.app/en-us/mac-app/index.html">Mac</a>'
+                "<a href='/en-us/mac-app'>Mac</a>"
+                '<a href="../mac-app-extra/">Other page</a>'
+                '<a href="/fr/mac-app/">Français</a>'
+                '<a href="https://example.com/en-us/mac-app/">External</a>'
+                '<a href="#main-content">Skip</a>')
+        after = policy.normalize_mac_links(text, f'{policy.SITE}/en-us/support/')
+        self.assertIn('href="/mac-app/?utm_source=instagram&amp;x=1#screens"', after)
+        self.assertIn('href="/mac-app/"', after)
+        self.assertIn("href='/mac-app/'", after)
+        for unchanged in ('../mac-app-extra/', '/fr/mac-app/', 'https://example.com/en-us/mac-app/', '#main-content'):
+            self.assertIn(unchanged, after)
+        self.assertEqual(policy.normalize_mac_links(after, f'{policy.SITE}/en-us/support/'), after)
+
     def test_hreflang_is_reciprocal_and_stays_on_requested_route(self):
         paths = [self.page(locale, 'mac-app') for locale in ('', 'en-gb', 'en-us', 'fr', 'fr-ca')]
         for path in paths:

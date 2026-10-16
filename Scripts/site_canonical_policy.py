@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import argparse
 from datetime import date
+from html import escape, unescape
 import json
 from pathlib import Path
 import re
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = 'https://recordpicker.app'
@@ -32,6 +34,27 @@ DUPLICATE_INFORMATION_ROUTES = {
 }
 CANONICAL = re.compile(r'<link rel="canonical" href="([^"]+)">')
 ALTERNATE = re.compile(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">')
+ANCHOR_HREF = re.compile(r'(<a\b[^>]*?\shref\s*=\s*)([\"\'])(.*?)(\2)', re.I)
+MAC_ALIAS_PATHS = {'/en-us/mac-app', '/en-us/mac-app/', '/en-us/mac-app/index.html'}
+MAC_REDIRECT = ('<meta http-equiv="refresh" content="0;url=/mac-app/">'
+                '<script data-canonical-mac-redirect>'
+                'window.location.replace("/mac-app/" + window.location.search + window.location.hash);'
+                '</script>')
+
+
+def normalize_mac_links(text: str, page_url: str) -> str:
+    """Resolve relative navigation before consolidating the US Mac alias."""
+    def replace(match: re.Match[str]) -> str:
+        href = unescape(match.group(3))
+        # In-page navigation, especially the accessibility skip link, stays local.
+        if href.startswith('#'):
+            return match.group(0)
+        target = urlsplit(urljoin(page_url, href))
+        if target.scheme not in {'http', 'https'} or target.netloc != 'recordpicker.app' or target.path not in MAC_ALIAS_PATHS:
+            return match.group(0)
+        canonical = urlunsplit(('', '', '/mac-app/', target.query, target.fragment))
+        return match.group(1) + match.group(2) + escape(canonical, quote=True) + match.group(4)
+    return ANCHOR_HREF.sub(replace, text)
 
 
 def identity(path: Path, root: Path = ROOT) -> tuple[str, str]:
@@ -97,7 +120,14 @@ def normalize_page(path: Path, root: Path = ROOT) -> str:
             updated = walk(payload)
             return match.group(0) if updated == payload else '<script type="application/ld+json">' + json.dumps(updated, ensure_ascii=False, separators=(',', ':')) + '</script>'
         text = re.sub(r'<script type="application/ld\+json">(.*?)</script>', structured, text, flags=re.S)
-    _, route = identity(path, root)
+    locale, route = identity(path, root)
+    text = normalize_mac_links(text, public_url(locale, route))
+    if (locale, route) == ('en-us', 'mac-app') and MAC_REDIRECT not in text:
+        # GitHub Pages has no per-route HTTP redirect configuration. An instant
+        # refresh supplies a permanent consolidation signal even without JS;
+        # location.replace also preserves campaign parameters and deep links.
+        canonical_tag = f'<link rel="canonical" href="{canonical}">'
+        text = text.replace(canonical_tag, canonical_tag + MAC_REDIRECT, 1)
     if route in STANDARD_ROUTES:
         expected = alternate_urls(route, root)
         actual = dict(ALTERNATE.findall(text))
@@ -164,7 +194,8 @@ def write(root: Path = ROOT) -> tuple[int, int]:
     # Prepare and validate all output before changing any file.
     updates = {path: normalize_page(path, root) for path in public_pages(root)}
     changed = {CANONICAL.search(after).group(1) for path, after in updates.items()
-               if path.read_text(encoding='utf-8') != after}
+               if path.read_text(encoding='utf-8') != after
+               and public_url(*identity(path, root)) == CANONICAL.search(after).group(1)}
     allowed = {CANONICAL.search(after).group(1) for after in updates.values()}
     count = sum(path.read_text(encoding='utf-8') != after for path, after in updates.items())
     for name in ('sitemap.xml', 'sitemap-media.xml'):
