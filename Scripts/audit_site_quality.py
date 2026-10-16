@@ -798,6 +798,13 @@ def main() -> None:
                 errors.append(f"{page.relative_to(ROOT)}: RTL direction missing")
     manifest = json.loads((ROOT / "data/media-release-manifest.json").read_text())
     for page in pages:
+        for figure in re.findall(r'<figure\b.*?</figure>', page.read_text(), re.DOTALL):
+            source = re.search(r'<img\b[^>]*src="/?(assets/screenshots/v301/[^"]+)"', figure)
+            if source and source.group(1) in manifest["assets"]:
+                version = manifest["assets"][source.group(1)]["version"]
+                caption = re.search(r'<figcaption\b[^>]*>(.*?)</figcaption>', figure, re.DOTALL)
+                if not caption or f"Record Picker {version} ·" not in caption.group(1):
+                    errors.append(f"{page.relative_to(ROOT)}: screenshot caption differs from verified version {version}")
         for source in re.findall(r'<img\b[^>]*src="([^"]*assets/screenshots/[^"]+)"', page.read_text()):
             asset = source[source.index("assets/screenshots/"):]
             if asset not in manifest["assets"]:
