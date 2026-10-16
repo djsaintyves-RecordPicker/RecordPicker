@@ -63,12 +63,12 @@ def main() -> None:
         state = json.loads(
             (target / "data" / "release-state.json").read_text(encoding="utf-8")
         )
-        if state['current_release']['version'] == '3.0':
+        if state['current_release']['version'] == '3.0.1':
             from html import unescape
             from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
             assert state['publication_phase'] == 'full'
             assert state['current_release']['platform_versions'] == {
-                'iphone': '3.0', 'ipad': '3.0', 'watch': '3.0', 'mac': '3.0', 'windows': '3.0.1'}
+                'iphone': '3.0.1', 'ipad': '3.0.1', 'watch': '3.0.1', 'mac': '3.0.1', 'windows': '3.0.1'}
             assert state['next_release']['platforms']['mac'] == 'available'
             assert state['next_release']['offer']['light']['price_eur'] == '2.99'
             assert state['next_release']['offer']['pro']['price_eur'] == '9.99'
@@ -77,7 +77,7 @@ def main() -> None:
             for locale_dir, locale in ANNOUNCEMENT_LOCALES.items():
                 for route in state['next_release']['announcement_routes']:
                     page = (target / locale_dir / route).read_text()
-                    block = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0"[^>]*>.*?</\1>', page, re.S)
+                    block = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0\.1"[^>]*>.*?</\1>', page, re.S)
                     assert block, (locale_dir, route)
                     assert copies[locale]['status'] in unescape(block.group())
                     assert 'release-upcoming' not in block.group()
@@ -88,7 +88,7 @@ def main() -> None:
                     if route == 'windows-app/index.html':
                         assert 'Record Picker · 3.0.1</span>' in page
                     else:
-                        assert 'Record Picker · 3.0</span>' in page
+                        assert 'Record Picker · 3.0.1</span>' in page
             before = {p: p.read_bytes() for p in target.rglob('*.html')}
             for name in ('data/release-state.json', 'data/release-notes/3.0-offer.json'):
                 p = target / name
@@ -124,7 +124,7 @@ def main() -> None:
         for directory, locale in ANNOUNCEMENT_LOCALES.items():
             for route in state['next_release']['announcement_routes']:
                 page = (target / directory / route).read_text()
-                upcoming = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0"[^>]*>.*?</\1>', page, re.S)
+                upcoming = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0\.1"[^>]*>.*?</\1>', page, re.S)
                 assert upcoming, (directory, route)
                 assert upcoming_copy[locale]['status'] in unescape(upcoming.group())
                 assert 'current-release' not in upcoming.group()

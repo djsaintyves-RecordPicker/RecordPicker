@@ -2,12 +2,12 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "3.0",
+    "version": "3.0.1",
     "platform_versions": {
-      "iphone": "3.0",
-      "ipad": "3.0",
-      "watch": "3.0",
-      "mac": "3.0",
+      "iphone": "3.0.1",
+      "ipad": "3.0.1",
+      "watch": "3.0.1",
+      "mac": "3.0.1",
       "windows": "3.0.1"
     },
     "platforms": {
@@ -45,18 +45,19 @@
     "1.1"
   ],
   "publication_assets": {
-    "hero": "en-us/mac-home.webp",
+    "hero": "fr/mac-home.webp",
     "screenshots": [
-      "en-us/mac-home.webp",
-      "en-us/mac-collection.webp",
-      "fr/iphone-collection.webp"
+      "fr/mac-home.webp",
+      "fr/mac-collection.webp",
+      "en-us/iphone-tools.webp",
+      "windows/windows-collection-fr.webp"
     ],
     "social": "assets/social/social-home.png",
-    "screenshot_directory": "v26",
-    "screenshot_version": "2.6"
+    "screenshot_directory": "v301",
+    "screenshot_version": "3.0.1"
   },
   "next_release": {
-    "version": "3.0",
+    "version": "3.0.1",
     "platforms": {
       "iphone": "available",
       "ipad": "available",

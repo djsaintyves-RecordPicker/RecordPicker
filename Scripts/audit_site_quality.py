@@ -22,9 +22,9 @@ PUBLICATION_PHASE = RELEASE_STATE["publication_phase"]
 CURRENT_VERSION = RELEASE_STATE["current_release"]["version"]
 NEXT_RELEASE = RELEASE_STATE.get("next_release")
 NEXT_VERSION = NEXT_RELEASE["version"] if NEXT_RELEASE else None
-CURRENT_RELEASE_DATE = "2026-10-03"
-MAC_RELEASE_DATE = "2026-10-03"
-WINDOWS_RELEASE_DATE = "2026-10-15"
+CURRENT_RELEASE_DATE = "2026-10-16"
+MAC_RELEASE_DATE = "2026-10-16"
+WINDOWS_RELEASE_DATE = "2026-10-16"
 SCREENSHOT_VERSION = RELEASE_STATE['publication_assets']['screenshot_version']
 HISTORICAL_VERSIONS = set(RELEASE_STATE["historical_releases"])
 SOCIAL_IMAGE_URL = (
@@ -342,11 +342,11 @@ def main() -> None:
                 else "fr"
             )
             expected_visual = (
-                f"assets/screenshots/v26/en-us/mac-home.webp"
+                f"assets/screenshots/v301/fr/mac-home.webp"
             )
             if expected_visual not in text:
                 errors.append(
-                    f"{relative}: verified Mac 2.6 home visual missing"
+                    f"{relative}: verified Mac 3.0.1 home visual missing"
                 )
             if 'class="mac-intro"' in text:
                 hero_visual = re.search(
@@ -370,10 +370,10 @@ def main() -> None:
                     flags=re.DOTALL,
                 )
                 expected_search = (
-                    f"assets/screenshots/v26/en-us/mac-search-results.webp"
+                    f"assets/screenshots/v301/fr/mac-search-results.webp"
                 )
                 expected_mood = (
-                    f"assets/screenshots/v26/en-us/mac-mood-pick.webp"
+                    f"assets/screenshots/v301/fr/mac-mood-pick.webp"
                 )
                 if len(feature_cards) != 3 or expected_search not in feature_cards[1]:
                     errors.append(
@@ -482,7 +482,7 @@ def main() -> None:
                 if (
                     not press_review
                     or "https://www.mac4ever.com/audio/197509-" not in press_review.group(0)
-                    or f"assets/screenshots/v26/en-us/mac-mood-pick" not in press_review.group(0)
+                    or f"assets/screenshots/v301/fr/mac-mood-pick" not in press_review.group(0)
                 ):
                     errors.append(f"{relative}: French Mac4Ever press spotlight incomplete")
             elif press_review:
@@ -509,7 +509,7 @@ def main() -> None:
             )
             if (
                 not home_gallery
-                or "iphone-collection.webp" not in home_gallery.group(1)
+                or "iphone-tools.webp" not in home_gallery.group(1)
                 or "mac-collection.webp" not in home_gallery.group(1)
             ):
                 errors.append(f"{relative}: complete localized homepage gallery missing")
@@ -525,7 +525,7 @@ def main() -> None:
             expected_home_locale = relative.parts[0] if relative.parts and relative.parts[0] in {"fr", "fr-ca"} else None
             if relative == Path("index.html"):
                 expected_home_locale = "en-us"
-            if expected_home_locale and f"assets/screenshots/v26/en-us/mac-home" not in text:
+            if expected_home_locale and f"assets/screenshots/v301/fr/mac-home" not in text:
                 errors.append(f"{relative}: French Mac home preview missing")
         selected_languages = re.findall(
             r'<a class="language-option"[^>]*aria-selected="true"', text
@@ -549,7 +549,7 @@ def main() -> None:
         functional_images = [
             re.sub(r'\.(?:avif|webp|png|jpe?g)(?:\?[^"\']*)?$', '', source, flags=re.IGNORECASE)
             for source in re.findall(
-                r'<img\b[^>]*src="([^"]*assets/screenshots/v26/[^"]+)"', text, flags=re.IGNORECASE
+                r'<img\b[^>]*src="([^"]*assets/screenshots/v301/[^"]+)"', text, flags=re.IGNORECASE
             )
         ]
         repeated_images = {source for source in functional_images if functional_images.count(source) > 1}
@@ -802,8 +802,8 @@ def main() -> None:
             asset = source[source.index("assets/screenshots/"):]
             if asset not in manifest["assets"]:
                 errors.append(f"{page.relative_to(ROOT)}: screenshot without verified provenance {asset}")
-            elif tuple(map(int, manifest["assets"][asset]["version"].split("."))) < (2, 5):
-                errors.append(f"{page.relative_to(ROOT)}: screenshot predates version 2.5")
+            elif tuple(map(int, manifest["assets"][asset]["version"].split("."))) < (3, 0):
+                errors.append(f"{page.relative_to(ROOT)}: screenshot predates version 3.0")
     if errors:
         print("\n".join(errors[:100]))
         raise SystemExit(f"Quality audit failed with {len(errors)} error(s).")

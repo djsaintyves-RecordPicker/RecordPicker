@@ -13,6 +13,10 @@ ROUTES = ('index.html', 'readme/index.html', 'screenshots/index.html',
           'mac-app/index.html', 'ios-app/index.html', 'windows-app/index.html')
 
 def main():
+    if json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["version"] == "3.0.1":
+        from publish_release_3_0_1 import main as publish_patch
+        publish_patch()
+        return
     copies_path = ROOT / 'data/release-notes/3.0-offer.json'
     copies = json.loads(copies_path.read_text())
     mac_available = json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["platform_versions"].get("mac") == "3.0"

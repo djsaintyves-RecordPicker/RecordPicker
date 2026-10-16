@@ -1,6 +1,6 @@
 {
-  "release": "2.6",
-  "reviewed_at": "2026-09-24",
+  "release": "3.0.1",
+  "reviewed_at": "2026-10-16",
   "assets": {
     "assets/screenshots/v26/en-us/mac-home.webp": {
       "version": "2.6",
@@ -291,6 +291,226 @@
       "source_sha256": "97f9657e0d15df706ae1e93043374758efc7724e3b147f2d4f7da0b831cb12ff",
       "width": 1920,
       "height": 1032
+    },
+    "assets/screenshots/v301/fr/mac-collection.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "ff770139a1982bf8feb38b7f7b732869fc24c00706d18539d80ef9a2010c5056",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-collection.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "ff770139a1982bf8feb38b7f7b732869fc24c00706d18539d80ef9a2010c5056",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-data-quality.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "ada03e5a54b437bbda7e32f6e0ed09db63ba5c10800793f06a4b7d9f4391bee7",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-data-quality.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "ada03e5a54b437bbda7e32f6e0ed09db63ba5c10800793f06a4b7d9f4391bee7",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-search-results.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "133112ede0da5e4c48a495bd9dba435a30dd16262273b3d87bac103deb5a6bf0",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-search-results.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "133112ede0da5e4c48a495bd9dba435a30dd16262273b3d87bac103deb5a6bf0",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-random-pick.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "6cbd2c9905331767b2f088e1f764ffd7131a57bd32f805bf765164eee9b4346a",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-random-pick.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "6cbd2c9905331767b2f088e1f764ffd7131a57bd32f805bf765164eee9b4346a",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-mood-pick.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "151062d48dd899386d571d68ab9ef3d86bcab473d1acb8aaa6632da6557c0018",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-mood-pick.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "151062d48dd899386d571d68ab9ef3d86bcab473d1acb8aaa6632da6557c0018",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-home.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "2101f25f84f2a9ad0e39c418b26f3b199e7db872e049a98f7529afca11bfceaa",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-home.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "2101f25f84f2a9ad0e39c418b26f3b199e7db872e049a98f7529afca11bfceaa",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-todays-pick.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "26520c2e81fe79bc29ce5f46801ceca2df1e1793c8fb1f3fdad0dcb914719236",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-todays-pick.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "26520c2e81fe79bc29ce5f46801ceca2df1e1793c8fb1f3fdad0dcb914719236",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-graph-relationships.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "60d1d25e08ff8d97dc99277c0a35d570be6d1acf73bfc3ccb61acb7baa0861f1",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-graph-relationships.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "60d1d25e08ff8d97dc99277c0a35d570be6d1acf73bfc3ccb61acb7baa0861f1",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-collection-graph.webp": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "613e9eae7c5e95bb458926531aaeac24e3cdfad2ea6c7af55aaf0964c66bd62c",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/fr/mac-collection-graph.avif": {
+      "version": "3.0.1",
+      "platform": "mac",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "Record Picker macOS 3.0.1 (111), archived App Store release; captured 2026-10-16",
+      "source_sha256": "613e9eae7c5e95bb458926531aaeac24e3cdfad2ea6c7af55aaf0964c66bd62c",
+      "width": 1600,
+      "height": 1004
+    },
+    "assets/screenshots/v301/windows/windows-collection-fr.webp": {
+      "version": "3.0",
+      "platform": "windows",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "User-provided Record Picker Windows 3.0 collection capture, 2026-10-15",
+      "source_sha256": "a4240a923dd3f6e90f3a1dac5e417c046897ae82fea9519a8f3662eac381fcf0",
+      "width": 1600,
+      "height": 860
+    },
+    "assets/screenshots/v301/windows/windows-collection-fr.avif": {
+      "version": "3.0",
+      "platform": "windows",
+      "language": "fr",
+      "kind": "screenshot",
+      "source": "User-provided Record Picker Windows 3.0 collection capture, 2026-10-15",
+      "source_sha256": "a4240a923dd3f6e90f3a1dac5e417c046897ae82fea9519a8f3662eac381fcf0",
+      "width": 1600,
+      "height": 860
+    },
+    "assets/screenshots/v301/en-us/iphone-tools.webp": {
+      "version": "3.0",
+      "platform": "iphone",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker iOS 3.0 (101), iPhone 17 Pro Max simulator; Tools captured 2026-10-16 through Device Hub",
+      "source_sha256": "607e49aa98f5cfd65cd288b6aeefed7a842247fcf8a92aa9424c2188a82f1a38",
+      "width": 1105,
+      "height": 2400
+    },
+    "assets/screenshots/v301/en-us/iphone-tools.avif": {
+      "version": "3.0",
+      "platform": "iphone",
+      "language": "en-us",
+      "kind": "screenshot",
+      "source": "Record Picker iOS 3.0 (101), iPhone 17 Pro Max simulator; Tools captured 2026-10-16 through Device Hub",
+      "source_sha256": "607e49aa98f5cfd65cd288b6aeefed7a842247fcf8a92aa9424c2188a82f1a38",
+      "width": 1105,
+      "height": 2400
     }
   },
   "unavailable": [
