@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://recordpicker.app/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/ar/</loc>
@@ -326,7 +326,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/fr/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/fr/catalog-vinyl-collection-app/</loc>
@@ -354,7 +354,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/fr/mac-app/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/fr/manage-vinyl-collection/</loc>
@@ -370,7 +370,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/fr/readme/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/fr/screenshots/</loc>
@@ -602,7 +602,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/mac-app/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/manage-vinyl-collection/</loc>
@@ -806,7 +806,7 @@
   </url>
 <url>
     <loc>https://recordpicker.app/readme/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
 <url>
     <loc>https://recordpicker.app/ru/</loc>
@@ -1068,7 +1068,7 @@
     <loc>https://recordpicker.app/zh-hant/support/</loc>
     <lastmod>2026-10-06</lastmod>
   </url>
-<url><loc>https://recordpicker.app/ios-app/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://recordpicker.app/ios-app/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/watch-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/android-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/ar/ios-app/</loc><lastmod>2026-10-15</lastmod></url>
@@ -1104,7 +1104,7 @@
 <url><loc>https://recordpicker.app/fi/ios-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/fi/watch-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/fi/android-app/</loc><lastmod>2026-10-06</lastmod></url>
-<url><loc>https://recordpicker.app/fr/ios-app/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://recordpicker.app/fr/ios-app/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/fr/watch-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/fr/android-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/fr-ca/ios-app/</loc><lastmod>2026-10-15</lastmod></url>
@@ -1170,7 +1170,7 @@
 <url><loc>https://recordpicker.app/en-us/discogs-companion-app/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/en-us/import-discogs-csv/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/en-us/vinyl-duplicate-checker/</loc><lastmod>2026-10-06</lastmod></url>
-<url><loc>https://recordpicker.app/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://recordpicker.app/windows-app/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/ar/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/ca/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/da/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
@@ -1182,7 +1182,7 @@
 <url><loc>https://recordpicker.app/es-es/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/es-mx/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/fi/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
-<url><loc>https://recordpicker.app/fr/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://recordpicker.app/fr/windows-app/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/fr-ca/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/he/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://recordpicker.app/hi/windows-app/</loc><lastmod>2026-10-15</lastmod></url>
@@ -1206,10 +1206,10 @@
 <url><loc>https://recordpicker.app/fr/aidez-record-picker/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://recordpicker.app/physical/privacy/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://recordpicker.app/physical/support/</loc><lastmod>2026-10-07</lastmod></url>
-<url><loc>https://recordpicker.app/physical/about/</loc><lastmod>2026-10-07</lastmod></url>
+<url><loc>https://recordpicker.app/physical/about/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/physical/fr/privacy/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://recordpicker.app/physical/fr/support/</loc><lastmod>2026-10-07</lastmod></url>
-<url><loc>https://recordpicker.app/physical/fr/about/</loc><lastmod>2026-10-07</lastmod></url>
+<url><loc>https://recordpicker.app/physical/fr/about/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/apps/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/fr/apps/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/fr/apps/dulpi/</loc></url>
@@ -1403,12 +1403,12 @@
 <url><loc>https://recordpicker.app/apps/my-musical-update/s05e01/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/apps/my-musical-update/s05e02/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/record-picker/guides/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/record-picker/guides/import-discogs/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/record-picker/guides/backup/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/record-picker/guides/rediscover/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/record-picker/guides/choose/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/snory-teller-guide/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/physical-routine-guide/</loc><lastmod>2026-10-08</lastmod></url>
+<url><loc>https://recordpicker.app/record-picker/guides/import-discogs/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/record-picker/guides/backup/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/record-picker/guides/rediscover/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/record-picker/guides/choose/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/snory-teller-guide/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/physical-routine-guide/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/es-es/apps/my-musical-update/s05e01/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/es-es/apps/my-musical-update/s05e02/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/es-es/record-picker/guides/</loc><lastmod>2026-10-08</lastmod></url>
@@ -1448,12 +1448,12 @@
 <url><loc>https://recordpicker.app/fr/apps/my-musical-update/s05e01/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/fr/apps/my-musical-update/s05e02/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/fr/record-picker/guides/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/record-picker/guides/import-discogs/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/record-picker/guides/backup/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/record-picker/guides/rediscover/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/record-picker/guides/choose/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/snory-teller-guide/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://recordpicker.app/fr/physical-routine-guide/</loc><lastmod>2026-10-08</lastmod></url>
+<url><loc>https://recordpicker.app/fr/record-picker/guides/import-discogs/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/fr/record-picker/guides/backup/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/fr/record-picker/guides/rediscover/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/fr/record-picker/guides/choose/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/fr/snory-teller-guide/</loc><lastmod>2026-10-17</lastmod></url>
+<url><loc>https://recordpicker.app/fr/physical-routine-guide/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://recordpicker.app/gu-in/apps/my-musical-update/s05e01/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/gu-in/apps/my-musical-update/s05e02/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://recordpicker.app/gu-in/record-picker/guides/</loc><lastmod>2026-10-08</lastmod></url>

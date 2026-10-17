@@ -14,14 +14,35 @@
     }
     return 'en-US';
   }
-  function applyLanguage() {
-    const locale = choose(navigator.languages?.length ? navigator.languages : [navigator.language || 'en-US']);
+  // An explicit URL always wins over browser preferences, including /apps/ (en-US).
+  // Language navigation happens only after the visitor selects another language.
+  function addLanguageSelector() {
     const match = location.pathname.match(/^\/(?:([a-zA-Z-]+)\/)?apps\/(dulpi\/)?(?:index\.html)?$/);
     if (!match || (match[1] && match[1] !== 'fr' && !exact.has(match[1].toLowerCase()))) return;
-    const prefix = locale === 'en-US' ? '' : locale === 'fr-FR' ? 'fr/' : locale.toLowerCase() + '/';
-    const target = '/' + prefix + 'apps/' + (match[2] || '');
-    if (target !== location.pathname) location.replace(target + location.search + location.hash);
+    const current = match[1] === 'fr' ? 'fr-FR' : exact.get((match[1] || 'en-US').toLowerCase());
+    const nav = document.createElement('nav');
+    nav.className = 'language-nav';
+    nav.setAttribute('aria-label', 'Language');
+    const label = document.createElement('label');
+    label.textContent = 'Language · ';
+    const select = document.createElement('select');
+    for (const locale of locales) {
+      const option = document.createElement('option');
+      option.value = locale;
+      option.textContent = new Intl.DisplayNames([locale], {type:'language'}).of(locale);
+      option.selected = locale === current;
+      select.append(option);
+    }
+    select.addEventListener('change', () => {
+      const locale = select.value;
+      if (!exact.has(locale.toLowerCase())) return;
+      const prefix = locale === 'en-US' ? '' : locale === 'fr-FR' ? 'fr/' : locale.toLowerCase() + '/';
+      location.assign('/' + prefix + 'apps/' + (match[2] || '') + location.search + location.hash);
+    });
+    label.append(select);
+    nav.append(label);
+    document.querySelector('header')?.append(nav);
   }
-  applyLanguage();
-  addEventListener('languagechange', applyLanguage);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addLanguageSelector, {once:true});
+  else addLanguageSelector();
 })();

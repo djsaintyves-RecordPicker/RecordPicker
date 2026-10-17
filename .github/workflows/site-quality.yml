@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Compile site scripts
         run: python3 -m compileall -q Scripts
+      - name: Verify language navigation respects explicit URLs
+        run: node Scripts/test_creator_language_navigation.cjs
       - name: Validate generated pages
         run: python3 Scripts/audit_site_quality.py
       - name: Validate canonical and reciprocal language signals

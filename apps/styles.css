@@ -104,3 +104,7 @@ a[href*="music.apple.com"] img.platform-logo{filter:none!important}
 .project-card-actions .store-appstore{background:#0067d6;color:#fff}.project-card-actions .store-appstore:hover{background:#0056b5}.project-card-actions .store-logo{width:26px;height:26px;filter:invert(1)}
 .project-card-actions .store-microsoftstore{background:#222;color:#fff}.project-card-actions .store-android-beta{background:#eef5ea;color:#1a492d}
 @media(prefers-color-scheme:dark){.project-card-body .availability{color:#ccc}}
+
+/* Explicit language navigation; never redirect an already localized page. */
+.language-nav { padding: .75rem 1rem; text-align: right; }
+.language-nav select { max-width: 100%; font: inherit; padding: .35rem; }
