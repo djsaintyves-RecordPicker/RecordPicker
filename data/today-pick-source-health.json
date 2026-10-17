@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 29,
+  "contributingSources": 30,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 29,
-  "generatedAt": "2026-10-17T10:47:01Z",
+  "effectiveContributingSources": 30,
+  "generatedAt": "2026-10-17T15:37:11Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 8,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -62,7 +62,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 7,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -118,7 +117,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 9,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -195,9 +194,10 @@
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 12,
+      "downloadedArticles": 0,
+      "error": "HTTP Error 403: Forbidden",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
@@ -220,7 +220,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 9,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
