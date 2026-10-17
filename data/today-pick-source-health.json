@@ -3,7 +3,7 @@
   "contributingSources": 30,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 30,
-  "generatedAt": "2026-10-17T15:37:11Z",
+  "generatedAt": "2026-10-17T20:37:55Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 11,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -201,7 +201,7 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
@@ -220,7 +220,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
