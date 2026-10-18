@@ -45,7 +45,19 @@
         "Record Picker": {
           "token": "RP_Website",
           "appStore": "https://apps.apple.com/app/recordpicker/id6780422305?pt=129016722&ct=RP_Website&mt=8",
-          "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_Website"
+          "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_Website",
+          "localized": {
+            "Japan": {
+              "token": "RP_Website_JP",
+              "appStore": "https://apps.apple.com/jp/app/recordpicker/id6780422305?pt=129016722&ct=RP_Website_JP&mt=8",
+              "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_Website_JP"
+            },
+            "South Korea": {
+              "token": "RP_Website_KR",
+              "appStore": "https://apps.apple.com/kr/app/recordpicker/id6780422305?pt=129016722&ct=RP_Website_KR&mt=8",
+              "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_Website_KR"
+            }
+          }
         },
         "Snory Teller": {
           "token": "ST_Website",

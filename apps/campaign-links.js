@@ -28,6 +28,11 @@
     if (prefix === "RP" && channel === "instagram") return "RP19_InstagramBio";
     if (channel === "instagram") return prefix + "_Instagram";
     if (channel === "tiktok") return prefix + "_TikTok";
+    if (prefix === "RP" && channel === "website") {
+      var locale = (document.documentElement.lang || "").toLowerCase();
+      if (locale === "ja") return "RP_Website_JP";
+      if (locale === "ko") return "RP_Website_KR";
+    }
     if (channel === "website") return prefix + "_Website";
     // Keep existing attribution for the other social channels.
     return existing || prefix + "_" + channel;

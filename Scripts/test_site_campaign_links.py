@@ -31,6 +31,12 @@ class CampaignLinksTests(unittest.TestCase):
         self.assertNotIn('<script', normalized)
         self.assertIn('ct=ST_Website', normalized)
 
+    def test_japanese_and_korean_static_links_have_their_own_rp_tokens(self):
+        japanese = normalize('<html lang="ja"><head></head><body><a href="https://apps.apple.com/jp/app/recordpicker/id6780422305">Store</a></body></html>')
+        korean = normalize('<html lang="ko"><head></head><body><a href="https://apps.microsoft.com/detail/9N2ZWRL4M3JC">Store</a></body></html>')
+        self.assertIn('ct=RP_Website_JP', japanese)
+        self.assertIn('cid=RP_Website_KR', korean)
+
 
 if __name__ == '__main__':
     unittest.main()

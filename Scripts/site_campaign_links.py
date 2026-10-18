@@ -30,6 +30,13 @@ def decorate(href: str) -> str:
     return urlunsplit(url._replace(query=urlencode(query)))
 
 
+def market_token(text: str) -> str | None:
+    language = re.search(r'<html\b[^>]*\blang=["\x27](ja|ko)["\x27]', text, re.I)
+    if language is None:
+        return None
+    return {"ja": "JP", "ko": "KR"}[language.group(1).lower()]
+
+
 def normalize(text: str) -> str:
     def anchor(match):
         tag = match[0]
@@ -49,6 +56,10 @@ def normalize(text: str) -> str:
     text = text.replace(SCRIPT, '')
     if re.search(r'<script\b', text, re.I):
         text = text.replace('</head>', SCRIPT + '</head>', 1)
+    market = market_token(text)
+    if market:
+        text = text.replace('ct=RP_Website', f'ct=RP_Website_{market}')
+        text = text.replace('cid=RP_Website', f'cid=RP_Website_{market}')
     return text
 
 
