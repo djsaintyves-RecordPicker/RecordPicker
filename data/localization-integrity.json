@@ -31,12 +31,12 @@
     "th": "470a7fe249a139e4ee55b44620e61bf16483f688e39722dc9d6951b0339b31f6",
     "tr": "9937f0d2ab66b27fbfd4809deb837f33cce69cc69c05024cd5a19a3a2cbdf522",
     "vi": "1a395e7727337cea528bc0a6c12ab57ba4d3250fcc1a96e53dd841186ca4ecb5",
-    "x-default": "604d463d32a1d586fcaf7fd01211a1e748e893a0a2f4c48d43cdad7ab1313c2a",
+    "x-default": "0d1112083409472bd1b426d38cc78b8f4358c35b7286fa1ed0cd379e0969ebcb",
     "zh-hans": "36d85a6429c3c1e9e867cb2ad13b9ffbe88a2d135a8456db3e985502584ecc93",
     "zh-hant": "fad6803af8b43295cb8c139526b6ad14261566c01093c6d467cc68b8e66b262a"
   },
   "locale_group_count": 34,
   "page_count": 1046,
-  "review_reason": "Correct market-specific offer copy and German 3.0.1 release localization",
+  "review_reason": "Align the canonical US landing page offer copy with its market page",
   "schema": 1
 }
