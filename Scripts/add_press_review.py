@@ -23,6 +23,14 @@ ARTICLE_QUOTE = (
     "pertinente, surtout lorsque celle-ci commence à compter plusieurs "
     "centaines de références."
 )
+ON_MAG_URL = (
+    "https://forum.on-mag.fr/threads/record-picker-une-app-sans-ia-ni-abonnement-"
+    "pour-saider-%C3%A0-choisir-ses-%C3%A9coutes-vinyles-cd-dans-sa-propre-collection.960/"
+)
+ON_MAG_TITLE = (
+    "Record Picker : une app sans IA ni abonnement pour s’aider à choisir ses "
+    "écoutes vinyles & CD dans sa propre collection"
+)
 
 LOCALES = {
     "ar", "ca", "da", "de", "el", "en-au", "en-ca", "en-gb", "en-us",
@@ -180,8 +188,11 @@ def build_review_page() -> None:
         '<h1>Revue de presse</h1>'
         '<p class="doc-tagline">Les médias parlent de Record Picker.</p>'
         '<div class="doc-actions"><a class="button primary" href="/press/">Dossier de presse</a>'
-        '<a class="button glass" href="/fr/">Accueil</a></div></section>'
-        '<section class="doc-content"><article class="press-review-entry">'
+        '<a class="button glass" href="/fr/readme/#version-history">Versions disponibles</a></div></section>'
+        '<section class="doc-content"><p class="press-kit-status" role="note">Les liens ci-dessous '
+        'mènent vers des articles publiés à leurs dates respectives. Pour la version, les tarifs et '
+        'les plateformes actuellement disponibles, consultez <a href="/fr/readme/#version-history">les '
+        'versions de Record Picker</a>.</p><article class="press-review-entry">'
         '<div class="press-review-copy"><p class="kicker">Mac4Ever</p>'
         f'<h2 lang="fr">{escape(ARTICLE_TITLE)}</h2>'
         '<p class="press-review-byline">Laurence · '
@@ -194,10 +205,22 @@ def build_review_page() -> None:
         'rel="noopener external">Lire l’article original sur Mac4Ever '
         '<span aria-hidden="true">↗</span></a></div>'
         '<figure class="press-review-visual"><picture>'
-        '<source srcset="/assets/screenshots/v20/fr/mac-mood-pick.avif" type="image/avif">'
-        '<source srcset="/assets/screenshots/v20/fr/mac-mood-pick.webp" type="image/webp">'
-        '<img alt="" src="/assets/screenshots/v20/fr/mac-mood-pick.webp" width="1440" '
-        'height="900" decoding="async"></picture></figure></article>'
+        '<source srcset="/assets/screenshots/v301/fr/mac-mood-pick.avif" type="image/avif">'
+        '<source srcset="/assets/screenshots/v301/fr/mac-mood-pick.webp" type="image/webp">'
+        '<img alt="Mac · Record Picker 3.0.1 · FR" src="/assets/screenshots/v301/fr/mac-mood-pick.webp" width="1600" '
+        'height="1004" decoding="async"></picture></figure></article>'
+        '<article class="press-review-entry"><div class="press-review-copy"><p class="kicker">ON-mag</p>'
+        f'<h2 lang="fr">{escape(ON_MAG_TITLE)}</h2>'
+        '<p class="press-review-byline">Nicanor Haon · <time datetime="2026-10-07">7 octobre 2026</time> · Audio</p>'
+        '<p>ON-mag revient sur Record Picker comme une app dédiée aux collections physiques : '
+        'catalogue, choix d’écoute aléatoire, Mood Pick, Disque du jour et outils pour explorer sa bibliothèque.</p>'
+        f'<a class="button primary" href="{ON_MAG_URL}" target="_blank" rel="noopener external">'
+        'Lire l’article original sur ON-mag <span aria-hidden="true">↗</span></a></div>'
+        '<figure class="press-review-visual"><picture>'
+        '<source srcset="/assets/screenshots/v301/fr/mac-collection.avif" type="image/avif">'
+        '<source srcset="/assets/screenshots/v301/fr/mac-collection.webp" type="image/webp">'
+        '<img alt="Mac · Record Picker 3.0.1 · FR" src="/assets/screenshots/v301/fr/mac-collection.webp" '
+        'width="1600" height="1004" loading="lazy" decoding="async"></picture></figure></article>'
         '</section></main>'
     )
     template = re.sub(r"<main\b.*?</main>", main, template, count=1, flags=re.DOTALL)
@@ -208,13 +231,22 @@ def build_review_page() -> None:
                 "@type": "CollectionPage", "name": title, "url": canonical,
                 "description": description,
                 "about": {"@type": "SoftwareApplication", "name": "Record Picker"},
-                "hasPart": {
-                    "@type": "NewsArticle", "url": ARTICLE_URL,
-                    "headline": ARTICLE_TITLE, "datePublished": "2026-08-11",
-                    "inLanguage": "fr", "author": {"@type": "Person", "name": "Laurence"},
-                    "publisher": {"@type": "Organization", "name": "Mac4Ever",
-                                  "url": "https://www.mac4ever.com/"},
-                },
+                "hasPart": [
+                    {
+                        "@type": "NewsArticle", "url": ARTICLE_URL,
+                        "headline": ARTICLE_TITLE, "datePublished": "2026-08-11",
+                        "inLanguage": "fr", "author": {"@type": "Person", "name": "Laurence"},
+                        "publisher": {"@type": "Organization", "name": "Mac4Ever",
+                                      "url": "https://www.mac4ever.com/"},
+                    },
+                    {
+                        "@type": "NewsArticle", "url": ON_MAG_URL,
+                        "headline": ON_MAG_TITLE, "datePublished": "2026-10-07",
+                        "inLanguage": "fr", "author": {"@type": "Person", "name": "Nicanor Haon"},
+                        "publisher": {"@type": "Organization", "name": "ON-mag",
+                                      "url": "https://www.on-mag.fr/"},
+                    },
+                ],
             },
             {"@type": "BreadcrumbList", "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Record Picker",
@@ -297,14 +329,17 @@ def update_page(page: Path) -> bool:
 def update_press_landing() -> None:
     page = ROOT / "press" / "index.html"
     text = page.read_text(encoding="utf-8")
-    if 'class="card press-review-card"' not in text:
-        card = (
-            '<article class="card press-review-card"><p class="kicker">Revue de presse</p>'
-            '<h2>Mac4Ever présente Record Picker</h2>'
-            '<p>Découvrez le regard de Mac4Ever sur les trois modes de sélection, '
-            'la musique classique et le modèle sans abonnement.</p>'
-            '<a class="button glass" href="/press/reviews/">Voir la revue de presse</a></article>'
-        )
+    card = (
+        '<article class="card press-review-card"><p class="kicker">Revue de presse</p>'
+        '<h2>Mac4Ever et ON-mag parlent de Record Picker</h2>'
+        '<p>Deux articles indépendants reviennent sur l’idée de redécouvrir une collection physique. '
+        'Ils sont accompagnés de leur date de publication ; les informations produit actuelles restent '
+        'sur ce dossier de presse.</p>'
+        '<a class="button glass" href="/press/reviews/">Voir la revue de presse</a></article>'
+    )
+    if re.search(r'<article class="card press-review-card">.*?</article>', text, re.DOTALL):
+        text = re.sub(r'<article class="card press-review-card">.*?</article>', card, text, count=1, flags=re.DOTALL)
+    else:
         text = text.replace('</div><section class="official-identity"',
                             card + '</div><section class="official-identity"', 1)
     page.write_text(text, encoding="utf-8")

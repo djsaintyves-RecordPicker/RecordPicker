@@ -12,7 +12,7 @@
     "es-es": "f0ee3dd09ce24a30beb179ad50f3084082629ef1bd961519d949769da6f18d1d",
     "es-mx": "b328a42fe2648d3e0dfe541cbc351dfb2eea9afcfeb664819a70d14eb90ce0ac",
     "fi": "4d8d67c28ebf8fd6f7658cecb6d6b2745c06aa6cdf4dd94d61c7495cfa7e130b",
-    "fr": "97259f4f3982d8c041d5d8e0b001be1ba954e14f6db0c2b78a12112bbfa40450",
+    "fr": "537cad59f5e052916c66743b8073ee80884cb4ceb1fa35de9a363cc37a5dccc3",
     "fr-ca": "79e231220c13564853f44feee5c0c8a80fd4d62c18b10d19e8697fcc3b164593",
     "he": "7ec1395e2d11fef2ac2e59662b011cdb7eb09dd0e1dcbfebcedc12789d69c774",
     "hi": "6b58de9e5d445a6a26309ce3b1fa07fee9a0db5bc70f84bb38c70472abf5e5c0",
@@ -26,7 +26,7 @@
     "pt-br": "297920df01b5e8d8f62cd02aad3be54dafe5c33b5275bf03b5125570c11af5aa",
     "pt-pt": "3d047e5032ec4b6b35e70072ee361e0f9ea0992ecee7383523f2a9598c044c33",
     "ru": "0025c08b10ce165151f082f7d8e6b11b136e3ab521ad1766ab1f8d20a05b1b68",
-    "shared": "2a13899ae114e2914d4447312f60884eec8d07c3c9b83437b8a04305a949ba61",
+    "shared": "0a4897d3f4ee4ed2689038834c4e312aa2d875d604c6623d75784adeb0b1c0f3",
     "sv": "581155f2ae05a42704968ba219d98a80e4d996eccf5fd673958acece7b946fce",
     "th": "470a7fe249a139e4ee55b44620e61bf16483f688e39722dc9d6951b0339b31f6",
     "tr": "9937f0d2ab66b27fbfd4809deb837f33cce69cc69c05024cd5a19a3a2cbdf522",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1045,
-  "review_reason": "Reconcile already-published upstream shared pages; campaign patch compared against HEAD changes no public copy in any of 1263 touched pages.",
+  "review_reason": "Added localized Record Picker press coverage link",
   "schema": 1
 }

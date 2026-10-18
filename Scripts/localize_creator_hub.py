@@ -145,7 +145,7 @@ def generate(templates):
     elif href in ('/','/manage-vinyl-collection/','/choose-vinyl-record/') and rp_locale:
      candidate='/'+rp_locale+href
      if (ROOT/candidate.lstrip('/')/'index.html').is_file():node.set('href',candidate)
-   for primary in doc.xpath('//*[@id="record-picker"]//a[not(contains(@class,"store-button"))]'):
+   for primary in doc.xpath('//*[@id="record-picker"]//a[not(contains(@class,"store-button")) and not(contains(@class,"press-review-link"))]'):
     destination='/'+rp_locale+'/' if rp_locale else '/'
     if not (ROOT/destination.lstrip('/')/'index.html').is_file():
      base=language(locale); destination='/'+base+'/' if (ROOT/base/'index.html').is_file() else '/'
