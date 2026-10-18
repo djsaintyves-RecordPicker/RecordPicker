@@ -22,7 +22,7 @@ for directory in COPY:
     assert BETA_COPY[directory][0] not in {"Coming soon", "Bientôt disponible"}, directory
     assert "14" in text, directory
     assert any(copy in text for copy in ("lifetime Pro access", "accès Pro à vie", "acesso Pro vitalício")), directory
-    assert "Google%20Account%20email" in text, directory
+    assert "https://groups.google.com/g/record-picker-android-beta" in text, directory
 
     payload = re.search(
         r'<script type="application/ld\+json">(.*?)</script>', text, flags=re.DOTALL

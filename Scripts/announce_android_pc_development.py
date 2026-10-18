@@ -150,13 +150,10 @@ def update_beta_banner(text: str, locale: str) -> str:
     # Refresh the stylesheet cache so returning visitors see the yellow background.
     text = re.sub(r'(quality\.css)\?v=[^"]+', r'\1?v=20261001-beta-banner', text)
     title, _, button = BETA_COPY[locale]
-    # Reuse the existing application link and its email template.
-    match = re.search(r'href="(mailto:support@recordpicker\.app\?subject=Record%20Picker%20Android%20beta%20volunteer[^"]*)"', text)
-    if not match:
-        raise RuntimeError('Android beta application link missing: ' + locale)
+    group_url = 'https://groups.google.com/g/record-picker-android-beta'
     block = ('<aside class="beta-site-banner" data-beta-recruitment>'
              f'<strong>{escape(title)}</strong>'
-             f'<a href="{match.group(1)}">{escape(button)}</a></aside>')
+             f'<a href="{group_url}" data-umami-event="beta_click" data-umami-event-destination="android_group">{escape(button)}</a></aside>')
     marker = '<main id="main-content">'
     if marker not in text:
         raise RuntimeError('Home main landmark missing: ' + locale)
@@ -173,14 +170,7 @@ def announcement(locale: str) -> str:
         "The 12 testers who complete the 14 days and send useful feedback will receive lifetime Pro access.",
     )
     title = title.replace("PC", "Windows").replace("pc", "Windows")
-    subject = quote("Record Picker Android beta volunteer")
-    body = quote(
-        "Google Account email used for Google Play:\n"
-        "Country / region:\n"
-        "Android device model and version:\n"
-        "Preferred beta language: English / French:\n"
-        "I can stay enrolled for 14 consecutive days: Yes / No\n"
-    )
+    group_url = 'https://groups.google.com/g/record-picker-android-beta'
     visual = "android-beta-fr.webp" if locale in {"fr", "fr-ca"} else "android-beta-en.webp"
     visual_alt = beta_title
     return (
@@ -194,7 +184,7 @@ def announcement(locale: str) -> str:
         f'<h3>{escape(beta_title)}</h3><p>{escape(beta_detail)}</p>'
         f'<p><strong>{escape(reward)}</strong></p>'
         '<div class="cta-row compact">'
-        f'<a class="button primary" href="mailto:support@recordpicker.app?subject={subject}&amp;body={body}">{escape(beta_button)}</a>'
+        f'<a class="button primary" href="{group_url}" data-umami-event="beta_click" data-umami-event-destination="android_group">{escape(beta_button)}</a>'
         '</div></div></div>'
         f'<a class="beta-campaign-visual" href="{("/" + locale) if locale else ""}/android-app/" aria-label="{escape(beta_title)}">'
         f'<img loading="lazy" src="/assets/beta/{visual}" alt="{escape(visual_alt)}" width="1080" height="1920" decoding="async">'
