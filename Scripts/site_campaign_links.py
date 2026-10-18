@@ -43,6 +43,7 @@ def normalize(text: str) -> str:
         return tag[:href.start(1)] + '"' + escape(updated, quote=True) + '"' + tag[href.end(1):]
     text = ANCHOR.sub(anchor, text)
     text = text.replace('site.js?v=20261008-free-light-pro', 'site.js?v=20261018-campaigns')
+    text = text.replace('site.js?v=20261018-campaigns"', 'site.js?v=20261018-campaigns-2"')
     # Independent support/product subsites deliberately have no JavaScript.
     # Keep their static website campaign links without introducing a runtime.
     text = text.replace(SCRIPT, '')

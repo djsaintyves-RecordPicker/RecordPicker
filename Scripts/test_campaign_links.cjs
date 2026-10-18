@@ -49,4 +49,15 @@ assert.equal(token(run('?utm_source=website', {storage})), 'RP_Website');
 assert.equal(token(run('', {storage})), 'RP_Website');
 assert.equal(run('?utm_source=tiktok').api.decorate('https://apps.apple.com/app/id1111111111'), 'https://apps.apple.com/app/id1111111111');
 assert.equal(run('?utm_source=tiktok').api.decorate('https://apps.apple.com.evil.test/app/id6780422305'), 'https://apps.apple.com.evil.test/app/id6780422305');
+// Execute the real homepage redirect: a language hop must retain attribution.
+const site = fs.readFileSync(require('node:path').join(__dirname, '../site.js'), 'utf8');
+const redirect = site.match(/function redirectToStaticLocale\(lang\) \{[\s\S]*?return true;\n  \}/)[0];
+for (const query of ['?utm_source=ig', '?utm_source=tiktok&lang=fr']) {
+  let destination;
+  const window = {location: {pathname: '/', protocol: 'https:', search: query, hash: '#record-picker', replace(value) { destination = value; }}};
+  vm.runInNewContext(redirect + '; redirectToStaticLocale("fr");', {
+    window, body: {hasAttribute() { return false; }}, currentPublicPagePath() { return ''; }, siteBasePath: '/'
+  });
+  assert.equal(destination, '/fr/' + query + '#record-picker');
+}
 console.log('OK: website/Instagram/TikTok, three apps, Windows, navigation, blocked storage and destination parameters.');

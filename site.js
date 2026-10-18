@@ -223,7 +223,7 @@
     if (/^#lang=/i.test(hash)) hash = "";
     var targetPath = siteBasePath + lang + "/" + pagePath;
     if (window.location.pathname === targetPath) return false;
-    window.location.replace(targetPath + hash);
+    window.location.replace(targetPath + window.location.search + hash);
     return true;
   }
   var preferred = "en-gb";
