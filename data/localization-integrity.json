@@ -26,7 +26,7 @@
     "pt-br": "297920df01b5e8d8f62cd02aad3be54dafe5c33b5275bf03b5125570c11af5aa",
     "pt-pt": "3d047e5032ec4b6b35e70072ee361e0f9ea0992ecee7383523f2a9598c044c33",
     "ru": "0025c08b10ce165151f082f7d8e6b11b136e3ab521ad1766ab1f8d20a05b1b68",
-    "shared": "ffccad18847ae8f7c2c38a014cf99663a758482ea7a1b1f77e6f7d0eca468c74",
+    "shared": "2a13899ae114e2914d4447312f60884eec8d07c3c9b83437b8a04305a949ba61",
     "sv": "581155f2ae05a42704968ba219d98a80e4d996eccf5fd673958acece7b946fce",
     "th": "470a7fe249a139e4ee55b44620e61bf16483f688e39722dc9d6951b0339b31f6",
     "tr": "9937f0d2ab66b27fbfd4809deb837f33cce69cc69c05024cd5a19a3a2cbdf522",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1045,
-  "review_reason": "User authorized language routing correction, expanded FR/EN priority guides and contextual app/store links on 2026-10-17",
+  "review_reason": "Reconcile already-published upstream shared pages; campaign patch compared against HEAD changes no public copy in any of 1263 touched pages.",
   "schema": 1
 }

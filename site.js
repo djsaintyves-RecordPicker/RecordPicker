@@ -104,11 +104,14 @@
     });
   }
   function acquisitionSource() {
+    if (window.recordPickerCampaigns) return window.recordPickerCampaigns.source;
     var source = "";
     try {
       var parameters = new URLSearchParams(window.location.search);
       var requested = String(parameters.get("utm_source") || "").toLowerCase();
-      if (requested === "instagram" || requested === "facebook" || requested === "youtube" || requested === "threads") {
+      if (requested === "ig") requested = "instagram";
+      if (requested === "tt") requested = "tiktok";
+      if (requested === "instagram" || requested === "tiktok" || requested === "facebook" || requested === "youtube" || requested === "threads") {
         source = requested;
         sessionStorage.setItem("recordpicker-acquisition-source", source);
       } else {
@@ -137,18 +140,25 @@
       if (campaign && source) {
         campaign += "_" + source.charAt(0).toUpperCase() + source.slice(1);
       }
-      var url = storefront.url;
+      // Keep platform=mac and other destination parameters when localizing.
+      var original = new URL(element.getAttribute("href"), window.location.href);
+      var localized = new URL(storefront.url);
+      original.searchParams.forEach(function (value, key) {
+        if (key !== "pt" && key !== "ct" && key !== "mt") localized.searchParams.set(key, value);
+      });
+      var url = localized.toString();
       if (campaign) {
         var separator = url.indexOf("?") === -1 ? "?" : "&";
         url += separator + "pt=129016722&ct=" + encodeURIComponent(campaign) + "&mt=8";
       }
+      if (window.recordPickerCampaigns) url = window.recordPickerCampaigns.decorate(url);
       element.setAttribute("href", url);
       element.addEventListener("click", function () {
         try {
           var clickLog = JSON.parse(localStorage.getItem("recordpicker-app-store-clicks") || "[]");
           clickLog.push({
             at: new Date().toISOString(),
-            campaign: campaign || "unattributed",
+            campaign: new URL(element.href).searchParams.get("ct") || campaign || "unattributed",
             page: window.location.pathname,
             language: lang
           });

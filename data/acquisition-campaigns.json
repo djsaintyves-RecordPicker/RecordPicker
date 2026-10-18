@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "publishedDate": "2026-10-18",
+  "providerToken": "129016722",
+  "channels": {
+    "instagram": {
+      "landing": "https://recordpicker.app/apps/?utm_source=instagram",
+      "apps": {
+        "Record Picker": {
+          "token": "RP19_InstagramBio",
+          "appStore": "https://apps.apple.com/app/apple-store/id6780422305?pt=129016722&ct=RP19_InstagramBio&mt=8",
+          "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP19_InstagramBio"
+        },
+        "Snory Teller": {
+          "token": "ST_Instagram",
+          "appStore": "https://apps.apple.com/app/id6820177689?pt=129016722&ct=ST_Instagram&mt=8"
+        },
+        "My Physical Routine": {
+          "token": "MPR_Instagram",
+          "appStore": "https://apps.apple.com/app/id6820104318?pt=129016722&ct=MPR_Instagram&mt=8"
+        }
+      }
+    },
+    "tiktok": {
+      "landing": "https://recordpicker.app/apps/?utm_source=tiktok",
+      "apps": {
+        "Record Picker": {
+          "token": "RP_TikTok",
+          "appStore": "https://apps.apple.com/app/recordpicker/id6780422305?pt=129016722&ct=RP_TikTok&mt=8",
+          "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_TikTok"
+        },
+        "Snory Teller": {
+          "token": "ST_TikTok",
+          "appStore": "https://apps.apple.com/app/id6820177689?pt=129016722&ct=ST_TikTok&mt=8"
+        },
+        "My Physical Routine": {
+          "token": "MPR_TikTok",
+          "appStore": "https://apps.apple.com/app/id6820104318?pt=129016722&ct=MPR_TikTok&mt=8"
+        }
+      }
+    },
+    "website": {
+      "landing": "https://recordpicker.app/apps/",
+      "apps": {
+        "Record Picker": {
+          "token": "RP_Website",
+          "appStore": "https://apps.apple.com/app/recordpicker/id6780422305?pt=129016722&ct=RP_Website&mt=8",
+          "microsoftStore": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC?cid=RP_Website"
+        },
+        "Snory Teller": {
+          "token": "ST_Website",
+          "appStore": "https://apps.apple.com/app/id6820177689?pt=129016722&ct=ST_Website&mt=8"
+        },
+        "My Physical Routine": {
+          "token": "MPR_Website",
+          "appStore": "https://apps.apple.com/app/id6820104318?pt=129016722&ct=MPR_Website&mt=8"
+        }
+      }
+    }
+  },
+  "instagramBio": "Existing RP19_InstagramBio link preserved; existing website link uses utm_source=ig (supported alias).",
+  "tiktok": "Public bio URL uses utm_source=tiktok; no clickable Website field exposed in desktop editor.",
+  "legacyCampaigns": [
+    "RP20_Website_FR",
+    "RP20_Website_EN_US",
+    "yd_hub_apple_ios"
+  ],
+  "privacy": "Fixed source tokens only; no unique identifiers. Source kept only in same-tab sessionStorage, when available. Existing analytics opt-out unchanged.",
+  "attributionLimits": "Campaign attribution is not proof of causal lift. ASC thresholds/delays apply; missing is not zero. Windows and Apple metric definitions differ."
+}
