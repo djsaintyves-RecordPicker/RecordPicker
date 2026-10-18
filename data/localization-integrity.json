@@ -10,7 +10,7 @@
     "en-gb": "a8897e43c563fb1ca0c16ab22ff17551210ef903843285a61a5a077ae8acf70a",
     "en-us": "ebc83b3a31555104a9270a8bc24d9f40373d2934f41d3a6e44166b031711a5f3",
     "es-es": "011ce1f8dae5400e86665d0d7a6e383510b56950ea76436fb8bf15719ff36ce3",
-    "es-mx": "b328a42fe2648d3e0dfe541cbc351dfb2eea9afcfeb664819a70d14eb90ce0ac",
+    "es-mx": "7ce3ce786898790f59fee64ad5901ebb19d7a794ab215d385c5b6760afff6197",
     "fi": "4d8d67c28ebf8fd6f7658cecb6d6b2745c06aa6cdf4dd94d61c7495cfa7e130b",
     "fr": "b9b65d263940f3df7f45826728741aefbf886d6b85527c8e52e43b63149ec0da",
     "fr-ca": "79e231220c13564853f44feee5c0c8a80fd4d62c18b10d19e8697fcc3b164593",
@@ -22,7 +22,7 @@
     "ko": "24fba8990707200ea7adcccd749dc73492fa55e90a18de7acfc45b9071ecc125",
     "nb": "b110aa60b6b0829c3d9c30dd16c75d9edec3ed70724e488e42137861a10cd998",
     "nl": "70c89a7e8aff76faef98ecf556cb6b40ab066658b02385abff9d1a4aa41ca5f5",
-    "pl": "260d68312879d8cdeec2fac19ce94ffbce5feb585504a0d34d3116a58918553f",
+    "pl": "83e60adbafb88eee87cdb632c66d9aa40781ad8cabf3192fa61ff4f57e046353",
     "pt-br": "297920df01b5e8d8f62cd02aad3be54dafe5c33b5275bf03b5125570c11af5aa",
     "pt-pt": "3d047e5032ec4b6b35e70072ee361e0f9ea0992ecee7383523f2a9598c044c33",
     "ru": "0025c08b10ce165151f082f7d8e6b11b136e3ab521ad1766ab1f8d20a05b1b68",
@@ -32,11 +32,11 @@
     "tr": "9937f0d2ab66b27fbfd4809deb837f33cce69cc69c05024cd5a19a3a2cbdf522",
     "vi": "1a395e7727337cea528bc0a6c12ab57ba4d3250fcc1a96e53dd841186ca4ecb5",
     "x-default": "0d1112083409472bd1b426d38cc78b8f4358c35b7286fa1ed0cd379e0969ebcb",
-    "zh-hans": "36d85a6429c3c1e9e867cb2ad13b9ffbe88a2d135a8456db3e985502584ecc93",
+    "zh-hans": "4a6acea24638bd10b5ca81a62a60985dc95c445f6663cd10e440f7007e5f3311",
     "zh-hant": "fad6803af8b43295cb8c139526b6ad14261566c01093c6d467cc68b8e66b262a"
   },
   "locale_group_count": 34,
   "page_count": 1046,
-  "review_reason": "Localize 3.0.1 feature cards for priority European markets",
+  "review_reason": "Localize 3.0.1 feature cards for Mexico, Poland and Simplified Chinese markets",
   "schema": 1
 }
