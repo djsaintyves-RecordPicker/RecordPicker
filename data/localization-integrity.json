@@ -8,7 +8,7 @@
     "en-au": "a6ad6cdf478325b1d793bf9a6df678ef5802f4bd3a592701828b2d8ae2c122a7",
     "en-ca": "4d77cd1b4e3be3d54fddcd320ec30d2ae2c121705ce8cf22ba75a0c15e4dce80",
     "en-gb": "a8897e43c563fb1ca0c16ab22ff17551210ef903843285a61a5a077ae8acf70a",
-    "en-us": "f8c56364e13a8a9031200cd9f760f0214a5a911aef3cd0fbc3b270f09b1b1b21",
+    "en-us": "a6443df081463a09cf9951685ccfda91c78956aa0aa06dc746c2e897783b4f8c",
     "es-es": "011ce1f8dae5400e86665d0d7a6e383510b56950ea76436fb8bf15719ff36ce3",
     "es-mx": "7ce3ce786898790f59fee64ad5901ebb19d7a794ab215d385c5b6760afff6197",
     "fi": "4d8d67c28ebf8fd6f7658cecb6d6b2745c06aa6cdf4dd94d61c7495cfa7e130b",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Reviewed ordered-records FR/EN previews and press-page navigation/provenance fixes",
+  "review_reason": "User-authorized English guide conversion improvements on 2026-10-20; title, structured metadata and tracked Store/Mac/Discogs calls to action reviewed",
   "schema": 1
 }
