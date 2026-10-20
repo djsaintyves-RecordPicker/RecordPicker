@@ -1,20 +1,20 @@
 {
   "configuredSources": 46,
-  "contributingSources": 27,
+  "contributingSources": 28,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 27,
-  "generatedAt": "2026-10-20T04:52:58Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 28,
+  "generatedAt": "2026-10-20T11:40:15Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 25,
+      "downloadedArticles": 24,
       "resolvedEvents": 5,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -45,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 10,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -62,7 +62,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -123,13 +123,13 @@
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -141,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -177,26 +177,27 @@
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 23,
+      "resolvedEvents": 16,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 12,
+      "downloadedArticles": 0,
+      "error": "HTTP Error 403: Forbidden",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
@@ -224,7 +225,7 @@
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 7,
       "resolvedEvents": 3,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
@@ -236,8 +237,8 @@
       "url": "https://www.theguardian.com/music/rss"
     },
     "The Line of Best Fit": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "downloadedArticles": 9,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
@@ -273,7 +274,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
