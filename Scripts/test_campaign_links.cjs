@@ -6,11 +6,11 @@ const rp = 'https://apps.apple.com/fr/app/recordpicker/id6780422305?platform=mac
 const st = 'https://apps.apple.com/app/id6820177689';
 const mpr = 'https://apps.apple.com/fr/app/id6820104318';
 const ms = 'https://apps.microsoft.com/detail/9N2ZWRL4M3JC?hl=fr-fr';
-function run(search = '', {storage = new Map(), referrer = '', blocked = false} = {}) {
+function run(search = '', {storage = new Map(), referrer = '', blocked = false, lang = ''} = {}) {
   const links = [rp, st, mpr, ms, 'https://example.com/id6780422305', 'mailto:support@recordpicker.app'].map(href => ({
     href, getAttribute() { return this.href; }, setAttribute(_, value) { this.href = value; }
   }));
-  const document = { readyState: 'complete', referrer, querySelectorAll: () => links };
+  const document = { readyState: 'complete', referrer, documentElement: {lang}, querySelectorAll: () => links };
   const sessionStorage = {
     getItem(key) { if (blocked) throw Error('blocked'); return storage.get(key); },
     setItem(key, value) { if (blocked) throw Error('blocked'); storage.set(key, value); },
@@ -26,6 +26,8 @@ assert.equal(token(website), 'RP_Website');
 assert.equal(token(website, 1), 'ST_Website');
 assert.equal(token(website, 2), 'MPR_Website');
 assert.equal(token(website, 3), 'RP_Website');
+assert.equal(token(run('', {lang: 'ja'})), 'RP_Website_JP');
+assert.equal(token(run('', {lang: 'ko'})), 'RP_Website_KR');
 assert.equal(new URL(website.links[0].href).searchParams.get('platform'), 'mac');
 assert.equal(new URL(website.links[3].href).searchParams.get('hl'), 'fr-fr');
 assert.equal(website.links[4].href, 'https://example.com/id6780422305');

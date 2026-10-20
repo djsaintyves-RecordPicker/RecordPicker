@@ -1230,6 +1230,11 @@ def ticketmaster_events(
                         event_date = datetime.combine(parsed_local, datetime_time(12), tzinfo=timezone.utc)
                 if not name or not artists or not source_url or not event_date or not city:
                     continue
+                try:
+                    builder.validate_https_url(source_url, f"ticketmaster-{event_id}.sourceURL")
+                except builder.FeedValidationError as error:
+                    warnings.append(f"Ticketmaster {country_code} event {event_id}: {error}")
+                    continue
                 events.append(
                     {
                         "id": f"ticketmaster-{event_id}",

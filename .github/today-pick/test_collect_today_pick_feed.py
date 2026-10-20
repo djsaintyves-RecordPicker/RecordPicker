@@ -69,5 +69,39 @@ class EditorialFallbackTests(unittest.TestCase):
             collector.fallback_editorial_events(path, NOW, set(), 72)
 
 
+class TicketmasterSourceValidationTests(unittest.TestCase):
+    def test_skips_an_event_with_a_non_public_ticketmaster_url(self):
+        document = {
+            "_embedded": {
+                "events": [{
+                    "id": "bad-url",
+                    "name": "Example concert",
+                    "url": "http://not-public.example.test/event",
+                    "_embedded": {
+                        "attractions": [{"name": "Example Artist"}],
+                        "venues": [{
+                            "name": "Example venue",
+                            "city": {"name": "Paris"},
+                            "country": {"countryCode": "FR"},
+                        }],
+                    },
+                    "dates": {"start": {"dateTime": "2026-08-21T20:00:00Z"}},
+                }]
+            },
+            "page": {"totalPages": 1},
+        }
+
+        events, warnings = collector.ticketmaster_events(
+            NOW,
+            "test-key",
+            ["FR"],
+            json_fetcher=lambda _url: document,
+            maximum_pages_per_country=1,
+        )
+
+        self.assertEqual(events, [])
+        self.assertTrue(any("bad-url.sourceURL must be a public HTTPS URL" in warning for warning in warnings))
+
+
 if __name__ == "__main__":
     unittest.main()
