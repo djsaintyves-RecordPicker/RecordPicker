@@ -8,11 +8,11 @@
     "en-au": "a6ad6cdf478325b1d793bf9a6df678ef5802f4bd3a592701828b2d8ae2c122a7",
     "en-ca": "4d77cd1b4e3be3d54fddcd320ec30d2ae2c121705ce8cf22ba75a0c15e4dce80",
     "en-gb": "a8897e43c563fb1ca0c16ab22ff17551210ef903843285a61a5a077ae8acf70a",
-    "en-us": "ebc83b3a31555104a9270a8bc24d9f40373d2934f41d3a6e44166b031711a5f3",
+    "en-us": "f4ed50eb53bc37a9df3ab935d6eeec916ca56ebe66d46dc3e53885e2cc35f05d",
     "es-es": "011ce1f8dae5400e86665d0d7a6e383510b56950ea76436fb8bf15719ff36ce3",
     "es-mx": "7ce3ce786898790f59fee64ad5901ebb19d7a794ab215d385c5b6760afff6197",
     "fi": "4d8d67c28ebf8fd6f7658cecb6d6b2745c06aa6cdf4dd94d61c7495cfa7e130b",
-    "fr": "b9b65d263940f3df7f45826728741aefbf886d6b85527c8e52e43b63149ec0da",
+    "fr": "4f85cd5f1102f72501caa9146812a3523bfabcb6eeecf9376c894997d344b94f",
     "fr-ca": "79e231220c13564853f44feee5c0c8a80fd4d62c18b10d19e8697fcc3b164593",
     "he": "7ec1395e2d11fef2ac2e59662b011cdb7eb09dd0e1dcbfebcedc12789d69c774",
     "hi": "6b58de9e5d445a6a26309ce3b1fa07fee9a0db5bc70f84bb38c70472abf5e5c0",
@@ -26,7 +26,7 @@
     "pt-br": "297920df01b5e8d8f62cd02aad3be54dafe5c33b5275bf03b5125570c11af5aa",
     "pt-pt": "3d047e5032ec4b6b35e70072ee361e0f9ea0992ecee7383523f2a9598c044c33",
     "ru": "0025c08b10ce165151f082f7d8e6b11b136e3ab521ad1766ab1f8d20a05b1b68",
-    "shared": "0a4897d3f4ee4ed2689038834c4e312aa2d875d604c6623d75784adeb0b1c0f3",
+    "shared": "e8122c66c62d70404db70a8653db9a8f63de9616a976438bc49810fe9557c2b3",
     "sv": "843aaeeef9835bd84b0a44bd32395cb2e9d6cb105040bdb90eae15e278b3e96f",
     "th": "470a7fe249a139e4ee55b44620e61bf16483f688e39722dc9d6951b0339b31f6",
     "tr": "9937f0d2ab66b27fbfd4809deb837f33cce69cc69c05024cd5a19a3a2cbdf522",
@@ -36,7 +36,7 @@
     "zh-hant": "fad6803af8b43295cb8c139526b6ad14261566c01093c6d467cc68b8e66b262a"
   },
   "locale_group_count": 34,
-  "page_count": 1046,
-  "review_reason": "Localize 3.0.1 feature cards for Mexico, Poland and Simplified Chinese markets",
+  "page_count": 1048,
+  "review_reason": "Reviewed FR/EN ordered-records development preview, linked from RP and Studio; public release stays 3.0.1",
   "schema": 1
 }
