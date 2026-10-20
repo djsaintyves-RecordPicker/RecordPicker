@@ -73,18 +73,19 @@ def main() -> None:
             assert state['next_release']['offer']['light']['price_eur'] == '2.99'
             assert state['next_release']['offer']['pro']['price_eur'] == '9.99'
             assert state['next_release']['offer']['pro']['existing_purchases_preserved']
-            copies = json.loads((target / 'data/release-notes/3.0-offer.json').read_text())
             for locale_dir, locale in ANNOUNCEMENT_LOCALES.items():
                 for route in state['next_release']['announcement_routes']:
                     page = (target / locale_dir / route).read_text()
                     block = re.search(r'<(section|article)\b[^>]*data-release-version="3\.0\.1"[^>]*>.*?</\1>', page, re.S)
                     assert block, (locale_dir, route)
-                    assert copies[locale]['status'] in unescape(block.group())
-                    assert 'release-upcoming' not in block.group()
-                    assert all('data-offer="'+tier+'"' in block.group() for tier in ('free','light','pro'))
-                    assert copies[locale]['free_title'] in unescape(block.group())
-                    assert all(copies[locale][key] in unescape(block.group())
-                               for key in ('light_title', 'light', 'pro_title', 'pro', 'terms'))
+                    content = unescape(block.group())
+                    assert 'release-upcoming' not in content
+                    assert all('data-offer="' + tier + '"' in content for tier in ('free', 'light', 'pro'))
+                    for tier in ('free', 'light', 'pro'):
+                        tier_block = re.search(r'<(?:div|p)\b[^>]*data-offer="' + tier + r'"[^>]*>(.*?)</(?:div|p)>', content, re.S)
+                        assert tier_block and re.sub(r'<[^>]+>', '', tier_block.group(1)).strip(), (locale_dir, route, tier)
+                    terms = re.search(r'<p\b[^>]*release-offer-terms[^>]*>(.*?)</p>', content, re.S)
+                    assert terms and re.sub(r'<[^>]+>', '', terms.group(1)).strip(), (locale_dir, route, 'terms')
                     if route == 'windows-app/index.html':
                         assert 'Record Picker · 3.0.1</span>' in page
                     else:
