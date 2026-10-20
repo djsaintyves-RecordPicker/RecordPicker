@@ -703,7 +703,10 @@ def main() -> None:
         errors.append(f"only {len(pages)} HTML pages found")
     expected_locales = len(LOCALES) + 1
     # Nine established pages plus four localized platform pages.
-    expected_content_pages = expected_locales * 13 + 2 + 12
+    # The editorial press update and the two development previews are
+    # standalone pages, outside the established per-locale route set.
+    standalone_editorial_routes = ("press/update", "fr/ordered-records", "en-us/ordered-records")
+    expected_content_pages = expected_locales * 13 + 2 + 12 + len(standalone_editorial_routes)
     if content_pages != expected_content_pages:
         errors.append(
             f"expected {expected_content_pages} content pages, found {content_pages}"
