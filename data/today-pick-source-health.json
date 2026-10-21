@@ -3,7 +3,7 @@
   "contributingSources": 26,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 26,
-  "generatedAt": "2026-10-21T17:14:07Z",
+  "generatedAt": "2026-10-21T21:44:16Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 28,
+      "downloadedArticles": 29,
       "resolvedEvents": 4,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,13 +39,13 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 5,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -111,13 +111,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 11,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 10,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -165,7 +165,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 10,
+      "resolvedEvents": 12,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -220,7 +220,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 7,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
