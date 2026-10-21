@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 28,
-  "generatedAt": "2026-10-20T21:38:31Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-10-21T04:51:00Z",
+  "reachableSources": 44,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,13 +39,13 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 7,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -87,13 +87,13 @@
     },
     "Jazz Views": {
       "downloadedArticles": 10,
-      "resolvedEvents": 6,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.jazzthing.de/feed/"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -129,7 +129,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 1,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -141,31 +141,31 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
     "NPR Music": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 10,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.npr.org/1039/rss.xml"
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 21,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 7,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -201,9 +201,10 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 0,
+      "error": "<urlopen error timed out>",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
@@ -214,19 +215,19 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 16,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 6,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
       "downloadedArticles": 7,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
@@ -249,7 +250,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 9,
+      "downloadedArticles": 8,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
