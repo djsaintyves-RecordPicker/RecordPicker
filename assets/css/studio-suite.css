@@ -111,3 +111,11 @@
  .suite-studio .hub-header .language-nav select { max-width:72%; font-size:13px; padding:6px 8px; }
 }
 @media(max-width:740px) { .suite-studio .project-store-grid { grid-template-columns:1fr; } }
+
+/* Soft elevation on warm paper; saturated product colours remain distinct. */
+.suite-studio { --suite-paper:#f7f5ef; --suite-surface:#eeebe3; }
+.suite-studio .project-card { background:#fffefa; border-color:#e3dfd5; border-top-color:var(--app-accent,var(--suite-rule)); box-shadow:0 2px 3px #33271306,0 12px 28px -18px #33271335,inset 0 1px 0 #fff; }
+.suite-studio .project-card .project-store-grid > a { box-shadow:inset 0 1px 0 #ffffff55,0 2px 3px #20180d12,0 6px 12px -8px #20180d45; }
+.suite-studio .project-card .project-store-grid > a.store-appstore { background:var(--app-accent); }
+.suite-studio .hub-menu-group > summary { background:#fffefa; box-shadow:inset 0 1px 0 #fff,0 2px 4px #3327130a; }
+.suite-studio .community-grid article { background:#fffefa; border-color:#e3dfd5; box-shadow:0 2px 3px #33271305,0 8px 18px -14px #33271330; }
