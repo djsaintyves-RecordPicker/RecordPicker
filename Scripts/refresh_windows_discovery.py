@@ -74,7 +74,7 @@ def main():
   meta=t.xpath('//meta[@name="description"]')[0]
   if len(meta.get('content',''))<120:meta.set('content',cp['description']+(' · '+suffix if suffix else ''))
   settext('//p[@class="deck"]',cp['deck'])
-  sec=t.xpath('//section[contains(@class,"windows-release")]')[0];sec.set('data-windows-version','3.0.1')
+  sec=t.xpath('//section[contains(@class,"windows-release")]')[0];sec.set('data-windows-version',json.loads((ROOT/'data/release-state.json').read_text())['current_release']['platform_versions']['windows'])
   settext('//section[contains(@class,"windows-release")]//h2',cp['heading'])
   settext('//section[contains(@class,"windows-release")]//p[@class="lead"]',cp['lead'])
   head=sec.xpath('.//div[@class="section-head"]')[0]
@@ -95,6 +95,6 @@ def main():
   assert images==after.xpath('//figure//img/@src')
   assert stores==after.xpath('//a[contains(@href,"apps.microsoft.com")]/@href')
   path.write_text(raw);pages.append(str(path.relative_to(ROOT)))
- (ROOT/'data/windows-discovery-2026-10-22.json').write_text(json.dumps({'pages':pages,'version':'3.0.1','captureLanguage':'fr','translationReview':'Machine translations outside French/English; native review pending'},ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'data/windows-discovery-2026-10-22.json').write_text(json.dumps({'pages':pages,'version':json.loads((ROOT/'data/release-state.json').read_text())['current_release']['platform_versions']['windows'],'captureVersion':'3.0.1','captureLanguage':'fr','translationReview':'Machine translations outside French/English; native review pending'},ensure_ascii=False,indent=2)+'\n')
  print('Refreshed '+str(len(pages))+' Windows pages')
 if __name__=='__main__':main()
