@@ -1,0 +1,66 @@
+/* Record Picker Studio product surfaces: warm paper, clear accents, quiet depth. */
+.suite-record-picker {
+ color-scheme:light; --ink:#242321; --muted:#625f59; --page:#f7f5ef; --soft:#efede6; --soft-2:#e9e6de;
+ --panel:#fffefa; --panel-solid:#fffefa; --surface:#efede6; --surface-raised:#fffefa; --surface-strong:#fffefa;
+ --line:#dedad1; --red:#d81f45; --red-dark:#bd1538; --header-bg:#f7f5eff5;
+ --glass-border:#dedad1; --glass-surface:#fffefa; --glass-strong:#fffefa;
+ --shadow:0 3px 5px #33271308,0 18px 36px -24px #33271338;
+ --card-shadow:0 2px 3px #33271307,0 12px 24px -18px #33271335;
+ --primary-shadow:inset 0 1px 0 #ffffff55,0 2px 3px #51102416,0 9px 18px -12px #51102455;
+ background:var(--page); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+.suite-record-picker .site-header { background:var(--header-bg); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+.suite-record-picker :is(.hero,.section,.doc-content,.seo-content) { color:var(--ink); }
+.suite-record-picker :is(h1,h2,h3) { color:var(--ink); text-wrap:pretty; }
+.suite-record-picker h1 { font-size:clamp(2.6rem,5.2vw,4.6rem); font-weight:650; letter-spacing:-.045em; line-height:1.07; }
+.suite-record-picker h2 { font-size:clamp(1.65rem,3vw,2.4rem); font-weight:650; letter-spacing:-.03em; line-height:1.2; }
+.suite-record-picker h3 { font-weight:600; line-height:1.35; letter-spacing:-.015em; }
+.suite-record-picker :is(.deck,.lead) { color:var(--muted); font-weight:400; line-height:1.7; }
+.suite-record-picker .kicker { color:var(--red); font-size:.75rem; font-weight:650; letter-spacing:.08em; }
+.suite-record-picker :is(.button,.store-link) { display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:13px 22px; border-radius:14px; font-size:15px; line-height:1.45; font-weight:600; text-align:center; text-decoration:none; }
+.suite-record-picker :is(.button.primary,.store-link) { color:#fff; background:var(--red); border:1px solid #c91c40; box-shadow:var(--primary-shadow); }
+.suite-record-picker .button.glass { color:var(--ink); background:#fffefa; border:1px solid var(--line); box-shadow:inset 0 1px 0 #fff,0 2px 3px #33271309,0 8px 16px -12px #33271338; backdrop-filter:none; }
+.suite-record-picker :is(.button,.store-link):hover { filter:brightness(.96); transform:none; }
+.suite-record-picker :is(a,button,summary,input):focus-visible { outline:3px solid var(--red); outline-offset:4px; }
+.suite-record-picker .cta-row { gap:12px; flex-wrap:wrap; }
+.suite-record-picker :is(.card,.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band,.seo-link-card) { border:1px solid var(--line); border-radius:18px; background:var(--panel); box-shadow:var(--card-shadow),inset 0 1px 0 #fff; }
+.suite-record-picker :is(.card,.studio-bridge-card,.seo-link-card) { padding:28px; }
+.suite-record-picker :is(.platform-expansion,.current-release,.press-review-spotlight) { padding:36px; }
+.suite-record-picker .contact-band { padding:28px; }
+.suite-record-picker :is(.context-visual,.mac-hero-visual,.platform-capture-hero,.v20-preview-panel) { background:#eeebe3; border:1px solid var(--line); border-radius:16px; padding:12px; box-shadow:var(--shadow),inset 0 1px 0 #fff; }
+.suite-record-picker :is(.context-visual,.mac-hero-visual,.platform-capture-hero) img { border-radius:8px; display:block; }
+.suite-record-picker .screenshot-provenance { color:var(--muted); font-size:12px; line-height:1.5; margin:10px 0 0; }
+.suite-record-picker .platform-product-hero { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:48px; }
+.suite-record-picker .platform-capture-hero { margin:0; min-width:0; }
+.suite-record-picker .platform-capture-hero img { width:100%; height:auto; object-fit:contain; }
+.suite-record-picker .badge-row > span { border-radius:7px; background:#eeebe3; border-color:var(--line); box-shadow:inset 0 1px 0 #ffffff88; }
+.suite-record-picker .platform-roadmap { background:transparent; border-color:var(--line); box-shadow:none; }
+.suite-record-picker .section-head { margin-bottom:28px; }
+.suite-record-picker .facts-band { background:transparent; border-color:var(--line); }
+.suite-record-picker .footer { border-color:var(--line); }
+.suite-record-picker :is(.language-trigger,.nav-toggle) { background:#fffefa; border:1px solid var(--line); box-shadow:inset 0 1px 0 #fff,0 2px 4px #33271309; }
+@media(max-width:1040px) {
+ .suite-record-picker .site-header .store-link { display:none; }
+ .suite-record-picker .platform-product-hero { gap:28px; }
+}
+@media(max-width:740px) {
+ .suite-record-picker h1 { font-size:clamp(2.4rem,10vw,3.2rem); }
+ .suite-record-picker .platform-product-hero { grid-template-columns:1fr; }
+ .suite-record-picker :is(.card,.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band,.seo-link-card) { padding:24px; border-radius:16px; }
+ .suite-record-picker .cta-row .button { min-height:52px; }
+ .suite-record-picker .hero-copy .cta-row { display:grid; grid-template-columns:1fr; }
+ .suite-record-picker .hero-copy .cta-row .button { width:100%; }
+}
+@media(prefers-reduced-motion:reduce) { .suite-record-picker :is(.button,.store-link) { transition:none; } }
+.suite-record-picker .site-header .brand { white-space:nowrap; flex-shrink:0; }
+.suite-record-picker .site-header :is(.nav-links a,.platform-nav summary,.language-trigger) { font-size:14px; }
+.suite-record-picker .site-header .store-link { min-height:44px; padding:10px 18px; font-size:14px; white-space:nowrap; }
+.suite-record-picker .beta-site-banner { background:#eeebe3; border-bottom:1px solid var(--line); color:var(--ink); }
+.suite-record-picker .beta-site-banner a { color:var(--red-dark); }
+.suite-record-picker .windows-capture-details { margin-top:12px; border-top:1px solid var(--line); padding-top:12px; color:var(--muted); font-size:12px; line-height:1.6; }
+.suite-record-picker .windows-capture-details summary { cursor:pointer; font-weight:500; }
+.suite-record-picker .windows-capture-details .kicker { font-size:11px; margin-top:16px; }
+.suite-record-picker .windows-capture-details .lead { font-size:13px; }
+.suite-record-picker .site-header :is(.nav-toggle,.language-trigger) { min-height:44px; }
+.suite-record-picker .nav-links :is(a,.platform-nav summary) { min-height:44px; display:flex; align-items:center; }
+.suite-record-picker .random-pick-button { min-height:52px; border-radius:14px; padding:13px 22px; background:var(--red); color:#fff; border:1px solid #c91c40; box-shadow:var(--primary-shadow); font-size:15px; font-weight:600; }

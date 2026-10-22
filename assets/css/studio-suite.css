@@ -119,3 +119,34 @@
 .suite-studio .project-card .project-store-grid > a.store-appstore { background:var(--app-accent); }
 .suite-studio .hub-menu-group > summary { background:#fffefa; box-shadow:inset 0 1px 0 #fff,0 2px 4px #3327130a; }
 .suite-studio .community-grid article { background:#fffefa; border-color:#e3dfd5; box-shadow:0 2px 3px #33271305,0 8px 18px -14px #33271330; }
+
+/* The same quiet depth carries through the Studio's reading and product pages. */
+.suite-studio .card:not(.project-card),.suite-studio .playlist-cover { background:#fffefa; border:1px solid #e3dfd5; border-radius:16px; box-shadow:inset 0 1px 0 #fff,0 2px 3px #33271306,0 12px 24px -20px #33271338; }
+.suite-studio :is(.music,.ecosystem,.guide) { border-radius:18px; }
+.suite-studio .guide { max-width:none; }
+.suite-studio .guide h1 { margin-top:0; }
+.suite-studio .detail-page { max-width:760px; }
+.suite-studio .detail-page p,.suite-studio .detail-page li { max-width:70ch; line-height:1.8; }
+.suite-studio .playlist-actions a,.suite-studio .platforms a { border-radius:12px; min-height:52px; box-shadow:inset 0 1px 0 #ffffff55,0 2px 3px #33271312,0 7px 14px -10px #33271340; }
+.suite-physical { --suite-paper:#f7f5ef; --suite-surface:#eeebe3; }
+.suite-physical section,.suite-physical .suite-product-masthead figure { border-radius:18px; box-shadow:inset 0 1px 0 #fff,0 2px 3px #142d3e07,0 14px 28px -22px #142d3e38; }
+.suite-physical .suite-product-cta { min-height:52px; border-radius:14px; padding:13px 22px; box-shadow:inset 0 1px 0 #ffffff88,0 3px 4px #00334c12,0 9px 18px -13px #00334c55; }
+.suite-snory :is(.privacy-card,.release-card,.offer,.steps section) { border-radius:18px; box-shadow:inset 0 1px 0 #ffffff14,0 3px 5px #00000010,0 16px 28px -20px #00000088; }
+.suite-snory .store-cta { min-height:52px; padding:13px 22px; border:1px solid #3b93ec; border-radius:14px; box-shadow:inset 0 1px 0 #ffffff45,0 3px 4px #00000020,0 10px 20px -14px #0067d6aa; }
+.suite-snory .secondary-cta { min-height:52px; border-radius:14px; }
+@media(max-width:740px) { .suite-studio .music { padding:24px; } .suite-studio .playlist-cover { padding:24px; } }
+.suite-studio .detail-page > .playlist-cover { max-width:none; padding:28px; display:grid; grid-template-columns:240px minmax(0,1fr); gap:18px 28px; }
+.suite-studio .detail-page > .playlist-cover .playlist-art { width:100%; max-width:none; grid-column:1; grid-row:1/3; }
+.suite-studio .detail-page > .playlist-cover > p { grid-column:2; margin:0; }
+.suite-studio .detail-page > .playlist-cover .playlist-actions { grid-column:2; margin:0; padding:0; }
+.suite-studio .detail-page h1 { font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.15; letter-spacing:-.035em; }
+.suite-studio .playlist-actions a[href*="music.apple.com"] { background:#fff; color:#111; border:1px solid #d2d2d7; }
+.suite-studio .playlist-actions a[href*="open.spotify.com"] { background:#1ed760; color:#111; }
+.suite-studio .playlist-actions a[href*="open.spotify.com"] img { filter:none; }
+.suite-studio .playlist-actions a[href*="deezer.com"] { background:#a238ff; color:#fff; }
+@media(max-width:740px) {
+ .suite-studio .detail-page > .playlist-cover { padding:22px; grid-template-columns:1fr; gap:20px; }
+ .suite-studio .detail-page > .playlist-cover .playlist-art { grid-column:auto; grid-row:auto; max-width:280px; }
+ .suite-studio .detail-page > .playlist-cover > p,.suite-studio .detail-page > .playlist-cover .playlist-actions { grid-column:auto; }
+}
+.suite-studio .detail-page > a.button { display:inline-flex; align-items:center; justify-content:center; min-height:52px; margin-top:16px; padding:13px 20px; border:1px solid var(--suite-rule); border-radius:14px; background:#fffefa; color:var(--suite-ink); box-shadow:inset 0 1px 0 #fff,0 2px 3px #33271309; }

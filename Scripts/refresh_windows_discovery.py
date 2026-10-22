@@ -82,9 +82,9 @@ def main():
   p=etree.Element('p',{'class':'windows-purchase-summary'});p.text=cp['pricing'];head.insert(2,p)
   for li,(a,b) in zip(sec.xpath('.//ul/li'),[('graph_title','graph'),('move_title','move'),('insights_title','insights'),('story_title','story'),('reliable_title','reliable')]):
    li.find('strong').text=cp[a];li.find('span').text=cp[b]
-  settext('//section[contains(@class,"windows-screenshot-section")]//p[@class="kicker"]',cp['capture'])
+  settext('//*[contains(@class,"windows-screenshot-section") or contains(@class,"windows-capture-details")]//p[@class="kicker"]',cp['capture'])
   settext('//*[@id="windows-authentic-title"]',cp['capture_title'])
-  settext('//section[contains(@class,"windows-screenshot-section")]//p[@class="lead"]',cp['capture_note'])
+  settext('//*[contains(@class,"windows-screenshot-section") or contains(@class,"windows-capture-details")]//p[@class="lead"]',cp['capture_note'])
   cta=t.xpath('//div[@class="cta-row"]')[0];studio='/'+prefix(loc)+'apps/'
   if not cta.xpath('./a[@href="'+studio+'"]'):
    a=etree.SubElement(cta,'a',{'class':'button glass','href':studio});a.text='Record Picker Studio'

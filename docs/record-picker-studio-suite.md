@@ -21,7 +21,7 @@ Les valeurs existantes des palettes sont conservées ; aucun nouveau bleu ou ros
 - Typographie système, hiérarchie de titres cohérente et lisible, tailles adaptées à la plateforme et aux préférences d’accessibilité.
 - Même rythme d’espacement, alignements précis, largeurs de lecture maîtrisées ; éviter les titres démesurés et les vides inutiles.
 - Composants apparentés : navigation, recherche, filtres, cartes, listes, boutons, réglages, états vides, confirmations et accès à l’aide.
-- Surfaces sobres, filets fins, relief contenu. Pas d’accumulation de pilules, de dégradés décoratifs, d’effets de verre ou d’ombres flottantes.
+- Fond clair chaleureux, surfaces légèrement surélevées, ombres courtes et douces, reflet fin sur les contours. Couleurs franches pour les actions et les identités. Éviter les effets plastiques, les dégradés décoratifs et les halos.
 - Icônes et commandes natives cohérentes ; les contrôles et cibles tactiles restent propres à iOS/macOS. Cohérence ne signifie pas reproduire une interface mobile sur ordinateur.
 - Une action principale nette par contexte, actions secondaires plus discrètes ; pas de slogans ou d’urgence artificielle.
 - Captures et démonstrations authentiques, légendes honnêtes sur langue et version ; aucune interface générée présentée comme réelle.
@@ -40,3 +40,7 @@ Conserver le contenu utile, les canoniques, hreflang, liens de campagne et évé
 
 Cette charte fixe une direction. Elle ne prétend pas que les quatre interfaces natives ont déjà été refaites.
 
+
+## Composants web
+
+Surfaces de lecture en papier chaud ; texte foncé, contrastes lisibles et largeurs maîtrisées. Commandes principales de 52 px minimum, rayon de 14 px ; commandes compactes de navigation de 44 px minimum. Les cartes partagent un rayon de 16 à 18 px et une ombre contenue. Snory Teller conserve son ambiance nocturne et ses deux bleus. Les captures restent authentiques et leur version est indiquée.
