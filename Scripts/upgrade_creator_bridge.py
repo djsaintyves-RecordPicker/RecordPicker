@@ -44,15 +44,72 @@ def bridge(copy, french):
     etree.SubElement(actions, "a", {"class": "button primary", "href": apps}).text = copy["all"]
     return section
 
-for page in (ROOT / "index.html", ROOT / "fr" / "index.html"):
-    raw = page.read_text()
-    if "data-creator-discovery" not in raw:
-        continue
-    doc = html.fromstring(raw)
-    old = doc.xpath('//*[@data-creator-discovery]')
-    if len(old) != 1:
-        raise ValueError(f"{page}: expected one creator section, found {len(old)}")
-    french = page.relative_to(ROOT).parts[:1] == ("fr",)
-    old[0].getparent().replace(old[0], bridge(FR if french else EN, french))
-    page.write_text("<!doctype html>\n" + html.tostring(doc, encoding="unicode", method="html") + "\n")
-    print(page.relative_to(ROOT))
+
+def main():
+    import argparse
+    import concurrent.futures
+    import json
+    import re
+    import localize_creator_hub as locales
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--refresh', action='store_true', help='Translate missing studio copy before publishing localized blocks')
+    args = parser.parse_args()
+    pages = json.loads((ROOT/'data/guide-discovery-2026-10-22.json').read_text())['pages']
+    languages = {locales.language(p['guide_locale']) for p in pages} - {'en', 'fr'}
+    def cache_for(lang):
+        path = ROOT/'data/creator-hub'/f'{lang}.json'
+        cache = json.loads(path.read_text())
+        missing = list(dict.fromkeys(value for key,value in EN.items() if key != 'eyebrow' and value not in cache))
+        if missing:
+            if not args.refresh:
+                raise ValueError(f'{lang}: missing studio translations; use --refresh')
+            cache.update(locales.translate_batch(lang, list(enumerate(missing))))
+            path.write_text(json.dumps(cache, ensure_ascii=False, indent=2)+'\n')
+        return lang, cache
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+        caches = dict(executor.map(cache_for, sorted(languages)))
+    result = []
+    for record in pages:
+        page = ROOT/record['page']; locale = record['guide_locale']; lang = locales.language(locale)
+        copy = FR if lang == 'fr' else EN if lang == 'en' else {key: value if key == 'eyebrow' else caches[lang][value] for key,value in EN.items()}
+        markup = html.tostring(bridge(copy, lang == 'fr'), encoding='unicode', method='html')
+        prefix = locales.prefix(locale)
+        home = '/' if record['page'] == 'index.html' else '/'+str(Path(record['page']).parent)+'/'
+        base = '/fr/' if lang == 'fr' else '/'
+        destinations = {
+            base+'apps/': '/'+prefix+'apps/',
+            base+'#top': home+'#top',
+            '/snory-teller/'+('fr-FR' if lang == 'fr' else 'en-US')+'/': '/snory-teller/'+locale+'/',
+        }
+        if lang not in ('en', 'fr'):
+            destinations['/physical/about/'] = '/'+prefix+'physical-routine-guide/'
+        for old,new in destinations.items():
+            markup = markup.replace('href="'+old+'"', 'href="'+new+'"')
+        raw = page.read_text()
+        updated, count = re.subn(r'<section\b(?=[^>]*data-creator-discovery)[^>]*>.*?</section>', lambda _:markup, raw, flags=re.S)
+        if count != 1:
+            raise ValueError(f'{page}: expected one creator section, found {count}')
+        if updated != raw: page.write_text(updated)
+        result.append({'page':record['page'], 'locale':locale, 'routine_destination':destinations.get('/physical/about/', '/physical/fr/about/' if lang == 'fr' else '/physical/about/')})
+    platform_pages = []
+    for record in pages:
+        home = Path(record['page'])
+        directory = home.parent
+        destination = '/'+locales.prefix(record['guide_locale'])+'apps/'
+        for platform in ('ios-app', 'mac-app', 'watch-app', 'windows-app'):
+            page = ROOT/directory/platform/'index.html'
+            if not page.exists(): continue
+            raw = page.read_text()
+            if re.search(r'<meta[^>]*name="robots"[^>]*content="[^"<>]*noindex', raw): continue
+            footer = re.search(r'<footer\b.*?</footer>', raw, re.S)
+            if not footer: raise ValueError(f'{page}: missing footer')
+            if 'href="'+destination+'"' not in footer[0]:
+                content, count = re.subn(r'</nav>', '<a href="'+destination+'">Record Picker Studio</a></nav>', footer[0], count=1)
+                if count != 1: raise ValueError(f'{page}: missing footer navigation')
+                page.write_text(raw[:footer.start()]+content+raw[footer.end():])
+            platform_pages.append(str(page.relative_to(ROOT)))
+    (ROOT/'data/studio-discovery-2026-10-22.json').write_text(json.dumps({'pages':result,'platform_pages':platform_pages,'scope':'Three genuine app icons, localized copy and local studio/Snory destinations; localized MPR guide when no localized MPR product page exists.'}, ensure_ascii=False, indent=2)+'\n')
+    print(f'Studio bridge checked on {len(result)} localized homepages')
+
+if __name__ == '__main__':
+    main()

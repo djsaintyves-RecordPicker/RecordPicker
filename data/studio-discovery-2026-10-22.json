@@ -1,0 +1,303 @@
+{
+  "pages": [
+    {
+      "page": "ar/index.html",
+      "locale": "ar-SA",
+      "routine_destination": "/ar-sa/physical-routine-guide/"
+    },
+    {
+      "page": "ca/index.html",
+      "locale": "ca",
+      "routine_destination": "/ca/physical-routine-guide/"
+    },
+    {
+      "page": "da/index.html",
+      "locale": "da",
+      "routine_destination": "/da/physical-routine-guide/"
+    },
+    {
+      "page": "de/index.html",
+      "locale": "de-DE",
+      "routine_destination": "/de-de/physical-routine-guide/"
+    },
+    {
+      "page": "el/index.html",
+      "locale": "el",
+      "routine_destination": "/el/physical-routine-guide/"
+    },
+    {
+      "page": "en-au/index.html",
+      "locale": "en-AU",
+      "routine_destination": "/physical/about/"
+    },
+    {
+      "page": "en-ca/index.html",
+      "locale": "en-CA",
+      "routine_destination": "/physical/about/"
+    },
+    {
+      "page": "en-gb/index.html",
+      "locale": "en-GB",
+      "routine_destination": "/physical/about/"
+    },
+    {
+      "page": "en-us/index.html",
+      "locale": "en-US",
+      "routine_destination": "/physical/about/"
+    },
+    {
+      "page": "es-es/index.html",
+      "locale": "es-ES",
+      "routine_destination": "/es-es/physical-routine-guide/"
+    },
+    {
+      "page": "es-mx/index.html",
+      "locale": "es-MX",
+      "routine_destination": "/es-mx/physical-routine-guide/"
+    },
+    {
+      "page": "fi/index.html",
+      "locale": "fi",
+      "routine_destination": "/fi/physical-routine-guide/"
+    },
+    {
+      "page": "fr/index.html",
+      "locale": "fr-FR",
+      "routine_destination": "/physical/fr/about/"
+    },
+    {
+      "page": "fr-ca/index.html",
+      "locale": "fr-CA",
+      "routine_destination": "/physical/fr/about/"
+    },
+    {
+      "page": "he/index.html",
+      "locale": "he",
+      "routine_destination": "/he/physical-routine-guide/"
+    },
+    {
+      "page": "hi/index.html",
+      "locale": "hi",
+      "routine_destination": "/hi/physical-routine-guide/"
+    },
+    {
+      "page": "id/index.html",
+      "locale": "id",
+      "routine_destination": "/id/physical-routine-guide/"
+    },
+    {
+      "page": "it/index.html",
+      "locale": "it",
+      "routine_destination": "/it/physical-routine-guide/"
+    },
+    {
+      "page": "ja/index.html",
+      "locale": "ja",
+      "routine_destination": "/ja/physical-routine-guide/"
+    },
+    {
+      "page": "ko/index.html",
+      "locale": "ko",
+      "routine_destination": "/ko/physical-routine-guide/"
+    },
+    {
+      "page": "nb/index.html",
+      "locale": "no",
+      "routine_destination": "/no/physical-routine-guide/"
+    },
+    {
+      "page": "nl/index.html",
+      "locale": "nl-NL",
+      "routine_destination": "/nl-nl/physical-routine-guide/"
+    },
+    {
+      "page": "pl/index.html",
+      "locale": "pl",
+      "routine_destination": "/pl/physical-routine-guide/"
+    },
+    {
+      "page": "pt-br/index.html",
+      "locale": "pt-BR",
+      "routine_destination": "/pt-br/physical-routine-guide/"
+    },
+    {
+      "page": "pt-pt/index.html",
+      "locale": "pt-PT",
+      "routine_destination": "/pt-pt/physical-routine-guide/"
+    },
+    {
+      "page": "ru/index.html",
+      "locale": "ru",
+      "routine_destination": "/ru/physical-routine-guide/"
+    },
+    {
+      "page": "sv/index.html",
+      "locale": "sv",
+      "routine_destination": "/sv/physical-routine-guide/"
+    },
+    {
+      "page": "th/index.html",
+      "locale": "th",
+      "routine_destination": "/th/physical-routine-guide/"
+    },
+    {
+      "page": "tr/index.html",
+      "locale": "tr",
+      "routine_destination": "/tr/physical-routine-guide/"
+    },
+    {
+      "page": "vi/index.html",
+      "locale": "vi",
+      "routine_destination": "/vi/physical-routine-guide/"
+    },
+    {
+      "page": "index.html",
+      "locale": "en-US",
+      "routine_destination": "/physical/about/"
+    },
+    {
+      "page": "zh-hans/index.html",
+      "locale": "zh-Hans",
+      "routine_destination": "/zh-hans/physical-routine-guide/"
+    },
+    {
+      "page": "zh-hant/index.html",
+      "locale": "zh-Hant",
+      "routine_destination": "/zh-hant/physical-routine-guide/"
+    }
+  ],
+  "platform_pages": [
+    "ar/ios-app/index.html",
+    "ar/mac-app/index.html",
+    "ar/watch-app/index.html",
+    "ar/windows-app/index.html",
+    "ca/ios-app/index.html",
+    "ca/mac-app/index.html",
+    "ca/watch-app/index.html",
+    "ca/windows-app/index.html",
+    "da/ios-app/index.html",
+    "da/mac-app/index.html",
+    "da/watch-app/index.html",
+    "da/windows-app/index.html",
+    "de/ios-app/index.html",
+    "de/mac-app/index.html",
+    "de/watch-app/index.html",
+    "de/windows-app/index.html",
+    "el/ios-app/index.html",
+    "el/mac-app/index.html",
+    "el/watch-app/index.html",
+    "el/windows-app/index.html",
+    "en-au/ios-app/index.html",
+    "en-au/mac-app/index.html",
+    "en-au/watch-app/index.html",
+    "en-au/windows-app/index.html",
+    "en-ca/ios-app/index.html",
+    "en-ca/mac-app/index.html",
+    "en-ca/watch-app/index.html",
+    "en-ca/windows-app/index.html",
+    "en-gb/ios-app/index.html",
+    "en-gb/mac-app/index.html",
+    "en-gb/watch-app/index.html",
+    "en-gb/windows-app/index.html",
+    "en-us/ios-app/index.html",
+    "en-us/watch-app/index.html",
+    "en-us/windows-app/index.html",
+    "es-es/ios-app/index.html",
+    "es-es/mac-app/index.html",
+    "es-es/watch-app/index.html",
+    "es-es/windows-app/index.html",
+    "es-mx/ios-app/index.html",
+    "es-mx/mac-app/index.html",
+    "es-mx/watch-app/index.html",
+    "es-mx/windows-app/index.html",
+    "fi/ios-app/index.html",
+    "fi/mac-app/index.html",
+    "fi/watch-app/index.html",
+    "fi/windows-app/index.html",
+    "fr/ios-app/index.html",
+    "fr/mac-app/index.html",
+    "fr/watch-app/index.html",
+    "fr/windows-app/index.html",
+    "fr-ca/ios-app/index.html",
+    "fr-ca/mac-app/index.html",
+    "fr-ca/watch-app/index.html",
+    "fr-ca/windows-app/index.html",
+    "he/ios-app/index.html",
+    "he/mac-app/index.html",
+    "he/watch-app/index.html",
+    "he/windows-app/index.html",
+    "hi/ios-app/index.html",
+    "hi/mac-app/index.html",
+    "hi/watch-app/index.html",
+    "hi/windows-app/index.html",
+    "id/ios-app/index.html",
+    "id/mac-app/index.html",
+    "id/watch-app/index.html",
+    "id/windows-app/index.html",
+    "it/ios-app/index.html",
+    "it/mac-app/index.html",
+    "it/watch-app/index.html",
+    "it/windows-app/index.html",
+    "ja/ios-app/index.html",
+    "ja/mac-app/index.html",
+    "ja/watch-app/index.html",
+    "ja/windows-app/index.html",
+    "ko/ios-app/index.html",
+    "ko/mac-app/index.html",
+    "ko/watch-app/index.html",
+    "ko/windows-app/index.html",
+    "nb/ios-app/index.html",
+    "nb/mac-app/index.html",
+    "nb/watch-app/index.html",
+    "nb/windows-app/index.html",
+    "nl/ios-app/index.html",
+    "nl/mac-app/index.html",
+    "nl/watch-app/index.html",
+    "nl/windows-app/index.html",
+    "pl/ios-app/index.html",
+    "pl/mac-app/index.html",
+    "pl/watch-app/index.html",
+    "pl/windows-app/index.html",
+    "pt-br/ios-app/index.html",
+    "pt-br/mac-app/index.html",
+    "pt-br/watch-app/index.html",
+    "pt-br/windows-app/index.html",
+    "pt-pt/ios-app/index.html",
+    "pt-pt/mac-app/index.html",
+    "pt-pt/watch-app/index.html",
+    "pt-pt/windows-app/index.html",
+    "ru/ios-app/index.html",
+    "ru/mac-app/index.html",
+    "ru/watch-app/index.html",
+    "ru/windows-app/index.html",
+    "sv/ios-app/index.html",
+    "sv/mac-app/index.html",
+    "sv/watch-app/index.html",
+    "sv/windows-app/index.html",
+    "th/ios-app/index.html",
+    "th/mac-app/index.html",
+    "th/watch-app/index.html",
+    "th/windows-app/index.html",
+    "tr/ios-app/index.html",
+    "tr/mac-app/index.html",
+    "tr/watch-app/index.html",
+    "tr/windows-app/index.html",
+    "vi/ios-app/index.html",
+    "vi/mac-app/index.html",
+    "vi/watch-app/index.html",
+    "vi/windows-app/index.html",
+    "ios-app/index.html",
+    "mac-app/index.html",
+    "watch-app/index.html",
+    "windows-app/index.html",
+    "zh-hans/ios-app/index.html",
+    "zh-hans/mac-app/index.html",
+    "zh-hans/watch-app/index.html",
+    "zh-hans/windows-app/index.html",
+    "zh-hant/ios-app/index.html",
+    "zh-hant/mac-app/index.html",
+    "zh-hant/watch-app/index.html",
+    "zh-hant/windows-app/index.html"
+  ],
+  "scope": "Three genuine app icons, localized copy and local studio/Snory destinations; localized MPR guide when no localized MPR product page exists."
+}
