@@ -34,3 +34,22 @@
  reduced.addEventListener('change', syncMotion);
  syncMotion();
 })();
+
+/* A single short pulse on real touch activation, where the browser supports it. */
+(() => {
+ const root = document.querySelector('.studio-shadow-study');
+ if (!root || typeof navigator.vibrate !== 'function') return;
+ const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+ let lastTouch = -Infinity;
+ let lastPulse = -Infinity;
+ root.addEventListener('pointerup', event => {
+  if (event.isTrusted && event.pointerType === 'touch') lastTouch = performance.now();
+ }, {passive:true});
+ root.addEventListener('click', event => {
+  const now = performance.now();
+  if (!event.isTrusted || reduced.matches || now-lastTouch > 500 || now-lastPulse < 100) return;
+  const control = event.target instanceof Element ? event.target.closest('a,button,summary') : null;
+  if (!control || control.matches(':disabled,[aria-disabled="true"]')) return;
+  try { navigator.vibrate(8); lastPulse = now; } catch { /* Unsupported or restricted: keep the normal action. */ }
+ }, {passive:true});
+})();
