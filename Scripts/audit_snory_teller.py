@@ -43,6 +43,12 @@ def audit():
             if path.parent.parent == ROOT/'snory-teller':
                 assert len(page.schemas)==1,path
                 assert page.schemas[0]['url']==page.canonical and page.schemas[0]['inLanguage']==page.language,path
+        if path.parent.name == "support":
+            body = path.read_text().split('<main', 1)[1].split('</main>', 1)[0]
+            assert '50' in body, (path, 'Current localization count missing')
+        if path.parent.name == "about":
+            assert 'data-snory-public-version="1.0.2"' in path.read_text(), (path, 'Public version missing')
+            assert any('apps.apple.com/' in link and '6820177689' in link for link in page.links), (path, 'App Store path missing')
         for link in page.links:
             url = urlsplit(link)
             if url.scheme or link.startswith("#"): continue
