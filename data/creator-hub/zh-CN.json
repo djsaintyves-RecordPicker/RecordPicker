@@ -356,5 +356,18 @@
   "Your vinyl and CD collection, made to help you choose what to play.": "您的黑胶唱片和 CD 收藏，旨在帮助您选择播放的内容。",
   "An estimated night summary on iPhone and Apple Watch.": "iPhone 和 Apple Watch 上的预计夜间摘要。",
   "Guided home strength sessions, at your own pace.": "按照您自己的节奏进行指导的家庭力量课程。",
-  "Explore every studio app": "探索每个工作室应用程序"
+  "Explore every studio app": "探索每个工作室应用程序",
+  "Move your Discogs collection into Record Picker with a CSV export. Start with a small sample so you can check the destination, editions and proposed changes before importing everything.": "通过 CSV 导出将您的 Discogs 系列移至 Record Picker。从一个小样本开始，以便您可以在导入所有内容之前检查目标、版本和建议的更改。",
+  "1. Request your Discogs export": "1. 请求您的 Discogs 导出",
+  "In your Discogs collection, open the settings menu and choose Export My Collection. On the export page, select Collection and Request Data Export. Discogs prepares the file and notifies you when it is ready. Download the CSV and keep the original unchanged.": "在您的 Discogs 收藏中，打开设置菜单并选择导出我的收藏。在导出页面上，选择“收集并请求数据导出”。 Discogs 准备文件并在准备好时通知您。下载CSV，保持原件不变。",
+  "2. Protect your existing collection": "2. 保护您现有的收藏",
+  "Before a large import, create a dated backup or export of your existing Record Picker collection and check that you can find it. Work on a copy of the Discogs CSV if you edit it. A Discogs CSV is not a complete backup of your Record Picker data.": "在进行大量导入之前，请为现有 Record Picker 集合创建带日期的备份或导出，并检查是否可以找到它。如果您要编辑 Discogs CSV，请对其进行复制。 Discogs CSV 不是 Record Picker 数据的完整备份。",
+  "3. Choose the destination and review the preview": "3. 选择目的地并查看预览",
+  "Open CSV import in Record Picker and select your file. Choose your owned collection or your wishlist deliberately. Recognized Discogs columns can be mapped automatically; review the column mapping if the app asks you to, especially artist, title, year and format.": "在 Record Picker 中打开 CSV 导入并选择您的文件。谨慎选择您拥有的收藏或您的愿望清单。识别的Discogs列可以自动映射；如果应用程序要求您查看列映射，尤其是艺术家、标题、年份和格式。",
+  "Before confirming, read the preview: additions, updates, records already identical and nearby editions to add. Check the proposed changes rather than assuming every row will create a new record. Similar album titles do not prove that two records are the same edition or physical copy.": "在确认之前，请阅读预览：添加、更新、记录已经相同以及要添加的附近版本。检查建议的更改，而不是假设每一行都会创建一条新记录。相似的专辑名称并不能证明两张唱片是相同的版本或物理副本。",
+  "4. Check a few albums before importing the rest": "4. 在导入其余专辑之前检查一些专辑",
+  "Use a small sample first, then compare the imported artists, titles, editions and destination with the original CSV. If the result is wrong, stop and review the file and preview before continuing. If all values appear in one column, check the CSV separator. Avoid repeatedly confirming the full import while investigating a mismatch.": "首先使用一个小样本，然后将导入的艺术家、标题、版本和目的地与原始 CSV 进行比较。如果结果错误，请停止并检查文件并预览，然后再继续。如果所有值都出现在一列中，请检查 CSV 分隔符。在调查不匹配情况时避免重复确认完全导入。",
+  "After the import": "导入后",
+  "Check that your albums appear in the intended list. Keep the original CSV and your dated backup, then use the guides below to back up your collection, choose your next record or rediscover albums you have not played recently.": "检查您的相册是否出现在预期列表中。保留原始的 CSV 和带日期的备份，然后使用下面的指南来备份您的收藏，选择您的下一张唱片或重新发现您最近未播放的专辑。",
+  "Before confirming, read the preview: additions, updates, records already identical and similar editions to add. Check the proposed changes rather than assuming every row will create a new record. Similar album titles do not prove that two records are the same edition or physical copy.": "在确认之前，请阅读预览：添加、更新、记录已经相同和相似的版本要添加。检查建议的更改，而不是假设每一行都会创建一条新记录。相似的专辑名称并不能证明两张唱片是相同的版本或物理副本。"
 }
