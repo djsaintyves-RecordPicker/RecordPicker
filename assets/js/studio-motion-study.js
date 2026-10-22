@@ -7,7 +7,7 @@
  const observer = new IntersectionObserver(entries => {
   for (const entry of entries) {
    if (!entry.isIntersecting) continue;
-   entry.target.classList.add('art-arriving');
+   entry.target.classList.add(entry.target.matches('.project-store-grid') ? 'stores-arriving' : 'art-arriving');
    observer.unobserve(entry.target);
   }
  }, {threshold: .25});
@@ -15,10 +15,20 @@
   art.style.setProperty('--arrival-delay', `${(index % 2) * 140}ms`);
   observer.observe(art);
  });
+ const storeObserver = new IntersectionObserver(entries => {
+  for (const entry of entries) {
+   if (!entry.isIntersecting) continue;
+   entry.target.classList.add('stores-arriving');
+   storeObserver.unobserve(entry.target);
+  }
+ }, {threshold:.85});
+ const stores = root.querySelector('#record-picker .project-store-grid');
+ if (stores) storeObserver.observe(stores);
  reduced.addEventListener('change', event => {
   if (event.matches) {
    observer.disconnect();
-   root.querySelectorAll('.art-arriving').forEach(art => art.classList.remove('art-arriving'));
+   storeObserver.disconnect();
+   root.querySelectorAll('.art-arriving,.stores-arriving').forEach(element => element.classList.remove('art-arriving','stores-arriving'));
   }
  });
 })();
