@@ -144,7 +144,7 @@ def replace_meta(text: str, relative: str) -> str:
         except json.JSONDecodeError:
             return match.group(0)
         if canonical and payload.get("url") == canonical:
-            if title and "name" in payload:
+            if title and "name" in payload and payload.get("@type") != "SoftwareApplication":
                 payload["name"] = title
             if description and "description" in payload:
                 payload["description"] = description

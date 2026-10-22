@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Align current Random Pick claims and FAQ JSON-LD with verified selection behavior; preserve routing, store attribution and historical notes",
+  "review_reason": "Keep real application names distinct from page titles and maintain the verified Random Pick copy in its source audit and generator",
   "schema": 1
 }

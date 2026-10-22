@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "choose-vinyl-record/index.html",
+    "en-us/choose-vinyl-record/index.html",
+    "en-us/index.html",
+    "en-us/ordered-records/index.html",
+    "en-us/screenshots/index.html",
+    "fr/screenshots/index.html",
+    "manage-vinyl-collection/index.html",
+    "privacy/index.html",
+    "random-vinyl-record-picker/index.html",
+    "readme/index.html",
+    "screenshots/index.html",
+    "support/index.html"
+  ],
+  "policy": "SoftwareApplication.name is the app name; page titles remain distinct metadata."
+}
