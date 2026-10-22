@@ -188,3 +188,8 @@
 .suite-studio .music .playlist-cover { text-align:center; }
 .suite-studio .music .playlist-cover .playlist-art { margin-inline:auto; }
 .suite-studio .music .playlist-cover .playlist-actions { margin-inline:auto; }
+
+/* Reading sections sit directly on the page; only useful cards carry elevation. */
+.suite-studio :is(.music,.ecosystem,.guide) {
+ background:transparent; border:0; border-radius:0; box-shadow:none; padding:0;
+}
