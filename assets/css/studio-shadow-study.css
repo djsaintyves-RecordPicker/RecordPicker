@@ -98,3 +98,8 @@
   .studio-shadow-study :is(.playlist-actions a,.project-card .project-store-grid > a,.hub-menu-group > summary):active { transform:translateY(1px) scale(.98); }
  }
 }
+
+@media(prefers-reduced-motion:no-preference) {
+ .studio-shadow-study .intro-arriving .studio-brand { animation:studio-store-arrival 800ms cubic-bezier(.2,.75,.25,1) backwards; }
+ .studio-shadow-study .intro-arriving .intro { animation:studio-store-arrival 700ms cubic-bezier(.2,.75,.25,1) 420ms backwards; }
+}
