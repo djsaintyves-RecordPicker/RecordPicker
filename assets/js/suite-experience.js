@@ -6,16 +6,23 @@
  const artwork = [...root.querySelectorAll('.music .playlist-art,.platform-capture-hero img,.mac-hero-visual img,.context-visual img,.suite-product-masthead img,.rps-guide-masthead img,.phone-shell,.watch-shell')];
  const introduction = [...root.querySelectorAll('.studio-introduction')];
  const community = [...root.querySelectorAll('.community-grid article')];
- community.forEach((card, index) => card.style.setProperty('--community-delay', `${index * 140}ms`));
+ community.forEach((card, index) => card.style.setProperty('--community-delay', `${index * 220}ms`));
  const singleControls = [...root.querySelectorAll('main .store-cta,main .suite-product-cta,main .store-link,main .button')].filter(element => !element.closest('.project-store-grid,.playlist-actions,.cta-row,.app-actions,.platforms'));
  const groups = [...root.querySelectorAll('.project-store-grid,.playlist-actions,.cta-row,.app-actions,.platforms')];
- artwork.forEach((art, index) => art.style.setProperty('--arrival-delay', `${(index % 2) * 140}ms`));
+ artwork.forEach((art, index) => art.style.setProperty('--arrival-delay', `${(index % 2) * 220}ms`));
+ const rearmTimers = new Map();
  function revealObserver(className, visibleFraction) {
   return new IntersectionObserver(entries => {
    for (const entry of entries) {
-    // Rearm only after leaving the viewport completely, avoiding scroll flicker.
-    if (!entry.isIntersecting) entry.target.classList.remove(className);
-    else if (entry.intersectionRatio >= visibleFraction) entry.target.classList.add(className);
+    // Brief scroll reversals keep the element settled instead of flashing again.
+    if (!entry.isIntersecting) {
+     if (!rearmTimers.has(entry.target)) rearmTimers.set(entry.target, setTimeout(() => {
+      entry.target.classList.remove(className); rearmTimers.delete(entry.target);
+     }, 500));
+    } else {
+     clearTimeout(rearmTimers.get(entry.target)); rearmTimers.delete(entry.target);
+     if (entry.intersectionRatio >= visibleFraction) entry.target.classList.add(className);
+    }
    }
   }, {threshold:[0, visibleFraction]});
  }
@@ -25,6 +32,7 @@
  const singleObserver = revealObserver('single-arriving', .65);
  const communityObserver = revealObserver('community-arriving', .65);
  function syncMotion() {
+  rearmTimers.forEach(timer => clearTimeout(timer)); rearmTimers.clear();
   artObserver.disconnect(); storeObserver.disconnect(); communityObserver.disconnect(); introductionObserver.disconnect(); singleObserver.disconnect();
   [...artwork,...groups,...community,...introduction,...singleControls].forEach(element => element.classList.remove('art-arriving','stores-arriving','community-arriving','intro-arriving','single-arriving'));
   if (reduced.matches) return;

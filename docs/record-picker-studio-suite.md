@@ -47,7 +47,7 @@ Surfaces de lecture en papier chaud ; texte foncé, contrastes lisibles et large
 
 ## Relief et mouvement — déploiement web
 
-La version commune utilise `assets/css/suite-experience.css` et `assets/js/suite-experience.js`. Les anciennes feuilles d’essai de l’accueil français ne sont plus chargées. Les cartes restent sans bordure ; les ombres portent vers le bas et la droite, avec un soulèvement de 4 px au survol des cartes et de 2 px sur les commandes. Les captures flottent directement au-dessus du fond, sans cadre crème. Snory Teller adapte les ombres à son fond nocturne.
+La version commune utilise `assets/css/suite-experience.css` et `assets/js/suite-experience.js`. Les anciennes feuilles d’essai de l’accueil français ne sont plus chargées. Les cartes restent sans bordure ; les ombres portent vers le bas et la droite, avec un soulèvement de 1 px au survol des cartes et de 0,5 px sur les commandes. Les captures flottent directement au-dessus du fond, sans cadre crème. Snory Teller adapte les ombres à son fond nocturne.
 
 Les boutons apparaissent dans l’ordre de lecture. Les pochettes, captures et commandes rejouent leur entrée après une sortie complète de l’écran. Le symbole RPS, « Record Picker » et « Studio » apparaissent en trois temps dans les accueils localisés du Studio. Le réglage de réduction des mouvements désactive ces animations ; sans JavaScript les contenus restent visibles et les liens fonctionnent. Aucun texte de lecture ou de confidentialité n’est masqué par défaut.
 
@@ -56,3 +56,5 @@ Une impulsion tactile de 8 ms est demandée uniquement après une activation tac
 Après une régénération de pages, exécuter `python3 Scripts/rollout_suite_experience.py` avant les audits. Le script est idempotent, exclut les alias de redirection et les fichiers de vérification des moteurs, et conserve l’attribution statique des sous-sites qui ne chargeaient pas le script de campagne. Les pages légales restent sobres ; aucun avis de disponibilité ou de prix n’est changé par ce traitement.
 
 Réglage final demandé le 22 octobre : l’opacité des ombres directionnelles est abaissée d’au moins 55 %, au repos comme au survol et sur mobile. Les reflets clairs, palettes et animations restent inchangés.
+
+Les entrées utilisent désormais un fondu de 1,2 à 1,4 seconde, sur 2 px, sans disparition complète, rotation ni zoom. Le réarmement attend une sortie complète de 500 ms pour éviter les clignotements lors des petits allers-retours de défilement.

@@ -20,7 +20,7 @@ def audit():
             data = json.loads(metadata)
             assert data['@type'] == 'SoftwareApplication' and data['name'] == 'My Physical Routine'
         executable = re.sub(r'<script type="application/ld\+json">.*?</script>', '', text, flags=re.S)
-        executable = executable.replace('<script src="/assets/js/suite-experience.js?v=20261022-suite1" defer></script>', '')
+        executable = executable.replace('<script src="/assets/js/suite-experience.js?v=20261022-smooth" defer></script>', '')
         assert '<script' not in executable and 'Brouillon' not in text
         for url in re.findall(r'(?:href|src)="([^"]+)"', text):
             parsed = urlsplit(url)
