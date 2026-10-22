@@ -34,6 +34,7 @@ jobs:
           python3 Scripts/site_snory_metadata.py
           python3 Scripts/audit_faq_consistency.py
           python3 Scripts/site_app_identity.py
+          python3 Scripts/site_guide_identity.py
       - name: Validate canonical and reciprocal language signals
         run: |
           python3 Scripts/site_canonical_policy.py

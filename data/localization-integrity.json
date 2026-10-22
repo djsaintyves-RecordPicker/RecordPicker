@@ -26,7 +26,7 @@
     "pt-br": "d5e0de3740af82398a04a9596dda21dddf3b57df945d35ec132ed3dcc45d8195",
     "pt-pt": "9779ed20ea4900282763c93b06fc63aa2d5eb4bc643c7608422207ad5ed52bab",
     "ru": "fc41561ae45f3021a3aa6000f77dd83dcfd10b2eb991198d8ff8be38555170b8",
-    "shared": "632dca789aa6402e646ca4fb47c5d3f106b26a7869769d857c550ddd2afbbc42",
+    "shared": "bc2a5c7d2e4a6c24ef472a173361db575125005a78092b64267c51da974d4dd5",
     "sv": "4a5303d4c6db672e1ec3830722790cfe3714c4a8129fc82b75dd117fb6e6e2c6",
     "th": "c1ed12088f8d6c994737e41f00201e71cb36ba510b8bfae1af882150765df15e",
     "tr": "0f2472b8886afd22e3786d0ac63c531397beef63c730863bb9c1e055ba053bb6",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Support FAQ preserves tracked store links and current answers from support correspondence",
+  "review_reason": "Make Snory Teller and My Physical Routine guide identity explicit and add visible, matching structured breadcrumbs on 100 existing pages",
   "schema": 1
 }

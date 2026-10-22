@@ -10,6 +10,7 @@ from urllib.request import urlopen
 from lxml import html, etree
 from site_campaign_links import normalize as normalize_campaign_links
 from site_social_identity import normalize as normalize_social_identity
+from site_guide_identity import normalize as normalize_guide_identity
 from site_ecosystem_links import normalize as normalize_ecosystem_links, physical_destination
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/creator-hub'
@@ -203,7 +204,7 @@ def generate(templates):
       for item in value:fix(item)
     fix(data);script.text=json.dumps(data,ensure_ascii=False)
    path=ROOT/(prefix(locale)+ROUTES[kind]+'index.html');path.parent.mkdir(parents=True,exist_ok=True)
-   path.write_text(normalize_ecosystem_links(normalize_social_identity(normalize_campaign_links('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'), kind),locale))
+   path.write_text(normalize_guide_identity(normalize_ecosystem_links(normalize_social_identity(normalize_campaign_links('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'), kind),locale),kind,locale))
  manifest={'locales':LOCALES,'pages':[url(l,k) for l in LOCALES for k in ROUTES],'translation':'Google Translate machine translation; authored French and English retained; human review pending for additional languages.'}
  (DATA/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
  for filename in ('sitemap.xml','sitemap-media.xml'):
