@@ -44,12 +44,12 @@
     {
       "page": "es-mx/manage-vinyl-collection/index.html",
       "before": "Gestionar y redescubrir una colección de vinilos — es-mx",
-      "after": "Organiza tu colección de vinilos | Record Picker"
+      "after": "Organiza tu colección de vinilos — México | Record Picker"
     },
     {
       "page": "es-mx/choose-vinyl-record/index.html",
       "before": "Como elegir que vinilo escuchar a continuación — es-mx",
-      "after": "Qué vinilo escuchar a continuación | Record Picker"
+      "after": "Qué vinilo escuchar a continuación — México | Record Picker"
     },
     {
       "page": "ru/manage-vinyl-collection/index.html",
@@ -64,12 +64,12 @@
     {
       "page": "fr-ca/manage-vinyl-collection/index.html",
       "before": "Gérer et redécouvrir une collection de vinyles — fr-ca",
-      "after": "Gérer sa collection de vinyles | Record Picker"
+      "after": "Gérer sa collection de vinyles — Canada | Record Picker"
     },
     {
       "page": "fr-ca/random-vinyl-record-picker/index.html",
       "before": "Tirage aléatoire de vinyles personnalisé | Record — fr-ca",
-      "after": "Choisir un vinyle au hasard | Record Picker"
+      "after": "Choisir un vinyle au hasard — Canada | Record Picker"
     },
     {
       "page": "pt-pt/choose-vinyl-record/index.html",

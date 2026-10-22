@@ -10,10 +10,10 @@
     "en-gb": "eedc7bcdc654daa88ca9857721e11ae4c8b0fcca9f2bfa13ae571ec447a36eee",
     "en-us": "a3bbdc4aa3102e73fb3bbc79bb6117b0969befa0860f5c4174c14fbbeba37568",
     "es-es": "63ea3315261d93e60d74579f39293e64a26329187e5fa4c28ebe832db049e88c",
-    "es-mx": "8e54c9f29a8f331ae76ccc3c9f241eb02b839e2a89542622337e9d2f2cffdcc5",
+    "es-mx": "215b1a70eceaffc956be3ba60629b108f7df229d326bfc89004cc4a26d16c9c3",
     "fi": "5034dd4e70e0645824b0bccb399c6f1cc3156436894eaa8a5ed7e9f4c2f928cb",
     "fr": "02eb2ed523b9617611695c55ff693e137f2689d1fcad5aa658471a57b6dd424c",
-    "fr-ca": "681116f2b644cfa58f714ef72b4d7d348aaf74d4c3044d3e831a025271cb1fca",
+    "fr-ca": "c9c9656cfd896686ab94952e31084d31d6e2683b5ef3c93a0274801b8b21d129",
     "he": "b49113265b9fba61e4bac129ecd89fe8d4ff2c0a982cbbf77cc11f106f0c6dfd",
     "hi": "0a1de8a62252caba526ea0f32d8a2cd0af802908534b76dd9ac55f2fcfab1603",
     "id": "4a2329edbcf1c132397dac194d64ac5a19211f9cc1e2e2482b23dc24863a7d1e",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Review 28 complete localized guide titles replacing truncated text and visible locale-code suffixes; links, hreflang, canonicals and images unchanged.",
+  "review_reason": "Distinguish four complete French Canadian and Mexican guide titles with human-readable country names after duplicate-title audit.",
   "schema": 1
 }
