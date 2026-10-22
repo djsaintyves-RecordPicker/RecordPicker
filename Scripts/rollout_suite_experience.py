@@ -6,7 +6,7 @@ from site_campaign_links import normalize
 from site_snory_metadata import normalize as snory_metadata
 from site_guide_identity import normalize as guide_identity
 ROOT=Path(__file__).resolve().parents[1]
-CSS='<link rel="stylesheet" href="/assets/css/suite-experience.css?v=20261022-smooth">'
+CSS='<link rel="stylesheet" href="/assets/css/suite-experience.css?v=20261022-air">'
 JS='<script src="/assets/js/suite-experience.js?v=20261022-smooth" defer></script>'
 def classes(raw,items):
  def update(m):
