@@ -14,8 +14,11 @@ class Page(HTMLParser):
         if tag=="link" and a.get("rel")=="canonical":self.canonical=a.get("href")
         if tag=="link" and a.get("rel")=="alternate":self.alternates[a.get("hreflang")]=a.get("href")
         if tag == "script":
-            assert a.get('type') == 'application/ld+json' and not a.get('src'), 'Executable scripts are not allowed'
-            self.metadata=''
+            if a.get('src') == '/assets/js/suite-experience.js?v=20261022-suite1' and 'defer' in a:
+                pass  # Approved local presentation/haptic enhancement; no remote code or tracking.
+            else:
+                assert a.get('type') == 'application/ld+json' and not a.get('src'), 'Only structured data and the local suite enhancement are allowed'
+                self.metadata=''
         if tag == "h1": self.h1 += 1
         self.links.extend(v for k, v in attrs if k in ("href", "src"))
     def handle_data(self,data):
@@ -53,7 +56,7 @@ def audit():
             url = urlsplit(link)
             if url.scheme or link.startswith("#"): continue
             target = ROOT / url.path.lstrip("/") if link.startswith("/") else path.parent / url.path
-            assert target.resolve().is_relative_to((ROOT / "snory-teller").resolve()) or url.path.endswith(("/snory-teller-guide/", "/physical-routine-guide/")) or url.path in {"/apps/assets/appstore.svg", "/assets/css/studio-suite.css"} or url.path.endswith("/apps/") or (target.is_dir() and (target/"index.html").is_file() and len(url.path.strip("/").split("/"))==1) or url.path in {"/", "/fr/", "/apps/", "/fr/apps/", "/physical/about/", "/physical/fr/about/"}, link
+            assert target.resolve().is_relative_to((ROOT / "snory-teller").resolve()) or url.path.endswith(("/snory-teller-guide/", "/physical-routine-guide/")) or url.path in {"/apps/assets/appstore.svg", "/assets/css/studio-suite.css", "/assets/css/suite-experience.css", "/assets/js/suite-experience.js"} or url.path.endswith("/apps/") or (target.is_dir() and (target/"index.html").is_file() and len(url.path.strip("/").split("/"))==1) or url.path in {"/", "/fr/", "/apps/", "/fr/apps/", "/physical/about/", "/physical/fr/about/"}, link
             if target.is_dir(): target /= "index.html"
             assert target.is_file(), (path, link)
     print("Snory Teller: 200 localized pages, root and local links validated")

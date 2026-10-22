@@ -44,3 +44,13 @@ Cette charte fixe une direction. Elle ne prétend pas que les quatre interfaces 
 ## Composants web
 
 Surfaces de lecture en papier chaud ; texte foncé, contrastes lisibles et largeurs maîtrisées. Commandes principales de 52 px minimum, rayon de 14 px ; commandes compactes de navigation de 44 px minimum. Les cartes partagent un rayon de 16 à 18 px et une ombre contenue. Snory Teller conserve son ambiance nocturne et ses deux bleus. Les captures restent authentiques et leur version est indiquée.
+
+## Relief et mouvement — déploiement web
+
+La version commune utilise `assets/css/suite-experience.css` et `assets/js/suite-experience.js`. Les anciennes feuilles d’essai de l’accueil français ne sont plus chargées. Les cartes restent sans bordure ; les ombres portent vers le bas et la droite, avec un soulèvement de 4 px au survol des cartes et de 2 px sur les commandes. Les captures flottent directement au-dessus du fond, sans cadre crème. Snory Teller adapte les ombres à son fond nocturne.
+
+Les boutons apparaissent dans l’ordre de lecture. Les pochettes, captures et commandes rejouent leur entrée après une sortie complète de l’écran. Le symbole RPS, « Record Picker » et « Studio » apparaissent en trois temps dans les accueils localisés du Studio. Le réglage de réduction des mouvements désactive ces animations ; sans JavaScript les contenus restent visibles et les liens fonctionnent. Aucun texte de lecture ou de confidentialité n’est masqué par défaut.
+
+Une impulsion tactile de 8 ms est demandée uniquement après une activation tactile réelle et sur les navigateurs compatibles. Safari iOS ne fournit pas cette API ; aucun contournement n’est ajouté. Le script ne transmet aucune donnée et ne modifie pas les destinations des liens.
+
+Après une régénération de pages, exécuter `python3 Scripts/rollout_suite_experience.py` avant les audits. Le script est idempotent, exclut les alias de redirection et les fichiers de vérification des moteurs, et conserve l’attribution statique des sous-sites qui ne chargeaient pas le script de campagne. Les pages légales restent sobres ; aucun avis de disponibilité ou de prix n’est changé par ce traitement.
