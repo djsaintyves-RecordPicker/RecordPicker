@@ -54,3 +54,5 @@ Les boutons apparaissent dans l’ordre de lecture. Les pochettes, captures et c
 Une impulsion tactile de 8 ms est demandée uniquement après une activation tactile réelle et sur les navigateurs compatibles. Safari iOS ne fournit pas cette API ; aucun contournement n’est ajouté. Le script ne transmet aucune donnée et ne modifie pas les destinations des liens.
 
 Après une régénération de pages, exécuter `python3 Scripts/rollout_suite_experience.py` avant les audits. Le script est idempotent, exclut les alias de redirection et les fichiers de vérification des moteurs, et conserve l’attribution statique des sous-sites qui ne chargeaient pas le script de campagne. Les pages légales restent sobres ; aucun avis de disponibilité ou de prix n’est changé par ce traitement.
+
+Réglage final demandé le 22 octobre : l’opacité des ombres directionnelles est abaissée d’au moins 55 %, au repos comme au survol et sur mobile. Les reflets clairs, palettes et animations restent inchangés.
