@@ -54,7 +54,8 @@ def normalize(text: str) -> str:
     # Independent support/product subsites deliberately have no JavaScript.
     # Keep their static website campaign links without introducing a runtime.
     text = text.replace(SCRIPT, '')
-    if re.search(r'<script\b', text, re.I):
+    executable = re.sub(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>', '', text, flags=re.I | re.S)
+    if re.search(r'<script\b', executable, re.I):
         text = text.replace('</head>', SCRIPT + '</head>', 1)
     market = market_token(text)
     if market:
