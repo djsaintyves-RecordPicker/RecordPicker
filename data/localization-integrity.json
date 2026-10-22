@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "MPR 1.0.2 publicly released: remove pending-review copy in all 50 studio locales",
+  "review_reason": "Verified playlist destinations: October Spotify and Deezer IDs replaced; inaccessible Deezer profile buttons removed; direct playlist links retained",
   "schema": 1
 }

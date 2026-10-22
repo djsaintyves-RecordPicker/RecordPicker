@@ -1,0 +1,15 @@
+{
+  "verified": "2026-10-22",
+  "replacements": {
+    "https://open.spotify.com/playlist/5du00jkIAuK02hwnZXX0S6": "https://open.spotify.com/playlist/6hQnY04RuId34udTEhObKz",
+    "https://www.deezer.com/fr/playlist/15835740321": "https://www.deezer.com/fr/playlist/15860974261",
+    "https://www.deezer.com/fr/profile/5425664504": "https://www.deezer.com/profile/5425664504"
+  },
+  "files": 551,
+  "evidence": {
+    "Spotify": "Current October Mess found on public Record Picker profile",
+    "Deezer": "Public user playlists API: October Mess 15860974261, September Desires 15801723681; canonical profile from user API",
+    "Apple Music": "October Mess and September Desires return 200 and matching playlist titles"
+  },
+  "profile_note": "Deezer public profile URLs return 404 despite account existing via API: removed broken profile buttons; direct verified playlist buttons retained."
+}
