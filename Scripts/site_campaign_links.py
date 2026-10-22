@@ -51,10 +51,11 @@ def normalize(text: str) -> str:
     text = ANCHOR.sub(anchor, text)
     text = text.replace('site.js?v=20261008-free-light-pro', 'site.js?v=20261018-campaigns')
     text = text.replace('site.js?v=20261018-campaigns"', 'site.js?v=20261018-campaigns-2"')
-    # Independent support/product subsites deliberately have no JavaScript.
-    # Keep their static website campaign links without introducing a runtime.
+    # Independent support/product subsites keep static website attribution.
+    # A local visual enhancement alone must not add the campaign runtime.
     text = text.replace(SCRIPT, '')
     executable = re.sub(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>', '', text, flags=re.I | re.S)
+    executable = re.sub(r'''<script\b[^>]*src=["']/assets/js/suite-experience\.js(?:\?[^"']*)?["'][^>]*>\s*</script>''', '', executable, flags=re.I | re.S)
     if re.search(r'<script\b', executable, re.I):
         text = text.replace('</head>', SCRIPT + '</head>', 1)
     market = market_token(text)

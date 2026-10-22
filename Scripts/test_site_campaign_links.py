@@ -27,6 +27,17 @@ class CampaignLinksTests(unittest.TestCase):
         self.assertEqual(result.count('/apps/campaign-links.js'), 1)
         self.assertEqual(normalize(result), result)
 
+    def test_visual_enhancement_preserves_static_attribution(self):
+        enhancement = '<script src="/assets/js/suite-experience.js?v=20261022-suite1" defer></script>'
+        page = '<html><head></head><body><a href="https://apps.apple.com/app/id6820177689">Store</a>' + enhancement + '</body></html>'
+        result = normalize(page)
+        self.assertIn(enhancement, result)
+        self.assertIn('ct=ST_Website', result)
+        self.assertNotIn('/apps/campaign-links.js', result)
+        self.assertEqual(result, normalize(result))
+        dynamic = page.replace('</head>', '<script src="/site.js"></script></head>')
+        self.assertEqual(normalize(dynamic).count('/apps/campaign-links.js'), 1)
+
     def test_routine_and_windows(self):
         self.assertIn('ct=MPR_Website', decorate('https://apps.apple.com/app/id6820104318'))
         self.assertIn('cid=RP_Website', decorate('https://apps.microsoft.com/detail/9N2ZWRL4M3JC'))
