@@ -3,31 +3,27 @@
  const root = document.querySelector('.studio-shadow-study');
  if (!root || !('IntersectionObserver' in window)) return;
  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
- if (reduced.matches) return;
- const observer = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-   if (!entry.isIntersecting) continue;
-   entry.target.classList.add(entry.target.matches('.project-store-grid') ? 'stores-arriving' : 'art-arriving');
-   observer.unobserve(entry.target);
-  }
- }, {threshold: .25});
- root.querySelectorAll('.music .playlist-art').forEach((art, index) => {
-  art.style.setProperty('--arrival-delay', `${(index % 2) * 140}ms`);
-  observer.observe(art);
- });
- const storeObserver = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-   if (!entry.isIntersecting) continue;
-   entry.target.classList.add('stores-arriving');
-   storeObserver.unobserve(entry.target);
-  }
- }, {threshold:.85});
- root.querySelectorAll('#record-picker .project-store-grid,.music .playlist-actions').forEach(group => storeObserver.observe(group));
- reduced.addEventListener('change', event => {
-  if (event.matches) {
-   observer.disconnect();
-   storeObserver.disconnect();
-   root.querySelectorAll('.art-arriving,.stores-arriving').forEach(element => element.classList.remove('art-arriving','stores-arriving'));
-  }
- });
+ const artwork = [...root.querySelectorAll('.music .playlist-art')];
+ const groups = [...root.querySelectorAll('#record-picker .project-store-grid,.music .playlist-actions')];
+ artwork.forEach((art, index) => art.style.setProperty('--arrival-delay', `${(index % 2) * 140}ms`));
+ function revealObserver(className, visibleFraction) {
+  return new IntersectionObserver(entries => {
+   for (const entry of entries) {
+    // Rearm only after leaving the viewport completely, avoiding scroll flicker.
+    if (!entry.isIntersecting) entry.target.classList.remove(className);
+    else if (entry.intersectionRatio >= visibleFraction) entry.target.classList.add(className);
+   }
+  }, {threshold:[0, visibleFraction]});
+ }
+ const artObserver = revealObserver('art-arriving', .25);
+ const storeObserver = revealObserver('stores-arriving', .85);
+ function syncMotion() {
+  artObserver.disconnect(); storeObserver.disconnect();
+  [...artwork,...groups].forEach(element => element.classList.remove('art-arriving','stores-arriving'));
+  if (reduced.matches) return;
+  artwork.forEach(element => artObserver.observe(element));
+  groups.forEach(element => storeObserver.observe(element));
+ }
+ reduced.addEventListener('change', syncMotion);
+ syncMotion();
 })();
