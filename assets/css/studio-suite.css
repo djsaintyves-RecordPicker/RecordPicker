@@ -20,7 +20,7 @@
 .suite-studio .project-card :is(.platforms a,a.button) { background:var(--app-accent,#242321); color:white; border-radius:7px; box-shadow:none; }
 .suite-studio .project-card :is(.app-preview,.presentation-shot) { border-radius:7px; box-shadow:none; }
 .suite-studio :is(.music,.ecosystem,.guide) { border:1px solid var(--suite-rule); background:var(--suite-surface); border-radius:var(--suite-radius); box-shadow:none; }
-.suite-studio .guide { padding:28px; }
+.suite-studio :is(.guide,.ecosystem) { padding:28px; }
 .suite-studio .project-card#physical-routine { border-bottom:2px solid var(--app-secondary); }
 .suite-studio .project-card#snory-teller { border-bottom:2px solid var(--app-secondary); }
 .suite-physical { --suite-accent:#00affe; --suite-secondary:#fd236d; background:var(--suite-paper); color:#182936; }
@@ -48,7 +48,7 @@
 .suite-snory details { border-color:var(--suite-rule); }
 @media(max-width:740px) {
  .rps-suite > :is(header,main,footer) { padding-inline:20px; }
- .suite-studio .project-card,.suite-studio .guide,.suite-physical section { padding:22px; }
+ .suite-studio .project-card,.suite-studio :is(.guide,.ecosystem),.suite-physical section { padding:22px; }
  .suite-studio .grid { grid-template-columns:1fr; }
  .suite-snory .hero { gap:24px; padding-block:28px 40px; }
  .suite-snory .device-scene { min-height:490px; }
