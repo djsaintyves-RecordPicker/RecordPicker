@@ -409,5 +409,15 @@
   "Rediscover albums in your Record Picker collection: explore a neglected genre, save records for later and distinguish draw history from actual listening.": "重新发现您的 Record Picker 收藏中的专辑：探索被忽视的流派，保存记录以供日后使用，并将绘制历史与实际聆听区分开来。",
   "Import your Discogs collection into Record Picker: request a CSV export, choose collection or wishlist, review the preview and check a small sample first.": "将您的 Discogs 系列导入 Record Picker：请求 CSV 导出，选择系列或愿望清单，查看预览并首先检查一个小样本。",
   "Set up Snory Teller for the night: check microphone input, test Apple Watch alerts and read estimated snoring and analysis coverage in the morning.": "设置夜间的 Snory Teller：检查麦克风输入、测试 Apple Watch 警报并在早上读取预估打鼾情况和分析覆盖范围。",
-  "Get started with My Physical Routine: complete the questionnaire, review your proposed schedule and guided sessions, then assess your first week.": "开始使用 My Physical Routine：完成调查问卷，查看您建议的日程安排和指导课程，然后评估您的第一周。"
+  "Get started with My Physical Routine: complete the questionnaire, review your proposed schedule and guided sessions, then assess your first week.": "开始使用 My Physical Routine：完成调查问卷，查看您建议的日程安排和指导课程，然后评估您的第一周。",
+  "Record Picker features — Discogs import, collection and album picks": "Record Picker 功能 — Discogs 导入、收藏和专辑精选",
+  "Random Pick proposes a record from the eligible collection. Use the selection and exclusion controls available in your version to adapt the draw to the moment.": "Random Pick 从符合条件的集合中提出一条记录。使用您的版本中可用的选择和排除控件来适应当前的绘制。",
+  "Optional preference for favorites where available; drawing a record is separate from actually listening to it.": "对收藏夹的可选偏好（如果有）；绘制唱片与实际聆听是分开的。",
+  "Choose a record from your wrist with the actions supported by your installed Apple Watch version.": "从您的手腕上选择一条记录，其中包含您所安装的 Apple Watch 版本支持的操作。",
+  "50 localizations": "50 个本地化版本",
+  "Record Picker is localized for 50 languages and regional variants, including Japanese, Korean, Simplified Chinese and Traditional Chinese.": "Record Picker 已本地化为 50 种语言和区域变体，包括日语、韩语、简体中文和繁体中文。",
+  "Language and regional variants are distinct localizations, not 50 different languages.": "语言和区域变体是不同的本地化，而不是 50 种不同的语言。",
+  "Organize vinyl and CDs with Record Picker: Discogs CSV import, album picks and backups. Free up to 100 records; Light and Pro are separate one-time purchases.": "使用 Record Picker 整理黑胶唱片和 CD：Discogs CSV 导入、专辑精选和备份。免费最多100条记录； Light 和 Pro 是单独的一次性购买。",
+  "Organize your vinyl and CD collection, import a Discogs CSV and choose your next album with Random Pick or Mood Pick. Start free with up to 100 records. Light unlocks unlimited records and imports; Pro adds advanced tools. They are separate one-time purchases, without a subscription. Available features depend on your device and installed version.": "整理您的黑胶唱片和 CD 收藏，导入 Discogs CSV 并使用 Random Pick 或 Mood Pick 选择您的下一张专辑。免费开始，最多可包含 100 条记录。 Light解锁无限记录和导入； Pro 添加了高级工具。它们是单独的一次性购买，无需订阅。可用功能取决于您的设备和安装的版本。",
+  "Explore collection management, album selection, import, export, backup and privacy below. For the current Free, Light and Pro options, see the pricing section. The version history is kept separately for reference.": "下面探索收藏管理、相册选择、导入、导出、备份和隐私。对于当前的免费、Light 和 Pro 选项，请参阅定价部分。版本历史记录单独保存以供参考。"
 }

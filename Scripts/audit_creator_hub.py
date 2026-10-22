@@ -63,4 +63,16 @@ def audit():
             if target.is_dir(): target = target/'index.html'
             assert target.is_file(), (rel,link)
     print('Guides: 300 direct store paths, local destinations and SEO/social descriptions validated')
+    features = json.loads((ROOT/'data/feature-overview-2026-10-22.json').read_text())['pages']
+    assert len(features) == 33
+    for rel in features:
+        raw = (ROOT/rel).read_text(); page = Page(); page.feed(raw)
+        lead = re.search(r'<p class="lead">(.*?)</p>',raw,re.S)
+        assert lead and all(name in lead[1] for name in ('Light','Pro')), (rel,'Missing current purchase options')
+        assert any(link.endswith('/apps/') for link in page.main_links), (rel,'Missing Studio link')
+        for payload in re.findall(r'<script type="application/ld\+json">(.*?)</script>',raw,re.S):
+            value = json.loads(payload)
+            if value.get('@type') == 'SoftwareApplication':
+                assert len(value['inLanguage']) == len(value['availableLanguage']) == 50, rel
+    print('Features: 33 current purchase overviews, Studio links and 50 app localizations validated')
 if __name__ == '__main__': audit()

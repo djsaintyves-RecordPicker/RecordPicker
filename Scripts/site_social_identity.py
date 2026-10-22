@@ -10,6 +10,7 @@ from site_campaign_links import normalize as normalize_campaign_links
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGES = {
+    'features': ('/assets/social/social-home.png?v=20260924-v26', 'Record Picker'),
     'hub': ('/assets/brand/rps/icon-512.png', 'Record Picker Studio'),
     'dulpi': ('/apps/assets/dulpi-icon.png', 'Dulpi'),
     'music': ('/apps/assets/october-mess-s05e02.webp', 'My Musical Update'),
@@ -39,12 +40,13 @@ def normalize(raw, kind):
     head = Head(); head.feed(raw.split('</head>', 1)[0])
     assert head.title and head.canonical, kind
     image, alt = IMAGES[kind]
+    if kind == 'features': alt = head.title
     values = {
         'og:type': head.meta.get('og:type', 'website'),
         'og:title': head.title, 'og:description': head.meta['description'],
         'og:url': head.canonical, 'og:site_name': 'Record Picker Studio',
         'og:image': 'https://recordpicker.app'+image, 'og:image:alt': alt,
-        'twitter:card': 'summary', 'twitter:title': head.title,
+        'twitter:card': 'summary_large_image' if kind == 'features' else 'summary', 'twitter:title': head.title,
         'twitter:description': head.meta['description'],
         'twitter:image': 'https://recordpicker.app'+image, 'twitter:image:alt': alt,
     }
@@ -72,6 +74,9 @@ def pages():
         yield ROOT/route.lstrip('/')/'index.html', kinds[0]
     for path in (ROOT/'physical').rglob('*.html'):
         yield path, 'physical-guide'
+    feature_pages = json.loads((ROOT/'data/feature-overview-2026-10-22.json').read_text())
+    for relative in feature_pages['pages']:
+        yield ROOT/relative, 'features'
 
 def main():
     parser = argparse.ArgumentParser()
@@ -80,7 +85,7 @@ def main():
     failures = []; count = 0
     for path, kind in pages():
         image, alt = IMAGES[kind]
-        assert (ROOT/image.lstrip('/')).is_file(), image
+        assert (ROOT/urlsplit(image).path.lstrip('/')).is_file(), image
         raw = path.read_text(); expected = normalize(raw, kind)
         if expected != raw:
             if args.write: path.write_text(expected)
