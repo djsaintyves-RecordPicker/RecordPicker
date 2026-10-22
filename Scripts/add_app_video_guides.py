@@ -4,6 +4,7 @@ from pathlib import Path
 from html import escape
 import json
 import re
+import xml.etree.ElementTree as ET
 from site_guide_identity import normalize as normalize_guide_identity
 from site_campaign_links import normalize as normalize_campaign_links
 
@@ -14,6 +15,11 @@ DATA = ROOT / 'data/app-video-guides-2026-10-22.json'
 
 def main():
     campaigns = json.loads((ROOT / 'data/acquisition-campaigns.json').read_text())['channels']['website']['apps']
+    sitemap_ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
+    video_ns = 'http://www.google.com/schemas/sitemap-video/1.1'
+    ET.register_namespace('',sitemap_ns)
+    ET.register_namespace('video',video_ns)
+    sitemap = ET.Element('{'+sitemap_ns+'}urlset')
     for app in json.loads(DATA.read_text()):
         for lang, route in app['routes'].items():
             path = ROOT / route
@@ -58,7 +64,22 @@ def main():
             else:
                 text = normalize_campaign_links(text)
             path.write_text(text)
+            entry = ET.SubElement(sitemap,'{'+sitemap_ns+'}url')
+            ET.SubElement(entry,'{'+sitemap_ns+'}loc').text = 'https://recordpicker.app/'+route.removesuffix('index.html')
+            video = ET.SubElement(entry,'{'+video_ns+'}video')
+            values = {'thumbnail_loc':metadata['thumbnailUrl'][0],
+                      'title':metadata['name'],'description':description,
+                      'content_loc':metadata['contentUrl'],'duration':'12',
+                      'publication_date':metadata['uploadDate']}
+            for key,value in values.items():
+                ET.SubElement(video,'{'+video_ns+'}'+key).text = value
             print(route)
+    ET.indent(sitemap,space='  ')
+    ET.ElementTree(sitemap).write(ROOT/'sitemap-videos.xml',encoding='utf-8',xml_declaration=True)
+    robots = ROOT/'robots.txt'
+    directive = 'Sitemap: https://recordpicker.app/sitemap-videos.xml'
+    if directive not in robots.read_text():
+        robots.write_text(robots.read_text().rstrip()+'\n'+directive+'\n')
 
 
 if __name__ == '__main__':

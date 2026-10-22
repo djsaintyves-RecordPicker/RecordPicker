@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://recordpicker.app/fr/record-picker/guides/choose/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/record-picker.jpg</video:thumbnail_loc>
+      <video:title>Record Picker — Tes disques. Tu écoutes quoi ?</video:title>
+      <video:description>Une démonstration de Mood Pick : une envie, puis une suggestion parmi les disques de la collection. Le montage montre les vrais écrans de l’app ; il ne promet ni un album particulier ni un résultat identique pour toutes les collections.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/record-picker.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://recordpicker.app/record-picker/guides/choose/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/record-picker.jpg</video:thumbnail_loc>
+      <video:title>Record Picker — Your records. What plays next?</video:title>
+      <video:description>A Mood Pick demonstration: a mood, then a suggestion from the records in the collection. This edit shows actual app screens; it does not promise a particular album or identical results for every collection.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/record-picker.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://recordpicker.app/fr/snory-teller-guide/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/snory-teller.jpg</video:thumbnail_loc>
+      <video:title>Snory Teller — On te dit que tu ronfles ?</video:title>
+      <video:description>Aperçu de l’écran d’accueil de Snory Teller et de son principe : observer les sons de la nuit sur l’iPhone sans conserver d’enregistrement audio. La vidéo ne montre pas un bilan réel et ne constitue pas une démonstration de diagnostic. Les estimations dépendent des conditions d’utilisation.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/snory-teller.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://recordpicker.app/snory-teller-guide/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/snory-teller.jpg</video:thumbnail_loc>
+      <video:title>Snory Teller — Been told you snore?</video:title>
+      <video:description>A preview of the Snory Teller home screen and its approach: observing night-time sounds on your iPhone without storing audio recordings. The video does not show a real night report and is not a diagnostic demonstration. Estimates depend on conditions of use.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/snory-teller.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://recordpicker.app/fr/physical-routine-guide/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/my-physical-routine.jpg</video:thumbnail_loc>
+      <video:title>My Physical Routine — Pas le temps de bouger ?</video:title>
+      <video:description>Aperçus de la séance du jour et du questionnaire de My Physical Routine. L’écran propose des durées de 5, 10 ou 15 minutes ; le programme tient compte des réponses saisies. Il s’agit d’une présentation de l’app, sans promesse de résultat physique ni conseil médical personnalisé.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/my-physical-routine.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://recordpicker.app/physical-routine-guide/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://recordpicker.app/assets/videos/2026-10-22/my-physical-routine.jpg</video:thumbnail_loc>
+      <video:title>My Physical Routine — No time to move?</video:title>
+      <video:description>Previews of the daily session and questionnaire in My Physical Routine. The screen offers 5, 10 or 15 minutes; the programme uses your answers. This is an app presentation, with no promised fitness outcome or personalized medical advice.</video:description>
+      <video:content_loc>https://recordpicker.app/assets/videos/2026-10-22/my-physical-routine.mp4</video:content_loc>
+      <video:duration>12</video:duration>
+      <video:publication_date>2026-10-22T09:39:54Z</video:publication_date>
+    </video:video>
+  </url>
+</urlset>

@@ -4,3 +4,4 @@ Allow: /
 Sitemap: https://recordpicker.app/sitemap.xml
 Sitemap: https://recordpicker.app/sitemap-media.xml
 Sitemap: https://recordpicker.app/snory-teller/sitemap.xml
+Sitemap: https://recordpicker.app/sitemap-videos.xml
