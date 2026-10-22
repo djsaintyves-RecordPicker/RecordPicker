@@ -3,6 +3,8 @@ from pathlib import Path
 import re
 from lxml import html
 from site_campaign_links import normalize
+from site_snory_metadata import normalize as snory_metadata
+from site_guide_identity import normalize as guide_identity
 ROOT=Path(__file__).resolve().parents[1]
 CSS='<link rel="stylesheet" href="/assets/css/suite-experience.css?v=20261022-suite1">'
 JS='<script src="/assets/js/suite-experience.js?v=20261022-suite1" defer></script>'
@@ -42,6 +44,8 @@ for p in ROOT.rglob('*.html'):
  if kind=='suite-studio':s=brand(s)
  s=s.replace('</head>',CSS+'</head>',1).replace('</body>',JS+'</body>',1)
  s=normalize(s) if "campaign-links.js" in before else s
+ if kind in {"suite-guide-snory","suite-guide-physical"}:s=guide_identity(s,"snory-guide" if kind=="suite-guide-snory" else "physical-guide","no" if rel.startswith("no/") else d.get("lang"))
+ if kind=="suite-snory" and p.name=="index.html" and p.parent.parent==ROOT/"snory-teller":s=snory_metadata(s)
  counts[kind]=counts.get(kind,0)+1
  if s!=before:p.write_text(s);changed.append(rel)
 print('Suite rollout:',len(changed),'changed;',counts)
