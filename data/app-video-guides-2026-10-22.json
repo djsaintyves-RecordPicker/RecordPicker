@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "record-picker",
+    "name": "Record Picker",
+    "routes": {
+      "fr": "fr/record-picker/guides/choose/index.html",
+      "en": "record-picker/guides/choose/index.html"
+    },
+    "title": {
+      "fr": "Tes disques. Tu écoutes quoi ?",
+      "en": "Your records. What plays next?"
+    },
+    "description": {
+      "fr": "Une démonstration de Mood Pick : une envie, puis une suggestion parmi les disques de la collection. Le montage montre les vrais écrans de l’app ; il ne promet ni un album particulier ni un résultat identique pour toutes les collections.",
+      "en": "A Mood Pick demonstration: a mood, then a suggestion from the records in the collection. This edit shows actual app screens; it does not promise a particular album or identical results for every collection."
+    },
+    "steps": {
+      "fr": [
+        "Une envie. Un disque.",
+        "Dans ta collection.",
+        "Redécouvre tes albums."
+      ],
+      "en": [
+        "A mood. A record.",
+        "From the records you own.",
+        "Rediscover your own albums."
+      ]
+    }
+  },
+  {
+    "slug": "snory-teller",
+    "name": "Snory Teller",
+    "routes": {
+      "fr": "fr/snory-teller-guide/index.html",
+      "en": "snory-teller-guide/index.html"
+    },
+    "title": {
+      "fr": "On te dit que tu ronfles ?",
+      "en": "Been told you snore?"
+    },
+    "description": {
+      "fr": "Aperçu de l’écran d’accueil de Snory Teller et de son principe : observer les sons de la nuit sur l’iPhone sans conserver d’enregistrement audio. La vidéo ne montre pas un bilan réel et ne constitue pas une démonstration de diagnostic. Les estimations dépendent des conditions d’utilisation.",
+      "en": "A preview of the Snory Teller home screen and its approach: observing night-time sounds on your iPhone without storing audio recordings. The video does not show a real night report and is not a diagnostic demonstration. Estimates depend on conditions of use."
+    },
+    "steps": {
+      "fr": [
+        "Observe les sons de ta nuit.",
+        "Aucun audio conservé.",
+        "Ta nuit reste privée."
+      ],
+      "en": [
+        "Explore your night-time sounds.",
+        "No audio recordings stored.",
+        "Your night stays private."
+      ]
+    }
+  },
+  {
+    "slug": "my-physical-routine",
+    "name": "My Physical Routine",
+    "routes": {
+      "fr": "fr/physical-routine-guide/index.html",
+      "en": "physical-routine-guide/index.html"
+    },
+    "title": {
+      "fr": "Pas le temps de bouger ?",
+      "en": "No time to move?"
+    },
+    "description": {
+      "fr": "Aperçus de la séance du jour et du questionnaire de My Physical Routine. L’écran propose des durées de 5, 10 ou 15 minutes ; le programme tient compte des réponses saisies. Il s’agit d’une présentation de l’app, sans promesse de résultat physique ni conseil médical personnalisé.",
+      "en": "Previews of the daily session and questionnaire in My Physical Routine. The screen offers 5, 10 or 15 minutes; the programme uses your answers. This is an app presentation, with no promised fitness outcome or personalized medical advice."
+    },
+    "steps": {
+      "fr": [
+        "5, 10 ou 15 minutes.",
+        "Un programme à ton rythme.",
+        "Ta prochaine séance est là."
+      ],
+      "en": [
+        "5, 10 or 15 minutes.",
+        "A programme at your pace.",
+        "Your next session is ready."
+      ]
+    }
+  }
+]

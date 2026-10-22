@@ -26,7 +26,7 @@
     "pt-br": "46041be222cfc9c128eff931eddf998e3e5e8918969d9fd62d410aaf49f8d9f6",
     "pt-pt": "105e79226b6230199cc0db2050cd4a11a33c7da4024324c348cc0280883a33c6",
     "ru": "02c7b5ddba841abf96fe0c8956913c5f265b9319275cfcae85e3003369d641dd",
-    "shared": "bc2a5c7d2e4a6c24ef472a173361db575125005a78092b64267c51da974d4dd5",
+    "shared": "73bcdb080f5e1bfba1a5469f8d18417cd895571acc3b1825185fb39853f1f8af",
     "sv": "43cd050b9e7353e30d3f40b6988d60f9b5e6ab960dd51f8f8febd5a28186e074",
     "th": "de0480b6612886eb42579bb2f159b019149b900bd0f2bb6dffa3f2dca0679edb",
     "tr": "c80a07fc5a3e1b8347424e1b7a4ab47053bb6bf9ae5609efcfc4ca61a8c5ac46",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Distinguish four complete French Canadian and Mexican guide titles with human-readable country names after duplicate-title audit.",
+  "review_reason": "Add three authentic FR/EN video previews with transcripts, captions and store/Studio links to six existing guides.",
   "schema": 1
 }

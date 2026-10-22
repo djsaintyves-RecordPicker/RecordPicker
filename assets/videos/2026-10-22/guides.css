@@ -1,0 +1,7 @@
+.app-video-guide{margin:3rem auto;padding:1.5rem;border:1px solid #d4d4db;border-radius:20px;max-width:960px}
+.app-video-guide h2{margin-top:0}
+.app-video-guide__content{display:grid;grid-template-columns:minmax(210px,320px) minmax(0,1fr);gap:1.5rem;align-items:center}
+.app-video-guide video{display:block;width:100%;height:auto;max-height:570px;border-radius:16px;background:#101017}
+.app-video-guide p{line-height:1.65}
+.app-video-guide a{display:inline-block;margin:.5rem 1rem .5rem 0;min-height:44px;padding:.65rem 0;box-sizing:border-box}
+@media(max-width:640px){.app-video-guide{padding:1rem}.app-video-guide__content{grid-template-columns:1fr}.app-video-guide video{max-width:320px;margin:auto}}
