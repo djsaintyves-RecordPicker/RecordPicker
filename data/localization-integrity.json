@@ -8,7 +8,7 @@
     "en-au": "50c51441f308a1e62c0c80f8d89554eec55ffb2c79bb80bc26af391cded7d8c8",
     "en-ca": "862a36461a91cab17bf170c3264543d1f71a64264c8af6b6de03eb06bd1d6285",
     "en-gb": "bcb37d75d57c232ea9ce480bd7faaad9bba4eb7fe79712d214fec46b87a5f530",
-    "en-us": "9ecbf9d75374a2bcf8d1973d2c9881e82ee18c1c75fbc2f35a27d504ebffa47b",
+    "en-us": "fbed042bd6f9d8e41af064ad87441546b2e4b16a33f2206bb20eabd1dab51fe4",
     "es-es": "b16ce19f9b9ae6cb31a5262b392192b1f838e7c28cd5279bffdc73358abe8a87",
     "es-mx": "64ce6aa04988369251dec246592217fbfbf69ff3311764e5a725cf9c93d32ebb",
     "fi": "8b948e5472e2d316dd2edba5c9072212440397117101089296136296fb10d59f",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "MPR navigation links directly to its publisher Record Picker Studio instead of an older external site",
+  "review_reason": "US Mac landing text corrected to English and Mac App Store destinations explicitly select platform=mac",
   "schema": 1
 }
