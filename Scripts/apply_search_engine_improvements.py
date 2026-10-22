@@ -204,13 +204,10 @@ def extend_description(text: str, description: str, locale: str) -> str:
 
 
 def shorten_title(title: str, locale: str) -> str:
-    if len(title) <= 60:
-        return title
-    suffix = " — " + (locale or "Record Picker")
-    base = re.sub(r"\s+[—|-]\s+(?:Record Picker|[^—|]{2,20})$", "", title).strip()
-    room = 60 - len(suffix)
-    head = base[:room].rsplit(" ", 1)[0].rstrip(" —|-:,.?")
-    return head + suffix
+    """Keep complete editorial titles; locale codes are not reader-facing copy."""
+    if locale:
+        return re.sub(r"\s+—\s+" + re.escape(locale) + r"$", " | Record Picker", title)
+    return title
 
 
 def update_page(path: Path) -> None:

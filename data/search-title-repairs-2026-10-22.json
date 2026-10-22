@@ -1,0 +1,146 @@
+{
+  "scope": "Remove technical locale suffixes and restore complete guide titles",
+  "pages": [
+    {
+      "page": "pl/manage-vinyl-collection/index.html",
+      "before": "Zarządzaj kolekcją winyli i odkrywaj ją na — pl",
+      "after": "Zarządzaj kolekcją winyli | Record Picker"
+    },
+    {
+      "page": "pl/choose-vinyl-record/index.html",
+      "before": "Jak wybrać następną płytę winylową do — pl",
+      "after": "Jaką płytę winylową wybrać? | Record Picker"
+    },
+    {
+      "page": "sv/choose-vinyl-record/index.html",
+      "before": "Så väljer du vilken vinylskiva du ska spela — sv",
+      "after": "Vilken vinylskiva ska du spela? | Record Picker"
+    },
+    {
+      "page": "es-es/manage-vinyl-collection/index.html",
+      "before": "Gestionar y redescubrir una colección de vinilos — es-es",
+      "after": "Organiza tu colección de vinilos | Record Picker"
+    },
+    {
+      "page": "es-es/choose-vinyl-record/index.html",
+      "before": "Como elegir que vinilo escuchar a continuación — es-es",
+      "after": "Qué vinilo escuchar a continuación | Record Picker"
+    },
+    {
+      "page": "el/choose-vinyl-record/index.html",
+      "before": "Πώς να διαλέξετε ποιο βινύλιο θα παίξετε — el",
+      "after": "Ποιο βινύλιο να ακούσετε; | Record Picker"
+    },
+    {
+      "page": "it/manage-vinyl-collection/index.html",
+      "before": "Gestire e riscoprire una collezione di — it",
+      "after": "Gestisci la tua collezione di vinili | Record Picker"
+    },
+    {
+      "page": "ca/manage-vinyl-collection/index.html",
+      "before": "Gestionar i redescobrir una col·lecció de — ca",
+      "after": "Organitza la teva col·lecció de vinils | Record Picker"
+    },
+    {
+      "page": "es-mx/manage-vinyl-collection/index.html",
+      "before": "Gestionar y redescubrir una colección de vinilos — es-mx",
+      "after": "Organiza tu colección de vinilos | Record Picker"
+    },
+    {
+      "page": "es-mx/choose-vinyl-record/index.html",
+      "before": "Como elegir que vinilo escuchar a continuación — es-mx",
+      "after": "Qué vinilo escuchar a continuación | Record Picker"
+    },
+    {
+      "page": "ru/manage-vinyl-collection/index.html",
+      "before": "Управляйте виниловой коллекцией и открывайте ее — ru",
+      "after": "Управляйте коллекцией винила | Record Picker"
+    },
+    {
+      "page": "ru/random-vinyl-record-picker/index.html",
+      "before": "Приложение для случайного выбора виниловых — ru",
+      "after": "Случайный выбор виниловой пластинки | Record Picker"
+    },
+    {
+      "page": "fr-ca/manage-vinyl-collection/index.html",
+      "before": "Gérer et redécouvrir une collection de vinyles — fr-ca",
+      "after": "Gérer sa collection de vinyles | Record Picker"
+    },
+    {
+      "page": "fr-ca/random-vinyl-record-picker/index.html",
+      "before": "Tirage aléatoire de vinyles personnalisé | Record — fr-ca",
+      "after": "Choisir un vinyle au hasard | Record Picker"
+    },
+    {
+      "page": "pt-pt/choose-vinyl-record/index.html",
+      "before": "Como escolher que disco de vinil tocar a — pt-pt",
+      "after": "Que disco de vinil ouvir a seguir? | Record Picker"
+    },
+    {
+      "page": "pt-br/choose-vinyl-record/index.html",
+      "before": "Como escolher qual disco de vinil tocar — pt-br",
+      "after": "Qual disco de vinil ouvir agora? | Record Picker"
+    },
+    {
+      "page": "nl/choose-vinyl-record/index.html",
+      "before": "Hoe kies je welke vinylplaat je hierna — nl",
+      "after": "Welke plaat ga je luisteren? | Record Picker"
+    },
+    {
+      "page": "de/manage-vinyl-collection/index.html",
+      "before": "Eine Vinylsammlung verwalten und neu — de",
+      "after": "Schallplattensammlung verwalten | Record Picker"
+    },
+    {
+      "page": "fi/choose-vinyl-record/index.html",
+      "before": "Miten valita seuraavaksi soitettava — fi",
+      "after": "Minkä vinyylilevyn kuuntelisit? | Record Picker"
+    },
+    {
+      "page": "fr/vinyl-duplicate-checker/index.html",
+      "before": "Vérifier les doublons de vinyles avant un — fr",
+      "after": "Repérer les doublons de vinyles | Record Picker"
+    },
+    {
+      "page": "fr/manage-vinyl-collection/index.html",
+      "before": "Gérer et redécouvrir une collection de vinyles — fr",
+      "after": "Gérer sa collection de vinyles | Record Picker"
+    },
+    {
+      "page": "fr/discogs-companion-app/index.html",
+      "before": "Une app complémentaire à Discogs pour les — fr",
+      "after": "Une app complémentaire à Discogs | Record Picker"
+    },
+    {
+      "page": "fr/classical-music-catalogue-app/index.html",
+      "before": "Application de catalogage pour la musique — fr",
+      "after": "Cataloguer ses disques classiques | Record Picker"
+    },
+    {
+      "page": "fr/import-discogs-csv/index.html",
+      "before": "Importer un CSV Discogs dans une app de — fr",
+      "after": "Importer sa collection Discogs en CSV | Record Picker"
+    },
+    {
+      "page": "fr/random-vinyl-record-picker/index.html",
+      "before": "Tirage aléatoire de vinyles personnalisé | Record — fr",
+      "after": "Choisir un vinyle au hasard | Record Picker"
+    },
+    {
+      "page": "en-us/discogs-companion-app/index.html",
+      "before": "A Private Companion App for Discogs — en-us",
+      "after": "A Private Companion App for Discogs | Record Picker"
+    },
+    {
+      "page": "en-us/import-discogs-csv/index.html",
+      "before": "Import a Discogs CSV into a Record Collection — en-us",
+      "after": "Import Your Discogs Collection as CSV | Record Picker"
+    },
+    {
+      "page": "tr/manage-vinyl-collection/index.html",
+      "before": "Bir vinil koleksiyonunu yönetin ve yeniden — tr",
+      "after": "Plak koleksiyonunuzu yönetin | Record Picker"
+    }
+  ],
+  "generator": "Legacy title shortener no longer truncates sentences or appends locale codes"
+}
