@@ -23,18 +23,17 @@ def audit():
             assert target.is_file(), (rel,link)
     # A published release must not retain the previous review announcement.
     import json
-    from lxml import html
+    import re
     old = 'Coming in version 1.0.2:'
     templates = json.loads((ROOT/'data/creator-hub/templates.json').read_text())
     assert old not in templates['en-hub']
     count = 0
     for path in ROOT.glob('**/apps/index.html'):
-        doc = html.fromstring(path.read_text())
-        cards = doc.xpath('//*[@id="physical-routine"]')
-        if not cards: continue
-        card = cards[0]
-        note = card.xpath('.//*[contains(@class,"release-note")]')
-        assert len(note) == 1 and '1.0.2' in note[0].text_content(), path
+        markup = path.read_text()
+        card = re.search(r'<article[^>]*id="physical-routine"[^>]*>(.*?)</article>', markup, re.S)
+        if not card: continue
+        notes = re.findall(r'<p class="release-note">(.*?)</p>', card[1], re.S)
+        assert len(notes) == 1 and '1.0.2' in notes[0], path
         assert old not in path.read_text(), path
         assert 'my-physical-routine.mdvnc9v49c.chatgpt.site' not in path.read_text(), path
         count += 1
