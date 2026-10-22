@@ -170,3 +170,38 @@
 .suite-experience .rps-guide-masthead figure { background:transparent; border:0; box-shadow:none; padding:0; }
 .suite-experience .rps-guide-masthead figure img { border-radius:12px; box-shadow:var(--suite-depth); }
 @media(prefers-reduced-motion:no-preference) { .suite-experience .single-arriving { animation:studio-store-arrival 1200ms cubic-bezier(.4,0,.2,1) backwards; } .suite-experience .single-arriving:focus { animation:none; } }
+
+/* The approved quiet surfaces also cover product, support and guide variants. */
+.suite-experience:not(.suite-snory) {
+ --suite-paper:#f7f5ef; --suite-surface:#f8f6f0;
+ --panel:#f8f6f0; --panel-solid:#f8f6f0; --surface-raised:#f8f6f0;
+ --surface-strong:#f8f6f0; --glass-surface:#f8f6f0; --glass-strong:#f8f6f0;
+ background-color:var(--suite-paper);
+}
+.suite-experience:not(.suite-snory) :is(.card,.project-card,.community-grid article,.guide-topic,.seo-link-card,.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band) {
+ background:#f8f6f0; border:0; border-radius:16px; box-shadow:var(--suite-depth);
+}
+.suite-experience.suite-physical main section {
+ background:#f8f6f0; border:0; border-radius:16px; box-shadow:var(--suite-depth);
+}
+.suite-experience.suite-meal main > section {
+ padding:clamp(20px,3vw,28px); margin-block:24px;
+ background:#f8f6f0; border:0; border-radius:16px; box-shadow:var(--suite-depth);
+}
+.suite-experience.suite-snory :is(.privacy-card,.release-card,.offer,.steps section) {
+ background:#091c34; border:0; box-shadow:var(--suite-depth);
+}
+@media(hover:hover) and (pointer:fine) {
+ .suite-experience :is(.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band),
+ .suite-experience.suite-physical main section,.suite-experience.suite-meal main > section {
+  transition:box-shadow 300ms ease; }
+ .suite-experience :is(.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band):hover,
+ .suite-experience.suite-physical main section:hover,.suite-experience.suite-meal main > section:hover {
+  box-shadow:var(--suite-depth-hover); }
+}
+@media(prefers-reduced-motion:reduce) {
+ .suite-experience :is(.platform-expansion,.current-release,.studio-bridge-card,.press-review-spotlight,.contact-band),
+ .suite-experience.suite-physical main section,.suite-experience.suite-meal main > section { transition:none; }
+}
+
+.suite-experience :is(header nav,.hub-header) a { text-decoration:none; }

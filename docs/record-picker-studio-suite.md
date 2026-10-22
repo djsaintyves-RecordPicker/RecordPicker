@@ -58,3 +58,7 @@ Après une régénération de pages, exécuter `python3 Scripts/rollout_suite_ex
 Réglage final demandé le 22 octobre : l’opacité des ombres directionnelles est abaissée d’au moins 55 %, au repos comme au survol et sur mobile. Les reflets clairs, palettes et animations restent inchangés.
 
 Les entrées utilisent désormais un fondu de 1,2 à 1,4 seconde, sur 2 px, sans disparition complète, rotation ni zoom. Le réarmement attend une sortie complète de 500 ms pour éviter les clignotements lors des petits allers-retours de défilement.
+
+## Harmonisation finale de toutes les pages — 22 octobre 2026
+
+Les 1 258 pages de contenu chargent la charte commune : 250 pages Studio, 447 Record Picker, 350 guides, 201 Snory Teller, six My Physical Routine et quatre Meal Picker. Les alias de redirection et fichiers de vérification restent hors présentation. Les blocs produit secondaires, les sections MPR et Meal Picker utilisent également les surfaces sans bordure et le relief discret. Les surfaces claires sont rapprochées du papier (#f8f6f0 sur #f7f5ef) ; Snory conserve sa palette nocturne. Les pages d’assistance Meal Picker gardent une marge intérieure adaptée au mobile. Textes, liens de campagne, canoniques et hreflang sont conservés.
