@@ -26,7 +26,7 @@
     "pt-br": "0ec8025b686ba9344752fdb5451cc5e3d8e38838c381734bd41b549caf4b478f",
     "pt-pt": "184dcde6237eed9731a0f68747aaf6215bad8c2f33ee43b271732899a356205e",
     "ru": "d8db44de675e42d4d6bcb195b29311fc8eaa63d54eb314099c68a634625a776a",
-    "shared": "0eaae2d2a0b8783fd063d0e5d081f34337869d2a24ccdad1f0a1643975283d08",
+    "shared": "b05fc9142f43411676fbeb8af3072aa9a00e960542191e976f6e3cbc66a7fd7b",
     "sv": "f572208387b5502e1aa15d5e8f1baa99cb5986c5946f75bcd33ca1e0c183f1e2",
     "th": "9c512dcf643ce1c4f5e32efe58c844265a2f4312aa823dad9497b611fa2c4e71",
     "tr": "62f34577fefdc6c03dbfdc4cbe1d074f22271282054449853f8a6fda844656b6",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Consistent localized three-app Studio discovery on all RP homepages and local Studio footer links on platform pages",
+  "review_reason": "Correct studio, app guide and playlist preview identity and add localized Twitter metadata; preserve page copy and actual playlist destinations",
   "schema": 1
 }
