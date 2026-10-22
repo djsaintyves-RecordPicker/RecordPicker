@@ -28,7 +28,7 @@
 .suite-physical main { padding-block:48px; }
 .suite-physical h1 { font-size:clamp(2.4rem,4.8vw,3.6rem); letter-spacing:-.04em; line-height:1.08; max-width:22ch; }
 .suite-physical h2 { color:#182936; font-size:1.5rem; letter-spacing:-.02em; }
-.suite-physical section { padding:28px; margin:32px 0; border:1px solid var(--suite-rule); border-top:2px solid #00affe; border-radius:var(--suite-radius); background:#fffefa; box-shadow:none; }
+.suite-physical section { padding:28px; margin:32px 0; border:0; border-radius:16px; background:#f8f6f0; box-shadow:none; }
 .suite-physical section > p { max-width:76ch; }
 .suite-physical a { color:#153d56; text-decoration-color:var(--suite-secondary); }
 .suite-physical .brand { border-bottom:2px solid var(--suite-secondary); }
