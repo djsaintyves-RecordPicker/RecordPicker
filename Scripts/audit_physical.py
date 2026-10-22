@@ -14,7 +14,13 @@ def audit():
         assert '<meta name="viewport"' in text and 'prefers-color-scheme' in (ROOT / "physical/styles.css").read_text()
         assert '<main id="main">' in text and '<h1>' in text
         assert 'hreflang="fr"' in text and 'hreflang="en"' in text
-        assert '<script' not in text and 'Brouillon' not in text
+        # JSON-LD describes the public app without adding executable JavaScript.
+        import json
+        for metadata in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
+            data = json.loads(metadata)
+            assert data['@type'] == 'SoftwareApplication' and data['name'] == 'My Physical Routine'
+        executable = re.sub(r'<script type="application/ld\+json">.*?</script>', '', text, flags=re.S)
+        assert '<script' not in executable and 'Brouillon' not in text
         for url in re.findall(r'(?:href|src)="([^"]+)"', text):
             parsed = urlsplit(url)
             if parsed.scheme or not parsed.path: continue

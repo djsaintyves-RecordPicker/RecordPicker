@@ -26,7 +26,7 @@
     "pt-br": "1c64768724c02cbfcb415dbd1361054ca39784975cc0fdcafce505dfb557275e",
     "pt-pt": "ad1f90fe28a9517841fe7d2e1e9fe1aec42be0dbf28c7f6f0977be6e3eff819a",
     "ru": "99f2d4d98e7d16e7b449eb47065d69a14e6214b490cba7466268bdd6aa36a2b5",
-    "shared": "6fe3de08121fced66d2f5e58f5df8fb7e07b81f9c6039e23c7d19c8fdbe51eaa",
+    "shared": "0eaae2d2a0b8783fd063d0e5d081f34337869d2a24ccdad1f0a1643975283d08",
     "sv": "401a56dd351c5a0a6d92fe47a17309b0f4a8c1bb9f1106610ebdbcf99786f035",
     "th": "906af1acf492e82a7b6b0557796fafe5a441788b11c5ac21409faaad664a529a",
     "tr": "d7cfbfdbe762da7402f3ca618f611d56ca71e80eb6f4a834052bee7d94c39d0c",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Verified playlist destinations: October Spotify and Deezer IDs replaced; inaccessible Deezer profile buttons removed; direct playlist links retained",
+  "review_reason": "Descriptive app and studio snippets and guide summaries; MPR landing pages clearly named after the public app",
   "schema": 1
 }
