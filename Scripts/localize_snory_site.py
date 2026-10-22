@@ -7,6 +7,9 @@ import argparse,json,re,concurrent.futures,hashlib
 from pathlib import Path
 from lxml import html,etree
 import localize_creator_hub as hub
+from site_ecosystem_links import physical_destination
+from site_snory_metadata import normalize as normalize_app_metadata
+from refresh_snory_language_portal import main as refresh_language_portal
 ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/'data/snory-localization'
 T=json.loads((DATA/'templates.json').read_text());KINDS=['','support/','privacy/','about/']
 BASE='https://recordpicker.app/snory-teller/'
@@ -55,7 +58,7 @@ def generate():
      a.set('href','/'+hub.prefix(locale)+'snory-teller-guide/')
     elif href.split('#')[0] in ['/apps/','/fr/apps/']:
      _,mark,fragment=href.partition('#');a.set('href','/'+hub.prefix(locale)+'apps/'+(mark+fragment if mark else ''))
-    elif href in ['/physical/about/','/physical/fr/about/']:a.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
+    elif href in ['/physical/about/','/physical/fr/about/']:a.set('href',physical_destination(locale))
     elif href in ['/','/fr/']:
      rp={'ar-SA':'ar','de-DE':'de','nl-NL':'nl','no':'nb','fr-FR':'fr','en-US':''}.get(locale,locale.lower());dest='/'+rp+'/' if rp else '/'
      if not (ROOT/dest.lstrip('/')/'index.html').is_file():dest='/'+lang+'/' if (ROOT/lang/'index.html').is_file() else '/'
@@ -66,13 +69,16 @@ def generate():
    for other,oname in zip(hub.LOCALES,hub.NAMES):
     a=etree.SubElement(options,'a',href='/snory-teller/'+other+'/'+kind,lang=other,dir='auto');a.text=oname
     if other==locale:a.set('aria-current','page')
-   target=ROOT/'snory-teller'/locale/kind/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode')+'\n')
+   markup='<!doctype html>\n'+html.tostring(d,encoding='unicode')+'\n'
+   if kind=='':markup=normalize_app_metadata(markup)
+   target=ROOT/'snory-teller'/locale/kind/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(markup)
  ns='http://www.sitemaps.org/schemas/sitemap/0.9';r=etree.Element('{'+ns+'}urlset',nsmap={None:ns})
- for u in urls:
+ for u in [BASE]+urls:
   n=etree.SubElement(r,'{'+ns+'}url');etree.SubElement(n,'{'+ns+'}loc').text=u
  (ROOT/'snory-teller/sitemap.xml').write_bytes(etree.tostring(r,encoding='UTF-8',xml_declaration=True,pretty_print=True))
  (DATA/'manifest.json').write_text(json.dumps({'locales':hub.LOCALES,'pages':urls,'translation':'Authored French and English; other languages machine translated, native review pending.'},ensure_ascii=False,indent=2)+'\n')
  print('Generated',len(urls),'Snory Teller pages')
+ refresh_language_portal()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--refresh',action='store_true');a=p.parse_args()
  if a.refresh:refresh()

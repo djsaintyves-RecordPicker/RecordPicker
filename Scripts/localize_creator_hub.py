@@ -10,6 +10,7 @@ from urllib.request import urlopen
 from lxml import html, etree
 from site_campaign_links import normalize as normalize_campaign_links
 from site_social_identity import normalize as normalize_social_identity
+from site_ecosystem_links import normalize as normalize_ecosystem_links, physical_destination
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/creator-hub'
 LOCALES='ar-SA bn-BD ca cs da de-DE el en-AU en-CA en-GB en-US es-ES es-MX fi fr-CA fr-FR gu-IN he hi hr hu id it ja kn-IN ko ml-IN mr-IN ms nl-NL no or-IN pa-IN pl pt-BR pt-PT ro ru sk sl-SI sv ta-IN te-IN th tr uk ur-PK vi zh-Hans zh-Hant'.split()
@@ -185,8 +186,8 @@ def generate(templates):
    localehash=hashlib.sha256((ROOT/'apps/locale.js').read_bytes()).hexdigest()[:12]
    language_script=etree.Element('script',src='/apps/locale.js?v='+localehash)
    head.insert(2,language_script)
-   for primary in doc.xpath('//*[@id="physical-routine"]//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]|//header//a[starts-with(@href,"https://my-physical-routine.mdvnc9v49c.chatgpt.site/")]'):
-    primary.set('href','https://my-physical-routine.mdvnc9v49c.chatgpt.site/'+('' if locale=='fr-FR' else locale.lower()+'/'))
+   for primary in doc.xpath('//*[@id="physical-routine"]//a[not(contains(@href,"apps.apple.com"))]'):
+    primary.set('href',physical_destination(locale))
    for script in doc.xpath('//script[@type="application/ld+json"]'):
     data=json.loads(script.text)
     def fix(value):
@@ -202,7 +203,7 @@ def generate(templates):
       for item in value:fix(item)
     fix(data);script.text=json.dumps(data,ensure_ascii=False)
    path=ROOT/(prefix(locale)+ROUTES[kind]+'index.html');path.parent.mkdir(parents=True,exist_ok=True)
-   path.write_text(normalize_social_identity(normalize_campaign_links('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'), kind))
+   path.write_text(normalize_ecosystem_links(normalize_social_identity(normalize_campaign_links('<!doctype html>\n'+html.tostring(doc,encoding='unicode',method='html')+'\n'), kind),locale))
  manifest={'locales':LOCALES,'pages':[url(l,k) for l in LOCALES for k in ROUTES],'translation':'Google Translate machine translation; authored French and English retained; human review pending for additional languages.'}
  (DATA/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
  for filename in ('sitemap.xml','sitemap-media.xml'):

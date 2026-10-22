@@ -77,6 +77,9 @@ def pages():
     feature_pages = json.loads((ROOT/'data/feature-overview-2026-10-22.json').read_text())
     for relative in feature_pages['pages']:
         yield ROOT/relative, 'features'
+    mac_pages = json.loads((ROOT/'data/mac-search-metadata-2026-10-22.json').read_text())
+    for relative in mac_pages['pages']:
+        yield ROOT/relative, 'features'
 
 def main():
     parser = argparse.ArgumentParser()

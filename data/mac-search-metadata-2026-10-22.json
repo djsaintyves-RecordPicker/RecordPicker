@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "ar/mac-app/index.html",
+    "ca/mac-app/index.html",
+    "da/mac-app/index.html",
+    "de/mac-app/index.html",
+    "el/mac-app/index.html",
+    "en-au/mac-app/index.html",
+    "en-ca/mac-app/index.html",
+    "en-gb/mac-app/index.html",
+    "en-us/mac-app/index.html",
+    "es-es/mac-app/index.html",
+    "es-mx/mac-app/index.html",
+    "fi/mac-app/index.html",
+    "fr/mac-app/index.html",
+    "fr-ca/mac-app/index.html",
+    "he/mac-app/index.html",
+    "hi/mac-app/index.html",
+    "id/mac-app/index.html",
+    "it/mac-app/index.html",
+    "ja/mac-app/index.html",
+    "ko/mac-app/index.html",
+    "nb/mac-app/index.html",
+    "nl/mac-app/index.html",
+    "pl/mac-app/index.html",
+    "pt-br/mac-app/index.html",
+    "pt-pt/mac-app/index.html",
+    "ru/mac-app/index.html",
+    "sv/mac-app/index.html",
+    "th/mac-app/index.html",
+    "tr/mac-app/index.html",
+    "vi/mac-app/index.html",
+    "mac-app/index.html",
+    "zh-hans/mac-app/index.html",
+    "zh-hant/mac-app/index.html"
+  ],
+  "preserved": [
+    "visible body",
+    "canonical and hreflang",
+    "Mac App Store platform parameter and campaign attribution"
+  ]
+}
