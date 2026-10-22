@@ -52,6 +52,7 @@ for relative in PAGES+GUIDES:
  t=re.sub(r'<a\b[^>]*>',store_attrs,t)
  if relative in PAGES:
   if '/apps/measurement.js' not in t:t=t.replace('</head>','<script defer src="/apps/measurement.js?v=20261022-store-paths"></script></head>',1)
+  t=re.sub(r'(<meta http-equiv="Content-Security-Policy" content=")([^"]*)(")',lambda m:m.group(1)+unescape(m.group(2))+m.group(3),t)
   # Restrict external requests to the existing EU analytics service and its collection endpoint.
   t=t.replace("script-src 'self' 'unsafe-inline';", "script-src 'self' 'unsafe-inline' https://cloud.umami.is;")
   t=t.replace("connect-src 'none';", "connect-src 'self' https://cloud.umami.is https://gateway.umami.is;")
