@@ -100,6 +100,18 @@
 }
 
 @media(prefers-reduced-motion:no-preference) {
- .studio-shadow-study .intro-arriving .studio-brand { animation:studio-store-arrival 800ms cubic-bezier(.2,.75,.25,1) backwards; }
- .studio-shadow-study .intro-arriving .intro { animation:studio-store-arrival 700ms cubic-bezier(.2,.75,.25,1) 420ms backwards; }
+
+ .studio-shadow-study .intro-arriving .intro { animation:studio-store-arrival 700ms cubic-bezier(.2,.75,.25,1) 950ms backwards; }
+}
+
+/* Preserve the exact official wordmark while revealing its three components. */
+.studio-shadow-study .studio-brand-composition { display:block; position:relative; width:100%; aspect-ratio:1846 / 763; }
+.studio-shadow-study .studio-brand-composition .brand-piece { position:absolute; inset:0; width:100%; height:100%; }
+.studio-shadow-study .brand-piece-symbol { clip-path:inset(0 68% 0 0); }
+.studio-shadow-study .brand-piece-name { clip-path:inset(0 0 45% 32%); }
+.studio-shadow-study .brand-piece-studio { clip-path:inset(55% 0 0 32%); }
+@media(prefers-reduced-motion:no-preference) {
+ .studio-shadow-study .intro-arriving .brand-piece { animation:studio-store-arrival 650ms cubic-bezier(.2,.75,.25,1) backwards; }
+ .studio-shadow-study .intro-arriving .brand-piece-name { animation-delay:300ms; }
+ .studio-shadow-study .intro-arriving .brand-piece-studio { animation-delay:600ms; }
 }
