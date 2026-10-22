@@ -33,7 +33,7 @@ for p in root.rglob('apps/index.html'):
    elif 'store-microsoftstore' in cls:
     etree.SubElement(label,'strong').text='Microsoft Store';etree.SubElement(label,'small').text='Windows'
    else:
-    etree.SubElement(label,'strong').text='Android';etree.SubElement(label,'small').text='Bêta privée' if fr else ('Private beta' if en else oldlabel)
+    etree.SubElement(label,'strong').text='Android';etree.SubElement(label,'small').text='Bêta privée' if fr else ('Private beta' if en else ('ベータ版' if lang.startswith('ja') else ('베타' if lang.startswith('ko') else ('测试版' if lang.startswith('zh') else 'Beta'))))
    if 'store-microsoftstore' in cls or 'store-android-beta' in cls:
     for img in a.findall('img'):img.set('class','store-logo store-logo-native')
    grid.append(a)
