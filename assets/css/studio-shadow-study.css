@@ -1,0 +1,35 @@
+/* One-page study: light from upper left, borderless surfaces and cast shadows. */
+.studio-shadow-study {
+ --study-shadow: 2px 3px 4px #3427130b, 8px 12px 18px -10px #34271338;
+}
+.studio-shadow-study .project-card,
+.studio-shadow-study .playlist-cover,
+.studio-shadow-study .community-grid article {
+ border:0; background:#faf9f4; box-shadow:var(--study-shadow);
+}
+.studio-shadow-study .project-card#physical-routine,
+.studio-shadow-study .project-card#snory-teller { border:0; }
+.studio-shadow-study .music .playlist-cover { background:transparent; box-shadow:none; }
+.studio-shadow-study .playlist-art {
+ border:0; border-radius:8px;
+ box-shadow:2px 3px 3px #30231226, 9px 12px 13px -5px #30231252;
+}
+.studio-shadow-study .project-card-head .app-icon {
+ box-shadow:1px 2px 2px #30231218, 5px 7px 8px -3px #30231245;
+}
+.studio-shadow-study .project-card-head h2 { color:var(--app-accent,var(--suite-ink)); }
+.studio-shadow-study #physical-routine .project-card-head h2 { color:#12556c; }
+.studio-shadow-study .hub-menu-group > summary,
+.studio-shadow-study .language-nav select {
+ border-color:transparent; box-shadow:inset 0 1px 0 #ffffffc0,2px 4px 7px #34271316;
+}
+.studio-shadow-study .project-card .project-store-grid > a,
+.studio-shadow-study .playlist-actions a {
+ border-color:transparent;
+ box-shadow:inset 0 1px 0 #ffffff65,1px 2px 2px #30231216,4px 6px 8px -3px #30231238;
+}
+.studio-shadow-study .project-card .project-store-grid > a:active,
+.studio-shadow-study .playlist-actions a:active { box-shadow:inset 0 2px 4px #00000020; }
+@media(max-width:740px) {
+ .studio-shadow-study { --study-shadow:1px 2px 3px #3427130a,5px 8px 13px -7px #34271335; }
+}
