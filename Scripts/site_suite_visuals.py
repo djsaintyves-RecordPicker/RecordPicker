@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 from site_campaign_links import normalize as campaign_links
 ROOT=Path(__file__).resolve().parents[1]
-STYLE='<link rel="stylesheet" href="/assets/css/studio-suite.css?v=20261022-spacing">'
+STYLE='<link rel="stylesheet" href="/assets/css/studio-suite.css?v=20261022-refined">'
 pages={}
 for path in ROOT.rglob('apps/index.html'):
  if '.git' not in path.parts:pages[path]='suite-studio'

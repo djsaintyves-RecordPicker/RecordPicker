@@ -69,3 +69,45 @@
 .suite-studio #physical-routine a.store-appstore img { filter:brightness(0); }
 .suite-studio .project-card :is(a.store-microsoftstore,a.store-android-beta) { background:transparent; color:var(--suite-ink); border:1px solid var(--suite-rule); border-radius:7px; box-shadow:none; }
 .suite-studio .project-card { scroll-margin-top:120px; }
+
+/* Studio product cards: one hierarchy, one action system across every locale. */
+.suite-studio .project-card { gap:24px; padding:32px; border-radius:16px; }
+.suite-studio .project-card-head { display:grid; grid-template-columns:56px minmax(0,1fr); column-gap:18px; align-items:center; }
+.suite-studio .project-card-head .tag { grid-column:1/-1; margin:0 0 24px; font-size:11px; letter-spacing:.12em; }
+.suite-studio .project-card-head .app-icon { width:56px; height:56px; margin:0; border-radius:12px; }
+.suite-studio .project-card-head h2 { margin:0; font-size:25px; line-height:1.18; font-weight:650; }
+.suite-studio .project-card-body { display:flex; flex-direction:column; gap:14px; }
+.suite-studio .project-card-body > p { margin:0; font-size:17px; line-height:1.65; color:var(--suite-muted); }
+.suite-studio .project-card-body > p:first-child { color:var(--suite-ink); font-size:20px; line-height:1.4; letter-spacing:-.015em; }
+.suite-studio .project-card-body > p:first-child strong { font-weight:600; }
+.suite-studio .project-card-body .availability { order:2; font-size:13px; line-height:1.5; color:var(--suite-muted); }
+.suite-studio .project-update { order:3; border-top:1px solid var(--suite-rule); padding-top:12px; }
+.suite-studio .project-update summary { cursor:pointer; font-size:13px; font-weight:500; color:var(--suite-muted); }
+.suite-studio .project-update .release-note { padding:12px 0 0; margin:0; background:none; color:var(--suite-muted); font-size:14px; line-height:1.65; }
+.suite-studio .project-card-actions { gap:14px; padding-top:4px; }
+.suite-studio .project-store-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+
+.suite-studio .project-card .project-store-grid > a { display:flex; align-items:center; justify-content:flex-start; gap:10px; width:100%; min-height:64px; margin:0; padding:12px 14px; border:1px solid transparent; border-radius:10px; box-shadow:none; text-align:start; font-size:14px; line-height:1.3; }
+.suite-studio .project-card .project-store-grid > a.store-appstore { background:var(--app-accent); color:#fff; }
+.suite-studio #physical-routine .project-store-grid > a.store-appstore { background:#00affe; color:#082631; }
+.suite-studio .project-store-grid .store-logo { width:24px; height:24px; flex-shrink:0; }
+.suite-studio .project-store-grid .store-label { display:flex; flex-direction:column; gap:3px; min-width:0; }
+.suite-studio .project-store-grid strong { font-size:14px; font-weight:600; line-height:1.25; }
+.suite-studio .project-store-grid small { font-size:12px; font-weight:400; line-height:1.35; }
+.suite-studio .project-card .project-store-grid > :is(.store-microsoftstore,.store-android-beta) { background:#f7f6f3; color:var(--suite-ink); border-color:var(--suite-rule); }
+.suite-studio .project-store-grid .store-logo-native { filter:none; }
+.suite-studio .project-card-actions > .project-text-link { display:block; margin:0; padding:0; font-size:14px; line-height:1.6; font-weight:500; }
+.suite-studio .project-card-actions > .press-review-link { font-size:12px; font-weight:400; color:var(--suite-muted); }
+.suite-studio .project-card a:hover { text-decoration:underline; text-underline-offset:4px; }
+.suite-studio .project-store-grid a:hover { text-decoration:none; filter:brightness(.96); }
+@media(max-width:740px) {
+ .suite-studio .project-card { padding:24px; gap:22px; }
+ .suite-studio .project-card-head h2 { font-size:23px; }
+ .suite-studio .project-card-body > p { font-size:16px; }
+ .suite-studio .project-card-body > p:first-child { font-size:19px; }
+ .suite-studio .hub-header { display:flex; flex-direction:column; align-items:stretch; gap:12px; padding:14px 20px; }
+ .suite-studio .hub-header .hub-menu { display:flex; flex-wrap:wrap; gap:6px; margin:0; }
+ .suite-studio .hub-header .language-nav { padding:0; text-align:start; font-size:13px; }
+ .suite-studio .hub-header .language-nav select { max-width:72%; font-size:13px; padding:6px 8px; }
+}
+@media(max-width:740px) { .suite-studio .project-store-grid { grid-template-columns:1fr; } }
