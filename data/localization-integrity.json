@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "US Mac landing text corrected to English and Mac App Store destinations explicitly select platform=mac",
+  "review_reason": "US Mac purchase introduction explicitly distinguishes Free, Light and Pro and removes an incomplete legacy language list",
   "schema": 1
 }
