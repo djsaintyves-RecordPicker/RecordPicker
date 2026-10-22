@@ -4,8 +4,8 @@ import re,copy
 from lxml import html,etree
 from site_campaign_links import normalize as campaigns
 ROOT=Path(__file__).resolve().parents[1]
-STYLE='<link rel="stylesheet" href="/assets/css/suite-product.css?v=20261022-relief">'
-STUDIO='<link rel="stylesheet" href="/assets/css/studio-suite.css?v=20261022-relief-rtl">'
+STYLE='<link rel="stylesheet" href="/assets/css/suite-product.css?v=20261022-tactile">'
+STUDIO='<link rel="stylesheet" href="/assets/css/studio-suite.css?v=20261022-tactile">'
 def body_class(raw,classes):
  def change(m):
   tag=m[0]

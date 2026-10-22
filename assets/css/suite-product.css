@@ -64,3 +64,8 @@
 .suite-record-picker .site-header :is(.nav-toggle,.language-trigger) { min-height:44px; }
 .suite-record-picker .nav-links :is(a,.platform-nav summary) { min-height:44px; display:flex; align-items:center; }
 .suite-record-picker .random-pick-button { min-height:52px; border-radius:14px; padding:13px 22px; background:var(--red); color:#fff; border:1px solid #c91c40; box-shadow:var(--primary-shadow); font-size:15px; font-weight:600; }
+
+/* Raised, precise controls and artwork, without a diffuse decorative glow. */
+.suite-record-picker :is(.brand img,.app-icon) { border-radius:12px; box-shadow:0 1px 2px #3327130c,0 7px 12px -8px #33271365; }
+.suite-record-picker .language-trigger { border-radius:12px; }
+.suite-record-picker :is(.button,.store-link,.random-pick-button):active { box-shadow:inset 0 2px 4px #00000020; }
