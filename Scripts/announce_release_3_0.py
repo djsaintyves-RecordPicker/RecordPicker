@@ -22,6 +22,9 @@ DATE = '2026-10-07'
 
 def main():
     state = json.loads((ROOT / 'data/release-state.json').read_text())
+    if tuple(map(int, json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["version"].split("."))) >= (3, 1):
+        print("Newer verified release preserved; legacy 3.0 generator skipped.")
+        return
     if state['current_release']['version'] in ('3.0', '3.0.1'):
         print('3.0 publication has started; verified availability preserved.')
         return

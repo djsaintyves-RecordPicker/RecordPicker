@@ -13,6 +13,9 @@ ROUTES = ('index.html', 'readme/index.html', 'screenshots/index.html',
           'mac-app/index.html', 'ios-app/index.html', 'windows-app/index.html')
 
 def main():
+    if tuple(map(int, json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["version"].split("."))) >= (3, 1):
+        print("Newer verified release preserved; legacy 3.0 generator skipped.")
+        return
     if json.loads((ROOT / "data/release-state.json").read_text())["current_release"]["version"] == "3.0.1":
         from publish_release_3_0_1 import main as publish_patch
         publish_patch()

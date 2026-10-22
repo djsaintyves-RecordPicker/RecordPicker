@@ -2,11 +2,11 @@
   "schema_version": 1,
   "publication_phase": "full",
   "current_release": {
-    "version": "3.0.1",
+    "version": "3.1.1",
     "platform_versions": {
-      "iphone": "3.0.1",
-      "ipad": "3.0.1",
-      "watch": "3.0.1",
+      "iphone": "3.1.1",
+      "ipad": "3.1.1",
+      "watch": "3.1.1",
       "mac": "3.0.1",
       "windows": "3.0.1"
     },
@@ -20,9 +20,7 @@
     "required_platforms_for_full_release": [
       "iphone",
       "ipad",
-      "watch",
-      "mac",
-      "windows"
+      "watch"
     ]
   },
   "historical_releases": [
@@ -57,7 +55,7 @@
     "screenshot_version": "3.0.1"
   },
   "next_release": {
-    "version": "3.0.1",
+    "version": "3.1.1",
     "platforms": {
       "iphone": "available",
       "ipad": "available",
@@ -98,6 +96,31 @@
       "mac-app/index.html",
       "ios-app/index.html",
       "windows-app/index.html"
-    ]
+    ],
+    "platform_versions": {
+      "iphone": "3.1.1",
+      "ipad": "3.1.1",
+      "watch": "3.1.1",
+      "mac": "3.0.1",
+      "windows": "3.0.1"
+    }
+  },
+  "verified_public_versions": {
+    "checked_at": "2026-10-22",
+    "record_picker": {
+      "ios": "3.1.1",
+      "mac": "3.0.1",
+      "windows": "3.0.1"
+    },
+    "snory_teller": "1.0.2",
+    "my_physical_routine": "1.0.2",
+    "sources": {
+      "ios": "https://apps.apple.com/fr/app/record-picker/id6780422305",
+      "mac": "https://apps.apple.com/fr/app/record-picker/id6780422305?platform=mac",
+      "snory": "https://apps.apple.com/fr/app/snory-teller/id6820177689",
+      "physical": "https://apps.apple.com/fr/app/my-physical-routine/id6820104318"
+    },
+    "windows_note": "Last confirmed public marketing version retained; no newer Windows release confirmed.",
+    "screenshot_note": "Existing screenshots retain their actual 3.0.1 capture provenance."
   }
 }

@@ -247,7 +247,8 @@ def main() -> None:
             if kind == "windows-app/index.html"
             else CURRENT_VERSION
         )
-        if f'<span id="site-footer-version">Record Picker · {footer_version}</span>' not in text:
+        footer_label = f"Record Picker · {footer_version}" if kind in {"mac-app/index.html", "windows-app/index.html", "ios-app/index.html", "watch-app/index.html"} else "Record Picker · iOS " + platform_versions["iphone"] + " · Mac " + platform_versions["mac"] + " · Windows " + platform_versions["windows"]
+        if f'<span id="site-footer-version">{footer_label}</span>' not in text:
             errors.append(f"{relative}: current footer version missing")
         if relative in {
             Path("mac-app/index.html"),

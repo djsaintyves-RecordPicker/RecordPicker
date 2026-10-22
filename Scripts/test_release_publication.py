@@ -63,6 +63,23 @@ def main() -> None:
         state = json.loads(
             (target / "data" / "release-state.json").read_text(encoding="utf-8")
         )
+        if state['current_release']['version'] == '3.1.1':
+            assert state['current_release']['platform_versions'] == {
+                'iphone':'3.1.1', 'ipad':'3.1.1', 'watch':'3.1.1', 'mac':'3.0.1', 'windows':'3.0.1'}
+            from announce_release_2_3_1 import LOCALES as ACTIVE_LOCALES
+            for directory in ACTIVE_LOCALES:
+                for route in state['next_release']['announcement_routes']:
+                    page = (target / directory / route).read_text()
+                    assert 'iPhone · iPad · Apple Watch · 3.1.1 / Mac · Windows · 3.0.1' in page
+                    expected = '3.0.1' if route.startswith(('mac-app/', 'windows-app/')) else '3.1.1'
+                    assert '"softwareVersion":"' + expected + '"' in page
+            before = {p:p.read_bytes() for p in target.rglob('*.html')}
+            before[target/'data/release-state.json'] = (target/'data/release-state.json').read_bytes()
+            for script in ('publish_release_3_0_ios.py', 'announce_release_3_0.py'):
+                run('python3', 'Scripts/' + script, cwd=target)
+            assert all(p.read_bytes() == content for p,content in before.items())
+            print('OK: verified platform versions preserved across all localizations; legacy generators cannot downgrade them')
+            return
         if state['current_release']['version'] == '3.0.1':
             from html import unescape
             from announce_release_2_3_1 import LOCALES as ANNOUNCEMENT_LOCALES
