@@ -18,8 +18,11 @@ class Page(HTMLParser):
   if tag=='script' and self.metadata is not None:self.schemas.append(json.loads(self.metadata));self.metadata=None
 
 def audit():
- manifest=json.loads((ROOT/'data/random-pick-claims-2026-10-22.json').read_text());count=0
- for relative in manifest['pages']:
+ manifest=json.loads((ROOT/'data/random-pick-claims-2026-10-22.json').read_text())
+ support=json.loads((ROOT/'data/support-faq-2026-10-22.json').read_text())
+ count=0
+ for relative in manifest['pages']+support['pages']:
+  page_start=count
   page=Page();page.feed((ROOT/relative).read_text())
   def walk(item):
    nonlocal count
@@ -31,7 +34,9 @@ def audit():
    elif isinstance(item,list):
     for value in item:walk(value)
   for schema in page.schemas:walk(schema)
- assert count==21,count
- print('FAQ: 21 structured answers agree with visible text on seven search pages')
+  if relative in support['pages']:assert count-page_start==support['questionsPerPage'],relative
+ expected=21+len(support['pages'])*support['questionsPerPage']
+ assert count==expected,(count,expected)
+ print(f'FAQ: {count} structured answers agree with visible text, including {len(support["pages"])} support pages')
 
 if __name__=='__main__':audit()
