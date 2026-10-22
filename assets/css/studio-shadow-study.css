@@ -82,3 +82,19 @@
  .studio-shadow-study .community-arriving { animation:studio-store-arrival 650ms cubic-bezier(.2,.75,.25,1) var(--community-delay,0ms) backwards; }
  .studio-shadow-study .community-arriving:focus-within { animation:none; }
 }
+
+/* Pointer elevation: movement is subtle; depth stays visible with reduced motion. */
+@media(hover:hover) and (pointer:fine) {
+ .studio-shadow-study :is(.project-card,.community-grid article) { transition:transform 220ms ease,box-shadow 220ms ease; }
+ .studio-shadow-study :is(.project-card,.community-grid article):hover {
+  box-shadow:3px 6px 8px #34271318,14px 23px 28px -10px #34271366;
+ }
+ .studio-shadow-study :is(.playlist-actions a,.project-card .project-store-grid > a,.hub-menu-group > summary):hover {
+  box-shadow:inset 0 1px 0 #ffffff80,2px 4px 5px #30231220,7px 11px 14px -4px #30231255;
+ }
+ @media(prefers-reduced-motion:no-preference) {
+  .studio-shadow-study :is(.project-card,.community-grid article):hover { transform:translateY(-4px); }
+  .studio-shadow-study :is(.playlist-actions a,.project-card .project-store-grid > a,.hub-menu-group > summary):hover { transform:translateY(-2px); }
+  .studio-shadow-study :is(.playlist-actions a,.project-card .project-store-grid > a,.hub-menu-group > summary):active { transform:translateY(1px) scale(.98); }
+ }
+}
