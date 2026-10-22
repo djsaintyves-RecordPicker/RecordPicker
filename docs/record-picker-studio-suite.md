@@ -1,0 +1,45 @@
+# Record Picker Studio — charte de suite
+
+Décision d’Yves, 22 octobre 2026.
+
+## Direction
+
+Les quatre apps et leurs sites doivent être reconnaissables comme une même suite. Meal Picker et Record Picker sont les références graphiques ; les autres s’alignent sur leurs composants et leur niveau de finition. Ne pas dégrader MP ou RP pour les ramener vers les autres.
+
+## Identités conservées
+
+- Record Picker : rouge.
+- Meal Picker : British Racing Green #004225, papier chaud et neutres culinaires existants.
+- My Physical Routine : bleu et rose (Yves l’a désignée « MPS » dans ce message ; interprétation : l’app d’exercice de l’écosystème).
+- Snory Teller : ses deux bleus.
+- Record Picker Studio : socle neutre commun ; les accents des quatre apps servent à identifier chaque produit, pas à recolorer toute l’interface en rouge.
+
+Les valeurs existantes des palettes sont conservées ; aucun nouveau bleu ou rose arbitraire. Les couleurs fonctionnelles d’état restent distinctes des couleurs de marque, avec un libellé ou un symbole, jamais la couleur seule.
+
+## Grammaire commune
+
+- Typographie système, hiérarchie de titres cohérente et lisible, tailles adaptées à la plateforme et aux préférences d’accessibilité.
+- Même rythme d’espacement, alignements précis, largeurs de lecture maîtrisées ; éviter les titres démesurés et les vides inutiles.
+- Composants apparentés : navigation, recherche, filtres, cartes, listes, boutons, réglages, états vides, confirmations et accès à l’aide.
+- Surfaces sobres, filets fins, relief contenu. Pas d’accumulation de pilules, de dégradés décoratifs, d’effets de verre ou d’ombres flottantes.
+- Icônes et commandes natives cohérentes ; les contrôles et cibles tactiles restent propres à iOS/macOS. Cohérence ne signifie pas reproduire une interface mobile sur ordinateur.
+- Une action principale nette par contexte, actions secondaires plus discrètes ; pas de slogans ou d’urgence artificielle.
+- Captures et démonstrations authentiques, légendes honnêtes sur langue et version ; aucune interface générée présentée comme réelle.
+
+## Sites et pages produit
+
+Même grille, même typographie et mêmes conventions de boutons, de captures, de pied de page et de liens Studio ↔ app. Chaque page produit utilise sa palette, sans perdre l’identité commune du Studio. Les pages RP restent rouges ; les pages MP vertes, MPR bleues/roses, ST dans leurs deux bleus.
+
+Conserver le contenu utile, les canoniques, hreflang, liens de campagne et événements de mesure. Contrôler les mises en page téléphone/ordinateur, contrastes, navigation clavier et grands caractères. Ne pas uniformiser aveuglément les styles des sous-sites : vérifier leurs parcours et composants avant d’appliquer le socle.
+
+## Ordre d’alignement
+
+1. Formaliser les composants MP/RP existants et la présentation des pages RP/RPS en cours.
+2. Aligner les surfaces web MPR/ST et les pages MP sur cette grammaire, en gardant leurs palettes.
+3. Aligner les composants natifs MPR/ST sur les modèles MP/RP, écran par écran, après audit de leurs sources et tests.
+
+Cette charte fixe une direction. Elle ne prétend pas que les quatre interfaces natives ont déjà été refaites.
+
+## Bundle
+
+Rappel demandé dès validation Apple de Meal Picker : discuter d’une offre regroupant les apps. Vérifier alors les mécanismes réellement disponibles, l’éligibilité, les achats intégrés et les tarifs, avant de proposer une formule. Aucun prix, bundle, abonnement ou engagement commercial n’est autorisé par ce rappel.

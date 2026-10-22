@@ -1,0 +1,71 @@
+/* Shared Record Picker Studio grammar; each product owns its accent palette. */
+.rps-suite { --suite-paper:#fcfbf8; --suite-surface:#f2f0eb; --suite-ink:#242321; --suite-muted:#62605c; --suite-rule:#dcd8d0; --suite-accent:#b62442; --suite-radius:8px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+.rps-suite :is(h1,h2,h3) { text-wrap:pretty; }
+.rps-suite :is(button,.button,.cta,.store-cta) { box-shadow:none; }
+.rps-suite :is(a,button,input,summary):focus-visible { outline:3px solid var(--suite-accent); outline-offset:4px; }
+.rps-suite :is(.button,.store-cta) { border-radius:7px; min-height:44px; font-weight:650; }
+.rps-suite footer { font-size:.83rem; line-height:1.65; }
+.suite-studio { background:var(--suite-paper); color:var(--suite-ink); }
+.suite-studio > :is(header,main,footer) { max-width:1120px; }
+.suite-studio .hub-header { background:var(--suite-paper); backdrop-filter:none; }
+.suite-studio .studio-brand { font-size:clamp(2.4rem,5vw,3.6rem); line-height:1.08; letter-spacing:-.04em; }
+.suite-studio .intro { max-width:66ch; color:var(--suite-muted); font-size:1.15rem; line-height:1.75; }
+.suite-studio .project-card { border:1px solid var(--suite-rule); border-top:3px solid var(--app-accent,var(--suite-rule)); border-radius:var(--suite-radius); background:#fffefa; box-shadow:none; padding:28px; }
+.suite-studio #record-picker { --app-accent:#d81f45; }
+.suite-studio #meal-picker { --app-accent:#004225; }
+.suite-studio #physical-routine { --app-accent:#00affe; --app-secondary:#fd236d; }
+.suite-studio #snory-teller { --app-accent:#0067d6; --app-secondary:#9bdbff; }
+.suite-studio .project-card h2 { font-size:1.55rem; line-height:1.2; letter-spacing:-.025em; }
+.suite-studio .project-card > p { color:var(--suite-muted); line-height:1.75; }
+.suite-studio .project-card :is(.platforms a,a.button) { background:var(--app-accent,#242321); color:white; border-radius:7px; box-shadow:none; }
+.suite-studio .project-card :is(.app-preview,.presentation-shot) { border-radius:7px; box-shadow:none; }
+.suite-studio :is(.music,.ecosystem,.guide) { border:1px solid var(--suite-rule); background:var(--suite-surface); border-radius:var(--suite-radius); box-shadow:none; }
+.suite-studio .guide { padding:28px; }
+.suite-studio .project-card#physical-routine { border-bottom:2px solid var(--app-secondary); }
+.suite-studio .project-card#snory-teller { border-bottom:2px solid var(--app-secondary); }
+.suite-physical { --suite-accent:#00affe; --suite-secondary:#fd236d; background:var(--suite-paper); color:#182936; }
+.suite-physical :is(header,main,footer) { max-width:1120px; }
+.suite-physical main { padding-block:48px; }
+.suite-physical h1 { font-size:clamp(2.4rem,4.8vw,3.6rem); letter-spacing:-.04em; line-height:1.08; max-width:22ch; }
+.suite-physical h2 { color:#182936; font-size:1.5rem; letter-spacing:-.02em; }
+.suite-physical section { padding:28px; margin:32px 0; border:1px solid var(--suite-rule); border-top:2px solid #00affe; border-radius:var(--suite-radius); background:#fffefa; box-shadow:none; }
+.suite-physical section > p { max-width:76ch; }
+.suite-physical a { color:#153d56; text-decoration-color:var(--suite-secondary); }
+.suite-physical .brand { border-bottom:2px solid var(--suite-secondary); }
+.suite-physical .release-screenshots img { border-radius:7px; }
+.suite-snory { --suite-accent:#9bdbff; --suite-paper:#071a31; --suite-surface:#0d2341; --suite-ink:#e5f0fb; --suite-muted:#bdd0e2; --suite-rule:#365572; background:var(--suite-paper); background-image:none; color:var(--suite-ink); }
+.suite-snory :is(header,main,footer) { max-width:1120px; }
+.suite-snory h1 { font-size:clamp(2.5rem,4.5vw,3.65rem); line-height:1.08; letter-spacing:-.04em; }
+.suite-snory .hero { gap:48px; padding-block:40px 64px; }
+.suite-snory .orbit { display:none; }
+.suite-snory :is(.phone-shell,.watch-shell) { transform:none; box-shadow:none; }
+.suite-snory .device-scene { min-height:530px; }
+.suite-snory :is(.steps section,.privacy-card,.release-card,.offer) { border:1px solid var(--suite-rule); border-radius:var(--suite-radius); background:var(--suite-surface); box-shadow:none; }
+.suite-snory .feature { margin-block:64px; }
+.suite-snory .feature h2,.suite-snory .privacy-card h2 { font-size:clamp(1.6rem,2.7vw,2.15rem); }
+.suite-snory .store-cta { background:#0067d6; color:white; }
+.suite-snory .status { border-radius:7px; background:transparent; box-shadow:none; }
+.suite-snory details { border-color:var(--suite-rule); }
+@media(max-width:740px) {
+ .rps-suite > :is(header,main,footer) { padding-inline:20px; }
+ .suite-studio .project-card,.suite-studio .guide,.suite-physical section { padding:22px; }
+ .suite-studio .grid { grid-template-columns:1fr; }
+ .suite-snory .hero { gap:24px; padding-block:28px 40px; }
+ .suite-snory .device-scene { min-height:490px; }
+ .suite-physical main { padding-block:32px; }
+}
+
+.suite-studio,.suite-physical { color-scheme:light; }
+.suite-studio #physical-routine :is(.platforms a,a.button) { color:#08080b; }
+.suite-product-masthead { display:grid; grid-template-columns:1.2fr 1fr; gap:48px; align-items:center; margin-bottom:48px; padding-bottom:40px; border-bottom:1px solid var(--suite-rule); }
+.suite-product-masthead h1 { margin:0 0 24px; }
+.suite-product-masthead p { color:var(--suite-muted); font-size:1.15rem; line-height:1.65; }
+.suite-product-masthead figure { margin:0; padding:16px; background:var(--suite-surface); border:1px solid var(--suite-rule); border-radius:8px; text-align:center; }
+.suite-product-masthead img { display:block; max-width:100%; width:auto; height:390px; object-fit:contain; margin:auto; }
+.suite-physical .suite-product-cta { display:inline-flex; align-items:center; justify-content:center; padding:12px 20px; margin-top:16px; background:#00affe; color:#08080b; text-decoration:none; border-bottom:2px solid #fd236d; }
+@media(max-width:740px) { .suite-product-masthead { grid-template-columns:1fr; gap:28px; } .suite-product-masthead img { height:360px; } }
+.suite-studio .project-card a.store-appstore { background:var(--app-accent,#242321); color:white; border-radius:7px; box-shadow:none; }
+.suite-studio #physical-routine a.store-appstore { color:#08080b; }
+.suite-studio #physical-routine a.store-appstore img { filter:brightness(0); }
+.suite-studio .project-card :is(a.store-microsoftstore,a.store-android-beta) { background:transparent; color:var(--suite-ink); border:1px solid var(--suite-rule); border-radius:7px; box-shadow:none; }
+.suite-studio .project-card { scroll-margin-top:120px; }
