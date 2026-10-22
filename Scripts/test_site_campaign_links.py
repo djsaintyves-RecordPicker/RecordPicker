@@ -19,7 +19,13 @@ class CampaignLinksTests(unittest.TestCase):
         self.assertEqual(normalize(result), result)
         self.assertIn('ct=ST_Website', result)
         self.assertIn('"url":"https://apps.apple.com/app/id6780422305"', result)
+        self.assertEqual(result.count('/apps/campaign-links.js'), 0)
+
+    def test_executable_pages_keep_campaign_runtime(self):
+        page = '<html><head><script src="/site.js"></script></head><body></body></html>'
+        result = normalize(page)
         self.assertEqual(result.count('/apps/campaign-links.js'), 1)
+        self.assertEqual(normalize(result), result)
 
     def test_routine_and_windows(self):
         self.assertIn('ct=MPR_Website', decorate('https://apps.apple.com/app/id6820104318'))
