@@ -1,0 +1,335 @@
+{
+  "pages": [
+    {
+      "page": "ar/index.html",
+      "guide_locale": "ar-SA",
+      "links": [
+        "/ar-sa/record-picker/guides/import-discogs/",
+        "/ar-sa/record-picker/guides/backup/",
+        "/ar-sa/record-picker/guides/choose/",
+        "/ar-sa/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "ca/index.html",
+      "guide_locale": "ca",
+      "links": [
+        "/ca/record-picker/guides/import-discogs/",
+        "/ca/record-picker/guides/backup/",
+        "/ca/record-picker/guides/choose/",
+        "/ca/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "da/index.html",
+      "guide_locale": "da",
+      "links": [
+        "/da/record-picker/guides/import-discogs/",
+        "/da/record-picker/guides/backup/",
+        "/da/record-picker/guides/choose/",
+        "/da/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "de/index.html",
+      "guide_locale": "de-DE",
+      "links": [
+        "/de-de/record-picker/guides/import-discogs/",
+        "/de-de/record-picker/guides/backup/",
+        "/de-de/record-picker/guides/choose/",
+        "/de-de/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "el/index.html",
+      "guide_locale": "el",
+      "links": [
+        "/el/record-picker/guides/import-discogs/",
+        "/el/record-picker/guides/backup/",
+        "/el/record-picker/guides/choose/",
+        "/el/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "en-au/index.html",
+      "guide_locale": "en-AU",
+      "links": [
+        "/en-au/record-picker/guides/import-discogs/",
+        "/en-au/record-picker/guides/backup/",
+        "/en-au/record-picker/guides/choose/",
+        "/en-au/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "en-ca/index.html",
+      "guide_locale": "en-CA",
+      "links": [
+        "/en-ca/record-picker/guides/import-discogs/",
+        "/en-ca/record-picker/guides/backup/",
+        "/en-ca/record-picker/guides/choose/",
+        "/en-ca/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "en-gb/index.html",
+      "guide_locale": "en-GB",
+      "links": [
+        "/en-gb/record-picker/guides/import-discogs/",
+        "/en-gb/record-picker/guides/backup/",
+        "/en-gb/record-picker/guides/choose/",
+        "/en-gb/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "en-us/index.html",
+      "guide_locale": "en-US",
+      "links": [
+        "/record-picker/guides/import-discogs/",
+        "/record-picker/guides/backup/",
+        "/record-picker/guides/choose/",
+        "/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "es-es/index.html",
+      "guide_locale": "es-ES",
+      "links": [
+        "/es-es/record-picker/guides/import-discogs/",
+        "/es-es/record-picker/guides/backup/",
+        "/es-es/record-picker/guides/choose/",
+        "/es-es/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "es-mx/index.html",
+      "guide_locale": "es-MX",
+      "links": [
+        "/es-mx/record-picker/guides/import-discogs/",
+        "/es-mx/record-picker/guides/backup/",
+        "/es-mx/record-picker/guides/choose/",
+        "/es-mx/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "fi/index.html",
+      "guide_locale": "fi",
+      "links": [
+        "/fi/record-picker/guides/import-discogs/",
+        "/fi/record-picker/guides/backup/",
+        "/fi/record-picker/guides/choose/",
+        "/fi/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "fr/index.html",
+      "guide_locale": "fr-FR",
+      "links": [
+        "/fr/record-picker/guides/import-discogs/",
+        "/fr/record-picker/guides/backup/",
+        "/fr/record-picker/guides/choose/",
+        "/fr/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "fr-ca/index.html",
+      "guide_locale": "fr-CA",
+      "links": [
+        "/fr-ca/record-picker/guides/import-discogs/",
+        "/fr-ca/record-picker/guides/backup/",
+        "/fr-ca/record-picker/guides/choose/",
+        "/fr-ca/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "he/index.html",
+      "guide_locale": "he",
+      "links": [
+        "/he/record-picker/guides/import-discogs/",
+        "/he/record-picker/guides/backup/",
+        "/he/record-picker/guides/choose/",
+        "/he/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "hi/index.html",
+      "guide_locale": "hi",
+      "links": [
+        "/hi/record-picker/guides/import-discogs/",
+        "/hi/record-picker/guides/backup/",
+        "/hi/record-picker/guides/choose/",
+        "/hi/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "id/index.html",
+      "guide_locale": "id",
+      "links": [
+        "/id/record-picker/guides/import-discogs/",
+        "/id/record-picker/guides/backup/",
+        "/id/record-picker/guides/choose/",
+        "/id/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "it/index.html",
+      "guide_locale": "it",
+      "links": [
+        "/it/record-picker/guides/import-discogs/",
+        "/it/record-picker/guides/backup/",
+        "/it/record-picker/guides/choose/",
+        "/it/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "ja/index.html",
+      "guide_locale": "ja",
+      "links": [
+        "/ja/record-picker/guides/import-discogs/",
+        "/ja/record-picker/guides/backup/",
+        "/ja/record-picker/guides/choose/",
+        "/ja/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "ko/index.html",
+      "guide_locale": "ko",
+      "links": [
+        "/ko/record-picker/guides/import-discogs/",
+        "/ko/record-picker/guides/backup/",
+        "/ko/record-picker/guides/choose/",
+        "/ko/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "nb/index.html",
+      "guide_locale": "no",
+      "links": [
+        "/no/record-picker/guides/import-discogs/",
+        "/no/record-picker/guides/backup/",
+        "/no/record-picker/guides/choose/",
+        "/no/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "nl/index.html",
+      "guide_locale": "nl-NL",
+      "links": [
+        "/nl-nl/record-picker/guides/import-discogs/",
+        "/nl-nl/record-picker/guides/backup/",
+        "/nl-nl/record-picker/guides/choose/",
+        "/nl-nl/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "pl/index.html",
+      "guide_locale": "pl",
+      "links": [
+        "/pl/record-picker/guides/import-discogs/",
+        "/pl/record-picker/guides/backup/",
+        "/pl/record-picker/guides/choose/",
+        "/pl/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "pt-br/index.html",
+      "guide_locale": "pt-BR",
+      "links": [
+        "/pt-br/record-picker/guides/import-discogs/",
+        "/pt-br/record-picker/guides/backup/",
+        "/pt-br/record-picker/guides/choose/",
+        "/pt-br/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "pt-pt/index.html",
+      "guide_locale": "pt-PT",
+      "links": [
+        "/pt-pt/record-picker/guides/import-discogs/",
+        "/pt-pt/record-picker/guides/backup/",
+        "/pt-pt/record-picker/guides/choose/",
+        "/pt-pt/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "ru/index.html",
+      "guide_locale": "ru",
+      "links": [
+        "/ru/record-picker/guides/import-discogs/",
+        "/ru/record-picker/guides/backup/",
+        "/ru/record-picker/guides/choose/",
+        "/ru/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "sv/index.html",
+      "guide_locale": "sv",
+      "links": [
+        "/sv/record-picker/guides/import-discogs/",
+        "/sv/record-picker/guides/backup/",
+        "/sv/record-picker/guides/choose/",
+        "/sv/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "th/index.html",
+      "guide_locale": "th",
+      "links": [
+        "/th/record-picker/guides/import-discogs/",
+        "/th/record-picker/guides/backup/",
+        "/th/record-picker/guides/choose/",
+        "/th/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "tr/index.html",
+      "guide_locale": "tr",
+      "links": [
+        "/tr/record-picker/guides/import-discogs/",
+        "/tr/record-picker/guides/backup/",
+        "/tr/record-picker/guides/choose/",
+        "/tr/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "vi/index.html",
+      "guide_locale": "vi",
+      "links": [
+        "/vi/record-picker/guides/import-discogs/",
+        "/vi/record-picker/guides/backup/",
+        "/vi/record-picker/guides/choose/",
+        "/vi/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "index.html",
+      "guide_locale": "en-US",
+      "links": [
+        "/record-picker/guides/import-discogs/",
+        "/record-picker/guides/backup/",
+        "/record-picker/guides/choose/",
+        "/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "zh-hans/index.html",
+      "guide_locale": "zh-Hans",
+      "links": [
+        "/zh-hans/record-picker/guides/import-discogs/",
+        "/zh-hans/record-picker/guides/backup/",
+        "/zh-hans/record-picker/guides/choose/",
+        "/zh-hans/record-picker/guides/rediscover/"
+      ]
+    },
+    {
+      "page": "zh-hant/index.html",
+      "guide_locale": "zh-Hant",
+      "links": [
+        "/zh-hant/record-picker/guides/import-discogs/",
+        "/zh-hant/record-picker/guides/backup/",
+        "/zh-hant/record-picker/guides/choose/",
+        "/zh-hant/record-picker/guides/rediscover/"
+      ]
+    }
+  ],
+  "purpose": "Give every localized Record Picker homepage direct crawlable links to its four localized practical guides; preserve the explicit language selected by the visitor."
+}
