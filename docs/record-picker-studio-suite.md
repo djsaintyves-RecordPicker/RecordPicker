@@ -1,6 +1,6 @@
 # Record Picker Studio — charte de suite
 
-Décision d’Yves, 22 octobre 2026.
+Référence visuelle — 22 octobre 2026.
 
 ## Direction
 
@@ -10,7 +10,7 @@ Les quatre apps et leurs sites doivent être reconnaissables comme une même sui
 
 - Record Picker : rouge.
 - Meal Picker : British Racing Green #004225, papier chaud et neutres culinaires existants.
-- My Physical Routine : bleu et rose (Yves l’a désignée « MPS » dans ce message ; interprétation : l’app d’exercice de l’écosystème).
+- My Physical Routine : bleu et rose.
 - Snory Teller : ses deux bleus.
 - Record Picker Studio : socle neutre commun ; les accents des quatre apps servent à identifier chaque produit, pas à recolorer toute l’interface en rouge.
 
@@ -40,6 +40,3 @@ Conserver le contenu utile, les canoniques, hreflang, liens de campagne et évé
 
 Cette charte fixe une direction. Elle ne prétend pas que les quatre interfaces natives ont déjà été refaites.
 
-## Bundle
-
-Rappel demandé dès validation Apple de Meal Picker : discuter d’une offre regroupant les apps. Vérifier alors les mécanismes réellement disponibles, l’éligibilité, les achats intégrés et les tarifs, avant de proposer une formule. Aucun prix, bundle, abonnement ou engagement commercial n’est autorisé par ce rappel.
