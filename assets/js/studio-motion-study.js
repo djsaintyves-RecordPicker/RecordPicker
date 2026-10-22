@@ -22,8 +22,7 @@
    storeObserver.unobserve(entry.target);
   }
  }, {threshold:.85});
- const stores = root.querySelector('#record-picker .project-store-grid');
- if (stores) storeObserver.observe(stores);
+ root.querySelectorAll('#record-picker .project-store-grid,.music .playlist-actions').forEach(group => storeObserver.observe(group));
  reduced.addEventListener('change', event => {
   if (event.matches) {
    observer.disconnect();

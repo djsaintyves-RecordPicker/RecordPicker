@@ -65,13 +65,13 @@
 }
 
 @media(prefers-reduced-motion:no-preference) {
- .studio-shadow-study #record-picker .stores-arriving > a {
+ .studio-shadow-study .stores-arriving > a {
   animation:studio-store-arrival 600ms cubic-bezier(.2,.75,.25,1) backwards;
  }
- .studio-shadow-study #record-picker .stores-arriving > a:nth-child(2) { animation-delay:180ms; }
- .studio-shadow-study #record-picker .stores-arriving > a:nth-child(3) { animation-delay:360ms; }
- .studio-shadow-study #record-picker .stores-arriving > a:nth-child(4) { animation-delay:540ms; }
- .studio-shadow-study #record-picker .stores-arriving:focus-within > a { animation:none; }
+ .studio-shadow-study .stores-arriving > a:nth-child(2) { animation-delay:180ms; }
+ .studio-shadow-study .stores-arriving > a:nth-child(3) { animation-delay:360ms; }
+ .studio-shadow-study .stores-arriving > a:nth-child(4) { animation-delay:540ms; }
+ .studio-shadow-study .stores-arriving:focus-within > a { animation:none; }
  @keyframes studio-store-arrival {
   from { opacity:0; transform:translateY(18px) scale(.97); }
   to { opacity:1; transform:translateY(0) scale(1); }
