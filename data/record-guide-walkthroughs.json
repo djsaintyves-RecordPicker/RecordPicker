@@ -1,0 +1,322 @@
+{
+  "backup": {
+    "en": [
+      [
+        "p",
+        "Keep a dated copy of your Record Picker collection before a large import, a device change or a major edit. Synchronization keeps devices aligned; it does not replace an independent backup, because deletions can also synchronize."
+      ],
+      [
+        "h2",
+        "1. Choose a complete backup or a readable export"
+      ],
+      [
+        "p",
+        "A readable CSV is useful in a spreadsheet. A readable JSON export contains structured collection metadata. These exports are not interchangeable with a complete Record Picker backup: a file extension alone does not tell you what the file includes."
+      ],
+      [
+        "p",
+        "In recent iPhone and iPad versions, the backup screen distinguishes complete backups from readable exports of owned records and the wishlist. Use the complete backup option for recovery, when available in your installed version. Check the options on Mac and Windows separately rather than assuming identical menus or file compatibility."
+      ],
+      [
+        "h2",
+        "2. Save the file somewhere you can find again"
+      ],
+      [
+        "p",
+        "Choose the destination in the system file picker and wait for the export to finish. Keep the proposed filename or add a date that identifies the collection state. Locate the saved file and retain another copy independently of the device you are protecting."
+      ],
+      [
+        "h2",
+        "3. Verify before you need to restore"
+      ],
+      [
+        "p",
+        "For readable exports, open the file and check several records, the owned collection or wishlist destination, and the expected number of rows. Where the app offers backup verification, use it to check the backup without changing the current collection. Finding a file is not enough to establish that it is complete or compatible."
+      ],
+      [
+        "h2",
+        "4. Read the restore choice carefully"
+      ],
+      [
+        "p",
+        "Where merge and replace are offered, merge keeps records that exist only on the current device; replace removes them and restores the backup state. Save a fresh copy before restoring and read the confirmation. On synchronized devices, a replacement can affect the shared collection. Do not perform a replacement merely to test whether a file opens."
+      ],
+      [
+        "h2",
+        "A useful backup checklist"
+      ],
+      [
+        "p",
+        "You should know the file location, its date, whether it is a complete backup or a readable export, and which installed version can read it. Keep this independent copy even when synchronization appears healthy."
+      ]
+    ],
+    "fr": [
+      [
+        "p",
+        "Conservez une copie datée de votre collection Record Picker avant un import important, un changement d’appareil ou une modification majeure. La synchronisation aligne les appareils ; elle ne remplace pas une sauvegarde indépendante, car les suppressions peuvent aussi se synchroniser."
+      ],
+      [
+        "h2",
+        "1. Choisir une sauvegarde complète ou un export lisible"
+      ],
+      [
+        "p",
+        "Un CSV lisible sert à consulter les données dans un tableur. Un export JSON lisible contient les métadonnées structurées de la collection. Ces exports ne sont pas interchangeables avec une sauvegarde complète Record Picker : l’extension du fichier ne suffit pas à connaître son contenu."
+      ],
+      [
+        "p",
+        "Dans les versions récentes sur iPhone et iPad, l’écran de sauvegarde distingue les sauvegardes complètes des exports lisibles du bac à disques et de la liste de souhaits. Pour une restauration, choisissez la sauvegarde complète lorsqu’elle est proposée par votre version. Vérifiez séparément les possibilités sur Mac et Windows, sans présumer des mêmes menus ni de la compatibilité des fichiers."
+      ],
+      [
+        "h2",
+        "2. Enregistrer le fichier à un endroit facile à retrouver"
+      ],
+      [
+        "p",
+        "Choisissez la destination dans le sélecteur de fichiers du système et attendez la fin de l’export. Conservez le nom proposé ou ajoutez une date qui identifie l’état de la collection. Retrouvez le fichier enregistré et gardez une autre copie indépendamment de l’appareil à protéger."
+      ],
+      [
+        "h2",
+        "3. Vérifier avant d’avoir besoin de restaurer"
+      ],
+      [
+        "p",
+        "Pour un export lisible, ouvrez le fichier et vérifiez plusieurs disques, la destination bac à disques ou liste de souhaits et le nombre de lignes attendu. Si l’app propose la vérification d’une sauvegarde, utilisez-la pour contrôler le fichier sans modifier la collection actuelle. Retrouver un fichier ne suffit pas à garantir qu’il est complet ou compatible."
+      ],
+      [
+        "h2",
+        "4. Lire attentivement le choix de restauration"
+      ],
+      [
+        "p",
+        "Lorsque les choix fusionner et remplacer sont proposés, la fusion conserve les disques présents uniquement sur l’appareil actuel ; le remplacement les retire et rétablit l’état de la sauvegarde. Conservez une copie récente avant de restaurer et lisez la confirmation. Sur des appareils synchronisés, un remplacement peut affecter la collection partagée. Ne remplacez pas votre collection simplement pour vérifier qu’un fichier s’ouvre."
+      ],
+      [
+        "h2",
+        "Les repères d’une sauvegarde utile"
+      ],
+      [
+        "p",
+        "Vous devez connaître l’emplacement du fichier, sa date, sa nature — sauvegarde complète ou export lisible — et la version installée capable de le lire. Gardez cette copie indépendante même lorsque la synchronisation fonctionne bien."
+      ]
+    ],
+    "description": {
+      "en": "Back up your Record Picker collection: distinguish complete backups from CSV or JSON exports, verify the file and understand merge versus replace.",
+      "fr": "Sauvegardez votre collection Record Picker : distinguez sauvegarde complète et exports CSV ou JSON, vérifiez le fichier et comprenez fusion et remplacement."
+    }
+  },
+  "choose": {
+    "en": [
+      [
+        "p",
+        "Choose an album you can actually play now, then stop browsing. Record Picker helps turn a collection into a listening decision; drawing a record and listening to it are separate actions."
+      ],
+      [
+        "h2",
+        "1. Start with a collection you recognize"
+      ],
+      [
+        "p",
+        "Add a few owned albums or import your collection, then check artists, titles and formats. Keep records you want to buy in the wishlist so you can distinguish them from records available at home."
+      ],
+      [
+        "h2",
+        "2. Keep the selection broad enough"
+      ],
+      [
+        "p",
+        "Use the genre, year, favorites or exclusion controls actually offered by your version. Start with one useful constraint rather than combining every filter. A small collection with many exclusions may leave no eligible record."
+      ],
+      [
+        "h2",
+        "3. Draw a record or start from a mood"
+      ],
+      [
+        "p",
+        "Random Pick draws from eligible records. Mood Pick offers another starting point where available; its capabilities depend on the device and installed version. Choose the approach that suits the moment, then check the proposed album before playing it."
+      ],
+      [
+        "h2",
+        "4. If there is no proposal"
+      ],
+      [
+        "p",
+        "Check that the collection contains owned records, relax filters and exclusions, and read any message about the current draw cycle. A record already drawn can be unavailable in that cycle. An empty result does not by itself mean your collection has been deleted."
+      ],
+      [
+        "h2",
+        "After choosing"
+      ],
+      [
+        "p",
+        "Play the album if it suits you. Record an actual listening session using the controls available in your version, or keep the album in Listen Later for another time. The draw history records proposals; it should not be treated as proof that every proposed album was heard."
+      ]
+    ],
+    "fr": [
+      [
+        "p",
+        "Choisissez un album que vous pouvez réellement écouter maintenant, puis arrêtez de parcourir les pochettes. Record Picker aide à transformer une collection en décision d’écoute ; tirer un disque et l’écouter sont deux actions distinctes."
+      ],
+      [
+        "h2",
+        "1. Partir d’une collection que vous reconnaissez"
+      ],
+      [
+        "p",
+        "Ajoutez quelques albums possédés ou importez votre collection, puis vérifiez les artistes, titres et formats. Gardez les disques à acheter dans la liste de souhaits pour les distinguer de ceux disponibles chez vous."
+      ],
+      [
+        "h2",
+        "2. Garder une sélection assez large"
+      ],
+      [
+        "p",
+        "Utilisez les réglages de genre, année, favoris ou exclusions réellement proposés par votre version. Commencez par une contrainte utile plutôt que de cumuler tous les filtres. Une petite collection avec beaucoup d’exclusions peut ne laisser aucun disque éligible."
+      ],
+      [
+        "h2",
+        "3. Tirer un disque ou partir d’une ambiance"
+      ],
+      [
+        "p",
+        "Random Pick tire parmi les disques éligibles. Mood Pick offre un autre point de départ lorsqu’il est disponible ; ses possibilités dépendent de l’appareil et de la version installée. Choisissez l’approche adaptée au moment, puis vérifiez l’album proposé avant de l’écouter."
+      ],
+      [
+        "h2",
+        "4. Si aucune proposition n’apparaît"
+      ],
+      [
+        "p",
+        "Vérifiez que la collection contient des disques possédés, élargissez les filtres et exclusions et lisez le message éventuel sur le cycle de tirage en cours. Un disque déjà tiré peut être indisponible dans ce cycle. Un résultat vide ne signifie pas à lui seul que votre collection a été supprimée."
+      ],
+      [
+        "h2",
+        "Après le choix"
+      ],
+      [
+        "p",
+        "Écoutez l’album s’il vous convient. Enregistrez une séance réellement écoutée avec les commandes disponibles dans votre version, ou gardez l’album dans Listen Later pour une autre fois. L’historique des tirages conserve les propositions ; il ne prouve pas que chaque album proposé a été écouté."
+      ]
+    ],
+    "description": {
+      "en": "Choose a vinyl record or CD with Record Picker: prepare your collection, use Random Pick or Mood Pick and check filters when no album is proposed.",
+      "fr": "Choisissez un vinyle ou un CD avec Record Picker : préparez votre collection, utilisez Random Pick ou Mood Pick et vérifiez les filtres si aucun album n’est proposé."
+    }
+  },
+  "rediscover": {
+    "en": [
+      [
+        "p",
+        "Use your collection and listening notes to choose something you have not played recently. An album with no recorded listening may be newly imported: missing history does not prove that it has never been heard."
+      ],
+      [
+        "h2",
+        "1. Separate proposals from actual listening"
+      ],
+      [
+        "p",
+        "The draw history shows records proposed by the app. Listening information reflects sessions you have recorded. Start by checking which information is available in your installed version and how consistently you have used it."
+      ],
+      [
+        "h2",
+        "2. Explore a part of your collection"
+      ],
+      [
+        "p",
+        "Pick a genre or period you have neglected, then browse those records or use the available selection controls. Random Pick can provide a fresh proposal within eligible records, but it should not be assumed to favor the least-played albums automatically."
+      ],
+      [
+        "h2",
+        "3. Keep a discovery for the right moment"
+      ],
+      [
+        "p",
+        "If you cannot listen now, keep the album in Listen Later where available. Add a useful note rather than recording a listening session that has not happened. Check artist, title and edition if an imported record is difficult to recognize."
+      ],
+      [
+        "h2",
+        "4. Build a history you can use"
+      ],
+      [
+        "p",
+        "After actually listening, record the session using your version’s controls. Review your discoveries after several sessions instead of judging the collection from one draw. The usefulness of your listening history depends on the sessions you record, not just the number of proposals."
+      ],
+      [
+        "h2",
+        "Before reorganizing the catalogue"
+      ],
+      [
+        "p",
+        "Keep a dated backup before changing many records or importing a revised file. Use the backup and Discogs guides below, then return to the collection with a small listening selection rather than changing the whole catalogue at once."
+      ]
+    ],
+    "fr": [
+      [
+        "p",
+        "Appuyez-vous sur votre collection et vos notes d’écoute pour choisir un album peu écouté récemment. Un disque sans écoute enregistrée peut venir d’être importé : l’absence d’historique ne prouve pas qu’il n’a jamais été écouté."
+      ],
+      [
+        "h2",
+        "1. Distinguer les propositions des écoutes réelles"
+      ],
+      [
+        "p",
+        "L’historique des tirages montre les disques proposés par l’app. Les informations d’écoute reflètent les séances que vous avez enregistrées. Vérifiez d’abord les informations disponibles dans votre version et la régularité avec laquelle vous les avez renseignées."
+      ],
+      [
+        "h2",
+        "2. Explorer une partie de la collection"
+      ],
+      [
+        "p",
+        "Choisissez un genre ou une période que vous avez délaissés, puis parcourez ces disques ou utilisez les réglages de sélection disponibles. Random Pick peut proposer un nouveau disque parmi les éléments éligibles, mais il ne faut pas supposer qu’il favorise automatiquement les albums les moins écoutés."
+      ],
+      [
+        "h2",
+        "3. Garder une découverte pour le bon moment"
+      ],
+      [
+        "p",
+        "Si vous ne pouvez pas écouter maintenant, gardez l’album dans Listen Later lorsque cette fonction est disponible. Ajoutez une note utile plutôt que d’enregistrer une séance qui n’a pas eu lieu. Vérifiez l’artiste, le titre et l’édition si un disque importé est difficile à reconnaître."
+      ],
+      [
+        "h2",
+        "4. Construire un historique exploitable"
+      ],
+      [
+        "p",
+        "Après une écoute réelle, enregistrez la séance avec les commandes de votre version. Faites le point après plusieurs écoutes plutôt que de juger la collection sur un seul tirage. L’utilité de votre historique dépend des séances renseignées, pas seulement du nombre de propositions."
+      ],
+      [
+        "h2",
+        "Avant de réorganiser le catalogue"
+      ],
+      [
+        "p",
+        "Conservez une sauvegarde datée avant de modifier de nombreux disques ou d’importer un fichier révisé. Consultez les guides de sauvegarde et d’import Discogs ci-dessous, puis retrouvez votre collection avec une petite sélection à écouter plutôt que de tout modifier en même temps."
+      ]
+    ],
+    "description": {
+      "en": "Rediscover albums in your Record Picker collection: explore a neglected genre, save records for later and distinguish draw history from actual listening.",
+      "fr": "Retrouvez les albums oubliés de votre collection Record Picker : explorez un genre délaissé, gardez un disque pour plus tard et distinguez tirages et écoutes réelles."
+    }
+  },
+  "discogs": {
+    "description": {
+      "en": "Import your Discogs collection into Record Picker: request a CSV export, choose collection or wishlist, review the preview and check a small sample first.",
+      "fr": "Importez votre collection Discogs dans Record Picker : export CSV, choix du bac ou de la liste de souhaits, lecture de l’aperçu et essai sur quelques disques."
+    }
+  },
+  "snory-guide": {
+    "description": {
+      "en": "Set up Snory Teller for the night: check microphone input, test Apple Watch alerts and read estimated snoring and analysis coverage in the morning.",
+      "fr": "Préparez une nuit avec Snory Teller : vérifiez le microphone, testez les alertes Apple Watch et lisez au réveil le ronflement estimé et la durée analysée."
+    }
+  },
+  "physical-guide": {
+    "description": {
+      "en": "Get started with My Physical Routine: complete the questionnaire, review your proposed schedule and guided sessions, then assess your first week.",
+      "fr": "Prenez en main My Physical Routine : questionnaire, vérification du planning et des séances guidées, puis bilan de votre première semaine."
+    }
+  }
+}
