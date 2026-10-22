@@ -65,13 +65,13 @@ def main() -> None:
         )
         if state['current_release']['version'] == '3.1.1':
             assert state['current_release']['platform_versions'] == {
-                'iphone':'3.1.1', 'ipad':'3.1.1', 'watch':'3.1.1', 'mac':'3.0.1', 'windows':'3.1.1'}
+                'iphone':'3.1.1', 'ipad':'3.1.1', 'watch':'3.1.1', 'mac':'3.0.1', 'windows':'3.1.2'}
             from announce_release_2_3_1 import LOCALES as ACTIVE_LOCALES
             for directory in ACTIVE_LOCALES:
                 for route in state['next_release']['announcement_routes']:
                     page = (target / directory / route).read_text()
-                    assert 'iPhone · iPad · Apple Watch · Windows · 3.1.1 / Mac · 3.0.1' in page
-                    expected = '3.0.1' if route.startswith('mac-app/') else '3.1.1'
+                    assert 'iPhone · iPad · Apple Watch · 3.1.1 / Windows · 3.1.2 / Mac · 3.0.1' in page
+                    expected = '3.0.1' if route.startswith('mac-app/') else '3.1.2' if route.startswith('windows-app/') else '3.1.1'
                     assert '"softwareVersion":"' + expected + '"' in page
             before = {p:p.read_bytes() for p in target.rglob('*.html')}
             before[target/'data/release-state.json'] = (target/'data/release-state.json').read_bytes()

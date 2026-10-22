@@ -8,7 +8,7 @@
       "ipad": "3.1.1",
       "watch": "3.1.1",
       "mac": "3.0.1",
-      "windows": "3.1.1"
+      "windows": "3.1.2"
     },
     "platforms": {
       "iphone": "available",
@@ -103,7 +103,7 @@
       "ipad": "3.1.1",
       "watch": "3.1.1",
       "mac": "3.0.1",
-      "windows": "3.0.1"
+      "windows": "3.1.2"
     }
   },
   "verified_public_versions": {
@@ -111,7 +111,7 @@
     "record_picker": {
       "ios": "3.1.1",
       "mac": "3.0.1",
-      "windows": "3.0.1"
+      "windows": "3.1.2"
     },
     "snory_teller": "1.0.2",
     "my_physical_routine": "1.0.2",
@@ -119,9 +119,10 @@
       "ios": "https://apps.apple.com/fr/app/record-picker/id6780422305",
       "mac": "https://apps.apple.com/fr/app/record-picker/id6780422305?platform=mac",
       "snory": "https://apps.apple.com/fr/app/snory-teller/id6820177689",
-      "physical": "https://apps.apple.com/fr/app/my-physical-routine/id6820104318"
+      "physical": "https://apps.apple.com/fr/app/my-physical-routine/id6820104318",
+      "windows": "https://apps.microsoft.com/detail/9N2ZWRL4M3JC"
     },
-    "windows_note": "Last confirmed public marketing version retained; no newer Windows release confirmed.",
+    "windows_note": "Partner Center submission 10 confirmed published on 2026-10-22; marketing 3.1.2, x64 package 3.1.4.0, ARM64 package 3.1.5.0.",
     "screenshot_note": "Existing screenshots retain their actual 3.0.1 capture provenance."
   }
 }

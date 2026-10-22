@@ -19,6 +19,8 @@ def normalize(raw, windows=False):
 
 def main():
     p=ROOT/'data/release-state.json';state=json.loads(p.read_text())
+    if tuple(map(int,state['current_release']['platform_versions']['windows'].split('.'))) > tuple(map(int,VERSION.split('.'))):
+        print('Newer verified Windows release retained.'); return
     assert state['current_release']['version']==VERSION
     state['current_release']['platform_versions']['windows']=VERSION
     required=state['current_release']['required_platforms_for_full_release']

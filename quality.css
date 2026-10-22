@@ -1538,3 +1538,6 @@ main .kicker,
   background: var(--surface);
   border-radius: 12px;
 }
+
+/* Windows landing pages keep their destination label on one line. */
+.site-header .store-link[data-umami-event-destination="microsoft"] { white-space:nowrap; flex-shrink:0; padding-inline:18px; text-align:center; }
