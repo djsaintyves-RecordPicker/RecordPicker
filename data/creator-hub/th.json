@@ -295,7 +295,6 @@
   "Available on the App Store": "มีอยู่ใน App Store",
   "Download on the App Store": "ดาวน์โหลดบน App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "ตอนนี้ Physical Routine ของฉันมีวางจำหน่ายแล้วใน App Store สร้างกิจวัตรประจำวันของคุณเอง",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "มาในเวอร์ชัน 1.0.2: แบบฝึกหัดสีฟ้า ที่พักสีชมพูอ่อน การ์ดสีเทาเมื่อทำเสร็จแล้ว และปุ่มเล่นข้างปุ่มข้อมูล ส่งการอัปเดตไปยัง Apple และรอการตรวจสอบ",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "ใช้โหมดที่เหมาะกับช่วงเวลานั้น",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick มีจุดเริ่มต้นจากการเลือกของคุณ Mood Pick เริ่มต้นจากบรรยากาศเมื่อมีอยู่ในอุปกรณ์ของคุณ Record of the Day นำเสนออีกหนึ่งรายการในคอลเลกชัน นี่เป็นวิธีในการเลือก ไม่จำเป็นต้องให้คุณยอมรับข้อเสนอแรก",
   "Keep your history honest": "รักษาประวัติของคุณให้ซื่อสัตย์",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "เมื่อคุณฟังจบแล้ว ให้บันทึกเซสชัน บันทึกข้อเสนอแนะที่น่าสนใจใน Listen Later หากคุณไม่สามารถเล่นได้ในขณะนี้ การบันทึกคำแนะนำเมื่อเล่นจบจะทำให้คำแนะนำในภายหลังตามความถี่ในการฟังมีประโยชน์น้อยลง"
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "เมื่อคุณฟังจบแล้ว ให้บันทึกเซสชัน บันทึกข้อเสนอแนะที่น่าสนใจใน Listen Later หากคุณไม่สามารถเล่นได้ในขณะนี้ การบันทึกคำแนะนำเมื่อเล่นจบจะทำให้คำแนะนำในภายหลังตามความถี่ในการฟังมีประโยชน์น้อยลง",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "มีในเวอร์ชัน 1.0.2: สีการออกกำลังกายและการพักที่แตกต่างกัน การ์ดที่เสร็จสมบูรณ์จะแสดงเป็นสีเทา ตัวจับเวลาการพักที่บันทึกไว้ และปุ่มเล่นเพื่อเริ่มคู่มือการออกกำลังกายแต่ละข้อ"
 }

@@ -295,7 +295,6 @@
   "Available on the App Store": "Dostupno na App Store",
   "Download on the App Store": "Preuzmite na App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Moj Physical Routine sada je dostupan na App Store. Izgradite svoju rutinu vlastitim tempom.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Dolazi u verziji 1.0.2: svijetloplave vježbe, svijetloružičasti odmori, sive karte kada se završe i gumb za reprodukciju pored gumba za informacije. Ažuriranje je poslano Appleu i čeka pregled.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Koristite način koji odgovara trenutku",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick nudi početnu točku iz vašeg odabira. Mood Pick počinje iz atmosfere kada je dostupna na vašem uređaju. Record of the Day nudi još jedan ulazak u kolekciju. Ovo su načini izbora; nijedan ne zahtijeva da prihvatite prvi prijedlog.",
   "Keep your history honest": "Držite svoju povijest poštenom",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Kada zapravo završite sa slušanjem, snimite sesiju. Spremite zanimljiv prijedlog u Listen Later ako ga sada ne možete igrati. Bilježenje prijedloga kao dovršenih reprodukcija učinilo bi kasnije preporuke temeljene na učestalosti slušanja manje korisnima."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Kada zapravo završite sa slušanjem, snimite sesiju. Spremite zanimljiv prijedlog u Listen Later ako ga sada ne možete igrati. Bilježenje prijedloga kao dovršenih reprodukcija učinilo bi kasnije preporuke temeljene na učestalosti slušanja manje korisnima.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Dostupno u verziji 1.0.2: različite boje za vježbanje i odmor, popunjene kartice prikazane sivom bojom, spremljeni mjerači vremena za odmor i gumb za reprodukciju za početak svakog vodiča za vježbanje."
 }

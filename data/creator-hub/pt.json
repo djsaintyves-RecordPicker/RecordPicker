@@ -295,7 +295,6 @@
   "Available on the App Store": "Disponível no App Store",
   "Download on the App Store": "Baixe no App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Meu Physical Routine agora está disponível no App Store. Construa sua rotina no seu próprio ritmo.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Chegando na versão 1.0.2: exercícios em azul claro, descansos em rosa claro, cartões cinza quando concluídos e um botão de reprodução ao lado do botão de informações. Atualização enviada à Apple e aguardando revisão.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Use o modo que se adapta ao momento",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick oferece um ponto de partida para sua seleção. Mood Pick inicia a partir de uma atmosfera quando disponível no seu dispositivo. Record of the Day oferece mais uma entrada na coleção. Estas são formas de escolher; nenhum exige que você aceite a primeira proposta.",
   "Keep your history honest": "Mantenha sua história honesta",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Quando você terminar de ouvir, grave a sessão. Salve uma sugestão interessante em Listen Later se não puder reproduzi-la agora. Registrar sugestões como reproduções concluídas tornaria as recomendações posteriores baseadas na frequência de audição menos úteis."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Quando você terminar de ouvir, grave a sessão. Salve uma sugestão interessante em Listen Later se não puder reproduzi-la agora. Registrar sugestões como reproduções concluídas tornaria as recomendações posteriores baseadas na frequência de audição menos úteis.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Disponível na versão 1.0.2: cores distintas de exercícios e descanso, cartões preenchidos mostrados em cinza, cronômetros de descanso salvos e um botão de reprodução para iniciar cada guia de exercícios."
 }

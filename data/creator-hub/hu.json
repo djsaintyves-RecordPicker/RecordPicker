@@ -295,7 +295,6 @@
   "Available on the App Store": "Elérhető a App Store modellen",
   "Download on the App Store": "Töltse le a App Store-re",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "A Physical Routine-m már elérhető a App Store-n. Építsd fel a rutinodat a saját tempódban.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Az 1.0.2-es verzióban érkezik: világoskék gyakorlatok, világos rózsaszín pihenők, szürke kártyák, amikor elkészült, és egy lejátszás gomb az információs gomb mellett. A frissítés elküldve az Apple-nek, és ellenőrzésre vár.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Használja a pillanatnak megfelelő módot",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "A Random Pick kiindulópontot kínál az Ön által kiválasztott. A Mood Pick légkörből indul ki, ha elérhető az eszközén. A Record of the Day egy újabb belépést kínál a kollekcióba. Ezek a választás módjai; egyik sem követeli meg az első javaslat elfogadását.",
   "Keep your history honest": "Legyen őszinte a történelem",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Amikor valóban befejezte a hallgatást, rögzítse a munkamenetet. Ha most nem tudja lejátszani, mentsen el egy érdekes javaslatot a Listen Later-ben. A javaslatok befejezett lejátszásként történő naplózása kevésbé hasznosítaná a hallgatási gyakoriságon alapuló későbbi ajánlásokat."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Amikor valóban befejezte a hallgatást, rögzítse a munkamenetet. Ha most nem tudja lejátszani, mentsen el egy érdekes javaslatot a Listen Later-ben. A javaslatok befejezett lejátszásként történő naplózása kevésbé hasznosítaná a hallgatási gyakoriságon alapuló későbbi ajánlásokat.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Elérhető az 1.0.2-es verzióban: különböző edzés- és pihenőszínek, szürkén látható kitöltött kártyák, mentett pihenőidőzítők és egy lejátszás gomb az egyes gyakorlati útmutatók elindításához."
 }

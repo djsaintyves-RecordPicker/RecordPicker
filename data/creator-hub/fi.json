@@ -295,7 +295,6 @@
   "Available on the App Store": "Saatavilla mallissa App Store",
   "Download on the App Store": "Lataa App Store:lle",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Physical Routine on nyt saatavilla App Store:lle. Rakenna rutiini omaan tahtiisi.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Tulossa versio 1.0.2: vaaleansiniset harjoitukset, vaaleanpunaiset levät, harmaat kortit valmistuttuaan ja toistopainike tietopainikkeen vieressä. Päivitys lähetetty Applelle ja odottaa tarkistusta.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Käytä hetkeen sopivaa tilaa",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick tarjoaa lähtökohdan valinnastasi. Mood Pick alkaa tunnelmasta, kun se on saatavilla laitteellasi. Record of the Day tarjoaa uuden tulon kokoelmaan. Nämä ovat tapoja valita; mikään ei edellytä ensimmäisen ehdotuksen hyväksymistä.",
   "Keep your history honest": "Pidä historiasi rehellinen",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Kun todella lopetat kuuntelun, nauhoita istunto. Tallenna mielenkiintoinen ehdotus Listen Later:hen, jos et voi toistaa sitä nyt. Ehdotusten kirjaaminen valmiiksi toistoiksi tekisi myöhemmistä kuuntelutaajuuteen perustuvista suosituksista vähemmän hyödyllisiä."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Kun todella lopetat kuuntelun, nauhoita istunto. Tallenna mielenkiintoinen ehdotus Listen Later:hen, jos et voi toistaa sitä nyt. Ehdotusten kirjaaminen valmiiksi toistoiksi tekisi myöhemmistä kuuntelutaajuuteen perustuvista suosituksista vähemmän hyödyllisiä.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Saatavilla versiossa 1.0.2: erilliset harjoitus- ja lepovärit, harmaalla näkyvät täytetyt kortit, tallennetut lepoajastimet ja toistopainike jokaisen harjoitusoppaan käynnistämiseksi."
 }

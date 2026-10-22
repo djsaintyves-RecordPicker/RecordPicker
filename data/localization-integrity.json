@@ -26,7 +26,7 @@
     "pt-br": "1c64768724c02cbfcb415dbd1361054ca39784975cc0fdcafce505dfb557275e",
     "pt-pt": "ad1f90fe28a9517841fe7d2e1e9fe1aec42be0dbf28c7f6f0977be6e3eff819a",
     "ru": "99f2d4d98e7d16e7b449eb47065d69a14e6214b490cba7466268bdd6aa36a2b5",
-    "shared": "62d8e343c51fa3693b705f877b9c78934d38ed74aa905bb19a681266d3528dc6",
+    "shared": "6fe3de08121fced66d2f5e58f5df8fb7e07b81f9c6039e23c7d19c8fdbe51eaa",
     "sv": "401a56dd351c5a0a6d92fe47a17309b0f4a8c1bb9f1106610ebdbcf99786f035",
     "th": "906af1acf492e82a7b6b0557796fafe5a441788b11c5ac21409faaad664a529a",
     "tr": "d7cfbfdbe762da7402f3ca618f611d56ca71e80eb6f4a834052bee7d94c39d0c",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Verified public platform versions and iPhone Pro order availability",
+  "review_reason": "MPR 1.0.2 publicly released: remove pending-review copy in all 50 studio locales",
   "schema": 1
 }

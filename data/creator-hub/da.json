@@ -295,7 +295,6 @@
   "Available on the App Store": "Tilgængelig på App Store",
   "Download on the App Store": "Download på App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Min Physical Routine er nu tilgængelig på App Store. Byg din rutine i dit eget tempo.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Kommer i version 1.0.2: lyseblå øvelser, lyserøde pauser, grå kort, når de er færdige, og en afspilningsknap ved siden af ​​informationsknappen. Opdatering sendt til Apple og afventer gennemgang.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Brug den tilstand, der passer til øjeblikket",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick tilbyder et udgangspunkt fra dit valg. Mood Pick starter fra en atmosfære, når den er tilgængelig på din enhed. Record of the Day tilbyder endnu en adgang til kollektionen. Disse er måder at vælge på; ingen kræver, at du accepterer det første forslag.",
   "Keep your history honest": "Hold din historie ærlig",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Når du faktisk er færdig med at lytte, skal du optage sessionen. Gem et interessant forslag i Listen Later, hvis du ikke kan spille det nu. At logge forslag som afsluttede afspilninger ville gøre senere anbefalinger baseret på lyttefrekvens mindre nyttige."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Når du faktisk er færdig med at lytte, skal du optage sessionen. Gem et interessant forslag i Listen Later, hvis du ikke kan spille det nu. At logge forslag som afsluttede afspilninger ville gøre senere anbefalinger baseret på lyttefrekvens mindre nyttige.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Tilgængelig i version 1.0.2: forskellige trænings- og hvilefarver, færdige kort vist i gråt, gemte hviletimere og en afspilningsknap til at starte hver træningsvejledning."
 }

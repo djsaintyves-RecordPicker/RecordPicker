@@ -21,5 +21,23 @@ def audit():
             target=ROOT/u.path.lstrip('/')
             if target.is_dir(): target=target/'index.html'
             assert target.is_file(), (rel,link)
-    print('Creator hub: both languages and destinations validated')
+    # A published release must not retain the previous review announcement.
+    import json
+    from lxml import html
+    old = 'Coming in version 1.0.2:'
+    templates = json.loads((ROOT/'data/creator-hub/templates.json').read_text())
+    assert old not in templates['en-hub']
+    count = 0
+    for path in ROOT.glob('**/apps/index.html'):
+        doc = html.fromstring(path.read_text())
+        cards = doc.xpath('//*[@id="physical-routine"]')
+        if not cards: continue
+        card = cards[0]
+        note = card.xpath('.//*[contains(@class,"release-note")]')
+        assert len(note) == 1 and '1.0.2' in note[0].text_content(), path
+        assert old not in path.read_text(), path
+        assert 'my-physical-routine.mdvnc9v49c.chatgpt.site' not in path.read_text(), path
+        count += 1
+    assert count == 50, count
+    print('Creator hub: 50 current MPR release cards and maintained destinations validated')
 if __name__ == '__main__': audit()

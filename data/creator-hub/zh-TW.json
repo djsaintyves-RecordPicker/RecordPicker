@@ -295,7 +295,6 @@
   "Available on the App Store": "適用於 App Store",
   "Download on the App Store": "在App Store上下載",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "我的 Physical Routine 現在可在 App Store 上使用。按照自己的步調建立你的日常習慣。",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "版本 1.0.2 包含：淺藍色練習、淺粉紅色休息、完成後的灰色卡片以及訊息按鈕旁的播放按鈕。更新已提交给 Apple 并等待审核。",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "使用適合當下的模式",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick 為您的選擇提供了一個起點。 Mood Pick 從設備上可用的大氣中啟動。 Record of the Day 是該系列的另一個產品。這些都是可供選擇的方法；沒有要求您接受第一個提案。",
   "Keep your history honest": "保持你的歷史誠實",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "當您真正聽完後，錄製會話。如果您現在無法玩，請在 Listen Later 中儲存有趣的建議。將建議記錄為已完成的播放將使以後基於收聽頻率的建議變得不太有用。"
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "當您真正聽完後，錄製會話。如果您現在無法玩，請在 Listen Later 中儲存有趣的建議。將建議記錄為已完成的播放將使以後基於收聽頻率的建議變得不太有用。",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "版本 1.0.2 提供：不同的鍛鍊和休息顏色、以灰色顯示的已完成卡片、已儲存的休息計時器以及用於啟動每個鍛鍊指南的播放按鈕。"
 }

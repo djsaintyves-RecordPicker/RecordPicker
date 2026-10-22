@@ -295,7 +295,6 @@
   "Available on the App Store": "Có sẵn trên App Store",
   "Download on the App Store": "Tải xuống trên App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Physical Routine của tôi hiện đã có trên App Store. Xây dựng thói quen của bạn theo tốc độ của riêng bạn.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "Ra mắt phiên bản 1.0.2: các bài tập màu xanh nhạt, phần nghỉ màu hồng nhạt, thẻ màu xám khi hoàn thành và nút phát bên cạnh nút thông tin. Bản cập nhật đã được gửi tới Apple và đang chờ xem xét.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Sử dụng chế độ phù hợp với thời điểm",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick cung cấp điểm khởi đầu từ lựa chọn của bạn. Mood Pick bắt đầu từ bầu không khí khi có sẵn trên thiết bị của bạn. Record of the Day cung cấp một mục khác trong bộ sưu tập. Đây là những cách để lựa chọn; không yêu cầu bạn phải chấp nhận đề xuất đầu tiên.",
   "Keep your history honest": "Giữ lịch sử của bạn trung thực",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Khi bạn thực sự nghe xong, hãy ghi lại phần đó. Lưu lại gợi ý thú vị trong Listen Later nếu bạn chưa thể chơi ngay bây giờ. Việc ghi lại các đề xuất khi các lượt phát đã hoàn thành sẽ khiến các đề xuất sau này dựa trên tần suất nghe trở nên ít hữu ích hơn."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Khi bạn thực sự nghe xong, hãy ghi lại phần đó. Lưu lại gợi ý thú vị trong Listen Later nếu bạn chưa thể chơi ngay bây giờ. Việc ghi lại các đề xuất khi các lượt phát đã hoàn thành sẽ khiến các đề xuất sau này dựa trên tần suất nghe trở nên ít hữu ích hơn.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Có sẵn trong phiên bản 1.0.2: màu sắc bài tập và thời gian nghỉ ngơi riêng biệt, thẻ hoàn thành hiển thị màu xám, bộ hẹn giờ nghỉ ngơi đã lưu và nút phát để bắt đầu mỗi hướng dẫn bài tập."
 }

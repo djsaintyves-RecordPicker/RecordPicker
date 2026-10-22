@@ -295,7 +295,6 @@
   "Available on the App Store": "App Storeで利用可能",
   "Download on the App Store": "App Storeでダウンロード",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "私の Physical Routine が App Store で利用できるようになりました。自分のペースでルーチンを構築してください。",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "バージョン 1.0.2 で登場: ライトブルーの練習問題、ライトピンクの休符、完了時のグレーのカード、情報ボタンの横に再生ボタン。アップデートは Apple に送信され、審査を待っています。",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "瞬間に合ったモードを使用する",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick は選択からの出発点を提供します。 Mood Pick は、デバイスで利用可能な場合、大気から始まります。 Record of the Day は、コレクションへの新たなエントリーを提供します。これらを選択する方法があります。最初の提案を受け入れる必要はありません。",
   "Keep your history honest": "自分の歴史を正直に保つ",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "実際に聞き終えたら、セッションを録音します。今すぐプレイできない場合は、興味深い提案を Listen Later に保存してください。完了した再生として提案をログに記録すると、後で聞く頻度に基づいた推奨があまり役に立たなくなります。"
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "実際に聞き終えたら、セッションを録音します。今すぐプレイできない場合は、興味深い提案を Listen Later に保存してください。完了した再生として提案をログに記録すると、後で聞く頻度に基づいた推奨があまり役に立たなくなります。",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "バージョン 1.0.2 で利用可能: 個別のエクササイズと休憩の色、完了したカードはグレーで表示、保存された休憩タイマー、各エクササイズ ガイドを開始するための再生ボタン。"
 }

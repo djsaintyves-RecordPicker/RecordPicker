@@ -295,7 +295,6 @@
   "Available on the App Store": "App Store ನಲ್ಲಿ ಲಭ್ಯವಿದೆ",
   "Download on the App Store": "App Store ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "ನನ್ನ Physical Routine ಈಗ App Store ನಲ್ಲಿ ಲಭ್ಯವಿದೆ. ನಿಮ್ಮ ದಿನಚರಿಯನ್ನು ನಿಮ್ಮ ಸ್ವಂತ ವೇಗದಲ್ಲಿ ನಿರ್ಮಿಸಿ.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "ಆವೃತ್ತಿ 1.0.2 ರಲ್ಲಿ ಬರಲಿದೆ: ತಿಳಿ ನೀಲಿ ವ್ಯಾಯಾಮಗಳು, ತಿಳಿ ಗುಲಾಬಿ ವಿಶ್ರಾಂತಿಗಳು, ಪೂರ್ಣಗೊಂಡಾಗ ಬೂದು ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ಮಾಹಿತಿ ಬಟನ್ ಪಕ್ಕದಲ್ಲಿ ಪ್ಲೇ ಬಟನ್. Apple ಗೆ ಅಪ್‌ಡೇಟ್ ಸಲ್ಲಿಸಲಾಗಿದೆ ಮತ್ತು ಪರಿಶೀಲನೆಗಾಗಿ ಕಾಯುತ್ತಿದೆ.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "ಕ್ಷಣಕ್ಕೆ ಸರಿಹೊಂದುವ ಮೋಡ್ ಅನ್ನು ಬಳಸಿ",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick ನಿಮ್ಮ ಆಯ್ಕೆಯಿಂದ ಆರಂಭಿಕ ಹಂತವನ್ನು ನೀಡುತ್ತದೆ. Mood Pick ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಲಭ್ಯವಿರುವಾಗ ವಾತಾವರಣದಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ. Record of the Day ಸಂಗ್ರಹಣೆಯಲ್ಲಿ ಮತ್ತೊಂದು ಪ್ರವೇಶವನ್ನು ನೀಡುತ್ತದೆ. ಇವುಗಳು ಆಯ್ಕೆ ಮಾಡುವ ಮಾರ್ಗಗಳಾಗಿವೆ; ಮೊದಲ ಪ್ರಸ್ತಾಪವನ್ನು ನೀವು ಒಪ್ಪಿಕೊಳ್ಳುವ ಅಗತ್ಯವಿಲ್ಲ.",
   "Keep your history honest": "ನಿಮ್ಮ ಇತಿಹಾಸವನ್ನು ಪ್ರಾಮಾಣಿಕವಾಗಿ ಇರಿಸಿ",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "ನೀವು ನಿಜವಾಗಿಯೂ ಆಲಿಸುವುದನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದಾಗ, ಸೆಶನ್ ಅನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ. ನೀವು ಈಗ ಅದನ್ನು ಪ್ಲೇ ಮಾಡಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ Listen Later ನಲ್ಲಿ ಆಸಕ್ತಿದಾಯಕ ಸಲಹೆಯನ್ನು ಉಳಿಸಿ. ಪೂರ್ಣಗೊಂಡ ನಾಟಕಗಳಂತೆ ಸಲಹೆಗಳನ್ನು ಲಾಗ್ ಮಾಡುವುದರಿಂದ ನಂತರದ ಶಿಫಾರಸುಗಳನ್ನು ಆಲಿಸುವ ಆವರ್ತನದ ಆಧಾರದ ಮೇಲೆ ಕಡಿಮೆ ಉಪಯುಕ್ತವಾಗುತ್ತದೆ."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "ನೀವು ನಿಜವಾಗಿಯೂ ಆಲಿಸುವುದನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದಾಗ, ಸೆಶನ್ ಅನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ. ನೀವು ಈಗ ಅದನ್ನು ಪ್ಲೇ ಮಾಡಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ Listen Later ನಲ್ಲಿ ಆಸಕ್ತಿದಾಯಕ ಸಲಹೆಯನ್ನು ಉಳಿಸಿ. ಪೂರ್ಣಗೊಂಡ ನಾಟಕಗಳಂತೆ ಸಲಹೆಗಳನ್ನು ಲಾಗ್ ಮಾಡುವುದರಿಂದ ನಂತರದ ಶಿಫಾರಸುಗಳನ್ನು ಆಲಿಸುವ ಆವರ್ತನದ ಆಧಾರದ ಮೇಲೆ ಕಡಿಮೆ ಉಪಯುಕ್ತವಾಗುತ್ತದೆ.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "ಆವೃತ್ತಿ 1.0.2 ರಲ್ಲಿ ಲಭ್ಯವಿದೆ: ವಿಭಿನ್ನ ವ್ಯಾಯಾಮ ಮತ್ತು ವಿಶ್ರಾಂತಿ ಬಣ್ಣಗಳು, ಬೂದು ಬಣ್ಣದಲ್ಲಿ ತೋರಿಸಿರುವ ಪೂರ್ಣಗೊಂಡ ಕಾರ್ಡ್‌ಗಳು, ಉಳಿಸಿದ ವಿಶ್ರಾಂತಿ ಟೈಮರ್‌ಗಳು ಮತ್ತು ಪ್ರತಿ ವ್ಯಾಯಾಮ ಮಾರ್ಗದರ್ಶಿಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಪ್ಲೇ ಬಟನ್."
 }

@@ -295,7 +295,6 @@
   "Available on the App Store": "Доступно на App Store",
   "Download on the App Store": "Завантажити на App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Мій Physical Routine тепер доступний на App Store. Створюйте свій розпорядок у власному темпі.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "У версії 1.0.2: світло-блакитні вправи, світло-рожеві відпочинок, сірі картки після завершення та кнопка відтворення біля кнопки інформації. Оновлення надіслано в Apple і очікує на розгляд.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Використовуйте режим, який підходить в даний момент",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick пропонує відправну точку з вашого вибору. Mood Pick запускається з атмосфери, якщо вона доступна на вашому пристрої. Record of the Day пропонує ще один запис у колекцію. Це способи вибору; ніхто не вимагає від вас прийняти першу пропозицію.",
   "Keep your history honest": "Зберігайте свою історію чесною",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Коли ви фактично закінчите слухати, запишіть сеанс. Збережіть цікаву пропозицію в Listen Later, якщо ви не можете зіграти в неї зараз. Реєстрація пропозицій як завершених відтворень зробить наступні рекомендації на основі частоти прослуховування менш корисними."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Коли ви фактично закінчите слухати, запишіть сеанс. Збережіть цікаву пропозицію в Listen Later, якщо ви не можете зіграти в неї зараз. Реєстрація пропозицій як завершених відтворень зробить наступні рекомендації на основі частоти прослуховування менш корисними.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Доступно у версії 1.0.2: різні кольори вправ і відпочинку, заповнені картки, показані сірим кольором, збережені таймери відпочинку та кнопка відтворення, щоб почати кожну вправу."
 }

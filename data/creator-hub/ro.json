@@ -295,7 +295,6 @@
   "Available on the App Store": "Disponibil pe App Store",
   "Download on the App Store": "Descărcați pe App Store",
   "My Physical Routine is now available on the App Store. Build your routine at your own pace.": "Physical Routine meu este acum disponibil pe App Store. Construiește-ți rutina în ritmul tău.",
-  "Coming in version 1.0.2: light blue exercises, light pink rests, gray cards when completed, and a play button beside the information button. Update submitted to Apple and awaiting review.": "În versiunea 1.0.2: exerciții în albastru deschis, odihnă roz deschis, cărți gri când sunt finalizate și un buton de redare lângă butonul de informații. Actualizare trimisă la Apple și în așteptarea examinării.",
   "Snory Teller · App Store": "Snory Teller · App Store",
   "My Physical Routine · App Store": "My Physical Routine · App Store",
   "App Store": "App Store",
@@ -348,5 +347,6 @@
   "Use the mode that fits the moment": "Utilizați modul care se potrivește momentului",
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick oferă un punct de plecare din selecția dvs. Mood Pick începe dintr-o atmosferă atunci când este disponibil pe dispozitivul dvs. Record of the Day oferă o altă intrare în colecție. Acestea sunt moduri de a alege; niciuna nu vă cere să acceptați prima propunere.",
   "Keep your history honest": "Păstrează-ți istoria sinceră",
-  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Când ați terminat de ascultat, înregistrați sesiunea. Salvați o sugestie interesantă în Listen Later dacă nu o puteți juca acum. Înregistrarea sugestiilor ca redări finalizate ar face recomandările ulterioare bazate pe frecvența de ascultare mai puțin utile."
+  "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "Când ați terminat de ascultat, înregistrați sesiunea. Salvați o sugestie interesantă în Listen Later dacă nu o puteți juca acum. Înregistrarea sugestiilor ca redări finalizate ar face recomandările ulterioare bazate pe frecvența de ascultare mai puțin utile.",
+  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "Disponibil în versiunea 1.0.2: culori distincte pentru exerciții și odihnă, cărți completate afișate în gri, temporizatoare de odihnă salvate și un buton de redare pentru a începe fiecare ghid de exerciții."
 }
