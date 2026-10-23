@@ -43,7 +43,7 @@ def audit():
         card = re.search(r'<article[^>]*id="physical-routine"[^>]*>(.*?)</article>', markup, re.S)
         if not card: continue
         notes = re.findall(r'<p class="release-note">(.*?)</p>', card[1], re.S)
-        assert len(notes) == 1 and '1.0.2' in notes[0], path
+        assert len(notes) == 1 and notes[0].strip() and '1.0.3' in card[1], path
         assert old not in path.read_text(), path
         assert 'my-physical-routine.mdvnc9v49c.chatgpt.site' not in path.read_text(), path
         count += 1

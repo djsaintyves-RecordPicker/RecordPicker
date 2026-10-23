@@ -26,7 +26,7 @@
     "pt-br": "7224f45338d44b94cc8b2b71561b82f88263ea0d6a47276eacec19c2702fe262",
     "pt-pt": "d7d3ff3a25aaea3ff5d095c4a76aa0768a7074fdd23bd2012d8d4897330a8689",
     "ru": "b5eccc513ee9bd362f2f45b584a61070bb4e5c89297bc2db0ffdbba82d27d763",
-    "shared": "bd3f02e9d7fabf0f90b76f98c21c265b1c405bb4e231e2606c785780500b454e",
+    "shared": "16aa426c25d7278c7ce6dc31e4158a4d92d5431e4af864a87e3b25e7e77efafb",
     "sv": "0c875d18d2281cdf6a34912a92101c6355ae0cdb9b34d0feaf3e406bfe5b7bfa",
     "th": "5e9c6f848d0094012dbf1ffba8364395d35001e7ed002ece5e1e738918062b98",
     "tr": "a4510970589a3c73dc5938004c2407e1ada48d09dca9c111910b855df625912e",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Update authored FR/EN listening-confirmation FAQ to the verified 3.1.2 action-row position.",
+  "review_reason": "MPR 1.0.3 approved release and presentation copy verified",
   "schema": 1
 }

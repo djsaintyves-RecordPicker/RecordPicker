@@ -348,7 +348,6 @@
   "Random Pick offers a starting point from your selection. Mood Pick starts from an atmosphere when available on your device. Record of the Day offers another entry into the collection. These are ways to choose; none requires you to accept the first proposal.": "Random Pick 为您的选择提供了一个起点。 Mood Pick 从设备上可用的大气中启动。 Record of the Day 是该系列的又一产品。这些都是可供选择的方法；没有要求您接受第一个提案。",
   "Keep your history honest": "保持你的历史诚实",
   "When you actually finish listening, record the session. Save an interesting suggestion in Listen Later if you cannot play it now. Logging suggestions as completed plays would make later recommendations based on listening frequency less useful.": "当您真正听完后，录制会话。如果您现在无法玩，请在 Listen Later 中保存有趣的建议。将建议记录为已完成的播放将使以后基于收听频率的建议变得不太有用。",
-  "Available in version 1.0.2: distinct exercise and rest colors, completed cards shown in gray, saved rest timers, and a play button to start each exercise guide.": "版本 1.0.2 提供：不同的锻炼和休息颜色、以灰色显示的已完成卡片、保存的休息计时器以及用于启动每个锻炼指南的播放按钮。",
   "Discover Record Picker for vinyl and CDs, Snory Teller for night reports and My Physical Routine for guided exercise. Apps, practical guides and music playlists.": "了解用于黑胶唱片和 CD 的 Record Picker、用于夜间报告的 Snory Teller 以及用于指导锻炼的 My Physical Routine。应用程序、实用指南和音乐播放列表。",
   "Import your Discogs collection, back up your vinyl and CD library, choose your next record and rediscover forgotten albums with these Record Picker guides.": "使用这些 Record Picker 指南导入您的 Discogs 收藏、备份您的黑胶唱片和 CD 库、选择您的下一张唱片并重新发现被遗忘的专辑。",
   "Three apps, one studio": "三个应用程序，一个工作室",
@@ -456,5 +455,6 @@
   "Can I use a TERA barcode scanner on Mac?": "我可以在 Mac 上使用 TERA 条码扫描仪吗？",
   "Compatibility with every TERA model has not been physically verified. Keyboard/HID mode can enter barcode digits, but this alone does not certify the complete Record Picker workflow. Before relying on a scanner, check its exact model and input mode with support. Include your operating system and app version; do not send pairing codes or your full collection backup.": "与每个 TERA 型号的兼容性尚未经过物理验证。键盘/HID 模式可以输入条形码数字，但这本身并不能证明完整的 Record Picker 工作流程。在依赖扫描仪之前，请在支持人员的帮助下检查其确切型号和输入模式。包括您的操作系统和应用程序版本；不要发送配对代码或您的完整收藏备份。",
   "Import and backup guides": "导入和备份指南",
-  "Back up and restore your collection": "备份和恢复您的收藏"
+  "Back up and restore your collection": "备份和恢复您的收藏",
+  "On Apple Watch, reporting pain or feeling unwell blocks further validations and is retained, even offline or after cancellation. Recovery uses the actual end date of cancelled Watch sessions. Journal photos are preserved if saving a deletion fails.": "在Apple Watch 上，疼痛或不适的报告会暂停验证并保留下来，即使是离线或取消后也是如此。 恢复会考虑已取消的观看会话的实际结束日期。 如果保存删除失败，则会保留日记照片。"
 }

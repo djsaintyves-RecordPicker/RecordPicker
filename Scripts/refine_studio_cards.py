@@ -18,7 +18,8 @@ for p in root.rglob('apps/index.html'):
   for note in list(body.xpath('./p[@class="release-note"]')):
    body.remove(note)
    details=etree.SubElement(body,'details',{'class':'project-update'})
-   etree.SubElement(details,'summary').text='Nouveautés · 1.0.2' if fr else ('What’s new · 1.0.2' if en else '1.0.2')
+   version = '1.0.3' if ident == 'physical-routine' else '1.0.2'
+   etree.SubElement(details,'summary').text=('Nouveautés · ' if fr else 'What’s new · ' if en else '') + version
    details.append(note)
   for a in list(actions):actions.remove(a)
   grid=etree.SubElement(actions,'div',{'class':'project-store-grid'}) if stores else None
