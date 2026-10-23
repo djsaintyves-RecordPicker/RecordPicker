@@ -131,5 +131,8 @@
   "New · Snory Teller 1.0.2": "신규 · Snory Teller 1.0.2",
   "Snory Teller requires an iPhone running iOS 16 or later. Vibrations require a paired Apple Watch running watchOS 9 or later with the app installed. The iPhone app, Apple Watch app and widget are available in 50 localizations.": "Snory Teller를 사용하려면 iOS 16 이상을 실행하는 iPhone이 필요합니다. 진동을 사용하려면 앱이 설치된 watchOS 9 이상을 실행하는 페어링된 Apple Watch가 필요합니다. iPhone 앱, Apple Watch 앱 및 위젯은 50개 지역화 버전으로 제공됩니다.",
   "Alerts depend on devices, permissions and settings. Silent night alarms require iOS 26 or later; the iPhone may also vibrate. The app cannot identify who is snoring. The app provides no sleep apnea diagnosis or treatment.": "알림은 장치, 권한 및 설정에 따라 다릅니다. 무음 야간 알람에는 iOS 26 이상이 필요합니다. iPhone이 진동할 수도 있습니다. 앱은 누가 코를 고고 있는지 식별할 수 없습니다. 이 앱은 수면 무호흡증 진단이나 치료를 제공하지 않습니다.",
-  "Snory Teller · 1.0.2": "Snory Teller · 1.0.2"
+  "Snory Teller · 1.0.2": "Snory Teller · 1.0.2",
+  "New · Snory Teller 1.0.3": "신규 · Snory Teller 1.0.3",
+  "Prepare each night with microphone, battery, placement and Apple Watch checks. Morning reports now explain their data quality and let you record context and perceived accuracy. Compare normalized 7- or 30-night trends, and review prompts appear only after real use.": "마이크, 배터리, 배치 및 Apple Watch 점검으로 매일 밤을 준비하세요. 이제 아침 보고서에서는 데이터 품질을 설명하고 맥락과 인지된 정확성을 기록할 수 있습니다. 정규화된 7박 또는 30박 추세를 비교하면 실제 사용 후에만 검토 메시지가 나타납니다.",
+  "Snory Teller · 1.0.3": "Snory Teller · 1.0.3"
 }

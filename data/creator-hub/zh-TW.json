@@ -456,5 +456,11 @@
   "Compatibility with every TERA model has not been physically verified. Keyboard/HID mode can enter barcode digits, but this alone does not certify the complete Record Picker workflow. Before relying on a scanner, check its exact model and input mode with support. Include your operating system and app version; do not send pairing codes or your full collection backup.": "與每個 TERA 型號的兼容性尚未經過物理驗證。鍵盤/HID 模式可以輸入條碼數字，但這本身並不能證明完整的 Record Picker 工作流程。在依賴掃描器之前，請在支援人員的協助下檢查其確切型號和輸入模式。包括您的作業系統和應用程式版本；不要發送配對代碼或您的完整收藏備份。",
   "Import and backup guides": "匯入和備份指南",
   "Back up and restore your collection": "備份和恢復您的收藏",
-  "On Apple Watch, reporting pain or feeling unwell blocks further validations and is retained, even offline or after cancellation. Recovery uses the actual end date of cancelled Watch sessions. Journal photos are preserved if saving a deletion fails.": "在Apple Watch 上，疼痛或不適的報告會暫停驗證並保留下來，即使是離線或取消後也是如此。 復原會考慮已取消的觀看會話的實際結束日期。 若儲存刪除失敗，則會保留日記照片。"
+  "On Apple Watch, reporting pain or feeling unwell blocks further validations and is retained, even offline or after cancellation. Recovery uses the actual end date of cancelled Watch sessions. Journal photos are preserved if saving a deletion fails.": "在Apple Watch 上，疼痛或不適的報告會暫停驗證並保留下來，即使是離線或取消後也是如此。 復原會考慮已取消的觀看會話的實際結束日期。 若儲存刪除失敗，則會保留日記照片。",
+  "Record Picker · iOS": "Record Picker · iOS",
+  "Record Picker · macOS": "Record Picker · macOS",
+  "Record Picker · Windows": "Record Picker · Windows",
+  "Record Picker · Android — Become an  beta tester": "Record Picker · Android — 成為 Beta 測試員",
+  "New · Snory Teller 1.0.3": "新·Snory Teller 1.0.3",
+  "Prepare each night with microphone, battery, placement and Apple Watch checks. Morning reports now explain their data quality and let you record context and perceived accuracy. Compare normalized 7- or 30-night trends, and review prompts appear only after real use.": "每晚準備麥克風、電池、放置和 Apple Watch 檢查。早間報告現在會解釋其數據質量，並讓您記錄上下文和感知的準確性。比較標準化的 7 晚或 30 晚趨勢，只有在實際使用後才會出現審核提示。"
 }

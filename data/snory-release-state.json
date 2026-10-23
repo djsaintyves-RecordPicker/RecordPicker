@@ -1,10 +1,13 @@
 {
-  "version": "1.0.2",
-  "status": "PUBLICLY_AVAILABLE",
-  "verifiedDate": "2026-10-12",
-  "source": "https://itunes.apple.com/lookup?id=6820177689&country=fr",
-  "releaseDate": "2026-10-10T19:10:44Z",
-  "storeURL": "https://apps.apple.com/fr/app/snory-teller/id6820177689?uo=4",
-  "releaseNotesFR": "Des badges et des étapes pour préparer vos nuits et prendre du recul sur vos bilans. Suivez vos sessions terminées et vos retours du matin, y compris le ressenti de votre partenaire. Accessibles sans abonnement, sans série quotidienne ni récompense liée aux ronflements ou au nombre de vibrations.",
-  "translationReview": "French and English authored; other languages machine translated, editorial review pending."
+  "version": "1.0.3",
+  "status": "READY_FOR_SALE",
+  "verifiedDate": "2026-10-23",
+  "source": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/016e3232-a0ca-45cc-af24-c9b1d40599de",
+  "releaseDate": "2026-10-23T06:05:25Z",
+  "storeURL": "https://apps.apple.com/fr/app/snory-teller/id6820177689",
+  "releaseNotesFR": "Préparez chaque nuit avec les contrôles du micro, de la batterie, du placement et de l’Apple Watch. Les bilans expliquent désormais la qualité des données et permettent de noter le contexte et la précision ressentie. Comparez des tendances normalisées sur 7 ou 30 nuits ; la demande d’avis n’apparaît qu’après un usage réel.",
+  "translationReview": "French and English authored; other languages machine translated, editorial review pending.",
+  "submissionId": "36bb7b0e-85f8-408b-8e7a-04dced1fc32d",
+  "submissionState": "COMPLETE",
+  "storefrontPropagation": "The App Store Connect version is READY_FOR_SALE; public storefront propagation may take up to 24 hours."
 }

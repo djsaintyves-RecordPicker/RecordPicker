@@ -131,5 +131,8 @@
   "New · Snory Teller 1.0.2": "Uusi · Snory Teller 1.0.2",
   "Snory Teller requires an iPhone running iOS 16 or later. Vibrations require a paired Apple Watch running watchOS 9 or later with the app installed. The iPhone app, Apple Watch app and widget are available in 50 localizations.": "Snory Teller vaatii iPhonen, jossa on iOS 16 tai uudempi. Tärinä vaatii laiteparin Apple Watchin, jossa on watchOS 9 tai uudempi ja jossa sovellus on asennettu. iPhone-sovellus, Apple Watch -sovellus ja widget ovat saatavilla 50 lokalisaatiolla.",
   "Alerts depend on devices, permissions and settings. Silent night alarms require iOS 26 or later; the iPhone may also vibrate. The app cannot identify who is snoring. The app provides no sleep apnea diagnosis or treatment.": "Hälytykset riippuvat laitteista, käyttöoikeuksista ja asetuksista. Hiljaiset yöhälytykset vaativat iOS 26:n tai uudemman; iPhone saattaa myös täristä. Sovellus ei pysty tunnistamaan, kuka kuorsaa. Sovellus ei tarjoa uniapnean diagnoosia tai hoitoa.",
-  "Snory Teller · 1.0.2": "Snory Teller · 1.0.2"
+  "Snory Teller · 1.0.2": "Snory Teller · 1.0.2",
+  "New · Snory Teller 1.0.3": "Uusi · Snory Teller 1.0.3",
+  "Prepare each night with microphone, battery, placement and Apple Watch checks. Morning reports now explain their data quality and let you record context and perceived accuracy. Compare normalized 7- or 30-night trends, and review prompts appear only after real use.": "Valmistaudu joka ilta mikrofonin, akun, sijoittelun ja Apple Watchin tarkistuksen avulla. Aamuraportit selittävät nyt tietojensa laadun ja antavat sinun tallentaa kontekstin ja havaitun tarkkuuden. Vertaa normalisoituja 7 tai 30 yön trendejä, ja tarkistuskehotteet tulevat näkyviin vasta todellisen käytön jälkeen.",
+  "Snory Teller · 1.0.3": "Snory Teller · 1.0.3"
 }

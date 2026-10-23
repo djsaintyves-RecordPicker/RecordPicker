@@ -17,7 +17,7 @@ class Head(HTMLParser):
 def normalize(raw):
  head=Head();head.feed(raw)
  assert head.description and head.canonical and head.language
- data={'@context':'https://schema.org','@type':'SoftwareApplication','@id':'https://recordpicker.app/snory-teller/#app','name':'Snory Teller','url':head.canonical,'description':head.description,'applicationCategory':'HealthApplication','operatingSystem':'iOS 16.0 or later; watchOS 9.0 or later','softwareVersion':'1.0.2','downloadUrl':'https://apps.apple.com/app/snory-teller/id6820177689','image':'https://recordpicker.app/snory-teller/icon.png','inLanguage':head.language,'author':{'@type':'Person','name':'Yves Durand'}}
+ data={'@context':'https://schema.org','@type':'SoftwareApplication','@id':'https://recordpicker.app/snory-teller/#app','name':'Snory Teller','url':head.canonical,'description':head.description,'applicationCategory':'HealthApplication','operatingSystem':'iOS 16.0 or later; watchOS 9.0 or later','softwareVersion':'1.0.3','downloadUrl':'https://apps.apple.com/app/snory-teller/id6820177689','image':'https://recordpicker.app/snory-teller/icon.png','inLanguage':head.language,'author':{'@type':'Person','name':'Yves Durand'}}
  tag='<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')+'</script>'
  raw=re.sub(r'<script type="application/ld\+json">.*?</script>','',raw,flags=re.S)
  raw=raw.replace('</head>',tag+'</head>',1)
