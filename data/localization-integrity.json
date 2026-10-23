@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Restore Deezer in all localized Studio music menus with the verified public October Mess playlist; retain existing translated listen labels.",
+  "review_reason": "Order Studio download-menu labels consistently: app name first, then platform; retain localized Android beta invitation after the platform.",
   "schema": 1
 }

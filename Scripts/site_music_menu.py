@@ -9,6 +9,15 @@ DEEZER = 'https://www.deezer.com/playlist/15860974261'
 def normalize(text):
  def header(match):
   block = match[0]
+  block = re.sub(r'\b(iOS|macOS|Windows) · Record Picker', r'Record Picker · \1', block)
+  def beta_label(anchor):
+   def label(span):
+    text = span[1]
+    if text.startswith('Record Picker ·'): return span[0]
+    detail = text.replace('Android', '').strip()
+    return '<span>Record Picker · Android — '+detail+'</span>'
+   return re.sub(r'<span>(.*?)</span>', label, anchor[0], count=1, flags=re.S)
+  block = re.sub(r'<a\b[^>]*class="store-android-beta"[^>]*>.*?</a>', beta_label, block, flags=re.S)
   if 'hub-menu' not in block or 'deezer.com/' in block: return block
   def add(link):
    spotify = link[0]
