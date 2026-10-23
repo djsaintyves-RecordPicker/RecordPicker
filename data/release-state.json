@@ -7,7 +7,7 @@
       "iphone": "3.1.2",
       "ipad": "3.1.2",
       "watch": "3.1.2",
-      "mac": "3.0.1",
+      "mac": "3.1.2",
       "windows": "3.1.2"
     },
     "platforms": {
@@ -21,7 +21,8 @@
       "iphone",
       "ipad",
       "watch",
-      "windows"
+      "windows",
+      "mac"
     ]
   },
   "historical_releases": [
@@ -102,7 +103,7 @@
       "iphone": "3.1.2",
       "ipad": "3.1.2",
       "watch": "3.1.2",
-      "mac": "3.0.1",
+      "mac": "3.1.2",
       "windows": "3.1.2"
     }
   },
@@ -110,7 +111,7 @@
     "checked_at": "2026-10-23",
     "record_picker": {
       "ios": "3.1.2",
-      "mac": "3.0.1",
+      "mac": "3.1.2",
       "windows": "3.1.2"
     },
     "snory_teller": "1.0.2",
@@ -124,6 +125,7 @@
     },
     "windows_note": "Partner Center submission 10 confirmed published on 2026-10-22; marketing 3.1.2, x64 package 3.1.4.0, ARM64 package 3.1.5.0.",
     "screenshot_note": "Existing screenshots retain their actual 3.0.1 capture provenance.",
-    "ios_note": "Apple public lookup verified 3.1.2 in FR/US/JP/KR; release date 2026-10-22T21:04:34Z. Native Mac version not reverified; retained 3.0.1."
+    "ios_note": "Apple public lookup verified iOS 3.1.2; release date 2026-10-22T21:04:34Z.",
+    "mac_note": "macOS 3.1.2 approval confirmed by publisher on 2026-10-23; same version as iOS and Windows. Capture provenance remains 3.0.1."
   }
 }
