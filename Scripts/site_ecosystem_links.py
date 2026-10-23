@@ -9,8 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]
 LEGACY='my-physical-routine.mdvnc9v49c.chatgpt.site'
 
 def physical_destination(locale):
- from localize_physical import route
- return route(locale,'about')
+ prefix='' if locale=='en-US' else 'fr/' if locale=='fr-FR' else locale.lower()+'/'
+ return '/physical/'+prefix+'about/'
 
 def normalize(raw,locale):
  destination=physical_destination(locale)
