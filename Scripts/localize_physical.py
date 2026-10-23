@@ -80,6 +80,13 @@ def generate():
  for u in urls:
   n=etree.SubElement(sitemap,'{'+ns+'}url');etree.SubElement(n,'{'+ns+'}loc').text=u;etree.SubElement(n,'{'+ns+'}lastmod').text='2026-10-23'
  (ROOT/'physical/sitemap.xml').write_bytes(etree.tostring(sitemap,xml_declaration=True,encoding='UTF-8',pretty_print=True))
+ # The shared SEO audit requires every canonical in both root sitemaps as well.
+ for filename in ('sitemap.xml','sitemap-media.xml'):
+  path=ROOT/filename;raw=path.read_text();existing=set(re.findall(r'<loc>([^<]+)</loc>',raw))
+  missing=[u for u in urls if u not in existing]
+  if missing:
+   additions='\n'.join('<url><loc>'+u+'</loc><lastmod>2026-10-23</lastmod></url>' for u in missing)
+   path.write_text(raw.replace('</urlset>',additions+'\n</urlset>'))
  print('Generated 150 MPR pages in 50 locales',flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--refresh',action='store_true');args=p.parse_args()
