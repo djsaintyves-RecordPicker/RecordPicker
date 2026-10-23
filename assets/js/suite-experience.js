@@ -72,3 +72,13 @@
   try { navigator.vibrate(8); lastPulse = now; } catch { /* Unsupported or restricted: keep the normal action. */ }
  }, {passive:true});
 })();
+
+/* Native selects may match :focus-visible after a touch on Safari. */
+(() => {
+ const root = document.querySelector('.suite-experience');
+ if (!root) return;
+ document.addEventListener('keydown', event => {
+  if (event.key === 'Tab' || event.key.startsWith('Arrow')) root.classList.add('suite-keyboard-navigation');
+ });
+ document.addEventListener('pointerdown', () => root.classList.remove('suite-keyboard-navigation'), {passive:true});
+})();

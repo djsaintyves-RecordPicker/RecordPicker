@@ -310,3 +310,12 @@
 }
 .suite-experience.suite-snory .secondary-cta:hover { background:#0d2341; box-shadow:none; }
 .suite-experience.suite-snory .store-cta { box-shadow:var(--suite-depth); }
+/* A plain language field; only deliberate keyboard navigation gets a focus cue. */
+.suite-experience .language-nav select {
+ border:0; border-radius:0; background:transparent; box-shadow:none;
+}
+.suite-experience .language-nav select:focus,
+.suite-experience .language-nav select:focus-visible { outline:none; box-shadow:none; }
+.suite-experience.suite-keyboard-navigation .language-nav select:focus-visible {
+ outline:2px solid currentColor; outline-offset:4px;
+}
