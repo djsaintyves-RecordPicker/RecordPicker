@@ -41,7 +41,11 @@ def main():
   title, metadata = expected(kind, locale)
   after = re.sub(r'<title>.*?</title>', '<title>'+title+'</title>', after, count=1)
   after = re.sub(r'<!-- meal-discovery:start -->.*?<!-- meal-discovery:end -->', '', after, flags=re.S)
-  after = after.replace('</head>', metadata+'</head>', 1)
+  common_css = re.search(r'<link[^>]*href="/assets/css/suite-experience\.css[^"]*"[^>]*>', after)
+  if common_css:
+   after = after[:common_css.start()] + metadata + after[common_css.start():]
+  else:
+   after = after.replace('</head>', metadata+'</head>', 1)
   studio = '/fr/apps/#meal-picker' if locale == 'fr-FR' else '/apps/#meal-picker'
   link = f'<a data-meal-studio href="{studio}">Record Picker Studio</a>'
   after = re.sub(r'<a data-meal-studio[^>]*>.*?</a>', '', after)
