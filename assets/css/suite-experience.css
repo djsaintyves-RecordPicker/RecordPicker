@@ -275,3 +275,28 @@
 @media(min-width:741px) {
  .suite-experience.suite-studio .hub-menu-panel { min-width:320px; }
 }
+/* One compact navigation row on phones; dropdowns span the navigation width. */
+@media(max-width:740px) {
+ .suite-experience.suite-studio .hub-header { padding-inline:16px; }
+ .suite-experience.suite-studio .hub-header .hub-menu {
+  display:flex; flex-wrap:nowrap; gap:6px; align-items:flex-start;
+  position:relative;
+ }
+ .suite-experience.suite-studio .hub-menu-group { flex:1 1 0; min-width:0; }
+ .suite-experience.suite-studio .hub-menu-group > summary {
+  padding:10px 6px; font-size:12px; white-space:nowrap; justify-content:center;
+ }
+ .suite-experience.suite-studio .hub-menu-group > summary::after { margin-inline-start:4px; }
+ .suite-experience.suite-studio .hub-menu-group:last-child > summary {
+  font-size:0;
+ }
+ .suite-experience.suite-studio .hub-menu-group:last-child > summary::before {
+  content:"Apps"; font-size:12px;
+ }
+ .suite-experience.suite-studio .hub-menu-group:last-child > summary::after { font-size:12px; }
+ .suite-experience.suite-studio .hub-menu-group[open] { flex:1 1 0; }
+ .suite-experience.suite-studio .hub-menu-group[open] .hub-menu-panel {
+  position:absolute; inset-inline:0; top:calc(100% + 8px); width:100%;
+  max-height:55vh; overflow:auto; margin-top:0;
+ }
+}
