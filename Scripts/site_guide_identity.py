@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from site_social_identity import normalize as normalize_social
+from site_ecosystem_links import physical_destination
 ROOT=Path(__file__).resolve().parents[1]
 BRANDS={'snory-guide':'Snory Teller','physical-guide':'My Physical Routine'}
 
@@ -20,7 +21,7 @@ def normalize(raw,kind,locale):
  raw=re.sub(r'(<h1[^>]*>).*?(</h1>)',lambda m:m.group(1)+escape(title)+m.group(2),raw,count=1,flags=re.S)
  prefix='' if locale=='en-US' else 'fr/' if locale=='fr-FR' else locale.lower()+'/'
  hub='/'+prefix+'apps/'
- product='/snory-teller/'+locale+'/' if kind=='snory-guide' else hub+'#physical-routine'
+ product='/snory-teller/'+locale+'/' if kind=='snory-guide' else physical_destination(locale)
  items=[('Record Picker Studio','https://recordpicker.app'+hub),(brand,'https://recordpicker.app'+product),(label,unescape(canonical))]
  nav='<nav class="project-nav guide-breadcrumbs" aria-label="'+escape(brand,quote=True)+'"><a href="'+hub+'">Record Picker Studio</a><span aria-hidden="true">›</span><a href="'+product+'">'+escape(brand)+'</a><span aria-hidden="true">›</span><span aria-current="page">'+escape(label)+'</span></nav>'
  raw=re.sub(r'<nav class="project-nav guide-breadcrumbs".*?</nav>','',raw,flags=re.S)

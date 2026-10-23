@@ -9,6 +9,8 @@ import argparse,concurrent.futures,hashlib,json,re
 from lxml import html,etree
 import localize_creator_hub as hub
 from site_campaign_links import normalize as normalize_campaign_links
+from site_social_identity import normalize as normalize_social_identity
+from site_guide_identity import normalize as normalize_guide_identity
 ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/'data/physical-localization'
 KINDS=('about','support','privacy');LOCALES=hub.LOCALES
 
@@ -66,11 +68,12 @@ def generate():
     obj=json.loads(node.text);obj['url']=canonical;obj['inLanguage']='nb' if locale=='no' else locale
     if isinstance(obj.get('description'),str) and obj['description'] in cache:obj['description']=cache[obj['description']]
     node.text=json.dumps(obj,ensure_ascii=False,separators=(',',':'))
-   target=ROOT/route(locale,kind).lstrip('/')/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(normalize_campaign_links('<!doctype html>\n'+html.tostring(d,encoding='unicode',with_tail=False)+'\n'))
+   target=ROOT/route(locale,kind).lstrip('/')/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(normalize_social_identity('<!doctype html>\n'+html.tostring(d,encoding='unicode',with_tail=False)+'\n','physical-guide'))
  # The MPR getting-started guide follows the same browser language, too.
  for guide in ROOT.glob('**/physical-routine-guide/index.html'):
   raw=guide.read_text();raw=re.sub(r'<script src="/physical/locale.js[^"]*"[^>]*></script>','',raw)
-  raw=raw.replace('</head>','<script src="'+script+'"></script></head>',1);guide.write_text(normalize_campaign_links(raw))
+  raw=raw.replace('</head>','<script src="'+script+'"></script></head>',1);guide_locale=html.fromstring(raw).get('lang','en-US');guide_locale={'en':'en-US','fr':'fr-FR','nb':'no'}.get(guide_locale,guide_locale)
+  guide.write_text(normalize_guide_identity(raw,'physical-guide',guide_locale))
  source=ROOT/'data/creator-hub/templates.json';hub_templates=json.loads(source.read_text())
  for key in ('en-physical-guide','fr-physical-guide'):
   raw=hub_templates[key];raw=re.sub(r'<script src="/physical/locale.js[^"]*"[^>]*></script>','',raw)
