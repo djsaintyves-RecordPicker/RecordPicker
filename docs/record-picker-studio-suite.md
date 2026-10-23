@@ -62,3 +62,5 @@ Les entrées utilisent désormais un fondu de 1,2 à 1,4 seconde, sur 2 px, sans
 ## Harmonisation finale de toutes les pages — 22 octobre 2026
 
 Les 1 258 pages de contenu chargent la charte commune : 250 pages Studio, 447 Record Picker, 350 guides, 201 Snory Teller, six My Physical Routine et quatre Meal Picker. Les alias de redirection et fichiers de vérification restent hors présentation. Les blocs produit secondaires, les sections MPR et Meal Picker utilisent également les surfaces sans bordure et le relief discret. Les surfaces claires sont rapprochées du papier (#f8f6f0 sur #f7f5ef) ; Snory conserve sa palette nocturne. Les pages d’assistance Meal Picker gardent une marge intérieure adaptée au mobile. Textes, liens de campagne, canoniques et hreflang sont conservés.
+
+Le 23 octobre, vérification du rendu public : suppression des contours restants des blocs Android, aperçu RP/Mac et tirage aléatoire, ainsi que des sections finales des guides. Les séparateurs de lecture et les contours utiles des commandes sont conservés.
