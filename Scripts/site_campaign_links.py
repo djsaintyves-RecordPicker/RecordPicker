@@ -56,6 +56,8 @@ def normalize(text: str) -> str:
     text = text.replace(SCRIPT, '')
     executable = re.sub(r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>', '', text, flags=re.I | re.S)
     executable = re.sub(r'''<script\b[^>]*src=["']/assets/js/suite-experience\.js(?:\?[^"']*)?["'][^>]*>\s*</script>''', '', executable, flags=re.I | re.S)
+    # Language-only MPR routing does not require the campaign runtime.
+    executable = re.sub(r'''<script\b[^>]*src=["']/physical/locale\.js(?:\?[^"']*)?["'][^>]*>\s*</script>''', '', executable, flags=re.I | re.S)
     if re.search(r'<script\b', executable, re.I):
         text = text.replace('</head>', SCRIPT + '</head>', 1)
     market = market_token(text)

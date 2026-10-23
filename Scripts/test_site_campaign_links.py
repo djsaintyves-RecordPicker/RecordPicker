@@ -38,6 +38,15 @@ class CampaignLinksTests(unittest.TestCase):
         dynamic = page.replace('</head>', '<script src="/site.js"></script></head>')
         self.assertEqual(normalize(dynamic).count('/apps/campaign-links.js'), 1)
 
+    def test_mpr_language_router_keeps_static_store_links(self):
+        router = '<script src="/physical/locale.js?v=test"></script>'
+        page = '<html><head>' + router + '</head><body><a href="https://apps.apple.com/app/id6820104318">Store</a></body></html>'
+        result = normalize(page)
+        self.assertIn(router, result)
+        self.assertIn('ct=MPR_Website', result)
+        self.assertNotIn('/apps/campaign-links.js', result)
+        self.assertEqual(result, normalize(result))
+
     def test_routine_and_windows(self):
         self.assertIn('ct=MPR_Website', decorate('https://apps.apple.com/app/id6820104318'))
         self.assertIn('cid=RP_Website', decorate('https://apps.microsoft.com/detail/9N2ZWRL4M3JC'))
