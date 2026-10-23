@@ -66,3 +66,5 @@ Les 1 258 pages de contenu chargent la charte commune : 250 pages Studio, 447 Re
 Le 23 octobre, vérification du rendu public : suppression des contours restants des blocs Android, aperçu RP/Mac et tirage aléatoire, ainsi que des sections finales des guides. Les séparateurs de lecture et les contours utiles des commandes sont conservés.
 
 Navigation du 23 octobre : menus en listes neutres de 44 px minimum, icônes monochromes, sans aplats de stores. Sur mobile, sélecteur de langue au-dessus de la grille de navigation ; panneau ouvert dans le flux et en pleine largeur, en-tête non collant pour ne pas couvrir le contenu. Vérifications à 390 px et 320 px, dont RTL arabe.
+
+Illustrations, 23 octobre : apparition commune en 1,6 s, opacité 0,9 vers 1 et translation indépendante de 1 px. Les images éditoriales de toutes les familles de pages sont candidates ; icônes de commandes et éléments du logo animé exclus. Les maquettes téléphone/montre sont animées par leur conteneur pour éviter un effet doublé. Les médias hors écran restent visibles sans JavaScript et le réglage de réduction des animations reste respecté.

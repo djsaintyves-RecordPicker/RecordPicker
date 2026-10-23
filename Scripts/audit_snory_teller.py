@@ -14,7 +14,7 @@ class Page(HTMLParser):
         if tag=="link" and a.get("rel")=="canonical":self.canonical=a.get("href")
         if tag=="link" and a.get("rel")=="alternate":self.alternates[a.get("hreflang")]=a.get("href")
         if tag == "script":
-            if a.get('src') == '/assets/js/suite-experience.js?v=20261022-smooth' and 'defer' in a:
+            if a.get('src') == '/assets/js/suite-experience.js?v=20261023-illustrations' and 'defer' in a:
                 pass  # Approved local presentation/haptic enhancement; no remote code or tracking.
             else:
                 assert a.get('type') == 'application/ld+json' and not a.get('src'), 'Only structured data and the local suite enhancement are allowed'

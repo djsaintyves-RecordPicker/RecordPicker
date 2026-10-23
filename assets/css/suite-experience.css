@@ -50,10 +50,10 @@
 .suite-experience.suite-studio .playlist-actions a:active,
 .suite-experience.suite-studio .project-store-grid > a:active { transform:translateY(.5px) scale(.995); }
 @media(prefers-reduced-motion:no-preference) {
- .suite-experience.suite-studio .art-arriving { animation:studio-art-arrival 1400ms cubic-bezier(.4,0,.2,1) var(--arrival-delay,0ms) backwards; }
+ .suite-experience.suite-studio .art-arriving { animation:studio-art-arrival 1600ms cubic-bezier(.4,0,.2,1) var(--arrival-delay,0ms) backwards; }
  @keyframes studio-art-arrival {
-  from { opacity:.8; transform:translateY(2px); }
-  to { opacity:1; transform:translateY(0); }
+  from { opacity:.9; translate:0 1px; }
+  to { opacity:1; translate:0 0; }
  }
  @media(hover:hover) and (pointer:fine) {
   .suite-experience.suite-studio .playlist-art { transition:transform 300ms ease,box-shadow 300ms ease; }
@@ -143,7 +143,7 @@
  .suite-experience .stores-arriving > a:nth-child(5) { animation-delay:1040ms; }
  .suite-experience .stores-arriving > a:nth-child(6) { animation-delay:1300ms; }
  .suite-experience .stores-arriving:focus-within > a { animation:none; }
- .suite-experience .art-arriving { animation:studio-art-arrival 1400ms cubic-bezier(.4,0,.2,1) var(--arrival-delay,0ms) backwards; }
+ .suite-experience .art-arriving { animation:studio-art-arrival 1600ms cubic-bezier(.4,0,.2,1) var(--arrival-delay,0ms) backwards; }
 }
 @media(hover:hover) and (pointer:fine) {
  .suite-experience :is(.card,.project-card,.community-grid article,.privacy-card,.offer,.release-card,.steps section,.guide-topic,.seo-link-card) { transition:box-shadow 300ms ease,transform 300ms ease; }

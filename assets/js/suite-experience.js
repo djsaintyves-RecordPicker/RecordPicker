@@ -3,13 +3,21 @@
  const root = document.querySelector('.suite-experience');
  if (!root || !('IntersectionObserver' in window)) return;
  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
- const artwork = [...root.querySelectorAll('.music .playlist-art,.platform-capture-hero img,.mac-hero-visual img,.context-visual img,.suite-product-masthead img,.rps-guide-masthead img,.phone-shell,.watch-shell')];
+ // Include editorial illustrations across products, guides and support pages.
+ // Device wrappers animate as one object; their nested screenshots stay settled.
+ const artwork = [...root.querySelectorAll('main img,.phone-shell,.watch-shell')].filter(element => {
+  if (element.matches('.phone-shell,.watch-shell')) return true;
+  if (element.closest('.phone-shell,.watch-shell,.studio-brand-composition,button,.store-cta,.store-link,.button,.playlist-actions,.platforms')) return false;
+  if (element.matches('.platform-logo,.store-logo')) return false;
+  const width = Number(element.getAttribute('width'));
+  return !width || width > 48;
+ });
  const introduction = [...root.querySelectorAll('.studio-introduction')];
  const community = [...root.querySelectorAll('.community-grid article')];
  community.forEach((card, index) => card.style.setProperty('--community-delay', `${index * 220}ms`));
  const singleControls = [...root.querySelectorAll('main .store-cta,main .suite-product-cta,main .store-link,main .button')].filter(element => !element.closest('.project-store-grid,.playlist-actions,.cta-row,.app-actions,.platforms'));
  const groups = [...root.querySelectorAll('.project-store-grid,.playlist-actions,.cta-row,.app-actions,.platforms')];
- artwork.forEach((art, index) => art.style.setProperty('--arrival-delay', `${(index % 2) * 220}ms`));
+ artwork.forEach((art, index) => art.style.setProperty('--arrival-delay', `${(index % 2) * 120}ms`));
  const rearmTimers = new Map();
  function revealObserver(className, visibleFraction) {
   return new IntersectionObserver(entries => {
