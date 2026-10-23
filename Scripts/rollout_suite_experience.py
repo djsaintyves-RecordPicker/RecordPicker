@@ -2,6 +2,7 @@
 from pathlib import Path
 import re
 from lxml import html
+from site_music_menu import normalize as music_menu
 from site_campaign_links import normalize
 from site_snory_metadata import normalize as snory_metadata
 from site_guide_identity import normalize as guide_identity
@@ -38,7 +39,7 @@ for p in ROOT.rglob('*.html'):
   elif '/snory-teller-guide/' in '/'+rel:kind='suite-guide-snory'
   elif '/physical-routine-guide/' in '/'+rel:kind='suite-guide-physical'
   else:continue
- s=classes(s,['rps-suite','suite-experience',kind])
+ s=music_menu(classes(s,['rps-suite','suite-experience',kind]))
  s=re.sub(r'<link[^>]*href="/assets/css/(?:studio-shadow-study|suite-experience)\.css[^\"]*"[^>]*>','',s)
  s=re.sub(r'<script[^>]*src="/assets/js/(?:studio-motion-study|suite-experience)\.js[^\"]*"[^>]*>\s*</script>','',s)
  if kind=='suite-studio':s=brand(s)
