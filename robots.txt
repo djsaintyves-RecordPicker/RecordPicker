@@ -6,3 +6,5 @@ Sitemap: https://recordpicker.app/sitemap-media.xml
 Sitemap: https://recordpicker.app/snory-teller/sitemap.xml
 Sitemap: https://recordpicker.app/sitemap-videos.xml
 Sitemap: https://recordpicker.app/sitemap-meal-picker.xml
+
+Sitemap: https://recordpicker.app/physical/sitemap.xml

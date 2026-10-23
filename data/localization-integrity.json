@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "MPR 1.0.3 approved release and presentation copy verified",
+  "review_reason": "Yves requested automatic browser-language MPR pages with no language selector; 50 static product/support/privacy locales and localized Studio destinations verified",
   "schema": 1
 }

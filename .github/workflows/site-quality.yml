@@ -19,7 +19,9 @@ jobs:
       - name: Compile site scripts
         run: python3 -m compileall -q Scripts
       - name: Verify language navigation respects explicit URLs
-        run: node Scripts/test_creator_language_navigation.cjs
+        run: |
+          node Scripts/test_creator_language_navigation.cjs
+          node Scripts/test_physical_language_navigation.cjs
       - name: Verify campaign attribution and static store links
         run: |
           node Scripts/test_campaign_links.cjs

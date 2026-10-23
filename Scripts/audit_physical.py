@@ -1,32 +1,35 @@
-"""Validate the separate Physical support subsite."""
+"""Verify all 50 MPR product/support/privacy locales and automatic-language assets."""
 from pathlib import Path
-import re
 from urllib.parse import urlsplit
-ROOT = Path(__file__).resolve().parents[1]
+import json
+from lxml import html
+ROOT=Path(__file__).resolve().parents[1]
 def audit():
-    pages = sorted((ROOT / "physical").rglob("*.html"))
-    assert len(pages) == 6, "Physical needs three pages in two languages"
-    for page in pages:
-        text = page.read_text()
-        route = "/" + str(page.relative_to(ROOT).parent) + "/"
-        assert f'<link rel="canonical" href="https://recordpicker.app{route}">' in text
-        assert 'mailto:support@recordpicker.app?subject=Physical' in text
-        assert '<meta name="viewport"' in text and 'prefers-color-scheme' in (ROOT / "physical/styles.css").read_text()
-        assert '<main id="main">' in text and '<h1>' in text
-        assert 'hreflang="fr"' in text and 'hreflang="en"' in text
-        # JSON-LD plus the approved local presentation enhancement only.
-        import json
-        for metadata in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
-            data = json.loads(metadata)
-            assert data['@type'] == 'SoftwareApplication' and data['name'] == 'My Physical Routine'
-        executable = re.sub(r'<script type="application/ld\+json">.*?</script>', '', text, flags=re.S)
-        executable = executable.replace('<script src="/assets/js/suite-experience.js?v=20261023-language" defer></script>', '')
-        assert '<script' not in executable and 'Brouillon' not in text
-        for url in re.findall(r'(?:href|src)="([^"]+)"', text):
-            parsed = urlsplit(url)
-            if parsed.scheme or not parsed.path: continue
-            path = ROOT / parsed.path.lstrip("/")
-            if parsed.path.endswith("/"): path = path / "index.html"
-            assert path.exists(), f"Missing link: {url}"
-    print("Physical: six bilingual pages and local links verified")
-if __name__ == "__main__": audit()
+ manifest=json.loads((ROOT/'data/physical-localization/manifest.json').read_text());locales=manifest['locales']
+ assert len(locales)==50 and len(manifest['pages'])==150
+ pages=sorted((ROOT/'physical').rglob('*.html'));assert len(pages)==150
+ for page in pages:
+  text=page.read_text();d=html.fromstring(text);route='/'+str(page.relative_to(ROOT).parent)+'/'
+  assert d.xpath('//link[@rel="canonical"]/@href')==['https://recordpicker.app'+route],page
+  assert d.get('data-physical-locale') in locales and d.get('dir') in ('ltr','rtl'),page
+  assert d.get('dir')==('rtl' if d.get('lang').split('-')[0] in ('ar','he','ur') else 'ltr'),page
+  assert len(d.xpath('//h1'))==1 and d.xpath('//main[@id="main"]'),page
+  assert not d.xpath('//select|//nav[@aria-label="Languages"]|//*[@class="language-nav"]'),page
+  assert len(d.xpath('//link[@rel="alternate"]'))==51,page
+  alternates=d.xpath('//link[@rel="alternate"]/@href')
+  assert set(alternates)=={u for u in manifest['pages'] if u.endswith('/'+page.parent.name+'/')},page
+  scripts=d.xpath('//script[@src]/@src');assert any(x.startswith('/physical/locale.js?v=') for x in scripts),page
+  assert all(urlsplit(x).path in ('/physical/locale.js','/assets/js/suite-experience.js') for x in scripts),page
+  assert not d.xpath('//script[not(@src) and not(@type="application/ld+json")]'),page
+  for s in d.xpath('//script[@type="application/ld+json"]/text()'):
+   obj=json.loads(s);assert obj['@type']=='SoftwareApplication' and obj['name']=='My Physical Routine' and obj['inLanguage']==d.get('lang'),page
+  for href in d.xpath('//*[@href]/@href|//*[@src]/@src'):
+   u=urlsplit(href)
+   if u.netloc and u.netloc!='recordpicker.app':continue
+   if u.scheme not in ('','http','https'):continue
+   if not u.path:continue
+   target=ROOT/u.path.lstrip('/') if u.path.startswith('/') else page.parent/u.path
+   if target.is_dir():target/='index.html'
+   assert target.is_file(),(page,href)
+ print('Physical: 150 pages, 50 locales, no selectors, RTL, reciprocal language links and local assets validated')
+if __name__=='__main__':audit()
