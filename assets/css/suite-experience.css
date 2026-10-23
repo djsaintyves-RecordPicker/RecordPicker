@@ -300,3 +300,13 @@
   max-height:55vh; overflow:auto; margin-top:0;
  }
 }
+
+/* Snory controls share the borderless presentation of the suite. */
+.suite-experience.suite-snory :is(.store-cta,.secondary-cta,.status,.language-options,.language-picker summary) { border:0; }
+.suite-experience.suite-snory .secondary-cta {
+ display:inline-flex; align-items:center; justify-content:center;
+ min-height:44px; padding:10px 16px; border-radius:12px;
+ background:transparent; box-shadow:none; text-decoration:none;
+}
+.suite-experience.suite-snory .secondary-cta:hover { background:#0d2341; box-shadow:none; }
+.suite-experience.suite-snory .store-cta { box-shadow:var(--suite-control-depth); }
