@@ -27,6 +27,7 @@ jobs:
           python3 Scripts/site_campaign_links.py
       - name: Validate generated pages
         run: |
+          python3 Scripts/site_meal_discovery.py
           python3 Scripts/audit_site_quality.py
           python3 Scripts/site_social_identity.py
           python3 Scripts/site_ecosystem_links.py

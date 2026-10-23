@@ -26,7 +26,7 @@
     "pt-br": "aa0810edec65ded5cb8b7e4ef1b0b83aa2e09bece6e2b61dd340397ea1a6f997",
     "pt-pt": "2f663bcc021c11b1aac2f9ed11a337c254fbaed2b46ab1893e8e12c95680048d",
     "ru": "e1088929edd44ea2360559e9555d52721bafe020d84b5ec6907ecc8dbad3f176",
-    "shared": "0d891c95e24fe87dba2e8fe204313669f5009c7f19f2e3030acdc36d21f40958",
+    "shared": "7d431062fcac1c4290ff661b77fb0b755767d0b4048dad04bd8c181360f1a7be",
     "sv": "f048c4137e45ea66af780e239519f76c6a04b665caadf273b9535030743ddc60",
     "th": "5e278d81d60f1b31d9572419014f695c1b191a312640bd3b319970876bb63a85",
     "tr": "96de033b4e883607cdeec3a6cb1dbc55c581a62bea5c81577a1fecf7275a5a4d",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Visual suite extension: Windows capture moved to hero with original provenance text available in disclosure; reading content and store destinations preserved.",
+  "review_reason": "Add reviewed FR/EN Meal Picker help links to the two Studio landing pages; retain development status.",
   "schema": 1
 }
