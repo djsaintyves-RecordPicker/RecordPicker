@@ -208,12 +208,12 @@
 
 /* Remaining legacy framed blocks use the same quiet surface as Studio. */
 .suite-experience:not(.suite-snory) :is(.v20-preview-panel,.platform-beta-callout,.random-pick-stage),
-.suite-experience:is(.suite-guide-record,.suite-guide-snory,.suite-guide-physical) .detail-page > section {
+.suite-experience:is(.suite-guide-record,.suite-guide-snory,.suite-guide-physical) .detail-page > :is(section,#guide-next-steps) {
  background:#f8f6f0; border:0; border-radius:16px; box-shadow:var(--suite-depth);
 }
 @media(hover:hover) and (pointer:fine) {
  .suite-experience:not(.suite-snory) :is(.v20-preview-panel,.platform-beta-callout,.random-pick-stage):hover,
- .suite-experience:is(.suite-guide-record,.suite-guide-snory,.suite-guide-physical) .detail-page > section:hover {
+ .suite-experience:is(.suite-guide-record,.suite-guide-snory,.suite-guide-physical) .detail-page > :is(section,#guide-next-steps):hover {
   box-shadow:var(--suite-depth-hover);
  }
 }
