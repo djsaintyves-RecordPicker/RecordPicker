@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-23",
+  "presentation": "One concise benefit in a collapsed summary per released app, detail on demand; existing design and store links preserved.",
+  "locales": [
+    "en-US",
+    "en-AU",
+    "en-CA",
+    "en-GB",
+    "fr-FR",
+    "fr-CA"
+  ],
+  "versions": {
+    "recordPickerIOS": "3.1.2 public, verified Apple lookup",
+    "recordPickerMac": "3.0.1 public; 3.1.2 still in review",
+    "recordPickerWindows": "3.1.2 public",
+    "snoryTeller": "1.0.3 Ready for Distribution verified ASC, public lookup still 1.0.2; rollout noted",
+    "myPhysicalRoutine": "1.0.3 Ready for Distribution verified ASC, public lookup still 1.0.2; rollout noted",
+    "mealPicker": "1.0.0 Waiting for Review; not available claim"
+  },
+  "sources": [
+    "https://itunes.apple.com/lookup?id=6780422305&country=fr",
+    "https://appstoreconnect.apple.com/apps/6820177689/distribution/ios/version/deliverable",
+    "https://appstoreconnect.apple.com/apps/6820104318/distribution/ios/version/deliverable"
+  ]
+}
