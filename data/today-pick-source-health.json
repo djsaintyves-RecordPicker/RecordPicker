@@ -3,7 +3,7 @@
   "contributingSources": 31,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 31,
-  "generatedAt": "2026-10-24T15:58:20Z",
+  "generatedAt": "2026-10-24T20:51:56Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 23,
+      "downloadedArticles": 24,
       "resolvedEvents": 3,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -111,13 +111,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 8,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -219,7 +219,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
