@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 30,
+  "contributingSources": 31,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 30,
-  "generatedAt": "2026-10-24T11:03:52Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 31,
+  "generatedAt": "2026-10-24T15:58:20Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 5,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -130,7 +129,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 7,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -142,7 +141,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -190,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
