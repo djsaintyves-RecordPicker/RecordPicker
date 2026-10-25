@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 28,
+  "contributingSources": 29,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 28,
-  "generatedAt": "2026-10-25T16:23:44Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 29,
+  "generatedAt": "2026-10-25T20:52:53Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -86,10 +86,9 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 0,
-      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
-      "resolvedEvents": 0,
-      "status": "failed",
+      "downloadedArticles": 10,
+      "resolvedEvents": 5,
+      "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -112,13 +111,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 7,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 10,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -154,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 7,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -166,7 +165,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 15,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
