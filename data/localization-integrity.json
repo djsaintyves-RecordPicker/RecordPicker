@@ -26,7 +26,7 @@
     "pt-br": "1d4d56ff0944b119d49114aa39b861d475cf6509f72538a26a47b2e8b1e185ee",
     "pt-pt": "c4213e90dc5bd5f7aeb788a316d85eed2a5eae66fe42dcf1251245081f79c5f9",
     "ru": "71ca37a89bd1fcd7923c6a96a1d6dfddb36fe84ef8c684bcc20af99dded94a32",
-    "shared": "9ce4b076682f37c8058c06f1464a5d7ee1ed251ce7cb0b4b3d88eb9c13f83a5e",
+    "shared": "e90c0223ce1b806ceb35b8998694209ae71f9e7316e1012d49d983a622e6bec3",
     "sv": "f0eac38e2aaf100bc94354ec05041b3e6cb34e844f0f438888df26fd93daa3ad",
     "th": "f3c73d7f3006e34ea0256d1d4daf2278afceece1c6dacc8570dbffcc3d59c418",
     "tr": "c23b64c6125a36f95e0f8eaa2d0eee39cb59e0a6544e2043139b3a4b3a548441",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Record Picker3.2 publication; normalize existing required campaign and Meal Picker help links for CI without changing other app content",
+  "review_reason": "Correct French Studio Meal Picker category from Food and Drink to CUISINE in France and Canada",
   "schema": 1
 }
