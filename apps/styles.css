@@ -108,3 +108,6 @@ a[href*="music.apple.com"] img.platform-logo{filter:none!important}
 /* Explicit language navigation; never redirect an already localized page. */
 .language-nav { padding: .75rem 1rem; text-align: right; }
 .language-nav select { max-width: 100%; font: inherit; padding: .35rem; }
+
+/* Decorative pictograms for the three MPR getting-started steps. */
+.routine-art .routine-step-icon{display:block;width:32px;height:32px;margin:0 auto 10px;object-fit:contain}
