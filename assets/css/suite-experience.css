@@ -331,3 +331,39 @@
 .suite-experience.suite-studio :is(.card,.project-card,.community-grid article,.guide-topic,.hub-menu-group > summary,.hub-menu-panel,.detail-page > a.button) { background-color:#fff; }
 .suite-experience.suite-studio .hub-header { background:#ffffffe6; }
 .suite-experience.suite-studio .language-nav select { background:transparent; }
+
+/* Follow the visitor's system appearance, including live preference changes. */
+.suite-experience.suite-studio { color-scheme:light dark; }
+.suite-experience.suite-studio .studio-brand { background:transparent; }
+@media (prefers-color-scheme:dark) {
+ .suite-experience.suite-studio {
+  color-scheme:dark;
+  --suite-paper:#111214; --suite-surface:#191a1d;
+  --suite-ink:#f2f2f4; --suite-muted:#b9bac1; --suite-rule:#38393f;
+  --suite-accent:#ff6484;
+  --panel:#191a1d; --panel-solid:#191a1d; --surface-raised:#222328;
+  --surface-strong:#222328; --glass-surface:#191a1d; --glass-strong:#222328;
+  --suite-depth:2px 4px 5px #00000008,10px 15px 20px -9px #0000003d;
+  --study-shadow:var(--suite-depth);
+  --suite-control-depth:0 2px 5px #00000026;
+  background-color:var(--suite-paper); color:var(--suite-ink);
+ }
+ .suite-experience.suite-studio :is(.card,.project-card,.community-grid article,.guide-topic,.hub-menu-group > summary,.hub-menu-panel,.detail-page > a.button) {
+  background-color:var(--suite-surface); color:var(--suite-ink);
+ }
+ .suite-experience.suite-studio .hub-header { background:#111214e6; border-color:var(--suite-rule); }
+ .suite-experience.suite-studio :is(footer,.guide,.project-update,.guide-nav,.measurement-settings) { border-color:var(--suite-rule); }
+ .suite-experience.suite-studio :is(.intro,.tag,.playlist-cover > p,.community-grid p,.presentation-shot figcaption,.detail-page > p,.card .limits) { color:var(--suite-muted); }
+ .suite-experience.suite-studio :is(.hub-menu a,.hub-menu summary,.language-nav,.language-nav select,.project-nav a,.detail-page > a.button) { color:var(--suite-ink); }
+ .suite-experience.suite-studio :is(.hub-menu a:hover,.project-nav a:hover,.community-grid a:hover) { background:#292a30; color:#fff; }
+ .suite-experience.suite-studio .language-nav select option { background:#191a1d; color:var(--suite-ink); }
+ .suite-experience.suite-studio :is(.routine-art span,.demo,.presentation-shot,.project-nav a) { background:#222328; }
+ .suite-experience.suite-studio #record-picker .project-card-head h2 { color:#ff6484; }
+ .suite-experience.suite-studio #snory-teller .project-card-head h2 { color:#7db6ff; }
+ .suite-experience.suite-studio #physical-routine .project-card-head h2 { color:#6cd5ff; }
+ .suite-experience.suite-studio #meal-picker .project-card-head h2 { color:#8cc8a9; }
+ .suite-experience.suite-studio .project-card .project-store-grid > :is(.store-microsoftstore,.store-android-beta) { background:#26272c; color:var(--suite-ink); }
+ .suite-experience.suite-studio .project-store-grid :is(.store-microsoftstore,.store-android-beta) .store-logo { filter:brightness(0) invert(1); }
+ .suite-experience.suite-studio :is(.brand-piece-name,.brand-piece-studio) { filter:invert(1); }
+ .suite-experience.suite-studio .detail-page > a.button:hover { background:#292a30; color:#fff; }
+}
