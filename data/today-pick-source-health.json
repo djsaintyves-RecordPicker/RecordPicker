@@ -3,7 +3,7 @@
   "contributingSources": 28,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 28,
-  "generatedAt": "2026-10-25T11:33:10Z",
+  "generatedAt": "2026-10-25T16:23:44Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 4,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -118,7 +118,7 @@
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 11,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -154,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -214,7 +214,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 14,
+      "resolvedEvents": 13,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
