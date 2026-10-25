@@ -320,3 +320,14 @@
 .suite-experience.suite-keyboard-navigation .language-nav select:focus-visible {
  outline:2px solid currentColor; outline-offset:4px;
 }
+
+/* Studio: white canvas and borderless white surfaces. */
+.suite-experience.suite-studio {
+ --suite-paper:#fff; --suite-surface:#fff;
+ --panel:#fff; --panel-solid:#fff; --surface-raised:#fff;
+ --surface-strong:#fff; --glass-surface:#fff; --glass-strong:#fff;
+ background-color:#fff;
+}
+.suite-experience.suite-studio :is(.card,.project-card,.community-grid article,.guide-topic,.hub-menu-group > summary,.hub-menu-panel,.detail-page > a.button) { background-color:#fff; }
+.suite-experience.suite-studio .hub-header { background:#ffffffe6; }
+.suite-experience.suite-studio .language-nav select { background:transparent; }
