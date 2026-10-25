@@ -193,3 +193,6 @@
 .suite-studio :is(.music,.ecosystem,.guide) {
  background:transparent; border:0; border-radius:0; box-shadow:none; padding:0;
 }
+
+/* Neutral store actions retain dark pictograms on the shared light surface. */
+.suite-studio .project-store-grid :is(.store-microsoftstore,.store-android-beta) .store-logo { filter:brightness(0); }
