@@ -26,7 +26,7 @@
     "pt-br": "1d4d56ff0944b119d49114aa39b861d475cf6509f72538a26a47b2e8b1e185ee",
     "pt-pt": "c4213e90dc5bd5f7aeb788a316d85eed2a5eae66fe42dcf1251245081f79c5f9",
     "ru": "71ca37a89bd1fcd7923c6a96a1d6dfddb36fe84ef8c684bcc20af99dded94a32",
-    "shared": "d1c2522a290e0285a8cedfdad5e194daa97195c478e7bb3aee4e82553204fcfd",
+    "shared": "36501813cb0bdf81c35fec05ca657d912f0aa5dfa831b9af50c9dd71d01d3082",
     "sv": "f0eac38e2aaf100bc94354ec05041b3e6cb34e844f0f438888df26fd93daa3ad",
     "th": "f3c73d7f3006e34ea0256d1d4daf2278afceece1c6dacc8570dbffcc3d59c418",
     "tr": "c23b64c6125a36f95e0f8eaa2d0eee39cb59e0a6544e2043139b3a4b3a548441",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1048,
-  "review_reason": "Restore approved borderless Studio presentation; preserve all destinations, canonicals, hreflang and structured data; harmonize store labels and fold current release notes.",
+  "review_reason": "My Physical Routine 1.0.4 public release: localized Watch synchronization and rest completion notes; preserve current Studio design.",
   "schema": 1
 }

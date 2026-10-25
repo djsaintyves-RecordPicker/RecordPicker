@@ -75,5 +75,9 @@
   "This policy describes current functionality. Advertising, purchases or new Health categories will require updated information and, where needed, permissions before use.": "このポリシーでは、現在の機能について説明します。広告、購入、または新しい健康カテゴリには、使用前に最新の情報と、必要に応じて許可が必要です。",
   "Contact": "接触",
   "Optional Health import": "オプションのヘルスインポート",
-  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "オプションのアンケートのインポートでは、選択した体重、身長、睡眠、心拍数のカテゴリのみが読み取られます。体重と身長は確認後にコピーされ、アンケートを保存するときにローカルに保存されます。睡眠と心拍の測定値は一時的なものであり、画面を離れるかアプリをバックグラウンドにするとクリアされます。症状を診断したり、運動強度を自動的に変更したりするものではありません。"
+  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "オプションのアンケートのインポートでは、選択した体重、身長、睡眠、心拍数のカテゴリのみが読み取られます。体重と身長は確認後にコピーされ、アンケートを保存するときにローカルに保存されます。睡眠と心拍の測定値は一時的なものであり、画面を離れるかアプリをバックグラウンドにするとクリアされます。症状を診断したり、運動強度を自動的に変更したりするものではありません。",
+  "Apple Watch workouts now sync after a long pause, even if the workout has remained open for several hours. Rests followed from the Watch are marked complete when they end, while keeping rests between sets separate from rests between exercises.": "Apple Watch セッションは、セッションが数時間開いていたとしても、長い一時停止の後に同期されるようになりました。 ウォッチから監視されている休憩は、セット間の休憩とエクササイズ間の休憩を混同することなく、期限切れになると完了したものとして表示されます。",
+  "My Physical Routine · 1.0.4": "My Physical Routine · 1.0.4",
+  "What’s new · 1.0.4": "新機能 · 1.0.4",
+  "Watch the My Physical Routine 1.0.4 presentation": "My Physical Routine 1.0.4 プレゼンテーションを見る"
 }

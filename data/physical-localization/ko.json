@@ -75,5 +75,9 @@
   "This policy describes current functionality. Advertising, purchases or new Health categories will require updated information and, where needed, permissions before use.": "이 정책은 현재 기능을 설명합니다. 광고, 구매 또는 새로운 건강 카테고리에는 업데이트된 정보가 필요하며 필요한 경우 사용하기 전에 허가가 필요합니다.",
   "Contact": "연락하다",
   "Optional Health import": "선택적 건강 가져오기",
-  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "선택적 설문지 가져오기는 선택한 체중, 키, 수면 및 심박수 범주만 읽습니다. 체중과 키는 확인 후 복사되어 설문지 저장 시 로컬에 저장됩니다. 수면 및 심박수는 일시적으로 유지되며 화면을 떠나거나 앱을 백그라운드로 전환하면 지워집니다. 상태를 진단하거나 운동 강도를 자동으로 변경하지 않습니다."
+  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "선택적 설문지 가져오기는 선택한 체중, 키, 수면 및 심박수 범주만 읽습니다. 체중과 키는 확인 후 복사되어 설문지 저장 시 로컬에 저장됩니다. 수면 및 심박수는 일시적으로 유지되며 화면을 떠나거나 앱을 백그라운드로 전환하면 지워집니다. 상태를 진단하거나 운동 강도를 자동으로 변경하지 않습니다.",
+  "Apple Watch workouts now sync after a long pause, even if the workout has remained open for several hours. Rests followed from the Watch are marked complete when they end, while keeping rests between sets separate from rests between exercises.": "이제 Apple Watch 세션은 세션이 몇 시간 동안 열려 있던 경우에도 오랜 일시 중지 후에 동기화됩니다. Watch에서 모니터링한 휴식은 세트 간 휴식과 운동 간 휴식을 혼동하지 않고 만료되면 완료된 것으로 표시됩니다.",
+  "My Physical Routine · 1.0.4": "My Physical Routine · 1.0.4",
+  "What’s new · 1.0.4": "새로운 기능 · 1.0.4",
+  "Watch the My Physical Routine 1.0.4 presentation": "My Physical Routine 1.0.4 프레젠테이션 보기"
 }

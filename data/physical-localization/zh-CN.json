@@ -75,5 +75,9 @@
   "This policy describes current functionality. Advertising, purchases or new Health categories will require updated information and, where needed, permissions before use.": "该策略描述了当前的功能。广告、购买或新的健康类别将需要更新信息，并在需要时在使用前获得许可。",
   "Contact": "接触",
   "Optional Health import": "可选健康导入",
-  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "可选的问卷导入仅读取您选择的体重、身高、睡眠和心率类别。确认后体重和身高会在您保存问卷时复制并存储在本地。睡眠和心率读数仍然是暂时的，并在离开屏幕或将应用程序置于后台时清除。它们不会诊断病情或自动改变运动强度。"
+  "Optional questionnaire import reads only the body weight, height, sleep and heart-rate categories you select. Weight and height are copied after confirmation and stored locally when you save the questionnaire. Sleep and heart readings remain temporary and are cleared on leaving the screen or backgrounding the app. They do not diagnose a condition or automatically change exercise intensity.": "可选的问卷导入仅读取您选择的体重、身高、睡眠和心率类别。确认后体重和身高会在您保存问卷时复制并存储在本地。睡眠和心率读数仍然是暂时的，并在离开屏幕或将应用程序置于后台时清除。它们不会诊断病情或自动改变运动强度。",
+  "Apple Watch workouts now sync after a long pause, even if the workout has remained open for several hours. Rests followed from the Watch are marked complete when they end, while keeping rests between sets separate from rests between exercises.": "Apple Watch 会话现在会在长时间暂停后同步，即使会话已打开几个小时。 通过手表监控的休息在到期时显示为已完成，不会混淆组间休息和练习间休息。",
+  "My Physical Routine · 1.0.4": "ZX品牌0XZ·1.0.4",
+  "What’s new · 1.0.4": "新功能·1.0.4",
+  "Watch the My Physical Routine 1.0.4 presentation": "观看 My Physical Routine 1.0.4 演示"
 }
