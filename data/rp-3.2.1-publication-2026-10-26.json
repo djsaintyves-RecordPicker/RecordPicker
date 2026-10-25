@@ -1,0 +1,25 @@
+{
+  "version": "3.2.1",
+  "appleStates": {
+    "ios": "Ready for Distribution",
+    "macOS": "Ready for Distribution"
+  },
+  "publicIOSFrance": {
+    "version": "3.2.1",
+    "releasedAt": "2026-10-25T22:16:53Z"
+  },
+  "summary": {
+    "fr": "Mood Pick : commandes plus claires, recherche relançable et présélections dans la langue de l’app. Baroque Pop est désormais classé dans Pop.",
+    "en": "Mood Pick: clearer controls, retryable searches and presets in the app’s language. Baroque Pop is now classified as Pop."
+  },
+  "studioPages": [
+    "apps/index.html",
+    "en-au/apps/index.html",
+    "en-ca/apps/index.html",
+    "en-gb/apps/index.html",
+    "fr/apps/index.html",
+    "fr-ca/apps/index.html"
+  ],
+  "windowsMarketingVersionRetained": "3.2",
+  "scope": "Concise FR/EN studio news; screenshots and other apps unchanged"
+}

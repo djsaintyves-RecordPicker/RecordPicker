@@ -99,6 +99,22 @@ def normalize(source):
             version = re.search(r'(?<!\d)\d+\.\d+(?:\.\d+)?(?![\d.])', notes)
             if summary is not None and version and re.fullmatch(r'(?:Nouveautés · |What’s new · )?\d+\.\d+(?:\.\d+)?', summary.text or ''):
                 summary.text = re.sub(r'\d+\.\d+(?:\.\d+)?', version[0], summary.text)
+        # Keep verified corrective news when locale pages are regenerated.
+        if ident == 'record-picker' and language in {'fr', 'en'}:
+            import json
+            from pathlib import Path
+            publication = json.loads((Path(__file__).resolve().parents[1] / 'data/rp-3.2.1-publication-2026-10-26.json').read_text())
+            details_list = content.xpath('./details[@class="project-update"]')
+            if details_list:
+                details = details_list[0]
+                for child in list(details):
+                    details.remove(child)
+                prefix = 'Nouveautés · ' if language == 'fr' else 'What’s new · '
+                etree.SubElement(details, 'summary').text = prefix + publication['version'] + ' · iOS / Mac'
+                note = etree.SubElement(details, 'p', {'class': 'release-32-summary'})
+                strong = etree.SubElement(note, 'strong')
+                strong.text = 'Record Picker ' + publication['version']
+                strong.tail = ' · ' + publication['summary'][language]
         for image in node.xpath('.//img[contains(concat(" ",@class," ")," app-icon ")]'):
             image.set('src', image.get('src', '').rstrip('\\'))
         return html.tostring(node, encoding='unicode', with_tail=False)

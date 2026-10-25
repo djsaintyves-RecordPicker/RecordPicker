@@ -109,10 +109,10 @@
     }
   },
   "verified_public_versions": {
-    "checked_at": "2026-10-25",
+    "checked_at": "2026-10-26",
     "record_picker": {
-      "ios": "3.2",
-      "mac": "3.2",
+      "ios": "3.2.1",
+      "mac": "3.2.1",
       "windows": "3.2"
     },
     "snory_teller": "1.0.2",
@@ -126,7 +126,7 @@
     },
     "windows_note": "Partner Center submission11 published, x64/ARM64 bundles3.2.0.0/3.2.1.0. Marketing3.2.",
     "screenshot_note": "Existing screenshots retain their actual 3.0.1 capture provenance.",
-    "ios_note": "Apple public listing version3.2; release2026-10-23T23:20:02Z; publisher confirms all Apple platforms.",
-    "mac_note": "Publisher confirms macOS3.2 distributed. Actual screenshot provenance remains3.0.1."
+    "ios_note": "ASC 3.2.1 Ready for Distribution, build158; public FR lookup 3.2.1, release2026-10-25T22:16:53Z.",
+    "mac_note": "ASC macOS3.2.1 Ready for Distribution confirmed26October. Screenshot provenance unchanged."
   }
 }
