@@ -18,6 +18,8 @@ Les liens vers des plateformes ou une recherche web ouvrent le service concerné
 
 Des fichiers personnels déjà importés peuvent contenir des adresses d’illustrations distantes. Leur affichage peut contacter l’hébergeur concerné. La version publique ne propose pas d’importer une illustration en collant son adresse web.
 
+Pour « Choix du jour », MOOP peut consulter les flux d’actualité publics du CNC et de la Commission européenne, ainsi qu’une requête générale fixe auprès de GDELT. Ces demandes ne contiennent ni votre bibliothèque, ni vos titres personnels, tags, notes ou identifiant utilisateur. Les fournisseurs reçoivent les informations techniques de connexion, dont l’adresse IP, et appliquent leurs propres politiques. MOOP traite localement les titres, dates et liens reçus pour proposer des rapprochements ; un « écho thématique » est une interprétation de MOOP. Un cache sur l’appareil limite les requêtes. Les pages des articles et leurs images ne sont pas téléchargées par cette fonction ; ouvrir un lien source contacte le site concerné. L’éditeur ne reçoit pas votre bibliothèque ni de copie des journaux des fournisseurs.
+
 ## Photos, fichiers et transferts
 
 Vous choisissez explicitement les photos, fichiers ou images du presse-papiers à importer. Les illustrations importées sont réencodées, sans reprendre les métadonnées GPS, EXIF ou IPTC de l’image d’origine. Les légendes, crédits et liens saisis restent dans la bibliothèque et ses exports. Une sauvegarde JSON peut contenir des données personnelles ; elle n’est pas un outil d’anonymisation.

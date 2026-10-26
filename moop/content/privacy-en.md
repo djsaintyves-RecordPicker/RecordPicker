@@ -18,6 +18,8 @@ Links to platforms or web searches open the relevant service, which applies its 
 
 Previously imported personal files may contain remote illustration addresses. Displaying these images may contact their host. The public version does not offer illustration importing by pasting a web address.
 
+For “Today’s pick”, MOOP may fetch public news feeds from CNC and the European Commission, together with a fixed general query to GDELT. These requests contain neither your library nor your personal titles, tags, notes or user identifier. Providers receive technical connection information, including your IP address, and apply their own policies. MOOP processes the received headlines, dates and links locally to suggest connections; a “thematic echo” is MOOP’s interpretation. An on-device cache limits requests. This feature does not download article pages or their images; opening a source link contacts the relevant website. The publisher does not receive your library or a copy of providers’ logs.
+
 ## Photos, files and transfers
 
 You explicitly select the photos, files or clipboard images to import. Imported illustrations are re-encoded without retaining the original image’s GPS, EXIF or IPTC metadata. Captions, credits and links you enter remain in the library and its exports. A JSON backup may contain personal information; it is not an anonymisation tool.
