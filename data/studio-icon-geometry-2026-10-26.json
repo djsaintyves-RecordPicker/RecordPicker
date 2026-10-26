@@ -1,5 +1,5 @@
 {
-  "scope": "Studio website display assets; native app icon catalogs unchanged",
+  "scope": "Native Xcode app icon catalogs and matching Studio website assets",
   "referenceApps": [
     "Record Picker",
     "Meal Picker"
@@ -10,12 +10,12 @@
     0.5263671875
   ],
   "MooviePicker": {
-    "asset": "apps/assets/moovie-picker-studio.svg",
-    "method": "Self-contained SVG clips approved raster to reference disc and retains gold marker"
+    "asset": "apps/assets/moovie-picker-icon.png",
+    "method": "Native vector render, reference841px circle; shared white-edged gold marker, no black outline"
   },
   "BookPicker": {
-    "asset": "apps/assets/book-picker-studio.svg",
-    "method": "Self-contained SVG scales original 778px disc to841px; centre aligned"
+    "asset": "apps/assets/book-picker-icon.png",
+    "method": "Native vector render, reference841px circle; Book Picker text172pt instead of148pt, safely within book disc"
   },
   "locales": 50
 }
