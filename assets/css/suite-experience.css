@@ -372,3 +372,13 @@
 .suite-experience.suite-studio #moovie-picker .project-card-head h2 { color:var(--suite-ink); }
 .suite-experience.suite-studio #book-picker .project-card-head h2 { color:#653c68; }
 @media(prefers-color-scheme:dark) { .suite-experience.suite-studio #book-picker .project-card-head h2 { color:#dcb7df; } }
+
+/* Dark Studio content shares the canvas: no contrasting card frames. */
+@media (prefers-color-scheme:dark) {
+ body.suite-experience.suite-studio :is(.card.project-card,.community-grid article,.guide-topic,.playlist-cover) {
+  background:var(--suite-paper); border:0; box-shadow:none;
+ }
+ body.suite-experience.suite-studio :is(.card.project-card,.community-grid article,.guide-topic,.playlist-cover):hover {
+  box-shadow:none;
+ }
+}
