@@ -20,6 +20,10 @@
     "fr/apps/index.html",
     "fr-ca/apps/index.html"
   ],
-  "windowsMarketingVersionRetained": "3.2",
-  "scope": "Concise FR/EN studio news; screenshots and other apps unchanged"
+  "scope": "Current platform version markers across all localized pages; concise Studio news; screenshot provenance preserved",
+  "windowsMarketingVersion": "3.2.1",
+  "windowsConfirmation": {
+    "date": "2026-10-26",
+    "source": "Publisher confirmation: RP 3.2.1 approved by Microsoft Partner Center"
+  }
 }

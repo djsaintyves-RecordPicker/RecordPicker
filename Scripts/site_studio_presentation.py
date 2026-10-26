@@ -111,11 +111,23 @@ def normalize(source):
                 for child in list(details):
                     details.remove(child)
                 prefix = 'Nouveautés · ' if language == 'fr' else 'What’s new · '
-                etree.SubElement(details, 'summary').text = prefix + publication['version'] + ' · iOS / Mac'
+                etree.SubElement(details, 'summary').text = prefix + publication['version'] + ' · iOS / Mac / Windows'
                 note = etree.SubElement(details, 'p', {'class': 'release-32-summary'})
                 strong = etree.SubElement(note, 'strong')
                 strong.text = 'Record Picker ' + publication['version']
-                strong.tail = ' · ' + publication['summary'][language]
+                strong.tail = ' · ' + ('Sur iPhone, iPad et Mac : ' if language == 'fr' else 'On iPhone, iPad and Mac: ') + publication['summary'][language]
+        if ident == 'record-picker':
+            import json
+            from pathlib import Path
+            state = json.loads((Path(__file__).resolve().parents[1] / 'data/release-state.json').read_text())
+            windows_version = state['current_release']['platform_versions']['windows']
+            if language not in {'fr', 'en'}:
+                for summary in content.xpath('./details[@class="project-update"]/summary'):
+                    if re.fullmatch(r'\d+\.\d+(?:\.\d+)?', summary.text or ''):
+                        summary.text = state['current_release']['version']
+            versions = content.xpath('./p[contains(concat(" ",@class," ")," windows-public-version ")]')
+            version_note = versions[0] if versions else etree.SubElement(content, 'p', {'class': 'availability windows-public-version'})
+            version_note.text = 'Windows · ' + windows_version
         for image in node.xpath('.//img[contains(concat(" ",@class," ")," app-icon ")]'):
             image.set('src', image.get('src', '').rstrip('\\'))
         return html.tostring(node, encoding='unicode', with_tail=False)
