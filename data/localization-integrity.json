@@ -26,7 +26,7 @@
     "pt-br": "1d4d56ff0944b119d49114aa39b861d475cf6509f72538a26a47b2e8b1e185ee",
     "pt-pt": "c4213e90dc5bd5f7aeb788a316d85eed2a5eae66fe42dcf1251245081f79c5f9",
     "ru": "71ca37a89bd1fcd7923c6a96a1d6dfddb36fe84ef8c684bcc20af99dded94a32",
-    "shared": "a4d9f41fa66a39bfba4b50234f7efcc4390f722c7e19f73bd17cbcbae2529254",
+    "shared": "e88312dd7342974922a5ff4e432022e1ccc6ac63b6a5a792604df52600b91ebf",
     "sv": "f0eac38e2aaf100bc94354ec05041b3e6cb34e844f0f438888df26fd93daa3ad",
     "th": "f3c73d7f3006e34ea0256d1d4daf2278afceece1c6dacc8570dbffcc3d59c418",
     "tr": "c23b64c6125a36f95e0f8eaa2d0eee39cb59e0a6544e2043139b3a4b3a548441",
@@ -36,7 +36,7 @@
     "zh-hant": "fcffcfbc1d9f0d36ab5f16a5d1af67f29cccfe1dd77c0922d39d78ed4b44fc2e"
   },
   "locale_group_count": 34,
-  "page_count": 1048,
-  "review_reason": "Verified ASC RP3.2.1 and public FR App Store: concise authored FR/EN Studio news, other languages unchanged",
+  "page_count": 1052,
+  "review_reason": "Announce Moovie Picker and Book Picker as in-development Studio projects in all 50 locales; FR/EN authored, other translations marked for review",
   "schema": 1
 }

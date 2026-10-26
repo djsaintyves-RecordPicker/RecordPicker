@@ -2,6 +2,7 @@
 import re
 from lxml import html, etree
 from site_music_menu import normalize as music_menu
+from site_studio_upcoming import normalize as upcoming_apps
 from site_campaign_links import normalize as campaign_links
 
 CSS = (
@@ -119,7 +120,7 @@ def normalize(source):
             image.set('src', image.get('src', '').rstrip('\\'))
         return html.tostring(node, encoding='unicode', with_tail=False)
     source = re.sub(r'<article\b[^>]*class="[^"]*project-card[^"]*"[^>]*>.*?</article>', card, source, flags=re.S)
-    return campaign_links(music_menu(source))
+    return upcoming_apps(campaign_links(music_menu(source)))
 
 
 if __name__ == '__main__':
