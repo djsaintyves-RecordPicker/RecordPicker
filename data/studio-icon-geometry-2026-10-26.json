@@ -1,0 +1,21 @@
+{
+  "scope": "Studio website display assets; native app icon catalogs unchanged",
+  "referenceApps": [
+    "Record Picker",
+    "Meal Picker"
+  ],
+  "discDiameterFraction": 0.8212890625,
+  "discCentreFraction": [
+    0.5,
+    0.5263671875
+  ],
+  "MooviePicker": {
+    "asset": "apps/assets/moovie-picker-studio.svg",
+    "method": "Self-contained SVG clips approved raster to reference disc and retains gold marker"
+  },
+  "BookPicker": {
+    "asset": "apps/assets/book-picker-studio.svg",
+    "method": "Self-contained SVG scales original 778px disc to841px; centre aligned"
+  },
+  "locales": 50
+}
