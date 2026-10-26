@@ -4,6 +4,12 @@ Mise à jour : 26 octobre 2026. Éditeur : Yves Durand. Contact : support@record
 
 MOOP conserve votre bibliothèque sur vos appareils : films et séries, listes, favoris, visionnages, notes, tags, progression, historique et illustrations personnelles. Aucun compte MOOP n’est nécessaire. MOOP ne possède pas de serveur recevant votre bibliothèque et n’intègre ni publicité ni outil de mesure d’audience.
 
+## Achats et essai
+
+Le téléchargement est gratuit. Vous pouvez démarrer explicitement un essai gratuit de sept jours, sans facturation automatique. Un achat définitif facultatif débloque ensuite MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 1,99 € ; le prix local est indiqué dans la fenêtre d’achat Apple. Il ne s’agit pas d’un abonnement.
+
+Apple traite les achats et leur restauration. MOOP utilise StoreKit et les transactions vérifiées fournies par Apple pour déterminer le début et la fin de l’essai et votre droit d’accès. Ces informations peuvent inclure l’identifiant du produit, les dates et l’identifiant de transaction. MOOP n’a pas accès à vos coordonnées bancaires et ne transmet pas vos transactions à un serveur de l’éditeur. Apple traite les données nécessaires selon sa politique : https://www.apple.com/legal/privacy/fr-ww/ . L’accès acheté peut être restauré avec le même compte Apple ; cela ne synchronise pas votre bibliothèque.
+
 ## Services externes
 
 La version publique ne précharge aucun catalogue tiers et ne collecte pas de catalogues par analyse de pages HTML. Les recherches de métadonnées et de programmes déclenchées dans l’app interrogent des services externes, notamment Apple, TVmaze et Wikipédia. Les termes recherchés et, selon la fonction, le pays ou la date sont transmis au fournisseur. Celui-ci reçoit également les informations techniques nécessaires à la connexion, dont votre adresse IP, et peut conserver des journaux selon sa propre politique. MOOP n’en reçoit pas copie.
@@ -16,7 +22,7 @@ Des fichiers personnels déjà importés peuvent contenir des adresses d’illus
 
 Vous choisissez explicitement les photos, fichiers ou images du presse-papiers à importer. Les illustrations importées sont réencodées, sans reprendre les métadonnées GPS, EXIF ou IPTC de l’image d’origine. Les légendes, crédits et liens saisis restent dans la bibliothèque et ses exports. Une sauvegarde JSON peut contenir des données personnelles ; elle n’est pas un outil d’anonymisation.
 
-Les échanges avec Apple Watch utilisent les mécanismes Apple. Les transferts entre Mac et iPhone reposent sur les exports et imports de fichiers ; MOOP ne propose pas de synchronisation iCloud de la bibliothèque. Les sauvegardes système de vos appareils peuvent inclure les données de l’app.
+Les échanges avec Apple Watch passent par l’iPhone associé et les mécanismes Apple. Une synchronisation iCloud privée facultative est proposée entre iPhone et Mac ; elle est désactivée par défaut et nécessite le même compte Apple avec iCloud sur les appareils concernés. Si vous l’activez, la bibliothèque, notamment les métadonnées, listes, notes, illustrations et historique, est transmise à votre espace CloudKit privé hébergé par Apple. L’éditeur ne possède pas de serveur recevant ces données. Les achats ne sont pas synchronisés par CloudKit : leur accès est vérifié et restauré séparément par StoreKit. Les exports et imports JSON restent une possibilité de transfert et de sauvegarde. Les sauvegardes système de vos appareils peuvent également inclure les données de l’app. Désactiver la synchronisation arrête les échanges futurs ; cela ne signifie pas que les copies déjà présentes dans iCloud ou sur les autres appareils sont effacées.
 
 ## Conservation et suppression
 

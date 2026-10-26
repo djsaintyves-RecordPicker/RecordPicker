@@ -14,11 +14,19 @@ Choisissez une illustration depuis Photos, un fichier ou une image copiée dans 
 
 L’export JSON conserve la bibliothèque et son historique, notamment les listes et illustrations personnelles. Le CSV sert à transférer des informations sur les titres. L’import de listes IMDb est également disponible. Conservez une sauvegarde avant une opération importante. Les copies de récupération peuvent aider à retrouver un état précédent. Réinitialiser les préférences conserve la bibliothèque.
 
-Mac et iPhone échangent leurs bibliothèques par fichiers JSON ; il n’y a pas de synchronisation iCloud intégrée. Apple Watch reçoit les données via les mécanismes Apple et nécessite un iPhone associé pour les transferts.
+La synchronisation iCloud privée entre iPhone et Mac est facultative et désactivée par défaut. Pour l’utiliser, activez-la dans les réglages de MOOP sur les appareils concernés et utilisez le même compte Apple avec iCloud. Les titres, listes, notes, illustrations et historique peuvent alors être échangés via votre espace privé Apple. Le fonctionnement dépend de la connexion et des services iCloud ; la synchronisation n’est pas une sauvegarde indépendante. Conservez vos exports JSON. Les imports et exports JSON restent disponibles pour transférer la bibliothèque sans cette option. Apple Watch reçoit les données via l’iPhone associé et les mécanismes Apple.
 
 ## Recherches et plateformes
 
 La version publique démarre sans catalogue tiers préchargé. Les recherches et programmes externes nécessitent une connexion ; les résultats peuvent être incomplets ou changer. Les liens vers Prime Video, Apple TV, france.tv, ARTE et les autres plateformes ouvrent leurs services. Ils ne connectent pas vos comptes et ne garantissent ni disponibilité ni inclusion dans votre abonnement.
+
+## Essai et achat unique
+
+Le téléchargement est gratuit. Ouvrez l’écran d’achat et démarrez explicitement l’essai gratuit facultatif de sept jours. L’essai ne déclenche aucune facturation automatique. À son terme, vous choisissez si vous souhaitez effectuer l’achat définitif ; aucun abonnement n’est proposé.
+
+Un seul achat débloque MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 1,99 € ; vérifiez le prix local affiché dans la fenêtre d’achat Apple avant de confirmer. Sur l’autre appareil, utilisez la restauration des achats avec ce même compte Apple. Les achats et leur restauration nécessitent les services Apple. La restauration du droit d’accès est distincte de la synchronisation de bibliothèque : utilisez l’option iCloud ou les fichiers JSON pour vos titres.
+
+Si un achat n’apparaît pas, vérifiez le compte Apple utilisé et lancez la restauration. En cas de problème, indiquez à l’assistance la version de MOOP et le message affiché, sans envoyer de mot de passe ni de coordonnées bancaires.
 
 ## Nous contacter
 

@@ -14,11 +14,19 @@ Choose an illustration from Photos, a file or an image copied to the clipboard. 
 
 JSON export preserves the library and its history, including personal lists and illustrations. CSV transfers title information. IMDb list importing is also available. Keep a backup before an important operation. Recovery copies can help restore an earlier state. Resetting preferences preserves the library.
 
-Mac and iPhone exchange libraries using JSON files; there is no built-in iCloud synchronisation. Apple Watch receives data through Apple mechanisms and needs a paired iPhone for transfers.
+Private iCloud synchronisation between iPhone and Mac is optional and off by default. To use it, enable it in MOOP settings on the relevant devices and use the same Apple Account with iCloud. Titles, lists, notes, illustrations and history can then be exchanged through your private Apple space. Operation depends on connectivity and iCloud services; synchronisation is not an independent backup. Keep your JSON exports. JSON import and export remain available for transferring the library without this option. Apple Watch receives data through its paired iPhone and Apple mechanisms.
 
 ## Searches and platforms
 
 The public version starts without a preloaded third-party catalogue. External searches and schedules need an internet connection; results may be incomplete or change. Links to Prime Video, Apple TV, france.tv, ARTE and other platforms open those services. They do not connect your accounts or guarantee availability or inclusion in your subscription.
+
+## Trial and one-time purchase
+
+Downloading is free. Open the purchase screen and explicitly start the optional seven-day free trial. The trial never triggers an automatic charge. At its end, you decide whether to make the permanent purchase; no subscription is offered.
+
+One purchase unlocks MOOP on iPhone and Mac using the same Apple Account. The base price is €1.99; check the local price shown in Apple’s purchase sheet before confirming. On your other device, restore purchases using that same Apple Account. Purchases and restoration need Apple services. Restoring access is separate from library synchronisation: use optional iCloud sync or JSON files for your titles.
+
+If a purchase is missing, check which Apple Account you used and restore purchases. When contacting support, provide the MOOP version and displayed message, without sending passwords or payment details.
 
 ## Contact us
 
