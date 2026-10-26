@@ -6,7 +6,7 @@ MOOP stores your library on your devices: movies and series, lists, favourites, 
 
 ## Purchases and trial
 
-Downloading is free. You can explicitly start an optional seven-day free trial, with no automatic charge. An optional permanent purchase then unlocks MOOP on iPhone and Mac using the same Apple Account. The base price is €1.99; Apple’s purchase sheet shows the local price. This is not a subscription.
+Downloading is free. You can explicitly start an optional seven-day free trial, with no automatic charge. An optional permanent purchase then unlocks MOOP on iPhone and Mac using the same Apple Account. The base price is €4.99; Apple’s purchase sheet shows the local price. This is not a subscription.
 
 Apple processes purchases and restoration. MOOP uses StoreKit and verified transactions provided by Apple to determine trial start and expiry and your access entitlement. This information may include product identifiers, dates and transaction identifiers. MOOP cannot access your payment card details and does not send your transactions to a publisher server. Apple processes necessary data under its privacy policy: https://www.apple.com/legal/privacy/ . Purchased access can be restored with the same Apple Account; this does not synchronise your library.
 
@@ -32,3 +32,9 @@ Exports are saved to your chosen destination. Trash allows titles to be restored
 
 Privacy policy: https://recordpicker.app/moop/en/privacy/
 Support: https://recordpicker.app/moop/en/support/
+
+## Viewing reminders
+
+You can schedule a film or series and explicitly enable a local notification. Dates, alert preferences and identifiers of exported reminders stay on this device; they are not included in library iCloud sync. Notification permission is never requested at launch.
+
+You initiate each addition to Apple Reminders or Calendar. MOOP requests Reminders access only for this action and does not send your reminder list to the publisher. Exported items are independent copies: removing a plan from MOOP does not delete them. Apple or your calendar provider may sync them according to your settings.

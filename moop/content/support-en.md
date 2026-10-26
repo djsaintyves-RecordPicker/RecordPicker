@@ -24,7 +24,7 @@ The public version starts without a preloaded third-party catalogue. External se
 
 Downloading is free. Open the purchase screen and explicitly start the optional seven-day free trial. The trial never triggers an automatic charge. At its end, you decide whether to make the permanent purchase; no subscription is offered.
 
-One purchase unlocks MOOP on iPhone and Mac using the same Apple Account. The base price is €1.99; check the local price shown in Apple’s purchase sheet before confirming. On your other device, restore purchases using that same Apple Account. Purchases and restoration need Apple services. Restoring access is separate from library synchronisation: use optional iCloud sync or JSON files for your titles.
+One purchase unlocks MOOP on iPhone and Mac using the same Apple Account. The base price is €4.99; check the local price shown in Apple’s purchase sheet before confirming. On your other device, restore purchases using that same Apple Account. Purchases and restoration need Apple services. Restoring access is separate from library synchronisation: use optional iCloud sync or JSON files for your titles.
 
 If a purchase is missing, check which Apple Account you used and restore purchases. When contacting support, provide the MOOP version and displayed message, without sending passwords or payment details.
 
@@ -34,3 +34,11 @@ Email support@recordpicker.app with the MOOP version and build number, your devi
 
 Support: https://recordpicker.app/moop/en/support/
 Privacy: https://recordpicker.app/moop/en/privacy/
+
+## Mark a title as watched
+
+On a result, tap the outlined checkmark to mark a film or series as watched. A filled checkmark means it has been watched; tap it to mark it unwatched again. You can also long-press the artwork or open its record. The title remains displayed after the status change; the To watch filter excludes it from subsequent draws once marked watched.
+
+## Viewing reminders
+
+On iPhone and Mac, long-press or right-click a title and choose Schedule viewing. You can also open Personalization, then Reminders. Choose a date, optionally a time, and enable a local notification before viewing if desired. Plans stay on this device and are not included in library iCloud sync. Explicit additions to Apple Reminders or Calendar are independent copies.

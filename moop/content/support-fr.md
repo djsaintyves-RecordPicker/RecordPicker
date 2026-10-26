@@ -24,7 +24,7 @@ La version publique démarre sans catalogue tiers préchargé. Les recherches et
 
 Le téléchargement est gratuit. Ouvrez l’écran d’achat et démarrez explicitement l’essai gratuit facultatif de sept jours. L’essai ne déclenche aucune facturation automatique. À son terme, vous choisissez si vous souhaitez effectuer l’achat définitif ; aucun abonnement n’est proposé.
 
-Un seul achat débloque MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 1,99 € ; vérifiez le prix local affiché dans la fenêtre d’achat Apple avant de confirmer. Sur l’autre appareil, utilisez la restauration des achats avec ce même compte Apple. Les achats et leur restauration nécessitent les services Apple. La restauration du droit d’accès est distincte de la synchronisation de bibliothèque : utilisez l’option iCloud ou les fichiers JSON pour vos titres.
+Un seul achat débloque MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 4,99 € ; vérifiez le prix local affiché dans la fenêtre d’achat Apple avant de confirmer. Sur l’autre appareil, utilisez la restauration des achats avec ce même compte Apple. Les achats et leur restauration nécessitent les services Apple. La restauration du droit d’accès est distincte de la synchronisation de bibliothèque : utilisez l’option iCloud ou les fichiers JSON pour vos titres.
 
 Si un achat n’apparaît pas, vérifiez le compte Apple utilisé et lancez la restauration. En cas de problème, indiquez à l’assistance la version de MOOP et le message affiché, sans envoyer de mot de passe ni de coordonnées bancaires.
 
@@ -34,3 +34,11 @@ Si un achat n’apparaît pas, vérifiez le compte Apple utilisé et lancez la r
 
 Assistance : https://recordpicker.app/moop/fr/support/
 Confidentialité : https://recordpicker.app/moop/fr/privacy/
+
+## Signaler un titre déjà vu
+
+Sur un résultat, touchez la coche vide pour marquer le film ou la série comme vu. La coche pleine indique que le titre est déjà vu ; touchez-la pour revenir à « non vu ». Vous pouvez aussi faire un appui long sur l’affiche ou ouvrir la fiche. Le titre reste affiché après le changement de statut ; le filtre « À voir » l’écarte des prochains tirages une fois marqué comme vu.
+
+## Rappels de visionnage
+
+Sur iPhone et Mac, faites un appui long ou un clic droit sur un titre et choisissez « Planifier le visionnage ». Vous pouvez aussi ouvrir Personnalisation puis Rappels. Choisissez une date, une heure facultative et, si vous le souhaitez, une notification locale avant le visionnage. Les plans restent sur cet appareil et ne font pas partie de la synchronisation iCloud de la bibliothèque. Les ajouts explicites à Rappels Apple ou Calendrier sont des copies indépendantes.

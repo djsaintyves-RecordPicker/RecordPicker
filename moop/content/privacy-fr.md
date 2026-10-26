@@ -6,7 +6,7 @@ MOOP conserve votre bibliothèque sur vos appareils : films et séries, listes, 
 
 ## Achats et essai
 
-Le téléchargement est gratuit. Vous pouvez démarrer explicitement un essai gratuit de sept jours, sans facturation automatique. Un achat définitif facultatif débloque ensuite MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 1,99 € ; le prix local est indiqué dans la fenêtre d’achat Apple. Il ne s’agit pas d’un abonnement.
+Le téléchargement est gratuit. Vous pouvez démarrer explicitement un essai gratuit de sept jours, sans facturation automatique. Un achat définitif facultatif débloque ensuite MOOP sur iPhone et Mac avec le même compte Apple. Le prix de base est de 4,99 € ; le prix local est indiqué dans la fenêtre d’achat Apple. Il ne s’agit pas d’un abonnement.
 
 Apple traite les achats et leur restauration. MOOP utilise StoreKit et les transactions vérifiées fournies par Apple pour déterminer le début et la fin de l’essai et votre droit d’accès. Ces informations peuvent inclure l’identifiant du produit, les dates et l’identifiant de transaction. MOOP n’a pas accès à vos coordonnées bancaires et ne transmet pas vos transactions à un serveur de l’éditeur. Apple traite les données nécessaires selon sa politique : https://www.apple.com/legal/privacy/fr-ww/ . L’accès acheté peut être restauré avec le même compte Apple ; cela ne synchronise pas votre bibliothèque.
 
@@ -32,3 +32,9 @@ Les exports sont enregistrés à la destination que vous choisissez. La corbeill
 
 Politique : https://recordpicker.app/moop/fr/privacy/
 Assistance : https://recordpicker.app/moop/fr/support/
+
+## Rappels de visionnage
+
+Vous pouvez planifier un film ou une série et activer explicitement une notification locale. Les dates, réglages d’alerte et identifiants des rappels exportés restent sur cet appareil ; ils ne sont pas inclus dans la synchronisation iCloud de la bibliothèque. Aucune autorisation de notification n’est demandée au lancement.
+
+L’ajout à Rappels Apple ou au Calendrier est déclenché par vous. MOOP demande l’accès à Rappels uniquement pour cet ajout et n’envoie pas votre liste à l’éditeur. Les éléments exportés sont des copies indépendantes : supprimer une planification dans MOOP ne supprime pas ces copies. Apple ou le fournisseur de votre calendrier peut les synchroniser selon vos réglages.

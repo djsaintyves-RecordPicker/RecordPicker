@@ -13,9 +13,9 @@ COPY={
 COPY['fr']['release_status']='Version App Store en préparation.'
 COPY['en']['release_status']='App Store release in preparation.'
 COPY['fr']['purchase_title']='Un seul achat pour iPhone et Mac.'
-COPY['fr']['purchase_copy']='Téléchargement gratuit. Démarrez explicitement un essai gratuit facultatif de 7 jours, sans facturation automatique. Ensuite, un achat définitif unique débloque MOOP sur iPhone et Mac avec le même compte Apple. Prix de base : 1,99 € ; le prix local est affiché dans la fenêtre d’achat Apple. Aucun abonnement. Vous pouvez restaurer les achats ; cela ne synchronise pas votre bibliothèque.'
+COPY['fr']['purchase_copy']='Téléchargement gratuit. Démarrez explicitement un essai gratuit facultatif de 7 jours, sans facturation automatique. Ensuite, un achat définitif unique débloque MOOP sur iPhone et Mac avec le même compte Apple. Prix de base : 4,99 € ; le prix local est affiché dans la fenêtre d’achat Apple. Aucun abonnement. Vous pouvez restaurer les achats ; cela ne synchronise pas votre bibliothèque.'
 COPY['en']['purchase_title']='One purchase for iPhone and Mac.'
-COPY['en']['purchase_copy']='Free download. Explicitly start an optional 7-day free trial, with no automatic charge. Afterwards, one permanent purchase unlocks MOOP on iPhone and Mac with the same Apple Account. Base price: €1.99; Apple’s purchase sheet displays the local price. No subscription. Purchases can be restored; this does not synchronise your library.'
+COPY['en']['purchase_copy']='Free download. Explicitly start an optional 7-day free trial, with no automatic charge. Afterwards, one permanent purchase unlocks MOOP on iPhone and Mac with the same Apple Account. Base price: €4.99; Apple’s purchase sheet displays the local price. No subscription. Purchases can be restored; this does not synchronise your library.'
 
 def route(locale,kind='home'):
  return '/moop/'+locale+'/'+('' if kind=='home' else kind+'/')
