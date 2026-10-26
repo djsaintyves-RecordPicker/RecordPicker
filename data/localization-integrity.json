@@ -26,7 +26,7 @@
     "pt-br": "1d4d56ff0944b119d49114aa39b861d475cf6509f72538a26a47b2e8b1e185ee",
     "pt-pt": "c4213e90dc5bd5f7aeb788a316d85eed2a5eae66fe42dcf1251245081f79c5f9",
     "ru": "71ca37a89bd1fcd7923c6a96a1d6dfddb36fe84ef8c684bcc20af99dded94a32",
-    "shared": "5fd59d576b0364ec733cd9f8eb6cc90fb5f9a05d830c721829a19a0f23f21a5b",
+    "shared": "c8798ed581ae3d92ec9037b55152ee20df29cfccf62e04a0528179b5e1b69804",
     "sv": "f0eac38e2aaf100bc94354ec05041b3e6cb34e844f0f438888df26fd93daa3ad",
     "th": "f3c73d7f3006e34ea0256d1d4daf2278afceece1c6dacc8570dbffcc3d59c418",
     "tr": "c23b64c6125a36f95e0f8eaa2d0eee39cb59e0a6544e2043139b3a4b3a548441",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1052,
-  "review_reason": "Yves requested Suite Record Picker Studio as seventh entry and Dulpi as eighth",
+  "review_reason": "Move monthly playlists after all eight Studio project entries as requested by Yves",
   "schema": 1
 }

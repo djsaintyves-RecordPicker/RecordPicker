@@ -23,6 +23,12 @@ def normalize(source):
     source=re.sub(r'(<article\b[^>]*id="dulpi".*?<p class="tag">)\d{2}',r'\g<1>08',source,count=1,flags=re.S)
     bundle = '<article class="card project-card" id="bundle-rps"><div class="project-card-head"><p class="tag">'+escape(c['bundleTag'])+'</p><img class="app-icon" src="/assets/brand/rps/icon-192.png" alt="" width="64" height="64" loading="lazy"><h2>Suite Record Picker Studio</h2></div><div class="project-card-body"><p><strong>'+escape(c['bundleTitle'])+'</strong></p><p>'+escape(c['bundleBody'])+'</p><p class="availability">'+escape(c['bundleStatus'])+'</p></div><div class="project-card-actions"></div></article>'
     source=re.sub(r'(<article\b[^>]*id="dulpi".*?</article>)',lambda match:bundle+match[0],source,count=1,flags=re.S)
+    # Keep app discovery first; the monthly playlists follow the project grid.
+    playlist = re.search(r'<section\b[^>]*id="playlists".*?</section>',source,re.S)
+    if playlist:
+        block=playlist[0]
+        source=source[:playlist.start()]+source[playlist.end():]
+        source=re.sub(r'(?=<section\b[^>]*id="community")',lambda _:block,source,count=1)
     return source
 
 if __name__=='__main__':
