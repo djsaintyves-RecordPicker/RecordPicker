@@ -7,7 +7,7 @@ from site_campaign_links import normalize as campaign_links
 
 CSS = (
     '<link rel="stylesheet" href="/assets/css/studio-suite.css?v=20261025-restored">'
-    '<link rel="stylesheet" href="/assets/css/suite-experience.css?v=20261025-system-theme">'
+    '<link rel="stylesheet" href="/assets/css/suite-experience.css?v=20261026-upcoming">'
 )
 JS = '<script src="/assets/js/suite-experience.js?v=20261023-language" defer></script>'
 
