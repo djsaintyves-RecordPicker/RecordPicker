@@ -20,9 +20,9 @@ def normalize(source):
     for ident,name,tag,title,body in [('moovie-picker','Moovie Picker','movies','movieTitle','movieBody'),('book-picker','Book Picker','books','bookTitle','bookBody')]:
         cards.append('<article class="card project-card" id="'+ident+'"><div class="project-card-head"><p class="tag">'+escape(c[tag])+'</p><img class="app-icon" src="/apps/assets/'+ident+'-icon.png?v=20261026" alt="" width="64" height="64" loading="lazy"><h2>'+name+'</h2></div><div class="project-card-body"><p><strong>'+escape(c[title])+'</strong></p><p>'+escape(c[body])+'</p><p class="availability">'+escape(c['status'])+'</p></div><div class="project-card-actions"></div></article>')
     source=re.sub(r'(?=<article\b[^>]*id="dulpi")',lambda _:''.join(cards),source,count=1)
-    source=re.sub(r'(<article\b[^>]*id="dulpi".*?<p class="tag">)05',r'\g<1>07',source,count=1,flags=re.S)
-    bundle = '<article class="card project-card" id="bundle-rps"><div class="project-card-head"><p class="tag">'+escape(c['bundleTag'])+'</p><img class="app-icon" src="/assets/brand/rps/icon-192.png" alt="" width="64" height="64" loading="lazy"><h2>RPS — Bundle RPS</h2></div><div class="project-card-body"><p><strong>'+escape(c['bundleTitle'])+'</strong></p><p>'+escape(c['bundleBody'])+'</p><p class="availability">'+escape(c['bundleStatus'])+'</p></div><div class="project-card-actions"></div></article>'
-    source=re.sub(r'(<article\b[^>]*id="dulpi".*?</article>)',lambda match:match[0]+bundle,source,count=1,flags=re.S)
+    source=re.sub(r'(<article\b[^>]*id="dulpi".*?<p class="tag">)\d{2}',r'\g<1>08',source,count=1,flags=re.S)
+    bundle = '<article class="card project-card" id="bundle-rps"><div class="project-card-head"><p class="tag">'+escape(c['bundleTag'])+'</p><img class="app-icon" src="/assets/brand/rps/icon-192.png" alt="" width="64" height="64" loading="lazy"><h2>Suite Record Picker Studio</h2></div><div class="project-card-body"><p><strong>'+escape(c['bundleTitle'])+'</strong></p><p>'+escape(c['bundleBody'])+'</p><p class="availability">'+escape(c['bundleStatus'])+'</p></div><div class="project-card-actions"></div></article>'
+    source=re.sub(r'(<article\b[^>]*id="dulpi".*?</article>)',lambda match:bundle+match[0],source,count=1,flags=re.S)
     return source
 
 if __name__=='__main__':
