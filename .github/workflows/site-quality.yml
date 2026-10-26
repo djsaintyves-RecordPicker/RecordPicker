@@ -32,6 +32,7 @@ jobs:
           python3 Scripts/site_music_menu.py
           python3 Scripts/site_meal_discovery.py
           python3 Scripts/audit_site_quality.py
+          python3 Scripts/audit_moop_site.py
           python3 Scripts/site_social_identity.py
           python3 Scripts/site_ecosystem_links.py
           python3 Scripts/audit_internal_site_links.py
