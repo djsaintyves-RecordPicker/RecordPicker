@@ -8,12 +8,12 @@ COPY = {
     'fr': {
         'record-picker': ('3.1.2 · Des commandes plus faciles à suivre', 'Sur iPhone, iPad et Mac, Pro ajoute une date de livraison espérée et un accès direct au suivi du colis. La confirmation d’écoute rejoint la ligne des actions du tirage.'),
         'snory-teller': ('1.0.3 · Des bilans de nuit plus clairs', 'Prépare ta nuit avec les vérifications du micro, de la batterie et de l’Apple Watch. Les bilans expliquent la qualité des données et les tendances sur 7 ou 30 nuits. Version validée par Apple ; déploiement sur l’App Store en cours.'),
-        'physical-routine': ('1.0.3 · Un suivi plus fiable sur Apple Watch', 'Les signalements de douleur ou de malaise restent conservés, même hors ligne. La récupération respecte l’arrêt réel des séances et les photos du journal sont mieux protégées. Version validée par Apple ; déploiement sur l’App Store en cours.'),
+        'physical-routine': ('1.0.5 · Optimisée pour iPhone Duo', 'Optimisée pour iPhone Duo'),
     },
     'en': {
         'record-picker': ('3.1.2 · Easier order tracking', 'On iPhone, iPad and Mac, Pro adds an expected delivery date and direct access to parcel tracking. Physical listening confirmation joins the pick action row.'),
         'snory-teller': ('1.0.3 · Clearer nightly reports', 'Prepare each night with microphone, battery and Apple Watch checks. Reports explain data quality and trends over 7 or 30 nights. Approved by Apple; rolling out on the App Store.'),
-        'physical-routine': ('1.0.3 · More reliable Apple Watch tracking', 'Pain or discomfort reports stay saved, even offline. Recovery respects the actual end of a session, and journal photos are better protected. Approved by Apple; rolling out on the App Store.'),
+        'physical-routine': ('1.0.5 · Optimized for iPhone Duo', 'Optimized for iPhone Duo'),
     },
 }
 

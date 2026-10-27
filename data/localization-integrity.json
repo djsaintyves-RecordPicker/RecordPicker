@@ -26,7 +26,7 @@
     "pt-br": "14c54ae1c6ebb2646df508ce814841f3bc7a57f07d2e6fc67fbfc5818ca441c2",
     "pt-pt": "190f2b9f0b03430e06d0c3eab6a707788eca976e1a8b84ce6a753661103bb424",
     "ru": "d5fec3901dfca332db6f9d47eb4f7dd0def088a3a18a55a772f8035be07306ac",
-    "shared": "9f78ed0e329d4e6974c9386b440c6428b0072cf805e2f40cb65d77116579307a",
+    "shared": "403ea3a38c6d61b90786b65bbbef96eb808427fdb11b012f8ee9a7691f01393e",
     "sv": "28552ab0548984f5cd5b1b3d8abf79396e1e1b1661d14ba124b19ad38a45aba7",
     "th": "ec420e5edeeab88ef3b9df258a68be1d35cc149ce3d8089f80a4f695cb8878f3",
     "tr": "cbe672b7f257ce265bca92ff9fb9498870180f9d154f11412902ea546d3bccc3",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1052,
-  "review_reason": "Yves confirms RP Windows 3.2.1: reviewed current platform markers across localized pages and 50 Studio cards; preserved translations, store links and screenshot provenance.",
+  "review_reason": "Publish approved MPR 1.0.5 iPhone Duo announcement in 50 Studio locales",
   "schema": 1
 }
