@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 22,
+  "contributingSources": 26,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 22,
-  "generatedAt": "2026-10-26T22:41:11Z",
+  "effectiveContributingSources": 26,
+  "generatedAt": "2026-10-27T05:08:29Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 23,
+      "downloadedArticles": 25,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,13 +39,13 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 3,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -74,9 +74,9 @@
       "url": "https://groove.de/feed/"
     },
     "JAZZIZ": {
-      "downloadedArticles": 0,
+      "downloadedArticles": 2,
       "resolvedEvents": 0,
-      "status": "noRecentArticles",
+      "status": "ok",
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
@@ -111,13 +111,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 10,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 7,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -129,7 +129,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -153,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 14,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -165,7 +165,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 12,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -177,7 +177,7 @@
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 18,
+      "resolvedEvents": 20,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
@@ -189,7 +189,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -220,7 +220,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
@@ -238,7 +238,7 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
@@ -249,7 +249,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 8,
+      "downloadedArticles": 7,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
@@ -274,7 +274,7 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
