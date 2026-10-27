@@ -1,6 +1,6 @@
 # Privacy — MOOP
 
-Updated: 26 October 2026. Publisher: Yves Durand. Contact: support@recordpicker.app.
+Updated: 27 October 2026. Publisher: Yves Durand. Contact: support@recordpicker.app.
 
 MOOP stores your library on your devices: movies and series, lists, favourites, watched status, notes, tags, progress, history and personal illustrations. No MOOP account is required. MOOP has no server receiving your library and includes no advertising or audience analytics.
 
@@ -38,3 +38,9 @@ Support: https://recordpicker.app/moop/en/support/
 You can schedule a film or series and explicitly enable a local notification. Dates, alert preferences and identifiers of exported reminders stay on this device; they are not included in library iCloud sync. Notification permission is never requested at launch.
 
 You initiate each addition to Apple Reminders or Calendar. MOOP requests Reminders access only for this action and does not send your reminder list to the publisher. Exported items are independent copies: removing a plan from MOOP does not delete them. Apple or your calendar provider may sync them according to your settings.
+
+## Automatic film information and ratings
+
+You can enable automatic retrieval of film information and ratings available in Wikidata’s open structured data. This option is off by default in the public app. When enabled, opening the film library or a title’s details may send its IMDb identifier, or its title and year when an identifier is missing, to Wikimedia to find an exact match. Wikimedia also receives technical connection information, including your IP address. Personal notes, tags, favorites, viewing history and illustrations are not sent for these lookups. The app developer does not receive these requests.
+
+Results are stored on your device to limit requests. Information may be refreshed after seven days; unsuccessful requests are spaced by at least twenty-four hours. Turning the option off stops future automatic requests. You can still refresh manually. IMDb and Rotten Tomatoes® ratings recorded in Wikidata may be missing or historical: MOOP shows their sources and available dates, with a link to the original title page. This is not a real-time connection to either service’s official data feed.

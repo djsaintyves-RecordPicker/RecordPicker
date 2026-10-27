@@ -50,7 +50,9 @@ def paragraphs(text):
 
 def document(locale,kind,content):
  c=COPY[locale];title=c[kind]+' — Moovie Picker';url=route(locale,kind)
- body=f'<main id="main" class="document"><h1>{c[kind]}</h1><p class="meta">{c["updated"]} · {c["publisher"]}</p><p class="contact-line"><a href="mailto:{CONTACT}">{CONTACT}</a></p>'+paragraphs(content)
+ date_match=re.search(r'(?m)^((?:Mise à jour :|Updated:)\s*[^.]+)\.',content)
+ updated=date_match.group(1) if date_match else c['updated']
+ body=f'<main id="main" class="document"><h1>{c[kind]}</h1><p class="meta">{escape(updated)} · {c["publisher"]}</p><p class="contact-line"><a href="mailto:{CONTACT}">{CONTACT}</a></p>'+paragraphs(content)
  if kind=='privacy':body+=f'<section><h2>{"Ce site" if locale=="fr" else "This website"}</h2><p>{c["hosting"]}</p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">{c["host_link"]}</a></p></section>'
  return head(locale,kind,url,title,c[kind+'_desc'])+navigation(locale,kind)+body+'</main>'+footer(locale)
 def landing(locale,url=None):

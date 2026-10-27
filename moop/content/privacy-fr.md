@@ -1,6 +1,6 @@
 # Confidentialité — MOOP
 
-Mise à jour : 26 octobre 2026. Éditeur : Yves Durand. Contact : support@recordpicker.app.
+Mise à jour : 27 octobre 2026. Éditeur : Yves Durand. Contact : support@recordpicker.app.
 
 MOOP conserve votre bibliothèque sur vos appareils : films et séries, listes, favoris, visionnages, notes, tags, progression, historique et illustrations personnelles. Aucun compte MOOP n’est nécessaire. MOOP ne possède pas de serveur recevant votre bibliothèque et n’intègre ni publicité ni outil de mesure d’audience.
 
@@ -38,3 +38,9 @@ Assistance : https://recordpicker.app/moop/fr/support/
 Vous pouvez planifier un film ou une série et activer explicitement une notification locale. Les dates, réglages d’alerte et identifiants des rappels exportés restent sur cet appareil ; ils ne sont pas inclus dans la synchronisation iCloud de la bibliothèque. Aucune autorisation de notification n’est demandée au lancement.
 
 L’ajout à Rappels Apple ou au Calendrier est déclenché par vous. MOOP demande l’accès à Rappels uniquement pour cet ajout et n’envoie pas votre liste à l’éditeur. Les éléments exportés sont des copies indépendantes : supprimer une planification dans MOOP ne supprime pas ces copies. Apple ou le fournisseur de votre calendrier peut les synchroniser selon vos réglages.
+
+## Informations et notes automatiques
+
+Vous pouvez activer la récupération automatique des informations et notes disponibles dans les données ouvertes de Wikidata. Cette option est désactivée par défaut dans la version publique. Quand elle est activée, l’ouverture de la filmothèque ou d’une fiche peut transmettre à Wikimedia l’identifiant IMDb du titre ou, à défaut, son titre et son année pour rechercher une correspondance exacte. Les informations techniques de connexion, dont l’adresse IP, sont également reçues par Wikimedia. Les notes personnelles, tags, favoris, historique et illustrations ne sont pas envoyés pour ces recherches. L’éditeur ne reçoit pas ces requêtes.
+
+Les résultats sont conservés sur l’appareil pour limiter les requêtes. Les informations peuvent être actualisées après sept jours ; les tentatives sans résultat ou en erreur sont espacées d’au moins vingt-quatre heures. Désactiver l’option arrête les demandes automatiques futures. Une actualisation manuelle reste possible. Les notes IMDb et Rotten Tomatoes® reprises par Wikidata peuvent être absentes ou anciennes : MOOP affiche la source et les dates disponibles, avec un lien vers la fiche d’origine. Il ne s’agit pas d’un accès aux flux officiels en temps réel de ces services.
