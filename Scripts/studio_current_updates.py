@@ -7,23 +7,26 @@ ROOT = Path(__file__).resolve().parents[1]
 COPY = {
     'fr': {
         'record-picker': ('3.1.2 · Des commandes plus faciles à suivre', 'Sur iPhone, iPad et Mac, Pro ajoute une date de livraison espérée et un accès direct au suivi du colis. La confirmation d’écoute rejoint la ligne des actions du tirage.'),
-        'snory-teller': ('1.0.3 · Des bilans de nuit plus clairs', 'Prépare ta nuit avec les vérifications du micro, de la batterie et de l’Apple Watch. Les bilans expliquent la qualité des données et les tendances sur 7 ou 30 nuits. Version validée par Apple ; déploiement sur l’App Store en cours.'),
+        'snory-teller': ('1.0.4 · Optimisée pour iPhone Duo', 'Cette mise à jour adapte Snory Teller aux nouvelles configurations d’écran de l’iPhone Duo et renforce la reprise de l’analyse pendant les longues nuits. Version validée par Apple ; déploiement sur l’App Store en cours.'),
         'physical-routine': ('1.0.5 · Optimisée pour iPhone Duo', 'Optimisée pour iPhone Duo'),
     },
     'en': {
         'record-picker': ('3.1.2 · Easier order tracking', 'On iPhone, iPad and Mac, Pro adds an expected delivery date and direct access to parcel tracking. Physical listening confirmation joins the pick action row.'),
-        'snory-teller': ('1.0.3 · Clearer nightly reports', 'Prepare each night with microphone, battery and Apple Watch checks. Reports explain data quality and trends over 7 or 30 nights. Approved by Apple; rolling out on the App Store.'),
+        'snory-teller': ('1.0.4 · Optimized for iPhone Duo', 'This update adapts Snory Teller to new iPhone Duo display configurations and improves analysis recovery during long nights. Approved by Apple; rolling out on the App Store.'),
         'physical-routine': ('1.0.5 · Optimized for iPhone Duo', 'Optimized for iPhone Duo'),
     },
 }
 
 def update(path):
     source = path.read_text()
-    lang = re.search(r'<html[^>]+lang="([^"]+)"', source)[1].split('-')[0]
+    locale = re.search(r'<html[^>]+lang="([^"]+)"', source)[1]
+    lang = locale.split('-')[0]
     if lang not in COPY:
         return False
     original = source
     for ident, (title, note) in COPY[lang].items():
+        if ident == 'snory-teller' and locale in {'en-GB', 'en-AU'}:
+            title = title.replace('Optimized', 'Optimised')
         pattern = r'(<article\b[^>]*\bid="' + ident + r'"[^>]*>)(.*?)(</article>)'
         def card(match):
             body = match[2]

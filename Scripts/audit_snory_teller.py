@@ -50,7 +50,7 @@ def audit():
             body = path.read_text().split('<main', 1)[1].split('</main>', 1)[0]
             assert '50' in body, (path, 'Current localization count missing')
         if path.parent.name == "about":
-            assert 'data-snory-public-version="1.0.3"' in path.read_text(), (path, 'Public version missing')
+            assert 'data-snory-public-version="1.0.4"' in path.read_text(), (path, 'Public version missing')
             assert any('apps.apple.com/' in link and '6820177689' in link for link in page.links), (path, 'App Store path missing')
         for link in page.links:
             url = urlsplit(link)

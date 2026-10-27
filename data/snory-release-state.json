@@ -1,13 +1,13 @@
 {
-  "version": "1.0.3",
-  "status": "READY_FOR_SALE",
-  "verifiedDate": "2026-10-23",
-  "source": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/016e3232-a0ca-45cc-af24-c9b1d40599de",
-  "releaseDate": "2026-10-23T06:05:25Z",
+  "version": "1.0.4",
+  "status": "READY_FOR_SALE_PROPAGATING",
+  "verifiedDate": "2026-10-27",
+  "source": "App Store Connect; public iTunes lookup still reports 1.0.3",
+  "releaseDate": null,
   "storeURL": "https://apps.apple.com/fr/app/snory-teller/id6820177689",
-  "releaseNotesFR": "Préparez chaque nuit avec les contrôles du micro, de la batterie, du placement et de l’Apple Watch. Les bilans expliquent désormais la qualité des données et permettent de noter le contexte et la précision ressentie. Comparez des tendances normalisées sur 7 ou 30 nuits ; la demande d’avis n’apparaît qu’après un usage réel.",
+  "releaseNotesFR": "Optimisée pour iPhone Duo.",
   "translationReview": "French and English authored; other languages machine translated, editorial review pending.",
   "submissionId": "36bb7b0e-85f8-408b-8e7a-04dced1fc32d",
   "submissionState": "COMPLETE",
-  "storefrontPropagation": "The App Store Connect version is READY_FOR_SALE; public storefront propagation may take up to 24 hours."
+  "storefrontPropagation": "App Store Connect reports 1.0.4 ready for distribution with automatic release enabled; public storefront propagation is still pending."
 }
