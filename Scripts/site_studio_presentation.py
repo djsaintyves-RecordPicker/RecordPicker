@@ -132,7 +132,8 @@ def normalize(source):
             image.set('src', image.get('src', '').rstrip('\\'))
         return html.tostring(node, encoding='unicode', with_tail=False)
     source = re.sub(r'<article\b[^>]*class="[^"]*project-card[^"]*"[^>]*>.*?</article>', card, source, flags=re.S)
-    return upcoming_apps(campaign_links(music_menu(source)))
+    from publish_ios_3_2_2 import normalize as current_rp_ios
+    return current_rp_ios(upcoming_apps(campaign_links(music_menu(source))))
 
 
 if __name__ == '__main__':
