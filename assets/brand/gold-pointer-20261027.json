@@ -1,0 +1,16 @@
+{
+  "approvedAt": "2026-10-27",
+  "reference": "Book Picker bookmark",
+  "apps": [
+    "Record Picker",
+    "Meal Picker",
+    "Moovie Picker"
+  ],
+  "gold": {
+    "left": "#E8C66D",
+    "right": "#B78024",
+    "outline": false
+  },
+  "geometry": "Existing 1024px artwork; triangle (424.375,71) (599.625,71) (512,223); existing outer disc preserved",
+  "storeUpload": false
+}
