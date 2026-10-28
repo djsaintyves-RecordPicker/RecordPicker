@@ -18,6 +18,7 @@ PAUSED = {
  'id': 'Proyek Android dijeda', 'ja': 'Androidプロジェクトは一時停止中です', 'ko': 'Android 프로젝트가 일시 중단되었습니다',
  'th': 'โครงการ Android หยุดชั่วคราว', 'vi': 'Dự án Android đang tạm dừng', 'zh-hans': 'Android 项目已暂停', 'zh-hant': 'Android 專案已暫停',
 }
+REGIONS = {'en-us':'United States', 'en-gb':'United Kingdom', 'en-ca':'Canada', 'en-au':'Australia', 'fr':'France', 'fr-ca':'Canada', 'es-es':'España', 'es-mx':'México'}
 
 sys.path.insert(0, str(ROOT / 'Scripts'))
 from update_android_beta_status import STATUS
@@ -59,7 +60,7 @@ def main():
 
         if relative.parts[-2:] == ('android-app', 'index.html'):
             assert len(MAIN.findall(text)) == 1, relative
-            title = 'Record Picker — ' + message
+            title = 'Record Picker — ' + message + ((' · ' + REGIONS[locale]) if locale in REGIONS else '')
             content = '<main id="main-content" class="container"><section class="section"><h1>' + html.escape(title) + '</h1></section></main>'
             text = MAIN.sub(lambda _: content, text)
             text = re.sub(r'<title>.*?</title>', lambda _: '<title>' + html.escape(title) + '</title>', text, count=1, flags=re.I | re.S)

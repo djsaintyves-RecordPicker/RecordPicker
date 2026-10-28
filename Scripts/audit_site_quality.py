@@ -645,13 +645,11 @@ def main() -> None:
         if kind == "index.html":
             homes += 1
             if re.search(r'class="[^"]*\bplatform-expansion\b[^"]*"', text):
-                platform_expansion_pages += 1
-            else:
-                errors.append(f"{relative}: Android and Windows development announcement missing")
+                errors.append(f"{relative}: paused Android recruitment announcement remains")
             if text.count('class="future-platform"') != 1 or '<span>Windows</span>' not in text:
                 errors.append(f"{relative}: released Windows or Android development badge missing")
-            if 'class="platform-beta-callout"' not in text:
-                errors.append(f"{relative}: Android beta recruitment call-to-action missing")
+            if 'class="platform-beta-callout"' in text or 'data-beta-recruitment' in text:
+                errors.append(f"{relative}: paused Android recruitment call-to-action remains")
             for forbidden in ("v18-showcase", "release-history", "support-band"):
                 if forbidden in text:
                     errors.append(f"{relative}: verbose home section {forbidden} remains")
@@ -715,11 +713,6 @@ def main() -> None:
         )
     if homes != expected_locales:
         errors.append(f"expected {expected_locales} home pages, found {homes}")
-    if platform_expansion_pages != expected_locales:
-        errors.append(
-            f"expected {expected_locales} Android/Windows announcements, "
-            f"found {platform_expansion_pages}"
-        )
     # Every locale must expose the same number of cards as the reference page.
     reference_history = (ROOT / "readme" / "index.html").read_text(encoding="utf-8")
     versions_per_history = len(RELEASE_CARD.findall(reference_history))
