@@ -63,6 +63,35 @@ def main() -> None:
         state = json.loads(
             (target / "data" / "release-state.json").read_text(encoding="utf-8")
         )
+        if state['current_release']['version'] == '3.2.2':
+            versions = state['current_release']['platform_versions']
+            assert versions == {
+                'iphone': '3.2.2', 'ipad': '3.2.2', 'watch': '3.2.2',
+                'mac': '3.2.1', 'windows': '3.2.1',
+            }, versions
+            assert state['publication_phase'] == 'full'
+            assert set(state['current_release']['platforms'].values()) == {'available'}
+            assert state['publication_assets']['screenshot_version'] == '3.0.1'
+            for root in (target, *(target / locale for locale in LOCALES)):
+                for route, platform in (('index.html', 'iphone'), ('ios-app/index.html', 'iphone'),
+                                        ('watch-app/index.html', 'watch'), ('mac-app/index.html', 'mac'),
+                                        ('windows-app/index.html', 'windows')):
+                    page = (root / route).read_text(encoding='utf-8')
+                    assert '"softwareVersion":"' + versions[platform] + '"' in page, (root, route, versions[platform])
+                for route, platform in (('ios-app/index.html', 'iphone'), ('watch-app/index.html', 'watch'),
+                                        ('mac-app/index.html', 'mac'), ('windows-app/index.html', 'windows')):
+                    page = (root / route).read_text(encoding='utf-8')
+                    assert 'id="site-footer-version">Record Picker · ' + versions[platform] + '</span>' in page, (root, route)
+                home = (root / 'index.html').read_text(encoding='utf-8')
+                assert 'data-beta-recruitment' not in home and 'beta-campaign' not in home, root
+            before = {p: p.read_bytes() for p in target.rglob('*.html')}
+            before[target / 'data/release-state.json'] = (target / 'data/release-state.json').read_bytes()
+            for script in ('publish_release_3_0_ios.py', 'announce_release_3_0.py'):
+                for _ in range(2):
+                    run('python3', 'Scripts/' + script, cwd=target)
+            assert all(p.read_bytes() == content for p, content in before.items()), 'legacy publication changed current pages or state'
+            print('OK: iOS/Watch 3.2.2, Mac/Windows 3.2.1, paused Android recruitment, screenshot provenance and legacy generator safeguards verified')
+            return
         if state['current_release']['version'] in ('3.1.1', '3.1.2', '3.2', '3.2.1'):
             apple_version = state['current_release']['version']
             assert state['current_release']['platform_versions'] == {
