@@ -16,7 +16,8 @@
       "bundleTag": "07 · THE SUITE",
       "bundleTitle": "Your four Pickers, together.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker and Moovie Picker. A combined promotional offer is being explored.",
-      "bundleStatus": "Offer in preparation · terms and pricing to be confirmed."
+      "bundleStatus": "Offer in preparation · terms and pricing to be confirmed.",
+      "movieStatus": "Available on iPhone and iPad · Mac version pending approval."
     },
     "fr": {
       "movies": "05 · FILMS ET SÉRIES",
@@ -29,7 +30,8 @@
       "bundleTag": "07 · LA SUITE",
       "bundleTitle": "Tes quatre Pickers, réunis.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker et Moovie Picker. Une offre promotionnelle commune est à l’étude.",
-      "bundleStatus": "Offre en préparation · modalités et tarif à confirmer."
+      "bundleStatus": "Offre en préparation · modalités et tarif à confirmer.",
+      "movieStatus": "Disponible sur iPhone et iPad · Version Mac en attente de validation."
     },
     "ar": {
       "movies": "05 · الأفلام والمسلسلات",
@@ -42,7 +44,8 @@
       "bundleTag": "07 · الجناح",
       "bundleTitle": "منتقيك الأربعة معًا.",
       "bundleBody": "Record Picker، Meal Picker، Book Picker وMoovie Picker. ويجري استكشاف عرض ترويجي مشترك.",
-      "bundleStatus": "العرض قيد الإعداد · سيتم تأكيد الشروط والأسعار."
+      "bundleStatus": "العرض قيد الإعداد · سيتم تأكيد الشروط والأسعار.",
+      "movieStatus": "متاح على iPhone وiPad · إصدار Mac بانتظار الموافقة."
     },
     "bn": {
       "movies": "05 · চলচ্চিত্র ও সিরিজ",
@@ -55,7 +58,8 @@
       "bundleTag": "07 · স্যুট",
       "bundleTitle": "আপনার চার বাছাই, একসঙ্গে.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker এবং Moovie Picker। একটি সম্মিলিত প্রচারমূলক অফার অন্বেষণ করা হচ্ছে.",
-      "bundleStatus": "প্রস্তুতির মধ্যে অফার · শর্তাবলী এবং মূল্য নিশ্চিত করা হবে."
+      "bundleStatus": "প্রস্তুতির মধ্যে অফার · শর্তাবলী এবং মূল্য নিশ্চিত করা হবে.",
+      "movieStatus": "iPhone ও iPad-এ উপলব্ধ · Mac সংস্করণ অনুমোদনের অপেক্ষায়।"
     },
     "ca": {
       "movies": "05 · PEL·LÍCULES I SÈRIES",
@@ -68,7 +72,8 @@
       "bundleTag": "07 · LA SUITE",
       "bundleTitle": "Els vostres quatre selectors, junts.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker i Moovie Picker. S'està explorant una oferta promocional combinada.",
-      "bundleStatus": "Oferta en preparació · condicions i preus per confirmar."
+      "bundleStatus": "Oferta en preparació · condicions i preus per confirmar.",
+      "movieStatus": "Disponible per a iPhone i iPad · Versió Mac pendent d’aprovació."
     },
     "cs": {
       "movies": "05 · FILMY A SÉRIE",
@@ -81,7 +86,8 @@
       "bundleTag": "07 · SUITE",
       "bundleTitle": "Vaši čtyři sběrači spolu.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker a Moovie Picker. Zkoumá se kombinovaná propagační nabídka.",
-      "bundleStatus": "Nabídka se připravuje · podmínky a ceny budou potvrzeny."
+      "bundleStatus": "Nabídka se připravuje · podmínky a ceny budou potvrzeny.",
+      "movieStatus": "Dostupné pro iPhone a iPad · Verze pro Mac čeká na schválení."
     },
     "da": {
       "movies": "05 · FILM & SERIE",
@@ -94,7 +100,8 @@
       "bundleTag": "07 · SUITEN",
       "bundleTitle": "Dine fire plukkere sammen.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker og Moovie Picker. Et kombineret kampagnetilbud er ved at blive udforsket.",
-      "bundleStatus": "Tilbud under forberedelse · Vilkår og priser skal bekræftes."
+      "bundleStatus": "Tilbud under forberedelse · Vilkår og priser skal bekræftes.",
+      "movieStatus": "Tilgængelig til iPhone og iPad · Mac-versionen afventer godkendelse."
     },
     "de": {
       "movies": "05 · FILME & SERIEN",
@@ -107,7 +114,8 @@
       "bundleTag": "07 · DIE SUITE",
       "bundleTitle": "Eure vier Picker zusammen.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker und Moovie Picker. Ein kombiniertes Aktionsangebot wird geprüft.",
-      "bundleStatus": "Angebot in Vorbereitung · Konditionen und Preise müssen noch bestätigt werden."
+      "bundleStatus": "Angebot in Vorbereitung · Konditionen und Preise müssen noch bestätigt werden.",
+      "movieStatus": "Verfügbar für iPhone und iPad · Mac-Version wartet auf Freigabe."
     },
     "el": {
       "movies": "05 · ΤΑΙΝΙΕΣ & ΣΕΙΡΕΣ",
@@ -120,7 +128,8 @@
       "bundleTag": "07 · Η ΣΟΥΙΤΑ",
       "bundleTitle": "Οι τέσσερις Επιλογείς σας, μαζί.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker και Moovie Picker. Μια συνδυασμένη προωθητική προσφορά διερευνάται.",
-      "bundleStatus": "Προσφορά σε προετοιμασία · Οι όροι και η τιμή θα επιβεβαιωθούν."
+      "bundleStatus": "Προσφορά σε προετοιμασία · Οι όροι και η τιμή θα επιβεβαιωθούν.",
+      "movieStatus": "Διαθέσιμο για iPhone και iPad · Η έκδοση Mac αναμένει έγκριση."
     },
     "es": {
       "movies": "05 · PELÍCULAS Y SERIES",
@@ -133,7 +142,8 @@
       "bundleTag": "07 · LA SUITE",
       "bundleTitle": "Tus cuatro recolectores, juntos.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker y Moovie Picker. Se está explorando una oferta promocional combinada.",
-      "bundleStatus": "Oferta en preparación · términos y precios por confirmar."
+      "bundleStatus": "Oferta en preparación · términos y precios por confirmar.",
+      "movieStatus": "Disponible para iPhone y iPad · Versión para Mac pendiente de aprobación."
     },
     "fi": {
       "movies": "05 · ELOKUVAT JA SARJAT",
@@ -146,7 +156,8 @@
       "bundleTag": "07 · SUITE",
       "bundleTitle": "Sinun neljä poimijasi yhdessä.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ja Moovie Picker. Yhdistettyä kampanjatarjousta tutkitaan.",
-      "bundleStatus": "Tarjous valmisteilla · ehdot ja hinnat tarkentuvat."
+      "bundleStatus": "Tarjous valmisteilla · ehdot ja hinnat tarkentuvat.",
+      "movieStatus": "Saatavilla iPhonelle ja iPadille · Mac-versio odottaa hyväksyntää."
     },
     "gu": {
       "movies": "05 · ફિલ્મો અને શ્રેણી",
@@ -159,7 +170,8 @@
       "bundleTag": "07 · સ્યુટ",
       "bundleTitle": "તમારા ચાર ચૂંટનારા, એકસાથે.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker અને Moovie Picker. સંયુક્ત પ્રમોશનલ ઓફરની શોધ કરવામાં આવી રહી છે.",
-      "bundleStatus": "તૈયારીમાં ઓફર · શરતો અને કિંમત કન્ફર્મ કરવાની છે."
+      "bundleStatus": "તૈયારીમાં ઓફર · શરતો અને કિંમત કન્ફર્મ કરવાની છે.",
+      "movieStatus": "iPhone અને iPad પર ઉપલબ્ધ · Mac આવૃત્તિ મંજૂરીની રાહમાં છે."
     },
     "he": {
       "movies": "05 · סרטים וסדרות",
@@ -172,7 +184,8 @@
       "bundleTag": "07 · הסוויטה",
       "bundleTitle": "ארבעת הבוחרים שלכם ביחד.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ו-Moovie Picker. נבדקת הצעת קידום מכירות משולבת.",
-      "bundleStatus": "הצעה בהכנה · תנאים ותמחור יאושרו."
+      "bundleStatus": "הצעה בהכנה · תנאים ותמחור יאושרו.",
+      "movieStatus": "זמין ב-iPhone וב-iPad · גרסת Mac ממתינה לאישור."
     },
     "hi": {
       "movies": "05 · फ़िल्में और शृंखलाएँ",
@@ -185,7 +198,8 @@
       "bundleTag": "07 · सुइट",
       "bundleTitle": "आपके चार पिकर, एक साथ।",
       "bundleBody": "Record Picker, Meal Picker, Book Picker और Moovie Picker। एक संयुक्त प्रचार प्रस्ताव का पता लगाया जा रहा है।",
-      "bundleStatus": "प्रस्ताव तैयारी में है · शर्तें और मूल्य निर्धारण की पुष्टि की जानी है।"
+      "bundleStatus": "प्रस्ताव तैयारी में है · शर्तें और मूल्य निर्धारण की पुष्टि की जानी है।",
+      "movieStatus": "iPhone और iPad पर उपलब्ध · Mac संस्करण स्वीकृति की प्रतीक्षा में है।"
     },
     "hr": {
       "movies": "05 · FILMOVI I SERIJE",
@@ -198,7 +212,8 @@
       "bundleTag": "07 · APARTMAN",
       "bundleTitle": "Vaša četiri berača, zajedno.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker i Moovie Picker. Istražuje se kombinirana promotivna ponuda.",
-      "bundleStatus": "Ponuda u pripremi · uvjeti i cijene će se potvrditi."
+      "bundleStatus": "Ponuda u pripremi · uvjeti i cijene će se potvrditi.",
+      "movieStatus": "Dostupno za iPhone i iPad · Verzija za Mac čeka odobrenje."
     },
     "hu": {
       "movies": "05 · FILMEK ÉS SOROZATOK",
@@ -211,7 +226,8 @@
       "bundleTag": "07 · A LAKSZT",
       "bundleTitle": "A négy Pickered együtt.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker és Moovie Picker. Egy kombinált promóciós ajánlat feltárása folyamatban van.",
-      "bundleStatus": "Ajánlat előkészítés alatt · A feltételek és az árak megerősítésre várnak."
+      "bundleStatus": "Ajánlat előkészítés alatt · A feltételek és az árak megerősítésre várnak.",
+      "movieStatus": "Elérhető iPhone-ra és iPadre · A Mac-verzió jóváhagyásra vár."
     },
     "id": {
       "movies": "05 · FILM & SERI",
@@ -224,7 +240,8 @@
       "bundleTag": "07 · SUITE",
       "bundleTitle": "Keempat Picker Anda, bersama-sama.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker dan Moovie Picker. Tawaran promosi gabungan sedang dijajaki.",
-      "bundleStatus": "Penawaran dalam persiapan · syarat dan harga akan dikonfirmasi."
+      "bundleStatus": "Penawaran dalam persiapan · syarat dan harga akan dikonfirmasi.",
+      "movieStatus": "Tersedia untuk iPhone dan iPad · Versi Mac menunggu persetujuan."
     },
     "it": {
       "movies": "05 · FILM E SERIE",
@@ -237,7 +254,8 @@
       "bundleTag": "07 · LA SUITE",
       "bundleTitle": "I tuoi quattro Raccoglitori, insieme.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker e Moovie Picker. Si sta studiando un'offerta promozionale combinata.",
-      "bundleStatus": "Offerta in preparazione · termini e prezzi da confermare."
+      "bundleStatus": "Offerta in preparazione · termini e prezzi da confermare.",
+      "movieStatus": "Disponibile per iPhone e iPad · Versione Mac in attesa di approvazione."
     },
     "ja": {
       "movies": "05 · 映画とシリーズ",
@@ -250,7 +268,8 @@
       "bundleTag": "07・ザ・スイート",
       "bundleTitle": "4 人のピッカーが一緒に。",
       "bundleBody": "Record Picker、Meal Picker、Book Picker、Moovie Picker。組み合わせたプロモーション オファーが検討されています。",
-      "bundleStatus": "オファーは準備中です。条件と価格は確認中です。"
+      "bundleStatus": "オファーは準備中です。条件と価格は確認中です。",
+      "movieStatus": "iPhoneとiPadで配信中 · Mac版は承認待ちです。"
     },
     "kn": {
       "movies": "05 · ಚಲನಚಿತ್ರಗಳು ಮತ್ತು ಸರಣಿಗಳು",
@@ -263,7 +282,8 @@
       "bundleTag": "07 · ದಿ ಸೂಟ್",
       "bundleTitle": "ನಿಮ್ಮ ನಾಲ್ಕು ಪಿಕ್ಕರ್‌ಗಳು ಒಟ್ಟಿಗೆ.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ಮತ್ತು Moovie Picker. ಸಂಯೋಜಿತ ಪ್ರಚಾರದ ಕೊಡುಗೆಯನ್ನು ಅನ್ವೇಷಿಸಲಾಗುತ್ತಿದೆ.",
-      "bundleStatus": "ತಯಾರಿಕೆಯಲ್ಲಿ ಆಫರ್ · ನಿಯಮಗಳು ಮತ್ತು ಬೆಲೆಯನ್ನು ದೃಢೀಕರಿಸಬೇಕು."
+      "bundleStatus": "ತಯಾರಿಕೆಯಲ್ಲಿ ಆಫರ್ · ನಿಯಮಗಳು ಮತ್ತು ಬೆಲೆಯನ್ನು ದೃಢೀಕರಿಸಬೇಕು.",
+      "movieStatus": "iPhone ಮತ್ತು iPad ನಲ್ಲಿ ಲಭ್ಯ · Mac ಆವೃತ್ತಿ ಅನುಮೋದನೆಗಾಗಿ ಕಾಯುತ್ತಿದೆ."
     },
     "ko": {
       "movies": "05 · 영화 & 시리즈",
@@ -276,7 +296,8 @@
       "bundleTag": "07 · 더 스위트",
       "bundleTitle": "네 명의 피커가 함께합니다.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker 및 Moovie Picker. 통합 프로모션 제안을 모색 중입니다.",
-      "bundleStatus": "제안 준비 중 · 조건 및 가격은 추후 확정됩니다."
+      "bundleStatus": "제안 준비 중 · 조건 및 가격은 추후 확정됩니다.",
+      "movieStatus": "iPhone 및 iPad에서 이용 가능 · Mac 버전은 승인 대기 중입니다."
     },
     "ml": {
       "movies": "05 · സിനിമകളും പരമ്പരകളും",
@@ -289,7 +310,8 @@
       "bundleTag": "07 · സ്യൂട്ട്",
       "bundleTitle": "നിങ്ങളുടെ നാല് പിക്കറുകൾ ഒരുമിച്ച്.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker, Moovie Picker. ഒരു സംയോജിത പ്രമോഷണൽ ഓഫർ അടുത്തറിയുന്നു.",
-      "bundleStatus": "ഓഫർ തയ്യാറാക്കി · സ്ഥിരീകരിക്കേണ്ട നിബന്ധനകളും വിലയും."
+      "bundleStatus": "ഓഫർ തയ്യാറാക്കി · സ്ഥിരീകരിക്കേണ്ട നിബന്ധനകളും വിലയും.",
+      "movieStatus": "iPhone, iPad എന്നിവയിൽ ലഭ്യമാണ് · Mac പതിപ്പ് അംഗീകാരത്തിനായി കാത്തിരിക്കുന്നു."
     },
     "mr": {
       "movies": "05 · चित्रपट आणि मालिका",
@@ -302,7 +324,8 @@
       "bundleTag": "07 · सुट",
       "bundleTitle": "तुमचे चार पिकर एकत्र.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker आणि Moovie Picker. एकत्रित प्रचारात्मक ऑफर शोधली जात आहे.",
-      "bundleStatus": "ऑफर तयारीत आहे · अटी आणि किंमत निश्चित करणे आवश्यक आहे."
+      "bundleStatus": "ऑफर तयारीत आहे · अटी आणि किंमत निश्चित करणे आवश्यक आहे.",
+      "movieStatus": "iPhone आणि iPad वर उपलब्ध · Mac आवृत्ती मंजुरीच्या प्रतीक्षेत आहे."
     },
     "ms": {
       "movies": "05 · FILEM & SIRI",
@@ -315,7 +338,8 @@
       "bundleTag": "07 · SUITE",
       "bundleTitle": "Empat Pemilih anda, bersama-sama.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker dan Moovie Picker. Tawaran promosi gabungan sedang diterokai.",
-      "bundleStatus": "Tawaran dalam penyediaan · terma dan harga akan disahkan."
+      "bundleStatus": "Tawaran dalam penyediaan · terma dan harga akan disahkan.",
+      "movieStatus": "Tersedia untuk iPhone dan iPad · Versi Mac menunggu kelulusan."
     },
     "nl": {
       "movies": "05 · FILMS & SERIE",
@@ -328,7 +352,8 @@
       "bundleTag": "07 · DE SUITE",
       "bundleTitle": "Jouw vier Pickers samen.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker en Moovie Picker. Er wordt onderzoek gedaan naar een gecombineerd promotie-aanbod.",
-      "bundleStatus": "Aanbieding in voorbereiding · voorwaarden en prijzen nog te bevestigen."
+      "bundleStatus": "Aanbieding in voorbereiding · voorwaarden en prijzen nog te bevestigen.",
+      "movieStatus": "Beschikbaar voor iPhone en iPad · Mac-versie wacht op goedkeuring."
     },
     "no": {
       "movies": "05 · FILM OG SERIE",
@@ -341,7 +366,8 @@
       "bundleTag": "07 · SUITEN",
       "bundleTitle": "Dine fire plukkere, sammen.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker og Moovie Picker. Et kombinert kampanjetilbud utforskes.",
-      "bundleStatus": "Tilbud under forberedelse · vilkår og pris bekreftes."
+      "bundleStatus": "Tilbud under forberedelse · vilkår og pris bekreftes.",
+      "movieStatus": "Tilgjengelig for iPhone og iPad · Mac-versjonen venter på godkjenning."
     },
     "or": {
       "movies": "05 · ଫାଇଲ୍ ଏବଂ ସେବାଗୁଡିକ |",
@@ -354,7 +380,8 @@
       "bundleTag": "07 · ସୁଇଟ୍ |",
       "bundleTitle": "ତୁମର ଚାରି ପିକର୍, ଏକତ୍ର |",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ଏବଂ Moovie Picker | ଏକ ମିଳିତ ପ୍ରୋତ୍ସାହନମୂଳକ ଅଫର ଅନୁସନ୍ଧାନ କରାଯାଉଛି |",
-      "bundleStatus": "ନିଶ୍ଚିତ ହେବା ପାଇଁ ପ୍ରସ୍ତୁତି ସର୍ତ୍ତାବଳୀ ଏବଂ ମୂଲ୍ୟ ପ୍ରଦାନ କରନ୍ତୁ |"
+      "bundleStatus": "ନିଶ୍ଚିତ ହେବା ପାଇଁ ପ୍ରସ୍ତୁତି ସର୍ତ୍ତାବଳୀ ଏବଂ ମୂଲ୍ୟ ପ୍ରଦାନ କରନ୍ତୁ |",
+      "movieStatus": "iPhone ଏବଂ iPad ରେ ଉପଲବ୍ଧ · Mac ସଂସ୍କରଣ ଅନୁମୋଦନ ଅପେକ୍ଷାରେ।"
     },
     "pa": {
       "movies": "05 · ਫਿਲਮਾਂ ਅਤੇ ਸੀਰੀਜ਼",
@@ -367,7 +394,8 @@
       "bundleTag": "07 · ਸੂਟ",
       "bundleTitle": "ਤੁਹਾਡੇ ਚਾਰ ਚੁਣਨ ਵਾਲੇ, ਇਕੱਠੇ।",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ਅਤੇ Moovie Picker। ਇੱਕ ਸੰਯੁਕਤ ਪ੍ਰਚਾਰ ਪੇਸ਼ਕਸ਼ ਦੀ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
-      "bundleStatus": "ਤਿਆਰੀ ਵਿੱਚ ਪੇਸ਼ਕਸ਼ · ਸ਼ਰਤਾਂ ਅਤੇ ਕੀਮਤ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੀ ਜਾਣੀ ਹੈ।"
+      "bundleStatus": "ਤਿਆਰੀ ਵਿੱਚ ਪੇਸ਼ਕਸ਼ · ਸ਼ਰਤਾਂ ਅਤੇ ਕੀਮਤ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੀ ਜਾਣੀ ਹੈ।",
+      "movieStatus": "iPhone ਅਤੇ iPad ਉੱਤੇ ਉਪਲਬਧ · Mac ਵਰਜਨ ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਵਿੱਚ ਹੈ।"
     },
     "pl": {
       "movies": "05 · FILMY I SERIE",
@@ -380,7 +408,8 @@
       "bundleTag": "07 · APARTAMENT",
       "bundleTitle": "Waszych czterech Pickerów razem.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker i Moovie Picker. Rozważana jest łączona oferta promocyjna.",
-      "bundleStatus": "Oferta w przygotowaniu · warunki i cena do potwierdzenia."
+      "bundleStatus": "Oferta w przygotowaniu · warunki i cena do potwierdzenia.",
+      "movieStatus": "Dostępna na iPhone’a i iPada · Wersja na Maca oczekuje na zatwierdzenie."
     },
     "pt": {
       "movies": "05 · FILMES E SÉRIES",
@@ -393,7 +422,8 @@
       "bundleTag": "07 · A SUÍTE",
       "bundleTitle": "Seus quatro Selecionadores, juntos.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker e Moovie Picker. Uma oferta promocional combinada está sendo explorada.",
-      "bundleStatus": "Oferta em preparação · condições e preços a confirmar."
+      "bundleStatus": "Oferta em preparação · condições e preços a confirmar.",
+      "movieStatus": "Disponível para iPhone e iPad · Versão Mac aguardando aprovação."
     },
     "ro": {
       "movies": "05 · FILME & SERIE",
@@ -406,7 +436,8 @@
       "bundleTag": "07 · SUITA",
       "bundleTitle": "Voi cei patru culegători, împreună.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker și Moovie Picker. Se analizează o ofertă promoțională combinată.",
-      "bundleStatus": "Oferta în pregătire · termeni și prețuri de confirmat."
+      "bundleStatus": "Oferta în pregătire · termeni și prețuri de confirmat.",
+      "movieStatus": "Disponibil pentru iPhone și iPad · Versiunea Mac așteaptă aprobarea."
     },
     "ru": {
       "movies": "05 · ФИЛЬМЫ И СЕРИАЛЫ",
@@ -419,7 +450,8 @@
       "bundleTag": "07 · ЛЮКС",
       "bundleTitle": "Ваши четверо сборщиков вместе.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker и Moovie Picker. В настоящее время изучается комбинированное рекламное предложение.",
-      "bundleStatus": "Предложение в стадии подготовки · условия и цены будут подтверждены."
+      "bundleStatus": "Предложение в стадии подготовки · условия и цены будут подтверждены.",
+      "movieStatus": "Доступно для iPhone и iPad · Версия для Mac ожидает одобрения."
     },
     "sk": {
       "movies": "05 · FILMY A SÉRIE",
@@ -432,7 +464,8 @@
       "bundleTag": "07 · SUITE",
       "bundleTitle": "Vaši štyria Pickeri spolu.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker a Moovie Picker. Skúma sa kombinovaná propagačná ponuka.",
-      "bundleStatus": "Ponuka sa pripravuje · podmienky a ceny budú potvrdené."
+      "bundleStatus": "Ponuka sa pripravuje · podmienky a ceny budú potvrdené.",
+      "movieStatus": "Dostupné pre iPhone a iPad · Verzia pre Mac čaká na schválenie."
     },
     "sl": {
       "movies": "05 · FILMI IN SERIJE",
@@ -445,7 +478,8 @@
       "bundleTag": "07 · APARTMA",
       "bundleTitle": "Vaši štirje trgači skupaj.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker in Moovie Picker. Raziskuje se kombinirana promocijska ponudba.",
-      "bundleStatus": "Ponudba v pripravi · pogoji in cene bodo še potrjeni."
+      "bundleStatus": "Ponudba v pripravi · pogoji in cene bodo še potrjeni.",
+      "movieStatus": "Na voljo za iPhone in iPad · Različica za Mac čaka na odobritev."
     },
     "sv": {
       "movies": "05 · FILM & SERIE",
@@ -458,7 +492,8 @@
       "bundleTag": "07 · SVITEN",
       "bundleTitle": "Dina fyra plockare, tillsammans.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker och Moovie Picker. Ett kombinerat kampanjerbjudande undersöks.",
-      "bundleStatus": "Erbjudande under förberedelse · villkor och pris ska bekräftas."
+      "bundleStatus": "Erbjudande under förberedelse · villkor och pris ska bekräftas.",
+      "movieStatus": "Tillgänglig för iPhone och iPad · Mac-versionen väntar på godkännande."
     },
     "ta": {
       "movies": "05 · திரைப்படங்கள் & தொடர்கள்",
@@ -471,7 +506,8 @@
       "bundleTag": "07 · தி சூட்",
       "bundleTitle": "உங்கள் நான்கு பிக்கர்கள், ஒன்றாக.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker மற்றும் Moovie Picker. ஒருங்கிணைந்த விளம்பரச் சலுகை ஆராயப்படுகிறது.",
-      "bundleStatus": "ஆஃபர் தயாரிப்பில் · உறுதி செய்யப்பட வேண்டிய விதிமுறைகள் மற்றும் விலை."
+      "bundleStatus": "ஆஃபர் தயாரிப்பில் · உறுதி செய்யப்பட வேண்டிய விதிமுறைகள் மற்றும் விலை.",
+      "movieStatus": "iPhone மற்றும் iPad இல் கிடைக்கிறது · Mac பதிப்பு ஒப்புதலுக்காகக் காத்திருக்கிறது."
     },
     "te": {
       "movies": "05 · చలనచిత్రాలు & సిరీస్",
@@ -484,7 +520,8 @@
       "bundleTag": "07 · ది సూట్",
       "bundleTitle": "మీ నలుగురు పికర్స్, కలిసి.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker మరియు Moovie Picker. ఉమ్మడి ప్రమోషనల్ ఆఫర్ అన్వేషించబడుతోంది.",
-      "bundleStatus": "తయారీలో ఆఫర్ · నిబంధనలు మరియు ధర నిర్ధారించబడాలి."
+      "bundleStatus": "తయారీలో ఆఫర్ · నిబంధనలు మరియు ధర నిర్ధారించబడాలి.",
+      "movieStatus": "iPhone మరియు iPadలో అందుబాటులో ఉంది · Mac వెర్షన్ ఆమోదం కోసం వేచి ఉంది."
     },
     "th": {
       "movies": "05 · ภาพยนตร์และซีรีส์",
@@ -497,7 +534,8 @@
       "bundleTag": "07 · ห้องชุด",
       "bundleTitle": "ผู้เลือกทั้งสี่ของคุณด้วยกัน",
       "bundleBody": "Record Picker, Meal Picker, Book Picker และ Moovie Picker. กำลังสำรวจข้อเสนอส่งเสริมการขายแบบรวม",
-      "bundleStatus": "ข้อเสนออยู่ในระหว่างการเตรียมการ · เงื่อนไขและราคารอการยืนยัน"
+      "bundleStatus": "ข้อเสนออยู่ในระหว่างการเตรียมการ · เงื่อนไขและราคารอการยืนยัน",
+      "movieStatus": "พร้อมใช้งานบน iPhone และ iPad · เวอร์ชัน Mac รอการอนุมัติ"
     },
     "tr": {
       "movies": "05 · FİLMLER & DİZİ",
@@ -510,7 +548,8 @@
       "bundleTag": "07 · SÜİT",
       "bundleTitle": "Dört Picker'ınız bir arada.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker ve Moovie Picker. Kombine bir promosyon teklifi araştırılıyor.",
-      "bundleStatus": "Teklif hazırlanıyor · Şartlar ve fiyatlandırma onaylanacak."
+      "bundleStatus": "Teklif hazırlanıyor · Şartlar ve fiyatlandırma onaylanacak.",
+      "movieStatus": "iPhone ve iPad için mevcut · Mac sürümü onay bekliyor."
     },
     "uk": {
       "movies": "05 · ФІЛЬМИ ТА СЕРІАЛИ",
@@ -523,7 +562,8 @@
       "bundleTag": "07 · ЛЮКС",
       "bundleTitle": "Ваші чотири збирачі разом.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker і Moovie Picker. Вивчається комбінована рекламна пропозиція.",
-      "bundleStatus": "Готується пропозиція · умови та вартість уточнюються."
+      "bundleStatus": "Готується пропозиція · умови та вартість уточнюються.",
+      "movieStatus": "Доступно для iPhone та iPad · Версія для Mac очікує схвалення."
     },
     "ur": {
       "movies": "05 · فلمیں اور سیریز",
@@ -536,7 +576,8 @@
       "bundleTag": "07 · دی سویٹ",
       "bundleTitle": "آپ کے چار چننے والے، ایک ساتھ۔",
       "bundleBody": "Record Picker، Meal Picker، Book Picker اور Moovie Picker۔ ایک مشترکہ پروموشنل پیشکش کی تلاش کی جا رہی ہے۔",
-      "bundleStatus": "تیاری میں پیشکش · شرائط اور قیمتوں کی تصدیق ہونی ہے۔"
+      "bundleStatus": "تیاری میں پیشکش · شرائط اور قیمتوں کی تصدیق ہونی ہے۔",
+      "movieStatus": "iPhone اور iPad پر دستیاب · Mac ورژن منظوری کا منتظر ہے۔"
     },
     "vi": {
       "movies": "05 · PHIM & SERIES",
@@ -549,7 +590,8 @@
       "bundleTag": "07 · BỘ PHẬN",
       "bundleTitle": "Bốn Pickers của bạn, cùng nhau.",
       "bundleBody": "Record Picker, Meal Picker, Book Picker và Moovie Picker. Một khuyến mại kết hợp đang được khám phá.",
-      "bundleStatus": "Đề nghị đang được chuẩn bị · các điều khoản và giá cả sẽ được xác nhận."
+      "bundleStatus": "Đề nghị đang được chuẩn bị · các điều khoản và giá cả sẽ được xác nhận.",
+      "movieStatus": "Đã có trên iPhone và iPad · Phiên bản Mac đang chờ phê duyệt."
     },
     "zh-CN": {
       "movies": "05 · 电影和电视剧",
@@ -562,7 +604,8 @@
       "bundleTag": "07 · 套房",
       "bundleTitle": "你的四个挑选者在一起。",
       "bundleBody": "Record Picker、Meal Picker、Book Picker 和 Moovie Picker。正在探索联合促销优惠。",
-      "bundleStatus": "报价正在准备中·条款和定价待确认。"
+      "bundleStatus": "报价正在准备中·条款和定价待确认。",
+      "movieStatus": "已在 iPhone 和 iPad 上架 · Mac 版本等待审核。"
     },
     "zh-TW": {
       "movies": "05 · 電影與電視劇",
@@ -575,7 +618,8 @@
       "bundleTag": "07 · 套房",
       "bundleTitle": "你的四個挑選者在一起。",
       "bundleBody": "Record Picker、Meal Picker、Book Picker 和 Moovie Picker。正在探索聯合促銷優惠。",
-      "bundleStatus": "報價正在準備中·條款和定價待確認。"
+      "bundleStatus": "報價正在準備中·條款和定價待確認。",
+      "movieStatus": "已在 iPhone 和 iPad 上架 · Mac 版本等待審核。"
     }
   },
   "translationReview": "French and English authored; other languages machine translated, native review pending.",
@@ -591,5 +635,15 @@
     ],
     "price": null,
     "storeBundleEligibilityConfirmed": false
+  },
+  "releaseState": {
+    "moovie-picker": {
+      "ios": "available",
+      "version": "1.0.0",
+      "mac": "pending_approval",
+      "appStoreId": "6826992764",
+      "verified": "2026-10-29",
+      "source": "https://itunes.apple.com/lookup?id=6826992764&country=fr"
+    }
   }
 }
