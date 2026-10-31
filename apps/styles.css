@@ -114,3 +114,6 @@ a[href*="music.apple.com"] img.platform-logo{filter:none!important}
 
 /* Keep Studio discovery links consistent; press links retain their secondary size. */
 .project-card-actions>a.project-text-link:not(.press-review-link){font-size:18px;font-weight:400;line-height:1.65}
+
+/* Standard discovery action for every Studio product card. */
+.project-card-actions>a.project-detail-link{font-size:18px;font-weight:400;line-height:1.65}
