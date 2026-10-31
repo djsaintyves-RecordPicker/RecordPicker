@@ -26,7 +26,7 @@
     "pt-br": "d6c0f588929e1b3f325101afb23fb2f88014f407de27ba9f82aaef629a05ebf6",
     "pt-pt": "78ba5f33892f44f1771e664cf2a99ccb6319a27343db128a101778fa86c0bd1a",
     "ru": "843f57fb55b6d777cf1afcd7716643bf0093c20f245c0a84100babcaa01f5602",
-    "shared": "6ee90d72d428e13dc4981db29f3d0cd901e5606b4cbc859a8ac6459753ce9d38",
+    "shared": "fb5e359bd6e77349ed5cbebbf2ad2c73d91f9af4a8e463e498b26d5b7afab9c7",
     "sv": "9dac1dd78437dffab6039d763cd625c91126be10f61fea308de7643bbf5951c4",
     "th": "6f5aaedc43496a754b34f2fd59cb7a7495063a9954b2581391bd065ff00264e8",
     "tr": "6610639a48646feaaacf2b30cc8fd042871e0bb2fcd09b1dd062b8d29f175a20",
@@ -37,6 +37,6 @@
   },
   "locale_group_count": 34,
   "page_count": 1052,
-  "review_reason": "Verified 29 October 2026 Moovie Picker iOS launch: exactly the Moovie Picker card changed on 50 Studio pages; all other app and music content byte-identical to prior main. 44 localized statuses, iPhone/iPad store links, Mac pending approval.",
+  "review_reason": "Meal Picker iOS release verified in ASC: localized availability, iPhone/iPad App Store buttons and trial pricing on Studio cards; other app cards unchanged.",
   "schema": 1
 }
