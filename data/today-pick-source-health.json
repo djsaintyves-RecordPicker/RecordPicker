@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 26,
+  "contributingSources": 27,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 26,
-  "generatedAt": "2026-10-31T05:44:37Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 27,
+  "generatedAt": "2026-10-31T12:34:39Z",
+  "reachableSources": 43,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -33,8 +33,9 @@
     },
     "BrooklynVegan": {
       "downloadedArticles": 0,
+      "error": "HTTP Error 415: Unsupported Media Type",
       "resolvedEvents": 0,
-      "status": "noRecentArticles",
+      "status": "failed",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -62,7 +63,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 19,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -80,7 +81,7 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 4,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
@@ -123,7 +124,7 @@
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
@@ -141,7 +142,7 @@
     },
     "NME": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.nme.com/feed"
     },
@@ -153,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 15,
+      "resolvedEvents": 13,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -177,7 +178,7 @@
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 24,
+      "resolvedEvents": 23,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
@@ -194,9 +195,10 @@
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 12,
+      "downloadedArticles": 0,
+      "error": "HTTP Error 403: Forbidden",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
@@ -244,7 +246,7 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
