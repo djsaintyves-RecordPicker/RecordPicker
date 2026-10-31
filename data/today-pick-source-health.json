@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 27,
+  "contributingSources": 28,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 27,
-  "generatedAt": "2026-10-31T12:34:39Z",
-  "reachableSources": 43,
+  "effectiveContributingSources": 28,
+  "generatedAt": "2026-10-31T21:37:01Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 21,
       "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,15 +27,14 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
     "BrooklynVegan": {
       "downloadedArticles": 0,
-      "error": "HTTP Error 415: Unsupported Media Type",
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "noRecentArticles",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -63,7 +62,7 @@
       "url": "https://electronicgroove.com/feed/"
     },
     "France Musique": {
-      "downloadedArticles": 19,
+      "downloadedArticles": 20,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.radiofrance.fr/francemusique/rss"
@@ -81,7 +80,7 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
@@ -112,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 9,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -154,13 +153,13 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 12,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
     "OperaWire": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://operawire.com/feed/"
     },
@@ -195,16 +194,15 @@
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
-      "downloadedArticles": 0,
-      "error": "HTTP Error 403: Forbidden",
+      "downloadedArticles": 12,
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "ok",
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 1,
+      "downloadedArticles": 0,
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "noRecentArticles",
       "url": "https://www.sequenza21.com/feed/"
     },
     "Slipped Disc": {
@@ -221,7 +219,7 @@
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 12,
+      "resolvedEvents": 11,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
