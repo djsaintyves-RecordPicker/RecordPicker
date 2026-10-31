@@ -56,9 +56,13 @@ def main():
  for rel, locale, label in [('fr/apps/index.html','fr-FR','Assistance et informations de confidentialité'), ('apps/index.html','en-GB','Help and privacy information')]:
   path = ROOT/rel; before = path.read_text()
   link = f'<a class="project-detail-link" data-meal-help href="/meal-picker/support-{locale}.html">{label} →</a>'
-  after = re.sub(r'<a[^>]*data-meal-help[^>]*>.*?</a>', '', before)
-  after, count = re.subn(r'(<article[^>]*id="meal-picker".*?<div class="project-card-actions">)', lambda m: m[1]+link, after, count=1, flags=re.S)
-  if count != 1: raise SystemExit('Meal Picker card missing: '+rel)
+  existing = re.search(r'<a[^>]*data-meal-help[^>]*>.*?</a>', before, re.S)
+  if existing:
+   # Preserve the store button's position when refreshing the help link.
+   after = before[:existing.start()] + link + before[existing.end():]
+  else:
+   after, count = re.subn(r'(<article[^>]*id="meal-picker".*?<div class="project-card-actions">)', lambda m: m[1]+link, before, count=1, flags=re.S)
+   if count != 1: raise SystemExit('Meal Picker card missing: '+rel)
   if after != before:
    if args.write: path.write_text(after)
    else: errors.append(rel)
