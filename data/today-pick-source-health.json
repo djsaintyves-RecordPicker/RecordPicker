@@ -3,7 +3,7 @@
   "contributingSources": 26,
   "editorialSourceGatePassed": true,
   "effectiveContributingSources": 26,
-  "generatedAt": "2026-10-30T22:22:14Z",
+  "generatedAt": "2026-10-31T05:44:37Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -21,13 +21,13 @@
     },
     "Bandcamp Daily": {
       "downloadedArticles": 26,
-      "resolvedEvents": 3,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -39,13 +39,13 @@
     },
     "Clash": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.clashmusic.com/feed/"
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 2,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -57,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -87,7 +87,7 @@
     },
     "Jazz Views": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.jazzviews.net/feed"
     },
@@ -111,13 +111,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 8,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 7,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -129,7 +129,7 @@
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 3,
+      "resolvedEvents": 5,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -153,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 14,
+      "resolvedEvents": 15,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -171,13 +171,13 @@
     },
     "RFI Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.rfi.fr/fr/musique/rss"
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 19,
+      "resolvedEvents": 24,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
@@ -189,13 +189,13 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
     "Rolling Stone en Español": {
       "downloadedArticles": 12,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://es.rollingstone.com/feed/"
     },
@@ -213,19 +213,19 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 13,
+      "resolvedEvents": 15,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 12,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
       "downloadedArticles": 4,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
     },
@@ -244,7 +244,7 @@
     },
     "The Quietus": {
       "downloadedArticles": 32,
-      "resolvedEvents": 5,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://thequietus.com/feed/"
     },
