@@ -1,0 +1,17 @@
+{
+  "verifiedOn": "2026-10-31",
+  "ios": {
+    "version": "1.0.0",
+    "build": "287",
+    "state": "READY_FOR_SALE",
+    "url": "https://apps.apple.com/app/meal-picker/id6823270770"
+  },
+  "macOS": {
+    "version": "1.0.0",
+    "build": "287",
+    "state": "WAITING_FOR_REVIEW"
+  },
+  "trialDays": 7,
+  "fullUnlockEURFrance": "6.99",
+  "subscription": false
+}
