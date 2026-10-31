@@ -53,9 +53,9 @@ def main():
   if after != before:
    if args.write: path.write_text(after)
    else: errors.append(str(path.relative_to(ROOT)))
- for rel, locale, label in [('fr/apps/index.html','fr-FR','Assistance et informations de confidentialité'), ('apps/index.html','en-GB','Help and privacy information')]:
+ for rel, locale, label in [('fr/apps/index.html','fr-FR','Découvrir Meal Picker'), ('apps/index.html','en-GB','Discover Meal Picker')]:
   path = ROOT/rel; before = path.read_text()
-  link = f'<a class="project-detail-link" data-meal-help href="/meal-picker/support-{locale}.html">{label} →</a>'
+  link = f'<a class="project-detail-link" data-meal-help href="/meal-picker/about-{locale}.html">{label} →</a>'
   existing = re.search(r'<a[^>]*data-meal-help[^>]*>.*?</a>', before, re.S)
   if existing:
    # Preserve the store button's position when refreshing the help link.
@@ -66,7 +66,7 @@ def main():
   if after != before:
    if args.write: path.write_text(after)
    else: errors.append(rel)
- sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}/meal-picker/{kind}-{locale}.html</loc></url>\n' for kind, locale in DESCRIPTIONS)+'</urlset>\n'
+ sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE}/meal-picker/{kind}-{locale}.html</loc></url>\n' for kind, locale in list(DESCRIPTIONS) + [('about','fr-FR'),('about','en-GB')])+'</urlset>\n'
  target = ROOT/'sitemap-meal-picker.xml'
  if not target.exists() or target.read_text() != sitemap:
   if args.write: target.write_text(sitemap)
