@@ -6,13 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def normalize(source):
     if '/apps/styles.css' not in source or 'id="meal-picker"' not in source:
-        # Keep the verified Book Picker iOS release when regenerating Studio cards.
-    def book_release(match):
-        card = re.sub(r'<p class="availability">.*?</p>', '<p class="availability">iPhone · iPad — App Store</p>', match[0], flags=re.S)
-        actions = '<a class="store-button store-appstore" href="https://apps.apple.com/app/id6826948524" data-umami-event="store_click" data-umami-event-destination="apple_ios">App Store · iPhone · iPad</a><a href="/book-picker/' + ('fr' if language == 'fr' else 'en') + '/">Book Picker →</a>'
-        return card.replace('<div class="project-card-actions"></div>', '<div class="project-card-actions">' + actions + '</div>')
-    source = re.sub(r'<article\b[^>]*id="book-picker".*?</article>', book_release, source, flags=re.S)
-    return source
+        return source
     data=json.loads((ROOT/'data/studio-upcoming-apps-2026-10-26.json').read_text())
     match=re.search(r'<html[^>]*lang="([^"]+)"',source)
     language=(match[1] if match else 'en').split('-')[0]
