@@ -15,7 +15,15 @@ def studio(s):
    line='1.0.0 · Disponible sur iPhone et iPad' if fr else '1.0.0 · iPhone · iPad · App Store'
    c=c.replace('<p class="availability">','<p data-book-release>'+line+'</p><p class="availability">',1)
   return c
- return re.sub(r'<article\b[^>]*id="book-picker".*?</article>',card,s,flags=re.S)
+ s=re.sub(r'<article\b[^>]*id="book-picker".*?</article>',card,s,flags=re.S)
+ for ident,app in [('book-picker','book-picker'),('moovie-picker','moop')]:
+  def preview(m):
+   c=m[0]
+   if 'app-public-preview' in c:return c
+   image='<a class="app-preview-link" href="/'+app+'/'+('fr' if fr else 'en')+'/"><img class="app-public-preview" src="/'+app+'/assets/appstore-1.jpg" alt="'+ident+' · App Store" loading="lazy" style="display:block;width:100%;max-height:320px;object-fit:contain;margin:16px auto;border-radius:12px"></a>'
+   return c.replace('<div class="project-card-actions">',image+'<div class="project-card-actions">',1)
+  s=re.sub(r'<article\b[^>]*id="'+ident+r'".*?</article>',preview,s,flags=re.S)
+ return s
 def product(s,fr):
  if 'data-book-details' in s:return s
  s=s.replace('/moop/assets/moop.css','/book-picker/assets/book-picker.css')
