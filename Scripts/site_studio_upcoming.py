@@ -36,7 +36,8 @@ def normalize(source):
         return card.replace('<div class="project-card-actions"></div>', '<div class="project-card-actions">' + actions + '</div>')
     source = re.sub(r'<article\b[^>]*id="book-picker".*?</article>', book_release, source, flags=re.S)
     from book_picker_public_pages import studio
-    return studio(source)
+    from harmonize_studio_cards import update as unify_cards
+    return unify_cards(studio(source))
 
 if __name__=='__main__':
     count=0
