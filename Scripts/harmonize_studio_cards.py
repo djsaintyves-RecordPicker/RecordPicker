@@ -23,7 +23,10 @@ class Tree(HTMLParser):
  def handle_charref(self,n):self.handle_data('&#'+n+';')
 def normalize(match):
  raw=match[0]
- if 'data-unified-card' in raw:return raw
+ if 'data-unified-card' in raw:
+  if 'id="book-picker"' in raw:
+   raw=re.sub(r'<div class="unified-media[^"]*">.*?</div>', '<div class="unified-media book-real-pair"><img src="/book-picker/assets/choice-real-20261102.png" alt="" loading="lazy"><img src="/book-picker/assets/library-real-20261102.png" alt="" loading="lazy"></div>',raw,count=1,flags=re.S)
+  return raw
  t=Tree();t.feed(raw);card=t.root.children[0]
  if card.attrs.get('id') not in ['record-picker','snory-teller','physical-routine','meal-picker','moovie-picker','book-picker']:return raw
  regions={};summary=[];media=[];meta=[]

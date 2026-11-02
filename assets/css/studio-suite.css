@@ -216,3 +216,5 @@
 .suite-studio #book-picker{--app-accent:#593151}.suite-studio #moovie-picker{--app-accent:#242424}
 .suite-studio .project-card[data-unified-card] a.store-appstore{background:var(--app-accent,#242424)!important;color:#fff!important;border-color:var(--app-accent,#242424)!important}
 .suite-studio .project-card[data-unified-card] a.store-appstore .store-label{color:inherit}
+.suite-studio .unified-media.book-real-pair{display:flex;gap:16px;padding:8px;background:#f5f3f5}
+.suite-studio .unified-media.book-real-pair img{height:100%!important;width:auto!important;max-width:46%;max-height:244px!important;object-fit:contain;border-radius:10px}
