@@ -35,7 +35,8 @@ def normalize(source):
         actions = '<a class="store-button store-appstore" href="https://apps.apple.com/app/id6826948524" data-umami-event="store_click" data-umami-event-destination="apple_ios">App Store · iPhone · iPad</a><a href="/book-picker/' + ('fr' if language == 'fr' else 'en') + '/">Book Picker →</a>'
         return card.replace('<div class="project-card-actions"></div>', '<div class="project-card-actions">' + actions + '</div>')
     source = re.sub(r'<article\b[^>]*id="book-picker".*?</article>', book_release, source, flags=re.S)
-    return source
+    from book_picker_public_pages import studio
+    return studio(source)
 
 if __name__=='__main__':
     count=0
