@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 34,
+  "contributingSources": 32,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 34,
-  "generatedAt": "2026-11-07T06:00:14Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 32,
+  "generatedAt": "2026-11-07T13:04:38Z",
+  "reachableSources": 44,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,7 +14,7 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 18,
+      "downloadedArticles": 23,
       "resolvedEvents": 4,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
@@ -27,7 +27,7 @@
     },
     "Billboard": {
       "downloadedArticles": 10,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.billboard.com/feed/"
     },
@@ -86,9 +86,10 @@
       "url": "https://www.jazzmagazine.com/feed/"
     },
     "Jazz Views": {
-      "downloadedArticles": 10,
-      "resolvedEvents": 9,
-      "status": "ok",
+      "downloadedArticles": 0,
+      "error": "https://www.jazzviews.net/feed: unexpected HTTP status",
+      "resolvedEvents": 0,
+      "status": "failed",
       "url": "https://www.jazzviews.net/feed"
     },
     "Jazz thing": {
@@ -183,7 +184,7 @@
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 3,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -230,8 +231,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 20,
-      "resolvedEvents": 3,
+      "downloadedArticles": 19,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
@@ -262,7 +263,7 @@
     },
     "Télérama Musique": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.telerama.fr/rss/musique.xml"
     },
