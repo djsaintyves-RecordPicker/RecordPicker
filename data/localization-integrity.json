@@ -8,11 +8,11 @@
     "en-au": "c86018d299908c2d2168191daa6d4b68ce298ec323de0bcc24a99b4e45124ed1",
     "en-ca": "052facc1cbbaafe465217c480b941539aad5b773dae004f8520e7e88ae7a47e8",
     "en-gb": "4e8c89e3d0c421c491fb8e0b5d205f70067cb93d1b47dabc1a79d259123bc950",
-    "en-us": "755e37b6574ae40d95b700bb8ee8cc678ff0a7cb9f8278e35926013a70f5b329",
+    "en-us": "20d4d0000bde3447212a2b8175f42c1d6e006bf14e6bf32434a04befbb85c5f9",
     "es-es": "ab5ab2b2da1731fc89e720e6e697a2163d549530b6e80d890e36d10dbf7078c9",
     "es-mx": "5c2b2c81434edc9ac845f41bfe70945148ef4571861e76ff77d60b733fb59b04",
     "fi": "c5c8361aa32c9ef793ce2d72d941799c092246b05c7ac8ecb037003c8e61911c",
-    "fr": "f8cfcf1b638c1370ef643e981b905f9f93e238d349642b3b3ab5f2a9b35cafaa",
+    "fr": "2c5e2639644ce5effce1cc454e41efb0abb46ff9e6114391bde2d14fea567c6e",
     "fr-ca": "2549998ab435c684ac7871a4685ffde9de1ee4b852152b9a6afb4a669676c629",
     "he": "6c66611214cea37f086486544c075e302b7e49bcf68105b0c78dcdc1ed52575e",
     "hi": "19c0f73fcb700298572c468e608d7981b8813289526e628385084418920e9688",
@@ -26,7 +26,7 @@
     "pt-br": "d6c0f588929e1b3f325101afb23fb2f88014f407de27ba9f82aaef629a05ebf6",
     "pt-pt": "78ba5f33892f44f1771e664cf2a99ccb6319a27343db128a101778fa86c0bd1a",
     "ru": "843f57fb55b6d777cf1afcd7716643bf0093c20f245c0a84100babcaa01f5602",
-    "shared": "91b6f0a99f0dd924986bb38358e07aa22481679f13497be9067f4160428bb17e",
+    "shared": "a4f187b042952a01bcb741fcdf785e1a4c48efe4214ede51a8a5d2a3b28a8b8a",
     "sv": "9dac1dd78437dffab6039d763cd625c91126be10f61fea308de7643bbf5951c4",
     "th": "6f5aaedc43496a754b34f2fd59cb7a7495063a9954b2581391bd065ff00264e8",
     "tr": "6610639a48646feaaacf2b30cc8fd042871e0bb2fcd09b1dd062b8d29f175a20",
@@ -36,7 +36,7 @@
     "zh-hant": "4c2e7b9aec75d2124caceeadd46d8f92511869e617ab427be51e72fd8918b534"
   },
   "locale_group_count": 34,
-  "page_count": 1052,
-  "review_reason": "Add requested bilingual Meal Picker discovery page, illustrated workflow and discover link on Studio cards",
+  "page_count": 1054,
+  "review_reason": "Meal Picker macOS is approved and available; announce Apple platform availability in Studio and Meal Picker pages.",
   "schema": 1
 }
