@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Publish verified Meal Picker iOS availability, preserving the other Studio cards."""
+"""Publish verified Meal Picker Apple platform availability, preserving the other Studio cards."""
 from pathlib import Path
 from html import escape
 import re,json
@@ -57,20 +57,20 @@ def update(source):
  old=re.search(pattern,source,re.S)
  if not old:return source
  card=old[0]
- status='iPhone · iPad — App Store · '+PENDING[lang]
+ status='iPhone · iPad · Mac — App Store'
  card=re.sub(r'<p class="availability">.*?</p>',
 '<p class="availability">'+escape(status)+'</p>',card,count=1,flags=re.S)
  price={'fr':'Téléchargement gratuit · Essai de 7 jours · Achat unique à 6,99 € en France, sans abonnement ni débit automatique. Prix local dans l’app.',
 'en':'Free download · 7-day trial · One-time unlock: €6.99 in France, with no subscription or automatic charge. Local price shown in the app.'}.get(lang)
  if price and 'data-meal-price' not in card:card=card.replace('<p class="availability">',
 '<p data-meal-price>'+escape(price)+'</p><p class="availability">',1)
- button='<div class="project-store-grid" data-meal-store><a class="store-button store-appstore" href="'+URL+'" data-umami-event="store_click" data-umami-event-destination="apple_ios"><img src="/apps/assets/appstore.svg" alt="" width="26" height="26" class="store-logo"><span class="store-label"><strong>App Store</strong><small>iPhone · iPad</small></span></a></div>'
+ button='<div class="project-store-grid" data-meal-store><a class="store-button store-appstore" href="'+URL+'" data-umami-event="store_click" data-umami-event-destination="apple_ios"><img src="/apps/assets/appstore.svg" alt="" width="26" height="26" class="store-logo"><span class="store-label"><strong>App Store</strong><small>iPhone · iPad · Mac</small></span></a></div>'
  if 'data-meal-store' not in card:card=card.replace('<div class="project-card-actions">',
 '<div class="project-card-actions">'+button,1)
  source=source[:old.start()]+card+source[old.end():]
- # The download menu must point to iOS, never to the pending Mac release.
+ # Link to the shared App Store listing for the available Apple versions.
  if 'data-meal-download' not in source:
-  source=re.sub(r'(<details[^>]*class="hub-menu-group"[^>]*>\s*<summary>.*?</summary>\s*<div class="hub-menu-panel">)(.*?)(</div></details>)',lambda m:m[1]+m[2]+('<a data-meal-download href="'+URL+'" data-umami-event="store_click" data-umami-event-destination="apple_ios">Meal Picker · iPhone · iPad</a>' if 'data-umami-event-destination="apple_ios"' in m[2] and 'store-appstore' in m[2] else '')+m[3],source,flags=re.S)
+  source=re.sub(r'(<details[^>]*class="hub-menu-group"[^>]*>\s*<summary>.*?</summary>\s*<div class="hub-menu-panel">)(.*?)(</div></details>)',lambda m:m[1]+m[2]+('<a data-meal-download href="'+URL+'" data-umami-event="store_click" data-umami-event-destination="apple_ios">Meal Picker · iPhone · iPad · Mac</a>' if 'data-umami-event-destination="apple_ios"' in m[2] and 'store-appstore' in m[2] else '')+m[3],source,flags=re.S)
  return source
 if __name__=='__main__':
  count=0
