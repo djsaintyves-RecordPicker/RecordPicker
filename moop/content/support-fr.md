@@ -41,4 +41,4 @@ Sur un résultat, touchez la coche vide pour marquer le film ou la série comme 
 
 ## Rappels de visionnage
 
-Sur iPhone et Mac, faites un appui long ou un clic droit sur un titre et choisissez « Planifier le visionnage ». Vous pouvez aussi ouvrir Personnalisation puis Rappels. Choisissez une date, une heure facultative et, si vous le souhaitez, une notification locale avant le visionnage. Les plans restent sur cet appareil et ne font pas partie de la synchronisation iCloud de la bibliothèque. Les ajouts explicites à Rappels Apple ou Calendrier sont des copies indépendantes.
+Sur iPhone et Mac, faites un appui long ou un clic droit sur un titre et choisissez « Planifier le visionnage ». Vous pouvez aussi ouvrir Personnalisation puis Rappels. Choisissez une date, une heure facultative et, si vous le souhaitez, une notification locale avant le visionnage. Les plans restent sur cet appareil et ne font pas partie de la synchronisation iCloud de la bibliothèque. Sur iPhone, vous pouvez ajouter explicitement un rappel à Rappels Apple. Sur Mac, « Ajouter au calendrier » ouvre un fichier .ics dans Calendrier pour importation. Ces exports sont des copies indépendantes.

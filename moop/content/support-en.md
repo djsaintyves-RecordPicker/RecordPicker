@@ -41,4 +41,4 @@ On a result, tap the outlined checkmark to mark a film or series as watched. A f
 
 ## Viewing reminders
 
-On iPhone and Mac, long-press or right-click a title and choose Schedule viewing. You can also open Personalization, then Reminders. Choose a date, optionally a time, and enable a local notification before viewing if desired. Plans stay on this device and are not included in library iCloud sync. Explicit additions to Apple Reminders or Calendar are independent copies.
+On iPhone and Mac, long-press or right-click a title and choose Schedule viewing. You can also open Personalization, then Reminders. Choose a date, optionally a time, and enable a local notification before viewing if desired. Plans stay on this device and are not included in library iCloud sync. On iPhone, you can explicitly add a reminder to Apple Reminders. On Mac, Add to Calendar opens an .ics file in Calendar for import. These exports are independent copies.
