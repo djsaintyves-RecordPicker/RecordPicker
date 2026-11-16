@@ -1,26 +1,27 @@
 {
   "configuredSources": 46,
-  "contributingSources": 23,
+  "contributingSources": 24,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 23,
-  "generatedAt": "2026-11-15T18:52:25Z",
-  "reachableSources": 46,
+  "effectiveContributingSources": 24,
+  "generatedAt": "2026-11-16T06:32:39Z",
+  "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 0,
+      "error": "The read operation timed out",
       "resolvedEvents": 0,
-      "status": "ok",
+      "status": "failed",
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 24,
+      "downloadedArticles": 25,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 34,
+      "downloadedArticles": 33,
       "resolvedEvents": 2,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
@@ -80,7 +81,7 @@
       "url": "https://jazziz.com/feed/"
     },
     "Jazz Magazine": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 7,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.jazzmagazine.com/feed/"
@@ -111,7 +112,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 9,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
@@ -165,7 +166,7 @@
     },
     "Pitchfork News": {
       "downloadedArticles": 30,
-      "resolvedEvents": 6,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -189,7 +190,7 @@
     },
     "Rolling Stone Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 0,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.rollingstone.com/music/music-news/feed/"
     },
@@ -213,7 +214,7 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 10,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
@@ -248,7 +249,7 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 5,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
