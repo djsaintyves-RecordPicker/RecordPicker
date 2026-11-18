@@ -1,10 +1,10 @@
 {
   "configuredSources": 46,
-  "contributingSources": 26,
+  "contributingSources": 23,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 26,
-  "generatedAt": "2026-11-18T07:31:00Z",
-  "reachableSources": 45,
+  "effectiveContributingSources": 23,
+  "generatedAt": "2026-11-18T20:33:18Z",
+  "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
     "Attack Magazine": {
@@ -14,13 +14,13 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 29,
-      "resolvedEvents": 2,
+      "downloadedArticles": 23,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
     "Bandcamp Daily": {
-      "downloadedArticles": 30,
+      "downloadedArticles": 29,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://daily.bandcamp.com/feed"
@@ -33,9 +33,8 @@
     },
     "BrooklynVegan": {
       "downloadedArticles": 0,
-      "error": "HTTP Error 415: Unsupported Media Type",
       "resolvedEvents": 0,
-      "status": "failed",
+      "status": "noRecentArticles",
       "url": "https://www.brooklynvegan.com/feed/"
     },
     "Clash": {
@@ -46,7 +45,7 @@
     },
     "Consequence": {
       "downloadedArticles": 15,
-      "resolvedEvents": 8,
+      "resolvedEvents": 9,
       "status": "ok",
       "url": "https://consequence.net/category/music/feed/"
     },
@@ -58,7 +57,7 @@
     },
     "Electronic Groove": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://electronicgroove.com/feed/"
     },
@@ -112,25 +111,25 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 6,
+      "resolvedEvents": 8,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
     "MondoSonoro": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.mondosonoro.com/feed/"
     },
     "MusicRadar": {
       "downloadedArticles": 40,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.musicradar.com/feeds/all"
     },
@@ -154,7 +153,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -165,8 +164,8 @@
       "url": "https://operawire.com/feed/"
     },
     "Pitchfork News": {
-      "downloadedArticles": 30,
-      "resolvedEvents": 5,
+      "downloadedArticles": 29,
+      "resolvedEvents": 6,
       "status": "ok",
       "url": "https://pitchfork.com/rss/news/"
     },
@@ -178,13 +177,13 @@
     },
     "Rockdelux": {
       "downloadedArticles": 40,
-      "resolvedEvents": 12,
+      "resolvedEvents": 7,
       "status": "ok",
       "url": "https://www.rockdelux.com/feed"
     },
     "Rolling Stone Germany": {
       "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.rollingstone.de/feed/"
     },
@@ -208,7 +207,7 @@
     },
     "Slipped Disc": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://slippedisc.com/feed/"
     },
@@ -225,7 +224,7 @@
       "url": "https://stereogum.com/feed"
     },
     "The Classic Review": {
-      "downloadedArticles": 5,
+      "downloadedArticles": 6,
       "resolvedEvents": 4,
       "status": "ok",
       "url": "https://theclassicreview.com/feed/"
@@ -238,7 +237,7 @@
     },
     "The Line of Best Fit": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://www.thelineofbestfit.com/feed"
     },
@@ -249,13 +248,13 @@
       "url": "https://thequietus.com/feed/"
     },
     "The Wire": {
-      "downloadedArticles": 6,
+      "downloadedArticles": 7,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.thewire.co.uk/rss"
     },
     "Tsugi": {
-      "downloadedArticles": 21,
+      "downloadedArticles": 18,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.tsugi.fr/feed/"
@@ -274,13 +273,13 @@
     },
     "Variety Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://variety.com/v/music/feed/"
     },
     "WBGO Music": {
       "downloadedArticles": 10,
-      "resolvedEvents": 1,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.wbgo.org/music.rss"
     }
