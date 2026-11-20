@@ -170,3 +170,16 @@ body.rp26{margin:0;background:var(--bg);color:var(--text);line-height:1.55;font-
 .rp26 .final a:not(.btn){color:var(--gold)}
 .rp26 .foot .logo{display:flex}
 @media (max-width:600px){.rp26 .plats{grid-template-columns:1fr}.rp26 .trust{grid-template-columns:1fr}.rp26 section.band{padding:64px 0}.rp26 .cta .btn{width:100%;justify-content:center}}
+/* Policy pages */
+.rp26 .policy{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start}
+.rp26 .toc{position:sticky;top:90px;display:flex;flex-direction:column;gap:2px;font-size:14px;max-height:calc(100vh - 120px);overflow:auto}
+.rp26 .toc a{text-decoration:none;color:var(--muted);padding:5px 10px;border-left:2px solid var(--line)}
+.rp26 .toc a:hover{color:var(--text);border-color:var(--red)}
+.rp26 .poltext{max-width:720px}
+.rp26 .pol{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.rp26 .pol h2{font-size:26px;margin-bottom:10px}
+.rp26 .pol p{margin:0 0 12px}
+.rp26 .pol code{background:var(--paper);padding:1px 6px;border-radius:6px;font-size:.92em}
+.rp26 .pol a{color:var(--red)}
+.rp26 .phero .lead + .lead{margin-top:-10px}
+@media (max-width:900px){.rp26 .policy{grid-template-columns:1fr}.rp26 .toc{position:static;max-height:none}}
