@@ -183,3 +183,14 @@ body.rp26{margin:0;background:var(--bg);color:var(--text);line-height:1.55;font-
 .rp26 .pol a{color:var(--red)}
 .rp26 .phero .lead + .lead{margin-top:-10px}
 @media (max-width:900px){.rp26 .policy{grid-template-columns:1fr}.rp26 .toc{position:static;max-height:none}}
+/* Gallery */
+.rp26 .gallery{display:grid;gap:22px}
+.rp26 .gallery.g3{grid-template-columns:repeat(3,1fr)}
+.rp26 .gallery.g2{grid-template-columns:repeat(2,1fr)}
+.rp26 .shot{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.rp26 .shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top center}
+.rp26 .gallery.tall .shot img{aspect-ratio:auto;max-height:520px;object-fit:contain;background:var(--paper)}
+.rp26 .shot figcaption{padding:12px 16px;font-size:14px;display:flex;flex-direction:column;gap:2px}
+.rp26 .shot figcaption span{color:var(--muted);font-size:13px}
+.rp26 .feat h3 .pro{font-size:11px}
+@media (max-width:900px){.rp26 .gallery.g3,.rp26 .gallery.g2{grid-template-columns:1fr}}
