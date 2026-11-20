@@ -194,3 +194,16 @@ body.rp26{margin:0;background:var(--bg);color:var(--text);line-height:1.55;font-
 .rp26 .shot figcaption span{color:var(--muted);font-size:13px}
 .rp26 .feat h3 .pro{font-size:11px}
 @media (max-width:900px){.rp26 .gallery.g3,.rp26 .gallery.g2{grid-template-columns:1fr}}
+/* Article (guides) */
+.rp26 .article{max-width:760px;font-size:18px}
+.rp26 .article h2{font-size:30px;margin:40px 0 12px}
+.rp26 .article h3{margin:28px 0 8px}
+.rp26 .article p,.rp26 .article li{color:var(--text)}
+.rp26 .article a{color:var(--red)}
+.rp26 .article ul,.rp26 .article ol{padding-left:22px}
+.rp26 .article li{margin:6px 0}
+.rp26 .article figure{margin:28px 0}
+.rp26 .article img{border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.rp26 .article figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.rp26 .article details{margin:0}
+.rp26 .article > a{display:inline-block;margin:10px 16px 10px 0;font-weight:600}
