@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 19,
+  "contributingSources": 17,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 19,
-  "generatedAt": "2026-11-22T06:51:37Z",
+  "effectiveContributingSources": 17,
+  "generatedAt": "2026-11-22T19:42:34Z",
   "reachableSources": 45,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 30,
-      "resolvedEvents": 1,
+      "downloadedArticles": 25,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -112,13 +112,13 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
     "Metal Injection": {
       "downloadedArticles": 25,
-      "resolvedEvents": 6,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://metalinjection.net/feed"
     },
@@ -154,7 +154,7 @@
     },
     "OndaRock": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.ondarock.it/feed.php"
     },
@@ -201,7 +201,7 @@
       "url": "https://es.rollingstone.com/feed/"
     },
     "Sequenza21": {
-      "downloadedArticles": 2,
+      "downloadedArticles": 3,
       "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.sequenza21.com/feed/"
@@ -214,13 +214,13 @@
     },
     "Soompi Music": {
       "downloadedArticles": 40,
-      "resolvedEvents": 2,
+      "resolvedEvents": 3,
       "status": "ok",
       "url": "https://www.soompi.com/category/music/feed"
     },
     "Stereogum": {
       "downloadedArticles": 40,
-      "resolvedEvents": 5,
+      "resolvedEvents": 4,
       "status": "ok",
       "url": "https://stereogum.com/feed"
     },
@@ -231,8 +231,8 @@
       "url": "https://theclassicreview.com/feed/"
     },
     "The Guardian Music": {
-      "downloadedArticles": 17,
-      "resolvedEvents": 1,
+      "downloadedArticles": 16,
+      "resolvedEvents": 0,
       "status": "ok",
       "url": "https://www.theguardian.com/music/rss"
     },
