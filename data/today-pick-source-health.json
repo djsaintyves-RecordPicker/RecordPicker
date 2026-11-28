@@ -1,9 +1,9 @@
 {
   "configuredSources": 46,
-  "contributingSources": 9,
+  "contributingSources": 10,
   "editorialSourceGatePassed": true,
-  "effectiveContributingSources": 9,
-  "generatedAt": "2026-11-27T21:18:54Z",
+  "effectiveContributingSources": 10,
+  "generatedAt": "2026-11-28T07:52:02Z",
   "reachableSources": 46,
   "requiredContributingSources": 6,
   "sources": {
@@ -14,8 +14,8 @@
       "url": "https://www.attackmagazine.com/feed/"
     },
     "BBC Music": {
-      "downloadedArticles": 18,
-      "resolvedEvents": 0,
+      "downloadedArticles": 19,
+      "resolvedEvents": 1,
       "status": "ok",
       "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml"
     },
@@ -111,7 +111,7 @@
     },
     "Louder": {
       "downloadedArticles": 40,
-      "resolvedEvents": 4,
+      "resolvedEvents": 2,
       "status": "ok",
       "url": "https://www.loudersound.com/feeds/all"
     },
